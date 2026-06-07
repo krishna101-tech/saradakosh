@@ -3,12 +3,7 @@ import os
 reports_dir = r"c:\Saradakosh antigravity\webapp\reports"
 
 toggle_html = """
-<style>
-.level-toggles { margin-top: 15px; margin-bottom: 25px; display: flex; align-items: center; font-family: "Segoe UI", sans-serif; }
-.toggle-btn { border: 2px solid #d35400; padding: 6px 18px; margin-right: 12px; cursor: pointer; border-radius: 6px; background: white; color: #d35400; font-weight: bold; font-size: 14px; transition: 0.2s; text-align: center; }
-.toggle-btn:hover { background: #fff1e6; }
-.toggle-btn.active { background: #d35400; color: white; }
-</style>
+
 <div class="level-toggles">
     <span style="font-weight:bold; margin-right: 15px; color: #333; font-size: 15px;">Levels:</span>
     <div class="toggle-btn" onclick="setLevel(1)">1</div>

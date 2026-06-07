@@ -55,10 +55,16 @@ full_html = f'''<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="../css/style.css?v=3" rel="stylesheet">
+<link href="../css/style.css?v=4" rel="stylesheet">
+<script src="../js/theme.js"></script>
 </head>
 <body>
 <div class="container">
+<div class="theme-selector" style="position: absolute; top: 10px; right: 10px;">
+    <button class="theme-btn active" data-set-theme="system">System</button>
+    <button class="theme-btn" data-set-theme="light">Light</button>
+    <button class="theme-btn" data-set-theme="dark">Dark</button>
+</div>
 <h1 style="color: var(--primary-color);">Ref Report Table</h1>
 {html}
 </div>

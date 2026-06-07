@@ -13,7 +13,13 @@ replacement = r'''html = [
     '<html><head>',
     '<meta charset="UTF-8">',
     '<link href="../css/style.css" rel="stylesheet">',
-    '</head><body><div class="container">'
+    '<script src="../js/theme.js"></script>',
+    '</head><body><div class="container">',
+    '<div class="theme-selector" style="position: absolute; top: 10px; right: 10px;">',
+    '<button class="theme-btn active" data-set-theme="system">System</button>',
+    '<button class="theme-btn" data-set-theme="light">Light</button>',
+    '<button class="theme-btn" data-set-theme="dark">Dark</button>',
+    '</div>'
 ]'''
 
 for f in files:
@@ -24,14 +30,14 @@ for f in files:
         
         # Replace the HTML block
         new_content = re.sub(
-            r"(html(_[a-z]+)?\s*=\s*\['<html><head><style>'\].*?html(_[a-z]+)?\.append\('</style></head><body>'\))",
+            r"html(_[a-z]+)?\s*=\s*\[\s*'<!DOCTYPE html>',\s*'<html><head>',\s*'<meta charset=\"UTF-8\">',\s*'<link href=\"../css/style\.css\?v=\d+\" rel=\"stylesheet\">',\s*'</head><body><div class=\"container\">'\s*\]",
             replacement, content, flags=re.DOTALL
         )
         
         # We need to use dynamic variable names if they used html_out instead of html
         new_content = re.sub(
-            r"html\.append\('</body></html>'\)",
-            r"html.append('</div></body></html>')", new_content
+            r"html(_[a-z]+)?\.append\('</body></html>'\)",
+            r"html\1.append('</div></body></html>')", new_content
         )
         
         if new_content != content:

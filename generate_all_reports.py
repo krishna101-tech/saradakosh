@@ -51,7 +51,13 @@ for _, p1_row in period1_items.iterrows():
     '<html><head>',
     '<meta charset="UTF-8">',
     '<link href="../css/style.css?v=3" rel="stylesheet">',
-    '</head><body><div class="container">'
+    '<script src="../js/theme.js"></script>',
+    '</head><body><div class="container">',
+    '<div class="theme-selector" style="position: absolute; top: 10px; right: 10px;">',
+    '<button class="theme-btn active" data-set-theme="system">System</button>',
+    '<button class="theme-btn" data-set-theme="light">Light</button>',
+    '<button class="theme-btn" data-set-theme="dark">Dark</button>',
+    '</div>'
 ]
     
     html.append(f'<h1>{p1_name}</h1>')

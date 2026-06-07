@@ -144,3 +144,5 @@ function renderReportsDirectory() {
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
+
+
