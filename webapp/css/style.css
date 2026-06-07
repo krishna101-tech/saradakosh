@@ -255,7 +255,7 @@ tr:hover td { background: var(--primary-glow); }
 .schedule-card { background: var(--glass-bg); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid var(--glass-border); padding: 15px 20px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; box-shadow: var(--glass-shadow); transition: all 0.3s; gap: 15px; flex-wrap: wrap;}
 .schedule-card.current { background: var(--glass-hover); border-color: #3b82f6; box-shadow: 0 5px 15px rgba(59, 130, 246, 0.2); }
 .schedule-card-content { flex-grow: 1; min-width: 0; display: flex; align-items: baseline; }
-.schedule-date { font-weight: bold; color: var(--text-color); margin-right: 15px; flex-basis: 110px; flex-shrink: 0; text-align: right; }
+.schedule-date { font-weight: bold; color: var(--text-color); margin-right: 15px; width: 140px; flex-shrink: 0; text-align: right; display: inline-block; }
 .schedule-title { color: var(--text-color); opacity: 0.9; flex-grow: 1; }
 
 /* Toast */
