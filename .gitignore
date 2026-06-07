@@ -4,3 +4,17 @@ __pycache__/
 .venv/
 venv/
 .gemini/
+
+# Offline-only Reports
+webapp/reports.html
+webapp/all_reports.html
+webapp/reports/Generated_Ref_Report_Table.html
+webapp/reports/Generated_Ref_Report_Table.xlsx
+webapp/reports/Life_of_Shri_Ramakrishna.html
+webapp/reports/Person_Report.html
+webapp/reports/Places_Report.html
+webapp/reports/Places_Report_Full.html
+webapp/reports/Sarada_Devi.html
+webapp/reports/Shri_Ramakrishna_Math.html
+webapp/reports/Shri_Ramakrishna_Mission.html
+webapp/reports/Type_Report.html

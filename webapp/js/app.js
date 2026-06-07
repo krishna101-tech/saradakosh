@@ -115,18 +115,9 @@ function renderReportsDirectory() {
     const reportsGrid = document.getElementById('reports-directory');
     
     const reports = [
-        { file: 'reports.html', title: 'Interactive Ref Report', desc: 'Explore the generated JSON report hierarchy dynamically.' },
-        { file: 'reports/Generated_Ref_Report.html', title: 'References Report (List)', desc: 'A hierarchical view of references, nested by category.' },
-        { file: 'reports/Generated_Ref_Report_Table.html', title: 'References Report (Table)', desc: 'A flattened tabular view of all references sorted alphabetically.' },
-        { file: 'reports/Life_of_Shri_Ramakrishna.html', title: 'Life of Shri Ramakrishna', desc: 'Static HTML report.' },
-        { file: 'reports/Sarada_Devi.html', title: 'Sarada Devi', desc: 'Static HTML report.' },
-        { file: 'reports/Vivekananda.html', title: 'Vivekananda', desc: 'Static HTML report.' },
-        { file: 'reports/Shri_Ramakrishna_Math.html', title: 'Shri Ramakrishna Math', desc: 'Static HTML report.' },
-        { file: 'reports/Shri_Ramakrishna_Mission.html', title: 'Shri Ramakrishna Mission', desc: 'Static HTML report.' },
-        { file: 'reports/Mega_Period.html', title: 'Mega Period', desc: 'Static HTML report.' },
-        { file: 'reports/Person_Report.html', title: 'Person Report', desc: 'Static HTML report.' },
-        { file: 'reports/Places_Report_Full.html', title: 'Places Report', desc: 'Static HTML report.' },
-        { file: 'reports/Type_Report.html', title: 'Type Report', desc: 'Static HTML report.' }
+        { file: 'reports/Generated_Ref_Report.html', title: 'Book References', desc: 'A hierarchical view of references, nested by category.' },
+        { file: 'reports/Vivekananda.html', title: 'Swami Vivekananda', desc: 'Static HTML report.' },
+        { file: 'reports/Mega_Period.html', title: 'Major Periods of our History', desc: 'Static HTML report.' }
     ];
     
     let html = '';
