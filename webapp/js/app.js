@@ -126,7 +126,6 @@ function renderReportsDirectory() {
         html += `
             <a href="${r.file}" ${target} class="report-card">
                 <h3>${r.title}</h3>
-                <p>${r.desc}</p>
             </a>
         `;
     });
