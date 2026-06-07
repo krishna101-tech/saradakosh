@@ -131,7 +131,7 @@ function renderReportsDirectory() {
     
     let html = '';
     reports.forEach(r => {
-        let target = r.file === 'reports.html' ? '' : 'target="_blank"';
+        let target = 'target="_blank"';
         html += `
             <a href="${r.file}" ${target} class="report-card">
                 <h3>${r.title}</h3>
