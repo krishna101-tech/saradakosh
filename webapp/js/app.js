@@ -205,7 +205,7 @@ function renderSchedule() {
         html += `
             <div class="schedule-card ${currentClass}">
                 <div class="schedule-card-content">
-                    <span class="schedule-date">${dateRange} - </span>
+                    <span class="schedule-date">${dateRange} </span>
                     <span class="schedule-title">${topic.name}</span>
                 </div>
             </div>
