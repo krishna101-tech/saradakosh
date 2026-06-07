@@ -12,8 +12,8 @@ replacement = r'''html = [
     '<!DOCTYPE html>',
     '<html><head>',
     '<meta charset="UTF-8">',
-    '<link href="../css/style.css" rel="stylesheet">',
-    '<script src="../js/theme.js"></script>',
+    '<link href="../css/style.css?v=5" rel="stylesheet">',
+    '<script src="../js/theme.js?v=5"></script>',
     '</head><body><div class="container">',
     '<div class="theme-selector" style="position: absolute; top: 10px; right: 10px;">',
     '<button class="theme-btn active" data-set-theme="system">System</button>',
@@ -30,7 +30,7 @@ for f in files:
         
         # Replace the HTML block
         new_content = re.sub(
-            r"html(_[a-z]+)?\s*=\s*\[\s*'<!DOCTYPE html>',\s*'<html><head>',\s*'<meta charset=\"UTF-8\">',\s*'<link href=\"../css/style\.css\?v=\d+\" rel=\"stylesheet\">',\s*'</head><body><div class=\"container\">'\s*\]",
+            r"html(_[a-z]+)?\s*=\s*\[\s*'<!DOCTYPE html>',\s*'<html><head>',\s*'<meta charset=\"UTF-8\">',\s*'<link href=\"../css/style\.css\?v=\d+\" rel=\"stylesheet\">',\s*'<script src=\"../js/theme\.js(\?v=\d+)?\"></script>',\s*'</head><body><div class=\"container\">',\s*'<div class=\"theme-selector\" style=\"position: absolute; top: 10px; right: 10px;\">',\s*'<button class=\"theme-btn( active)?\" data-set-theme=\"system\">System</button>',\s*'<button class=\"theme-btn( active)?\" data-set-theme=\"light\">Light</button>',\s*'<button class=\"theme-btn( active)?\" data-set-theme=\"dark\">Dark</button>',\s*'</div>'\s*\]",
             replacement, content, flags=re.DOTALL
         )
         

@@ -1,21 +1,44 @@
 // Theme Switching Logic
+// Theme Switching Logic
+// Safe localStorage wrappers
+function getSavedTheme() {
+    try {
+        return localStorage.getItem('saradakosh-theme');
+    } catch (e) {
+        return null;
+    }
+}
+
+function setSavedTheme(theme) {
+    try {
+        localStorage.setItem('saradakosh-theme', theme);
+    } catch (e) {
+        console.warn('localStorage is not available');
+    }
+}
+
 function initTheme() {
-    const savedTheme = localStorage.getItem('saradakosh-theme') || 'system';
+    const savedTheme = getSavedTheme() || 'system';
     applyTheme(savedTheme);
-    
-    document.querySelectorAll('.theme-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            const theme = e.target.getAttribute('data-set-theme');
-            localStorage.setItem('saradakosh-theme', theme);
-            applyTheme(theme);
-        });
-    });
 
     // Listen for system theme changes
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-        if (localStorage.getItem('saradakosh-theme') === 'system') {
+        if (getSavedTheme() === 'system' || !getSavedTheme()) {
             applyTheme('system');
         }
+    });
+    
+    // Bind buttons after DOM loads
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.theme-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const theme = e.target.getAttribute('data-set-theme');
+                setSavedTheme(theme);
+                applyTheme(theme);
+            });
+        });
+        // Update active button state initially
+        updateActiveButton(savedTheme);
     });
 }
 
@@ -33,7 +56,10 @@ function applyTheme(theme) {
         document.documentElement.removeAttribute('data-theme');
     }
     
-    // Update active button
+    updateActiveButton(theme);
+}
+
+function updateActiveButton(theme) {
     document.querySelectorAll('.theme-btn').forEach(btn => {
         if(btn.getAttribute('data-set-theme') === theme) {
             btn.classList.add('active');
