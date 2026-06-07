@@ -1,5 +1,7 @@
 let events = [];
 let hierarchyData = {}; 
+let clipboardTextWithLinks = '';
+let clipboardTextWithoutLinks = '';
 
 async function initApp() {
     const res = await fetch('data/events.json');
@@ -9,6 +11,7 @@ async function initApp() {
     renderTodayInHistory();
     setupSearch();
     renderReportsDirectory();
+    renderSchedule();
 }
 
 function buildHierarchyMap() {
@@ -134,5 +137,156 @@ function renderReportsDirectory() {
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
+
+function formatDateRange(start, end) {
+    const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const startDay = start.getDate();
+    const startMonth = monthNames[start.getMonth()];
+    const endDay = end.getDate();
+    const endMonth = monthNames[end.getMonth()];
+
+    if (startMonth === endMonth) {
+        return `${startDay} - ${endDay} ${startMonth}`;
+    } else {
+        return `${startDay} ${startMonth} - ${endDay} ${endMonth}`;
+    }
+}
+
+function renderSchedule() {
+    if (typeof scheduleConfig === 'undefined' || !scheduleConfig.startDate) {
+        document.getElementById('schedule-container').innerHTML = '<p style="color:#888;">Schedule data not configured.</p>';
+        return;
+    }
+    
+    const container = document.getElementById('schedule-container');
+    const meetBtn = document.getElementById('google-meet-link-btn');
+    if(meetBtn) meetBtn.href = scheduleConfig.googleMeetLink || '#';
+
+    const initialStartDate = new Date(scheduleConfig.startDate + 'T00:00:00');
+    const effectiveDate = new Date();
+    
+    // Adjust to Monday
+    if (effectiveDate.getDay() === 6) { // Saturday
+        effectiveDate.setDate(effectiveDate.getDate() + 2);
+    } else if (effectiveDate.getDay() === 0) { // Sunday
+        effectiveDate.setDate(effectiveDate.getDate() + 1);
+    }
+    effectiveDate.setHours(0, 0, 0, 0);
+
+    const diffTime = effectiveDate.getTime() - initialStartDate.getTime();
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    const weeksPassed = diffDays >= 0 ? Math.floor(diffDays / 7) : 0;
+    
+    const topics = scheduleConfig.topics;
+    if (!topics || topics.length === 0) return;
+    
+    const currentTopicIndex = weeksPassed % topics.length;
+    const displayTopics = [...topics.slice(currentTopicIndex), ...topics.slice(0, currentTopicIndex)];
+    
+    const currentWeeksMonday = new Date(effectiveDate);
+    currentWeeksMonday.setDate(effectiveDate.getDate() - (effectiveDate.getDay() === 0 ? 6 : effectiveDate.getDay() - 1));
+
+    let html = '';
+    const baseText = `*Morning Classes*\nMon to Fri @7.45 am\n\n*Google meet*\n${scheduleConfig.googleMeetLink || ''}\n\n`;
+    let tempClipboardWithLinks = baseText;
+    let tempClipboardWithoutLinks = baseText;
+
+    for (let i = 0; i < displayTopics.length; i++) {
+        const topic = displayTopics[i];
+        const weekStartDate = new Date(currentWeeksMonday);
+        weekStartDate.setDate(weekStartDate.getDate() + i * 7);
+        const weekEndDate = new Date(weekStartDate);
+        weekEndDate.setDate(weekStartDate.getDate() + 4);
+        const dateRange = formatDateRange(weekStartDate, weekEndDate);
+        
+        const isCurrentWeek = i === 0;
+        const currentClass = isCurrentWeek ? 'current' : '';
+        
+        html += `
+            <div class="schedule-card ${currentClass}">
+                <div class="schedule-card-content">
+                    <span class="schedule-date">${dateRange} - </span>
+                    <span class="schedule-title">${topic.name}</span>
+                </div>
+                ${topic.link ? `<a href="${topic.link}" target="_blank" rel="noopener noreferrer" class="btn btn-danger">Playlist</a>` : ''}
+            </div>
+        `;
+        
+        tempClipboardWithLinks += `*${dateRange}* ${topic.name} ${topic.link ? topic.link : ''}\n\n`;
+        tempClipboardWithoutLinks += `*${dateRange}* ${topic.name}\n\n`;
+    }
+
+    container.innerHTML = html;
+    clipboardTextWithLinks = tempClipboardWithLinks.trim();
+    clipboardTextWithoutLinks = tempClipboardWithoutLinks.trim();
+
+    setupCopyButton();
+}
+
+function showToast(message) {
+    let toast = document.getElementById('toast');
+    if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'toast';
+        toast.className = 'toast';
+        document.body.appendChild(toast);
+    }
+    toast.textContent = message;
+    toast.classList.add('show');
+    setTimeout(() => { toast.classList.remove('show'); }, 2500);
+}
+
+function setupCopyButton() {
+    const copyButton = document.getElementById('copy-button');
+    if (!copyButton) return;
+    
+    let clickTimeout = null;
+    
+    const copyToClipboard = (withLinks) => {
+        const text = withLinks ? clipboardTextWithLinks : clipboardTextWithoutLinks;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(() => {
+                showToast(`Schedule ${withLinks ? 'with links' : 'without links'} copied!`);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+                fallbackCopyTextToClipboard(text, withLinks);
+            });
+        } else {
+            fallbackCopyTextToClipboard(text, withLinks);
+        }
+    };
+
+    const fallbackCopyTextToClipboard = (text, withLinks) => {
+        let helper = document.getElementById('clipboard-helper');
+        if(!helper) {
+            helper = document.createElement('textarea');
+            helper.id = 'clipboard-helper';
+            helper.style.position = 'absolute';
+            helper.style.left = '-9999px';
+            document.body.appendChild(helper);
+        }
+        helper.value = text;
+        helper.select();
+        try {
+            document.execCommand('copy');
+            showToast(`Schedule ${withLinks ? 'with links' : 'without links'} copied!`);
+        } catch (err) {
+            console.error('Fallback: Oops, unable to copy', err);
+            showToast("Failed to copy.");
+        }
+    };
+
+    copyButton.addEventListener('click', () => {
+        clearTimeout(clickTimeout);
+        clickTimeout = setTimeout(() => {
+            copyToClipboard(false);
+        }, 200);
+    });
+
+    copyButton.addEventListener('dblclick', () => {
+        clearTimeout(clickTimeout);
+        copyToClipboard(true);
+    });
+}
 
 

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning Class</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .modal-backdrop {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 40;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            overflow-y: auto;
+        }
+        .modal {
+            max-width: 600px;
+            width: 100%;
+        }
+        .toast {
+            visibility: hidden;
+            min-width: 250px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            padding: 16px;
+            position: fixed;
+            z-index: 100;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 30px;
+            opacity: 0;
+            transition: visibility 0s 0.5s, opacity 0.5s linear;
+        }
+        .toast.show {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0.5s linear;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800">
+
+    <div class="container mx-auto p-4 md:p-6 max-w-4xl">
+        <header class="text-center mb-6">
+            <h1 class="text-2xl md:text-3xl font-bold text-slate-900">SriSri Ma Class Schedule</h1>
+            <div id="header-byline" class="mt-2 text-slate-600 flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4">
+                <span class="mb-2 sm:mb-0">Morning class: Mon-Fri @7.45 am</span>
+                <div id="header-buttons" class="flex gap-2">
+                    <a id="google-meet-link-btn" href="#" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-sm transition-transform transform hover:scale-105 text-sm">
+                        Google Meet
+                    </a>
+                    <button id="copy-button" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-lg shadow-sm transition-transform transform hover:scale-105 text-sm">
+                        Copy for WhatsApp
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div id="loader" class="text-center py-10">
+            <p>Loading your schedule from Google Sheets...</p>
+        </div>
+
+        <main id="app-content" class="hidden">
+            <div id="schedule-container" class="space-y-2 mb-6">
+                <!-- Schedule items will be dynamically inserted here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Setup/Update Modal -->
+    <div id="setup-modal" class="modal-backdrop">
+        <div class="modal bg-white p-6 md:p-8 rounded-xl shadow-2xl">
+            <h2 id="modal-title" class="text-2xl font-bold mb-4">Setup Schedule</h2>
+            <p id="modal-description" class="text-slate-600 mb-6">Provide the initial details for your schedule. The topic list is now loaded automatically from your Google Sheet.</p>
+            
+            <div class="space-y-6">
+                 <div>
+                    <label for="google-meet-input" class="block text-sm font-medium text-slate-700 mb-2">1. Google Meet Link</label>
+                    <input type="url" id="google-meet-input" placeholder="https://meet.google.com/..." class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500">
+                </div>
+                <div>
+                    <label for="start-date-input" class="block text-sm font-medium text-slate-700 mb-2">2. Start Date for First Topic</label>
+                    <input type="date" id="start-date-input" class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500">
+                    <p class="text-xs text-slate-500 mt-1">Select the Monday for the very first class in your Google Sheet sequence.</p>
+                </div>
+            </div>
+
+            <div class="mt-8 flex justify-end gap-3">
+                 <button id="cancel-button" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold py-2 px-4 rounded-lg transition">Cancel</button>
+                <button id="save-button" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-lg transition">Save Settings</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert Modal for Validation -->
+    <div id="alert-modal" class="modal-backdrop">
+        <div class="modal bg-white p-6 rounded-xl shadow-2xl text-center" style="max-width: 400px;">
+            <h2 class="text-xl font-bold mb-4 text-yellow-600">Input Required</h2>
+            <p id="alert-message" class="text-slate-600 mb-6">Message goes here.</p>
+            <button id="alert-ok-button" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-2 px-5 rounded-lg">OK</button>
+        </div>
+    </div>
+
+    <!-- Hidden textarea for clipboard operations -->
+    <textarea id="clipboard-helper" style="position: absolute; left: -9999px;"></textarea>
+    <div id="toast" class="toast"></div>
+
+    <script type="module">
+        // --- Firebase Imports ---
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+        
+        // --- App Configuration ---
+        const SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTf9NQNnH7EQodlRZalA0JEaPy91ahzvsAQO1ByUer8m8SbprkopNYucNvJzzLlPjuenXvpexZg7k1B/pub?output=csv';
+
+        // --- App State ---
+        let db, auth, userId, settingsDocRef;
+        let scheduleConfig = { topics: [], startDate: null, googleMeetLink: '' };
+        let clipboardTextWithLinks = '';
+        let clipboardTextWithoutLinks = '';
+
+        // --- DOM Elements ---
+        const loader = document.getElementById('loader');
+        const appContent = document.getElementById('app-content');
+        const scheduleContainer = document.getElementById('schedule-container');
+        const googleMeetLinkBtn = document.getElementById('google-meet-link-btn');
+        const modal = document.getElementById('setup-modal');
+        const cancelButton = document.getElementById('cancel-button');
+        const saveButton = document.getElementById('save-button');
+        const startDateInput = document.getElementById('start-date-input');
+        const googleMeetInput = document.getElementById('google-meet-input');
+        const alertModal = document.getElementById('alert-modal');
+        const alertMessage = document.getElementById('alert-message');
+        const alertOkButton = document.getElementById('alert-ok-button');
+        
+        // --- Firebase Configuration ---
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'srisri-ma-schedule';
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : { apiKey: "DEMO", authDomain: "DEMO", projectId: "DEMO" };
+
+        const app = initializeApp(firebaseConfig);
+        db = getFirestore(app);
+        auth = getAuth(app);
+
+        // --- Core Application Logic ---
+
+        /**
+         * Fetches and parses the class schedule from the published Google Sheet CSV.
+         * @returns {Promise<Array<{name: string, link: string}>>} A promise that resolves to an array of topic objects.
+         */
+        async function fetchAndParseTopics() {
+            try {
+                const response = await fetch(SHEET_URL);
+                if (!response.ok) {
+                    throw new Error(`Network response was not ok: ${response.statusText}`);
+                }
+                const csvText = await response.text();
+                return csvText.split('\n').map(row => row.trim()).filter(row => row).map(row => {
+                    const columns = row.split(',').map(col => col.trim());
+                    // Remove surrounding quotes if they exist
+                    const name = columns[0] ? columns[0].replace(/^"|"$/g, '') : '';
+                    const link = columns[1] ? columns[1].replace(/^"|"$/g, '') : '';
+                    return { name, link };
+                });
+            } catch (error) {
+                console.error("Failed to fetch or parse Google Sheet:", error);
+                showAlert("Could not load the schedule from Google Sheets. Please check the link and your internet connection.");
+                return [];
+            }
+        }
+
+        async function main() {
+            onAuthStateChanged(auth, async (user) => {
+                if (user) {
+                    userId = user.uid;
+                    settingsDocRef = doc(db, `artifacts/${appId}/public/data/schedule/settings`);
+                    await loadSchedule();
+                } else {
+                    loader.innerText = "Authentication failed. Please refresh.";
+                }
+            });
+
+            try {
+                const token = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+                if (token) {
+                    await signInWithCustomToken(auth, token);
+                } else {
+                    await signInAnonymously(auth);
+                }
+            } catch (error) {
+                console.error("Error during sign-in process:", error);
+                loader.innerText = "Failed to authenticate. Please try again later.";
+            }
+        }
+
+        async function loadSchedule() {
+            const topicsPromise = fetchAndParseTopics();
+            const settingsPromise = getDoc(settingsDocRef);
+
+            try {
+                const [topics, docSnap] = await Promise.all([topicsPromise, settingsPromise]);
+                
+                if (topics.length === 0) {
+                    loader.innerText = "Failed to load topics from Google Sheet. Cannot display schedule.";
+                    return;
+                }
+                scheduleConfig.topics = topics;
+
+                if (docSnap.exists()) {
+                    const data = docSnap.data();
+                    scheduleConfig.startDate = data.startDate;
+                    scheduleConfig.googleMeetLink = data.googleMeetLink || '#';
+                    
+                    if (scheduleConfig.startDate) {
+                        googleMeetLinkBtn.href = scheduleConfig.googleMeetLink;
+                        generateAndDisplaySchedule();
+                        appContent.classList.remove('hidden');
+                        loader.classList.add('hidden');
+                    } else {
+                        // Data exists but is incomplete
+                        openModal(false);
+                    }
+                } else {
+                    console.log("No settings found. Opening setup modal.");
+                    openModal(false);
+                }
+            } catch (error) {
+                 console.error("Error loading schedule settings:", error);
+                 loader.innerText = "Error loading schedule settings. Please refresh.";
+            }
+        }
+        
+        function generateAndDisplaySchedule() {
+            if (!scheduleConfig.topics.length || !scheduleConfig.startDate) return;
+            scheduleContainer.innerHTML = '';
+            
+            const initialStartDate = new Date(scheduleConfig.startDate + 'T00:00:00');
+            
+            const effectiveDate = new Date();
+            if (effectiveDate.getDay() === 6) { // Saturday
+                effectiveDate.setDate(effectiveDate.getDate() + 2);
+            } else if (effectiveDate.getDay() === 0) { // Sunday
+                effectiveDate.setDate(effectiveDate.getDate() + 1);
+            }
+            effectiveDate.setHours(0, 0, 0, 0);
+
+            const diffTime = effectiveDate.getTime() - initialStartDate.getTime();
+            const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+            const weeksPassed = diffDays >= 0 ? Math.floor(diffDays / 7) : 0;
+            const currentTopicIndex = weeksPassed % scheduleConfig.topics.length;
+            
+            const displayTopics = [...scheduleConfig.topics.slice(currentTopicIndex), ...scheduleConfig.topics.slice(0, currentTopicIndex)];
+            
+            const currentWeeksMonday = new Date(effectiveDate);
+            currentWeeksMonday.setDate(effectiveDate.getDate() - (effectiveDate.getDay() === 0 ? 6 : effectiveDate.getDay() - 1));
+
+            let scheduleHTML = '';
+            const baseText = `*Morning Classes*\nMon to Fri @7.45 am\n\n*Google meet*\n${scheduleConfig.googleMeetLink || ''}\n\n`;
+            let tempClipboardWithLinks = baseText;
+            let tempClipboardWithoutLinks = baseText;
+
+            for (let i = 0; i < displayTopics.length; i++) {
+                const topic = displayTopics[i];
+                const weekStartDate = new Date(currentWeeksMonday);
+                weekStartDate.setDate(weekStartDate.getDate() + i * 7);
+                const weekEndDate = new Date(weekStartDate);
+                weekEndDate.setDate(weekStartDate.getDate() + 4);
+                const dateRange = formatDateRange(weekStartDate, weekEndDate);
+                
+                const isCurrentWeek = i === 0;
+                const cardBg = isCurrentWeek ? 'bg-white' : 'bg-slate-50';
+                const shadow = isCurrentWeek ? 'shadow-lg' : 'shadow-sm';
+                const border = isCurrentWeek ? 'border-sky-500' : 'border-transparent';
+                
+                scheduleHTML += `
+                    <div class="${cardBg} ${shadow} p-3 rounded-lg border-2 ${border} transition flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                        <p class="flex-grow min-w-0 text-slate-700" title="${topic.name}">
+                            <span class="font-bold text-slate-900">${dateRange}</span> - ${topic.name}
+                        </p>
+                        ${topic.link 
+                            ? `<a href="${topic.link}" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-3 rounded-lg shadow-sm transition-transform transform hover:scale-105 text-sm text-center whitespace-nowrap self-end sm:self-auto">
+                                   Playlist
+                               </a>` 
+                            : '<div class="hidden sm:block sm:w-24 flex-shrink-0"></div>'
+                        }
+                    </div>
+                `;
+                
+                tempClipboardWithLinks += `*${dateRange}* ${topic.name} ${topic.link ? topic.link : ''}\n\n`;
+                tempClipboardWithoutLinks += `*${dateRange}* ${topic.name}\n\n`;
+            }
+
+            scheduleContainer.innerHTML = scheduleHTML;
+            clipboardTextWithLinks = tempClipboardWithLinks.trim();
+            clipboardTextWithoutLinks = tempClipboardWithoutLinks.trim();
+        }
+
+        async function handleSave() {
+            const startDateValue = startDateInput.value;
+            if (!startDateValue) { showAlert("Please select a start date."); return; }
+            
+            const selectedDate = new Date(startDateValue + 'T00:00:00');
+            if (selectedDate.getDay() !== 1) { showAlert("Please select a Monday as the start date."); return; }
+            
+            const meetLink = googleMeetInput.value.trim();
+            if (!meetLink) { showAlert("Please enter a Google Meet link."); return; }
+
+            const newSettings = { startDate: startDateValue, googleMeetLink: meetLink };
+
+            try {
+                await setDoc(settingsDocRef, newSettings);
+                scheduleConfig.startDate = newSettings.startDate;
+                scheduleConfig.googleMeetLink = newSettings.googleMeetLink;
+                googleMeetLinkBtn.href = scheduleConfig.googleMeetLink;
+                closeModal();
+                generateAndDisplaySchedule();
+                appContent.classList.remove('hidden');
+                loader.classList.add('hidden');
+            } catch (error) {
+                console.error("Error saving settings:", error);
+                showAlert("Could not save the settings. Please check your connection.");
+            }
+        }
+
+        // --- UI & Event Handlers ---
+        
+        function openModal(isUpdate = false) {
+            if (isUpdate) {
+                document.getElementById('modal-title').innerText = "Update Settings";
+                document.getElementById('modal-description').innerText = "Edit your Google Meet link or the schedule's initial start date.";
+                cancelButton.style.display = 'inline-block';
+                startDateInput.value = scheduleConfig.startDate;
+                googleMeetInput.value = scheduleConfig.googleMeetLink;
+            } else {
+                document.getElementById('modal-title').innerText = "Initial Setup";
+                document.getElementById('modal-description').innerText = "Please provide the Google Meet link and the start date for the first class in your sheet.";
+                cancelButton.style.display = 'none';
+                startDateInput.value = '';
+                googleMeetInput.value = '';
+            }
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() { modal.style.display = 'none'; }
+        
+        function showAlert(message) {
+            alertMessage.textContent = message;
+            alertModal.style.display = 'flex';
+        }
+        function closeAlert() { alertModal.style.display = 'none'; }
+
+        function copyToClipboard(withLinks = false) {
+            const helper = document.getElementById('clipboard-helper');
+            helper.value = withLinks ? clipboardTextWithLinks : clipboardTextWithoutLinks;
+            helper.select();
+            helper.setSelectionRange(0, 99999);
+            try {
+                document.execCommand('copy');
+                showToast(`Schedule ${withLinks ? 'with links' : 'without links'} copied!`);
+            } catch (err) {
+                console.error('Failed to copy text: ', err);
+                showToast("Failed to copy.");
+            }
+            window.getSelection().removeAllRanges();
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => { toast.classList.remove('show'); }, 2500);
+        }
+        
+        document.addEventListener('keydown', (event) => {
+            if ((event.ctrlKey || event.metaKey) && (event.key === 'u' || event.key === 'U')) {
+                event.preventDefault();
+                openModal(true);
+            }
+        });
+
+        // --- COPY BUTTON CLICK/DBLCLICK LOGIC ---
+        const copyButton = document.getElementById('copy-button');
+        let clickTimeout = null;
+        copyButton.addEventListener('click', () => {
+            clearTimeout(clickTimeout);
+            clickTimeout = setTimeout(() => {
+                copyToClipboard(false);
+            }, 200);
+        });
+
+        copyButton.addEventListener('dblclick', () => {
+            clearTimeout(clickTimeout);
+            copyToClipboard(true);
+        });
+        
+        saveButton.addEventListener('click', handleSave);
+        cancelButton.addEventListener('click', closeModal);
+        alertOkButton.addEventListener('click', closeAlert);
+
+        function formatDateRange(start, end) {
+            const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            const startDay = start.getDate();
+            const startMonth = monthNames[start.getMonth()];
+            const endDay = end.getDate();
+            const endMonth = monthNames[end.getMonth()];
+
+            if (startMonth === endMonth) {
+                return `${startDay} - ${endDay} ${startMonth}`;
+            } else {
+                return `${startDay} ${startMonth} - ${endDay} ${endMonth}`;
+            }
+        }
+
+        main();
+    </script>
+</body>
+</html>

@@ -237,3 +237,27 @@ tr:hover td { background: var(--primary-glow); }
 }
 .back-to-top.visible { opacity: 1; visibility: visible; }
 .back-to-top:hover { filter: brightness(1.1); transform: translateY(-5px); box-shadow: 0 6px 20px var(--primary-glow); }
+
+/* Schedule Section */
+.schedule-header { margin-top: 50px; border-bottom: 1px solid var(--glass-border); padding-bottom: 15px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 15px; background: transparent; border-bottom: none;}
+.schedule-header .section-title { margin-top: 0; border-bottom: none; padding-bottom: 0; }
+.schedule-actions { display: flex; align-items: center; gap: 15px; flex-wrap: wrap; }
+.schedule-time { opacity: 0.8; font-weight: 500; }
+.schedule-buttons { display: flex; gap: 10px; }
+
+.btn { padding: 10px 18px; border-radius: 8px; font-weight: bold; cursor: pointer; text-decoration: none; border: none; font-size: 0.9rem; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: inline-flex; align-items: center; justify-content: center; font-family: var(--font-sans); }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(0,0,0,0.2); filter: brightness(1.1); }
+.btn-primary { background: #3b82f6; color: white; } /* Blue */
+.btn-secondary { background: #10b981; color: white; } /* Emerald */
+.btn-danger { background: #ef4444; color: white; padding: 8px 15px; font-size: 0.85rem; } /* Red */
+
+.schedule-list { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; }
+.schedule-card { background: var(--glass-bg); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid var(--glass-border); padding: 15px 20px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; box-shadow: var(--glass-shadow); transition: all 0.3s; gap: 15px; flex-wrap: wrap;}
+.schedule-card.current { background: var(--glass-hover); border-color: #3b82f6; box-shadow: 0 5px 15px rgba(59, 130, 246, 0.2); }
+.schedule-card-content { flex-grow: 1; min-width: 0; }
+.schedule-date { font-weight: bold; color: var(--text-color); margin-right: 10px; }
+.schedule-title { color: var(--text-color); opacity: 0.9; }
+
+/* Toast */
+.toast { visibility: hidden; min-width: 250px; background-color: var(--text-color); color: var(--bg-color); text-align: center; border-radius: 8px; padding: 16px; position: fixed; z-index: 1000; left: 50%; transform: translateX(-50%); bottom: 30px; opacity: 0; transition: visibility 0s 0.5s, opacity 0.5s linear; font-weight: bold; box-shadow: var(--glass-shadow); }
+.toast.show { visibility: visible; opacity: 1; transition: opacity 0.5s linear; }

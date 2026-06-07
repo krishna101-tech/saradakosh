@@ -1,0 +1,154 @@
+Extracted Content:
+
+Possible Text:
+initial-scale=1,minimum-scale=1,width=device-width,interactive-widget=resizes-content,viewport-fit=cover
+
+Possible Text:
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en_US.U_kEG5wbYBM.2018.O/am=IQCExAMF_A3KwhMMgADHK8ADAAAAhA/d=1/excm=_b/ed=1/dg=0/wt=2/ujg=1/rs=AL3bBk2mmpk0yyHJ_oBpf7X_eidQcNj-pg/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=_b?wli=BardChatUi.W_mCXSikGy8.libheifWasm.O%3A%3BBardChatUi.HqDus9S8Jgk.loadWasmSipCoca.O%3A%3B
+
+Possible Text:
+Create a comic with the title: Getting started with Nano Banana Pro ð. Panel 1: A mobile interface on Gemini, rendered in a poetic watercolor-ink style with fine ink outlines and soft, bleeding washes. The interface is friendly and a hand painted with expressive brushwork taps a prominent button labeled âð Create imageâ. Above the button it should say âChoose your Modelâ then below there should be a checkbox that says âThinking with 3 Proâ  Muted greys and blues dominate the background. The button has a vivid yellow accent. â Select the Thinking with 3 Pro modelâ and tap \
+
+Possible Text:
+ to begin. Panel 2: A cheerful person is depicted adding their selfie from the phoneâs camera. The user's face is drawn with soft outlines and warm pastel colors, while the phone and UI maintain the delicate water-ink aesthetic. Visible paper grain adds to the texture. Panel 3: The person thinks about what to create. In the background, different options are visualized to show what theyâre thinking, including â them as a plushie, them with a mohawk hairstyle, and a figurine. These options are clearly rendered behind the person in the same style as the rest of the comic. Panel 4: The person is shown adding a style prompt, with a speech bubble saying âTransform me into a watercolor paintingâ. The text is integrated into the panel's watercolor-ink look, and the interaction feels natural and intuitive. Panel 5: The person is seen editing the image by simply typing into Gemini. The scene captures the ease of this interaction, with the final edited image, now in a watercolor style, appearing on the screen. The overall tone is friendly, instructional, and inspiring. It feels like a mini tutorial comic, all conveyed through the specified delicate water-ink illustration style. Make the aspect ratio 16:9.
+
+Possible Text:
+https://apps.apple.com/app/google-gemini/id6477489729?\u0026pt\u003d9008\u0026ct\u003dmweb_upsell_ios\u0026mt\u003d8
+
+Possible Text:
+https://www.gstatic.com/lamda/images/discovery/management_page_animation_beta_v2_cc2f695414e38a44ff1df.json
+
+Possible Text:
+https://one.google.com/ai/invite?utm_source\u003dgemini\u0026utm_medium\u003dweb\u0026utm_campaign\u003dinvite_friends
+
+Possible Text:
+You are a professional voice actor who adapts reading style according to the context of the text. Read the following text:
+
+Possible Text:
+https://one.google.com/ai?utm_source\u003dgemini\u0026utm_medium\u003dweb\u0026utm_campaign\u003dgemini_generic_rate_limit_upgrade
+
+Possible Text:
+en,en-gb,ko,ja,ru,de,fr,zh,zh-CN,zh-TW,es,es-419,es-MX,it,nl,pl,pt,pt-BR,pt-PT,id,th,hi,vi,tr,ar,ar-001,ar-EG,ar-SA,bn,sv,cs,hu,el,fa,ro,da,sk,fi,uk,no,bg,sr,he,hr,lt,sl,et,iw,lv,sw,te,ta,gu,kn,ml,mr,ur,en-AU,en-IN,nl-BE,es-ES,en-CA,fr-CA
+
+Possible Text:
+I see a flight confirmation email to Denver for next Tuesday. I also see a recent search for 'best hiking trails near Denver'.\\\
+
+Possible Text:
+This is a great, non-invasive example. I'll connect the trip with the hobby. I'll frame it as helping with trip planning.\\\
+
+Possible Text:
+It's great to connect! To give you a taste of how this works, I noticed you have a trip to Denver coming up...\\\
+
+Possible Text:
+Your photos are full of incredible hikes with your golden retriever. The landscapes are beautiful.\\\
+
+Possible Text:
+User's search history is full of 'sourdough starter recipes'. Their Photos library has 50+ pictures of different loaves of bread. Their chat history mentions 'my baking project'.\\\
+
+Possible Text:
+This is a clear, positive passion. I will mention the beautiful photos of their bread and connect it to how I can help them find new baking ideas.\\\
+
+Possible Text:
+This is so exciting! Now that we're connected, I can help in all new ways. For example, I couldn't help but notice you're a talented bakerâyour photos of sourdough are amazing!..\\\
+
+Possible Text:
+It looks like that website redesign project you were discussing is really kicking into high gear, especially with all the research you've been doing on design tools.\\\
+
+Possible Text:
+Source 1: Gmail has concert ticket confirmations for 'The Lumineers'. Source 2: Photos has an album titled 'Red Rocks 2022' with pictures of that same band on stage. Source 3: Chat history mentions creating a 'road trip playlist'.\\\
+
+Possible Text:
+I can connect these. The user is a clear fan who has seen this band before. The playlist could be for the upcoming concert. I'll connect their fandom to a helpful action.\\\
+
+Possible Text:
+This is a big moment! To show you what's now possible, I can see the full picture of things you care about. For instance, I know you're not just going to see The Lumineers next monthâyou're a real fan! I saw your amazing photos from their last show. Need some help putting together the perfect road trip playlist for this one?\\\
+
+Possible Text:
+Google Photos has a huge album labeled 'Garden 2024' with tons of pictures of tomato plants. User has searched for 'how to prevent tomato blight'.\\\
+
+Possible Text:
+https://gemini.google.com/app/download/mobile?android-min-version\u003d301356232\u0026ios-min-version\u003d322.0\u0026is_sa\u003d1\u0026campaign_id\u003dmweb_upsell_android\u0026utm_source\u003dmweb_upsell\u0026utm_medium\u003dproduct_promo\u0026utm_campaign\u003dmweb_upsell_android\u0026pt\u003d9008\u0026mt\u003d8\u0026ct\u003dp-growth-product-mweb-upsell
+
+Possible Text:
+https://gemini.google.com/app/download/mobile?android-min-version\u003d301356232\u0026ios-min-version\u003d322.0\u0026is_sa\u003d1\u0026campaign_id\u003dmweb_upsell_android\u0026utm_source\u003dmweb_upsell\u0026utm_medium\u003dproduct_promo\u0026utm_campaign\u003dmweb_upsell_android\u0026pt\u003d9008\u0026mt\u003d8\u0026ct\u003dp-growth-product-mweb-upsell
+
+Possible Text:
+RESEARCH_TRAVELââRESEARCH_LIFESTYLEââRESEARCH_GROWTHââRESEARCH_SHOPPINGââRESEARCH_LEARNINGââRESEARCH_EVENTSââRESEARCH_LOCALââRESEARCH_HEALTHââRESEARCH_FINANCEââRESEARCH_MARKETââRESEARCH_BUSINESSââRESEARCH_SCIENCE_TECHNOLOGYâ
+
+Possible Text:
+https://one.google.com/explore-plan/ai-premium-student?utm_source\u003dgemini\u0026utm_medium\u003dweb\u0026utm_campaign\u003dgemini_students_banner
+
+Possible Text:
+WRITE_EMAILâDraft and refine an email with CanvasâWRITE_STORYâGo from first draft to full-length story with CanvasâWRITE_REVIEWâGet help writing a review on this with CanvasâWRITE_SPEECHâDraft, refine, and get suggestions on a speech with CanvasâWRITE_ESSAYâDraft, refine, and get suggestions on an essay with CanvasâWRITE_OUTLINEâDraft, refine, and get suggestions on an outline with CanvasâWRITE_FEEDBACKâGet feedback and suggestions on your writing with CanvasâWRITE_REPORTâDraft, refine, and get suggestions on a report with CanvasâWRITE_LESSON_PLANâDraft and refine a custom lesson plan for this with CanvasâWRITE_COVER_LETTERâDraft, refine, and customize your cover letter with CanvasâWRITE_RESUMEâDraft, refine, and get feedback on your resume with CanvasâWRITE_SCRIPTâDraft and refine a script alongside Gemini with CanvasâWRITE_POEMâDraft and refine a poem alongside Gemini with CanvasâWRITE_PLANâHave Gemini propose a plan and refine it with CanvasâWRITE_PRESENTATIONâCreate and refine a presentation with CanvasâWRITE_CODEâGenerate code to prototype this with Canvas
+
+Possible Text:
+* The new questions should focus on topics that the user answered incorrectly or skipped in the last set of questions.
+
+Possible Text:
+https://gemini.google.com/app/download/mobile?android-min-version\u003d301356232\u0026ios-min-version\u003d322.0\u0026is_sa\u003d1\u0026campaign_id\u003dmweb_upsell_android\u0026utm_source\u003dmweb_upsell\u0026utm_medium\u003dproduct_promo\u0026utm_campaign\u003dmweb_upsell_android\u0026pt\u003d9008\u0026mt\u003d8\u0026ct\u003dp-growth-product-mweb-upsell
+
+Possible Text:
+https://apps.apple.com/app/google-gemini/id6477489729?\u0026pt\u003d9008\u0026ct\u003dmweb_marketing_lp\u0026mt\u003d8
+
+Possible Text:
+https://apps.apple.com/app/google-gemini/id6477489729?\u0026pt\u003d9008\u0026ct\u003dmweb_upsell_ios\u0026mt\u003d8
+
+Possible Text:
+https://support.google.com/gemini/answer/13594961#signed_out\u0026zippy\u003d%2Chow-does-google-handle-my-data-when-i-use-gemini-apps-while-signed-out
+
+Possible Text:
+https://www.gstatic.com/lamda/images/app_upsell/App_Store_Badge_US-UK_RGB_blk_092917_80272c92e9019a2eb8b45.svg
+
+Possible Text:
+en,ja,ko,zh,id,th,hi,bn,vi,ar,sw,es,he,iw,mr,gu,kn,ml,ta,te,ur,ru,de,fr,it,nl,pl,pt,sv,sr,tr,uk,cs,hu,ro,da,sk,no,bg,hr,lt,et,lv,pa
+
+Possible Text:
+https://apps.apple.com/app/google-gemini/id6477489729?\u0026pt\u003d9008\u0026ct\u003dmweb_upsell_ios\u0026mt\u003d8
+
+Possible Text:
+https://ai.google.dev/?utm_source\u003dwebsite\u0026utm_medium\u003dreferral\u0026utm_campaign\u003dgeminichat\u0026utm_content\u003d
+
+Possible Text:
+CAMS0wUd1wKFz5gQBMaXBgOvJgO1nwYExAYDotwFA+L8BQOwSgK2/7USAqb3BgPmjgUDDwPoTQPysQYDAAMAA5hmA4Wf3gYC8fEFAz4D2iEWBBbRdgG79gYC374FA8fYAukaAuI8AsCsAgKAlgYC6A4Cne4GA5uaBgL9uAUDy0MDnIoFAoqkBqUhArsYA78OAksDkh0Csv0G4m0CHQKBBA7LAgKGFgKJyQUDhQaqXQK8A/EElVoC/50F4QSNag/cNRTXOQKgDAqUdwKCPgXxhwUC/TAC5DYCwBsD/r4GAsWtBgKcqwUCzxECuJ4GAvxZAvk9BNqYBQWfOAGKIgPeVQDiiwUCupCABgP0OQKclKwFAtOMBQK7KgS1AwKTjgaz9wUJ5PsFhTrUFwPuCAPQWha09AUE5w8EFQSyDL8QAouEBvENAqsxBI8NBOegBgOLbAWVBgWyDQL8XwSGaQKWRCz5DwD2CgWgWwOqAQOdBAIktiUEoSUDkjwF5DUE61ADkR8ChgONA4QSA+BaDN0KBJIjApAaBbIEBLorjAwDlmcC5AgCu0cCqimNHQLVaQDKJQVYB/MKBdoKAoAfBJ8PAtoOAHYDtBIF/xEAsQUE0BIE1gEAeQTIAOEGuC39BgTXKgWyBgSLAQKzAQX4UQLsAgPoCAHkGgLyCgD3CwHrDALNDQIFAgwCBQIFAvsmAMoEBNApBe8CAp16DYNKArkyALcCBPMFAJUJANYxBOoQAoIMAoIDA/ovBKIkBagNggWpBgPGFwPwAwPCEg37CAOJDwLABAPvAAA9AJoFBK0dBJkJBMAEAggChxsErCEAqD8D1CMDqgoErBYA/YIGAesppxMEhwYEpRAA2guWCgSvFgMKAwoDCqceA5YCA+0p9hUCoAQEmgMD9zIE/CUD8BYK2A0DqjEDAAPFLAScGbIklBQCmA0rBgahDATJTwS8CwSZCAC5UATSdAM\u003d
+
+Possible Text:
+https://www.gstatic.com/og/_/js/k=og.qtm.en_US.ZLaHKj9kxQw.es5.O/rt=j/m=qabr,q_dnp,qcwid,qapid,qads/exm=qaaw,qadd,qaid,qein,qhaw,qhba,qhbr,qhch,qhga,qhid,qhin/d=1/ed=1/rs=AA2YrTv1Bw5kU62jnygy6zAQZy6no2PT7g
+
+Possible Text:
+https://www.gstatic.com/og/_/ss/k=og.qtm.B0sK_xx1WR4.L.X.O/m=qcwid,d_b_gm3,d_wi_gm3,d_lo_gm3/excm=qaaw,qadd,qaid,qein,qhaw,qhba,qhbr,qhch,qhga,qhid,qhin/d=1/ed=1/ct=zgms/rs=AA2YrTswmcOeqeP8-rf6x9gH0vnJrEem5A
+
+Possible Text:
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en_US.U_kEG5wbYBM.2018.O/ck=boq-bard-web.BardChatUi.w9-lGj5bIaI.L.X.O/am=IQCExAMF_A3KwhMMgADHK8ADAAAAhA/d=1/exm=_b/excm=_b/ed=1/wt=2/ujg=1/rs=AL3bBk0KCycFCF0k-jS7Avw8QkMJkmOj4g/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=LQaXg?wli=BardChatUi.W_mCXSikGy8.libheifWasm.O%3A%3BBardChatUi.HqDus9S8Jgk.loadWasmSipCoca.O%3A%3B
+
+Possible Text:
+theme-host light-theme dark-theme zero-state-theme google-sans-context variable-context chrome-context-v39 enable-lm-spacing-tokens enable-lm-mobile-tokens enable-lm-locale-line-height enable-lm-non-latin-bold-weight lm-component-theme sidenav-mavatar-migration-enabled
+
+Possible Text:
+https://accounts.google.com/ServiceLogin?passive=1209600&amp;continue=https://gemini.google.com/share/ef669af6299e&amp;followup=https://gemini.google.com/share/ef669af6299e&amp;ec=GAZAkgU
+
+Possible Text:
+https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en_US.U_kEG5wbYBM.2018.O/am=IQCExAMF_A3KwhMMgADHK8ADAAAAhA/d=1/excm=_b/ed=1/dg=0/wt=2/ujg=1/rs=AL3bBk2mmpk0yyHJ_oBpf7X_eidQcNj-pg/ee=DGWCxb:CgYiQ;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dowIGb:ebZ3mb;wNp4Gc:k56rsf/dti=1/m=_b?wli=BardChatUi.W_mCXSikGy8.libheifWasm.O%3A%3BBardChatUi.HqDus9S8Jgk.loadWasmSipCoca.O%3A%3B
+
+
+Code blocks found:
+--- Block 0 ---
+boqOnegoogleliteOgbOneGoogleBar
+
+--- Block 1 ---
+gb_Ma gb_Jd gb_Eb gb_e gb_8a
+
+--- Block 2 ---
+gb_7d gb_Bb gb_Xd
+
+--- Block 3 ---
+gb_Id
+
+--- Block 4 ---
+gb_od
+
+--- Block 5 ---
+gb_0a gb_2d gb_Td gb_Kd
+
+--- Block 6 ---
+gb_he
+

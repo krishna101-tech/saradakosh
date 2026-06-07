@@ -12,4 +12,5 @@ python restore_modern_colors.py
 python final_fix.py
 python add_back_to_top.py
 python hide_seq.py
+python generate_schedule_data.py
 echo All reports rebuilt successfully!
