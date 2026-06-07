@@ -14,14 +14,35 @@ html = [
     '<!DOCTYPE html>',
     '<html><head>',
     '<meta charset="UTF-8">',
-    '<link href="../css/style.css?v=6" rel="stylesheet">',
+    '<link href="../css/style_main.css?v=14" rel="stylesheet">',
     '<script src="../js/theme.js?v=6"></script>',
     '</head><body><div class="container">',
     '<div class="theme-selector" style="position: absolute; top: 10px; right: 10px;">',
     '<button class="theme-btn active" data-set-theme="system">System</button>',
     '<button class="theme-btn" data-set-theme="light">Light</button>',
     '<button class="theme-btn" data-set-theme="dark">Dark</button>',
-    '</div>'
+    '</div>',
+    '<div class="level-toggles">',
+    '    <span style="font-weight:bold; margin-right: 15px; color: var(--text-color); font-size: 15px;">Levels:</span>',
+    '    <div class="toggle-btn" onclick="setLevel(1)">1</div>',
+    '    <div class="toggle-btn active" onclick="setLevel(2)">2</div>',
+    '</div>',
+    '<script>',
+    'function setLevel(level) {',
+    '    var btns = document.querySelectorAll(".toggle-btn");',
+    '    if(btns.length >= 2) {',
+    '        btns[0].classList.toggle("active", level === 1);',
+    '        btns[1].classList.toggle("active", level === 2);',
+    '    }',
+    '    document.querySelectorAll(".level2").forEach(function(el) {',
+    '        el.style.display = level >= 2 ? "block" : "none";',
+    '    });',
+    '    document.querySelectorAll(".level1").forEach(function(el) {',
+    '        if (level >= 2) el.classList.remove("collapsed");',
+    '        else el.classList.add("collapsed");',
+    '    });',
+    '}',
+    '</script>'
 ]
 
 global_idx = 1
@@ -35,15 +56,14 @@ for _, cat_row in mpcat_items.iterrows():
     item_ids = paramM[paramM['ChildID'] == cat_id]['ParentID'].tolist()
     
     if len(item_ids) > 0:
-        html.append(f'<div class="cat-title">{cat_name}</div>')
+        html.append(f'<div class="level1 cat-title">{cat_name}</div>')
         
         items = param1[param1['ParaID'].isin(item_ids)].sort_values('Sequence')
         for _, item_row in items.iterrows():
             item_name = item_row['Para1']
-            html.append('<div class="item-container"><div class="item-row">')
+            html.append('<div class="level2 item-container" style="cursor: pointer;">')
             html.append(f'<div class="item-text">{global_idx}&nbsp;&nbsp;&nbsp;{item_name}</div>')
-            html.append('<div class="item-link">CW SV</div>')
-            html.append('</div></div>')
+            html.append('</div>')
             global_idx += 1
 
 html.append('</div></body></html>')

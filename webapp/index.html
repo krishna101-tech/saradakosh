@@ -5,33 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saradakosh</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=8">
-    <script src="js/theme.js?v=5"></script>
+    <link rel="stylesheet" href="css/style_main.css?v=14">
+    <script src="js/theme.js?v=7"></script>
 </head>
 <body>
 
-<header>
+<header class="hero">
     <div class="theme-selector">
-        <button class="theme-btn active" data-set-theme="system">System</button>
-        <button class="theme-btn" data-set-theme="light">Light</button>
-        <button class="theme-btn" data-set-theme="dark">Dark</button>
+        <button class="theme-btn active" id="btn-light" data-set-theme="light">Dawn</button>
+        <button class="theme-btn" id="btn-dark" data-set-theme="dark">Midnight</button>
     </div>
-    <h1>Saradakosh</h1>
-    <h2 class="subtitle">Lives and Teachings of Sri Ramakrishna, Ma Sarada, and Swami Vivekananda</h2>
+    <div class="hero-content">
+        <h1>Saradakosh</h1>
+        <h2 class="subtitle" style="display: flex; flex-direction: column; gap: 6px; line-height: 1.4; margin-bottom: 40px;">
+            <span>The Lives, Teachings, and Legacy of Sri Ramakrishna, Sri Sarada Devi, and Swami Vivekananda</span>
+            <span style="font-size: 0.85em; opacity: 0.9;">A Historical and Spiritual Journey Through the First Century of the Ramakrishna Movement</span>
+            <span style="font-size: 0.8em; opacity: 0.7; letter-spacing: 2px;">1836–1936</span>
+        </h2>
+        
+        <div style="margin-bottom: 40px; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+            <a href="https://notebooklm.google.com/notebook/e341fff6-3ed6-483c-a6e7-733e9bdbacd4" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="background: linear-gradient(135deg, #6366f1, #8b5cf6); border: none; font-size: 1.1rem; padding: 12px 24px; box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);">
+                ✨ Ask AI
+            </a>
+            <p style="font-size: 0.9rem; color: var(--text-color); opacity: 0.9; max-width: 500px; margin: 0; line-height: 1.4; font-weight: 500;">
+                Click to chat with an interactive AI trained on the core literature of Sri Ramakrishna, Ma Sarada, and Swami Vivekananda.
+            </p>
+        </div>
+        
+        <div style="width: 100%; max-width: 600px; margin: 0 auto 20px auto; text-align: left;">
+            <div style="margin-bottom: 10px; padding-left: 20px; font-weight: 700; color: var(--primary-color); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; opacity: 0.8;">
+                Browse Local Archive
+            </div>
+            <div id="search-container" class="search-wrapper" style="margin-bottom: 0;">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="search-input" placeholder="Type a keyword, name, or date..." aria-label="Search">
+                <button id="search-button" style="display:none;">Search</button>
+            </div>
+        </div>
+    </div>
 </header>
 
 <div class="container">
     
-    <!-- Instant Search -->
-    <h2 class="section-title">Search Archive</h2>
-    <input type="text" id="search-bar" placeholder="Start typing to search the entire database instantaneously...">
-    <div id="search-results" style="display:none;"></div>
-
-    <!-- Today in History -->
-    <h2 class="section-title" id="today-title">Today in History</h2>
-    <div id="today-history">
-        <p style="color:#888;">Loading historical records...</p>
-    </div>
+    <!-- Instant Search Results (Triggered by Hero Search) -->
+    <div id="search-results" style="display:none; margin-bottom: 40px; background: var(--glass-bg); padding: 20px; border-radius: 12px; border: 1px solid var(--glass-border);"></div>
 
     <!-- Reports -->
     <h2 class="section-title">Reports & Directories</h2>
@@ -41,7 +58,7 @@
 
     <!-- Morning Class Schedule -->
     <div class="schedule-image-container" style="text-align: center; margin-top: 50px;">
-        <img src="images/morning class image.png" alt="Morning Class" style="max-width: 50%; border-radius: 12px; box-shadow: var(--glass-shadow);">
+        <img class="schedule-image" src="images/morning class image.png" alt="Morning Class">
     </div>
     <header class="schedule-header" style="margin-top: 20px;">
         <h2 class="section-title">Class Schedule</h2>
@@ -55,10 +72,35 @@
     <div class="schedule-list" id="schedule-container">
         <p style="color:#888;">Loading schedule...</p>
     </div>
+    <!-- Today in History -->
+    <div style="margin-top: 50px;">
+        <h2 class="section-title" id="today-title">Today in History</h2>
+        <div id="today-history">
+            <p style="color:#888;">Loading historical records...</p>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <h3 class="footer-title">Swami Vivekananda Quotes</h3>
+        <div class="quotes-grid">
+            <div class="quote-category">
+                <h4>On Self-Belief</h4>
+                <blockquote>"You cannot believe in God until you believe in yourself."</blockquote>
+                <blockquote>"Stand up, be bold, be strong. Take the whole responsibility on your own shoulders, and know that you are the creator of your own destiny."</blockquote>
+                <blockquote>"He is an atheist who does not believe in himself."</blockquote>
+            </div>
+            <div class="quote-category">
+                <h4>On Strength and Courage</h4>
+                <blockquote>"The greatest sin is to think that you are weak."</blockquote>
+                <blockquote>"Arise, awake, and stop not until the goal is reached."</blockquote>
+                <blockquote>"Take up one idea. Make that one idea your life..."</blockquote>
+            </div>
+        </div>
+    </footer>
 
 </div>
 
 <script src="js/schedule_data.js?v=1"></script>
-<script src="js/app.js?v=7"></script>
+<script src="js/app.js?v=9"></script>
 </body>
 </html>

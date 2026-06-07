@@ -1,60 +1,75 @@
 <!DOCTYPE html>
 <html><head>
 <meta charset="UTF-8">
-<link href="../css/style.css?v=3" rel="stylesheet">
+<link href="../css/style_main.css?v=14" rel="stylesheet">
+<script src="../js/theme.js?v=6"></script>
 </head><body><div class="container">
-<div class="cat-title">Shri Ramakrishna</div>
-<div class="item-container"><div class="item-row">
+<div class="theme-selector" style="position: absolute; top: 10px; right: 10px;">
+<button class="theme-btn active" data-set-theme="system">System</button>
+<button class="theme-btn" data-set-theme="light">Light</button>
+<button class="theme-btn" data-set-theme="dark">Dark</button>
+</div>
+<div class="level-toggles">
+    <span style="font-weight:bold; margin-right: 15px; color: var(--text-color); font-size: 15px;">Levels:</span>
+    <div class="toggle-btn" onclick="setLevel(1)">1</div>
+    <div class="toggle-btn active" onclick="setLevel(2)">2</div>
+</div>
+<script>
+function setLevel(level) {
+    var btns = document.querySelectorAll(".toggle-btn");
+    if(btns.length >= 2) {
+        btns[0].classList.toggle("active", level === 1);
+        btns[1].classList.toggle("active", level === 2);
+    }
+    document.querySelectorAll(".level2").forEach(function(el) {
+        el.style.display = level >= 2 ? "block" : "none";
+    });
+    document.querySelectorAll(".level1").forEach(function(el) {
+        if (level >= 2) el.classList.remove("collapsed");
+        else el.classList.add("collapsed");
+    });
+}
+</script>
+<div class="level1 cat-title">Shri Ramakrishna</div>
+<div class="level2 item-container" style="cursor: pointer;">
 <div class="item-text">1&nbsp;&nbsp;&nbsp;Balya Parva (1775 - 1852)</div>
-<div class="item-link">CW SV</div>
-</div></div>
-<div class="item-container"><div class="item-row">
+</div>
+<div class="level2 item-container" style="cursor: pointer;">
 <div class="item-text">2&nbsp;&nbsp;&nbsp;Sadhan Parva  (1852 - March 1872)</div>
-<div class="item-link">CW SV</div>
-</div></div>
-<div class="item-container"><div class="item-row">
+</div>
+<div class="level2 item-container" style="cursor: pointer;">
 <div class="item-text">3&nbsp;&nbsp;&nbsp;Ananda Parva  (March 1872 - Sept 1885)</div>
-<div class="item-link">CW SV</div>
-</div></div>
-<div class="cat-title">Shri Ramakrishna Math</div>
-<div class="item-container"><div class="item-row">
+</div>
+<div class="level1 cat-title">Shri Ramakrishna Math</div>
+<div class="level2 item-container" style="cursor: pointer;">
 <div class="item-text">4&nbsp;&nbsp;&nbsp;Kashipur Math  (Sept 1885 - Sept 1886)</div>
-<div class="item-link">CW SV</div>
-</div></div>
-<div class="item-container"><div class="item-row">
+</div>
+<div class="level2 item-container" style="cursor: pointer;">
 <div class="item-text">5&nbsp;&nbsp;&nbsp;Varahnagar Math  (Sept 1886 - Feb 1892)</div>
-<div class="item-link">CW SV</div>
-</div></div>
-<div class="item-container"><div class="item-row">
+</div>
+<div class="level2 item-container" style="cursor: pointer;">
 <div class="item-text">6&nbsp;&nbsp;&nbsp;Alambazar Math  (Feb 1892 - Feb 1898)</div>
-<div class="item-link">CW SV</div>
-</div></div>
-<div class="item-container"><div class="item-row">
+</div>
+<div class="level2 item-container" style="cursor: pointer;">
 <div class="item-text">7&nbsp;&nbsp;&nbsp;Belur Math  (Feb 1898 - Jan 1901)</div>
-<div class="item-link">CW SV</div>
-</div></div>
-<div class="cat-title">Shri Ramakrishna Mission</div>
-<div class="item-container"><div class="item-row">
+</div>
+<div class="level1 cat-title">Shri Ramakrishna Mission</div>
+<div class="level2 item-container" style="cursor: pointer;">
 <div class="item-text">8&nbsp;&nbsp;&nbsp;Presidency of Brahmanandaji  (Feb 1901 - April 1922)</div>
-<div class="item-link">CW SV</div>
-</div></div>
-<div class="item-container"><div class="item-row">
+</div>
+<div class="level2 item-container" style="cursor: pointer;">
 <div class="item-text">9&nbsp;&nbsp;&nbsp;Presidency of Shivanandaji  (April 1922 - Feb 1934)</div>
-<div class="item-link">CW SV</div>
-</div></div>
-<div class="item-container"><div class="item-row">
+</div>
+<div class="level2 item-container" style="cursor: pointer;">
 <div class="item-text">10&nbsp;&nbsp;&nbsp;Presidency of Akhandanandaji  (Feb 1934 - Feb 1937)</div>
-<div class="item-link">CW SV</div>
-</div></div>
-<div class="item-container"><div class="item-row">
+</div>
+<div class="level2 item-container" style="cursor: pointer;">
 <div class="item-text">11&nbsp;&nbsp;&nbsp;presidency of Vijnananandaji  (Feb 1937 - Feb 1938)</div>
-<div class="item-link">CW SV</div>
-</div></div>
-<div class="cat-title">Appendix</div>
-<div class="item-container"><div class="item-row">
+</div>
+<div class="level1 cat-title">Appendix</div>
+<div class="level2 item-container" style="cursor: pointer;">
 <div class="item-text">12&nbsp;&nbsp;&nbsp;Undated Events</div>
-<div class="item-link">CW SV</div>
-</div></div>
+</div>
 </div>
 <script>
 document.addEventListener('click', function(e) {
@@ -78,111 +93,27 @@ document.addEventListener('click', function(e) {
         return;
     }
 
-    // Handle Vivekananda report specifically
-    if (e.target.classList.contains('level3-text')) {
-        let text = e.target.innerText.trim();
+    // Handle Vivekananda report specifically AND Mega Period report
+    if (e.target.classList.contains('level3-text') || e.target.classList.contains('item-text') || e.target.closest('.item-container')) {
+        let targetEl = e.target;
+        if (e.target.closest('.item-container')) {
+            targetEl = e.target.closest('.item-container').querySelector('.item-text');
+        }
+        if (!targetEl) return;
+        
+        let text = targetEl.innerText.trim();
         // Remove leading numbers, e.g., "1 Ancestry" -> "Ancestry"
+        // For Mega Period, it also has numbers like "1   Balya Parva"
         text = text.replace(/^\d+\s*/, '');
         window.open('../viewer.html?paramName=' + encodeURIComponent(text), '_blank');
         return;
     }
 });
 // Change cursor to pointer for clickable elements
-document.querySelectorAll('.item, td, .level3-text').forEach(el => {
+document.querySelectorAll('.item, td, .level3-text, .item-container').forEach(el => {
     el.style.cursor = 'pointer';
     el.title = "Click to view events";
 });
 </script>
-
-
-<script>
-// Individual level toggling logic
-document.addEventListener('click', function(e) {
-    if (e.target.classList.contains('level1')) {
-        let el = e.target.nextElementSibling;
-        let isCollapsed = e.target.classList.toggle('collapsed');
-        while (el && !el.classList.contains('level1')) {
-            if (el.classList.contains('level2')) {
-                el.style.display = isCollapsed ? 'none' : 'block';
-            } else if (el.classList.contains('level3-container')) {
-                let prev = el.previousElementSibling;
-                let parentL2Collapsed = false;
-                while (prev && !prev.classList.contains('level1')) {
-                    if (prev.classList.contains('level2')) {
-                        parentL2Collapsed = prev.classList.contains('collapsed');
-                        break;
-                    }
-                    prev = prev.previousElementSibling;
-                }
-                
-                if (isCollapsed) {
-                    el.style.display = 'none';
-                } else {
-                    el.style.display = parentL2Collapsed ? 'none' : 'table';
-                }
-            }
-            el = el.nextElementSibling;
-        }
-    }
-    
-    if (e.target.classList.contains('level2')) {
-        let el = e.target.nextElementSibling;
-        let isCollapsed = e.target.classList.toggle('collapsed');
-        while (el && !el.classList.contains('level2') && !el.classList.contains('level1')) {
-            if (el.classList.contains('level3-container')) {
-                el.style.display = isCollapsed ? 'none' : 'table';
-            }
-            el = el.nextElementSibling;
-        }
-    }
-});
-
-// Update the master toggle to also handle the arrow states
-if (typeof setLevel === 'function') {
-    const originalSetLevel = setLevel;
-    window.setLevel = function(level) {
-        originalSetLevel(level);
-        
-        // Fix up the collapsed classes based on the master level
-        document.querySelectorAll('.level1').forEach(function(el) {
-            if (level >= 2) el.classList.remove('collapsed');
-            else el.classList.add('collapsed');
-        });
-        
-        document.querySelectorAll('.level2').forEach(function(el) {
-            if (level >= 3) el.classList.remove('collapsed');
-            else el.classList.add('collapsed');
-        });
-    };
-    // Re-trigger the initial state
-    window.setLevel(3);
-}
-</script>
-
-<button class="back-to-top" id="backToTopBtn" title="Go to top">&#8593;</button>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    var btn = document.getElementById("backToTopBtn");
-    if(!btn) return;
-    
-    window.addEventListener("scroll", function() {
-        if (window.scrollY > 300) {
-            btn.classList.add("visible");
-        } else {
-            btn.classList.remove("visible");
-        }
-    });
-    
-    btn.addEventListener("click", function() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-});
-</script>
-
-
-
-
+</body>
 </html>

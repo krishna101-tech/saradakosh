@@ -22,7 +22,7 @@ html_index = [
     '<!DOCTYPE html>',
     '<html><head>',
     '<meta charset="UTF-8">',
-    '<link href="../../css/style.css?v=3" rel="stylesheet">',
+    '<link href="../../css/style_main.css?v=14" rel="stylesheet">',
     '</head><body><div class="container">'
 ]
 html_index.append('<h1 style="color: #b01a1a; text-align: center;">Vivekananda Report</h1>')
@@ -95,7 +95,7 @@ for p4 in all_p4_items:
         '<!DOCTYPE html>',
         '<html><head>',
         '<meta charset="UTF-8">',
-        '<link href="../../css/style.css?v=3" rel="stylesheet">',
+        '<link href="../../css/style_main.css?v=14" rel="stylesheet">',
         '</head><body><div class="container">'
     ]
     html_out.append(get_nav_bar(pid, 'outline'))
@@ -144,7 +144,7 @@ for p4 in all_p4_items:
         '<!DOCTYPE html>',
         '<html><head>',
         '<meta charset="UTF-8">',
-        '<link href="../../css/style.css?v=3" rel="stylesheet">',
+        '<link href="../../css/style_main.css?v=14" rel="stylesheet">',
         '</head><body><div class="container">'
     ]
     html_det.append(get_nav_bar(pid, 'detail'))

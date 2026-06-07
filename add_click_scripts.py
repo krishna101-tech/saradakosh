@@ -25,17 +25,24 @@ document.addEventListener('click', function(e) {
         return;
     }
 
-    // Handle Vivekananda report specifically
-    if (e.target.classList.contains('level3-text')) {
-        let text = e.target.innerText.trim();
+    // Handle Vivekananda report specifically AND Mega Period report
+    if (e.target.classList.contains('level3-text') || e.target.classList.contains('item-text') || e.target.closest('.item-container')) {
+        let targetEl = e.target;
+        if (e.target.closest('.item-container')) {
+            targetEl = e.target.closest('.item-container').querySelector('.item-text');
+        }
+        if (!targetEl) return;
+        
+        let text = targetEl.innerText.trim();
         // Remove leading numbers, e.g., "1 Ancestry" -> "Ancestry"
+        // For Mega Period, it also has numbers like "1   Balya Parva"
         text = text.replace(/^\d+\s*/, '');
         window.open('../viewer.html?paramName=' + encodeURIComponent(text), '_blank');
         return;
     }
 });
 // Change cursor to pointer for clickable elements
-document.querySelectorAll('.item, td, .level3-text').forEach(el => {
+document.querySelectorAll('.item, td, .level3-text, .item-container').forEach(el => {
     el.style.cursor = 'pointer';
     el.title = "Click to view events";
 });

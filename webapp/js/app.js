@@ -83,7 +83,7 @@ function renderTodayInHistory() {
 }
 
 function setupSearch() {
-    const input = document.getElementById('search-bar');
+    const input = document.getElementById('search-input');
     const results = document.getElementById('search-results');
     
     input.addEventListener('input', (e) => {
@@ -205,8 +205,8 @@ function renderSchedule() {
         html += `
             <div class="schedule-card ${currentClass}">
                 <div class="schedule-card-content">
-                    <span class="schedule-date">${dateRange} </span>
-                    <span class="schedule-title">${topic.name}</span>
+                    <span class="schedule-date">${dateRange}</span>
+                    <a href="${topic.link ? topic.link : '#'}" target="_blank" rel="noopener noreferrer" class="schedule-title">${topic.name}</a>
                 </div>
             </div>
         `;

@@ -50,7 +50,7 @@ for _, p1_row in period1_items.iterrows():
     '<!DOCTYPE html>',
     '<html><head>',
     '<meta charset="UTF-8">',
-    '<link href="../css/style.css?v=6" rel="stylesheet">',
+    '<link href="../css/style_main.css?v=14" rel="stylesheet">',
     '<script src="../js/theme.js?v=6"></script>',
     '</head><body><div class="container">',
     '<div class="theme-selector" style="position: absolute; top: 10px; right: 10px;">',
