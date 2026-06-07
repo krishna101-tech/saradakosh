@@ -208,7 +208,6 @@ function renderSchedule() {
                     <span class="schedule-date">${dateRange} - </span>
                     <span class="schedule-title">${topic.name}</span>
                 </div>
-                ${topic.link ? `<a href="${topic.link}" target="_blank" rel="noopener noreferrer" class="btn btn-danger">Playlist</a>` : ''}
             </div>
         `;
         
