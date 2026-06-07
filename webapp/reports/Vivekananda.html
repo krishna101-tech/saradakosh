@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8">
+<link href="../css/style.css?v=3" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+body { 
+    font-family: 'Inter', "Segoe UI", sans-serif; 
+    font-size: 15px; 
+    background-color: #f4f5f7; 
+    color: #333; 
+    margin: 40px auto; 
+    max-width: 1000px; 
+    padding: 40px 60px; 
+    background: white; 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05); 
+    border-radius: 12px;
+}
+h1 { color: #2c3e50; font-weight: 700; font-size: 2.2rem; margin-top: 0; margin-bottom: 30px; border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; }
+
+/* Modern Level 1 & 2 colors WITH collapse pointer */
+.level1 { color: #d35400; font-weight: 700; font-size: 1.25rem; margin-top: 35px; margin-bottom: 12px; border-bottom: 1px solid #f2e3d5; padding-bottom: 5px; cursor: pointer; user-select: none; }
+.level2 { color: #2980b9; font-weight: 600; font-size: 1.05rem; margin-left: 20px; margin-top: 15px; margin-bottom: 8px; border-left: 3px solid #3498db; padding-left: 12px; cursor: pointer; user-select: none; }
+
+.level1::before, .level2::before { content: '▼ '; font-size: 0.75em; display: inline-block; transition: transform 0.2s; color: #aaa; margin-right: 6px; }
+.level1.collapsed::before, .level2.collapsed::before { transform: rotate(-90deg); }
+
+.level3-container { margin-left: 50px; display: table; width: 100%; max-width: 800px; border-bottom: 1px solid #f8f9fa; transition: background 0.2s; }
+.level3-container:hover { background-color: #fafbfc; }
+.level3-row { display: table-row; }
+.level3-text { display: table-cell; color: #444; padding: 10px 5px; font-size: 0.95rem; }
+.level3-seq { display: none; color: #95a5a6; font-size: 0.85rem; text-align: right; padding: 10px 10px; font-variant-numeric: tabular-nums; }
+.level3-remark { display: table-cell; color: #7f8c8d; font-size: 0.85rem; text-align: right; padding: 10px 10px; }
+
+/* Styles for List Reports */
+.header { background-color: #d35400; padding: 12px 15px; text-align: center; font-weight: 700; color: white; margin-bottom: 15px; border-radius: 6px; width: 400px; font-size: 1.1rem; }
+.item { margin-bottom: 8px; padding: 10px 20px; width: 370px; background: #fff; border: 1px solid #eee; border-radius: 6px; transition: all 0.2s; color: #2c3e50; font-weight: 500; }
+.item:hover { background: #fffaf5; border-color: #f2e3d5; transform: translateX(5px); box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
+
+/* Styles for Table Reports */
+table { border-collapse: separate; border-spacing: 0; width: 100%; margin-top: 20px; font-size: 0.95rem; border: 1px solid #eee; border-radius: 8px; overflow: hidden; }
+th { background-color: #f8f9fa; color: #2c3e50; font-weight: 600; text-align: left; padding: 15px; border-bottom: 1px solid #ddd; }
+td { padding: 12px 15px; border-bottom: 1px solid #eee; color: #444; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background-color: #fafbfc; }
+
+/* Back link */
+.back-link { display: inline-block; margin-bottom: 20px; text-decoration: none; color: #7f8c8d; font-weight: 600; transition: 0.2s; }
+.back-link:hover { color: #d35400; }
+</style>
+</head><body><div class="container">
+<h1>Vivekananda</h1>
+
+<style>
+.level-toggles { margin-top: 15px; margin-bottom: 25px; display: flex; align-items: center; font-family: 'Inter', "Segoe UI", sans-serif; }
+.toggle-btn { border: 2px solid #d35400; padding: 6px 18px; margin-right: 12px; cursor: pointer; border-radius: 6px; background: white; color: #d35400; font-weight: bold; font-size: 14px; transition: 0.2s; text-align: center; }
+.toggle-btn:hover { background: #fff1e6; }
+.toggle-btn.active { background: #d35400; color: white; }
+</style>
+<div class="level-toggles">
+    <span style="font-weight:bold; margin-right: 15px; color: #333; font-size: 15px;">Levels:</span>
+    <div class="toggle-btn" onclick="setLevel(1)">1</div>
+    <div class="toggle-btn" onclick="setLevel(2)">2</div>
+    <div class="toggle-btn active" onclick="setLevel(3)">3</div>
+</div>
+<script>
+function setLevel(level) {
+    var btns = document.querySelectorAll('.toggle-btn');
+    if(btns.length >= 3) {
+        btns[0].classList.toggle('active', level === 1);
+        btns[1].classList.toggle('active', level === 2);
+        btns[2].classList.toggle('active', level === 3);
+    }
+    
+    document.querySelectorAll('.level2').forEach(function(el) {
+        el.style.display = level >= 2 ? 'block' : 'none';
+    });
+    
+    document.querySelectorAll('.level3-container').forEach(function(el) {
+        el.style.display = level >= 3 ? 'table' : 'none';
+    });
+}
+// Default state is already 3.
+</script>
+
+<div class="level1">1 Childhood and Youth (1863 - 1881)</div>
+<div class="level2">1 Childhood and Youth  (1863 - 1881)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Ancestry</div>
+<div class="level3-seq">1000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Childhood (1863 - 1874)</div>
+<div class="level3-seq">2000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Early education</div>
+<div class="level3-seq">3000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 College Days (1874 - 1881)</div>
+<div class="level3-seq">17000</div>
+</div></div>
+<div class="level1">2 With Shri Ramakrishna  (1881 - Aug 1886)</div>
+<div class="level2">2 Mart Of Joy at Dakshineshwar  (1881 - 1884)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Sri Ramakrishna before meeting Naren (1836 - 1881)</div>
+<div class="level3-seq">18000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 At the touch of the Master (1881 - 1884)</div>
+<div class="level3-seq">18500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Guru and Disciple</div>
+<div class="level3-seq">19000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 The Man in Making</div>
+<div class="level3-seq">20000</div>
+</div></div>
+<div class="level2">3 Sadhana  (Feb 1881 - Aug 1886)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Days of ecstacy at Dakshineshwar</div>
+<div class="level3-seq">23000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Naren's Struggles and Hardships (Feb 1884 - Sept 1885)</div>
+<div class="level3-seq">23500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 With Thakur at Shyampukur (Sept 1885 - Dec 1885)</div>
+<div class="level3-seq">24000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 With Thakur at Kashipur (Dec 1885 - Aug 1886)</div>
+<div class="level3-seq">24500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 Last days with Sri Ramakrishna (Aug 1886)</div>
+<div class="level3-seq">25000</div>
+</div></div>
+<div class="level1">3 Varahnagar Math  (Aug 1886 - July 1890)</div>
+<div class="level2">4 At the Math  (Aug 1886 - July 1890)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Varahnagar Math (Aug 1886 - 1888)</div>
+<div class="level3-seq">25500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 First Pilgrimage to North India (1888)</div>
+<div class="level3-seq">26000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 At Varahnagar Math after first Pilgrimage (1888)</div>
+<div class="level3-seq">26500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 Second Pilgrimage to North India (Aug - Nov 1888)</div>
+<div class="level3-seq">27000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 At Varahnagar Math after second Pilgrimage</div>
+<div class="level3-seq">27500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">6 Third Pilgrimage to North India (Dec 1889 - May 1890)</div>
+<div class="level3-seq">28000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">7 At Varahnagar Math after third Pilgrimage (May - July 1890)</div>
+<div class="level3-seq">28500</div>
+</div></div>
+<div class="level1">4 Parivrajaka Days  (July 1890 - May 1893)</div>
+<div class="level2">5 Tapasya in Himalayas  (July 1890-Dec 1890)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Bhagalpur  (July-Aug 1890)</div>
+<div class="level3-seq">29000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Baidyanath, Gazipur, Varanasi, Ayodhya (July-Aug 1890)</div>
+<div class="level3-seq">29500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Himalayas  (Aug-Dec 1890)</div>
+<div class="level3-seq">30000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 Merath (Dec 1890)</div>
+<div class="level3-seq">31000</div>
+</div></div>
+<div class="level2">6 Delhi and Historic Rajputana  (Jan 1891- Oct 1891)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Delhi (Jan - Feb 1891)</div>
+<div class="level3-seq">31500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Alwar  (Feb 1891- Oct 1891)</div>
+<div class="level3-seq">32000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Wandering in Rajputana</div>
+<div class="level3-seq">32500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 Jaypur</div>
+<div class="level3-seq">33000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 Ajmer</div>
+<div class="level3-seq">33500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">6 Mt. Abu</div>
+<div class="level3-seq">34000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">7 Khetri</div>
+<div class="level3-seq">34500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">8 Ajmer II</div>
+<div class="level3-seq">35000</div>
+</div></div>
+<div class="level2">7 Bombay presidency I -Gujarat, Kathiawar  (Nov 1891- Oct 1892)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Ahmedabad (Nov 1891)</div>
+<div class="level3-seq">35500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Kathiawar 1: Wadhwan, Limbdi  (Nov 91 - Mar 1892)</div>
+<div class="level3-seq">36000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Kathiawar 2: Bhavnagar, Sihor, Junagadh, Girnar</div>
+<div class="level3-seq">36500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 Kutch, Bhuj</div>
+<div class="level3-seq">37000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 Kathiawar 3: Junagadh, Veraval, Somnath</div>
+<div class="level3-seq">37500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">6 Kathiawar 4: Junagadh, Porbandar</div>
+<div class="level3-seq">38000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">7 Kathiawar 5: Dwarka</div>
+<div class="level3-seq">39500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">8 Kutch, Bhuj 2</div>
+<div class="level3-seq">40000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">9 Kathiawar 6: Porbandar, Junagadh, Palitana</div>
+<div class="level3-seq">50000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">10 Nadiad, Baroda (Mar - Apr 1892)</div>
+<div class="level3-seq">51000</div>
+</div></div>
+<div class="level2">8 Bombay Presidency II - Maharashtra</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Mahabaleshwar  (Apr-June 1892)</div>
+<div class="level3-seq">51500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Puna (June 1892)</div>
+<div class="level3-seq">52000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Khandava and Indore (July 1892)</div>
+<div class="level3-seq">52500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 Bombay (Aug - Sept 1892)</div>
+<div class="level3-seq">53000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 Puna II (Sept 1892)</div>
+<div class="level3-seq">53500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">6 Kolhapur (Oct 1892)</div>
+<div class="level3-seq">54000</div>
+</div></div>
+<div class="level2">9 Belgaum, Goa , and Mysore (Oct 1892-Dec 1892)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Belgaum   (Oct 92)</div>
+<div class="level3-seq">54500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Goa   (Oct 92)</div>
+<div class="level3-seq">55000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Mysore State  (Oct 92)</div>
+<div class="level3-seq">55500</div>
+</div></div>
+<div class="level2">10 Cochin and Travencore States</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Trichur (Nov-Dec 92)</div>
+<div class="level3-seq">56000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Kodungalloor</div>
+<div class="level3-seq">56500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Ernakulum</div>
+<div class="level3-seq">57000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 Trivendrum</div>
+<div class="level3-seq">57500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 Kanya Kumari (Dec 1892)</div>
+<div class="level3-seq">58000</div>
+</div></div>
+<div class="level2">11 Madras Presidency (Jan-May 1893)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Madurai and Rameshwaram</div>
+<div class="level3-seq">58500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Pondicheri</div>
+<div class="level3-seq">59000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Madras   (Jan 1893)</div>
+<div class="level3-seq">59500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 Hyderabad   (Feb 1893)</div>
+<div class="level3-seq">60000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 Return to Madras   (Feb 1893)</div>
+<div class="level3-seq">60500</div>
+</div></div>
+<div class="level2">12 Preparation for the Mission to the West</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Bombay and Abu: on way to Khetri  (Apr 93)</div>
+<div class="level3-seq">61000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Khetri: Blessing the Prince (Apr - May 93)</div>
+<div class="level3-seq">61500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Abu: on way to Bombay (May 93)</div>
+<div class="level3-seq">62000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 Bombay: Preparation for journey to the West (May 93)</div>
+<div class="level3-seq">62500</div>
+</div></div>
+<div class="level1">5 Mission to the West  (May 1893 - Dec 1896)</div>
+<div class="level2">13 Voyage to and early days in America  (May-Sept 1893)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Ocean voyage to America   (May-July 1893)</div>
+<div class="level3-seq">63000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Canada and Chicago  (July 1893)</div>
+<div class="level3-seq">63500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Massachusets: Boston, Metcalf (Aug 1893)</div>
+<div class="level3-seq">63600</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 Massachusets: Annisquam (Aug 1893)</div>
+<div class="level3-seq">63650</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 Massachusets: Salem (Aug - Sept 1893)</div>
+<div class="level3-seq">63700</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">6 New York: saratoga (Sept 1893)</div>
+<div class="level3-seq">63800</div>
+</div></div>
+<div class="level2">14 The Parliament of Religion  (Sept 1893)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Preface (Sept 1893)</div>
+<div class="level3-seq">63900</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 10, 11 Sept 1893</div>
+<div class="level3-seq">63950</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 12 - 27 Sept 1893</div>
+<div class="level3-seq">64000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 Victory (Sept - Oct 1893)</div>
+<div class="level3-seq">64100</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 Effect on India (Sept - Oct 1893)</div>
+<div class="level3-seq">64120</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">6 Controversies (Sept - Oct 1893)</div>
+<div class="level3-seq">64130</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">7 Swamiji at the home of Lyon</div>
+<div class="level3-seq">64150</div>
+</div></div>
+<div class="level2">15 The cyclonic monk  (Oct 1893 - Jan 1895)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 In Chicago after the Parliament  (Oct 1893)</div>
+<div class="level3-seq">64200</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Robert ingersol</div>
+<div class="level3-seq">64250</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Around Chicago</div>
+<div class="level3-seq">64300</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 Mid west and Southern states tour  (Oct 1893-Jan 1894)</div>
+<div class="level3-seq">64500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 Detroit  (12 Feb - 23 Feb 1894)</div>
+<div class="level3-seq">65000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">6 Ohio - Chicago (23 Feb - 9 Mar. 1894)</div>
+<div class="level3-seq">65100</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">7 Back to Detroit (9 mar - 19 Mar 1894)</div>
+<div class="level3-seq">65200</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">8 Bay City - Chicago (20 Mar - 22 Mar 1894)</div>
+<div class="level3-seq">65300</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">9 Final Visit to Detroit (23 Mar - 31 Mar 1894)</div>
+<div class="level3-seq">65400</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">10 Open Rejoinder from Rev. Hume</div>
+<div class="level3-seq">65449</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">11 Meetings with Mme Calve & Rockefeller</div>
+<div class="level3-seq">65450</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">12 On east coast  (Apr 1894-May 1894)</div>
+<div class="level3-seq">65500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">13 Chicago (May-June 1894)</div>
+<div class="level3-seq">66000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">14 Back to East Coast  (June 1894-Sep 1894)</div>
+<div class="level3-seq">66500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">15 Boston (Sep. 1894)</div>
+<div class="level3-seq">67000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">16 Cambridge (Oct 1894)</div>
+<div class="level3-seq">67500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">17 Baltimore and Washington (Oct - Nov 1894)</div>
+<div class="level3-seq">68000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">18 New York and Cambridge (Nov - Dec 1894)</div>
+<div class="level3-seq">68500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">19 Brooklyn and New York (Dec 1894-Jan 1895)</div>
+<div class="level3-seq">80000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">20 To Chicago (1 Jan-18 Jan 1895)</div>
+<div class="level3-seq">80500</div>
+</div></div>
+<div class="level2">16 Vedanta in America (Jan 1895 - Aug 1895)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 New York: Vedanta for world - an Analysis (New Discovery)</div>
+<div class="level3-seq">90000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 New York: Vedanta For World - An Analysis - (Life)</div>
+<div class="level3-seq">92000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 New York: Vedanta for world I (Jan 1895 - April 1895)</div>
+<div class="level3-seq">94300</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 To Ridgley Manor (Apr 1895)</div>
+<div class="level3-seq">94700</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 New York: Vedanta for the World II  (Apr - June 1895)</div>
+<div class="level3-seq">94800</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">6 Thousand Island park   (June-Aug 1895)</div>
+<div class="level3-seq">94900</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">7 New York: Preparation for departure  (Aug 1895)</div>
+<div class="level3-seq">95000</div>
+</div></div>
+<div class="level2">17 Exploring the Europe   (Aug 1895-Nov 1895)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 France  (Aug - Sept 1895)</div>
+<div class="level3-seq">95100</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 England  (Sept - Nov 1895)</div>
+<div class="level3-seq">95200</div>
+</div></div>
+<div class="level2">18 Vedanta in America II</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 New York: Vedanta for the World III (Nov 1895 - Dec 1895)</div>
+<div class="level3-seq">95300</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Christmas at Ridgley  (Dec 1895)</div>
+<div class="level3-seq">95400</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 New York: Vedanta for the World IV - 1  (Jan 1896)</div>
+<div class="level3-seq">95500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 New York: Vedanta for the World IV - 2 (Jan - Mar 1896)</div>
+<div class="level3-seq">95550</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 Detroit (Mar - I 1896)</div>
+<div class="level3-seq">95600</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">6 Boston  (Mar - II 1896)</div>
+<div class="level3-seq">95620</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">7 Chicago   (Apr 1896)</div>
+<div class="level3-seq">95640</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">8 Last days in America  (Apr 1896)</div>
+<div class="level3-seq">95700</div>
+</div></div>
+<div class="level2">19 Vedanta in Europe  (Apr 1896-Dec 1896)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 London: First Season   (Apr-July 1896)</div>
+<div class="level3-seq">95800</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Europe: Continental tour   (July-Sept 1896)</div>
+<div class="level3-seq">95900</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Wimbledon  (Sept - Oct 1896)</div>
+<div class="level3-seq">96000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 London: Second Season ( Apr. - Oct. 1896)</div>
+<div class="level3-seq">96100</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 Igniting the Indian Work</div>
+<div class="level3-seq">96150</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">6 England: Fall, 1896 - II</div>
+<div class="level3-seq">96175</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">7 Europe: On the way to India   (Dec 1896)</div>
+<div class="level3-seq">96200</div>
+</div></div>
+<div class="level2">20 Mission to the West: Undated</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Igniting The Indian Work (1893 - 1896)</div>
+<div class="level3-seq">96150</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Mission to the West: Undated</div>
+<div class="level3-seq">96300</div>
+</div></div>
+<div class="level1">6 Mission to the East  (Jan 1897 - June 1899)</div>
+<div class="level2">21 Triumph of the Lord  (Jan 1897 - Jan 1898)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Colombo (Jan 1897)</div>
+<div class="level3-seq">96400</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Wild fire in the South  (Jan-Feb 1897)</div>
+<div class="level3-seq">96500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Rousing welcome in Madras (Feb 1897)</div>
+<div class="level3-seq">96600</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 Calcutta and Darjeeling  (Feb-Apr 1897)</div>
+<div class="level3-seq">96700</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 Calcutta: Establishment of Ramakrishna Mission Association   (May 1897)</div>
+<div class="level3-seq">96750</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">6 Almora for recovery  (May - July 1897)</div>
+<div class="level3-seq">96800</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">7 North India: Bhimtal, Bareili, Ambala  (Aug 1897)</div>
+<div class="level3-seq">96900</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">8 Punjab: Amritsar, Rawalpindi  (Aug- Sept 1897)</div>
+<div class="level3-seq">97000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">9 Kashmir: Srinagar  (Sept - Oct 1897)</div>
+<div class="level3-seq">97100</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">10 Punjab II: Murree, Rawalpindi  (Oct 1897)</div>
+<div class="level3-seq">97200</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">11 Kashmir II: Jammu  (Oct 1897)</div>
+<div class="level3-seq">97300</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">12 Punjab III: Sialkot, Lahore  (Oct - Nov 1897)</div>
+<div class="level3-seq">97400</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">13 North India: Dehradoon, Saharanpur, Delhi  (Nov 1897)</div>
+<div class="level3-seq">97500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">14 Rajputana  (Dec 1897-Jan 1898)</div>
+<div class="level3-seq">97600</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">15 Central India: Khandwa, Ratlam, Jabalpur  (Jan 1898)</div>
+<div class="level3-seq">97700</div>
+</div></div>
+<div class="level2">22 At the Math: Training of disciples (Jan-May 1898)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 At the Math   (Jan-Mar 1898)</div>
+<div class="level3-seq">96800</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Darjeeling   (Mar-Apr 1898)</div>
+<div class="level3-seq">96900</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 RKM plague relief   (May 1898)</div>
+<div class="level3-seq">97000</div>
+</div></div>
+<div class="level2">23 North India: Training of the western disciples  (May 1898-Oct 1898)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Himalayas: Almora (May-June 1898)</div>
+<div class="level3-seq">97100</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Punjab: With the Western disciples  (June 1898)</div>
+<div class="level3-seq">97200</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 In the Kashmir   (June - July 1898)</div>
+<div class="level3-seq">97300</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 Pilgrimage to the Amarnath  (July - Aug 1898)</div>
+<div class="level3-seq">97400</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 In the Kashmir II  (Aug - Oct 1898)</div>
+<div class="level3-seq">97500</div>
+</div></div>
+<div class="level2">24 At the Belur Math  (Oct 1898-June 1899)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Belur Math established   (Oct - Dec 1898)</div>
+<div class="level3-seq">97600</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Swamiji at Baidyanath (Deoghar)  (Dec 1898 - Jan 1899)</div>
+<div class="level3-seq">97700</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Amongst his own people  (Jan - June 1899)</div>
+<div class="level3-seq">97800</div>
+</div></div>
+<div class="level1">7 Second Mission to the West  (June 1899 - Nov 1890)</div>
+<div class="level2">25 London  (June-Aug 1899)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Ocean voyage  (June 1899)</div>
+<div class="level3-seq">97900</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 London  (July-aug 1899)</div>
+<div class="level3-seq">98000</div>
+</div></div>
+<div class="level2">26 America: East coast  (Aug - Nov 1999)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Ridgley Manor: The great summer   (Aug-Nov 1899)</div>
+<div class="level3-seq">98100</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 New York and Chicago  (Nov 1899)</div>
+<div class="level3-seq">98200</div>
+</div></div>
+<div class="level2">27 America: West coast (Dec 99- July 1900)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Southern California: Los Angeles  (Dec 1899 - Jan 1900)</div>
+<div class="level3-seq">98300</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Southern California: Pasadena  (Jan - Feb 1900)</div>
+<div class="level3-seq">98400</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Northern California: San Fransisco   (Feb - Apr 1900)</div>
+<div class="level3-seq">98500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 Northern California: Alameda  (Apr - May 1900)</div>
+<div class="level3-seq">98600</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 Northern California: Camp Tylor and San Fransisco  (May 1900)</div>
+<div class="level3-seq">98700</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">6 Return to the East coast: Chicago and New York  (Jun - July 1900)</div>
+<div class="level3-seq">98800</div>
+</div></div>
+<div class="level2">28 Europe and Mediterranean  (July-Nov 1900)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Paris  (July-Oct 1900)</div>
+<div class="level3-seq">98900</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Vienna  (Oct 1900)</div>
+<div class="level3-seq">99000</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Constantinople  (Oct-nov 1900)</div>
+<div class="level3-seq">99100</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 Athence  (Nov 1900)</div>
+<div class="level3-seq">99200</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 Egypt  (Nov 1900)</div>
+<div class="level3-seq">99300</div>
+</div></div>
+<div class="level1">8 Mission Over  (Dec 1890 - July 1902)</div>
+<div class="level2">29 Indian Work  (Dec 1900-Apr 1901)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 At Belur Math (Dec 1900)</div>
+<div class="level3-seq">99400</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 North India   (Dec 1900-Jan 1901)</div>
+<div class="level3-seq">99500</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Belur Math registered  (Jan-Mar 1901)</div>
+<div class="level3-seq">99600</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 Tour to Eastern India   (Mar-Apr 1901)</div>
+<div class="level3-seq">99700</div>
+</div></div>
+<div class="level2">30 Towards the End (May 1901-July 1902)</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Durga Puja at the Math (May-Dec 1901)</div>
+<div class="level3-seq">99800</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Visit to Buddhagaya and Varanasi   (Jan-Feb 1902)</div>
+<div class="level3-seq">99900</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 The Last Days (Mar-July 1902)</div>
+<div class="level3-seq">100000</div>
+</div></div>
+<div class="level1">9 Undated Vivekananda</div>
+<div class="level2">31 Undated Vivekananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Undated Vivekananda 4</div>
+<div class="level3-seq">110000</div>
+</div></div>
+</div>
+<script>
+document.addEventListener('click', function(e) {
+    // Handle row clicks in tables (ID is usually in the first column)
+    if (e.target.tagName === 'TD') {
+        const tr = e.target.parentElement;
+        const firstTd = tr.querySelector('td');
+        if (firstTd) {
+            const text = firstTd.innerText.trim();
+            if (/^\d+$/.test(text)) {
+                window.open('../viewer.html?paramId=' + encodeURIComponent(text), '_blank');
+                return;
+            }
+        }
+    }
+    
+    // Handle div items (like Person_Report, Type_Report)
+    if (e.target.classList.contains('item')) {
+        const text = e.target.innerText.trim();
+        window.open('../viewer.html?paramName=' + encodeURIComponent(text), '_blank');
+        return;
+    }
+
+    // Handle Vivekananda report specifically
+    if (e.target.classList.contains('level3-text')) {
+        let text = e.target.innerText.trim();
+        // Remove leading numbers, e.g., "1 Ancestry" -> "Ancestry"
+        text = text.replace(/^\d+\s*/, '');
+        window.open('../viewer.html?paramName=' + encodeURIComponent(text), '_blank');
+        return;
+    }
+});
+// Change cursor to pointer for clickable elements
+document.querySelectorAll('.item, td, .level3-text').forEach(el => {
+    el.style.cursor = 'pointer';
+    el.title = "Click to view events";
+});
+</script>
+
+<script>
+// Individual level toggling logic
+document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('level1')) {
+        let el = e.target.nextElementSibling;
+        let isCollapsed = e.target.classList.toggle('collapsed');
+        while (el && !el.classList.contains('level1')) {
+            if (el.classList.contains('level2')) {
+                el.style.display = isCollapsed ? 'none' : 'block';
+            } else if (el.classList.contains('level3-container')) {
+                let prev = el.previousElementSibling;
+                let parentL2Collapsed = false;
+                while (prev && !prev.classList.contains('level1')) {
+                    if (prev.classList.contains('level2')) {
+                        parentL2Collapsed = prev.classList.contains('collapsed');
+                        break;
+                    }
+                    prev = prev.previousElementSibling;
+                }
+                
+                if (isCollapsed) {
+                    el.style.display = 'none';
+                } else {
+                    el.style.display = parentL2Collapsed ? 'none' : 'table';
+                }
+            }
+            el = el.nextElementSibling;
+        }
+    }
+    
+    if (e.target.classList.contains('level2')) {
+        let el = e.target.nextElementSibling;
+        let isCollapsed = e.target.classList.toggle('collapsed');
+        while (el && !el.classList.contains('level2') && !el.classList.contains('level1')) {
+            if (el.classList.contains('level3-container')) {
+                el.style.display = isCollapsed ? 'none' : 'table';
+            }
+            el = el.nextElementSibling;
+        }
+    }
+});
+
+// Update the master toggle to also handle the arrow states
+if (typeof setLevel === 'function') {
+    const originalSetLevel = setLevel;
+    window.setLevel = function(level) {
+        originalSetLevel(level);
+        
+        // Fix up the collapsed classes based on the master level
+        document.querySelectorAll('.level1').forEach(function(el) {
+            if (level >= 2) el.classList.remove('collapsed');
+            else el.classList.add('collapsed');
+        });
+        
+        document.querySelectorAll('.level2').forEach(function(el) {
+            if (level >= 3) el.classList.remove('collapsed');
+            else el.classList.add('collapsed');
+        });
+    };
+    // Re-trigger the initial state
+    window.setLevel(3);
+}
+</script>
+
+<style>
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #d35400;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(211, 84, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.back-to-top:hover {
+    background-color: #b94a00;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(211, 84, 0, 0.5);
+}
+</style>
+<button class="back-to-top" id="backToTopBtn" title="Go to top">&#8593;</button>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var btn = document.getElementById("backToTopBtn");
+    if(!btn) return;
+    
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 300) {
+            btn.classList.add("visible");
+        } else {
+            btn.classList.remove("visible");
+        }
+    });
+    
+    btn.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
+</script>
+</body>
+
+
+</html>

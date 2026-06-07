@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8">
+<link href="../css/style.css?v=3" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+body { 
+    font-family: 'Inter', "Segoe UI", sans-serif; 
+    font-size: 15px; 
+    background-color: #f4f5f7; 
+    color: #333; 
+    margin: 40px auto; 
+    max-width: 1000px; 
+    padding: 40px 60px; 
+    background: white; 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05); 
+    border-radius: 12px;
+}
+h1 { color: #2c3e50; font-weight: 700; font-size: 2.2rem; margin-top: 0; margin-bottom: 30px; border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; }
+
+/* Modern Level 1 & 2 colors WITH collapse pointer */
+.level1 { color: #d35400; font-weight: 700; font-size: 1.25rem; margin-top: 35px; margin-bottom: 12px; border-bottom: 1px solid #f2e3d5; padding-bottom: 5px; cursor: pointer; user-select: none; }
+.level2 { color: #2980b9; font-weight: 600; font-size: 1.05rem; margin-left: 20px; margin-top: 15px; margin-bottom: 8px; border-left: 3px solid #3498db; padding-left: 12px; cursor: pointer; user-select: none; }
+
+.level1::before, .level2::before { content: '▼ '; font-size: 0.75em; display: inline-block; transition: transform 0.2s; color: #aaa; margin-right: 6px; }
+.level1.collapsed::before, .level2.collapsed::before { transform: rotate(-90deg); }
+
+.level3-container { margin-left: 50px; display: table; width: 100%; max-width: 800px; border-bottom: 1px solid #f8f9fa; transition: background 0.2s; }
+.level3-container:hover { background-color: #fafbfc; }
+.level3-row { display: table-row; }
+.level3-text { display: table-cell; color: #444; padding: 10px 5px; font-size: 0.95rem; }
+.level3-seq { display: none; color: #95a5a6; font-size: 0.85rem; text-align: right; padding: 10px 10px; font-variant-numeric: tabular-nums; }
+.level3-remark { display: table-cell; color: #7f8c8d; font-size: 0.85rem; text-align: right; padding: 10px 10px; }
+
+/* Styles for List Reports */
+.header { background-color: #d35400; padding: 12px 15px; text-align: center; font-weight: 700; color: white; margin-bottom: 15px; border-radius: 6px; width: 400px; font-size: 1.1rem; }
+.item { margin-bottom: 8px; padding: 10px 20px; width: 370px; background: #fff; border: 1px solid #eee; border-radius: 6px; transition: all 0.2s; color: #2c3e50; font-weight: 500; }
+.item:hover { background: #fffaf5; border-color: #f2e3d5; transform: translateX(5px); box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
+
+/* Styles for Table Reports */
+table { border-collapse: separate; border-spacing: 0; width: 100%; margin-top: 20px; font-size: 0.95rem; border: 1px solid #eee; border-radius: 8px; overflow: hidden; }
+th { background-color: #f8f9fa; color: #2c3e50; font-weight: 600; text-align: left; padding: 15px; border-bottom: 1px solid #ddd; }
+td { padding: 12px 15px; border-bottom: 1px solid #eee; color: #444; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background-color: #fafbfc; }
+
+/* Back link */
+.back-link { display: inline-block; margin-bottom: 20px; text-decoration: none; color: #7f8c8d; font-weight: 600; transition: 0.2s; }
+.back-link:hover { color: #d35400; }
+</style>
+</head><body><div class="container">
+<h1 style="text-align: center; color: #333;">Ref Report from Access</h1>
+
+<style>
+.level-toggles { margin-top: 15px; margin-bottom: 25px; display: flex; align-items: center; font-family: 'Inter', "Segoe UI", sans-serif; }
+.toggle-btn { border: 2px solid #d35400; padding: 6px 18px; margin-right: 12px; cursor: pointer; border-radius: 6px; background: white; color: #d35400; font-weight: bold; font-size: 14px; transition: 0.2s; text-align: center; }
+.toggle-btn:hover { background: #fff1e6; }
+.toggle-btn.active { background: #d35400; color: white; }
+</style>
+<div class="level-toggles">
+    <span style="font-weight:bold; margin-right: 15px; color: #333; font-size: 15px;">Levels:</span>
+    <div class="toggle-btn" onclick="setLevel(1)">1</div>
+    <div class="toggle-btn" onclick="setLevel(2)">2</div>
+    <div class="toggle-btn active" onclick="setLevel(3)">3</div>
+</div>
+<script>
+function setLevel(level) {
+    var btns = document.querySelectorAll('.toggle-btn');
+    if(btns.length >= 3) {
+        btns[0].classList.toggle('active', level === 1);
+        btns[1].classList.toggle('active', level === 2);
+        btns[2].classList.toggle('active', level === 3);
+    }
+    
+    document.querySelectorAll('.level2').forEach(function(el) {
+        el.style.display = level >= 2 ? 'block' : 'none';
+    });
+    
+    document.querySelectorAll('.level3-container').forEach(function(el) {
+        el.style.display = level >= 3 ? 'table' : 'none';
+    });
+}
+// Default state is already 3.
+</script>
+
+<div class="level1">1 Ramakrishna</div>
+<div class="level2">1 Saradananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 রামকৃষ্ণ লীলাপ্র্সংগ</div>
+<div class="level3-remark">[LP | B | Life]</div>
+</div></div>
+<div class="level2">2 Prabhananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 রামকৃষ্ণের অন্ত্যলীলা</div>
+<div class="level3-remark">[RAL | B | Life]</div>
+</div></div>
+<div class="level2">3 Mahendranath Dutta</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 শ্রীরামকৃষ্ণের অনুধ্যান</div>
+<div class="level3-remark">[SRA | B | Reminiscence]</div>
+</div></div>
+<div class="level2">4 Master Mahashay</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 কথামৃত</div>
+<div class="level3-remark">[KM | B | Reminiscence]</div>
+</div></div>
+<div class="level2">5 Nanda Mukhopadhyaya</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 ব্রাহ্ম ও খ্রিস্টান অনুযাযিদের চোখে শ্রীরামকৃষ্ণ</div>
+<div class="level3-remark">[BKA | B | Reminiscence]</div>
+</div></div>
+<div class="level2">6 Chetanananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 শ্রীরামকৃষ্ণ কে জেরুপ দেখীযাছি</div>
+<div class="level3-remark">[JRD | B | Reminiscence]</div>
+</div></div>
+<div class="level2">7 Gen</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 সমসামযিক দ্রষ্টিতে শ্রীরামকৃষ্ণ</div>
+<div class="level3-remark">[RN | B | Documents]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 নীজমুখে শ্রীরামকৃষ্ণের জীবন ও উপলব্ধি</div>
+<div class="level3-remark">[RJU | B | Life]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Photographs of Shri Ramakrishna - Saradadevi</div>
+<div class="level3-remark">[PRS | E | Documents]</div>
+</div></div>
+<div class="level2">8 Akshay Kumar Ghosh</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 শ্রীরামকৃষ্ণ পুংথী</div>
+<div class="level3-remark">[RP | B | Life]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 শ্রীচৈতন্য ও শ্রীরামকৃষ্ণ</div>
+<div class="level3-remark">[TSR | B | Life]</div>
+</div></div>
+<div class="level2">9 Vaikunthanath Sanyal</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 শ্রীরামকৃষ্ণ লীলামৃত</div>
+<div class="level3-remark">[RLM | B | Life]</div>
+</div></div>
+<div class="level2">10 Shashankbhushan Bandopadhyay</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 শ্রীরামকৃষ্ণ লীলাকথা</div>
+<div class="level3-remark">[SRL | B | Reminiscence]</div>
+</div></div>
+<div class="level1">2 Vivekananda</div>
+<div class="level2">1 Vivekananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 পত্রাবলী</div>
+<div class="level3-remark">[PS | B | Letter]</div>
+</div></div>
+<div class="level2">2 Gambhirananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 যুগনাযক</div>
+<div class="level3-remark">[YNG | B | Life]</div>
+</div></div>
+<div class="level2">3 Mahendranath Dutta</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী বিবেকানন্দের বাল্যজীবনী</div>
+<div class="level3-remark">[VBJ | B | Reminiscence]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 কাশীধামে স্বামী বিবেকানন্দ</div>
+<div class="level3-remark">[KSV | B | Reminiscence]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 লন্ডনে স্বামী বিবেকনন্দ ১-২</div>
+<div class="level3-remark">[NSV | B | Reminiscence]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 বিবেকানন্দের জীবনের ঘটনাবলী</div>
+<div class="level3-remark">[VJG | B | Reminiscence]</div>
+</div></div>
+<div class="level2">4 Abjajananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামীজীর পদপ্রান্তে</div>
+<div class="level3-remark">[SP | B | Life]</div>
+</div></div>
+<div class="level2">5 Purnatmananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্মৃতির আলোয স্বামীজী</div>
+<div class="level3-remark">[SASP | B | Reminiscence]</div>
+</div></div>
+<div class="level2">6 Marie Luis Burke</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 New Discoveries  1-6</div>
+<div class="level3-remark">[ND | E | Life]</div>
+</div></div>
+<div class="level2">7 Asim Chaudhuri</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Swami Vivekananda in America</div>
+<div class="level3-remark">[SVA | E | Life]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Swami Vivekananda In Chicago</div>
+<div class="level3-remark">[SVC | E | Life]</div>
+</div></div>
+<div class="level2">8 Gen</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Complete works of Swami Vivekananda 1-9</div>
+<div class="level3-remark">[CW SV | E | Composition]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Life of Swami Vivekananda I,II</div>
+<div class="level3-remark">[LSV | E | Life]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Photographs of Swami Vivekananda</div>
+<div class="level3-remark">[PSV | E | Documents]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 বানী ও রচনা</div>
+<div class="level3-remark">[VOR | B | Composition]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 Reminiscences of Swami Vivekananda</div>
+<div class="level3-remark">[RSV | E | Reminiscence]</div>
+</div></div>
+<div class="level2">9 Shankari Prasad Basu</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Swami Vivekananda in Indian News Papers I, II</div>
+<div class="level3-remark">[VIN | E | Documents]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 স্বামী বিবেকানন্দ ও সমকালীন ভারতবর্ষ</div>
+<div class="level3-remark">[SBV | B | Life]</div>
+</div></div>
+<div class="level2">10 Nirlepananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামীজীর স্মৃতিসংচযন</div>
+<div class="level3-remark">[SSSN | B | y | Reminiscence]</div>
+</div></div>
+<div class="level1">3 Holy Mother</div>
+<div class="level2">1 Holy Mother</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 মাযের চীঠী</div>
+<div class="level3-remark">[MC | B | Letter]</div>
+</div></div>
+<div class="level2">2 Gambhirananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 শ্রীমা সারদাদেবী</div>
+<div class="level3-remark">[SMS | B | Life]</div>
+</div></div>
+<div class="level2">3 Prabhananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 মাযের মহিমায উদ্ভাসিত দক্ষিণাপথ</div>
+<div class="level3-remark">[MMUD | B | Life]</div>
+</div></div>
+<div class="level2">4 Chetanananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 মাতৃ দর্শন</div>
+<div class="level3-remark">[MD | B | Reminiscence]</div>
+</div></div>
+<div class="level2">5 Purnananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 মাযের পদপ্রান্তে ১-৪</div>
+<div class="level3-remark">[MP | B | Reminiscence]</div>
+</div></div>
+<div class="level2">6 Ishanananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 মাতৃ সান্নীধ্যে</div>
+<div class="level3-remark">[MSI | B | Reminiscence]</div>
+</div></div>
+<div class="level2">7 Parameshwarananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 মা ও জযরামবাটী</div>
+<div class="level3-remark">[MOJ | B | Reminiscence]</div>
+</div></div>
+<div class="level2">8 Akshay Chaitanya</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 শ্রীশ্রী সারদাদেবী</div>
+<div class="level3-remark">[SSD | B | Reminiscence]</div>
+</div></div>
+<div class="level2">9 Gen</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 শ্রীশ্রীমাযের বাডী ও উদ্বোধন কার্যালয</div>
+<div class="level3-remark">[MBU | B | Life]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 মাযের কথা</div>
+<div class="level3-remark">[MK | B | Reminiscence]</div>
+</div></div>
+<div class="level2">10 Bhumananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 শ্রীশ্রী মাযের জীবনকথা</div>
+<div class="level3-remark">[MJK | B | Life]</div>
+</div></div>
+<div class="level1">4 Adbhutananda</div>
+<div class="level2">1 Siddhananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 সতকথা</div>
+<div class="level3-remark">[SKS | B | Reminiscence]</div>
+</div></div>
+<div class="level2">2 Mahendranath Dutta</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 তাপস লাটু মহারাজের অনুধ্যান</div>
+<div class="level3-remark">[LMA | B | Reminiscence]</div>
+</div></div>
+<div class="level2">3 Chandrashekhar Chattopadhyay</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 লাটু মহারজের স্মৃতিকথা</div>
+<div class="level3-remark">[LMS | B | Reminiscence]</div>
+</div></div>
+<div class="level2">4 Gen</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 অদ্ভুতান্ন্দ প্রসংগ</div>
+<div class="level3-remark">[ADP | B | Reminiscence]</div>
+</div></div>
+<div class="level1">5 Abhedananda</div>
+<div class="level2">1 Abhedananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 আমার জিবনকথা</div>
+<div class="level3-remark">[AJK | B | Life]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Epistles</div>
+<div class="level3-remark">[EA | E | Letter]</div>
+</div></div>
+<div class="level2">2 Sambudhhananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 জেমন শুনীযাছি</div>
+<div class="level3-remark">[JDS | B | y | Life]</div>
+</div></div>
+<div class="level2">3 Sister Shivani</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Swami Abhedananda in America</div>
+<div class="level3-remark">[ABA | E | Life]</div>
+</div></div>
+<div class="level1">6 Nivedita</div>
+<div class="level2">1 Nivedita</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Letters of Sister Nivedita</div>
+<div class="level3-remark">[LSN | E | Letter]</div>
+</div></div>
+<div class="level2">2 Gen</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Complete Works of Sister Nivedita</div>
+<div class="level3-remark">[CWS | E | Composition]</div>
+</div></div>
+<div class="level2">3 Shankari Prasad Basu</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 নিবেদিতা লোকমাতা</div>
+<div class="level3-remark">[NLM | B | Life]</div>
+</div></div>
+<div class="level1">7 Trigunatitananda</div>
+<div class="level2">1 Marie Luis Burke</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Swami Trigunatitananda</div>
+<div class="level3-remark">[ST | E | Life]</div>
+</div></div>
+<div class="level1">8 Shivananda</div>
+<div class="level2">1 Shivananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 মহাপুরুশজীর পত্রাবলী</div>
+<div class="level3-remark">[MPP | B | Letter]</div>
+</div></div>
+<div class="level2">2 Mahendranath Dutta</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 শিবানন্দ মহারাজের অনুধ্যান</div>
+<div class="level3-remark">[SMA | B | Reminiscence]</div>
+</div></div>
+<div class="level2">3 Apurvananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 শিবানন্দ স্মৃতিসংগ্রহ</div>
+<div class="level3-remark">[SSS | B | Reminiscence]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 শিবানন্দ বাণী</div>
+<div class="level3-remark">[SV | B | Reminiscence]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 মহাপুরুষ শিবানন্দ</div>
+<div class="level3-remark">[MS | B | Life]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 দেবলোকে</div>
+<div class="level3-remark">[DL | B | Reminiscence]</div>
+</div></div>
+<div class="level2">4 Gen</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 শ্রীশ্রীমহাপুরুষজীর কথা</div>
+<div class="level3-remark">[MPK | B | y | Reminiscence]</div>
+</div></div>
+<div class="level1">9 Ramakrishnananda</div>
+<div class="level2">1 Chetanananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী রামকৃষ্ণানন্দের স্মৃতিকথা</div>
+<div class="level3-remark">[RKS | B]</div>
+</div></div>
+<div class="level2">2 Sister Devamata</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Days in an Indian Monastery</div>
+<div class="level3-remark">[DIM | E | Reminiscence]</div>
+</div></div>
+<div class="level2">3 Prameyananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 সেবাদর্শে রামকৃষ্ণানন্দ</div>
+<div class="level3-remark">[SDR | B | Life]</div>
+</div></div>
+<div class="level2">4 Gen</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 The story of a Dedicated Life</div>
+<div class="level3-remark">[SDL | E | y | Life]</div>
+</div></div>
+<div class="level2">5 Jagadishwarananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী রামকৃষ্ণানন্দ</div>
+<div class="level3-remark">[RKJ | B | Life]</div>
+</div></div>
+<div class="level2">6 Tapasyananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Swami Ramakrishnananda: The Apostle of Shri Ramakrishna to the South</div>
+<div class="level3-remark">[RAS | E | y | Life]</div>
+</div></div>
+<div class="level1">10 Brahmananda</div>
+<div class="level2">1 Prabhananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 ব্রহ্মানন্দ চরিত</div>
+<div class="level3-remark">[BC | B]</div>
+</div></div>
+<div class="level2">2 Devananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 ব্রহ্মানন্দ স্মৃতিকণা</div>
+<div class="level3-remark">[BKS | B | Reminiscence]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 সাধনপ্রেসংগে রাজা মহারাজ</div>
+<div class="level3-remark">[SPB | B | Reminiscence]</div>
+</div></div>
+<div class="level2">3 Mahendranath Dutta</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 ব্রহ্মানন্দ মহারাজের অনুধ্যান</div>
+<div class="level3-remark">[BMA | B | Reminiscence]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 ব্রহ্মানন্দ ও রামকৃষ্ণ মিশন</div>
+<div class="level3-remark">[BOR | B | Life]</div>
+</div></div>
+<div class="level2">4 Chetanananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী ব্রহ্মানন্দের স্মৃতিকথা</div>
+<div class="level3-remark">[SBS | B | Reminiscence]</div>
+</div></div>
+<div class="level2">5 Akshay Chaitanya</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 ব্রহ্মানন্দ লীলাকথা</div>
+<div class="level3-remark">[BLA | B | Reminiscence]</div>
+</div></div>
+<div class="level2">6 Narottamananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 রাজা মহারাজ</div>
+<div class="level3-remark">[RM | B | Life]</div>
+</div></div>
+<div class="level2">7 Gen</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 ধর্মপ্রসংগে স্বামী ব্রহ্মানন্দ</div>
+<div class="level3-remark">[DSB | B | Reminiscence]</div>
+</div></div>
+<div class="level2">8 Ashokananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী ব্রহ্মানন্দ</div>
+<div class="level3-remark">[SBA | B | y | Life]</div>
+</div></div>
+<div class="level1">11 Subodhananda</div>
+<div class="level2">1 Chetanananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী সুবোধানন্দের স্মৃতিকথা</div>
+<div class="level3-remark">[SSK | B | Reminiscence]</div>
+</div></div>
+<div class="level2">2 Gen</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী সুবোধানন্দের জীবনী ও পত্র</div>
+<div class="level3-remark">[SJP | B | y | Life]</div>
+</div></div>
+<div class="level2">3 Abani Gupta</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 খোখা মহারাজঃ স্বামী সুবোধানন্দ</div>
+<div class="level3-remark">[KMS | B | y | Life]</div>
+</div></div>
+<div class="level1">12 Vijnanannada</div>
+<div class="level2">1 Apurvananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 সত প্রসঙে স্বামী বিজ্ঞানানন্দ</div>
+<div class="level3-remark">[SPV | B | Reminiscence]</div>
+</div></div>
+<div class="level2">2 S C Das</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 প্রত্যক্ষদর্শীর স্মৃতিপটে স্বামী বিজ্ঞানানন্দ</div>
+<div class="level3-remark">[PSP | B | Reminiscence]</div>
+</div></div>
+<div class="level2">3 Jagadishwarananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী বিজ্ঞানানন্দ</div>
+<div class="level3-remark">[SVJ | B | Reminiscence]</div>
+</div></div>
+<div class="level2">4 Tarini Shankar Chakrabarti</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Swami Vijnanananda: the Beacon Light of Allahabad</div>
+<div class="level3-remark">[VBA | E | y | Life]</div>
+</div></div>
+<div class="level2">5 নবযুগের মহাপুরুষ</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 A Man of God</div>
+<div class="level3-remark">[MOG | E | y | Life]</div>
+</div></div>
+<div class="level1">13 Premananda</div>
+<div class="level2">1 Premananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী প্রেমানন্দের পত্রাবলী</div>
+<div class="level3-remark">[PP | B | Letter]</div>
+</div></div>
+<div class="level2">2 Akshay Chaitanya</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 প্রেমানন্দ প্রেমকথা</div>
+<div class="level3-remark">[PPK | B | Reminiscence]</div>
+</div></div>
+<div class="level2">3 Prabhavananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 প্রেমীক পুরুষ প্রেমানন্দ</div>
+<div class="level3-remark">[PPP | B | Life]</div>
+</div></div>
+<div class="level2">4 Gen</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী প্রেমানন্দ</div>
+<div class="level3-remark">[SPA | B | y | Life]</div>
+</div></div>
+<div class="level2">5 Omkareshwarananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 প্রেমানন্দ</div>
+<div class="level3-remark">[POM | B | Life]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 প্রেমানন্দ জীবনচরীত</div>
+<div class="level3-remark">[PJC | B | Life]</div>
+</div></div>
+<div class="level1">14 Akhandananda</div>
+<div class="level2">1 Akhandananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 শরণাগতী ও সেবা</div>
+<div class="level3-remark">[SOS | B | Letter]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 স্মৃতিকথা</div>
+<div class="level3-remark">[SKA | B | Life]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 তিব্বতের পথে হিমালযে</div>
+<div class="level3-remark">[TPH | B | Life]</div>
+</div></div>
+<div class="level2">2 Chetanananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী অখংডানন্দ কে জেরুপ দেখিযা্ছি</div>
+<div class="level3-remark">[AJD | B | Reminiscence]</div>
+</div></div>
+<div class="level2">3 Annadananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী অখংডানন্দ</div>
+<div class="level3-remark">[SAA | B | Life]</div>
+</div></div>
+<div class="level2">4 Niramayananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী অখংডানন্দের স্মৃতিকথা</div>
+<div class="level3-remark">[SAS | B | Reminiscence]</div>
+</div></div>
+<div class="level1">15 Saradananda</div>
+<div class="level2">1 Saradananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 পত্রমালা I, II</div>
+<div class="level3-remark">[PMS | B | Letter]</div>
+</div></div>
+<div class="level2">2 Prabhananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 সরদানন্দ চরীত</div>
+<div class="level3-remark">[SCP | B | Life]</div>
+</div></div>
+<div class="level2">3 Mahendranath Dutta</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 সারদানন্দ স্বামীজীর জীবনের ঘটনাবলী</div>
+<div class="level3-remark">[SJG | B | Reminiscence]</div>
+</div></div>
+<div class="level2">4 Chetanananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী সারদানন্দের স্মৃতিকথা</div>
+<div class="level3-remark">[SSSK | B | Reminiscence]</div>
+</div></div>
+<div class="level2">5 Akshay Chaitanya</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী সারদানন্দের জীবনী</div>
+<div class="level3-remark">[SSJ | B | Life]</div>
+</div></div>
+<div class="level2">6 Bhumananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 জেমন দেখিযাছি</div>
+<div class="level3-remark">[SB | B | Life]</div>
+</div></div>
+<div class="level2">7 Asheshananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Glimpses of a Great Soul</div>
+<div class="level3-remark">[GGS | E | y | Reminiscence]</div>
+</div></div>
+<div class="level2">8 Brahmachari Prakash</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী সারদানন্দ</div>
+<div class="level3-remark">[SSP | B | y | Life]</div>
+</div></div>
+<div class="level1">16 Turiyananda</div>
+<div class="level2">1 Turiyananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী তুরিযানন্দের পত্র</div>
+<div class="level3-remark">[TP | B | Letter]</div>
+</div></div>
+<div class="level2">2 Chetanananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী তুরিযানন্দের স্মৃতিকথা</div>
+<div class="level3-remark">[STS | B | Reminiscence]</div>
+</div></div>
+<div class="level2">3 Gen</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 জীবনমুক্তি সুখপ্রাপ্তি</div>
+<div class="level3-remark">[JS | B | Reminiscence]</div>
+</div></div>
+<div class="level2">4 Jagadishwarananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী তুরীযানন্দ</div>
+<div class="level3-remark">[STJ | B | Life]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 স্বামী তুরিযানন্দ</div>
+<div class="level3-remark">[STR | B | Life]</div>
+</div></div>
+<div class="level1">17 Master Mahashay</div>
+<div class="level2">1 Mahendranath Dutta</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 মাস্টর মহাশয</div>
+<div class="level3-remark">[MM | B | Reminiscence]</div>
+</div></div>
+<div class="level2">2 Chetanananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 মাস্টর মহাশয</div>
+<div class="level3-remark">[MST | B | y | Reminiscence]</div>
+</div></div>
+<div class="level2">3 Nityatmananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 শ্রী ম দর্শন ১-১৬</div>
+<div class="level3-remark">[SMD | B | Reminiscence]</div>
+</div></div>
+<div class="level1">18 Gen</div>
+<div class="level2">1 Saradananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 ভারতে শক্তিপুজা</div>
+<div class="level3-remark">[BSP | B | Composition]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 পরলোকবাদ ও বিবিধ প্রসংগ</div>
+<div class="level3-remark">[PVP | B | Composition]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 গীতা তত্ব</div>
+<div class="level3-remark">[GTS | B | Composition]</div>
+</div></div>
+<div class="level2">2 Gambhirananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 History of Ramakrishna Mission</div>
+<div class="level3-remark">[HRM | E | y | Life]</div>
+</div></div>
+<div class="level2">3 Prabhananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 রামকৃষ্ণ মঠের আদিকথা</div>
+<div class="level3-remark">[RMA | B | Life]</div>
+</div></div>
+<div class="level2">4 Gen</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 উদ্বোধন</div>
+<div class="level3-remark">[UDB | B | Magazine]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 Vedanta Kesari</div>
+<div class="level3-remark">[VK | E | y | Magazine]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 Prabuddha Bharata</div>
+<div class="level3-remark">[PB | E | y | Magazine]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 Vedanta and the West</div>
+<div class="level3-remark">[VW | E | y | Magazine]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">5 The RKM Convention, 1926</div>
+<div class="level3-remark">[CON | E | y | Life]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">6 The Voice of India</div>
+<div class="level3-remark">[VOI | E | y | Magazine]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">7 তত্বমংজরী</div>
+<div class="level3-remark">[TMR | B | y | Magazine]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">8 পুণ্যতীর্থ আংটপুর</div>
+<div class="level3-remark">[PTA | B]</div>
+</div></div>
+<div class="level2">5 Sister Daya</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 The Guru and the Disciple</div>
+<div class="level3-remark">[GD | E | Life]</div>
+</div></div>
+<div class="level1">19 2G: Monks</div>
+<div class="level2">1 Virajananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 পরমার্থ প্রসংগ</div>
+<div class="level3-remark">[PPV | B | Reminiscence]</div>
+</div></div>
+<div class="level2">2 Premeshananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্বামী প্রেমেশানন্দজীর পত্রসংকলন</div>
+<div class="level3-remark">[SPP | B | Letter]</div>
+</div></div>
+<div class="level2">3 Vishuddhananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 সত প্রসঙ</div>
+<div class="level3-remark">[SPR | B | Reminiscence]</div>
+</div></div>
+<div class="level2">4 Mahendranath Dutta</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 দীন মহারাজ</div>
+<div class="level3-remark">[DM | B | Reminiscence]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 গুপ্ত মহারাজ</div>
+<div class="level3-remark">[GM | B | Reminiscence]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 জে জে গূডবীন</div>
+<div class="level3-remark">[JJG | B | Life]</div>
+</div></div>
+<div class="level2">5 Gen</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 ভারতীপ্রাণা স্মৃতিকথা</div>
+<div class="level3-remark">[RPB | B | Reminiscence]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 ভুতেশানন্দজী মহারজের রসবোধ</div>
+<div class="level3-remark">[BMR | B | Reminiscence]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 স্বামী শুদ্ধানন্দঃ জিবনী ও রচনা</div>
+<div class="level3-remark">[SJR | B | Composition]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 যোগ ক্ষেম</div>
+<div class="level3-remark">[YKV | B | Reminiscence]</div>
+</div></div>
+<div class="level2">6 Atulananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 With the Swamis in America</div>
+<div class="level3-remark">[SAM | E | y | Life]</div>
+</div></div>
+<div class="level1">20 1G: Monks</div>
+<div class="level2">1 Virajananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 অতিতের স্মৃতি</div>
+<div class="level3-remark">[ASS | B | Life]</div>
+</div></div>
+<div class="level2">2 Gambhirananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 ভক্ত মালিকা</div>
+<div class="level3-remark">[BM | B | Life]</div>
+</div></div>
+<div class="level2">3 Divyatmananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 দিব্যপ্রসঙে</div>
+<div class="level3-remark">[DP | B | Reminiscence]</div>
+</div></div>
+<div class="level2">4 Devananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 আনন্দলোকে</div>
+<div class="level3-remark">[ALD | B | Reminiscence]</div>
+</div></div>
+<div class="level2">5 Tejasananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্মৃতি সংচযন</div>
+<div class="level3-remark">[SST | B | Reminiscence]</div>
+</div></div>
+<div class="level2">6 Mahendranath Dutta</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 মাতৃদ্বযঃ গৌরী মা, গোপালের মা</div>
+<div class="level3-remark">[MDM | B | Reminiscence]</div>
+</div></div>
+<div class="level2">7 Jagadishwarananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 নবযুগের মহাপুরুষ</div>
+<div class="level3-remark">[NMJ | B | y | Life]</div>
+</div></div>
+<div class="level2">8 Kamaleshwarananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 শ্রীরামকৃষ্ণ পরিকর প্রসংগ</div>
+<div class="level3-remark">[RPP | B | Reminiscence]</div>
+</div></div>
+<div class="level2">9 Mukteshwarananda</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 স্মৃতিকথা</div>
+<div class="level3-remark">[SKM | B | Reminiscence]</div>
+</div></div>
+<div class="level2">10 Durgapuri Devi</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 গৌরীমা</div>
+<div class="level3-remark">[GMD | B | Life]</div>
+</div></div>
+<div class="level1">21 1G: Householders</div>
+<div class="level2">1 Mahendranath Dutta</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 ভক্ত দেবেন্দ্রনাথ</div>
+<div class="level3-remark">[BD | B | Reminiscence]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 গুরুপ্রাণ রামচন্দ্রের অনুধ্যান</div>
+<div class="level3-remark">[GRA | B | Reminiscence]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 মাতৃদ্বযঃ গৌরী মা, গোপালের মা</div>
+<div class="level3-remark">[MDM | B | Reminiscence]</div>
+</div></div>
+<div class="level2">2 Gen</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 রামচন্দ্র মাহাত্ম্য</div>
+<div class="level3-remark">[RCM | B | Life]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">2 সাধু নাগমহাশয</div>
+<div class="level3-remark">[SNM | B | y | Life]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">3 মহাত্মা রামচন্দ্রের বক্তৃতাবলী</div>
+<div class="level3-remark">[MRV | B | y | Composition]</div>
+</div></div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">4 শ্রীমা ও শ্রীরামকৃষ্ণ পার্শদগণের স্মৃতিকথা</div>
+<div class="level3-remark">[RPS | B | y | Reminiscence]</div>
+</div></div>
+<div class="level2">3 Avinash Gangopadhyay</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 গীরিশ ঘোষ</div>
+<div class="level3-remark">[GGH | B | Life]</div>
+</div></div>
+<div class="level2">4 Krishnachandra Sengupta</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 লক্ষ্মীমণীদেবী</div>
+<div class="level3-remark">[LMD | B | Life]</div>
+</div></div>
+<div class="level1">22 2G: Householders</div>
+<div class="level2">1 Gen</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 Saint Sara</div>
+<div class="level3-remark">[SSR | E | y | Life]</div>
+</div></div>
+<div class="level2">2 Prabuddhaprana</div>
+<div class="level3-container"><div class="level3-row">
+<div class="level3-text">1 The Life of Josephine McLeod</div>
+<div class="level3-remark">[LJM | E | y | Life]</div>
+</div></div>
+</div>
+<script>
+document.addEventListener('click', function(e) {
+    // Handle row clicks in tables (ID is usually in the first column)
+    if (e.target.tagName === 'TD') {
+        const tr = e.target.parentElement;
+        const firstTd = tr.querySelector('td');
+        if (firstTd) {
+            const text = firstTd.innerText.trim();
+            if (/^\d+$/.test(text)) {
+                window.open('../viewer.html?paramId=' + encodeURIComponent(text), '_blank');
+                return;
+            }
+        }
+    }
+    
+    // Handle div items (like Person_Report, Type_Report)
+    if (e.target.classList.contains('item')) {
+        const text = e.target.innerText.trim();
+        window.open('../viewer.html?paramName=' + encodeURIComponent(text), '_blank');
+        return;
+    }
+
+    // Handle Vivekananda report specifically
+    if (e.target.classList.contains('level3-text')) {
+        let text = e.target.innerText.trim();
+        // Remove leading numbers, e.g., "1 Ancestry" -> "Ancestry"
+        text = text.replace(/^\d+\s*/, '');
+        window.open('../viewer.html?paramName=' + encodeURIComponent(text), '_blank');
+        return;
+    }
+});
+// Change cursor to pointer for clickable elements
+document.querySelectorAll('.item, td, .level3-text').forEach(el => {
+    el.style.cursor = 'pointer';
+    el.title = "Click to view events";
+});
+</script>
+
+<script>
+// Individual level toggling logic
+document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('level1')) {
+        let el = e.target.nextElementSibling;
+        let isCollapsed = e.target.classList.toggle('collapsed');
+        while (el && !el.classList.contains('level1')) {
+            if (el.classList.contains('level2')) {
+                el.style.display = isCollapsed ? 'none' : 'block';
+            } else if (el.classList.contains('level3-container')) {
+                let prev = el.previousElementSibling;
+                let parentL2Collapsed = false;
+                while (prev && !prev.classList.contains('level1')) {
+                    if (prev.classList.contains('level2')) {
+                        parentL2Collapsed = prev.classList.contains('collapsed');
+                        break;
+                    }
+                    prev = prev.previousElementSibling;
+                }
+                
+                if (isCollapsed) {
+                    el.style.display = 'none';
+                } else {
+                    el.style.display = parentL2Collapsed ? 'none' : 'table';
+                }
+            }
+            el = el.nextElementSibling;
+        }
+    }
+    
+    if (e.target.classList.contains('level2')) {
+        let el = e.target.nextElementSibling;
+        let isCollapsed = e.target.classList.toggle('collapsed');
+        while (el && !el.classList.contains('level2') && !el.classList.contains('level1')) {
+            if (el.classList.contains('level3-container')) {
+                el.style.display = isCollapsed ? 'none' : 'table';
+            }
+            el = el.nextElementSibling;
+        }
+    }
+});
+
+// Update the master toggle to also handle the arrow states
+if (typeof setLevel === 'function') {
+    const originalSetLevel = setLevel;
+    window.setLevel = function(level) {
+        originalSetLevel(level);
+        
+        // Fix up the collapsed classes based on the master level
+        document.querySelectorAll('.level1').forEach(function(el) {
+            if (level >= 2) el.classList.remove('collapsed');
+            else el.classList.add('collapsed');
+        });
+        
+        document.querySelectorAll('.level2').forEach(function(el) {
+            if (level >= 3) el.classList.remove('collapsed');
+            else el.classList.add('collapsed');
+        });
+    };
+    // Re-trigger the initial state
+    window.setLevel(3);
+}
+</script>
+
+<style>
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #d35400;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(211, 84, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.back-to-top:hover {
+    background-color: #b94a00;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(211, 84, 0, 0.5);
+}
+</style>
+<button class="back-to-top" id="backToTopBtn" title="Go to top">&#8593;</button>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var btn = document.getElementById("backToTopBtn");
+    if(!btn) return;
+    
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 300) {
+            btn.classList.add("visible");
+        } else {
+            btn.classList.remove("visible");
+        }
+    });
+    
+    btn.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
+</script>
+</body>
+
+
+</html>

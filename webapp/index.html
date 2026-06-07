@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saradakosh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Saradakosh</h1>
+    <h2 class="subtitle">Lives and Teachings of Sri Ramakrishna, Ma Sarada, and Swami Vivekananda</h2>
+</header>
+
+<div class="container">
+    
+    <!-- Instant Search -->
+    <h2 class="section-title">Search Archive</h2>
+    <input type="text" id="search-bar" placeholder="Start typing to search the entire database instantaneously...">
+    <div id="search-results" style="display:none;"></div>
+
+    <!-- Today in History -->
+    <h2 class="section-title" id="today-title">Today in History</h2>
+    <div id="today-history">
+        <p style="color:#888;">Loading historical records...</p>
+    </div>
+
+    <!-- Reports -->
+    <h2 class="section-title">Reports & Directories</h2>
+    <div class="reports-grid" id="reports-directory">
+        <!-- Injected via JS -->
+    </div>
+
+</div>
+
+<script src="js/app.js?v=2"></script>
+</body>
+</html>

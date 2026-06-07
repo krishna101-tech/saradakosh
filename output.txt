@@ -1,0 +1,14 @@
+ParaID 629 in Parameter1:
+[{'ParaID': 629, 'Para1': 'রামচন্দ্র মাহাত্ম্য', 'Type': 'Ref', 'Sequence': nan, 'Person': nan, 'Remark': 'RCM', 'Remark2': 'B', 'Remark3': nan, 'Remark4': 'Life'}]
+
+ParaID 811 in Parameter1:
+[{'ParaID': 811, 'Para1': '1G: Householders', 'Type': 'Person', 'Sequence': nan, 'Person': nan, 'Remark': nan, 'Remark2': nan, 'Remark3': nan, 'Remark4': nan}]
+
+ParaID 577 in Parameter1:
+[{'ParaID': 577, 'Para1': 'Gen', 'Type': 'Person', 'Sequence': nan, 'Person': nan, 'Remark': nan, 'Remark2': nan, 'Remark3': nan, 'Remark4': nan}]
+
+ParaM where ChildID = 629:
+[]
+
+ParaM where ParentID = 629:
+[{'UID': 596, 'ParentID': 629, 'ChildID': 811.0, 'Child2ID': 577.0}]

@@ -1,0 +1,20 @@
+                                             Para1  Sequence Remark Remark2
+586  Swami Vivekananda in Indian News Papers I, II       NaN    VIN       E
+592                          স্বামীজীর স্মৃতিসংচযন       NaN   SSSN       B
+630                 স্বামী বিবেকানন্দের বাল্যজীবনী       NaN    VBJ       B
+631                     কাশীধামে স্বামী বিবেকানন্দ       NaN    KSV       B
+653           স্বামী বিবেকানন্দ ও সমকালীন ভারতবর্ষ       NaN    SBV       B
+660        Complete works of Swami Vivekananda 1-9       NaN  CW SV       E
+661                 Life of Swami Vivekananda I,II       NaN    LSV       E
+720                           স্বামীজীর পদপ্রান্তে       NaN     SP       B
+727                                        যুগনাযক       NaN    YNG       B
+728                          স্মৃতির আলোয স্বামীজী       NaN   SASP       B
+729               Photographs of Swami Vivekananda       NaN    PSV       E
+731                                    বানী ও রচনা       NaN    VOR       B
+732                    লন্ডনে স্বামী বিবেকনন্দ ১-২       NaN    NSV       B
+733                                       পত্রাবলী       NaN     PS       B
+734                    বিবেকানন্দের জীবনের ঘটনাবলী       NaN    VJG       B
+735                           New Discoveries  1-6       NaN     ND       E
+736                   Swami Vivekananda in America       NaN    SVA       E
+737             Reminiscences of Swami Vivekananda       NaN    RSV       E
+738                   Swami Vivekananda In Chicago       NaN    SVC       E

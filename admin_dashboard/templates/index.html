@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saradakosh Offline Data Editor</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f6f3; /* pale off-white */
+        color: #333;
+        margin: 0;
+        padding: 20px;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    .editor-container {
+        display: flex;
+        gap: 20px;
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 120px;
+        font-weight: bold;
+    }
+    .sidebar button {
+        background: none;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: underline;
+        cursor: pointer;
+        text-align: left;
+    }
+    .main-form {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .top-row {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .top-row input, .top-row select {
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+    .id-box {
+        background-color: yellow;
+        font-weight: bold;
+        width: 60px;
+        text-align: center;
+    }
+    .text-area-box {
+        width: 100%;
+        height: 150px;
+        border: 1px solid #cc0000;
+        background-color: #fffaf0;
+        padding: 10px;
+        font-family: 'Georgia', serif;
+        font-size: 16px;
+        resize: vertical;
+    }
+    .matrix-grid {
+        border: 1px solid #cc0000;
+        min-height: 200px;
+        background-color: #f0f7f0;
+        padding: 10px;
+    }
+    .grid-header {
+        display: grid;
+        grid-template-columns: 20px 1fr 1fr;
+        color: #888;
+        font-size: 12px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 5px;
+    }
+    .grid-row {
+        display: grid;
+        grid-template-columns: 20px 1fr 1fr;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+    .grid-row select {
+        width: 100%;
+    }
+    
+    /* Dynamic UI loading state */
+    .loading {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h2>Saradakosh Admin Dashboard</h2>
+</div>
+
+<div class="editor-container" id="app">
+    <div class="sidebar">
+        <button onclick="saveRecord()">Save</button>
+        <button onclick="duplicateRecord()">Duplicate</button>
+        <button onclick="deleteRecord()">Delete</button>
+        <button onclick="newRecord()">Add</button>
+    </div>
+
+    <div class="main-form">
+        <div class="top-row">
+            <input type="text" class="id-box" id="f_id" readonly>
+            <span>Eng</span> <input type="text" id="f_ref" style="width: 100px;">
+            <span>Guj</span> <input type="text" id="f_gujarati" style="width: 50px;">
+            <span>New Guj</span> <input type="text" id="f_new_guj" style="width: 50px;">
+            <span>Type</span> <select id="f_type"><option value="0">0</option></select>
+            <select id="f_parva" style="width:250px;">
+                <!-- Filled dynamically -->
+            </select>
+            <input type="text" id="f_dt" style="width: 30px;" placeholder="dd">
+            <input type="text" id="f_mn" style="width: 30px;" placeholder="mm">
+            <input type="text" id="f_yr" style="width: 50px;" placeholder="yyyy">
+            <input type="text" id="f_sequence" style="width: 120px;" placeholder="Sequence">
+        </div>
+
+        <textarea id="f_du" class="text-area-box" placeholder="Main text / Event description..."></textarea>
+
+        <div class="matrix-grid">
+            <div class="grid-header">
+                <div></div>
+                <div>Per, Plc, MP, Th</div>
+                <div>Period</div>
+            </div>
+            
+            <div id="matrix-rows">
+                <!-- Rows injected here -->
+            </div>
+            <button onclick="addMatrixRow()" style="margin-top: 10px;">+ Add Parameter Link</button>
+        </div>
+        
+        <div style="display:flex; justify-content: space-between; align-items:center; margin-top: 20px;">
+            <div>
+                <button onclick="prevRecord()">&#9664; Prev</button>
+                <span id="record-counter">Record 1 of X</span>
+                <button onclick="nextRecord()">Next &#9654;</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let currentData = [];
+    let currentIndex = 0;
+    let parameters = [];
+
+    async function initApp() {
+        // Fetch parameter lookups
+        const paramRes = await fetch('/api/parameters');
+        parameters = await paramRes.json();
+        
+        // Fetch events
+        const eventRes = await fetch('/api/events');
+        const eventData = await eventRes.json();
+        currentData = eventData.data;
+        
+        populateDropdowns();
+        renderRecord();
+    }
+
+    function populateDropdowns() {
+        const parvaSelect = document.getElementById('f_parva');
+        parvaSelect.innerHTML = '<option value="">-- Select Parva --</option>';
+        parameters.filter(p => p.type === 'Parva' || p.type === 'Period').forEach(p => {
+            parvaSelect.innerHTML += `<option value="${p.id}">${p.para1}</option>`;
+        });
+        
+        // Populate Type
+        const typeSelect = document.getElementById('f_type');
+        typeSelect.innerHTML = '<option value="">-- Select Type --</option>';
+        parameters.filter(p => p.type === 'Type').forEach(p => {
+            typeSelect.innerHTML += `<option value="${p.id}">${p.para1}</option>`;
+        });
+    }
+
+    function renderRecord() {
+        if(currentData.length === 0) return;
+        const rec = currentData[currentIndex];
+        
+        document.getElementById('f_id').value = rec.id || '';
+        document.getElementById('f_ref').value = rec.ref || '';
+        document.getElementById('f_gujarati').value = rec.gujarati || '';
+        document.getElementById('f_new_guj').value = rec.new_guj || '';
+        document.getElementById('f_dt').value = rec.dt || '';
+        document.getElementById('f_mn').value = rec.mn || '';
+        document.getElementById('f_yr').value = rec.yr || '';
+        document.getElementById('f_sequence').value = rec.sequence || '';
+        document.getElementById('f_du').value = rec.du || '';
+        
+        document.getElementById('record-counter').innerText = `Record ${currentIndex + 1} of ${currentData.length}`;
+        
+        // Render empty matrix row for now
+        renderMatrixRows();
+    }
+    
+    function renderMatrixRows() {
+        const container = document.getElementById('matrix-rows');
+        container.innerHTML = '';
+        addMatrixRow(); // Add one blank row
+    }
+
+    function addMatrixRow() {
+        const container = document.getElementById('matrix-rows');
+        const row = document.createElement('div');
+        row.className = 'grid-row';
+        
+        let personOptions = '<option value="">-- Select --</option>';
+        parameters.filter(p => p.type === 'Person' || p.type === 'Loc').forEach(p => {
+            personOptions += `<option value="${p.id}">${p.para1}</option>`;
+        });
+
+        row.innerHTML = `
+            <div>&#9654;</div>
+            <select>${personOptions}</select>
+            <select><option value="">-- Select Period --</option></select>
+        `;
+        container.appendChild(row);
+    }
+
+    function nextRecord() {
+        if(currentIndex < currentData.length - 1) {
+            currentIndex++;
+            renderRecord();
+        }
+    }
+
+    function prevRecord() {
+        if(currentIndex > 0) {
+            currentIndex--;
+            renderRecord();
+        }
+    }
+
+    function saveRecord() { alert("Save not wired up yet!"); }
+    function deleteRecord() { alert("Delete not wired up yet!"); }
+    function duplicateRecord() { alert("Duplicate not wired up yet!"); }
+    function newRecord() { alert("New record not wired up yet!"); }
+
+    // Start App
+    initApp();
+</script>
+
+</body>
+</html>
