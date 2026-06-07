@@ -55,8 +55,8 @@ full_html = f'''<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="../css/style.css?v=5" rel="stylesheet">
-<script src="../js/theme.js?v=5"></script>
+<link href="../css/style.css?v=6" rel="stylesheet">
+<script src="../js/theme.js?v=6"></script>
 </head>
 <body>
 <div class="container">
