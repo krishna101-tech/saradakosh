@@ -1,8 +1,8 @@
 import Database from 'better-sqlite3';
 import path from 'path';
 
-// Connect to the SQLite database which is in the parent directory
-const dbPath = path.resolve(process.cwd(), '../saradakosh.db');
+// Connect to the SQLite database which is in the same directory (Vercel deployment)
+const dbPath = path.resolve(process.cwd(), 'saradakosh.db');
 const db = new Database(dbPath, { readonly: true });
 
 export function getPersons() {
