@@ -18,8 +18,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  title: "Saradakosh Next.js",
-  description: "Dynamically generated web application for Saradakosh",
+  title: "Saradakosh",
+  description: "Digital platform dedicated to the Ramakrishna-Sarada-Vivekananda lineage",
 };
 
 export default function RootLayout({ children }) {
