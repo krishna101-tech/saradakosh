@@ -39,16 +39,14 @@ export default function Home() {
         {/* Reports */}
         <h2 className="section-title">Reports & Directories</h2>
         <div className="reports-grid">
-          <Link href="/reports/refs" className="report-card">
-            <h3>Book References</h3>
-            <p>A hierarchical view of references, nested by category.</p>
+          <Link href="/reports/refs" className="report-card has-image">
+            <img src="/images/book_refs.png" alt="Sri Ramakrishna Vivekananda Literature" />
           </Link>
           <Link href="/reports/vivekananda" className="report-card has-image">
             <img src="/images/vivekananda.png" alt="Explore the Complete Life & Teachings of Swami Vivekananda 1863-1902" />
           </Link>
-          <Link href="/reports/mega-period" className="report-card">
-            <h3>Major Periods of our History</h3>
-            <p>Explore the major historical eras of the movement.</p>
+          <Link href="/reports/mega-period" className="report-card has-image">
+            <img src="/images/mega_period.png" alt="Main Periods in Ramakrishna Mission History" />
           </Link>
         </div>
 
