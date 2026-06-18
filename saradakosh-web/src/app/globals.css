@@ -381,3 +381,7 @@ tr:hover td { background: var(--primary-glow); }
 .item-link:hover {
   background: var(--secondary-color);
 }
+/* Image Card Additions */
+.report-card.has-image { padding: 0; border: none; background: transparent; box-shadow: none; overflow: hidden; display: flex; flex-direction: column; }
+.report-card.has-image img { width: 100%; height: auto; object-fit: cover; display: block; border-radius: 12px; transition: transform 0.5s ease; box-shadow: var(--glass-shadow); }
+.report-card.has-image:hover img { transform: scale(1.03); box-shadow: 0 15px 35px var(--primary-glow); }

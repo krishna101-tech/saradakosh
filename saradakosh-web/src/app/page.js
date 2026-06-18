@@ -43,9 +43,8 @@ export default function Home() {
             <h3>Book References</h3>
             <p>A hierarchical view of references, nested by category.</p>
           </Link>
-          <Link href="/reports/vivekananda" className="report-card">
-            <h3>Swami Vivekananda</h3>
-            <p>Interactive tree exploring the life and works of Swami Vivekananda.</p>
+          <Link href="/reports/vivekananda" className="report-card has-image">
+            <img src="/images/vivekananda.png" alt="Explore the Complete Life & Teachings of Swami Vivekananda 1863-1902" />
           </Link>
           <Link href="/reports/mega-period" className="report-card">
             <h3>Major Periods of our History</h3>
