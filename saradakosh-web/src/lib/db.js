@@ -17,7 +17,7 @@ export function getPersons() {
 
 export function getEvents(limit = 100) {
   try {
-    const stmt = db.prepare('SELECT * FROM events ORDER BY yr ASC, mn ASC, dt ASC LIMIT ?');
+    const stmt = db.prepare('SELECT * FROM events WHERE (child_id IS NULL OR child_id = '''') ORDER BY yr ASC, mn ASC, dt ASC LIMIT ?');
     return stmt.all(limit);
   } catch (error) {
     console.error("Error fetching events:", error);
@@ -29,7 +29,7 @@ export function getEventsByDate(month, day) {
   try {
     const stmt = db.prepare(`
       SELECT * FROM events 
-      WHERE dt = ? AND mn = ? 
+      WHERE dt = ? AND mn = ? AND (child_id IS NULL OR child_id = '')
       ORDER BY yr ASC
     `);
     const todayEvents = stmt.all(day, month);
@@ -222,8 +222,8 @@ export function getEventsByParameterId(paramId) {
       SELECT e.* 
       FROM events e
       JOIN event_parameters ep ON e.id = ep.event_id
-      WHERE ep.parameter_id = ?
-      ORDER BY e.yr ASC, e.mn ASC, e.dt ASC
+      WHERE ep.parameter_id = ? AND (e.child_id IS NULL OR e.child_id = '')
+      ORDER BY e.sequence ASC, NULLIF(e.yr, 0) ASC NULLS LAST, NULLIF(e.mn, 0) ASC NULLS LAST, NULLIF(e.dt, 0) ASC NULLS LAST
     `);
     
     const events = stmt.all(paramId);
@@ -271,7 +271,7 @@ export function searchEvents(term, limit = 50) {
     // Basic LIKE search
     const stmt = db.prepare(`
       SELECT * FROM events 
-      WHERE du LIKE ? 
+      WHERE du LIKE ? AND (child_id IS NULL OR child_id = '')
       LIMIT ?
     `);
     return stmt.all(`%${term}%`, limit);

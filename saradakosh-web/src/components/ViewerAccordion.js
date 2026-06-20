@@ -53,7 +53,7 @@ export default function ViewerAccordion({ events }) {
                 </div>
             </button>
             {hasChildren && (
-                <div className="panel" style={{ display: isOpen ? 'block' : 'none', padding: '10px 18px 20px 115px' }}>
+                <div className="panel viewer-panel" style={{ display: isOpen ? 'block' : 'none' }}>
                     {e.children.map(c => (
                         <div key={c.id} className="child-text" style={{ marginBottom: '10px', lineHeight: 1.6, color: '#444', borderBottom: '1px dashed #eee', paddingBottom: '10px' }}>
                             {c.du}

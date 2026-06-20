@@ -157,6 +157,9 @@ h2.subtitle {
   border-left: 3px solid var(--primary-color); margin-bottom: 15px;
   animation: slideDown 0.3s ease-out;
 }
+.viewer-panel {
+  padding: 10px 18px 20px 115px;
+}
 .child-event { padding: 12px 0; border-bottom: 1px dashed var(--glass-border); font-size: 0.95rem; }
 
 /* Reports Grid */
@@ -310,6 +313,7 @@ tr:hover td { background: var(--primary-glow); }
     .quotes-grid { grid-template-columns: 1fr; gap: 15px; }
     
     /* Reports Mobile View */
+    .viewer-panel { padding: 10px 15px 20px 15px; }
     .reports-grid { grid-template-columns: 1fr; gap: 15px; }
     .report-card { padding: 15px; }
     .level1 { margin-top: 15px; font-size: 1.2rem; padding-bottom: 5px; margin-bottom: 5px; }
