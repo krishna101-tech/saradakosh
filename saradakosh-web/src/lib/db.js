@@ -17,7 +17,7 @@ export function getPersons() {
 
 export function getEvents(limit = 100) {
   try {
-    const stmt = db.prepare('SELECT * FROM events WHERE (child_id IS NULL OR child_id = '''') ORDER BY yr ASC, mn ASC, dt ASC LIMIT ?');
+    const stmt = db.prepare("SELECT * FROM events WHERE (child_id IS NULL OR child_id = '') ORDER BY yr ASC, mn ASC, dt ASC LIMIT ?");
     return stmt.all(limit);
   } catch (error) {
     console.error("Error fetching events:", error);
