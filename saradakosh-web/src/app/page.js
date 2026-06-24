@@ -45,13 +45,16 @@ export default function Home() {
           <Link href="/reports/vivekananda" className="report-card has-image">
             <img src="/images/vivekananda.png" alt="Explore the Complete Life & Teachings of Swami Vivekananda 1863-1902" />
           </Link>
+          <Link href="/quotes" className="report-card has-image">
+            <img src="/images/vivekananda_quotes.png" alt="Vivekananda Quotes" />
+          </Link>
           <Link href="/reports/mega-period" className="report-card has-image">
             <img src="/images/mega_period.png" alt="Main Periods in Ramakrishna Mission History" />
           </Link>
+          <Link href="/schedule" target="_blank" rel="noopener noreferrer" className="report-card has-image schedule-card-home">
+            <img src="/images/click_to_reg.png" alt="Click to Register" />
+          </Link>
         </div>
-
-        {/* Schedule */}
-        <ClassSchedule />
 
         {/* Today in History */}
         <div style={{ marginTop: '50px' }}>

@@ -98,40 +98,26 @@ export default function ClassSchedule() {
 
   return (
     <>
-      <div className="schedule-image-container">
-        <img className="schedule-image" style={{ display: 'block', margin: '0 auto', width: '50%', maxWidth: '400px' }} src="/images/morning class image.png" alt="Morning Class" />
-      </div>
-      <header className="schedule-header">
-        <h2 className="section-title" style={{ marginTop: 0 }}>Class Schedule</h2>
-        <div className="schedule-actions">
-          <div className="schedule-buttons">
-            <a href={scheduleConfig.googleMeetLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Google Meet</a>
-            <button 
-              className="btn btn-secondary"
-              onClick={() => {
-                // Simulate click / double click
-                // For simplicity in React without a custom hook, standard click does without links.
-                handleCopy(false);
-              }}
-              onDoubleClick={() => handleCopy(true)}
-              title="Click to copy, double click to copy with links"
-            >
-              Copy for WhatsApp
-            </button>
+      <header className="text-center mb-6 mt-8">
+        <div className="mt-4 text-slate-600 flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4">
+          <span className="mb-2 sm:mb-0">Morning class: Mon-Fri @7.45 am</span>
+          <div className="flex gap-2">
+            <a href="https://wa.link/wy4t10" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg shadow-sm transition-transform transform hover:scale-105 text-sm no-underline">
+              Click to Register
+            </a>
           </div>
         </div>
       </header>
       
-      <div className="schedule-list">
+      <div className="schedule-list w-full max-w-4xl mx-auto px-4 mb-8 flex flex-col gap-3">
         {scheduleData.length === 0 ? (
-          <p style={{ color: '#888' }}>Loading schedule...</p>
+          <p className="text-center text-slate-500">Loading schedule...</p>
         ) : (
           scheduleData.map((item, idx) => (
-            <div key={idx} className={`schedule-card ${item.isCurrentWeek ? 'current' : ''}`}>
-                <div className="schedule-card-content">
-                    <span className="schedule-date">{item.dateRange}</span>
-                    <a href={item.link} target="_blank" rel="noopener noreferrer" className="schedule-title">{item.name}</a>
-                </div>
+            <div key={idx} className={`schedule-card ${item.isCurrentWeek ? 'current' : ''} !p-4 !flex !flex-col sm:!flex-row sm:!items-center gap-3 sm:gap-4`}>
+                <p className="flex-grow min-w-0 text-left m-0" style={{ color: 'var(--text-color)' }} title={item.name}>
+                    <span className="font-bold">{item.dateRange}</span> - <span style={{ opacity: 0.9 }}>{item.name}</span>
+                </p>
             </div>
           ))
         )}

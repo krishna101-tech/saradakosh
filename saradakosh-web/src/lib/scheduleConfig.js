@@ -1,5 +1,5 @@
 export const scheduleConfig = {
-    "startDate": "2024-06-03",
+    "startDate": "2024-06-17",
     "googleMeetLink": "https://meet.google.com/wmv-cztw-ohw",
     "topics": [
         {
