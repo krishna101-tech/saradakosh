@@ -1,6 +1,7 @@
 .quotes-container {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
   background: #fff;
   font-family: Arial, sans-serif;
 }
@@ -13,6 +14,11 @@
   flex-shrink: 0;
   min-height: 100vh;
   padding: 0;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+.quotes-container.sidebar-closed .quotes-sidebar {
+  width: 0;
 }
 
 .sidebar-header {
@@ -29,16 +35,16 @@
   font-weight: bold;
 }
 
-.clear-filter {
-  background: rgba(255,255,255,0.2);
+.mobile-close-sidebar {
+  display: none;
+  background: none;
   border: none;
-  color: white;
-  padding: 2px 7px;
-  border-radius: 3px;
+  color: #fff;
+  font-size: 1.4rem;
   cursor: pointer;
-  font-size: 0.72rem;
+  padding: 0 5px;
+  line-height: 1;
 }
-.clear-filter:hover { background: rgba(255,255,255,0.35); }
 
 .categories-tree {
   overflow-y: auto;
@@ -80,6 +86,8 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
+  height: 100vh;
+  overflow-y: auto;
 }
 
 .quotes-header {
@@ -88,10 +96,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
+}
+
+.burger-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #8b1a1a;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  order: 1;
 }
 
 .btn-home {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   padding: 5px 14px;
   background: #8b1a1a;
   color: #fff;
@@ -99,13 +122,32 @@
   border-radius: 4px;
   font-size: 0.82rem;
   font-weight: bold;
+  order: 2;
 }
 .btn-home:hover { background: #6a1010; }
+.home-text { display: inline; }
+
+.header-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  order: 3;
+}
+
+.lang-select {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
 
 .search-bar {
   display: flex;
   align-items: center;
   gap: 6px;
+  order: 4;
 }
 .search-bar input {
   padding: 5px 10px;
@@ -148,6 +190,11 @@
   gap: 0;
   padding: 0;
   width: 100%;
+  transition: grid-template-columns 0.3s ease;
+}
+
+.quotes-container.sidebar-closed .quotes-grid {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .quote-card-wrapper {
@@ -183,12 +230,60 @@
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .quotes-grid { grid-template-columns: repeat(3, 1fr); }
+  .quotes-container.sidebar-closed .quotes-grid { grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 600px) {
   .quotes-container { flex-direction: column; }
-  .quotes-sidebar { width: 100%; min-height: auto; }
-  .categories-tree { max-height: 250px; border-bottom: 2px solid #5a1010; }
-  .quotes-grid { grid-template-columns: repeat(2, 1fr); }
-  .search-bar input { width: 140px; }
+  
+  .quotes-header { flex-wrap: wrap; }
+  .btn-home { order: 1; }
+  .home-text { display: none; } /* Show only icon on mobile to save space */
+  .header-center { order: 2; flex-grow: 1; justify-content: center; }
+  .burger-toggle { order: 3; margin-left: auto; }
+  .search-bar { 
+    order: 4; 
+    width: 100%; 
+    margin-top: 10px; 
+    justify-content: center; 
+  }
+  
+  /* Mobile Sidebar Full Screen Overlay */
+  .quotes-sidebar { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100vw !important; 
+    height: 100vh; 
+    z-index: 1000; 
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out; 
+    transform: translateX(-100%);
+  }
+  .quotes-container.sidebar-open .quotes-sidebar {
+    transform: translateX(0);
+  }
+  .quotes-container.sidebar-closed .quotes-sidebar {
+    transform: translateX(-100%);
+  }
+  
+  .sidebar-header {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .mobile-close-sidebar {
+    display: block;
+  }
+  
+  .categories-tree { 
+    max-height: none; 
+    flex-grow: 1; 
+    overflow-y: auto; 
+    border-bottom: none; 
+  }
+  
+  .quotes-grid, .quotes-container.sidebar-closed .quotes-grid { grid-template-columns: repeat(2, 1fr); }
+  .search-bar input { width: 100%; max-width: 300px; }
   .category-title-area h1 { font-size: 1.3rem; }
 }

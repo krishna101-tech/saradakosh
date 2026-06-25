@@ -10,8 +10,14 @@ import quotesData from '@/data/quotes.json';
 
 const LANG_LABELS = { eng: 'English', ben: 'Bengali', hin: 'Hindi', guj: 'Gujarati', tel: 'Telugu', odi: 'Odia' };
 
+function getOptimizedUrl(url, width) {
+  if (!url || !url.includes('/upload/')) return url;
+  const transform = width ? `c_scale,w_${width},f_auto,q_auto` : `f_auto,q_auto`;
+  return url.replace('/upload/', `/upload/${transform}/`);
+}
+
 // Recursive Category Component
-const CategoryNode = ({ node, activeCategory, setActiveCategory, level = 0 }) => {
+const CategoryNode = ({ node, activeCategory, setActiveCategory, closeSidebar, level = 0, categoryCounts }) => {
   const hasChildren = node.children && node.children.length > 0;
   const isActive = activeCategory === node.name;
   
@@ -46,23 +52,26 @@ const CategoryNode = ({ node, activeCategory, setActiveCategory, level = 0 }) =>
       });
     } else {
       setActiveCategory(node.name);
+      if (closeSidebar) closeSidebar();
     }
   };
+
+  const count = categoryCounts[node.name] || 0;
 
   return (
     <div className={`category-node level-${level}`}>
       <div
         className={`category-label ${isActive ? 'active-cat' : ''} ${hasChildren ? 'has-children' : ''}`}
         onClick={handleClick}
-        style={{ paddingLeft: `${level * 14}px` }}
+        style={{ paddingLeft: `${16 + (level * 16)}px`, paddingRight: '16px' }}
       >
-        <span className="cat-name">{node.name}</span>
+        <span className="cat-name">{node.name} <span style={{ opacity: 0.8, fontSize: '0.85em', marginLeft: '4px' }}>({count})</span></span>
         {hasChildren && <span className="cat-toggle">{isOpen ? '−' : '+'}</span>}
       </div>
       {hasChildren && (
         <div className={`category-children ${isOpen ? 'open' : ''}`}>
           {node.children.map((child, i) => (
-            <CategoryNode key={i} node={child} activeCategory={activeCategory} setActiveCategory={setActiveCategory} level={level + 1} />
+            <CategoryNode key={i} node={child} activeCategory={activeCategory} setActiveCategory={setActiveCategory} closeSidebar={closeSidebar} level={level + 1} categoryCounts={categoryCounts} />
           ))}
         </div>
       )}
@@ -75,6 +84,7 @@ export default function QuotesClient() {
   const [activeCategory, setActiveCategory] = useState('Best of Vivekananda');
   const [selectedLanguage, setSelectedLanguage] = useState('eng');
   const [searchTerm, setSearchTerm] = useState('');
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   // Read ?cat= from URL or restore from sessionStorage on mount
   useEffect(() => {
@@ -87,6 +97,11 @@ export default function QuotesClient() {
       const saved = sessionStorage.getItem('sk_active_cat');
       if (saved) setActiveCategory(saved);
     }
+
+    const savedSidebar = sessionStorage.getItem('sk_sidebar_open');
+    if (savedSidebar !== null) {
+      setIsSidebarOpen(savedSidebar === 'true');
+    }
   }, [searchParams]);
 
   useEffect(() => {
@@ -95,12 +110,65 @@ export default function QuotesClient() {
     else sessionStorage.removeItem('sk_active_cat');
   }, [activeCategory]);
 
+  const handleSidebarOpen = (newState) => {
+    setIsSidebarOpen(newState);
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem('sk_sidebar_open', newState.toString());
+    }
+  };
+
+  // Precompute category descendants
+  const categoryDescendants = React.useMemo(() => {
+    const map = {};
+    const traverse = (node) => {
+      const descendants = new Set([node.name]);
+      if (node.children) {
+        node.children.forEach(child => {
+          const childDesc = traverse(child);
+          childDesc.forEach(d => descendants.add(d));
+        });
+      }
+      map[node.name] = descendants;
+      return descendants;
+    };
+    categoriesData.forEach(topNode => traverse(topNode));
+    return map;
+  }, []);
+
+  // Compute exact quote counts per category
+  const categoryCounts = React.useMemo(() => {
+    const counts = {};
+    Object.keys(categoryDescendants).forEach(cat => {
+      const descendants = categoryDescendants[cat];
+      const seen = new Set();
+      let count = 0;
+      quotesData.forEach(q => {
+        const imgs = q.images || {};
+        if (Object.keys(imgs).length === 0) return;
+        const displayLang = imgs[selectedLanguage] ? selectedLanguage : imgs['eng'] ? 'eng' : Object.keys(imgs)[0];
+        const imgSrc = imgs[displayLang];
+        if (!imgSrc) return;
+        
+        if (q.categories.some(c => descendants.has(c))) {
+          if (!seen.has(imgSrc)) {
+            seen.add(imgSrc);
+            count++;
+          }
+        }
+      });
+      counts[cat] = count;
+    });
+    return counts;
+  }, [categoryDescendants, selectedLanguage]);
+
   // Deduplicate by image path to avoid showing same image twice
   const seenImages = new Set();
 
   const displayedQuotes = quotesData.filter(q => {
-    // Category filter
-    if (activeCategory && !q.categories.includes(activeCategory)) return false;
+    // Category filter using descendants map
+    if (activeCategory && categoryDescendants[activeCategory]) {
+      if (!q.categories.some(c => categoryDescendants[activeCategory].has(c))) return false;
+    }
     // Must have at least one image
     const imgs = q.images || {};
     if (Object.keys(imgs).length === 0) return false;
@@ -117,18 +185,26 @@ export default function QuotesClient() {
   });
 
   return (
-    <div className="quotes-container">
+    <div className={`quotes-container ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
       {/* Left Sidebar */}
       <aside className="quotes-sidebar">
         <div className="sidebar-header">
           <h2 className="sidebar-title">Categories</h2>
-          {activeCategory && (
-            <button className="clear-filter" onClick={() => setActiveCategory(null)}>✕ Clear</button>
-          )}
+          <button 
+            className="mobile-close-sidebar" 
+            onClick={() => handleSidebarOpen(false)}
+            aria-label="Close menu"
+          >
+            ✕
+          </button>
         </div>
         <div className="categories-tree">
           {categoriesData.map((topNode, i) => (
-            <CategoryNode key={i} node={topNode} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
+            <CategoryNode key={i} node={topNode} activeCategory={activeCategory} setActiveCategory={setActiveCategory} categoryCounts={categoryCounts} closeSidebar={() => {
+              if (typeof window !== 'undefined' && window.innerWidth <= 600) {
+                handleSidebarOpen(false);
+              }
+            }} />
           ))}
         </div>
       </aside>
@@ -137,17 +213,27 @@ export default function QuotesClient() {
       <main className="quotes-main">
         {/* Top Header */}
         <header className="quotes-header">
-          <Link href="/" className="btn-home">Home</Link>
-          <div className="search-bar">
+          <button className="burger-toggle" onClick={() => handleSidebarOpen(!isSidebarOpen)}>
+            {isSidebarOpen ? '✕' : '☰'}
+          </button>
+          
+          <Link href="/" className="btn-home">
+            <span className="home-icon">🏠</span><span className="home-text"> Home</span>
+          </Link>
+          
+          <div className="header-center">
             <select
               value={selectedLanguage}
               onChange={(e) => setSelectedLanguage(e.target.value)}
-              style={{ padding: '8px 15px', borderRadius: '20px', border: '1px solid #ccc', background: '#fff', fontFamily: 'inherit', fontSize: '0.9rem' }}
+              className="lang-select"
             >
               {Object.entries(LANG_LABELS).map(([code, label]) => (
                 <option key={code} value={code}>{label}</option>
               ))}
             </select>
+          </div>
+
+          <div className="search-bar">
             <input
               type="text"
               placeholder="Search quotes..."
@@ -160,7 +246,7 @@ export default function QuotesClient() {
 
         {/* Category Title Area */}
         <div className="category-title-area">
-          <h1>{activeCategory || 'All Quotes'}</h1>
+          <h1>{activeCategory}</h1>
           <p className="subtitle">(Total Quotes — {displayedQuotes.length})</p>
         </div>
 
@@ -180,7 +266,7 @@ export default function QuotesClient() {
                 className="quote-card-wrapper"
               >
                 <div className="quote-card-placeholder">
-                  <img src={imgSrc} alt="Quote" />
+                  <img src={getOptimizedUrl(imgSrc, 400)} alt="Quote" loading="lazy" />
                 </div>
               </Link>
             );

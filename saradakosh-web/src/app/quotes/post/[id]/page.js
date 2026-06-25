@@ -4,11 +4,18 @@ import fs from 'fs';
 import path from 'path';
 import * as cheerio from 'cheerio';
 import quotesData from '@/data/quotes.json';
+import PostActions from './PostActions';
 
 const LANG_LABELS = {
   eng: 'English', guj: 'Gujarati', hin: 'Hindi',
   ben: 'Bengali', tel: 'Telugu', odi: 'Odia',
 };
+
+function getOptimizedUrl(url, width) {
+  if (!url || !url.includes('/upload/')) return url;
+  const transform = width ? `c_scale,w_${width},f_auto,q_auto` : `f_auto,q_auto`;
+  return url.replace('/upload/', `/upload/${transform}/`);
+}
 
 const LOCAL_SITE_ROOT = path.join(
   process.cwd(), '..', '..', 'viv live website',
@@ -19,9 +26,8 @@ function extractPostData(quoteId) {
   const htmlPath = path.join(LOCAL_SITE_ROOT, quoteId, 'index.html');
   if (!fs.existsSync(htmlPath)) return { paragraphs: [], title: '' };
 
-  // Read as latin1 bytes then convert to utf-8
-  const raw = fs.readFileSync(htmlPath, 'latin1');
-  const html = Buffer.from(raw, 'latin1').toString('utf8');
+  // Read directly as utf-8 (fixes mangled punctuation and & symbols)
+  const html = fs.readFileSync(htmlPath, 'utf8');
   const $ = cheerio.load(html);
 
   // Title from <title> or h1
@@ -36,6 +42,32 @@ function extractPostData(quoteId) {
   });
 
   return { paragraphs, title };
+}
+
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const quoteId = decodeURIComponent(resolvedParams.id);
+  const quote = quotesData.find(q => q.id === quoteId);
+  if (!quote) return {};
+
+  const { title } = extractPostData(quoteId);
+  const imagesObj = quote.images || {};
+  const englishImage = imagesObj['eng'] || Object.values(imagesObj)[0];
+
+  return {
+    title: title || 'Swami Vivekananda Quote',
+    description: 'Read and share this inspiring quote by Swami Vivekananda.',
+    openGraph: {
+      title: title || 'Swami Vivekananda Quote',
+      description: 'Read and share this inspiring quote by Swami Vivekananda.',
+      images: englishImage ? [englishImage] : [],
+      type: 'article',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      images: englishImage ? [englishImage] : [],
+    }
+  };
 }
 
 export default async function QuotePostPage({ params, searchParams }) {
@@ -72,67 +104,153 @@ export default async function QuotePostPage({ params, searchParams }) {
   });
 
   return (
-    <div style={{ minHeight:'100vh', background:'#f9f3ed', fontFamily:'Georgia, serif', color:'#1a0a00' }}>
+    <div className="post-page-container" style={{ fontFamily:'Georgia, serif', color:'#1a0a00' }}>
+      <style>{`
+        .post-page-container {
+          height: 100vh; 
+          overflow: hidden; 
+          background: #f9f3ed;
+        }
+        .post-layout {
+          max-width: 1200px; margin: 40px auto 0; padding: 0 24px;
+          display: grid;
+          grid-template-columns: 140px minmax(300px, 450px) 1fr;
+          gap: 40px;
+          align-items: start;
+        }
+        .post-buttons { display: flex; flex-direction: column; gap: 12px; }
+        .post-image { display: flex; justify-content: center; }
+        .post-text { 
+          display: flex; flex-direction: column; gap: 28px; 
+          height: calc(100vh - 80px); 
+          overflow-y: auto; 
+          padding-right: 20px; 
+          padding-bottom: 60px;
+        }
+        
+        /* Scrollbar styling for text area */
+        .post-text::-webkit-scrollbar {
+          width: 6px;
+        }
+        .post-text::-webkit-scrollbar-track {
+          background: rgba(139,26,26,0.05);
+          border-radius: 10px;
+        }
+        .post-text::-webkit-scrollbar-thumb {
+          background: rgba(139,26,26,0.3);
+          border-radius: 10px;
+        }
+        .post-text::-webkit-scrollbar-thumb:hover {
+          background: rgba(139,26,26,0.5);
+        }
 
-      {/* Slim top bar */}
-      <div style={{
-        background:'linear-gradient(90deg,#8b1a1a,#c0392b)',
-        padding:'10px 24px', display:'flex', alignItems:'center', gap:'16px',
-        boxShadow:'0 2px 12px rgba(0,0,0,0.2)',
-      }}>
-        <Link href="/quotes" style={{ color:'#fff', textDecoration:'none', fontWeight:'bold', background:'rgba(255,255,255,0.2)', padding:'7px 18px', borderRadius:'30px', fontSize:'0.9rem', whiteSpace:'nowrap' }}>
-          ← All Quotes
-        </Link>
-        <span style={{ color:'rgba(255,255,255,0.8)', fontSize:'0.82rem', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>
-          {quote.categories.filter(c => !c.match(/[^\x00-\x7F]/)).slice(0,3).join(' · ')}
-        </span>
-      </div>
+        /* Shared Action Button Styles */
+        .action-buttons-container { display: flex; flex-direction: column; gap: 10px; width: 100%; }
+        .action-btn {
+          flex: 1; display: flex; align-items: center; justify-content: center; gap: 4px;
+          min-height: 44px; border-radius: 22px; font-weight: bold; font-size: 0.85rem;
+          text-decoration: none; cursor: pointer; box-sizing: border-box; white-space: nowrap;
+          padding: 0 10px; transition: transform 0.1s ease, box-shadow 0.2s ease;
+          border: 1.5px solid transparent; outline: none;
+        }
+        .action-btn:active { transform: scale(0.96); }
+        .action-btn.btn-outline { background: #fff; color: #8b1a1a; border-color: #8b1a1a; }
+        .action-btn.btn-primary { background: #8b1a1a; color: #fff; box-shadow: 0 4px 12px rgba(139,26,26,0.15); }
+        .action-btn.btn-accent { background: #f5c518; color: #6a1010; box-shadow: 0 4px 12px rgba(245,197,24,0.2); }
 
-      {/* Page title */}
-      {title && (
-        <div style={{ textAlign:'center', padding:'28px 20px 0', fontSize:'1rem', color:'#5a2a00', letterSpacing:'0.5px' }}>
-          {title}
-        </div>
-      )}
+        /* Shared Language Button Styles */
+        .lang-wrapper { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
+        .lang-btn {
+          flex: 1 1 auto; min-width: 60px; padding: 10px 14px; border-radius: 22px;
+          text-decoration: none; text-align: center; font-size: 0.85rem;
+          transition: all 0.2s ease; border: 1px solid transparent; box-sizing: border-box;
+        }
 
-      {/* Main layout: image left, text right */}
-      <div style={{
-        maxWidth:'1000px', margin:'24px auto 0', padding:'0 24px 48px',
-        display:'grid',
-        gridTemplateColumns: primaryLang && images[primaryLang] ? 'repeat(auto-fit, minmax(320px, 1fr))' : '1fr',
-        gap:'40px', alignItems:'start',
-      }}>
+        @media (max-width: 900px) {
+          .post-page-container { height: auto; min-height: 100vh; overflow: visible; background: #fdfbf7; }
+          .desktop-only { display: none !important; }
+          .post-layout {
+            grid-template-columns: 1fr;
+            margin: 0;
+            gap: 24px;
+            padding: 0 16px 60px;
+          }
+          
+          /* Floating Image */
+          .post-image { order: 1; margin-top: 10px; }
+          .post-image img {
+            border-radius: 16px !important;
+            box-shadow: 0 16px 40px rgba(0,0,0,0.12) !important;
+            border: 4px solid #fff;
+          }
 
-        {/* LEFT: Quote image */}
-        {primaryLang && images[primaryLang] && (
-          <div>
-            <div style={{ borderRadius:'8px', overflow:'hidden', boxShadow:'0 8px 32px rgba(0,0,0,0.18)', marginBottom:'16px' }}>
-              <img src={images[primaryLang]} alt="Quote" style={{ width:'100%', height:'auto', display:'block' }} />
+          /* Actions Row */
+          .post-buttons { flex-direction: column; order: 2; width: 100%; gap: 16px; }
+          .action-buttons-container { flex-direction: row !important; gap: 6px; }
+          .action-btn { padding: 0 4px; font-size: 0.78rem; min-height: 40px; border-width: 1.5px; }
+          
+          /* Languages Wrapping */
+          .lang-wrapper { gap: 8px; }
+          .lang-btn { padding: 8px 10px; font-size: 0.8rem; }
+
+          /* Elegant Text Card */
+          .post-text { 
+            order: 3; height: auto; overflow-y: visible; 
+            padding: 30px 24px;
+            background: #fff;
+            border-radius: 24px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+            margin-top: 10px;
+          }
+        }
+      `}</style>
+
+      {/* Main Grid Layout */}
+      <div className="post-layout">
+        
+        {/* COLUMN 1: Buttons */}
+        <div className="post-buttons">
+          
+          {/* Language Switcher */}
+          {availableLangs.length > 1 && (
+            <div className="lang-wrapper">
+              <div className="desktop-only" style={{ width:'100%', fontSize:'0.75rem', fontWeight:'bold', color:'#8b1a1a', textTransform:'uppercase', letterSpacing:'1px', textAlign:'center', marginBottom:'4px' }}>Languages</div>
+              {availableLangs.map(lang => (
+                <Link key={lang} href={`/quotes/post/${quoteId}?lang=${lang}`} className="lang-btn" style={{
+                  fontWeight: lang === primaryLang ? 'bold' : 'normal',
+                  background: lang === primaryLang ? '#8b1a1a' : '#fff',
+                  color: lang === primaryLang ? '#fff' : '#8b1a1a',
+                  border: lang === primaryLang ? '1px solid transparent' : '1px solid rgba(139,26,26,0.25)',
+                }}>{LANG_LABELS[lang] || lang}</Link>
+              ))}
             </div>
+          )}
 
-            {/* Language image switcher */}
-            {availableLangs.length > 1 && (
-              <div style={{ display:'flex', flexWrap:'wrap', gap:'8px', justifyContent:'center' }}>
-                {availableLangs.map(lang => (
-                  <Link key={lang} href={`/quotes/post/${quoteId}?lang=${lang}`} style={{
-                    padding:'5px 14px', borderRadius:'20px', textDecoration:'none',
-                    fontSize:'0.78rem', fontWeight: lang === primaryLang ? 'bold' : 'normal',
-                    background: lang === primaryLang ? '#8b1a1a' : 'rgba(139,26,26,0.1)',
-                    color: lang === primaryLang ? '#fff' : '#8b1a1a',
-                    border:'1px solid', borderColor: lang === primaryLang ? 'transparent' : 'rgba(139,26,26,0.3)',
-                  }}>{LANG_LABELS[lang] || lang}</Link>
-                ))}
-              </div>
-            )}
+          <div className="desktop-only" style={{ borderBottom:'1px dashed rgba(139,26,26,0.3)', margin:'6px 0' }} />
+
+          <div className="action-buttons-container">
+            <Link href="/quotes" className="action-btn btn-outline">
+              <span style={{ fontSize:'1.1rem', lineHeight:0 }}>←</span> All Quotes
+            </Link>
+
+            <PostActions imageUrl={images[primaryLang]} />
           </div>
-        )}
+        </div>
 
-        {/* RIGHT: All translations stacked */}
-        <div style={{ display:'flex', flexDirection:'column', gap:'28px' }}>
+        {/* COLUMN 2: Image */}
+        <div className="post-image">
+          {primaryLang && images[primaryLang] && (
+            <div style={{ display:'flex', justifyContent:'center' }}>
+              <img src={getOptimizedUrl(images[primaryLang], 1200)} alt="Quote" style={{ maxWidth:'100%', maxHeight:'calc(100vh - 80px)', objectFit:'contain', display:'block', borderRadius:'8px', boxShadow:'0 8px 32px rgba(0,0,0,0.18)' }} priority="true" />
+            </div>
+          )}
+        </div>
+
+        {/* COLUMN 3: Text */}
+        <div className="post-text">
           {paragraphs.length > 0 ? (
             paragraphs.map((text, i) => {
               const lang = langOrder[i];
-              const langLabel = LANG_LABELS[lang] || `Translation ${i+1}`;
               return (
                 <div key={i}>
                   <p style={{
@@ -171,6 +289,7 @@ export default async function QuotePostPage({ params, searchParams }) {
             </div>
           )}
         </div>
+
       </div>
     </div>
   );
