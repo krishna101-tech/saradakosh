@@ -1,0 +1,660 @@
+[
+  {
+    "name": "Topics",
+    "children": [
+      {
+        "name": "Best of Vivekananda",
+        "children": []
+      },
+      {
+        "name": "Topic : Vedanta: Philosophy",
+        "children": [
+          {
+            "name": "Atman",
+            "children": []
+          },
+          {
+            "name": "Buddhism",
+            "children": []
+          },
+          {
+            "name": "Calm in the Midst of the Storm",
+            "children": []
+          },
+          {
+            "name": "Cosmology",
+            "children": []
+          },
+          {
+            "name": "Death",
+            "children": []
+          },
+          {
+            "name": "Enlightenment : Superconsciousness",
+            "children": []
+          },
+          {
+            "name": "Freedom from Maya",
+            "children": []
+          },
+          {
+            "name": "Grace",
+            "children": []
+          },
+          {
+            "name": "Gratification of Senses: Bhoga",
+            "children": []
+          },
+          {
+            "name": "Hinduism",
+            "children": []
+          },
+          {
+            "name": "Ideal Man",
+            "children": []
+          },
+          {
+            "name": "Ignorance",
+            "children": []
+          },
+          {
+            "name": "Individuality",
+            "children": []
+          },
+          {
+            "name": "Ishvar: God",
+            "children": []
+          },
+          {
+            "name": "Knowledge",
+            "children": []
+          },
+          {
+            "name": "Maya",
+            "children": []
+          },
+          {
+            "name": "Mind",
+            "children": []
+          },
+          {
+            "name": "Mumukshutva: Spiritual Quest",
+            "children": []
+          },
+          {
+            "name": "Ojas",
+            "children": []
+          },
+          {
+            "name": "Pain and Suffering",
+            "children": []
+          },
+          {
+            "name": "Persecution and Oppression",
+            "children": []
+          },
+          {
+            "name": "Sadhana",
+            "children": []
+          },
+          {
+            "name": "Shakti Sadhana",
+            "children": []
+          },
+          {
+            "name": "Sharanagati: Submission to god",
+            "children": []
+          },
+          {
+            "name": "Shrimad Bhagavat Gita",
+            "children": []
+          },
+          {
+            "name": "Sin : Ego : Weakness",
+            "children": []
+          },
+          {
+            "name": "Spiritual Life",
+            "children": []
+          },
+          {
+            "name": "Tamas",
+            "children": []
+          },
+          {
+            "name": "Tat Tvam Asi : Maha Vakya",
+            "children": []
+          },
+          {
+            "name": "Tyag: Renunciation",
+            "children": []
+          },
+          {
+            "name": "Unity of All Beings (Vasudhaiva Kutumbakam)",
+            "children": []
+          },
+          {
+            "name": "Vedanta : Philosophy",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Topic : Yoga: Practice",
+        "children": [
+          {
+            "name": "Concentration",
+            "children": []
+          },
+          {
+            "name": "Karma Yoga: General",
+            "children": []
+          },
+          {
+            "name": "Meditation",
+            "children": []
+          },
+          {
+            "name": "Prayer",
+            "children": []
+          },
+          {
+            "name": "Rajayoga: General",
+            "children": []
+          },
+          {
+            "name": "Rajayoga: Kundalini",
+            "children": []
+          },
+          {
+            "name": "Rajayoga: Pranayama",
+            "children": []
+          },
+          {
+            "name": "Yoga (General)",
+            "children": []
+          },
+          {
+            "name": "Yoga: Bhakti Yoga (Topic)",
+            "children": []
+          },
+          {
+            "name": "Yoga: Jnana Yoga (Topic)",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Topic : Avatars & Saints",
+        "children": [
+          {
+            "name": "Vivekananda : on Himself",
+            "children": []
+          },
+          {
+            "name": "Ramanuja",
+            "children": []
+          },
+          {
+            "name": "Shankaracharya",
+            "children": []
+          },
+          {
+            "name": "Guru",
+            "children": []
+          },
+          {
+            "name": "Rishi",
+            "children": []
+          },
+          {
+            "name": "Chaitanya",
+            "children": []
+          },
+          {
+            "name": "Avatara",
+            "children": []
+          },
+          {
+            "name": "Jesus",
+            "children": []
+          },
+          {
+            "name": "Buddha",
+            "children": []
+          },
+          {
+            "name": "Swami Vivekananda on Vrindavan Lila",
+            "children": []
+          },
+          {
+            "name": "Sri Krishna",
+            "children": []
+          },
+          {
+            "name": "Ramayana",
+            "children": []
+          },
+          {
+            "name": "Sita : Mata Janaki",
+            "children": []
+          },
+          {
+            "name": "Shri Ramakrishna",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Values",
+        "children": [
+          {
+            "name": "Ethics: Morality",
+            "children": []
+          },
+          {
+            "name": "Children of Bliss",
+            "children": []
+          },
+          {
+            "name": "Way to success",
+            "children": []
+          },
+          {
+            "name": "Truth",
+            "children": []
+          },
+          {
+            "name": "Shraddha : Faith in Yourself",
+            "children": []
+          },
+          {
+            "name": "Positive Thinking",
+            "children": []
+          },
+          {
+            "name": "Creativity",
+            "children": []
+          },
+          {
+            "name": "Compassion",
+            "children": []
+          },
+          {
+            "name": "Character Building",
+            "children": []
+          },
+          {
+            "name": "Brahmacharya: Purity",
+            "children": []
+          },
+          {
+            "name": "Be Fearless: Courage",
+            "children": []
+          },
+          {
+            "name": "Avoid Jealousy (Aninda)",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Culture and Civilization",
+        "children": [
+          {
+            "name": "Art",
+            "children": []
+          },
+          {
+            "name": "Beti Bachao Beti Padhao",
+            "children": []
+          },
+          {
+            "name": "Brahmin",
+            "children": []
+          },
+          {
+            "name": "Caste and Social Reform",
+            "children": []
+          },
+          {
+            "name": "Cult : Dangers of Cult",
+            "children": []
+          },
+          {
+            "name": "Fanaticism",
+            "children": []
+          },
+          {
+            "name": "Joto Mat Toto Path",
+            "children": []
+          },
+          {
+            "name": "Liberty: Individual Freedom",
+            "children": []
+          },
+          {
+            "name": "Religion (Topic)",
+            "children": []
+          },
+          {
+            "name": "Religion: Degradation",
+            "children": []
+          },
+          {
+            "name": "Sanskrit",
+            "children": []
+          },
+          {
+            "name": "Satya Yuga: Golden Age",
+            "children": []
+          },
+          {
+            "name": "Superstition",
+            "children": []
+          },
+          {
+            "name": "Vedanta: Future Religion (Topic)",
+            "children": []
+          },
+          {
+            "name": "Women Empowerment: India",
+            "children": []
+          },
+          {
+            "name": "Women Empowerment: America",
+            "children": []
+          },
+          {
+            "name": "Food and Health",
+            "children": []
+          },
+          {
+            "name": "Atheism",
+            "children": []
+          },
+          {
+            "name": "Faith Healing",
+            "children": []
+          },
+          {
+            "name": "Civilization",
+            "children": []
+          },
+          {
+            "name": "Expansion is Life",
+            "children": []
+          },
+          {
+            "name": "Exploitation of People",
+            "children": []
+          },
+          {
+            "name": "Harmony of East and West",
+            "children": []
+          },
+          {
+            "name": "Harmony of Religions",
+            "children": []
+          },
+          {
+            "name": "India (Topic)",
+            "children": []
+          },
+          {
+            "name": "Rise and Fall of the Civilizations",
+            "children": []
+          },
+          {
+            "name": "Understanding the West",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Call to Action",
+        "children": [
+          {
+            "name": "Ramakrishna Mission",
+            "children": []
+          },
+          {
+            "name": "Youth Power",
+            "children": []
+          },
+          {
+            "name": "Will Power",
+            "children": []
+          },
+          {
+            "name": "Leadership and Organization",
+            "children": []
+          },
+          {
+            "name": "Karma Yoga: Seva",
+            "children": []
+          },
+          {
+            "name": "Goal of Life",
+            "children": []
+          },
+          {
+            "name": "Be Active: Rajas",
+            "children": []
+          },
+          {
+            "name": "Arise! Awake!",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Mahayogi Vivekananda",
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "Books / Chapters",
+    "children": [
+      {
+        "name": "Inspired Talks",
+        "children": [
+          {
+            "name": "Inspired Talks 19-25 June",
+            "children": []
+          },
+          {
+            "name": "Inspired Talks 26-27 June",
+            "children": []
+          },
+          {
+            "name": "Inspired Talks 29-30 June",
+            "children": []
+          },
+          {
+            "name": "Inspired Talks 1 to 11 July",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Talks with Swami Vivekananda",
+        "children": [
+          {
+            "name": "Conversations And Dialogues 1-2",
+            "children": []
+          },
+          {
+            "name": "Conversations And Dialogues 3-5",
+            "children": []
+          },
+          {
+            "name": "Conversations And Dialogues 6",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Chicago Lectures",
+        "children": [
+          {
+            "name": "Response to Welcome",
+            "children": []
+          },
+          {
+            "name": "Paper on Hinduism",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Lecture from Colombo to Almora",
+        "children": [
+          {
+            "name": "First Public Lecture in the East",
+            "children": []
+          },
+          {
+            "name": "Vedantism",
+            "children": []
+          },
+          {
+            "name": "My Plan of Campaign",
+            "children": []
+          },
+          {
+            "name": "Future of India",
+            "children": []
+          },
+          {
+            "name": "The Work Before Us",
+            "children": []
+          },
+          {
+            "name": "The Sages of India",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Lectures and Discourses",
+        "children": [
+          {
+            "name": "The Ramayana",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Yoga: Bhakti",
+        "children": [
+          {
+            "name": "Definition of Bhakti",
+            "children": []
+          },
+          {
+            "name": "Naturalness of Bhakti Yoga and its Central Secret",
+            "children": []
+          },
+          {
+            "name": "Universal Love and How It Leads to Self-Surrender",
+            "children": []
+          },
+          {
+            "name": "The Higher Knowledge",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Yoga: Jnana",
+        "children": [
+          {
+            "name": "God in Everything",
+            "children": []
+          },
+          {
+            "name": "Necessity of Religion",
+            "children": []
+          },
+          {
+            "name": "Real Nature of Man",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Yoga: Karma",
+        "children": [
+          {
+            "name": "Ideal of Karma Yoga",
+            "children": []
+          },
+          {
+            "name": "Karma in its effect on Character",
+            "children": []
+          },
+          {
+            "name": "Each is Great in his own place",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Yoga: Raja",
+        "children": [
+          {
+            "name": "Rajayoga: Introductory",
+            "children": []
+          },
+          {
+            "name": "Rajayoga: Prana",
+            "children": []
+          },
+          {
+            "name": "Dhyana And Samadhi",
+            "children": []
+          },
+          {
+            "name": "The Psychic Prana",
+            "children": []
+          },
+          {
+            "name": "The Control of Psychic Prana",
+            "children": []
+          },
+          {
+            "name": "Pratyahara and Dharana",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Letters",
+        "children": [
+          {
+            "name": "Letters 1 (1892)",
+            "children": []
+          },
+          {
+            "name": "Letters 2 (1893)",
+            "children": []
+          },
+          {
+            "name": "Letters 3 (Jan-Apr 1894)",
+            "children": []
+          },
+          {
+            "name": "Letters 4 (May-Jun 1894)",
+            "children": []
+          },
+          {
+            "name": "Letters 5 (Jul-Aug 1894)",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]
