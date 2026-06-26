@@ -6,8 +6,8 @@ export const metadata = {
 
 export default function SchedulePage() {
   return (
-    <div className="container" style={{ paddingTop: '40px', paddingBottom: '60px' }}>
+    <main className="container" style={{ paddingTop: '40px', paddingBottom: '60px' }}>
       <ClassSchedule hideImage={false} />
-    </div>
+    </main>
   );
 }

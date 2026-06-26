@@ -38,7 +38,7 @@ export const metadata = {
     siteName: "Saradakosh",
     images: [
       {
-        url: "/images/desktop_home.png",
+        url: "/images/desktop_home.webp",
         width: 1200,
         height: 630,
         alt: "Saradakosh - Ramakrishna-Sarada-Vivekananda Lineage",
@@ -51,7 +51,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Saradakosh | Spiritual Archive",
     description: "The Complete Lives & Teachings of Sri Ramakrishna, Holy Mother, and Swami Vivekananda.",
-    images: ["/images/desktop_home.png"],
+    images: ["/images/desktop_home.webp"],
   },
   robots: {
     index: true,

@@ -16,7 +16,7 @@ export default async function ViewerPage({ params }) {
   }
 
   return (
-    <div className="container min-h-screen p-8" style={{ maxWidth: '1200px' }}>
+    <main className="container min-h-screen p-8" style={{ maxWidth: '1200px' }}>
       <BackButton />
       
       <h2 className="title" style={{ color: 'var(--primary-color)', fontFamily: 'var(--font-serif)', fontSize: '2rem', marginBottom: '30px', textAlign: 'center' }}>
@@ -32,6 +32,6 @@ export default async function ViewerPage({ params }) {
       ) : (
         <ViewerAccordion events={events} />
       )}
-    </div>
+    </main>
   );
 }

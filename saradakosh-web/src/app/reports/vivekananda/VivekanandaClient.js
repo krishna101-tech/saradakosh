@@ -28,7 +28,7 @@ export default function VivekanandaClient({ data }) {
   };
 
   return (
-    <div className="container min-h-screen p-8">
+    <main className="container min-h-screen p-8">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
         <Link href="/" className="back-link font-bold block" style={{ color: 'var(--text-color)', borderBottom: '1px solid var(--text-color)' }}>
           &larr; Back to Dashboard
@@ -98,6 +98,6 @@ export default function VivekanandaClient({ data }) {
           );
         })}
       </div>
-    </div>
+    </main>
   );
 }

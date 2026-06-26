@@ -5,7 +5,7 @@ export default function RefsReport() {
   const data = getRefsHierarchy();
   
   return (
-    <div className="container min-h-screen">
+    <main className="container min-h-screen">
       <Link href="/" className="back-link mt-8 block">
         &larr; Back to Dashboard
       </Link>
@@ -33,7 +33,7 @@ export default function RefsReport() {
                 {data[l1][l2].map(item => (
                   <div key={item.id} className="ref-item" style={{ display: 'grid', gridTemplateColumns: '200px 1fr 1fr', gap: '15px', padding: '10px', borderBottom: '1px solid #eed', fontSize: '0.95rem', color: 'var(--text-color)' }}>
                     <Link 
-                      href={`/reports/viewer/${item.id}`}
+                       href={`/reports/viewer/${item.id}`}
                       className="clickable-name" 
                       style={{ fontWeight: 600, cursor: 'pointer', color: 'var(--primary-color)' }} 
                       title="Click to view events"
@@ -49,6 +49,6 @@ export default function RefsReport() {
           </div>
         ))}
       </div>
-    </div>
+    </main>
   );
 }

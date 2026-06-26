@@ -206,7 +206,7 @@ export default async function QuotePostPage({ params, searchParams }) {
       `}</style>
 
       {/* Main Grid Layout */}
-      <div className="post-layout">
+      <main className="post-layout">
         
         {/* COLUMN 1: Buttons */}
         <div className="post-buttons">
@@ -290,7 +290,7 @@ export default async function QuotePostPage({ params, searchParams }) {
           )}
         </div>
 
-      </div>
+      </main>
     </div>
   );
 }
