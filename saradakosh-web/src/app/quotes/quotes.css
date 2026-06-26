@@ -137,10 +137,20 @@
 .lang-select {
   padding: 8px 15px;
   border-radius: 20px;
-  border: 1px solid #ccc;
+  border: 1.5px solid rgba(139, 26, 26, 0.4);
   background: #fff;
   font-family: inherit;
   font-size: 0.9rem;
+  font-weight: 600;
+  color: #8b1a1a;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.lang-select:hover, .lang-select:focus {
+  border-color: #8b1a1a;
+  box-shadow: 0 4px 12px rgba(139, 26, 26, 0.15);
 }
 
 .search-bar {
