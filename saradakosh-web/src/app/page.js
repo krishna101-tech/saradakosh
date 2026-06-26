@@ -5,8 +5,25 @@ import SearchBar from '@/components/SearchBar';
 import ClassSchedule from '@/components/ClassSchedule';
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Saradakosh",
+    "url": "https://saradakosh.org",
+    "description": "The Lives, Teachings, and Legacy of Sri Ramakrishna, Sri Sarada Devi, and Swami Vivekananda",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://saradakosh.org/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <header className="hero">
         <ThemeSelector />
         <div className="hero-content">
