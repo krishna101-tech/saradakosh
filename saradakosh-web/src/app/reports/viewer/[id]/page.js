@@ -16,6 +16,10 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: `${parameter.para1} — Swami Vivekananda Timeline | Saradakosh`,
       url: `https://saradakosh.org/reports/viewer/${id}`,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${parameter.para1} — Swami Vivekananda Timeline | Saradakosh`,
     }
   };
 }
