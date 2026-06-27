@@ -1,6 +1,14 @@
 import { getPlacesHierarchy } from '@/lib/db';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Places Directory | Saradakosh',
+  description: 'Explore places associated with the life of Swami Vivekananda and the Ramakrishna Movement.',
+  alternates: {
+    canonical: 'https://saradakosh.org/reports/places'
+  }
+};
+
 function PlaceNode({ node, level = 1 }) {
   if (!node) return null;
   
@@ -8,7 +16,9 @@ function PlaceNode({ node, level = 1 }) {
     <div className={`ml-${(level - 1) * 6} mb-2`}>
       <div className={`text-lg font-serif ${level === 1 ? 'font-bold text-[#d4a017] text-2xl border-b pb-1 mb-2 mt-6' : 'text-[#2c2a29]'}`}>
         {level > 1 && <span className="text-[#eaddd3] mr-2">↳</span>}
-        {node.name}
+        <Link href={`/reports/viewer/${node.id}`} className="hover:text-[#d4a017] hover:underline">
+          {node.name}
+        </Link>
       </div>
       {node.children && node.children.length > 0 && (
         <div className="pl-4 border-l border-[#eaddd3]">

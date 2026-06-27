@@ -1,6 +1,14 @@
 import { getPersons } from '@/lib/db';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Persons Directory | Saradakosh',
+  description: 'Explore historical persons associated with the Ramakrishna Movement.',
+  alternates: {
+    canonical: 'https://saradakosh.org/reports/persons'
+  }
+};
+
 export default function PersonsReport() {
   const persons = getPersons();
 
@@ -20,9 +28,13 @@ export default function PersonsReport() {
       <main className="bg-white p-8 rounded-lg shadow-sm border border-[#eaddd3]">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {persons.map((person) => (
-            <div key={person.id} className="p-3 border rounded-md hover:bg-[#fdfbf7] transition-colors border-[#eaddd3]">
-              <span className="text-lg font-serif text-[#2c2a29]">{person.para1}</span>
-            </div>
+            <Link 
+              key={person.id} 
+              href={`/reports/viewer/${person.id}`}
+              className="p-3 border rounded-md hover:bg-[#fdfbf7] transition-all border-[#eaddd3] block hover:-translate-y-0.5 hover:shadow-sm"
+            >
+              <span className="text-lg font-serif text-[#2c2a29] hover:text-[#d4a017]">{person.para1}</span>
+            </Link>
           ))}
         </div>
         {persons.length === 0 && (

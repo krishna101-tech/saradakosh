@@ -49,6 +49,22 @@
 .categories-tree {
   overflow-y: auto;
   max-height: calc(100vh - 40px);
+  padding-bottom: 40px;
+}
+
+.sidebar-section {
+  margin-bottom: 24px;
+}
+
+.sidebar-section-title {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #ffcccc;
+  padding: 16px 14px 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 4px;
 }
 
 .category-node { color: #fff; }
@@ -59,25 +75,66 @@
   align-items: center;
   padding: 8px 14px;
   cursor: pointer;
-  border-bottom: 1px solid rgba(255,255,255,0.07);
   font-size: 0.88rem;
   line-height: 1.35;
-  transition: background 0.15s;
+  transition: all 0.2s ease;
 }
-.category-label:hover { background: rgba(255,255,255,0.12); }
-.category-label.active-cat { background: rgba(255,255,255,0.25); font-weight: bold; }
 
 .cat-name { flex-grow: 1; }
-.cat-toggle { font-size: 0.85rem; width: 14px; text-align: center; }
+.cat-count { opacity: 0.7; font-size: 0.8em; margin-left: 4px; font-weight: normal; }
 
-.category-children { display: none; background: rgba(0,0,0,0.15); }
-.category-children.open { display: block; }
+.cat-toggle { 
+  font-size: 1.1rem; 
+  width: 14px; 
+  text-align: center; 
+  transition: transform 0.2s ease; 
+  line-height: 1;
+}
+.cat-toggle.open {
+  transform: rotate(90deg);
+}
 
+.category-children { 
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+  background: rgba(0,0,0,0.15); 
+}
+.category-children.open { 
+  grid-template-rows: 1fr;
+}
+.category-children-inner {
+  overflow: hidden;
+}
+
+/* Level 0 (Main categories) */
 .level-0 > .category-label {
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   font-weight: bold;
-  background: rgba(0,0,0,0.1);
-  padding: 9px 14px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.level-0 > .category-label:hover { 
+  background: rgba(255,255,255,0.08); 
+}
+.level-0 > .category-label.active-cat { 
+  background: rgba(255,255,255,0.15); 
+}
+
+/* Subcategories (Level 1+) */
+.category-node:not(.level-0) > .category-label {
+  color: #ffcc00;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+.category-node:not(.level-0) > .category-label:hover,
+.category-node:not(.level-0) > .category-label.active-cat {
+  background: #ffcc00;
+  color: #8b1a1a;
+}
+.category-node:not(.level-0) > .category-label:hover .cat-count,
+.category-node:not(.level-0) > .category-label.active-cat .cat-count {
+  opacity: 0.9;
+  color: #8b1a1a;
 }
 
 /* ── Main ── */

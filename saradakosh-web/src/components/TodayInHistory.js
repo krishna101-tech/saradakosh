@@ -2,6 +2,16 @@
 import { useState, useEffect } from 'react';
 import { fetchTodayEvents } from '@/app/actions';
 
+const ShimmerSkeleton = () => (
+  <div className="space-y-4 animate-pulse mt-8">
+    <div className="h-6 w-48 bg-gray-300 dark:bg-slate-700 rounded"></div>
+    <div className="h-14 w-full bg-glass-bg border border-glass-border rounded-lg"></div>
+    <div className="h-14 w-full bg-glass-bg border border-glass-border rounded-lg"></div>
+    <div className="h-6 w-32 bg-gray-300 dark:bg-slate-700 rounded mt-8"></div>
+    <div className="h-14 w-full bg-glass-bg border border-glass-border rounded-lg"></div>
+  </div>
+);
+
 export default function TodayInHistory() {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -25,11 +35,21 @@ export default function TodayInHistory() {
   }, []);
 
   if (loading) {
-    return <p style={{ color: '#888' }}>Loading historical records...</p>;
+    return (
+      <div className="mt-8">
+        <h2 className="font-serif border-b border-glass-border pb-2.5 text-center text-2xl sm:text-3xl text-primary-theme">{title}</h2>
+        <ShimmerSkeleton />
+      </div>
+    );
   }
 
   if (events.length === 0) {
-    return <p style={{ color: '#888' }}>No records found for today.</p>;
+    return (
+      <div className="mt-8">
+        <h2 className="font-serif border-b border-glass-border pb-2.5 text-center text-2xl sm:text-3xl text-primary-theme">{title}</h2>
+        <p className="text-gray-500 text-center mt-6">No records found for today.</p>
+      </div>
+    );
   }
 
   // Group by year
@@ -51,36 +71,36 @@ export default function TodayInHistory() {
 
   return (
     <div>
-      <h2 className="section-title" style={{ marginTop: 0 }}>{title}</h2>
-      <div id="today-history">
+      <h2 className="font-serif border-b border-glass-border pb-2.5 text-center text-2xl sm:text-3xl text-primary-theme mt-0">{title}</h2>
+      <div id="today-history" className="mt-6 space-y-6">
         {Object.keys(grouped).sort((a,b) => a - b).map(yr => (
-          <div key={yr}>
-            <div className="year-group">{yr == 0 ? "Unknown Year" : yr}</div>
+          <div key={yr} className="space-y-2.5">
+            <div className="text-xl font-bold text-primary-theme mt-6 mb-2">{yr == 0 ? "Unknown Year" : yr}</div>
             {grouped[yr].map(e => {
               const hasChildren = e.children && e.children.length > 0;
               const isOpen = openIds.has(e.id);
               
               if (hasChildren) {
                 return (
-                  <div key={e.id}>
+                  <div key={e.id} className="w-full">
                     <button 
-                      className={`accordion ${isOpen ? 'active' : ''}`}
+                      className={`w-full flex items-center text-left text-lg font-medium p-4.5 bg-glass-bg border border-glass-border hover:bg-glass-hover text-text-theme rounded-lg shadow-sm transition-all duration-300 focus:outline-none cursor-pointer`}
                       onClick={() => toggleAccordion(e.id)}
                     >
-                      <span className="acc-arrow" style={{ marginRight: '8px' }}>&#9654;</span> 
+                      <span className={`inline-block mr-3 text-primary-theme transition-transform duration-300 text-xs ${isOpen ? 'transform rotate-90' : ''}`}>&#9654;</span> 
                       {e.du || "No description"}
                     </button>
-                    <div className="panel" style={{ display: isOpen ? 'block' : 'none' }}>
+                    <div className={`pl-6 pr-4 py-2 border-l-3 border-primary-theme space-y-2 mt-2 mb-4 ${isOpen ? 'block animate-[slideDown_0.3s_ease-out]' : 'hidden'}`}>
                       {e.children.map(c => (
-                        <div key={c.id} className="child-event">{c.du}</div>
+                        <div key={c.id} className="py-2.5 border-b border-dashed border-glass-border text-sm text-text-theme last:border-b-0">{c.du}</div>
                       ))}
                     </div>
                   </div>
                 );
               } else {
                 return (
-                  <div key={e.id} className="accordion-static">
-                    <span className="acc-arrow-empty" style={{ marginRight: '8px' }}></span> 
+                  <div key={e.id} className="w-full flex items-center text-left text-lg p-4.5 bg-glass-bg border border-glass-border text-text-theme rounded-lg shadow-sm">
+                    <span className="w-4 mr-3 flex-shrink-0 inline-block"></span> 
                     {e.du || "No description"}
                   </div>
                 );

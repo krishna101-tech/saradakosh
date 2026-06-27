@@ -1,5 +1,4 @@
 'use client';
-
 import { useRouter } from 'next/navigation';
 
 export default function BackButton() {
@@ -8,8 +7,7 @@ export default function BackButton() {
   return (
     <button 
       onClick={() => router.back()} 
-      className="back-link mb-8 inline-block font-bold" 
-      style={{ background: 'none', border: 'none', padding: 0, borderBottom: '1px solid var(--text-color)', color: 'var(--text-color)', cursor: 'pointer', fontSize: '1rem', fontFamily: 'inherit' }}
+      className="mb-8 inline-flex items-center gap-1.5 font-sans font-semibold text-text-theme opacity-80 hover:opacity-100 hover:text-primary-theme transition-all duration-300 -translate-x-0 hover:-translate-x-1 cursor-pointer bg-none border-none p-0"
     >
       &larr; Go Back
     </button>

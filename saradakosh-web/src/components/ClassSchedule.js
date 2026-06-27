@@ -17,6 +17,14 @@ function formatDateRange(start, end) {
   }
 }
 
+const ShimmerSkeleton = () => (
+  <div className="space-y-3 animate-pulse w-full max-w-4xl mx-auto px-4 mb-8">
+    <div className="h-14 bg-glass-bg border border-glass-border rounded-xl"></div>
+    <div className="h-14 bg-glass-bg border border-glass-border rounded-xl"></div>
+    <div className="h-14 bg-glass-bg border border-glass-border rounded-xl"></div>
+  </div>
+);
+
 export default function ClassSchedule() {
   const [scheduleData, setScheduleData] = useState([]);
   const [clipboardWithLinks, setClipboardWithLinks] = useState('');
@@ -51,7 +59,7 @@ export default function ClassSchedule() {
     currentWeeksMonday.setDate(effectiveDate.getDate() - (effectiveDate.getDay() === 0 ? 6 : effectiveDate.getDay() - 1));
 
     const newScheduleData = [];
-    const baseText = `*Morning Classes*\nMon to Fri @7.45 am\n\n*Google meet*\n${scheduleConfig.googleMeetLink || ''}\n\n`;
+    const baseText = `*Morning Classes*\nMon to Fri @7.45 am IST\n\n*Google meet*\n${scheduleConfig.googleMeetLink || ''}\n\n`;
     let tempWithLinks = baseText;
     let tempWithoutLinks = baseText;
 
@@ -99,31 +107,38 @@ export default function ClassSchedule() {
   return (
     <>
       <header className="text-center mb-6 mt-8">
-        <div className="mt-4 text-slate-600 flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4">
-          <span className="mb-2 sm:mb-0">Morning class: Mon-Fri @7.45 am</span>
+        <div className="mt-4 text-slate-600 dark:text-slate-400 flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 font-medium">
+          <span className="mb-2 sm:mb-0">Morning class: Mon-Fri @ 7:45 AM IST</span>
           <div className="flex gap-2">
-            <a href="https://wa.link/wy4t10" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg shadow-sm transition-transform transform hover:scale-105 text-sm no-underline">
+            <a href="https://wa.link/wy4t10" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg shadow-sm hover:shadow hover:-translate-y-0.5 transition-all duration-200 text-sm no-underline">
               Click to Register
             </a>
           </div>
         </div>
       </header>
       
-      <div className="schedule-list w-full max-w-4xl mx-auto px-4 mb-8 flex flex-col gap-3">
-        {scheduleData.length === 0 ? (
-          <p className="text-center text-slate-500">Loading schedule...</p>
-        ) : (
-          scheduleData.map((item, idx) => (
-            <div key={idx} className={`schedule-card ${item.isCurrentWeek ? 'current' : ''} !p-4 !flex !flex-col sm:!flex-row sm:!items-center gap-3 sm:gap-4`}>
-                <p className="flex-grow min-w-0 text-left m-0" style={{ color: 'var(--text-color)' }} title={item.name}>
-                    <span className="font-bold">{item.dateRange}</span> - <span style={{ opacity: 0.9 }}>{item.name}</span>
-                </p>
+      {scheduleData.length === 0 ? (
+        <ShimmerSkeleton />
+      ) : (
+        <div className="w-full max-w-4xl mx-auto px-4 mb-8 flex flex-col gap-3">
+          {scheduleData.map((item, idx) => (
+            <div 
+              key={idx} 
+              className={`p-4 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 bg-glass-bg border rounded-xl shadow-sm transition-all duration-300 ${
+                item.isCurrentWeek 
+                  ? 'bg-glass-hover border-blue-500 shadow-md shadow-blue-500/10' 
+                  : 'border-glass-border'
+              }`}
+            >
+              <p className="flex-grow min-w-0 text-left m-0 text-text-theme" title={item.name}>
+                <span className="font-bold">{item.dateRange}</span> - <span className="opacity-90">{item.name}</span>
+              </p>
             </div>
-          ))
-        )}
-      </div>
+          ))}
+        </div>
+      )}
 
-      <div className={`toast ${toastMessage ? 'show' : ''}`}>
+      <div className={`fixed bottom-8 left-1/2 -translate-x-1/2 bg-text-theme text-bg-theme font-bold py-4 px-6 rounded-lg shadow-lg z-50 transition-all duration-300 opacity-0 pointer-events-none ${toastMessage ? 'opacity-100' : ''}`}>
         {toastMessage}
       </div>
     </>

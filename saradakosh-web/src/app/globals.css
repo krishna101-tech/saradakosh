@@ -1,4 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary-theme: var(--primary-color);
+  --color-secondary-theme: var(--secondary-color);
+  --color-glass-bg: var(--glass-bg);
+  --color-glass-border: var(--glass-border);
+  --color-glass-hover: var(--glass-hover);
+  --color-bg-theme: var(--bg-color);
+  --color-text-theme: var(--text-color);
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+}
+
 :root {
   /* Light Theme Defaults (Sacred Dawn) */
   --bg-color: #fcfbf9;

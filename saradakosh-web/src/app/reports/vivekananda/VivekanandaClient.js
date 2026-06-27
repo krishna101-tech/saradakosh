@@ -28,72 +28,106 @@ export default function VivekanandaClient({ data }) {
   };
 
   return (
-    <main className="container min-h-screen p-8">
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-        <Link href="/" className="back-link font-bold block" style={{ color: 'var(--text-color)', borderBottom: '1px solid var(--text-color)' }}>
+    <main className="max-w-[1000px] mx-auto p-5 md:p-8 min-h-screen">
+      <div className="flex justify-between items-center mb-6">
+        <Link 
+          href="/" 
+          className="inline-flex items-center gap-1.5 font-sans font-semibold text-text-theme opacity-80 hover:opacity-100 hover:text-primary-theme transition-all duration-300 -translate-x-0 hover:-translate-x-1 cursor-pointer bg-none border-none p-0 no-underline"
+        >
           &larr; Back to Dashboard
         </Link>
         <ThemeSelector />
       </div>
 
-      <h1 className="text-4xl font-bold mb-8 font-serif text-[#d35400]">Swami Vivekananda</h1>
+      <h1 className="text-4xl font-bold mb-8 font-serif text-primary-theme">Swami Vivekananda</h1>
 
-      <div className="level-toggles" style={{ marginBottom: '30px' }}>
-        <span style={{ fontWeight: 'bold', marginRight: '15px', color: 'var(--text-color)', fontSize: '15px' }}>Levels:</span>
-        <button 
-          className={`toggle-btn ${activeLevelBtn === 1 ? 'active' : ''}`} 
-          onClick={() => setGlobalLevel(1)}
-        >
-          1
-        </button>
-        <button 
-          className={`toggle-btn ${activeLevelBtn === 2 ? 'active' : ''}`} 
-          onClick={() => setGlobalLevel(2)}
-        >
-          2
-        </button>
-        <button 
-          className={`toggle-btn ${activeLevelBtn === 3 ? 'active' : ''}`} 
-          onClick={() => setGlobalLevel(3)}
-        >
-          3
-        </button>
+      <div className="flex items-center gap-4 mb-8">
+        <span className="font-bold text-text-theme text-sm uppercase tracking-wider opacity-85">Levels:</span>
+        <div className="flex gap-2">
+          {[1, 2, 3].map((lvl) => (
+            <button 
+              key={lvl}
+              className={`border-2 border-primary-theme py-1 px-4 cursor-pointer rounded-full bg-transparent text-primary-theme font-bold text-sm transition-all duration-200 hover:bg-primary-theme/10 ${
+                activeLevelBtn === lvl ? '!bg-primary-theme !text-white shadow-sm shadow-primary-theme/25' : ''
+              }`} 
+              onClick={() => setGlobalLevel(lvl)}
+            >
+              {lvl}
+            </button>
+          ))}
+        </div>
       </div>
 
-      <div>
+      <div role="tree" aria-label="Swami Vivekananda Timeline Tree" className="space-y-4">
         {data.map((p2, i2) => {
           const isP2Expanded = expanded.has(p2.id);
           return (
-            <div key={p2.id}>
-              <div className={`level1 ${!isP2Expanded ? 'collapsed' : ''}`} onClick={() => toggleNode(p2.id)}>
+            <div key={p2.id} role="none">
+              <div 
+                className={`level1 ${!isP2Expanded ? 'collapsed' : ''}`} 
+                onClick={() => toggleNode(p2.id)}
+                role="treeitem"
+                aria-expanded={isP2Expanded}
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === ' ' || e.key === 'Enter') {
+                    e.preventDefault();
+                    toggleNode(p2.id);
+                  }
+                }}
+              >
                 {i2 + 1} {p2.para1.replace(/^\d+\s*/, '')}
               </div>
               
-              {isP2Expanded && p2.children.map((p3, i3) => {
-                const isP3Expanded = expanded.has(p3.id);
-                return (
-                  <div key={p3.id}>
-                    <div className={`level2 ${!isP3Expanded ? 'collapsed' : ''}`} onClick={() => toggleNode(p3.id)}>
-                      {i3 + 1} {p3.para1.replace(/^\d+\s*/, '')}
-                    </div>
-                    
-                    {isP3Expanded && p3.children.map((p4, i4) => {
-                      const text = p4.para1.replace(/^\d+\s*/, '');
-                      return (
-                          <div key={p4.id} className="level3-container">
-                            <div className="level3-row">
-                              <div className="level3-text">
-                                <Link href={`/reports/viewer/${p4.id}`} style={{ color: 'inherit', textDecoration: 'none' }} title="Click to view events">
-                                  {i4 + 1} {text}
-                                </Link>
-                              </div>
-                            </div>
+              {isP2Expanded && (
+                <div role="group" className="space-y-2">
+                  {p2.children.map((p3, i3) => {
+                    const isP3Expanded = expanded.has(p3.id);
+                    return (
+                      <div key={p3.id} role="none">
+                        <div 
+                          className={`level2 ${!isP3Expanded ? 'collapsed' : ''}`} 
+                          onClick={() => toggleNode(p3.id)}
+                          role="treeitem"
+                          aria-expanded={isP3Expanded}
+                          tabIndex={0}
+                          onKeyDown={(e) => {
+                            if (e.key === ' ' || e.key === 'Enter') {
+                              e.preventDefault();
+                              toggleNode(p3.id);
+                            }
+                          }}
+                        >
+                          {i3 + 1} {p3.para1.replace(/^\d+\s*/, '')}
+                        </div>
+                        
+                        {isP3Expanded && (
+                          <div role="group" className="space-y-1">
+                            {p3.children.map((p4, i4) => {
+                              const text = p4.para1.replace(/^\d+\s*/, '');
+                              return (
+                                <div key={p4.id} className="level3-container" role="treeitem">
+                                  <div className="level3-row" role="none">
+                                    <div className="level3-text" role="none">
+                                      <Link 
+                                        href={`/reports/viewer/${p4.id}`} 
+                                        className="no-underline text-inherit block"
+                                        title="Click to view events"
+                                      >
+                                        {i4 + 1} {text}
+                                      </Link>
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            })}
                           </div>
-                      );
-                    })}
-                  </div>
-                );
-              })}
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
             </div>
           );
         })}

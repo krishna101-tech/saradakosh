@@ -26,9 +26,9 @@ export default function SearchBar() {
   const shortMonthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
   return (
-    <div style={{ position: 'relative', width: '100%', maxWidth: '600px', margin: '0 auto' }}>
-      <div className="search-wrapper" style={{ marginBottom: 0 }}>
-        <span className="search-icon">🔍</span>
+    <div className="relative w-full max-w-[600px] mx-auto">
+      <div className="relative w-full mb-0">
+        <span className="absolute left-5 top-1/2 -translate-y-1/2 text-lg opacity-60">🔍</span>
         <input 
           type="text" 
           id="search-input" 
@@ -36,13 +36,17 @@ export default function SearchBar() {
           aria-label="Search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
+          className="w-full py-4.5 pl-14 pr-6 text-lg bg-[var(--input-bg)] text-text-theme border-2 border-[var(--input-border)] rounded-full transition-all duration-300 shadow-md focus:outline-none focus:border-primary-theme focus:shadow-[0_0_15px_rgba(211,84,0,0.15)] focus:-translate-y-0.5"
         />
       </div>
 
       {(query.length >= 3) && (
-        <div id="search-results" style={{ display: 'block', position: 'absolute', top: '100%', left: 0, right: 0, zIndex: 50, marginTop: '10px' }}>
+        <div 
+          id="search-results" 
+          className="block absolute top-full left-0 right-0 z-50 mt-2.5 p-2.5 bg-glass-bg backdrop-blur-md border border-glass-border rounded-xl shadow-lg"
+        >
           {isSearching ? (
-            <p style={{ padding: '10px', margin: 0, opacity: 0.7 }}>Searching server...</p>
+            <p className="p-2.5 m-0 opacity-70">Searching server...</p>
           ) : results.length > 0 ? (
             results.map((m) => {
               let dateParts = [];
@@ -55,13 +59,13 @@ export default function SearchBar() {
               let displayDt = dateParts.length > 0 ? dateParts.join(" ") : "?";
 
               return (
-                <div key={m.id} className="child-event">
+                <div key={m.id} className="py-3 border-b border-dashed border-glass-border text-sm text-text-theme last:border-b-0">
                   <strong>{displayDt}</strong>: {m.du}
                 </div>
               );
             })
           ) : (
-            <p style={{ padding: '10px', margin: 0, opacity: 0.7 }}>No results found.</p>
+            <p className="p-2.5 m-0 opacity-70">No results found.</p>
           )}
         </div>
       )}

@@ -1,5 +1,4 @@
 'use client';
-
 import { useState } from 'react';
 
 export default function ViewerAccordion({ events }) {
@@ -17,7 +16,7 @@ export default function ViewerAccordion({ events }) {
   const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
   return (
-    <div id="content-container">
+    <div id="content-container" className="space-y-2">
       {events.map((e, index) => {
         let dateParts = [];
         if (e.dt && String(e.dt).trim() !== "" && parseFloat(e.dt) !== 0) dateParts.push(parseInt(e.dt));
@@ -35,31 +34,35 @@ export default function ViewerAccordion({ events }) {
         const hasChildren = e.children && e.children.length > 0;
         const isOpen = openIds.has(e.id);
         
-        const accClass = hasChildren ? 'accordion' : 'accordion-static';
+        const btnBaseClass = "w-full p-4.5 bg-glass-bg border border-glass-border text-text-theme rounded-lg shadow-sm transition-all duration-300 focus:outline-none";
+        const btnHoverClass = hasChildren ? "hover:bg-glass-hover cursor-pointer" : "cursor-default";
 
         return (
-          <div key={e.id}>
+          <div key={e.id} className="w-full">
             <button 
-                className={accClass + (isOpen ? ' active' : '')} 
-                onClick={hasChildren ? () => toggleAccordion(e.id) : undefined}
-                style={{ cursor: hasChildren ? 'pointer' : 'default' }}
+              className={`${btnBaseClass} ${btnHoverClass}`}
+              onClick={hasChildren ? () => toggleAccordion(e.id) : undefined}
             >
-                <div className="acc-row" style={{ display: 'flex', gap: '15px', alignItems: 'baseline', width: '100%', textAlign: 'left', fontFamily: 'var(--font-sans)', flexWrap: 'wrap' }}>
-                    {hasChildren ? <span className="acc-arrow" style={{ marginRight: '8px' }}>&#9654;</span> : <span className="acc-arrow-empty" style={{ marginRight: '8px', width: '14px', display: 'inline-block' }}></span>}
-                    <span className="acc-seq" style={{ fontWeight: 'bold', width: '30px', flexShrink: 0, color: '#555' }}>{index + 1}</span>
-                    <span className="acc-yr" style={{ color: 'var(--secondary-color)', fontWeight: 'bold', width: '100px', flexShrink: 0, whiteSpace: 'nowrap', textAlign: 'right' }}>{yrStr}</span>
-                    <span className="acc-type" style={{ color: 'var(--primary-color)', fontWeight: 'bold', width: '60px', flexShrink: 0 }}>{typeStr}</span>
-                    <span className="acc-du" style={{ flex: 1, fontWeight: 500 }}>{duText}</span>
-                </div>
+              <div className="flex gap-4 items-baseline w-full text-left font-sans flex-wrap">
+                {hasChildren ? (
+                  <span className={`inline-block mr-2 text-primary-theme transition-transform duration-300 text-xs ${isOpen ? 'transform rotate-90' : ''}`}>&#9654;</span>
+                ) : (
+                  <span className="w-3.5 mr-2 flex-shrink-0 inline-block"></span>
+                )}
+                <span className="font-bold w-7.5 flex-shrink-0 text-gray-500 dark:text-gray-400">{index + 1}</span>
+                <span className="text-secondary-theme font-bold w-24 flex-shrink-0 whitespace-nowrap text-right">{yrStr}</span>
+                <span className="text-primary-theme font-bold w-15 flex-shrink-0">{typeStr}</span>
+                <span className="flex-1 font-medium">{duText}</span>
+              </div>
             </button>
             {hasChildren && (
-                <div className="panel viewer-panel" style={{ display: isOpen ? 'block' : 'none' }}>
-                    {e.children.map(c => (
-                        <div key={c.id} className="child-text" style={{ marginBottom: '10px', lineHeight: 1.6, color: '#444', borderBottom: '1px dashed #eee', paddingBottom: '10px' }}>
-                            {c.du}
-                        </div>
-                    ))}
-                </div>
+              <div className={`pl-14 pr-6 py-4 border-l-3 border-primary-theme space-y-3 mb-4 ${isOpen ? 'block animate-[slideDown_0.3s_ease-out]' : 'hidden'}`}>
+                {e.children.map(c => (
+                  <div key={c.id} className="mb-2.5 leading-relaxed text-gray-700 dark:text-gray-300 border-b border-dashed border-glass-border pb-2.5 last:border-b-0">
+                    {c.du}
+                  </div>
+                ))}
+              </div>
             )}
           </div>
         );

@@ -65,14 +65,16 @@ const CategoryNode = ({ node, activeCategory, setActiveCategory, closeSidebar, l
         onClick={handleClick}
         style={{ paddingLeft: `${16 + (level * 16)}px`, paddingRight: '16px' }}
       >
-        <span className="cat-name">{node.name} <span style={{ opacity: 0.8, fontSize: '0.85em', marginLeft: '4px' }}>({count})</span></span>
-        {hasChildren && <span className="cat-toggle">{isOpen ? '−' : '+'}</span>}
+        <span className="cat-name">{node.name} <span className="cat-count">({count})</span></span>
+        {hasChildren && <span className={`cat-toggle ${isOpen ? 'open' : ''}`}>›</span>}
       </div>
       {hasChildren && (
         <div className={`category-children ${isOpen ? 'open' : ''}`}>
-          {node.children.map((child, i) => (
-            <CategoryNode key={i} node={child} activeCategory={activeCategory} setActiveCategory={setActiveCategory} closeSidebar={closeSidebar} level={level + 1} categoryCounts={categoryCounts} />
-          ))}
+          <div className="category-children-inner">
+            {node.children.map((child, i) => (
+              <CategoryNode key={i} node={child} activeCategory={activeCategory} setActiveCategory={setActiveCategory} closeSidebar={closeSidebar} level={level + 1} categoryCounts={categoryCounts} />
+            ))}
+          </div>
         </div>
       )}
     </div>
@@ -84,7 +86,7 @@ export default function QuotesClient() {
   const [activeCategory, setActiveCategory] = useState('Best of Vivekananda');
   const [selectedLanguage, setSelectedLanguage] = useState('eng');
   const [searchTerm, setSearchTerm] = useState('');
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   // Read ?cat= from URL or restore from sessionStorage on mount
   useEffect(() => {
@@ -101,6 +103,8 @@ export default function QuotesClient() {
     const savedSidebar = sessionStorage.getItem('sk_sidebar_open');
     if (savedSidebar !== null) {
       setIsSidebarOpen(savedSidebar === 'true');
+    } else {
+      if (window.innerWidth <= 900) setIsSidebarOpen(false);
     }
   }, [searchParams]);
 
@@ -200,11 +204,16 @@ export default function QuotesClient() {
         </div>
         <div className="categories-tree">
           {categoriesData.map((topNode, i) => (
-            <CategoryNode key={i} node={topNode} activeCategory={activeCategory} setActiveCategory={setActiveCategory} categoryCounts={categoryCounts} closeSidebar={() => {
-              if (typeof window !== 'undefined' && window.innerWidth <= 600) {
-                handleSidebarOpen(false);
-              }
-            }} />
+            <div key={i} className="sidebar-section">
+              <div className="sidebar-section-title">{topNode.name}</div>
+              {topNode.children && topNode.children.map((child, j) => (
+                <CategoryNode key={j} node={child} activeCategory={activeCategory} setActiveCategory={setActiveCategory} categoryCounts={categoryCounts} level={0} closeSidebar={() => {
+                  if (typeof window !== 'undefined' && window.innerWidth <= 600) {
+                    handleSidebarOpen(false);
+                  }
+                }} />
+              ))}
+            </div>
           ))}
         </div>
       </aside>
@@ -266,7 +275,7 @@ export default function QuotesClient() {
                 className="quote-card-wrapper"
               >
                 <div className="quote-card-placeholder">
-                  <img src={getOptimizedUrl(imgSrc, 400)} alt="Quote" loading="lazy" />
+                  <img src={getOptimizedUrl(imgSrc, 400)} alt={`Swami Vivekananda Quote on ${quote.categories[0] || 'Spirituality'}`} loading="lazy" />
                 </div>
               </Link>
             );

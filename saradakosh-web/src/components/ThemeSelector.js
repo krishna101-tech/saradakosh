@@ -29,8 +29,16 @@ export default function ThemeSelector() {
     }
   };
 
+  const btnBaseClass = "bg-transparent border-none cursor-pointer text-text-theme text-sm opacity-60 hover:opacity-100 transition-all duration-200 px-2 py-1 rounded-lg";
+  const btnActiveClass = "opacity-100 font-bold bg-primary-theme/15 text-primary-theme";
+
   if (!mounted) {
-    return <div className="theme-selector" style={{ visibility: 'hidden' }}><button className="theme-btn">Dawn</button><button className="theme-btn">Midnight</button></div>;
+    return (
+      <div className="absolute top-5 right-5 bg-glass-bg backdrop-blur-md border border-glass-border rounded-full px-2.5 py-1 flex gap-2.5 shadow-sm z-50 invisible">
+        <button className={btnBaseClass}>Dawn</button>
+        <button className={btnBaseClass}>Midnight</button>
+      </div>
+    );
   }
 
   const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -38,15 +46,15 @@ export default function ThemeSelector() {
   const isDarkActive = theme === 'dark' || (theme === 'system' && isSystemDark);
 
   return (
-    <div className="theme-selector">
+    <div className="absolute top-5 right-5 bg-glass-bg backdrop-blur-md border border-glass-border rounded-full px-2.5 py-1 flex gap-2.5 shadow-sm z-50">
       <button 
-        className={`theme-btn ${isLightActive ? 'active' : ''}`}
+        className={`${btnBaseClass} ${isLightActive ? btnActiveClass : ''}`}
         onClick={() => changeTheme('light')}
       >
         Dawn
       </button>
       <button 
-        className={`theme-btn ${isDarkActive ? 'active' : ''}`}
+        className={`${btnBaseClass} ${isDarkActive ? btnActiveClass : ''}`}
         onClick={() => changeTheme('dark')}
       >
         Midnight

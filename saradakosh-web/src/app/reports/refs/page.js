@@ -1,6 +1,14 @@
 import { getRefsHierarchy } from '@/lib/db';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Reference Archive | Saradakosh',
+  description: 'Interactive references archive for Ramakrishna-Vivekananda literature.',
+  alternates: {
+    canonical: 'https://saradakosh.org/reports/refs'
+  }
+};
+
 export default function RefsReport() {
   const data = getRefsHierarchy();
   
@@ -26,8 +34,8 @@ export default function RefsReport() {
                 
                 <div className="ref-header" style={{ display: 'grid', gridTemplateColumns: '200px 1fr 1fr', gap: '15px', padding: '10px', fontWeight: 'bold', background: '#fff8f0', borderBottom: '1px solid #ccc', marginTop: '10px', color: '#2c2520' }}>
                   <div>Name</div>
-                  <div>Remark 1</div>
-                  <div>Remark 2</div>
+                  <div>Title</div>
+                  <div>Language</div>
                 </div>
                 
                 {data[l1][l2].map(item => (
@@ -41,7 +49,7 @@ export default function RefsReport() {
                       {item.name || '-'}
                     </Link>
                     <div>{item.remark || '-'}</div>
-                    <div>{item.remark2 || '-'}</div>
+                    <div>{item.remark2 === 'B' ? 'Bengali' : item.remark2 === 'E' ? 'English' : item.remark2 || '-'}</div>
                   </div>
                 ))}
               </div>
