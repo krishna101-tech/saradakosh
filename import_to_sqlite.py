@@ -59,6 +59,12 @@ cursor.executescript('''
         FOREIGN KEY(event_id) REFERENCES events(id),
         FOREIGN KEY(parameter_id) REFERENCES parameters(id)
     );
+
+    CREATE TABLE event_embeddings (
+        event_id INTEGER PRIMARY KEY,
+        embedding BLOB,
+        FOREIGN KEY(event_id) REFERENCES events(id) ON DELETE CASCADE
+    );
 ''')
 
 # Load data
@@ -107,3 +113,12 @@ conn.commit()
 conn.close()
 
 print("Successfully imported data into saradakosh.db")
+
+# Run embedding sync to populate vector tables
+import subprocess
+print("Running embedding sync script...")
+try:
+    subprocess.run(["node", "saradakosh-web/scripts/sync-embeddings.js"], check=True, shell=True)
+    print("Embedding sync finished successfully.")
+except Exception as e:
+    print(f"Warning: Could not run embedding sync script: {e}")

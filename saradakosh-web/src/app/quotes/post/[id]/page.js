@@ -77,6 +77,9 @@ export default async function QuotePostPage({ params, searchParams }) {
   const requestedLang = resolvedSearch?.lang || 'eng';
   const primaryLang = images[requestedLang] ? requestedLang
     : images['eng'] ? 'eng'
+    : images['hin'] ? 'hin'
+    : images['ben'] ? 'ben'
+    : images['guj'] ? 'guj'
     : Object.keys(images)[0] || null;
   const availableLangs = Object.keys(images);
 

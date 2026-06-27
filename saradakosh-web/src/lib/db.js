@@ -1,5 +1,6 @@
 import Database from 'better-sqlite3';
 import path from 'path';
+import { searchInMemoryVectors } from './embeddings';
 
 // Connect to the SQLite database which is in the same directory (Vercel deployment)
 const dbPath = path.resolve(process.cwd(), 'saradakosh.db');
@@ -277,6 +278,35 @@ export function searchEvents(term, limit = 50) {
     return stmt.all(`%${term}%`, limit);
   } catch (error) {
     console.error("Error searching events:", error);
+    return [];
+  }
+}
+
+export function searchEventsVector(queryVector, limit = 50) {
+  try {
+    const vectorResults = searchInMemoryVectors(queryVector, limit);
+    if (vectorResults.length === 0) return [];
+    
+    const ids = vectorResults.map(r => r.id);
+    
+    // Load details from DB
+    const stmt = db.prepare(`
+      SELECT * FROM events 
+      WHERE id IN (${ids.map(() => '?').join(',')})
+    `);
+    const events = stmt.all(...ids);
+    
+    // Sort events to match the exact order of the similarity scores
+    const eventMap = new Map(events.map(e => [e.id, e]));
+    return vectorResults
+      .map(r => {
+        const event = eventMap.get(r.id);
+        if (!event) return null;
+        return { ...event, similarityScore: r.score };
+      })
+      .filter(Boolean);
+  } catch (error) {
+    console.error("Error searching events by vector:", error);
     return [];
   }
 }

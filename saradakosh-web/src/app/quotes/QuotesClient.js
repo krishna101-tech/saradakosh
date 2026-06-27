@@ -149,7 +149,7 @@ export default function QuotesClient() {
       quotesData.forEach(q => {
         const imgs = q.images || {};
         if (Object.keys(imgs).length === 0) return;
-        const displayLang = imgs[selectedLanguage] ? selectedLanguage : imgs['eng'] ? 'eng' : Object.keys(imgs)[0];
+        const displayLang = imgs[selectedLanguage] ? selectedLanguage : imgs['eng'] ? 'eng' : imgs['hin'] ? 'hin' : imgs['ben'] ? 'ben' : imgs['guj'] ? 'guj' : Object.keys(imgs)[0];
         const imgSrc = imgs[displayLang];
         if (!imgSrc) return;
         
@@ -179,6 +179,9 @@ export default function QuotesClient() {
     // Determine display image
     const displayLang = imgs[selectedLanguage] ? selectedLanguage
       : imgs['eng'] ? 'eng'
+      : imgs['hin'] ? 'hin'
+      : imgs['ben'] ? 'ben'
+      : imgs['guj'] ? 'guj'
       : Object.keys(imgs)[0];
     const imgSrc = imgs[displayLang];
     if (!imgSrc) return false;
@@ -265,6 +268,9 @@ export default function QuotesClient() {
             const imgs = quote.images || {};
             const displayLang = imgs[selectedLanguage] ? selectedLanguage
               : imgs['eng'] ? 'eng'
+              : imgs['hin'] ? 'hin'
+              : imgs['ben'] ? 'ben'
+              : imgs['guj'] ? 'guj'
               : Object.keys(imgs)[0];
             const imgSrc = imgs[displayLang];
             if (!imgSrc) return null;

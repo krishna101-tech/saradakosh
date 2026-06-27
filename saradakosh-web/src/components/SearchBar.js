@@ -59,8 +59,23 @@ export default function SearchBar() {
               let displayDt = dateParts.length > 0 ? dateParts.join(" ") : "?";
 
               return (
-                <div key={m.id} className="py-3 border-b border-dashed border-glass-border text-sm text-text-theme last:border-b-0">
-                  <strong>{displayDt}</strong>: {m.du}
+                <div key={m.id} className="py-3 border-b border-dashed border-glass-border text-sm text-text-theme last:border-b-0 flex flex-col gap-1">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <strong className="text-[var(--primary-theme)]">{displayDt}</strong>
+                    {m.isVectorMatch && m.isTextMatch && (
+                      <span className="text-[10px] bg-[rgba(211,84,0,0.1)] text-[#D35400] px-2 py-0.5 rounded-full font-medium border border-[rgba(211,84,0,0.2)]">✨ AI & Keyword Match</span>
+                    )}
+                    {m.isVectorMatch && !m.isTextMatch && (
+                      <span className="text-[10px] bg-purple-500/10 text-purple-700 dark:text-purple-400 px-2 py-0.5 rounded-full font-medium border border-purple-500/20">✨ AI Semantic Match</span>
+                    )}
+                    {!m.isVectorMatch && m.isTextMatch && (
+                      <span className="text-[10px] bg-blue-500/10 text-blue-700 dark:text-blue-400 px-2 py-0.5 rounded-full font-medium border border-blue-500/20">🔍 Keyword Match</span>
+                    )}
+                    {m.similarityScore !== undefined && (
+                      <span className="text-[10px] opacity-60 font-mono">({Math.round(m.similarityScore * 100)}% match)</span>
+                    )}
+                  </div>
+                  <div className="leading-relaxed opacity-95">{m.du}</div>
                 </div>
               );
             })
