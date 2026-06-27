@@ -109,14 +109,12 @@ export default async function ViewerPage({ params }) {
         )}
 
         <div className="mt-12 pt-6 border-t border-glass-border text-center">
-          <a 
-            href="https://wa.link/wy4t10" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <Link 
+            href={`/about?ref=${encodeURIComponent(`/reports/viewer/${id}`)}&type=correction`}
             className="text-xs text-gray-500 hover:text-amber-600 hover:underline transition-colors font-sans"
           >
             ✏️ Suggest a correction
-          </a>
+          </Link>
         </div>
       </main>
     </>

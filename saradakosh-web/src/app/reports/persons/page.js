@@ -2,10 +2,19 @@ import { getPersons } from '@/lib/db';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Persons Directory | Saradakosh',
+  title: 'Persons Directory',
   description: 'Explore historical persons associated with the Ramakrishna Movement.',
   alternates: {
     canonical: 'https://saradakosh.org/reports/persons'
+  },
+  openGraph: {
+    title: 'Persons Directory | Saradakosh',
+    description: 'Explore historical persons associated with the Ramakrishna Movement.',
+    url: 'https://saradakosh.org/reports/persons',
+  },
+  twitter: {
+    title: 'Persons Directory | Saradakosh',
+    description: 'Explore historical persons associated with the Ramakrishna Movement.',
   }
 };
 

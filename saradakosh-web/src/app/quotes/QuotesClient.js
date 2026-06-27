@@ -273,10 +273,12 @@ export default function QuotesClient() {
                 href={`/quotes/post/${quote.id}?lang=${displayLang}`}
                 key={quote.id}
                 className="quote-card-wrapper"
+                title={`Swami Vivekananda Quote on ${quote.categories.join(', ')}`}
               >
                 <div className="quote-card-placeholder">
                   <img src={getOptimizedUrl(imgSrc, 400)} alt={`Swami Vivekananda Quote on ${quote.categories[0] || 'Spirituality'}`} loading="lazy" />
                 </div>
+                <span className="sr-only">Read Swami Vivekananda Quote on {quote.categories.join(', ')}</span>
               </Link>
             );
           })}

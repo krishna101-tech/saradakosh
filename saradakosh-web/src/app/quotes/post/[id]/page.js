@@ -1,9 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import fs from 'fs';
-import path from 'path';
-import * as cheerio from 'cheerio';
 import quotesData from '@/data/quotes.json';
+import quoteContents from '@/data/quote_contents.json';
 import PostActions from './PostActions';
 
 const LANG_LABELS = {
@@ -17,28 +15,8 @@ function getOptimizedUrl(url, width) {
   return url.replace('/upload/', `/upload/${transform}/`);
 }
 
-const LOCAL_SITE_ROOT = path.join(
-  process.cwd(), '..', '..', 'viv live website',
-  'vivekananda_live_website', 'vivekananda.live'
-);
-
 function extractPostData(quoteId) {
-  const htmlPath = path.join(LOCAL_SITE_ROOT, quoteId, 'index.html');
-  if (!fs.existsSync(htmlPath)) return { paragraphs: [], title: '' };
-
-  const html = fs.readFileSync(htmlPath, 'utf8');
-  const $ = cheerio.load(html);
-
-  const title = $('h1.post-title, h1.entry-title, .post-title').first().text().trim()
-    || $('title').text().replace(/–.*Vivekananda.*$/i, '').replace(/–.*$/,'').trim();
-
-  const paragraphs = [];
-  $('.post-content p').each((_, el) => {
-    const txt = $(el).text().trim();
-    if (txt && txt.length > 20) paragraphs.push(txt);
-  });
-
-  return { paragraphs, title };
+  return quoteContents[quoteId] || { paragraphs: [], title: '' };
 }
 
 export async function generateMetadata({ params }) {
@@ -237,14 +215,12 @@ export default async function QuotePostPage({ params, searchParams }) {
                 ))}
               </div>
               <div className="mt-8 pt-4 border-t border-dashed border-[#8b1a1a]/10 text-right">
-                <a 
-                  href="https://wa.link/wy4t10" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <Link 
+                  href={`/about?ref=${encodeURIComponent(`/quotes/post/${quoteId}`)}&type=correction`}
                   className="text-xs text-[#8b1a1a]/60 hover:text-[#8b1a1a] hover:underline transition-colors font-sans"
                 >
                   ✏️ Suggest a correction
-                </a>
+                </Link>
               </div>
             </div>
           )}

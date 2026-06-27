@@ -90,6 +90,12 @@ export default function Home() {
         </div>
 
         <footer className="mt-16 p-8 bg-glass-bg backdrop-blur-md border border-glass-border rounded-2xl shadow-sm text-center">
+          <div className="mb-8 flex justify-center gap-6 text-sm font-sans font-semibold text-text-theme/75 border-b border-glass-border pb-6">
+            <Link href="/" className="hover:text-primary-theme transition-colors no-underline">Home</Link>
+            <Link href="/about" className="hover:text-primary-theme transition-colors no-underline">About & Sources</Link>
+            <Link href="/quotes" className="hover:text-primary-theme transition-colors no-underline">Quotes</Link>
+            <Link href="/schedule" className="hover:text-primary-theme transition-colors no-underline">Schedule</Link>
+          </div>
           <h3 className="font-serif text-3xl text-primary-theme mb-8">Swami Vivekananda Quotes</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
             <div className="space-y-4">

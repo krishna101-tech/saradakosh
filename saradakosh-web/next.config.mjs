@@ -2,6 +2,7 @@
 
 const cspHeader = `
   default-src 'self';
+  connect-src 'self' https://api.web3forms.com;
   script-src 'self' 'unsafe-inline' https://vercel.live;
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
   img-src * blob: data:;

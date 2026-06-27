@@ -17,6 +17,12 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
+      url: 'https://saradakosh.org/about',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: 'https://saradakosh.org/reports/vivekananda',
       lastModified: new Date(),
       changeFrequency: 'monthly',

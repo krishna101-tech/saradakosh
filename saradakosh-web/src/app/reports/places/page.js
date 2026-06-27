@@ -2,10 +2,19 @@ import { getPlacesHierarchy } from '@/lib/db';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Places Directory | Saradakosh',
+  title: 'Places Directory',
   description: 'Explore places associated with the life of Swami Vivekananda and the Ramakrishna Movement.',
   alternates: {
     canonical: 'https://saradakosh.org/reports/places'
+  },
+  openGraph: {
+    title: 'Places Directory | Saradakosh',
+    description: 'Explore places associated with the life of Swami Vivekananda and the Ramakrishna Movement.',
+    url: 'https://saradakosh.org/reports/places',
+  },
+  twitter: {
+    title: 'Places Directory | Saradakosh',
+    description: 'Explore places associated with the life of Swami Vivekananda and the Ramakrishna Movement.',
   }
 };
 
