@@ -28,12 +28,19 @@ export async function generateMetadata({ params }) {
   const { title } = extractPostData(quoteId);
   const imagesObj = quote.images || {};
   const englishImage = imagesObj['eng'] || Object.values(imagesObj)[0];
+  const availableLangs = Object.keys(imagesObj);
+
+  const languagesAlternates = {};
+  availableLangs.forEach(lang => {
+    languagesAlternates[lang] = `https://saradakosh.org/quotes/post/${quoteId}?lang=${lang}`;
+  });
 
   return {
     title: title || 'Swami Vivekananda Quote',
     description: 'Read and share this inspiring quote by Swami Vivekananda.',
     alternates: {
       canonical: `https://saradakosh.org/quotes/post/${quoteId}`,
+      languages: languagesAlternates,
     },
     openGraph: {
       title: title || 'Swami Vivekananda Quote',
