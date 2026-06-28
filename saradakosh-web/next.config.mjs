@@ -16,8 +16,13 @@ const cspHeader = `
 `.replace(/\n/g, '');
 
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
+  async rewrites() {
+    return [
+      {
+        source: '/sitemap.xml',
+        destination: '/sitemap-index',
+      },
+    ];
   },
   async headers() {
     return [
