@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
   const DOMAIN = 'https://www.saradakosh.org';
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

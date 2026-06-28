@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import quotesData from '@/data/quotes.json';
 
 export async function GET() {

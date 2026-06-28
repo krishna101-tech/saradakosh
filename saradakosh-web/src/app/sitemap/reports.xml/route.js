@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import Database from 'better-sqlite3';
 import path from 'path';
 
