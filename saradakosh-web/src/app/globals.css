@@ -545,3 +545,37 @@ tr:hover td { background: var(--primary-glow); }
     @apply font-sans;
   }
 }
+
+@utility scrollbar-thin {
+  scrollbar-width: thin;
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+@utility scrollbar-thumb-white-20 {
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+  }
+}
+
+@utility scrollbar-thumb-primary-35 {
+  scrollbar-color: rgba(139, 26, 26, 0.35) transparent;
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(139, 26, 26, 0.35);
+    border-radius: 9999px;
+    &:hover {
+      background-color: rgba(139, 26, 26, 0.7);
+    }
+  }
+}
+

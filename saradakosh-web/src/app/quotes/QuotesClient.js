@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
-import './quotes.css';
 
 import categoriesData from '@/data/categories.json';
 import quotesData from '@/data/quotes.json';
@@ -59,20 +58,40 @@ const CategoryNode = ({ node, activeCategory, setActiveCategory, closeSidebar, l
   const count = categoryCounts[node.name] || 0;
 
   return (
-    <div className={`category-node level-${level}`}>
+    <div className="text-white">
       <div
-        className={`category-label ${isActive ? 'active-cat' : ''} ${hasChildren ? 'has-children' : ''}`}
+        className={`flex justify-between items-center py-2 px-3.5 cursor-pointer text-[0.88rem] leading-[1.35] transition-all duration-200 ${
+          level === 0
+            ? `text-[0.9rem] font-bold text-white border-b border-white/7 hover:bg-white/8 ${isActive ? 'bg-white/15' : ''}`
+            : `text-[#ffcc00] border-b border-white/3 hover:bg-[#ffcc00] hover:text-[#8b1a1a] hover:[&_.cat-count]:opacity-90 hover:[&_.cat-count]:text-[#8b1a1a] ${
+                isActive ? 'bg-[#ffcc00] !text-[#8b1a1a] [&_.cat-count]:opacity-90 [&_.cat-count]:text-[#8b1a1a]' : ''
+              }`
+        }`}
         onClick={handleClick}
         style={{ paddingLeft: `${16 + (level * 16)}px`, paddingRight: '16px' }}
       >
-        <span className="cat-name">{node.name} <span className="cat-count">({count})</span></span>
-        {hasChildren && <span className={`cat-toggle ${isOpen ? 'open' : ''}`}>›</span>}
+        <span className="grow">
+          {node.name} <span className="opacity-70 text-[0.8em] ml-1 font-normal cat-count">({count})</span>
+        </span>
+        {hasChildren && (
+          <span className={`text-[1.1rem] w-3.5 text-center transition-transform duration-200 ${isOpen ? 'rotate-90' : ''}`}>
+            ›
+          </span>
+        )}
       </div>
       {hasChildren && (
-        <div className={`category-children ${isOpen ? 'open' : ''}`}>
-          <div className="category-children-inner">
+        <div className={`grid transition-[grid-template-rows] duration-300 ease-out bg-black/15 ${isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}>
+          <div className="overflow-hidden">
             {node.children.map((child, i) => (
-              <CategoryNode key={i} node={child} activeCategory={activeCategory} setActiveCategory={setActiveCategory} closeSidebar={closeSidebar} level={level + 1} categoryCounts={categoryCounts} />
+              <CategoryNode 
+                key={i} 
+                node={child} 
+                activeCategory={activeCategory} 
+                setActiveCategory={setActiveCategory} 
+                closeSidebar={closeSidebar} 
+                level={level + 1} 
+                categoryCounts={categoryCounts} 
+              />
             ))}
           </div>
         </div>
@@ -192,29 +211,43 @@ export default function QuotesClient() {
   });
 
   return (
-    <div className={`quotes-container ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
+    <div className="flex h-screen overflow-hidden bg-white font-sans">
       {/* Left Sidebar */}
-      <aside className="quotes-sidebar">
-        <div className="sidebar-header">
-          <h2 className="sidebar-title">Categories</h2>
+      <aside className={`bg-[#8b1a1a] text-white shrink-0 min-h-screen p-0 transition-[width] duration-300 ease-out overflow-hidden max-sm:fixed max-sm:top-0 max-sm:left-0 max-sm:w-screen max-sm:h-screen max-sm:z-[1000] max-sm:flex max-sm:flex-col ${
+        isSidebarOpen 
+          ? 'w-[320px] max-sm:translate-x-0' 
+          : 'w-0 max-sm:-translate-x-full'
+      }`}>
+        <div className="flex justify-between items-center px-2.5 py-2 border-b border-white/15">
+          <h2 className="text-[0.85rem] m-0 font-bold">Categories</h2>
           <button 
-            className="mobile-close-sidebar" 
+            className="hidden max-sm:block bg-transparent border-none text-white text-[1.4rem] cursor-pointer px-3" 
             onClick={() => handleSidebarOpen(false)}
             aria-label="Close menu"
           >
             ✕
           </button>
         </div>
-        <div className="categories-tree">
+        <div className="overflow-y-auto max-h-[calc(100vh-40px)] pb-10 scrollbar-thin scrollbar-thumb-white-20 scrollbar-track-transparent">
           {categoriesData.map((topNode, i) => (
-            <div key={i} className="sidebar-section">
-              <div className="sidebar-section-title">{topNode.name}</div>
+            <div key={i} className="mb-6">
+              <div className="font-bold text-[0.9rem] text-[#ffcccc] px-3.5 pt-4 pb-2 uppercase tracking-[0.5px] border-b border-white/10 mb-1">
+                {topNode.name}
+              </div>
               {topNode.children && topNode.children.map((child, j) => (
-                <CategoryNode key={j} node={child} activeCategory={activeCategory} setActiveCategory={setActiveCategory} categoryCounts={categoryCounts} level={0} closeSidebar={() => {
-                  if (typeof window !== 'undefined' && window.innerWidth <= 600) {
-                    handleSidebarOpen(false);
-                  }
-                }} />
+                <CategoryNode 
+                  key={j} 
+                  node={child} 
+                  activeCategory={activeCategory} 
+                  setActiveCategory={setActiveCategory} 
+                  categoryCounts={categoryCounts} 
+                  level={0} 
+                  closeSidebar={() => {
+                    if (typeof window !== 'undefined' && window.innerWidth <= 600) {
+                      handleSidebarOpen(false);
+                    }
+                  }} 
+                />
               ))}
             </div>
           ))}
@@ -222,22 +255,26 @@ export default function QuotesClient() {
       </aside>
 
       {/* Main Content Area */}
-      <main className="quotes-main">
+      <main className="grow flex flex-col min-w-0 h-screen overflow-y-auto scrollbar-thin scrollbar-thumb-primary-35 scrollbar-track-transparent">
         {/* Top Header */}
-        <header className="quotes-header">
-          <button className="burger-toggle" onClick={() => handleSidebarOpen(!isSidebarOpen)}>
+        <header className="bg-[#f5c518] px-3.5 py-1.5 flex justify-between items-center gap-2.5 max-sm:flex-wrap">
+          <button 
+            className="bg-transparent border-none text-[1.5rem] cursor-pointer text-[#8b1a1a] px-1 flex items-center order-1" 
+            onClick={() => handleSidebarOpen(!isSidebarOpen)}
+            aria-label="Toggle menu"
+          >
             {isSidebarOpen ? '✕' : '☰'}
           </button>
           
-          <Link href="/" className="btn-home">
-            <span className="home-icon">🏠</span><span className="home-text"> Home</span>
+          <Link href="/" className="inline-flex items-center gap-1 px-3.5 py-1 bg-[#8b1a1a] text-white no-underline rounded font-bold text-[0.82rem] order-2 hover:bg-[#6a1010] transition-colors">
+            <span>🏠</span><span className="max-sm:hidden"> Home</span>
           </Link>
           
-          <div className="header-center">
+          <div className="grow flex justify-center order-3">
             <select
               value={selectedLanguage}
               onChange={(e) => setSelectedLanguage(e.target.value)}
-              className="lang-select"
+              className="py-1 px-3 rounded-[20px] border border-[#8b1a1a]/40 bg-white font-semibold text-[0.9rem] text-[#8b1a1a] cursor-pointer outline-none transition-all duration-200 shadow-[0_2px_8px_rgba(0,0,0,0.05)] hover:border-[#8b1a1a] hover:shadow-[0_4px_12px_rgba(139,26,26,0.15)] focus:border-[#8b1a1a]"
             >
               {Object.entries(LANG_LABELS).map(([code, label]) => (
                 <option key={code} value={code}>{label}</option>
@@ -245,25 +282,30 @@ export default function QuotesClient() {
             </select>
           </div>
 
-          <div className="search-bar">
+          <div className="flex items-center gap-1.5 order-4 max-sm:w-full max-sm:mt-2.5 max-sm:justify-center">
             <input
               type="text"
               placeholder="Search quotes..."
               value={searchTerm}
               onChange={e => setSearchTerm(e.target.value)}
+              className="py-1 px-2 border border-slate-200 rounded-l w-[180px] max-sm:w-full max-sm:max-w-[300px] outline-none text-[0.82rem]"
             />
-            <button aria-label="Search">🔍</button>
+            <button aria-label="Search" className="py-1 px-3 bg-[#8b1a1a] text-white border-none rounded-r cursor-pointer">🔍</button>
           </div>
         </header>
 
         {/* Category Title Area */}
-        <div className="category-title-area">
-          <h1>{activeCategory}</h1>
-          <p className="subtitle">(Total Quotes — {displayedQuotes.length})</p>
+        <div className="pt-3.5 px-2.5 pb-2 text-center">
+          <h1 className="text-[1.7rem] text-[#8b1a1a] m-0 mb-1 font-serif max-sm:text-[1.3rem]">{activeCategory}</h1>
+          <p className="text-slate-600 text-[0.9rem] m-0">(Total Quotes — {displayedQuotes.length})</p>
         </div>
 
         {/* Quotes Grid */}
-        <div className="quotes-grid">
+        <div className={`grid gap-0 p-0 w-full transition-[grid-template-columns] duration-300 ease-out ${
+          isSidebarOpen 
+            ? 'grid-cols-4 max-lg:grid-cols-3 max-sm:grid-cols-2' 
+            : 'grid-cols-5 max-lg:grid-cols-4 max-sm:grid-cols-2'
+        }`}>
           {displayedQuotes.map((quote) => {
             const imgs = quote.images || {};
             const displayLang = imgs[selectedLanguage] ? selectedLanguage
@@ -278,18 +320,23 @@ export default function QuotesClient() {
               <Link
                 href={`/quotes/post/${quote.id}?lang=${displayLang}`}
                 key={quote.id}
-                className="quote-card-wrapper"
+                className="block overflow-hidden hover:[&_img]:opacity-92"
                 title={`Swami Vivekananda Quote on ${quote.categories.join(', ')}`}
               >
-                <div className="quote-card-placeholder">
-                  <img src={getOptimizedUrl(imgSrc, 400)} alt={`Swami Vivekananda Quote on ${quote.categories[0] || 'Spirituality'}`} loading="lazy" />
+                <div className="w-full block">
+                  <img 
+                    src={getOptimizedUrl(imgSrc, 400)} 
+                    alt={`Swami Vivekananda Quote on ${quote.categories[0] || 'Spirituality'}`} 
+                    loading="lazy" 
+                    className="w-full h-auto block transition-all duration-200 hover:scale-[1.02] hover:opacity-90"
+                  />
                 </div>
                 <span className="sr-only">Read Swami Vivekananda Quote on {quote.categories.join(', ')}</span>
               </Link>
             );
           })}
           {displayedQuotes.length === 0 && (
-            <div className="no-results">
+            <div className="col-span-full text-center py-15 px-5 text-slate-400 text-sm">
               <p>No quotes found for this category.</p>
             </div>
           )}
@@ -298,3 +345,4 @@ export default function QuotesClient() {
     </div>
   );
 }
+
