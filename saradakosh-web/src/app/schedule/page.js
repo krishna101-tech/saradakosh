@@ -4,12 +4,12 @@ export const metadata = {
   title: 'Class Schedule',
   description: 'View the morning class schedule and registration link.',
   alternates: {
-    canonical: 'https://saradakosh.org/schedule'
+    canonical: 'https://www.saradakosh.org/schedule'
   },
   openGraph: {
     title: 'Class Schedule | Saradakosh',
     description: 'View the morning class schedule and registration link.',
-    url: 'https://saradakosh.org/schedule',
+    url: 'https://www.saradakosh.org/schedule',
   },
   twitter: {
     title: 'Class Schedule | Saradakosh',

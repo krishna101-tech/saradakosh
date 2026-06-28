@@ -34,7 +34,7 @@ export default function FeedbackForm() {
       emailBody += `Message:\n-----------------------------\n${message}`;
       
       if (reference) {
-        emailBody += `\n\n-----------------------------\nOriginal Post Context Link:\nhttps://saradakosh.org${reference}`;
+        emailBody += `\n\n-----------------------------\nOriginal Post Context Link:\nhttps://www.saradakosh.org${reference}`;
       }
 
       // Dispatch client-side to bypass Cloudflare bot challenges on serverless runtimes

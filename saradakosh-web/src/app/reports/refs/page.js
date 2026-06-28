@@ -5,12 +5,12 @@ export const metadata = {
   title: 'Reference Archive',
   description: 'Interactive references archive for Ramakrishna-Vivekananda literature.',
   alternates: {
-    canonical: 'https://saradakosh.org/reports/refs'
+    canonical: 'https://www.saradakosh.org/reports/refs'
   },
   openGraph: {
     title: 'Reference Archive | Saradakosh',
     description: 'Interactive references archive for Ramakrishna-Vivekananda literature.',
-    url: 'https://saradakosh.org/reports/refs',
+    url: 'https://www.saradakosh.org/reports/refs',
   },
   twitter: {
     title: 'Reference Archive | Saradakosh',

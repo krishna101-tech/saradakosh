@@ -32,21 +32,21 @@ export async function generateMetadata({ params }) {
 
   const languagesAlternates = {};
   availableLangs.forEach(lang => {
-    languagesAlternates[lang] = `https://saradakosh.org/quotes/post/${quoteId}?lang=${lang}`;
+    languagesAlternates[lang] = `https://www.saradakosh.org/quotes/post/${quoteId}?lang=${lang}`;
   });
 
   return {
     title: title || 'Swami Vivekananda Quote',
     description: 'Read and share this inspiring quote by Swami Vivekananda.',
     alternates: {
-      canonical: `https://saradakosh.org/quotes/post/${quoteId}`,
+      canonical: `https://www.saradakosh.org/quotes/post/${quoteId}`,
       languages: languagesAlternates,
     },
     openGraph: {
       title: title || 'Swami Vivekananda Quote',
       description: 'Read and share this inspiring quote by Swami Vivekananda.',
       images: englishImage ? [englishImage] : [],
-      url: `https://saradakosh.org/quotes/post/${quoteId}`,
+      url: `https://www.saradakosh.org/quotes/post/${quoteId}`,
       type: 'article',
     },
     twitter: {
@@ -95,19 +95,19 @@ export default async function QuotePostPage({ params, searchParams }) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://saradakosh.org"
+        "item": "https://www.saradakosh.org"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Quotes",
-        "item": "https://saradakosh.org/quotes"
+        "item": "https://www.saradakosh.org/quotes"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": title || "Swami Vivekananda Quote",
-        "item": `https://saradakosh.org/quotes/post/${quoteId}`
+        "item": `https://www.saradakosh.org/quotes/post/${quoteId}`
       }
     ]
   };

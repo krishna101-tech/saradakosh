@@ -7,12 +7,12 @@ export const metadata = {
   title: 'About & Source References',
   description: 'About Saradakosh, project maintainership, bibliography abbreviations key, and content correction channel.',
   alternates: {
-    canonical: 'https://saradakosh.org/about'
+    canonical: 'https://www.saradakosh.org/about'
   },
   openGraph: {
     title: 'About & Source References | Saradakosh',
     description: 'About Saradakosh, project maintainership, bibliography abbreviations key, and content correction channel.',
-    url: 'https://saradakosh.org/about',
+    url: 'https://www.saradakosh.org/about',
   },
   twitter: {
     title: 'About & Source References | Saradakosh',

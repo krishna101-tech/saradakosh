@@ -18,7 +18,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://saradakosh.org'),
+  metadataBase: new URL('https://www.saradakosh.org'),
   title: {
     default: "Saradakosh | Lives & Teachings of Sri Ramakrishna, Holy Mother, and Swami Vivekananda",
     template: "%s | Saradakosh"
@@ -34,7 +34,7 @@ export const metadata = {
   openGraph: {
     title: "Saradakosh | Spiritual Archive",
     description: "The Complete Lives & Teachings of Sri Ramakrishna, Holy Mother, and Swami Vivekananda.",
-    url: "https://saradakosh.org",
+    url: "https://www.saradakosh.org",
     siteName: "Saradakosh",
     images: [
       {

@@ -8,11 +8,11 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Saradakosh",
-    "url": "https://saradakosh.org",
+    "url": "https://www.saradakosh.org",
     "description": "The Lives, Teachings, and Legacy of Sri Ramakrishna, Sri Sarada Devi, and Swami Vivekananda",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://saradakosh.org/search?q={search_term_string}",
+      "target": "https://www.saradakosh.org/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };

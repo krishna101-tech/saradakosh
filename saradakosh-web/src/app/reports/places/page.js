@@ -5,12 +5,12 @@ export const metadata = {
   title: 'Places Directory',
   description: 'Explore places associated with the life of Swami Vivekananda and the Ramakrishna Movement.',
   alternates: {
-    canonical: 'https://saradakosh.org/reports/places'
+    canonical: 'https://www.saradakosh.org/reports/places'
   },
   openGraph: {
     title: 'Places Directory | Saradakosh',
     description: 'Explore places associated with the life of Swami Vivekananda and the Ramakrishna Movement.',
-    url: 'https://saradakosh.org/reports/places',
+    url: 'https://www.saradakosh.org/reports/places',
   },
   twitter: {
     title: 'Places Directory | Saradakosh',

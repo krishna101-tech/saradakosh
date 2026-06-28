@@ -11,11 +11,11 @@ export async function generateMetadata({ params }) {
   return {
     title: `${parameter.para1} — Swami Vivekananda Timeline`,
     alternates: {
-      canonical: `https://saradakosh.org/reports/viewer/${id}`,
+      canonical: `https://www.saradakosh.org/reports/viewer/${id}`,
     },
     openGraph: {
       title: `${parameter.para1} — Swami Vivekananda Timeline | Saradakosh`,
-      url: `https://saradakosh.org/reports/viewer/${id}`,
+      url: `https://www.saradakosh.org/reports/viewer/${id}`,
     },
     twitter: {
       card: 'summary_large_image',
@@ -63,19 +63,19 @@ export default async function ViewerPage({ params }) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://saradakosh.org"
+        "item": "https://www.saradakosh.org"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": parentLabel,
-        "item": `https://saradakosh.org${parentUrl}`
+        "item": `https://www.saradakosh.org${parentUrl}`
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": parameter.para1,
-        "item": `https://saradakosh.org/reports/viewer/${id}`
+        "item": `https://www.saradakosh.org/reports/viewer/${id}`
       }
     ]
   };
