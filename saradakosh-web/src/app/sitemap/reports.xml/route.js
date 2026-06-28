@@ -1,19 +1,14 @@
 export const dynamic = 'force-dynamic';
 
-import Database from 'better-sqlite3';
-import path from 'path';
+import { getParameterIds } from '@/lib/db';
 
 export async function GET() {
   const DOMAIN = 'https://www.saradakosh.org';
   let viewerPaths = [];
   
   try {
-    const dbPath = path.resolve(process.cwd(), 'saradakosh.db');
-    const db = new Database(dbPath, { readonly: true });
-    const stmt = db.prepare('SELECT id FROM parameters');
-    const rows = stmt.all();
-    viewerPaths = rows.map(r => `${DOMAIN}/reports/viewer/${r.id}`);
-    db.close();
+    const ids = getParameterIds();
+    viewerPaths = ids.map(id => `${DOMAIN}/reports/viewer/${id}`);
   } catch (error) {
     console.error("Error generating reports sitemap paths:", error);
   }

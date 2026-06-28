@@ -293,6 +293,7 @@ export function searchEventsVector(queryVector, limit = 50) {
     const stmt = db.prepare(`
       SELECT * FROM events 
       WHERE id IN (${ids.map(() => '?').join(',')})
+      AND (child_id IS NULL OR child_id = '' OR child_id IN (SELECT id FROM events))
     `);
     const events = stmt.all(...ids);
     
@@ -376,4 +377,15 @@ export function getPlacesHierarchy() {
   }
 }
 
+export function getParameterIds() {
+  try {
+    const stmt = db.prepare('SELECT id FROM parameters');
+    return stmt.all().map(r => r.id);
+  } catch (error) {
+    console.error("Error fetching parameter IDs:", error);
+    return [];
+  }
+}
+
 export default db;
+
