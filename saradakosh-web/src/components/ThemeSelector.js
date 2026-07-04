@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import { Sunrise, MoonStar } from 'lucide-react';
 
 export default function ThemeSelector() {
   const [theme, setTheme] = useState('system');
@@ -29,14 +30,12 @@ export default function ThemeSelector() {
     }
   };
 
-  const btnBaseClass = "bg-transparent border-none cursor-pointer text-text-theme text-sm opacity-60 hover:opacity-100 transition-all duration-200 px-2 py-1 rounded-lg";
-  const btnActiveClass = "opacity-100 font-bold bg-primary-theme/15 text-primary-theme";
+  const btnClass = "relative z-10 bg-transparent border-none cursor-pointer flex items-center justify-center size-7 rounded-full transition-all duration-200 touch-manipulation outline-none";
 
   if (!mounted) {
     return (
-      <div className="absolute top-3 right-3 sm:top-5 sm:right-5 bg-glass-bg backdrop-blur-md border border-glass-border rounded-full px-2.5 py-1 flex gap-2.5 z-50 invisible">
-        <button className={btnBaseClass}>Dawn</button>
-        <button className={btnBaseClass}>Midnight</button>
+      <div className="absolute top-3 right-3 sm:top-5 sm:right-5 bg-glass-bg backdrop-blur-md border border-glass-border rounded-full p-1 h-9 w-[68px] z-50 invisible">
+        <div className="size-7 rounded-full bg-primary-theme/15 absolute top-1 left-1" />
       </div>
     );
   }
@@ -46,18 +45,32 @@ export default function ThemeSelector() {
   const isDarkActive = theme === 'dark' || (theme === 'system' && isSystemDark);
 
   return (
-    <div className="absolute top-3 right-3 sm:top-5 sm:right-5 bg-glass-bg backdrop-blur-md border border-glass-border rounded-full px-2.5 py-1 flex gap-2.5 z-50">
+    <div className="absolute top-3 right-3 sm:top-5 sm:right-5 bg-glass-bg backdrop-blur-md border border-glass-border rounded-full p-1 h-9 w-[68px] flex items-center justify-start z-50 select-none relative">
+      {/* Sliding Highlight Indicator */}
+      <div 
+        className="size-7 rounded-full bg-primary-theme/15 absolute top-1 left-1 transition-transform duration-300 ease-out pointer-events-none"
+        style={{ 
+          transform: isDarkActive ? 'translateX(32px)' : 'translateX(0px)',
+          background: isDarkActive ? 'var(--primary-color)' : 'rgba(92, 26, 27, 0.15)'
+        }}
+      />
+
       <button 
-        className={`${btnBaseClass} ${isLightActive ? btnActiveClass : ''}`}
+        className={`${btnClass} ${isLightActive ? 'text-primary-theme opacity-100 scale-105' : 'text-text-theme opacity-40 hover:opacity-75'}`}
         onClick={() => changeTheme('light')}
+        aria-label="Switch to Dawn Theme (Light Mode)"
+        title="Dawn (Light Theme)"
       >
-        Dawn
+        <Sunrise className="size-4.5" />
       </button>
+      
       <button 
-        className={`${btnBaseClass} ${isDarkActive ? btnActiveClass : ''}`}
+        className={`${btnClass} ${isDarkActive ? 'text-bg-theme opacity-100 scale-105' : 'text-text-theme opacity-40 hover:opacity-75'}`}
         onClick={() => changeTheme('dark')}
+        aria-label="Switch to Midnight Theme (Dark Mode)"
+        title="Midnight (Dark Theme)"
       >
-        Midnight
+        <MoonStar className="size-4.5" />
       </button>
     </div>
   );

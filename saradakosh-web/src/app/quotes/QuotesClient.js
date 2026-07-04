@@ -59,12 +59,12 @@ const CategoryNode = ({ node, activeCategory, setActiveCategory, closeSidebar, l
   const count = categoryCounts[node.name] || 0;
 
   return (
-    <div className="text-white">
+    <div className="text-bg-theme">
       <div
         className={`flex justify-between items-center py-2 px-3.5 cursor-pointer text-[0.88rem] leading-[1.35] transition-all duration-200 ${
           level === 0
-            ? `text-[0.9rem] font-bold text-white border-b border-white/7 hover:bg-white/8 ${isActive ? 'bg-white/15' : ''}`
-            : `text-quotes-accent border-b border-white/3 hover:bg-quotes-accent hover:text-quotes-primary hover:[&_.cat-count]:opacity-90 hover:[&_.cat-count]:text-quotes-primary ${
+            ? `text-[0.9rem] font-bold text-bg-theme border-b border-bg-theme/7 hover:bg-bg-theme/8 ${isActive ? 'bg-bg-theme/15' : ''}`
+            : `text-quotes-accent border-b border-bg-theme/3 hover:bg-quotes-accent hover:text-quotes-primary hover:[&_.cat-count]:opacity-90 hover:[&_.cat-count]:text-quotes-primary ${
                 isActive ? 'bg-quotes-accent !text-quotes-primary [&_.cat-count]:opacity-90 [&_.cat-count]:text-quotes-primary' : ''
               }`
         }`}
@@ -81,7 +81,7 @@ const CategoryNode = ({ node, activeCategory, setActiveCategory, closeSidebar, l
         )}
       </div>
       {hasChildren && (
-        <div className={`grid transition-[grid-template-rows] duration-300 ease-out bg-black/15 ${isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}>
+        <div className={`grid transition-[grid-template-rows] duration-300 ease-out bg-bg-theme/10 ${isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}>
           <div className="overflow-hidden">
             {node.children.map((child, i) => (
               <CategoryNode 
@@ -212,17 +212,17 @@ export default function QuotesClient() {
   });
 
   return (
-    <div className="flex h-screen overflow-hidden bg-white font-sans">
+    <div className="flex h-screen overflow-hidden bg-background text-text-theme font-sans">
       {/* Left Sidebar */}
-      <aside className={`bg-quotes-primary text-white shrink-0 min-h-screen p-0 transition-[width] duration-300 ease-out overflow-hidden max-sm:fixed max-sm:top-0 max-sm:left-0 max-sm:w-screen max-sm:h-screen max-sm:z-[1000] max-sm:flex max-sm:flex-col ${
+      <aside className={`bg-quotes-primary text-bg-theme shrink-0 min-h-screen p-0 transition-[width] duration-300 ease-out overflow-hidden max-sm:fixed max-sm:top-0 max-sm:left-0 max-sm:w-screen max-sm:h-screen max-sm:z-[1000] max-sm:flex max-sm:flex-col ${
         isSidebarOpen 
           ? 'w-[320px] max-sm:translate-x-0' 
           : 'w-0 max-sm:-translate-x-full'
       }`}>
-        <div className="flex justify-between items-center px-2.5 py-2 border-b border-white/15">
+        <div className="flex justify-between items-center px-2.5 py-2 border-b border-bg-theme/15">
           <h2 className="text-[0.85rem] m-0 font-bold">Categories</h2>
           <button 
-            className="hidden max-sm:block bg-transparent border-none text-white cursor-pointer px-3" 
+            className="hidden max-sm:block bg-transparent border-none text-bg-theme cursor-pointer px-3" 
             onClick={() => handleSidebarOpen(false)}
             aria-label="Close menu"
           >
@@ -232,7 +232,7 @@ export default function QuotesClient() {
         <div className="overflow-y-auto max-h-[calc(100vh-40px)] pb-10 scrollbar-thin scrollbar-thumb-white-20 scrollbar-track-transparent">
           {categoriesData.map((topNode, i) => (
             <div key={i} className="mb-6">
-              <div className="font-bold text-[0.9rem] text-white/80 px-3.5 pt-4 pb-2 uppercase tracking-[0.5px] border-b border-white/10 mb-1">
+              <div className="font-bold text-[0.9rem] text-bg-theme/80 px-3.5 pt-4 pb-2 uppercase tracking-[0.5px] border-b border-bg-theme/10 mb-1">
                 {topNode.name}
               </div>
               {topNode.children && topNode.children.map((child, j) => (
@@ -267,7 +267,7 @@ export default function QuotesClient() {
             {isSidebarOpen ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
           
-          <Link href="/" className="inline-flex items-center gap-1 px-3.5 py-1 bg-quotes-primary text-white no-underline rounded font-bold text-[0.82rem] order-2 hover:bg-quotes-primary/80 transition-colors">
+          <Link href="/" className="inline-flex items-center gap-1 px-3.5 py-1 bg-quotes-primary text-bg-theme no-underline rounded font-bold text-[0.82rem] order-2 hover:opacity-90 transition-colors">
             <Home className="size-4" /><span className="max-sm:hidden"> Home</span>
           </Link>
           
@@ -275,7 +275,7 @@ export default function QuotesClient() {
             <select
               value={selectedLanguage}
               onChange={(e) => setSelectedLanguage(e.target.value)}
-              className="py-1 px-3 rounded-[20px] border border-quotes-primary/40 bg-white font-semibold text-[0.9rem] text-quotes-primary cursor-pointer outline-none transition-all duration-200 shadow-[0_2px_8px_rgba(0,0,0,0.05)] hover:border-quotes-primary hover:shadow-[0_4px_12px_rgba(139,26,26,0.15)] focus:border-quotes-primary"
+              className="py-1 px-3 rounded-[20px] border border-quotes-primary/40 bg-card font-semibold text-[0.9rem] text-text-theme cursor-pointer outline-none transition-all duration-200 hover:border-quotes-primary focus:border-quotes-primary"
             >
               {Object.entries(LANG_LABELS).map(([code, label]) => (
                 <option key={code} value={code}>{label}</option>
@@ -289,16 +289,16 @@ export default function QuotesClient() {
               placeholder="Search quotes..."
               value={searchTerm}
               onChange={e => setSearchTerm(e.target.value)}
-              className="py-1 px-2 border border-slate-200 rounded-l w-[180px] max-sm:w-full max-sm:max-w-[300px] outline-none text-[0.82rem]"
+              className="py-1 px-2 border border-border rounded-l w-[180px] max-sm:w-full max-sm:max-w-[300px] outline-none text-[0.82rem] bg-card text-text-theme"
             />
-            <button aria-label="Search" className="py-1 px-3 bg-quotes-primary text-white border-none rounded-r cursor-pointer flex items-center justify-center"><Search className="size-4" /></button>
+            <button aria-label="Search" className="py-1 px-3 bg-quotes-primary text-bg-theme border-none rounded-r cursor-pointer flex items-center justify-center"><Search className="size-4" /></button>
           </div>
         </header>
 
         {/* Category Title Area */}
         <div className="pt-3.5 px-2.5 pb-2 text-center">
           <h1 className="text-[1.7rem] text-quotes-primary m-0 mb-1 font-serif max-sm:text-[1.3rem]">{activeCategory}</h1>
-          <p className="text-slate-600 text-[0.9rem] m-0">(Total Quotes — {displayedQuotes.length})</p>
+          <p className="text-text-theme/75 text-[0.9rem] m-0">(Total Quotes — {displayedQuotes.length})</p>
         </div>
 
         {/* Quotes Grid */}
@@ -337,7 +337,7 @@ export default function QuotesClient() {
             );
           })}
           {displayedQuotes.length === 0 && (
-            <div className="col-span-full text-center py-15 px-5 text-slate-400 text-sm">
+            <div className="col-span-full text-center py-15 px-5 text-text-theme/60 text-sm">
               <p>No quotes found for this category.</p>
             </div>
           )}

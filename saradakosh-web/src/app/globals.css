@@ -38,8 +38,6 @@
   --glass-hover: rgba(92, 26, 27, 0.05);
   --glass-shadow: none;
   --header-grad: none;
-  --font-serif: var(--font-serif);
-  --font-sans: var(--font-sans);
   --hero-bg-url: none;
   --input-bg: #FAF6EC;
   --input-border: rgba(92, 26, 27, 0.25);
@@ -225,10 +223,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
-  }
-  html {
-    @apply font-sans;
+    @apply bg-background text-foreground font-sans;
   }
 }
 
