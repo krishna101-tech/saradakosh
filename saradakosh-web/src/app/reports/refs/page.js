@@ -1,5 +1,6 @@
 import { getRefsHierarchy } from '@/lib/db';
 import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
 
 export const metadata = {
   title: 'Reference Archive',
@@ -22,37 +23,36 @@ export default function RefsReport() {
   const data = getRefsHierarchy();
   
   return (
-    <main className="container min-h-screen">
-      <Link href="/" className="back-link mt-8 block">
-        &larr; Back to Dashboard
+    <main className="max-w-5xl mx-auto px-5 md:px-8 min-h-screen">
+      <Link href="/" className="mt-8 mb-6 inline-flex items-center gap-1.5 font-sans font-semibold text-text-theme opacity-80 hover:opacity-100 hover:text-primary-theme transition-all duration-300 hover:-translate-x-1 no-underline block">
+        <ArrowLeft className="size-4" /> Back to Dashboard
       </Link>
-      <h1 className="text-4xl font-bold mb-8 font-serif text-[#d35400]">Interactive References Archive</h1>
+      <h1 className="text-4xl font-bold mb-8 font-serif text-primary-theme">Interactive References Archive</h1>
       
       <div id="report-container">
         {Object.keys(data).map(l1 => (
           <div key={l1}>
-            <h2 className="level1-title" style={{ color: 'var(--primary-color)', borderBottom: '2px solid var(--primary-color)', marginTop: '40px', paddingBottom: '5px', fontSize: '1.5rem', fontWeight: 700 }}>
+            <h2 className="text-2xl font-bold text-primary-theme border-b-2 border-primary-theme mt-10 pb-1">
               {l1}
             </h2>
             
             {Object.keys(data[l1]).map(l2 => (
               <div key={l2}>
-                <div className="level2-title" style={{ color: 'var(--secondary-color)', fontSize: '1.2rem', marginTop: '20px', fontWeight: 600 }}>
+                <div className="text-xl font-semibold text-secondary-theme mt-5">
                   {l2}
                 </div>
                 
-                <div className="ref-header" style={{ display: 'grid', gridTemplateColumns: '200px 1fr 1fr', gap: '15px', padding: '10px', fontWeight: 'bold', background: '#fff8f0', borderBottom: '1px solid #ccc', marginTop: '10px', color: '#2c2520' }}>
+                <div className="grid grid-cols-[200px_1fr_1fr] gap-4 p-2.5 font-bold bg-warm-bg border-b border-warm-border mt-2.5 text-warm-text">
                   <div>Name</div>
                   <div>Title</div>
                   <div>Language</div>
                 </div>
                 
                 {data[l1][l2].map(item => (
-                  <div key={item.id} className="ref-item" style={{ display: 'grid', gridTemplateColumns: '200px 1fr 1fr', gap: '15px', padding: '10px', borderBottom: '1px solid #eed', fontSize: '0.95rem', color: 'var(--text-color)' }}>
+                  <div key={item.id} className="grid grid-cols-[200px_1fr_1fr] gap-4 p-2.5 border-b border-warm-border text-[0.95rem] text-text-theme">
                     <Link 
                        href={`/reports/viewer/${item.id}`}
-                      className="clickable-name" 
-                      style={{ fontWeight: 600, cursor: 'pointer', color: 'var(--primary-color)' }} 
+                      className="font-semibold cursor-pointer text-primary-theme hover:underline no-underline" 
                       title="Click to view events"
                     >
                       {item.name || '-'}

@@ -34,7 +34,7 @@ export default function ThemeSelector() {
 
   if (!mounted) {
     return (
-      <div className="absolute top-5 right-5 bg-glass-bg backdrop-blur-md border border-glass-border rounded-full px-2.5 py-1 flex gap-2.5 shadow-sm z-50 invisible">
+      <div className="absolute top-3 right-3 sm:top-5 sm:right-5 bg-glass-bg backdrop-blur-md border border-glass-border rounded-full px-2.5 py-1 flex gap-2.5 shadow-sm z-50 invisible">
         <button className={btnBaseClass}>Dawn</button>
         <button className={btnBaseClass}>Midnight</button>
       </div>
@@ -46,7 +46,7 @@ export default function ThemeSelector() {
   const isDarkActive = theme === 'dark' || (theme === 'system' && isSystemDark);
 
   return (
-    <div className="absolute top-5 right-5 bg-glass-bg backdrop-blur-md border border-glass-border rounded-full px-2.5 py-1 flex gap-2.5 shadow-sm z-50">
+    <div className="absolute top-3 right-3 sm:top-5 sm:right-5 bg-glass-bg backdrop-blur-md border border-glass-border rounded-full px-2.5 py-1 flex gap-2.5 shadow-sm z-50">
       <button 
         className={`${btnBaseClass} ${isLightActive ? btnActiveClass : ''}`}
         onClick={() => changeTheme('light')}

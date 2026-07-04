@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { ChevronRight } from 'lucide-react';
 
 export default function ViewerAccordion({ events }) {
   const [openIds, setOpenIds] = useState(new Set());
@@ -34,7 +35,7 @@ export default function ViewerAccordion({ events }) {
         const hasChildren = e.children && e.children.length > 0;
         const isOpen = openIds.has(e.id);
         
-        const btnBaseClass = "w-full p-4.5 bg-glass-bg border border-glass-border text-text-theme rounded-lg shadow-sm transition-all duration-300 focus:outline-none";
+        const btnBaseClass = "w-full p-4.5 bg-glass-bg border border-glass-border text-text-theme rounded-lg shadow-sm transition-all duration-300 focus:outline-none touch-manipulation";
         const btnHoverClass = hasChildren ? "hover:bg-glass-hover cursor-pointer" : "cursor-default";
 
         return (
@@ -45,9 +46,9 @@ export default function ViewerAccordion({ events }) {
             >
               <div className="flex gap-4 items-baseline w-full text-left font-sans flex-wrap">
                 {hasChildren ? (
-                  <span className={`inline-block mr-2 text-primary-theme transition-transform duration-300 text-xs ${isOpen ? 'transform rotate-90' : ''}`}>&#9654;</span>
+                  <span className={`inline-block mr-2 text-primary-theme transition-transform duration-300 ${isOpen ? 'transform rotate-90' : ''}`}><ChevronRight className="size-4 inline" /></span>
                 ) : (
-                  <span className="w-3.5 mr-2 flex-shrink-0 inline-block"></span>
+                  <span className="w-4 mr-2 flex-shrink-0 inline-block"></span>
                 )}
                 <span className="font-bold w-7.5 flex-shrink-0 text-gray-500 dark:text-gray-400">{index + 1}</span>
                 <span className="text-secondary-theme font-bold w-24 flex-shrink-0 whitespace-nowrap text-right">{yrStr}</span>

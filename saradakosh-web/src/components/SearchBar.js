@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { Search, Sparkles } from 'lucide-react';
 import { fetchSearchResults } from '@/app/actions';
 
 export default function SearchBar() {
@@ -28,7 +29,7 @@ export default function SearchBar() {
   return (
     <div className="relative w-full max-w-[600px] mx-auto">
       <div className="relative w-full mb-0">
-        <span className="absolute left-5 top-1/2 -translate-y-1/2 text-lg opacity-60">🔍</span>
+        <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-text-theme opacity-60 size-5" />
         <input 
           type="text" 
           id="search-input" 
@@ -63,13 +64,13 @@ export default function SearchBar() {
                   <div className="flex items-center gap-2 flex-wrap">
                     <strong className="text-[var(--primary-theme)]">{displayDt}</strong>
                     {m.isVectorMatch && m.isTextMatch && (
-                      <span className="text-[10px] bg-[rgba(211,84,0,0.1)] text-[#D35400] px-2 py-0.5 rounded-full font-medium border border-[rgba(211,84,0,0.2)]">✨ AI & Keyword Match</span>
+                      <span className="text-[10px] bg-[rgba(211,84,0,0.1)] text-[#D35400] px-2 py-0.5 rounded-full font-medium border border-[rgba(211,84,0,0.2)] flex items-center gap-1"><Sparkles className="size-3" /> AI & Keyword Match</span>
                     )}
                     {m.isVectorMatch && !m.isTextMatch && (
-                      <span className="text-[10px] bg-purple-500/10 text-purple-700 dark:text-purple-400 px-2 py-0.5 rounded-full font-medium border border-purple-500/20">✨ AI Semantic Match</span>
+                      <span className="text-[10px] bg-purple-500/10 text-purple-700 dark:text-purple-400 px-2 py-0.5 rounded-full font-medium border border-purple-500/20 flex items-center gap-1"><Sparkles className="size-3" /> AI Semantic Match</span>
                     )}
                     {!m.isVectorMatch && m.isTextMatch && (
-                      <span className="text-[10px] bg-blue-500/10 text-blue-700 dark:text-blue-400 px-2 py-0.5 rounded-full font-medium border border-blue-500/20">🔍 Keyword Match</span>
+                      <span className="text-[10px] bg-blue-500/10 text-blue-700 dark:text-blue-400 px-2 py-0.5 rounded-full font-medium border border-blue-500/20 flex items-center gap-1"><Search className="size-3" /> Keyword Match</span>
                     )}
                     {m.similarityScore !== undefined && (
                       <span className="text-[10px] opacity-60 font-mono">({Math.round(m.similarityScore * 100)}% match)</span>

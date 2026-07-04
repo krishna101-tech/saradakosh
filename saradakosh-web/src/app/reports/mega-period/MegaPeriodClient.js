@@ -1,6 +1,7 @@
 'use client';
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
+import { ChevronDown, ChevronRight, ArrowLeft } from 'lucide-react';
 import ThemeSelector from '@/components/ThemeSelector';
 
 export default function MegaPeriodClient({ data }) {
@@ -30,9 +31,9 @@ export default function MegaPeriodClient({ data }) {
       <div className="flex justify-between items-center mb-6">
         <Link 
           href="/" 
-          className="inline-flex items-center gap-1.5 font-sans font-semibold text-text-theme opacity-80 hover:opacity-100 hover:text-primary-theme transition-all duration-300 -translate-x-0 hover:-translate-x-1 cursor-pointer bg-none border-none p-0 no-underline"
+          className="inline-flex items-center gap-1.5 font-sans font-semibold text-text-theme opacity-80 hover:opacity-100 hover:text-primary-theme transition-all duration-300 hover:-translate-x-1 cursor-pointer bg-none border-none p-0 no-underline"
         >
-          &larr; Back to Dashboard
+          <ArrowLeft className="size-4" /> Back to Dashboard
         </Link>
         <ThemeSelector />
       </div>
@@ -62,7 +63,7 @@ export default function MegaPeriodClient({ data }) {
           return (
             <div key={cat} role="none">
               <div 
-                className={`level1 cat-title ${!isCatExpanded ? 'collapsed' : ''}`} 
+                className="font-serif text-2xl font-semibold text-primary-theme mt-6 mb-2.5 border-b-2 border-glass-border pb-1 cursor-pointer select-none flex items-center gap-2 transition-colors hover:text-primary-theme/80"
                 onClick={() => toggleNode(cat)} 
                 role="treeitem"
                 aria-expanded={isCatExpanded}
@@ -73,8 +74,8 @@ export default function MegaPeriodClient({ data }) {
                     toggleNode(cat);
                   }
                 }}
-                style={{ cursor: 'pointer', userSelect: 'none' }}
               >
+                {isCatExpanded ? <ChevronDown className="size-5" /> : <ChevronRight className="size-5" />}
                 {cat}
               </div>
               
@@ -82,10 +83,10 @@ export default function MegaPeriodClient({ data }) {
                 <div role="group" className="space-y-2">
                   {data[cat].map(item => {
                     return (
-                      <div key={item.id} className="level2 item-container" role="treeitem">
+                      <div key={item.id} className="bg-glass-bg border border-glass-border rounded-lg mb-1.5 p-2 px-4 transition-all duration-200 hover:shadow-md hover:-translate-y-0.5" role="treeitem">
                         <Link 
                           href={`/reports/viewer/${item.id}`} 
-                          className="item-text block text-inherit no-underline"
+                          className="block text-text-theme no-underline text-base font-medium leading-relaxed w-full h-full"
                           title="Click to view events"
                         >
                           {item.name}

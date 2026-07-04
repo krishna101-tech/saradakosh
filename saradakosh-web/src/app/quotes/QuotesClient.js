@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
+import { Home, Search, ChevronRight, X, Menu } from 'lucide-react';
 
 import categoriesData from '@/data/categories.json';
 import quotesData from '@/data/quotes.json';
@@ -63,8 +64,8 @@ const CategoryNode = ({ node, activeCategory, setActiveCategory, closeSidebar, l
         className={`flex justify-between items-center py-2 px-3.5 cursor-pointer text-[0.88rem] leading-[1.35] transition-all duration-200 ${
           level === 0
             ? `text-[0.9rem] font-bold text-white border-b border-white/7 hover:bg-white/8 ${isActive ? 'bg-white/15' : ''}`
-            : `text-[#ffcc00] border-b border-white/3 hover:bg-[#ffcc00] hover:text-[#8b1a1a] hover:[&_.cat-count]:opacity-90 hover:[&_.cat-count]:text-[#8b1a1a] ${
-                isActive ? 'bg-[#ffcc00] !text-[#8b1a1a] [&_.cat-count]:opacity-90 [&_.cat-count]:text-[#8b1a1a]' : ''
+            : `text-quotes-accent border-b border-white/3 hover:bg-quotes-accent hover:text-quotes-primary hover:[&_.cat-count]:opacity-90 hover:[&_.cat-count]:text-quotes-primary ${
+                isActive ? 'bg-quotes-accent !text-quotes-primary [&_.cat-count]:opacity-90 [&_.cat-count]:text-quotes-primary' : ''
               }`
         }`}
         onClick={handleClick}
@@ -74,8 +75,8 @@ const CategoryNode = ({ node, activeCategory, setActiveCategory, closeSidebar, l
           {node.name} <span className="opacity-70 text-[0.8em] ml-1 font-normal cat-count">({count})</span>
         </span>
         {hasChildren && (
-          <span className={`text-[1.1rem] w-3.5 text-center transition-transform duration-200 ${isOpen ? 'rotate-90' : ''}`}>
-            ›
+          <span className={`transition-transform duration-200 ${isOpen ? 'rotate-90' : ''}`}>
+            <ChevronRight className="size-4" />
           </span>
         )}
       </div>
@@ -213,7 +214,7 @@ export default function QuotesClient() {
   return (
     <div className="flex h-screen overflow-hidden bg-white font-sans">
       {/* Left Sidebar */}
-      <aside className={`bg-[#8b1a1a] text-white shrink-0 min-h-screen p-0 transition-[width] duration-300 ease-out overflow-hidden max-sm:fixed max-sm:top-0 max-sm:left-0 max-sm:w-screen max-sm:h-screen max-sm:z-[1000] max-sm:flex max-sm:flex-col ${
+      <aside className={`bg-quotes-primary text-white shrink-0 min-h-screen p-0 transition-[width] duration-300 ease-out overflow-hidden max-sm:fixed max-sm:top-0 max-sm:left-0 max-sm:w-screen max-sm:h-screen max-sm:z-[1000] max-sm:flex max-sm:flex-col ${
         isSidebarOpen 
           ? 'w-[320px] max-sm:translate-x-0' 
           : 'w-0 max-sm:-translate-x-full'
@@ -221,17 +222,17 @@ export default function QuotesClient() {
         <div className="flex justify-between items-center px-2.5 py-2 border-b border-white/15">
           <h2 className="text-[0.85rem] m-0 font-bold">Categories</h2>
           <button 
-            className="hidden max-sm:block bg-transparent border-none text-white text-[1.4rem] cursor-pointer px-3" 
+            className="hidden max-sm:block bg-transparent border-none text-white cursor-pointer px-3" 
             onClick={() => handleSidebarOpen(false)}
             aria-label="Close menu"
           >
-            ✕
+            <X className="size-5" />
           </button>
         </div>
         <div className="overflow-y-auto max-h-[calc(100vh-40px)] pb-10 scrollbar-thin scrollbar-thumb-white-20 scrollbar-track-transparent">
           {categoriesData.map((topNode, i) => (
             <div key={i} className="mb-6">
-              <div className="font-bold text-[0.9rem] text-[#ffcccc] px-3.5 pt-4 pb-2 uppercase tracking-[0.5px] border-b border-white/10 mb-1">
+              <div className="font-bold text-[0.9rem] text-white/80 px-3.5 pt-4 pb-2 uppercase tracking-[0.5px] border-b border-white/10 mb-1">
                 {topNode.name}
               </div>
               {topNode.children && topNode.children.map((child, j) => (
@@ -257,24 +258,24 @@ export default function QuotesClient() {
       {/* Main Content Area */}
       <main className="grow flex flex-col min-w-0 h-screen overflow-y-auto scrollbar-thin scrollbar-thumb-primary-35 scrollbar-track-transparent">
         {/* Top Header */}
-        <header className="bg-[#f5c518] px-3.5 py-1.5 flex justify-between items-center gap-2.5 max-sm:flex-wrap">
+        <header className="bg-quotes-accent px-3.5 py-1.5 flex justify-between items-center gap-2.5 max-sm:flex-wrap">
           <button 
-            className="bg-transparent border-none text-[1.5rem] cursor-pointer text-[#8b1a1a] px-1 flex items-center order-1" 
+            className="bg-transparent border-none cursor-pointer text-quotes-primary px-1 flex items-center order-1" 
             onClick={() => handleSidebarOpen(!isSidebarOpen)}
             aria-label="Toggle menu"
           >
-            {isSidebarOpen ? '✕' : '☰'}
+            {isSidebarOpen ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
           
-          <Link href="/" className="inline-flex items-center gap-1 px-3.5 py-1 bg-[#8b1a1a] text-white no-underline rounded font-bold text-[0.82rem] order-2 hover:bg-[#6a1010] transition-colors">
-            <span>🏠</span><span className="max-sm:hidden"> Home</span>
+          <Link href="/" className="inline-flex items-center gap-1 px-3.5 py-1 bg-quotes-primary text-white no-underline rounded font-bold text-[0.82rem] order-2 hover:bg-quotes-primary/80 transition-colors">
+            <Home className="size-4" /><span className="max-sm:hidden"> Home</span>
           </Link>
           
           <div className="grow flex justify-center order-3">
             <select
               value={selectedLanguage}
               onChange={(e) => setSelectedLanguage(e.target.value)}
-              className="py-1 px-3 rounded-[20px] border border-[#8b1a1a]/40 bg-white font-semibold text-[0.9rem] text-[#8b1a1a] cursor-pointer outline-none transition-all duration-200 shadow-[0_2px_8px_rgba(0,0,0,0.05)] hover:border-[#8b1a1a] hover:shadow-[0_4px_12px_rgba(139,26,26,0.15)] focus:border-[#8b1a1a]"
+              className="py-1 px-3 rounded-[20px] border border-quotes-primary/40 bg-white font-semibold text-[0.9rem] text-quotes-primary cursor-pointer outline-none transition-all duration-200 shadow-[0_2px_8px_rgba(0,0,0,0.05)] hover:border-quotes-primary hover:shadow-[0_4px_12px_rgba(139,26,26,0.15)] focus:border-quotes-primary"
             >
               {Object.entries(LANG_LABELS).map(([code, label]) => (
                 <option key={code} value={code}>{label}</option>
@@ -290,13 +291,13 @@ export default function QuotesClient() {
               onChange={e => setSearchTerm(e.target.value)}
               className="py-1 px-2 border border-slate-200 rounded-l w-[180px] max-sm:w-full max-sm:max-w-[300px] outline-none text-[0.82rem]"
             />
-            <button aria-label="Search" className="py-1 px-3 bg-[#8b1a1a] text-white border-none rounded-r cursor-pointer">🔍</button>
+            <button aria-label="Search" className="py-1 px-3 bg-quotes-primary text-white border-none rounded-r cursor-pointer flex items-center justify-center"><Search className="size-4" /></button>
           </div>
         </header>
 
         {/* Category Title Area */}
         <div className="pt-3.5 px-2.5 pb-2 text-center">
-          <h1 className="text-[1.7rem] text-[#8b1a1a] m-0 mb-1 font-serif max-sm:text-[1.3rem]">{activeCategory}</h1>
+          <h1 className="text-[1.7rem] text-quotes-primary m-0 mb-1 font-serif max-sm:text-[1.3rem]">{activeCategory}</h1>
           <p className="text-slate-600 text-[0.9rem] m-0">(Total Quotes — {displayedQuotes.length})</p>
         </div>
 

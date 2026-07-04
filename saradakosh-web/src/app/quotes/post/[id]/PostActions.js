@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-
+import { Button } from '@/components/ui/button';
+import { Share2, Download } from 'lucide-react';
 export default function PostActions({ imageUrl }) {
   const [currentUrl, setCurrentUrl] = useState('');
 
@@ -41,12 +42,12 @@ export default function PostActions({ imageUrl }) {
 
   return (
     <>
-      <button onClick={handleShare} className="action-btn btn-primary">
-        <span style={{ fontSize:'1.1rem' }}>📤</span> Share
-      </button>
-      <button onClick={handleDownload} className="action-btn btn-accent">
-        <span style={{ fontSize:'1.1rem' }}>⬇️</span> Download
-      </button>
+      <Button variant="outline" size="sm" onClick={handleShare} className="flex-1 min-h-[44px] rounded-full border-quotes-primary text-quotes-primary hover:bg-quotes-primary/5 cursor-pointer">
+        <Share2 className="size-4 mr-1" /> Share
+      </Button>
+      <Button variant="outline" size="sm" onClick={handleDownload} className="flex-1 min-h-[44px] rounded-full border-quotes-primary text-quotes-primary hover:bg-quotes-primary/5 cursor-pointer">
+        <Download className="size-4 mr-1" /> Download
+      </Button>
     </>
   );
 }

@@ -1,6 +1,7 @@
 'use client';
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
+import { ChevronDown, ChevronRight, ArrowLeft } from 'lucide-react';
 import ThemeSelector from '@/components/ThemeSelector';
 
 export default function VivekanandaClient({ data }) {
@@ -32,9 +33,9 @@ export default function VivekanandaClient({ data }) {
       <div className="flex justify-between items-center mb-6">
         <Link 
           href="/" 
-          className="inline-flex items-center gap-1.5 font-sans font-semibold text-text-theme opacity-80 hover:opacity-100 hover:text-primary-theme transition-all duration-300 -translate-x-0 hover:-translate-x-1 cursor-pointer bg-none border-none p-0 no-underline"
+          className="inline-flex items-center gap-1.5 font-sans font-semibold text-text-theme opacity-80 hover:opacity-100 hover:text-primary-theme transition-all duration-300 hover:-translate-x-1 cursor-pointer bg-none border-none p-0 no-underline"
         >
-          &larr; Back to Dashboard
+          <ArrowLeft className="size-4" /> Back to Dashboard
         </Link>
         <ThemeSelector />
       </div>
@@ -64,7 +65,7 @@ export default function VivekanandaClient({ data }) {
           return (
             <div key={p2.id} role="none">
               <div 
-                className={`level1 ${!isP2Expanded ? 'collapsed' : ''}`} 
+                className="text-primary-theme font-bold text-xl mt-6 mb-2.5 border-b border-glass-border pb-1 cursor-pointer select-none transition-colors duration-200 hover:text-primary-theme/80 flex items-center gap-2"
                 onClick={() => toggleNode(p2.id)}
                 role="treeitem"
                 aria-expanded={isP2Expanded}
@@ -76,6 +77,7 @@ export default function VivekanandaClient({ data }) {
                   }
                 }}
               >
+                {isP2Expanded ? <ChevronDown className="size-4" /> : <ChevronRight className="size-4" />}
                 {i2 + 1} {p2.para1.replace(/^\d+\s*/, '')}
               </div>
               
@@ -86,7 +88,7 @@ export default function VivekanandaClient({ data }) {
                     return (
                       <div key={p3.id} role="none">
                         <div 
-                          className={`level2 ${!isP3Expanded ? 'collapsed' : ''}`} 
+                          className="text-secondary-theme font-semibold text-lg ml-5 mt-2.5 mb-1.5 border-l-2 border-secondary-theme pl-3 cursor-pointer select-none transition-colors duration-200 hover:brightness-110 flex items-center gap-2"
                           onClick={() => toggleNode(p3.id)}
                           role="treeitem"
                           aria-expanded={isP3Expanded}
@@ -98,6 +100,7 @@ export default function VivekanandaClient({ data }) {
                             }
                           }}
                         >
+                          {isP3Expanded ? <ChevronDown className="size-4" /> : <ChevronRight className="size-4" />}
                           {i3 + 1} {p3.para1.replace(/^\d+\s*/, '')}
                         </div>
                         
@@ -106,12 +109,12 @@ export default function VivekanandaClient({ data }) {
                             {p3.children.map((p4, i4) => {
                               const text = p4.para1.replace(/^\d+\s*/, '');
                               return (
-                                <div key={p4.id} className="level3-container" role="treeitem">
-                                  <div className="level3-row" role="none">
-                                    <div className="level3-text" role="none">
+                                <div key={p4.id} className="ml-12 border-b border-dashed border-glass-border transition-colors duration-200 rounded hover:bg-primary-theme/10 mb-0.5" role="treeitem">
+                                  <div className="flex" role="none">
+                                    <div className="p-2 text-base w-full" role="none">
                                       <Link 
                                         href={`/reports/viewer/${p4.id}`} 
-                                        className="no-underline text-inherit block"
+                                        className="no-underline text-inherit block w-full"
                                         title="Click to view events"
                                       >
                                         {i4 + 1} {text}

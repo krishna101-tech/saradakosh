@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Sparkles } from 'lucide-react';
 import ThemeSelector from '@/components/ThemeSelector';
 import TodayInHistory from '@/components/TodayInHistory';
 import SearchBar from '@/components/SearchBar';
@@ -24,15 +25,14 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <header 
-        className="relative text-center pt-20 pb-15 px-5 border-b border-glass-border bg-cover bg-center"
-        style={{ backgroundImage: 'var(--header-grad), var(--hero-bg-url)' }}
+        className="relative text-center pt-16 sm:pt-20 pb-10 sm:pb-15 px-5 border-b border-glass-border bg-cover bg-center [background-image:var(--header-grad),var(--hero-bg-url)]"
       >
         <ThemeSelector />
         <div className="relative z-10">
           <h1 className="font-serif text-5xl sm:text-6xl text-primary-theme font-extrabold mb-0 drop-shadow-[0_2px_10px_rgba(211,84,0,0.15)] animate-[fadeInDown_0.8s_ease-out]">
             Saradakosh
           </h1>
-          <h2 className="font-light text-xl opacity-80 animate-[fadeInUp_1s_ease-out] flex flex-col gap-1.5 line-height-relaxed mt-4 mb-10">
+          <h2 className="font-light text-lg sm:text-xl opacity-80 animate-[fadeInUp_1s_ease-out] flex flex-col gap-1.5 line-height-relaxed mt-4 mb-10">
             <span>The Lives, Teachings, and Legacy of Sri Ramakrishna, Sri Sarada Devi, and Swami Vivekananda</span>
             <span className="text-[0.85em] opacity-90">A Historical and Spiritual Journey Through the First Century of the Ramakrishna Movement</span>
             <span className="text-[0.8em] opacity-70 tracking-widest">1836–1936</span>
@@ -43,9 +43,9 @@ export default function Home() {
               href="https://notebooklm.google.com/notebook/e341fff6-3ed6-483c-a6e7-733e9bdbacd4" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="inline-flex items-center justify-center font-sans font-bold rounded-lg text-lg py-3 px-6 bg-gradient-to-br from-indigo-500 to-purple-600 hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(99,102,241,0.5)] transition-all duration-300 text-white shadow-[0_4px_15px_rgba(99,102,241,0.4)]"
+              className="inline-flex items-center justify-center font-sans font-bold rounded-lg text-lg py-3.5 sm:py-3 px-6 bg-gradient-to-br from-indigo-500 to-purple-600 hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(99,102,241,0.5)] transition-all duration-300 text-white shadow-[0_4px_15px_rgba(99,102,241,0.4)] touch-manipulation"
             >
-              ✨ Ask AI
+              <Sparkles className="size-5" /> Ask AI
             </a>
             <p className="text-sm text-text-theme opacity-90 max-w-[500px] margin-0 leading-normal font-medium">
               Click to chat with an interactive AI trained on the core literature of Sri Ramakrishna, Ma Sarada, and Swami Vivekananda.

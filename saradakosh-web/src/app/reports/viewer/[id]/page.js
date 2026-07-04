@@ -2,6 +2,7 @@ import { getEventsByParameterId } from '@/lib/db';
 import ViewerAccordion from '@/components/ViewerAccordion';
 import BackButton from '@/components/BackButton';
 import Link from 'next/link';
+import { Pencil } from 'lucide-react';
 
 export async function generateMetadata({ params }) {
   const { id } = await params;
@@ -30,7 +31,7 @@ export default async function ViewerPage({ params }) {
 
   if (!parameter) {
     return (
-      <div className="container min-h-screen p-8">
+      <div className="max-w-[1200px] mx-auto px-5 md:px-8 min-h-screen pt-8">
         <BackButton />
         <h1 className="text-3xl font-bold mt-8">Record Not Found</h1>
       </div>
@@ -86,8 +87,8 @@ export default async function ViewerPage({ params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <main className="container min-h-screen p-8" style={{ maxWidth: '1200px' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+      <main className="max-w-[1200px] mx-auto px-5 md:px-8 min-h-screen pt-8">
+        <div className="flex justify-between items-center mb-5">
           <BackButton />
           <nav className="text-xs sm:text-sm font-sans flex items-center space-x-1 sm:space-x-2 text-gray-500 dark:text-gray-400">
             <Link href="/" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Home</Link>
@@ -98,16 +99,16 @@ export default async function ViewerPage({ params }) {
           </nav>
         </div>
         
-        <h2 className="title" style={{ color: 'var(--primary-color)', fontFamily: 'var(--font-serif)', fontSize: '2rem', marginBottom: '30px', textAlign: 'center' }}>
+        <h2 className="font-serif text-3xl text-primary-theme mb-8 text-center mt-2">
           {parameter.para1}
         </h2>
         
-        <h3 style={{ textAlign: 'center', color: 'var(--secondary-color)', fontWeight: 300, marginTop: '-20px', marginBottom: '30px' }}>
+        <h3 className="text-center text-secondary-theme font-light -mt-5 mb-8 text-xl">
           Total Records Found: {events.length}
         </h3>
         
         {events.length === 0 ? (
-          <p style={{ textAlign: 'center' }}>No text records found for this parameter.</p>
+          <p className="text-center">No text records found for this parameter.</p>
         ) : (
           <ViewerAccordion events={events} />
         )}
@@ -117,7 +118,7 @@ export default async function ViewerPage({ params }) {
             href={`/about?ref=${encodeURIComponent(`/reports/viewer/${id}`)}&type=correction`}
             className="text-xs text-gray-500 hover:text-amber-600 hover:underline transition-colors font-sans"
           >
-            ✏️ Suggest a correction
+            <Pencil className="size-3.5 inline mr-1" /> Suggest a correction
           </Link>
         </div>
       </main>

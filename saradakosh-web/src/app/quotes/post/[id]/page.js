@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { Pencil, ArrowLeft } from 'lucide-react';
 import quotesData from '@/data/quotes.json';
 import quoteContents from '@/data/quote_contents.json';
 import PostActions from './PostActions';
@@ -64,10 +65,10 @@ export default async function QuotePostPage({ params, searchParams }) {
 
   if (!quote) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-[#f9f3ed] font-serif">
+      <div className="min-h-screen flex items-center justify-center bg-quotes-bg font-serif">
         <div className="text-center p-15">
           <h2 className="text-2xl font-bold mb-4">Quote not found</h2>
-          <Link href="/quotes" className="text-[#8b1a1a] hover:underline">← Back to Quotes</Link>
+          <Link href="/quotes" className="text-quotes-primary hover:underline flex items-center justify-center gap-1"><ArrowLeft className="size-4" /> Back to Quotes</Link>
         </div>
       </div>
     );
@@ -113,7 +114,7 @@ export default async function QuotePostPage({ params, searchParams }) {
   };
 
   return (
-    <div className="h-screen overflow-hidden bg-[#f9f3ed] text-[#1a0a00] font-serif max-md:h-auto max-md:min-h-screen max-md:overflow-visible max-md:bg-[#fdfbf7]">
+    <div className="h-screen overflow-hidden bg-quotes-bg text-quotes-text font-serif max-md:h-auto max-md:min-h-screen max-md:overflow-visible max-md:bg-warm-bg">
       {/* Structured Data (JSON-LD) */}
       <script
         type="application/ld+json"
@@ -144,7 +145,7 @@ export default async function QuotePostPage({ params, searchParams }) {
           {/* Language Switcher */}
           {availableLangs.length > 1 && (
             <div className="flex flex-wrap justify-center gap-2.5 w-full max-md:gap-2">
-              <div className="hidden md:block w-full text-[0.75rem] font-bold text-[#8b1a1a] uppercase tracking-wider text-center mb-1">
+              <div className="hidden md:block w-full text-[0.75rem] font-bold text-quotes-primary uppercase tracking-wider text-center mb-1">
                 Languages
               </div>
               {availableLangs.map(lang => (
@@ -153,8 +154,8 @@ export default async function QuotePostPage({ params, searchParams }) {
                   href={`/quotes/post/${quoteId}?lang=${lang}`} 
                   className={`flex-grow md:w-full py-2 px-3 rounded-full text-center text-xs transition-all duration-200 border ${
                     lang === primaryLang 
-                      ? 'font-bold bg-[#8b1a1a] text-white border-transparent' 
-                      : 'bg-white text-[#8b1a1a] border-[#8b1a1a]/25 hover:bg-[#8b1a1a]/5'
+                      ? 'font-bold bg-quotes-primary text-white border-transparent' 
+                      : 'bg-white text-quotes-primary border-quotes-primary/25 hover:bg-quotes-primary/5'
                   }`}
                 >
                   {LANG_LABELS[lang] || lang}
@@ -163,11 +164,11 @@ export default async function QuotePostPage({ params, searchParams }) {
             </div>
           )}
 
-          <div className="hidden md:block border-b border-dashed border-[#8b1a1a]/30 my-1.5" />
+          <div className="hidden md:block border-b border-dashed border-quotes-primary/30 my-1.5" />
 
           <div className="flex flex-col gap-2.5 w-full max-md:flex-row max-md:gap-1.5">
-            <Link href="/quotes" className="flex-1 flex items-center justify-center gap-1.5 min-h-[44px] rounded-full font-bold text-xs bg-white text-[#8b1a1a] border border-[#8b1a1a] cursor-pointer hover:bg-[#8b1a1a]/5 transition-all duration-150 active:scale-95 max-md:min-h-[40px] max-md:text-[0.78rem]">
-              <span>&larr;</span> All Quotes
+            <Link href="/quotes" className="flex-1 flex items-center justify-center gap-1.5 min-h-[44px] rounded-full font-bold text-xs bg-white text-quotes-primary border border-quotes-primary cursor-pointer hover:bg-quotes-primary/5 transition-all duration-150 active:scale-95 max-md:min-h-[40px] max-md:text-[0.78rem]">
+              <ArrowLeft className="size-4" /> All Quotes
             </Link>
 
             <PostActions imageUrl={images[primaryLang]} />
@@ -194,11 +195,11 @@ export default async function QuotePostPage({ params, searchParams }) {
               const lang = langOrder[i];
               return (
                 <div key={i}>
-                  <p className={`m-0 leading-relaxed text-justify text-[#1a0a00] ${
+                  <p className={`m-0 leading-relaxed text-justify text-quotes-text ${
                     lang === 'eng' ? 'text-[1.08rem] font-serif' : 'text-base font-sans'
                   }`}>{text}</p>
                   {i < paragraphs.length - 1 && (
-                    <div className="mt-5 border-b border-dashed border-[#8b1a1a]/20" />
+                    <div className="mt-5 border-b border-dashed border-quotes-primary/20" />
                   )}
                 </div>
               );
@@ -211,25 +212,25 @@ export default async function QuotePostPage({ params, searchParams }) {
 
           {/* Source / categories */}
           {quote.categories.length > 0 && (
-            <div className="mt-2 pt-5 border-t border-[#8b1a1a]/20">
-              <div className="text-[0.78rem] text-[#8b4513] mb-2.5 uppercase tracking-wider font-sans font-semibold">Categories</div>
+            <div className="mt-2 pt-5 border-t border-quotes-primary/20">
+              <div className="text-[0.78rem] text-quotes-muted mb-2.5 uppercase tracking-wider font-sans font-semibold">Categories</div>
               <div className="flex flex-wrap gap-2">
                 {quote.categories.map((cat, i) => (
                   <Link 
                     key={i} 
                     href={`/quotes?cat=${encodeURIComponent(cat)}`} 
-                    className="bg-[#8b1a1a]/8 border border-[#8b1a1a]/20 text-[#8b1a1a] py-1 px-3.5 rounded-full text-xs hover:bg-[#8b1a1a]/15 transition-colors font-medium font-sans no-underline"
+                    className="bg-quotes-primary/10 border border-quotes-primary/20 text-quotes-primary py-1 px-3.5 rounded-full text-xs hover:bg-quotes-primary/15 transition-colors font-medium font-sans no-underline"
                   >
                     {cat}
                   </Link>
                 ))}
               </div>
-              <div className="mt-8 pt-4 border-t border-dashed border-[#8b1a1a]/10 text-right">
+              <div className="mt-8 pt-4 border-t border-dashed border-quotes-primary/10 text-right">
                 <Link 
                   href={`/about?ref=${encodeURIComponent(`/quotes/post/${quoteId}`)}&type=correction`}
-                  className="text-xs text-[#8b1a1a]/60 hover:text-[#8b1a1a] hover:underline transition-colors font-sans"
+                  className="text-xs text-quotes-primary/60 hover:text-quotes-primary hover:underline transition-colors font-sans flex items-center justify-end gap-1"
                 >
-                  ✏️ Suggest a correction
+                  <Pencil className="size-3.5 inline" /> Suggest a correction
                 </Link>
               </div>
             </div>
