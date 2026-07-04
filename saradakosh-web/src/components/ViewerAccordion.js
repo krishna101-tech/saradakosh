@@ -50,7 +50,6 @@ export default function ViewerAccordion({ events }) {
                 ) : (
                   <span className="w-4 mr-2 flex-shrink-0 inline-block"></span>
                 )}
-                <span className="font-bold w-7.5 flex-shrink-0 text-gray-500 dark:text-gray-400">{index + 1}</span>
                 <span className="text-secondary-theme font-bold w-24 flex-shrink-0 whitespace-nowrap text-right">{yrStr}</span>
                 <span className="text-primary-theme font-bold w-15 flex-shrink-0">{typeStr}</span>
                 <span className="flex-1 font-medium">{duText}</span>

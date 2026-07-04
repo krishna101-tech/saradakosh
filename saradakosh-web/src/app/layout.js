@@ -1,19 +1,15 @@
-import { Inter, Merriweather, Playfair_Display } from "next/font/google";
+import { Baskervville, Noto_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-sans",
-  subsets: ["latin"],
-});
-
-const merriweather = Merriweather({
+const baskervville = Baskervville({
   variable: "--font-serif",
-  weight: ["300", "400", "700", "900"],
+  weight: ["400"],
   subsets: ["latin"],
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const noto = Noto_Sans({
+  variable: "--font-sans",
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -90,7 +86,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`${inter.variable} ${merriweather.variable} ${playfair.variable} antialiased`}
+        className={`${noto.variable} ${baskervville.variable} antialiased`}
       >
         {children}
       </body>

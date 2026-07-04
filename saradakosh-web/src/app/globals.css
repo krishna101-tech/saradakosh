@@ -27,22 +27,22 @@
 }
 
 :root {
-  /* Light Theme Defaults (Sacred Dawn) */
-  --bg-color: #fcfbf9;
-  --text-color: #2c2520;
-  --primary-color: #d35400; 
-  --primary-glow: rgba(211, 84, 0, 0.15);
-  --secondary-color: #8e44ad;
-  --glass-bg: rgba(255, 255, 255, 0.65);
-  --glass-border: rgba(255, 255, 255, 0.5);
-  --glass-hover: rgba(255, 255, 255, 0.85);
-  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
-  --header-grad: linear-gradient(to bottom, rgba(255,248,240,0.6), rgba(252,251,249,0.9));
-  --font-serif: 'Playfair Display', 'Merriweather', Georgia, serif;
-  --font-sans: 'Inter', 'Lora', system-ui, sans-serif;
-  --hero-bg-url: url('/images/hero_light.webp');
-  --input-bg: rgba(255, 255, 255, 0.9);
-  --input-border: #e2d9d0;
+  /* Light Theme Defaults (Udbodhan Parchment) */
+  --bg-color: #F2E8D5;
+  --text-color: #211D1A;
+  --primary-color: #5C1A1B; 
+  --primary-glow: rgba(92, 26, 27, 0.1);
+  --secondary-color: #A67C27;
+  --glass-bg: #FAF6EC;
+  --glass-border: rgba(92, 26, 27, 0.15);
+  --glass-hover: rgba(92, 26, 27, 0.05);
+  --glass-shadow: none;
+  --header-grad: none;
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+  --hero-bg-url: none;
+  --input-bg: #FAF6EC;
+  --input-border: rgba(92, 26, 27, 0.25);
 
   /* shadcn light mode mapping */
   --background: var(--bg-color);
@@ -52,9 +52,9 @@
   --popover: var(--glass-bg);
   --popover-foreground: var(--text-color);
   --primary: var(--primary-color);
-  --primary-foreground: #ffffff;
+  --primary-foreground: var(--bg-color);
   --secondary: var(--secondary-color);
-  --secondary-foreground: #ffffff;
+  --secondary-foreground: var(--text-color);
   --muted: var(--glass-bg);
   --muted-foreground: var(--text-color);
   --accent: var(--primary-glow);
@@ -68,46 +68,46 @@
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
+  --radius: 0.375rem; /* Flat, less rounded (4-6px) */
   --sidebar: var(--glass-bg);
   --sidebar-foreground: var(--text-color);
   --sidebar-primary: var(--primary-color);
-  --sidebar-primary-foreground: #ffffff;
+  --sidebar-primary-foreground: var(--bg-color);
   --sidebar-accent: var(--primary-glow);
   --sidebar-accent-foreground: var(--primary-color);
   --sidebar-border: var(--glass-border);
   --sidebar-ring: var(--primary-color);
 
-  /* Quotes Section (Maroon/Gold) */
-  --quotes-primary: #8b1a1a;
-  --quotes-accent: #f5c518;
-  --quotes-bg: #f9f3ed;
-  --quotes-text: #1a0a00;
-  --quotes-muted: #8b4513;
+  /* Quotes Section (Udbodhan) */
+  --quotes-primary: #5C1A1B;
+  --quotes-accent: #A67C27;
+  --quotes-bg: #FAF6EC;
+  --quotes-text: #211D1A;
+  --quotes-muted: #6B7A5E;
 
-  /* Warm Palette (Persons/Places/Refs) */
-  --warm-border: #eaddd3;
-  --warm-bg: #fdfbf7;
-  --warm-text: #2c2a29;
-  --warm-heading: #4a4846;
-  --warm-link: #d4a017;
+  /* Warm Palette (Udbodhan) */
+  --warm-border: rgba(92, 26, 27, 0.15);
+  --warm-bg: #FAF6EC;
+  --warm-text: #211D1A;
+  --warm-heading: #5C1A1B;
+  --warm-link: #6B7A5E;
 }
 
 :root[data-theme="dark"] {
-  /* Dark Theme (Midnight Aura) */
-  --bg-color: #0b0f19;
-  --text-color: #e2e8f0;
-  --primary-color: #e67e22; 
-  --primary-glow: rgba(230, 126, 34, 0.25);
-  --secondary-color: #9b59b6;
-  --glass-bg: rgba(15, 23, 42, 0.6);
-  --glass-border: rgba(255, 255, 255, 0.08);
-  --glass-hover: rgba(30, 41, 59, 0.8);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
-  --header-grad: linear-gradient(to bottom, rgba(11,15,25,0.7), rgba(11,15,25,0.95));
-  --hero-bg-url: url('/images/hero_dark.webp');
-  --input-bg: rgba(15, 23, 42, 0.8);
-  --input-border: #1e293b;
+  /* Dark Theme (Midnight Udbodhan) */
+  --bg-color: #1E1B18;
+  --text-color: #EADECE;
+  --primary-color: #b05355; 
+  --primary-glow: rgba(176, 83, 85, 0.15);
+  --secondary-color: #d1ab5a;
+  --glass-bg: #27221e;
+  --glass-border: rgba(176, 83, 85, 0.2);
+  --glass-hover: rgba(176, 83, 85, 0.08);
+  --glass-shadow: none;
+  --header-grad: none;
+  --hero-bg-url: none;
+  --input-bg: #27221e;
+  --input-border: rgba(176, 83, 85, 0.3);
 
   /* shadcn dark mode mapping */
   --background: var(--bg-color);
@@ -117,9 +117,9 @@
   --popover: var(--glass-bg);
   --popover-foreground: var(--text-color);
   --primary: var(--primary-color);
-  --primary-foreground: #0b0f19;
+  --primary-foreground: var(--bg-color);
   --secondary: var(--secondary-color);
-  --secondary-foreground: #ffffff;
+  --secondary-foreground: var(--text-color);
   --muted: var(--glass-bg);
   --muted-foreground: var(--text-color);
   --accent: var(--primary-glow);
@@ -128,19 +128,19 @@
   --input: var(--input-border);
   --ring: var(--primary-color);
 
-  /* Quotes Section (Dark) */
-  --quotes-primary: #c44040;
-  --quotes-accent: #f5c518;
-  --quotes-bg: #1a1215;
-  --quotes-text: #e8ddd5;
-  --quotes-muted: #c89060;
+  /* Quotes Section (Dark Udbodhan) */
+  --quotes-primary: #b05355;
+  --quotes-accent: #d1ab5a;
+  --quotes-bg: #27221e;
+  --quotes-text: #e5dec9;
+  --quotes-muted: #8ea57e;
 
-  /* Warm Palette (Dark) */
-  --warm-border: #2a2320;
-  --warm-bg: #161210;
-  --warm-text: #e2d9d0;
-  --warm-heading: #b0a89e;
-  --warm-link: #e8b838;
+  /* Warm Palette (Dark Udbodhan) */
+  --warm-border: rgba(176, 83, 85, 0.2);
+  --warm-bg: #27221e;
+  --warm-text: #e5dec9;
+  --warm-heading: #b05355;
+  --warm-link: #8ea57e;
 }
 
 /* Animations */
@@ -208,9 +208,9 @@
   --popover: var(--glass-bg);
   --popover-foreground: var(--text-color);
   --primary: var(--primary-color);
-  --primary-foreground: #ffffff;
+  --primary-foreground: var(--bg-color);
   --secondary: var(--secondary-color);
-  --secondary-foreground: #ffffff;
+  --secondary-foreground: var(--text-color);
   --muted: var(--glass-bg);
   --muted-foreground: var(--text-color);
   --accent: var(--primary-glow);
@@ -255,12 +255,20 @@
 }
 
 @utility scrollbar-thumb-primary-35 {
-  scrollbar-color: rgba(139, 26, 26, 0.35) transparent;
+  scrollbar-color: rgba(92, 26, 27, 0.35) transparent;
   &::-webkit-scrollbar-thumb {
-    background-color: rgba(139, 26, 26, 0.35);
+    background-color: rgba(92, 26, 27, 0.35);
     border-radius: 9999px;
     &:hover {
-      background-color: rgba(139, 26, 26, 0.7);
+      background-color: rgba(92, 26, 27, 0.7);
     }
   }
+}
+
+@utility signature-divider {
+  border-top: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--primary-color);
+  height: 4px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
