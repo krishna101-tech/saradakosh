@@ -122,7 +122,7 @@ export default function StorytellingClient() {
     <ReactLenis root>
       <div 
         ref={containerRef}
-        className="relative min-h-[800vh] bg-stone-950 text-stone-100 font-sans selection:bg-amber-600 selection:text-white"
+        className="relative min-h-[800vh] bg-bg-theme text-text-theme font-sans selection:bg-quotes-accent selection:text-bg-theme"
       >
         {/* Sticky background layer */}
         <div className="sticky top-0 left-0 w-full h-screen overflow-hidden z-0 pointer-events-none">
@@ -214,17 +214,17 @@ export default function StorytellingClient() {
           {/* Saffron/Gold gradient cover for the final outro slide */}
           <motion.div 
             style={{ opacity: outroBgOpacity }}
-            className="absolute inset-0 bg-gradient-to-b from-stone-950 via-[#1f160e] to-stone-950 w-full h-full z-20"
+            className="absolute inset-0 bg-gradient-to-b from-bg-theme via-bg-theme/95 to-bg-theme w-full h-full z-20"
           />
         </div>
 
         {/* Floating elements */}
         {/* Top Header */}
-        <header className="fixed top-0 left-0 w-full z-40 bg-stone-950/65 backdrop-blur-xl border-b border-white/5 transition-all duration-200">
+        <header className="fixed top-0 left-0 w-full z-40 bg-bg-theme/65 backdrop-blur-xl border-b border-glass-border transition-all duration-200">
           {/* Scroll progress bar */}
           <motion.div 
             style={{ scaleX: smoothProgress }}
-            className="h-[3px] bg-gradient-to-r from-amber-600 via-amber-400 to-yellow-500 origin-left w-full absolute top-0 left-0"
+            className="h-[1px] bg-quotes-accent origin-left w-full absolute top-0 left-0"
           />
           
           <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between gap-4">
@@ -232,7 +232,7 @@ export default function StorytellingClient() {
             <div className="flex items-center gap-3 min-w-0">
               <a 
                 href="/" 
-                className="flex items-center gap-2 group text-stone-100 hover:text-amber-500 transition-colors shrink-0"
+                className="flex items-center gap-2 group text-text-theme hover:text-quotes-accent transition-colors shrink-0"
                 aria-label="Back to Home"
               >
                 <Home className="w-5 h-5 group-hover:scale-110 transition-transform" />
@@ -240,25 +240,25 @@ export default function StorytellingClient() {
               </a>
 
               {/* Decorative separator */}
-              <div className="h-4 w-[1px] bg-white/20 max-md:hidden shrink-0" />
+              <div className="h-4 w-[1px] bg-quotes-accent/20 max-md:hidden shrink-0" />
 
               {/* Page Title with truncation */}
-              <div className="font-serif text-amber-500 font-medium text-sm md:text-base tracking-wide truncate">
+              <div className="font-serif text-quotes-accent font-medium text-sm md:text-base tracking-wide truncate">
                 {uiTexts[lang].title}
               </div>
             </div>
 
             {/* Right: Premium Language Selector */}
-            <div className="flex items-center gap-2 bg-stone-900/60 border border-white/10 rounded-full px-3 py-1.5 backdrop-blur-md shrink-0">
-              <Languages className="w-4 h-4 text-stone-400" />
+            <div className="flex items-center gap-2 bg-bg-theme/90/60 border border-glass-border rounded-full px-3 py-1.5 backdrop-blur-md shrink-0">
+              <Languages className="w-4 h-4 text-text-theme/70" />
               <select 
                 value={lang} 
                 onChange={(e) => setLang(e.target.value)}
-                className="bg-transparent text-stone-200 text-xs font-semibold focus:outline-none cursor-pointer pr-1"
+                className="bg-transparent text-text-theme text-xs font-semibold focus:outline-none cursor-pointer pr-1"
               >
-                <option value="english" className="bg-stone-900 text-stone-200">English</option>
-                <option value="gujarati" className="bg-stone-900 text-stone-200">ગુજરાતી</option>
-                <option value="hindi" className="bg-stone-900 text-stone-200">हिन्दी</option>
+                <option value="english" className="bg-bg-theme/90 text-text-theme">English</option>
+                <option value="gujarati" className="bg-bg-theme/90 text-text-theme">ગુજરાતી</option>
+                <option value="hindi" className="bg-bg-theme/90 text-text-theme">हिन्दी</option>
               </select>
             </div>
           </div>
@@ -276,7 +276,7 @@ export default function StorytellingClient() {
                 aria-label={`Scroll to section ${idx + 1}`}
               >
                 {/* Tooltip labels */}
-                <span className="absolute right-7 py-0.5 px-2 bg-stone-900/90 text-stone-200 border border-white/5 rounded text-[10px] tracking-wider uppercase font-semibold opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-200 pointer-events-none font-sans whitespace-nowrap">
+                <span className="absolute right-7 py-0.5 px-2 bg-bg-theme/90/90 text-text-theme border border-glass-border rounded text-[10px] tracking-wider uppercase font-semibold opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-200 pointer-events-none font-sans whitespace-nowrap">
                   {idx === 0 ? "Intro" : idx === 7 ? "Outro" : `Quote ${idx}`}
                 </span>
                 
@@ -284,7 +284,7 @@ export default function StorytellingClient() {
                 <div 
                   className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
                     isActive 
-                      ? "bg-amber-500 scale-125 shadow-[0_0_8px_rgba(245,158,11,0.6)]" 
+                      ? "bg-quotes-accent scale-125 shadow-[0_0_8px_rgba(245,158,11,0.6)]" 
                       : "bg-stone-600 group-hover:bg-stone-400 group-hover:scale-110"
                   }`} 
                 />
@@ -303,22 +303,22 @@ export default function StorytellingClient() {
               transition={{ duration: 1, delay: 0.2 }}
               className="max-w-4xl"
             >
-              <span className="text-amber-500/80 font-semibold tracking-[0.25em] text-xs uppercase block mb-3 font-sans">
+              <span className="text-quotes-accent/80 font-semibold tracking-[0.25em] text-xs uppercase block mb-3 font-sans">
                 Swami Vivekananda
               </span>
-              <h1 className="font-serif text-5xl md:text-7xl font-bold tracking-tight text-stone-100 leading-tight mb-6">
+              <h1 className="font-serif text-5xl md:text-7xl font-bold tracking-tight text-text-theme leading-tight mb-6">
                 {uiTexts[lang].title}
               </h1>
               
               <div className="h-[2px] w-24 bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto mb-6" />
               
-              <p className="text-stone-300 font-light tracking-wide text-lg md:text-xl font-sans max-w-2xl mx-auto mb-10 leading-relaxed">
+              <p className="text-text-theme/90 font-light tracking-wide text-lg md:text-xl font-sans max-w-2xl mx-auto mb-10 leading-relaxed">
                 {uiTexts[lang].subtitle}
               </p>
               
               <button 
                 onClick={() => scrollToSection(1)}
-                className="inline-flex flex-col items-center gap-3 text-stone-400 hover:text-amber-500 font-semibold text-xs tracking-widest uppercase transition-colors group cursor-pointer"
+                className="inline-flex flex-col items-center gap-3 text-text-theme/70 hover:text-quotes-accent font-semibold text-xs tracking-widest uppercase transition-colors group cursor-pointer"
               >
                 <span>{uiTexts[lang].scrollHint}</span>
                 <ArrowDown className="w-5 h-5 animate-bounce group-hover:translate-y-1 transition-transform" />
@@ -348,7 +348,7 @@ export default function StorytellingClient() {
                     className="w-full md:max-w-xl lg:max-w-2xl"
                   >
                     {/* Unique Editorial Style Glass Card */}
-                    <div className="bg-stone-950/70 border border-white/10 p-8 md:p-10 rounded-3xl backdrop-blur-xl shadow-2xl relative group hover:border-amber-500/20 transition-colors duration-300">
+                    <div className="bg-bg-theme/70 border border-glass-border p-8 md:p-10 rounded-3xl backdrop-blur-xl shadow-2xl relative group hover:border-amber-500/20 transition-colors duration-300">
                       {/* Saffron/Gold accent top border */}
                       <div className="absolute top-0 left-8 right-8 h-[2px] bg-gradient-to-r from-transparent via-amber-500/40 to-transparent" />
                       
@@ -366,7 +366,7 @@ export default function StorytellingClient() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -8 }}
                             transition={{ duration: 0.25 }}
-                            className="font-serif italic text-lg md:text-xl text-stone-200 leading-relaxed w-full text-center"
+                            className="font-serif italic text-lg md:text-xl text-text-theme leading-relaxed w-full text-center"
                           >
                             {q.languages[lang]}
                           </motion.div>
@@ -374,13 +374,13 @@ export default function StorytellingClient() {
                       </div>
 
                       {/* Citation details */}
-                      <div className="flex items-center justify-center pt-5 border-t border-white/5">
+                      <div className="flex items-center justify-center pt-5 border-t border-glass-border">
                         <div className="flex items-center gap-2">
-                          <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
-                          <span className="text-stone-400 font-semibold tracking-wider text-xs uppercase font-sans">
+                          <div className="w-1.5 h-1.5 rounded-full bg-quotes-accent" />
+                          <span className="text-text-theme/70 font-semibold tracking-wider text-xs uppercase font-sans">
                             Swami Vivekananda
                           </span>
-                          <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                          <div className="w-1.5 h-1.5 rounded-full bg-quotes-accent" />
                         </div>
                       </div>
                     </div>
@@ -397,23 +397,23 @@ export default function StorytellingClient() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: false, amount: 0.3 }}
               transition={{ duration: 0.8 }}
-              className="max-w-3xl bg-stone-950/45 p-12 border border-white/5 rounded-3xl backdrop-blur-md shadow-2xl relative"
+              className="max-w-3xl bg-bg-theme/45 p-12 border border-glass-border rounded-3xl backdrop-blur-md shadow-2xl relative"
             >
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-stone-900 border border-white/10 p-3 rounded-full text-amber-500 shadow-md">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-bg-theme/90 border border-glass-border p-3 rounded-full text-quotes-accent shadow-md">
                 <Sparkles className="w-6 h-6 animate-pulse" />
               </div>
 
-              <h2 className="font-serif text-3xl md:text-4xl font-bold tracking-wide text-stone-100 mb-6 mt-2">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold tracking-wide text-text-theme mb-6 mt-2">
                 {uiTexts[lang].outroTitle}
               </h2>
               
-              <p className="text-stone-300 font-light tracking-wide italic text-base md:text-lg font-serif max-w-xl mx-auto mb-8 leading-relaxed">
+              <p className="text-text-theme/90 font-light tracking-wide italic text-base md:text-lg font-serif max-w-xl mx-auto mb-8 leading-relaxed">
                 "{uiTexts[lang].footerText}"
               </p>
 
               <div className="signature-divider max-w-xs mx-auto mb-8" />
               
-              <p className="text-amber-500/80 text-xs tracking-widest uppercase font-semibold mb-8">
+              <p className="text-quotes-accent/80 text-xs tracking-widest uppercase font-semibold mb-8">
                 {uiTexts[lang].outroSub}
               </p>
 

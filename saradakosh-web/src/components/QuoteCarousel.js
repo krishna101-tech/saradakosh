@@ -100,14 +100,14 @@ export default function QuoteCarousel() {
           <>
             <button
               onClick={scrollLeft}
-              className="absolute -left-4 sm:left-[-1rem] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-bg-theme/80 text-primary-theme shadow-md backdrop-blur-sm border border-glass-border opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-bg-theme hover:scale-110 z-10 hidden md:flex"
+              className="absolute -left-4 sm:left-[-1rem] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-bg-theme/80 text-primary-theme shadow-md backdrop-blur-sm border border-glass-border opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-bg-theme z-10 hidden md:flex"
               aria-label="Scroll Left"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
             <button
               onClick={scrollRight}
-              className="absolute -right-4 sm:right-[-1rem] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-bg-theme/80 text-primary-theme shadow-md backdrop-blur-sm border border-glass-border opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-bg-theme hover:scale-110 z-10 hidden md:flex"
+              className="absolute -right-4 sm:right-[-1rem] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-bg-theme/80 text-primary-theme shadow-md backdrop-blur-sm border border-glass-border opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-bg-theme z-10 hidden md:flex"
               aria-label="Scroll Right"
             >
               <ChevronRight className="w-6 h-6" />
@@ -123,12 +123,12 @@ export default function QuoteCarousel() {
             <Link 
               key={quote.id}
               href={`/quotes/post/${quote.id}?lang=${language}`}
-              className="snap-start shrink-0 w-[85%] md:w-[calc(25%-0.75rem)] relative rounded-xl overflow-hidden shadow-lg block bg-transparent group/card"
+              className="snap-start shrink-0 w-[85%] md:w-[calc(25%-0.75rem)] relative block group/card card-interactive"
             >
               <img
                 src={getOptimizedUrl(quote.images[language], 600)}
                 alt={`Quote card in ${language}`}
-                className="w-full h-auto object-cover transition-transform duration-500 group-hover/card:scale-105"
+                className="w-full h-auto object-cover"
                 draggable={false}
               />
               <div className="absolute inset-0 bg-black/0 group-hover/card:bg-black/5 transition-colors duration-300" />
