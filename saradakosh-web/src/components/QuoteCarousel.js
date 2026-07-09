@@ -95,19 +95,19 @@ export default function QuoteCarousel() {
       <SectionHeading>Vivekananda for You</SectionHeading>
 
       <div className="relative">
-        {/* Navigation Arrows (Desktop mostly) */}
+        {/* Navigation Arrows */}
         {quotes.length > 4 && (
           <>
             <button
               onClick={scrollLeft}
-              className="absolute -left-4 sm:left-[-1rem] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-bg-theme/80 text-primary-theme shadow-md backdrop-blur-sm border border-glass-border opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-bg-theme z-10 hidden md:flex"
+              className="absolute -left-4 sm:left-[-1rem] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-bg-theme/80 text-primary-theme shadow-md backdrop-blur-sm border border-glass-border transition-colors duration-300 hover:bg-bg-theme z-10"
               aria-label="Scroll Left"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
             <button
               onClick={scrollRight}
-              className="absolute -right-4 sm:right-[-1rem] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-bg-theme/80 text-primary-theme shadow-md backdrop-blur-sm border border-glass-border opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-bg-theme z-10 hidden md:flex"
+              className="absolute -right-4 sm:right-[-1rem] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-bg-theme/80 text-primary-theme shadow-md backdrop-blur-sm border border-glass-border transition-colors duration-300 hover:bg-bg-theme z-10"
               aria-label="Scroll Right"
             >
               <ChevronRight className="w-6 h-6" />
