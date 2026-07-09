@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Search, Sparkles } from 'lucide-react';
 import { fetchSearchResults } from '@/app/actions';
-
+import Link from 'next/link';
 export default function SearchBar() {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
@@ -60,7 +60,7 @@ export default function SearchBar() {
               let displayDt = dateParts.length > 0 ? dateParts.join(" ") : "?";
 
               return (
-                <div key={m.id} className="py-3 border-b border-dashed border-glass-border text-sm text-text-theme last:border-b-0 flex flex-col gap-1">
+                <Link href={`/quotes/post/${m.id}`} key={m.id} className="py-3 border-b border-dashed border-glass-border text-sm text-text-theme last:border-b-0 flex flex-col gap-1 hover:bg-bg-theme/5 px-2 transition-colors duration-200 block">
                   <div className="flex items-center gap-2 flex-wrap">
                     <strong className="text-[var(--primary-theme)]">{displayDt}</strong>
                     {m.isVectorMatch && m.isTextMatch && (
@@ -77,7 +77,7 @@ export default function SearchBar() {
                     )}
                   </div>
                   <div className="leading-relaxed opacity-95">{m.du}</div>
-                </div>
+                </Link>
               );
             })
           ) : (
