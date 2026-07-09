@@ -42,10 +42,10 @@ export default function PostActions({ imageUrl }) {
 
   return (
     <>
-      <Button variant="outline" size="sm" onClick={handleShare} className="flex-1 min-h-[44px] rounded-full border-quotes-primary text-quotes-primary hover:bg-quotes-primary/5 cursor-pointer">
+      <Button variant="outline" size="sm" onClick={handleShare} className="w-full min-h-[44px] rounded-full border-quotes-primary text-quotes-primary hover:bg-quotes-primary/5 cursor-pointer">
         <Share2 className="size-4 mr-1" /> Share
       </Button>
-      <Button variant="outline" size="sm" onClick={handleDownload} className="flex-1 min-h-[44px] rounded-full border-quotes-primary text-quotes-primary hover:bg-quotes-primary/5 cursor-pointer">
+      <Button variant="outline" size="sm" onClick={handleDownload} className="w-full min-h-[44px] rounded-full border-quotes-primary text-quotes-primary hover:bg-quotes-primary/5 cursor-pointer">
         <Download className="size-4 mr-1" /> Download
       </Button>
     </>

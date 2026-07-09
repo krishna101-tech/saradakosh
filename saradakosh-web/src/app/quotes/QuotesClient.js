@@ -7,6 +7,8 @@ import { Home, Search, ChevronRight, X, Menu } from 'lucide-react';
 
 import categoriesData from '@/data/categories.json';
 import quotesData from '@/data/quotes.json';
+import quoteContents from '@/data/quote_contents.json';
+import { StaggerContainer, StaggerItem } from '@/components/MotionWrapper';
 
 const LANG_LABELS = { eng: 'English', ben: 'Bengali', hin: 'Hindi', guj: 'Gujarati', tel: 'Telugu', odi: 'Odia' };
 
@@ -64,7 +66,7 @@ const CategoryNode = ({ node, activeCategory, setActiveCategory, closeSidebar, l
         className={`flex justify-between items-center py-2 px-3.5 cursor-pointer text-[0.88rem] leading-[1.35] transition-all duration-200 ${
           level === 0
             ? `text-[0.9rem] font-bold text-bg-theme border-b border-bg-theme/7 hover:bg-bg-theme/8 ${isActive ? 'bg-bg-theme/15' : ''}`
-            : `text-quotes-accent border-b border-bg-theme/3 hover:bg-quotes-accent hover:text-quotes-primary hover:[&_.cat-count]:opacity-90 hover:[&_.cat-count]:text-quotes-primary ${
+            : `text-bg-theme/80 border-b border-bg-theme/3 hover:bg-bg-theme/10 hover:text-bg-theme hover:[&_.cat-count]:opacity-100 ${
                 isActive ? 'bg-quotes-accent !text-quotes-primary [&_.cat-count]:opacity-90 [&_.cat-count]:text-quotes-primary' : ''
               }`
         }`}
@@ -126,7 +128,17 @@ export default function QuotesClient() {
     } else {
       if (window.innerWidth <= 900) setIsSidebarOpen(false);
     }
+    
+    const savedLang = localStorage.getItem('sk_quote_lang');
+    if (savedLang && LANG_LABELS[savedLang]) {
+      setSelectedLanguage(savedLang);
+    }
   }, [searchParams]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    localStorage.setItem('sk_quote_lang', selectedLanguage);
+  }, [selectedLanguage]);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -193,6 +205,18 @@ export default function QuotesClient() {
     if (activeCategory && categoryDescendants[activeCategory]) {
       if (!q.categories.some(c => categoryDescendants[activeCategory].has(c))) return false;
     }
+    
+    // Search filter
+    if (searchTerm.trim() !== '') {
+      const term = searchTerm.toLowerCase();
+      const content = quoteContents[q.id];
+      if (!content) return false;
+      
+      const textToSearch = (content.title + " " + content.paragraphs.join(" ")).toLowerCase();
+      if (!textToSearch.includes(term)) {
+        return false;
+      }
+    }
     // Must have at least one image
     const imgs = q.images || {};
     if (Object.keys(imgs).length === 0) return false;
@@ -229,9 +253,9 @@ export default function QuotesClient() {
             <X className="size-5" />
           </button>
         </div>
-        <div className="overflow-y-auto max-h-[calc(100vh-40px)] pb-10 scrollbar-thin scrollbar-thumb-white-20 scrollbar-track-transparent">
+        <StaggerContainer className="overflow-y-auto max-h-[calc(100vh-40px)] pb-10 scrollbar-thin scrollbar-thumb-white-20 scrollbar-track-transparent" delay={0.08}>
           {categoriesData.map((topNode, i) => (
-            <div key={i} className="mb-6">
+            <StaggerItem key={i} className="mb-6">
               <div className="font-bold text-[0.9rem] text-bg-theme/80 px-3.5 pt-4 pb-2 uppercase tracking-[0.5px] border-b border-bg-theme/10 mb-1">
                 {topNode.name}
               </div>
@@ -250,9 +274,9 @@ export default function QuotesClient() {
                   }} 
                 />
               ))}
-            </div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
       </aside>
 
       {/* Main Content Area */}
@@ -302,12 +326,15 @@ export default function QuotesClient() {
         </div>
 
         {/* Quotes Grid */}
-        <div className={`grid gap-0 p-0 w-full transition-[grid-template-columns] duration-300 ease-out ${
-          isSidebarOpen 
-            ? 'grid-cols-4 max-lg:grid-cols-3 max-sm:grid-cols-2' 
-            : 'grid-cols-5 max-lg:grid-cols-4 max-sm:grid-cols-2'
-        }`}>
-          {displayedQuotes.map((quote) => {
+        <StaggerContainer 
+          className={`grid gap-0 p-0 w-full transition-[grid-template-columns] duration-300 ease-out ${
+            isSidebarOpen 
+              ? 'grid-cols-4 max-lg:grid-cols-3 max-sm:grid-cols-2' 
+              : 'grid-cols-5 max-lg:grid-cols-4 max-sm:grid-cols-2'
+          }`}
+          delay={0.04}
+        >
+          {displayedQuotes.map((quote, index) => {
             const imgs = quote.images || {};
             const displayLang = imgs[selectedLanguage] ? selectedLanguage
               : imgs['eng'] ? 'eng'
@@ -317,10 +344,11 @@ export default function QuotesClient() {
               : Object.keys(imgs)[0];
             const imgSrc = imgs[displayLang];
             if (!imgSrc) return null;
-            return (
+
+            const isAnimated = index < 12; // Stagger first 12 cards (approx. one viewport page)
+            const cardEl = (
               <Link
                 href={`/quotes/post/${quote.id}?lang=${displayLang}`}
-                key={quote.id}
                 className="block overflow-hidden hover:[&_img]:opacity-92"
                 title={`Swami Vivekananda Quote on ${quote.categories.join(', ')}`}
               >
@@ -335,13 +363,19 @@ export default function QuotesClient() {
                 <span className="sr-only">Read Swami Vivekananda Quote on {quote.categories.join(', ')}</span>
               </Link>
             );
+
+            return isAnimated ? (
+              <StaggerItem key={quote.id}>{cardEl}</StaggerItem>
+            ) : (
+              <div key={quote.id}>{cardEl}</div>
+            );
           })}
           {displayedQuotes.length === 0 && (
             <div className="col-span-full text-center py-15 px-5 text-text-theme/60 text-sm">
               <p>No quotes found for this category.</p>
             </div>
           )}
-        </div>
+        </StaggerContainer>
       </main>
     </div>
   );

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1782549276502",
+    "timestamp": "2026-06-27T08:34:36.503Z",
+    "name": "Test Corrector",
+    "email": "test@domain.org",
+    "type": "correction",
+    "reference": "/quotes/post/complete-works-of-swami-vivekananda-vol-1-page-112-14",
+    "message": "This is a test message to verify feedback submissions on Swami Vivekananda Complete Works Volume 1 Page 112."
+  },
+  {
+    "id": "1782549788489",
+    "timestamp": "2026-06-27T08:43:08.489Z",
+    "email": "krishnasakhananda@gmail.com",
+    "type": "correction",
+    "reference": "/quotes/post/complete-works-of-swami-vivekananda-vol-1-page-112-14",
+    "message": "This is a live API test to verify email reception for Swami Vivekananda Complete Works Volume 1 Page 112. The post link should be automatically appended to the email received by krishnasakhananda@gmail.com."
+  },
+  {
+    "id": "1782550151294",
+    "timestamp": "2026-06-27T08:49:11.294Z",
+    "email": "krishnasakhananda@gmail.com",
+    "type": "correction",
+    "reference": "/quotes/post/complete-works-of-swami-vivekananda-vol-1-page-112-14",
+    "message": "This is a client-side API test to verify email reception for Swami Vivekananda Complete Works Volume 1 Page 112. The post link should be automatically appended to the email received by krishnasakhananda@gmail.com."
+  }
+]

@@ -1,7 +1,8 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { fetchTodayEvents } from '@/app/actions';
+import { fetchTodayEvents, fetchEventChildrenAction } from '@/app/actions';
 import { ChevronRight } from 'lucide-react';
+import SectionHeading from '@/components/SectionHeading';
 
 const ShimmerSkeleton = () => (
   <div className="space-y-4 animate-pulse mt-8">
@@ -18,6 +19,8 @@ export default function TodayInHistory() {
   const [loading, setLoading] = useState(true);
   const [title, setTitle] = useState('Today in History');
   const [openIds, setOpenIds] = useState(new Set());
+  const [childrenData, setChildrenData] = useState({});
+  const [loadingChildren, setLoadingChildren] = useState({});
 
   useEffect(() => {
     async function loadData() {
@@ -38,7 +41,7 @@ export default function TodayInHistory() {
   if (loading) {
     return (
       <div className="mt-8">
-        <h2 className="font-serif border-b border-glass-border pb-2.5 text-center text-2xl sm:text-3xl text-primary-theme">{title}</h2>
+        <SectionHeading>{title}</SectionHeading>
         <ShimmerSkeleton />
       </div>
     );
@@ -47,7 +50,7 @@ export default function TodayInHistory() {
   if (events.length === 0) {
     return (
       <div className="mt-8">
-        <h2 className="font-serif border-b border-glass-border pb-2.5 text-center text-2xl sm:text-3xl text-primary-theme">{title}</h2>
+        <SectionHeading>{title}</SectionHeading>
         <p className="text-gray-500 text-center mt-6">No records found for today.</p>
       </div>
     );
@@ -61,18 +64,30 @@ export default function TodayInHistory() {
     grouped[yr].push(e);
   });
 
-  const toggleAccordion = (id) => {
+  const toggleAccordion = async (id) => {
     setOpenIds(prev => {
       const newSet = new Set(prev);
       if (newSet.has(id)) newSet.delete(id);
       else newSet.add(id);
       return newSet;
     });
+
+    if (!childrenData[id] && !loadingChildren[id]) {
+      setLoadingChildren(prev => ({ ...prev, [id]: true }));
+      try {
+        const children = await fetchEventChildrenAction(id);
+        setChildrenData(prev => ({ ...prev, [id]: children }));
+      } catch (err) {
+        console.error("Failed to fetch children", err);
+      } finally {
+        setLoadingChildren(prev => ({ ...prev, [id]: false }));
+      }
+    }
   };
 
   return (
     <div>
-      <h2 className="font-serif border-b border-glass-border pb-2.5 text-center text-2xl sm:text-3xl text-primary-theme mt-0">{title}</h2>
+      <SectionHeading>{title}</SectionHeading>
       <div id="today-history" className="mt-8 relative border-l-2 border-secondary-theme/30 ml-4 pl-6 space-y-8">
         {Object.keys(grouped).sort((a,b) => a - b).map(yr => (
           <div key={yr} className="relative space-y-3">
@@ -85,10 +100,13 @@ export default function TodayInHistory() {
             
             <div className="space-y-3">
               {grouped[yr].map(e => {
-                const hasChildren = e.children && e.children.length > 0;
+                const hasChildren = e.hasChildren;
                 const isOpen = openIds.has(e.id);
                 
                 if (hasChildren) {
+                  const children = childrenData[e.id] || [];
+                  const isLoading = loadingChildren[e.id];
+
                   return (
                     <div key={e.id} className="w-full">
                       <button 
@@ -99,9 +117,15 @@ export default function TodayInHistory() {
                         <span className="flex-1">{e.du || "No description"}</span>
                       </button>
                       <div className={`pl-6 pr-4 py-2 border-l-2 border-primary-theme space-y-2 mt-2 mb-4 ${isOpen ? 'block animate-[slideDown_0.3s_ease-out]' : 'hidden'}`}>
-                        {e.children.map(c => (
-                          <div key={c.id} className="py-2.5 border-b border-dashed border-border text-sm text-text-theme/90 last:border-b-0">{c.du}</div>
-                        ))}
+                        {isLoading ? (
+                          <div className="py-2.5 text-sm text-gray-500 animate-pulse">Loading details...</div>
+                        ) : children.length > 0 ? (
+                          children.map(c => (
+                            <div key={c.id} className="py-2.5 border-b border-dashed border-border text-sm text-text-theme/90 last:border-b-0">{c.du}</div>
+                          ))
+                        ) : (
+                          <div className="py-2.5 text-sm text-gray-500">No additional details found.</div>
+                        )}
                       </div>
                     </div>
                   );

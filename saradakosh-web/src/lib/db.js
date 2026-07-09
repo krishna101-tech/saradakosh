@@ -35,26 +35,39 @@ export function getEventsByDate(month, day) {
     `);
     const todayEvents = stmt.all(day, month);
 
-    // Also fetch children if they exist to build the accordion
     const parentIds = todayEvents.map(e => e.id);
     if (parentIds.length === 0) return [];
     
-    // Using simple IN clause since parentIds is usually small for a single day
-    const childrenStmt = db.prepare(`
-      SELECT * FROM events 
+    // Instead of fetching all children data, just find which parents have children
+    const childrenCheckStmt = db.prepare(`
+      SELECT DISTINCT child_id FROM events 
       WHERE child_id IN (${parentIds.map(() => '?').join(',')}) 
-      AND id != child_id
+      AND id != child_id AND du IS NOT NULL AND du != ''
     `);
-    const childEvents = childrenStmt.all(...parentIds);
+    const parentsWithChildren = childrenCheckStmt.all(...parentIds).map(r => r.child_id);
+    const parentsWithChildrenSet = new Set(parentsWithChildren);
 
-    // Attach children to parents
+    // Attach hasChildren flag
     return todayEvents.map(parent => {
-      const children = childEvents.filter(c => c.child_id === parent.id && c.du && c.du.trim() !== '');
-      return { ...parent, children };
+      return { ...parent, hasChildren: parentsWithChildrenSet.has(parent.id) };
     });
 
   } catch (error) {
     console.error("Error fetching events by date:", error);
+    return [];
+  }
+}
+
+export function getEventChildren(parentId) {
+  try {
+    const childrenStmt = db.prepare(`
+      SELECT * FROM events 
+      WHERE child_id = ? AND id != child_id
+      ORDER BY sequence ASC, id ASC
+    `);
+    return childrenStmt.all(parentId).filter(c => c.du && c.du.trim() !== '');
+  } catch (error) {
+    console.error("Error fetching event children:", error);
     return [];
   }
 }

@@ -59,7 +59,6 @@ export async function generateMetadata({ params }) {
 
 export default async function QuotePostPage({ params, searchParams }) {
   const resolvedParams = await params;
-  const resolvedSearch = await searchParams;
   const quoteId = decodeURIComponent(resolvedParams.id);
   const quote = quotesData.find(q => q.id === quoteId);
 
@@ -68,13 +67,17 @@ export default async function QuotePostPage({ params, searchParams }) {
       <div className="min-h-screen flex items-center justify-center bg-quotes-bg font-serif">
         <div className="text-center p-15">
           <h2 className="text-2xl font-bold mb-4">Quote not found</h2>
-          <Link href="/quotes" className="text-quotes-primary hover:underline flex items-center justify-center gap-1"><ArrowLeft className="size-4" /> Back to Quotes</Link>
+          <div className="flex justify-center gap-4">
+            <Link href="/" className="text-quotes-primary hover:underline flex items-center justify-center gap-1">Home</Link>
+            <Link href="/quotes" className="text-quotes-primary hover:underline flex items-center justify-center gap-1">All Quotes</Link>
+          </div>
         </div>
       </div>
     );
   }
 
   const images = quote.images || {};
+  const resolvedSearch = await searchParams;
   const requestedLang = resolvedSearch?.lang || 'eng';
   const primaryLang = images[requestedLang] ? requestedLang
     : images['eng'] ? 'eng'
@@ -166,9 +169,12 @@ export default async function QuotePostPage({ params, searchParams }) {
 
           <div className="hidden md:block border-b border-dashed border-quotes-primary/30 my-1.5" />
 
-          <div className="flex flex-col gap-2.5 w-full max-md:flex-row max-md:gap-1.5">
-            <Link href="/quotes" className="flex-1 flex items-center justify-center gap-1.5 min-h-[44px] rounded-full font-bold text-xs bg-white text-quotes-primary border border-quotes-primary cursor-pointer hover:bg-quotes-primary/5 transition-all duration-150 active:scale-95 max-md:min-h-[40px] max-md:text-[0.78rem]">
-              <ArrowLeft className="size-4" /> All Quotes
+          <div className="flex flex-col gap-2.5 w-full max-md:grid max-md:grid-cols-2 max-md:gap-1.5">
+            <Link href="/" className="btn-secondary w-full">
+              Home
+            </Link>
+            <Link href="/quotes" className="btn-secondary w-full">
+              All Quotes
             </Link>
 
             <PostActions imageUrl={images[primaryLang]} />

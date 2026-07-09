@@ -24,6 +24,7 @@
   --color-warm-link: var(--warm-link);
   --font-serif: var(--font-serif);
   --font-sans: var(--font-sans);
+  --font-ornament: var(--font-ornament);
 }
 
 :root {
@@ -224,6 +225,47 @@
   }
   body {
     @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  /* Typography */
+  h1, .h1-title {
+    @apply font-serif text-4xl sm:text-5xl md:text-6xl text-primary font-bold tracking-tight mb-6;
+  }
+  h3, .h3-title {
+    @apply font-serif text-xl sm:text-2xl text-primary font-medium mb-3;
+  }
+  .text-body {
+    @apply font-sans text-base leading-relaxed text-foreground;
+  }
+  .text-muted {
+    @apply font-sans text-sm text-foreground/70;
+  }
+  .text-quote {
+    @apply font-serif text-lg sm:text-xl italic leading-relaxed text-foreground;
+  }
+
+  /* Cards */
+  .card-standard, .card-interactive {
+    @apply bg-card border border-border rounded-xl shadow-sm hover:shadow-md hover:border-primary/40 transition-all duration-300 overflow-hidden;
+  }
+  .card-interactive {
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-primary text-primary-foreground rounded-full px-6 py-2.5 font-bold hover:bg-primary/90 transition-all active:scale-95 text-sm;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center bg-card text-primary border border-primary rounded-full px-6 py-2.5 font-bold hover:bg-primary/5 transition-all active:scale-95 text-sm;
+  }
+  .btn-icon {
+    @apply inline-flex items-center justify-center rounded-full bg-card border border-glass-border text-primary hover:bg-primary/5 transition-all hover:scale-110 size-10;
   }
 }
 

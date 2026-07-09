@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { ChevronRight } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function ViewerAccordion({ events }) {
   const [openIds, setOpenIds] = useState(new Set());
@@ -56,13 +57,25 @@ export default function ViewerAccordion({ events }) {
               </div>
             </button>
             {hasChildren && (
-              <div className={`pl-14 pr-6 py-4 border-l-3 border-primary-theme space-y-3 mb-4 ${isOpen ? 'block animate-[slideDown_0.3s_ease-out]' : 'hidden'}`}>
-                {e.children.map(c => (
-                  <div key={c.id} className="mb-2.5 leading-relaxed text-gray-700 dark:text-gray-300 border-b border-dashed border-glass-border pb-2.5 last:border-b-0">
-                    {c.du}
-                  </div>
-                ))}
-              </div>
+              <AnimatePresence initial={false}>
+                {isOpen && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: 'auto', opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
+                    className="overflow-hidden pl-14 pr-6 border-l-3 border-primary-theme space-y-3 mb-4"
+                  >
+                    <div className="py-4 space-y-3">
+                      {e.children.map(c => (
+                        <div key={c.id} className="mb-2.5 leading-relaxed text-gray-700 dark:text-gray-300 border-b border-dashed border-glass-border pb-2.5 last:border-b-0">
+                          {c.du}
+                        </div>
+                      ))}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             )}
           </div>
         );

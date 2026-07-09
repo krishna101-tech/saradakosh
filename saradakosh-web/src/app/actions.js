@@ -7,6 +7,11 @@ export async function fetchTodayEvents(month, day) {
   return getEventsByDate(month, day);
 }
 
+export async function fetchEventChildrenAction(parentId) {
+  const { getEventChildren } = await import('@/lib/db');
+  return getEventChildren(parentId);
+}
+
 export async function fetchSearchResults(term) {
   if (!term || typeof term !== 'string') return [];
   
