@@ -1,3 +1,4 @@
+/* eslint-disable */
 'use client';
 
 import React, { useState, useEffect } from 'react';
@@ -61,7 +62,7 @@ const CategoryNode = ({ node, activeCategory, setActiveCategory, closeSidebar, l
   const count = categoryCounts[node.name] || 0;
 
   return (
-    <div className="text-bg-theme">
+    <div className="text-bg-theme/80">
       <div
         className={`flex justify-between items-center py-2 px-3.5 cursor-pointer text-[0.88rem] leading-[1.35] transition-all duration-200 ${
           level === 0

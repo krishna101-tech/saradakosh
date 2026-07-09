@@ -1,0 +1,1 @@
+const https = require('https'); https.get('https://www.saradakosh.org/quotes', (res) => { let data = ''; res.on('data', (chunk) => { data += chunk; }); res.on('end', () => { if (data.includes('hover:bg-bg-theme/5')) { console.log('SUCCESS: Live!'); } else { console.log('PENDING...'); } }); });
