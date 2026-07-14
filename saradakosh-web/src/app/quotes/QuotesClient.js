@@ -202,13 +202,9 @@ export default function QuotesClient() {
   const seenImages = new Set();
 
   const displayedQuotes = quotesData.filter(q => {
-    // Category filter using descendants map
-    if (activeCategory && categoryDescendants[activeCategory]) {
-      if (!q.categories.some(c => categoryDescendants[activeCategory].has(c))) return false;
-    }
-    
-    // Search filter
-    if (searchTerm.trim() !== '') {
+    const isSearching = searchTerm.trim() !== '';
+
+    if (isSearching) {
       const term = searchTerm.toLowerCase();
       const content = quoteContents[q.id];
       if (!content) return false;
@@ -216,6 +212,11 @@ export default function QuotesClient() {
       const textToSearch = (content.title + " " + content.paragraphs.join(" ")).toLowerCase();
       if (!textToSearch.includes(term)) {
         return false;
+      }
+    } else {
+      // Category filter using descendants map
+      if (activeCategory && categoryDescendants[activeCategory]) {
+        if (!q.categories.some(c => categoryDescendants[activeCategory].has(c))) return false;
       }
     }
     // Must have at least one image
@@ -322,7 +323,9 @@ export default function QuotesClient() {
 
         {/* Category Title Area */}
         <div className="pt-3.5 px-2.5 pb-2 text-center">
-          <h1 className="text-[1.7rem] text-quotes-primary m-0 mb-1 font-serif max-sm:text-[1.3rem]">{activeCategory}</h1>
+          <h1 className="text-[1.7rem] text-quotes-primary m-0 mb-1 font-serif max-sm:text-[1.3rem]">
+            {searchTerm.trim() !== '' ? 'Search Results' : activeCategory}
+          </h1>
           <p className="text-text-theme/75 text-[0.9rem] m-0">(Total Quotes — {displayedQuotes.length})</p>
         </div>
 
