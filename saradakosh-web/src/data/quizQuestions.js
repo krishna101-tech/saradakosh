@@ -15,7 +15,7 @@ export const SET_DIFFICULTIES = {
   1: { level: 1, label: 'Beginner', en: 'Beginner', bn: 'প্রারম্ভিক', hi: 'आरंभिक' },
   2: { level: 2, label: 'Easy', en: 'Easy', bn: 'সহজ', hi: 'सरल' },
   3: { level: 3, label: 'Intermediate', en: 'Intermediate', bn: 'মধ্যম', hi: 'मध्यम' },
-  4: { level: 4, label: 'Difficult', en: 'Difficult', bn: 'কঠিন', hi: 'कঠিন' },
+  4: { level: 4, label: 'Difficult', en: 'Difficult', bn: 'কঠিন', hi: 'कठिन' },
   5: { level: 5, label: 'Advanced', en: 'Advanced', bn: 'উন্নত', hi: 'उन्नत' }
 };
 

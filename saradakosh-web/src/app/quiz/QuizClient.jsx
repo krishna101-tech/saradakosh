@@ -113,12 +113,49 @@ const UI_STRINGS = {
   }
 };
 
+const CHOICE_LABELS = ["A", "B", "C", "D"];
+
+// Fisher-Yates array shuffle helper
+function shuffleArray(array) {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+// Generate an independent shuffled options map for a list of questions
+function generateShuffledOptions(questionsList) {
+  const map = {};
+  let attempts = 0;
+  let allFirst = true;
+
+  while (allFirst && attempts < 10) {
+    attempts++;
+    allFirst = true;
+    questionsList.forEach((q) => {
+      map[q.id] = shuffleArray(q.options);
+      // Check if correct option is at index 0
+      const correctIdx = map[q.id].findIndex((opt) => opt.id === q.correctOptionId);
+      if (correctIdx !== 0) {
+        allFirst = false;
+      }
+    });
+    if (questionsList.length === 0) break;
+  }
+  return map;
+}
+
 export default function QuizClient() {
   const [selectedLanguage, setSelectedLanguage] = useState(null);
   const [currentSet, setCurrentSet] = useState(1);
   const [userAnswers, setUserAnswers] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isScorecardOpen, setIsScorecardOpen] = useState(false);
+  const [shuffledOptionsMap, setShuffledOptionsMap] = useState(() => {
+    return generateShuffledOptions(getQuestionsBySet(1));
+  });
 
   // Active language helper (defaults to English for initial prompt)
   const activeLang = selectedLanguage || "en";
@@ -164,6 +201,7 @@ export default function QuizClient() {
     setCurrentSet(nextSet);
     setUserAnswers({});
     setIsSubmitted(false);
+    setShuffledOptionsMap(generateShuffledOptions(getQuestionsBySet(nextSet)));
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -468,9 +506,10 @@ export default function QuizClient() {
                     <fieldset className="space-y-3" aria-label={`Choices for question ${qIndex + 1}`}>
                       <legend className="sr-only">{`Choices for question ${qIndex + 1}`}</legend>
 
-                      {q.options.map((opt) => {
+                      {(shuffledOptionsMap[q.id] || q.options).map((opt, optIndex) => {
                         const isChosen = selectedOptionId === opt.id;
                         const isThisCorrect = opt.id === q.correctOptionId;
+                        const choiceLabel = CHOICE_LABELS[optIndex] || String.fromCharCode(65 + optIndex);
 
                         // Calculate styling when submitted vs not submitted
                         let optionStyle =
@@ -529,16 +568,18 @@ export default function QuizClient() {
                                 type="radio"
                                 name={`question-${q.id}`}
                                 value={opt.id}
+                                data-option-id={opt.id}
+                                data-display-position={optIndex}
                                 checked={isChosen}
                                 disabled={isSubmitted}
                                 onChange={() => handleSelectOption(q.id, opt.id)}
                                 className="sr-only"
-                                aria-label={`Option ${opt.id}: ${opt.text[activeLang] || opt.text.en}`}
+                                aria-label={`Option ${choiceLabel}: ${opt.text[activeLang] || opt.text.en}`}
                               />
                               <span
                                 className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold shrink-0 ${letterStyle}`}
                               >
-                                {opt.id}
+                                {choiceLabel}
                               </span>
                               <span className="text-sm sm:text-base leading-snug">
                                 {opt.text[activeLang] || opt.text.en}

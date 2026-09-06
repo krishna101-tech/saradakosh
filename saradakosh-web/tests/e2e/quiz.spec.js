@@ -238,4 +238,57 @@ test.describe('Saradakosh Quiz v1 (SQ-AG-001) E2E Tests', () => {
     await page.waitForLoadState('networkidle');
     await expect(page.locator('body')).not.toBeEmpty();
   });
+
+  test('10. Shuffled option positions: randomized display order, ID-based scoring, and language stability', async ({ page }) => {
+    await page.goto(`${BASE_URL}/quiz`);
+    await page.waitForLoadState('networkidle');
+
+    await page.getByRole('button', { name: 'Select English' }).click();
+
+    const articles = page.locator('article');
+    await expect(articles).toHaveCount(5);
+
+    // 1. Verify that option positions are shuffled independently and not all in slot 0
+    const optionAPositions = [];
+    for (let i = 0; i < 5; i++) {
+      const art = articles.nth(i);
+      const radioA = art.locator('input[type="radio"][value="A"]');
+      const pos = await radioA.getAttribute('data-display-position');
+      optionAPositions.push(parseInt(pos, 10));
+    }
+    // At least one question must have option A in a position other than 0
+    const nonZeroPositions = optionAPositions.filter(p => p > 0);
+    expect(nonZeroPositions.length).toBeGreaterThan(0);
+
+    // 2. For Question 1, record current order of option IDs
+    const q1 = articles.nth(0);
+    const initialOrder = await q1.locator('input[type="radio"]').evaluateAll(radios => radios.map(r => r.value));
+
+    // Select Option A on Question 1 (Kamarpukur) regardless of its slot
+    const radioA = q1.locator('input[type="radio"][value="A"]');
+    await radioA.locator('xpath=..').click(); // click label
+    await expect(radioA).toBeChecked();
+
+    // 3. Switch to Bengali and verify exact order and selection are preserved
+    await page.getByRole('button', { name: 'Switch to Bengali' }).click();
+    const bnOrder = await q1.locator('input[type="radio"]').evaluateAll(radios => radios.map(r => r.value));
+    expect(bnOrder).toEqual(initialOrder);
+    await expect(radioA).toBeChecked();
+
+    // 4. Switch to Hindi and verify exact order and selection are preserved
+    await page.getByRole('button', { name: 'Switch to Hindi' }).click();
+    const hiOrder = await q1.locator('input[type="radio"]').evaluateAll(radios => radios.map(r => r.value));
+    expect(hiOrder).toEqual(initialOrder);
+    await expect(radioA).toBeChecked();
+
+    // 5. Submit quiz and verify scoring is based on option ID, not visible slot
+    await page.getByRole('button', { name: /उत्तर जाँचें|Check Answers/i }).click();
+    const summary = page.locator('#quiz-results-summary');
+    await expect(summary).toBeVisible();
+
+    // Question 1 had Option A (Kamarpukur, the correct answer) selected.
+    // It must be scored as Correct (1 / 5) regardless of which slot A was in.
+    await expect(summary.getByText('1', { exact: true }).first()).toBeVisible();
+    await expect(q1.getByText('आपका चयन (सही)')).toBeVisible();
+  });
 });
