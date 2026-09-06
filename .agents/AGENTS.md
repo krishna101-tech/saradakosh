@@ -17,6 +17,8 @@ When working on the frontend, read and obey both files. Repository-wide safety r
 
 These instruction files are **protected files**. Anti-Gravity and Codex MUST NOT modify either `AGENTS.md` unless a task specification explicitly authorizes that exact edit. Do not create extra `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, agent-state, or task-instruction files merely to communicate with another agent. Use `.agents/tasks/`, `.agents/reports/`, and the coordination protocol instead.
 
+The repository also contains `.agents/PORTFOLIO_MULTI_AGENT_PROTOCOL.md`. It is the canonical cross-project coordination contract for the product owner's two-command workflow. It does not replace Saradakosh-specific safety rules. For task selection, review ownership, portfolio discovery, agent takeover, and the owner's two commands, it takes precedence over older wording in `.agents/COORDINATION_PROTOCOL.md` when the two differ.
+
 ### 3. Dirty working tree / uncommitted-file safety
 
 Before starting any task, run and record at minimum:
@@ -77,3 +79,16 @@ If ownership is unclear, do not edit the file; report the conflict.
 ### 6. No overlapping implementation
 
 Anti-Gravity and Codex must not implement the same scope simultaneously unless ChatGPT explicitly creates separate parallel tasks with non-overlapping file ownership. A branch/PR is not a shared scratchpad between agents.
+
+### 7. Portfolio two-command contract
+
+The project owner should need only:
+
+- to either implementation agent: `Work on open task.`
+- to ChatGPT: `Check last task.`
+
+Implementation agents must derive repository, task, branch, current review findings, and next action from GitHub plus the repository. They must not ask the owner to remember issue numbers, task IDs, branch names, or handoff files merely because the agent lost context.
+
+Before resuming or taking over a task, read `.agents/PORTFOLIO_MULTI_AGENT_PROTOCOL.md`, the active GitHub Issue/PR, the latest ChatGPT review disposition, and all unresolved non-outdated review threads. A different agent may take over only after synchronizing to the exact remote task-branch head and recording the takeover in GitHub.
+
+Implementation agents may mark `REVIEW_READY`; they may not self-accept or close the canonical task. ChatGPT owns `ACCEPTED`, `CHANGES REQUESTED`, and product-decision review outcomes.
