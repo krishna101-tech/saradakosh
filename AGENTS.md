@@ -3,7 +3,7 @@
 ## 1. Explicit Authority & Inheritance Hierarchy
 
 All engineering work in this repository strictly adheres to the following three-tier inheritance order:
-1. **Canonical Global Standard:** Portfolio Human–AI Systems Engineering Standard `0.1-bootstrap` (hosted at `krishna101-tech/sound-studio/docs/portfolio/HUMAN_AI_SYSTEMS_ENGINEERING_STANDARD.md` until `krishna101-tech/software-engineering-standards` is live).
+1. **Canonical Global Standard:** Portfolio Human–AI Systems Engineering Standard `0.1-bootstrap` at `https://github.com/krishna101-tech/software-engineering-standards/blob/main/STANDARD.md`.
 2. **Project Addendum:** This repository's `PROJECT_ENGINEERING.md` (defining SaradaKosh-specific invariants, database authority, 3GB media rules, and staging deployment protocol).
 3. **Live GitHub State:** Active GitHub Issues, PRs, review comments, and CI evidence.
 
