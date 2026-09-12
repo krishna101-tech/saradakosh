@@ -2,8 +2,7 @@
 
 **Project:** `krishna101-tech/saradakosh`  
 **Global standard:** Human–AI Systems Engineering Standard `0.1-bootstrap`  
-**Current canonical source:** `krishna101-tech/sound-studio/docs/portfolio/HUMAN_AI_SYSTEMS_ENGINEERING_STANDARD.md`  
-**Future canonical source:** `krishna101-tech/software-engineering-standards`
+**Canonical source:** `https://github.com/krishna101-tech/software-engineering-standards/blob/main/STANDARD.md`
 
 SaradaKosh inherits the global standard in full. The global standard must not be copied into this repository.
 
