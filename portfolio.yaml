@@ -1,0 +1,20 @@
+schema_version: "1.0"
+project_id: saradakosh
+name: SaradaKosh
+lifecycle: ACTIVE
+type: WEB_APP
+current_version: null
+logbook: SaradaKosh_Logbook.md
+version_document: null
+runtime:
+  profile: aaa
+repositories:
+  - krishna101-tech/saradakosh
+deployment:
+  provider: vercel
+  production: true
+validation:
+  browser: required
+  windows: not_required
+  notes: "Production/user-facing changes require real-browser validation."
+exceptions: []
