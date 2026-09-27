@@ -1,5 +1,9 @@
 # Portfolio Multi-Agent Protocol
 
+> **Canonical model-role allocation:** https://github.com/krishna101-tech/software-engineering-standards/blob/main/docs/AAA_RUNTIME_PROFILE.md
+>
+> This repository does not own the permanent Luna/Anthropic/Gemini/Sol schedule. Project coordination rules below may define state, ownership, handoff, and safety mechanics only.
+
 This repository participates in the project portfolio owned by `krishna101-tech`. This file standardizes only cross-agent coordination. Saradakosh-specific safety rules in `.agents/AGENTS.md`, `.agents/COORDINATION_PROTOCOL.md`, scoped frontend instructions, architecture docs, and task specs remain in force.
 
 ## Human interface
