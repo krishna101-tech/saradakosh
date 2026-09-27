@@ -1,5 +1,7 @@
 # Saradakosh Multi-Agent Coordination Protocol
 
+> **SUPERSEDED ROLE ASSIGNMENTS:** Portfolio model/agent role allocation is authoritative only in https://github.com/krishna101-tech/software-engineering-standards/blob/main/docs/AAA_RUNTIME_PROFILE.md. Any older section in this file assigning Anti-Gravity as the permanent primary implementer, Codex as the permanent reviewer, or any other permanent model/agent role is non-authoritative. This file governs only Saradakosh-specific coordination, worktree/file ownership, reports, and safety mechanics.
+
 Repository: `krishna101-tech/saradakosh`
 
 ## Purpose
@@ -8,33 +10,10 @@ This repository is the shared coordination bus for the project owner, ChatGPT, A
 
 ## Roles
 
-### Project Owner
-- Sets product direction and priorities.
-- Launches Anti-Gravity or Codex when ChatGPT explicitly asks.
-- Does not need to manually copy implementation reports between agents once this protocol is active.
-
-### ChatGPT — Architect / Task Author / Coordinator / Reviewer
-- Converts product decisions into bounded implementation tasks.
-- Owns `.agents/COORDINATION_STATUS.md` and task specifications.
-- Reviews Anti-Gravity reports, diffs, pull requests, and CI evidence.
-- Decides whether a task is accepted, needs another Anti-Gravity pass, or has reached a Codex checkpoint.
-- At a Codex checkpoint, explicitly tells the owner: **Now ask Codex to reply to your latest question.**
-- May create/update coordination files and review/merge PRs after validation.
-
-### Anti-Gravity — Primary Implementation Agent
-- Primary implementation agent for routine development work.
-- Reads the latest assigned task from `.agents/tasks/`.
-- Implements only the stated scope on its own branch and isolated working tree.
-- Runs tests and records evidence.
-- Writes a final report whose first heading is exactly `# Report by Anti-Gravity`.
-- Pushes the branch and opens a PR when possible.
-- Never silently expands scope or changes product requirements.
-
-### Codex — Independent Reviewer / Critical Remediation Agent
-- Used at critical checkpoints rather than routine implementation.
-- Reviews architecture, security, auth, migrations, source-verification logic, integration quality, and final release readiness.
-- Writes reports whose first heading is exactly `# Report by Codex`.
-- When asked to remediate, uses its own `codex/...` branch and isolated working tree.
+- **Product owner:** sets product direction and priorities.
+- **Runtime model/agent roles:** follow the central Portfolio Agent Runtime Profile only.
+- **ChatGPT:** remains outside the runtime worker allocation and performs product/architecture specification plus independent acceptance.
+- **Saradakosh coordination rules:** this file may govern task ownership, isolated worktrees, report paths, file ownership and local safety, but may not assign a competing permanent implementation/review schedule.
 
 ## Mandatory Workspace Rules
 
