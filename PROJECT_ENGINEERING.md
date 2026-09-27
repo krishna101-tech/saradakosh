@@ -1,7 +1,7 @@
 # SaradaKosh Engineering Addendum
 
 **Project:** `krishna101-tech/saradakosh`  
-**Global standard:** Human–AI Systems Engineering Standard `0.1-bootstrap`  
+**Global standard:** Human–AI Systems Engineering Standard `0.3.0`
 **Canonical source:** `https://github.com/krishna101-tech/software-engineering-standards/blob/main/STANDARD.md`
 
 SaradaKosh inherits the global standard in full. The global standard must not be copied into this repository.
@@ -17,7 +17,7 @@ SaradaKosh inherits the global standard in full. The global standard must not be
 
 1. **Content Image Upload Prohibition:** NEVER commit or reupload the 3GB of content images into Git or Cloudinary. The database and catalog already contain resolved Cloudinary CDN URLs. `upload_to_cloudinary.py` is permanently disabled. UI design images, page icons, and layout mockups are exempt from this restriction.
 2. **Mandatory CI/CD Staging Protocol:** Direct pushes to the `main` branch are strictly prohibited. All feature, fix, and task branches must target `staging` first. Before promoting to `staging`, agents must follow `saradakosh-web/DEPLOYMENT_PROTOCOL.md`.
-3. **Deterministic Edge Verification:** After pushing to `staging`, verify the live deployment using deterministic HTTP `200 OK` status and raw DOM payload checks (via Node.js script or curl) across both mobile (390px) and desktop viewports. Never assume deployment succeeded without edge verification.
+3. **Staging Verification:** After pushing to `staging`, verify the deployment's HTTP status and required DOM content with deterministic checks. When a change affects responsive behavior, also use Playwright or another real browser at a 390px mobile viewport and a desktop viewport to verify layout and overflow; raw HTTP or DOM checks do not verify rendered layout. Never assume deployment succeeded without edge verification.
 4. **Working-Tree Hygiene & Worktree Isolation:** The root workspace contains uncommitted local data, offline management tools, and scratch scripts. Implementation agents must never run destructive `git reset --hard` or delete untracked files outside their assigned task scope. Agents must perform implementation work in isolated Git worktrees (`.worktrees/<TASK_ID>`).
 5. **No AI-Generated Simulated Verification:** AI agents must not replace real database lookups or canonical source verification with simulated or fabricated data. For instance, Quiz v1 citations must resolve directly to canonical Ramakrishna Math and Ramakrishna Mission (RKMM) URLs (`englishbooks.rkmm.org`).
 
