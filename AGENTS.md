@@ -19,7 +19,14 @@ GitHub is the single source of truth for software project management. AI agents 
 - Implementation agents must discover and resume canonical task/review state directly from GitHub without prompting the owner for task IDs, branch names, or handoff files.
 - When implementation and verification are complete, agents push evidence and mark the task `REVIEW_READY` for independent ChatGPT review. Implementation agents never self-accept substantial work.
 
-## 4. Architecture & Invariant Enforcement
+## 4. Compact Implementation-Agent Handoffs
+
+- Keep owner-facing handoffs concise: status, change summary, exact PR and SHA, validation result, and any genuine blocker or question.
+- Do not produce long narrative AAA reports or separate Abundance, Autonomy, and Always Free sections unless the owner explicitly asks.
+- Preserve the evidence needed for independent review in GitHub: model and delegate provenance, failed or no-patch lanes, owner interventions and blockers, Always Free facts, exact task/PR/SHA, and test/build/browser/deployment results.
+- Independent ChatGPT review derives the full AAA assessment from that GitHub evidence. This reporting rule changes verbosity only; it does not weaken AAA, provenance, verification, or cost-safety requirements.
+
+## 5. Architecture & Invariant Enforcement
 
 - System architecture outranks prompt-local convenience.
 - Always search existing codebase ownership before introducing new services, helpers, or states.
