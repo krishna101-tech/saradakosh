@@ -1,11 +1,9 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Saradakosh Quiz v1 (SQ-AG-001) E2E Tests', () => {
-  const BASE_URL = process.env.PLAYWRIGHT_TEST_BASE_URL || 'http://localhost:3000';
 
   test('1. Initial visit requires language selection and shows all 3 languages', async ({ page }) => {
-    await page.goto(`${BASE_URL}/quiz`);
-    await page.waitForLoadState('networkidle');
+    await page.goto('/quiz');
 
     // Language selection card must be visible
     const langSection = page.locator('section[aria-labelledby="lang-prompt-title"]');
@@ -25,15 +23,14 @@ test.describe('Saradakosh Quiz v1 (SQ-AG-001) E2E Tests', () => {
   });
 
   test('2. Language switching and preservation of selected answer', async ({ page }) => {
-    await page.goto(`${BASE_URL}/quiz`);
-    await page.waitForLoadState('networkidle');
+    await page.goto('/quiz');
 
     // Select English
     await page.getByRole('button', { name: 'Select English' }).click();
 
     // Header and 5 questions rendered
     await expect(page.locator('article')).toHaveCount(5);
-    await expect(page.getByText('Quiz 1 of 5')).toBeVisible();
+    await expect(page.getByRole('region', { name: 'Quiz Progress' }).getByText('Quiz 1 of 5')).toBeVisible();
     await expect(page.getByText('Where was Sri Ramakrishna born?')).toBeVisible();
 
     // Select Option A on Question 1 (Kamarpukur)
@@ -64,8 +61,7 @@ test.describe('Saradakosh Quiz v1 (SQ-AG-001) E2E Tests', () => {
   });
 
   test('3. Zero-answer quiz submission reports 5 skipped and reveals correct answers', async ({ page }) => {
-    await page.goto(`${BASE_URL}/quiz`);
-    await page.waitForLoadState('networkidle');
+    await page.goto('/quiz');
 
     // Select English
     await page.getByRole('button', { name: 'Select English' }).click();
@@ -96,8 +92,7 @@ test.describe('Saradakosh Quiz v1 (SQ-AG-001) E2E Tests', () => {
   });
 
   test('4. Partial answer evaluation, visual distinction, and Verify Source URL', async ({ page }) => {
-    await page.goto(`${BASE_URL}/quiz`);
-    await page.waitForLoadState('networkidle');
+    await page.goto('/quiz');
 
     await page.getByRole('button', { name: 'Select English' }).click();
 
@@ -142,13 +137,12 @@ test.describe('Saradakosh Quiz v1 (SQ-AG-001) E2E Tests', () => {
   });
 
   test('5. Sequential set progression (1 -> 2 -> 3 -> 4 -> 5 -> 1) with New Quiz', async ({ page }) => {
-    await page.goto(`${BASE_URL}/quiz`);
-    await page.waitForLoadState('networkidle');
+    await page.goto('/quiz');
 
     await page.getByRole('button', { name: 'Select English' }).click();
 
     for (let expectedSet = 1; expectedSet <= 5; expectedSet++) {
-      await expect(page.getByText(`Quiz ${expectedSet} of 5`)).toBeVisible();
+      await expect(page.getByRole('region', { name: 'Quiz Progress' }).getByText(`Quiz ${expectedSet} of 5`)).toBeVisible();
       await expect(page.locator('article')).toHaveCount(5);
 
       // Check answers
@@ -160,12 +154,11 @@ test.describe('Saradakosh Quiz v1 (SQ-AG-001) E2E Tests', () => {
     }
 
     // After Set 5, New Quiz wraps back to Set 1
-    await expect(page.getByText('Quiz 1 of 5')).toBeVisible();
+    await expect(page.getByRole('region', { name: 'Quiz Progress' }).getByText('Quiz 1 of 5')).toBeVisible();
   });
 
   test('6. Scorecard informational modal opens and closes accessibly', async ({ page }) => {
-    await page.goto(`${BASE_URL}/quiz`);
-    await page.waitForLoadState('networkidle');
+    await page.goto('/quiz');
 
     await page.getByRole('button', { name: 'Select English' }).click();
     await page.getByRole('button', { name: 'Check Answers for this set' }).click();
@@ -190,10 +183,9 @@ test.describe('Saradakosh Quiz v1 (SQ-AG-001) E2E Tests', () => {
     await expect(dialog).not.toBeVisible();
   });
 
-  test('7. Mobile viewport 390x844 responsive check and evidence screenshot', async ({ page }) => {
+  test('7. Mobile viewport 390x844 responsive check and evidence screenshot', async ({ page }, testInfo) => {
     await page.setViewportSize({ width: 390, height: 844 });
-    await page.goto(`${BASE_URL}/quiz`);
-    await page.waitForLoadState('networkidle');
+    await page.goto('/quiz');
 
     // Language selection
     await page.getByRole('button', { name: 'Select English' }).click();
@@ -207,13 +199,12 @@ test.describe('Saradakosh Quiz v1 (SQ-AG-001) E2E Tests', () => {
     expect(scrollWidth).toBeLessThanOrEqual(390);
 
     // Save screenshot evidence
-    await page.screenshot({ path: 'tests/evidence-mobile-results-390.png', fullPage: false });
+    await page.screenshot({ path: testInfo.outputPath('mobile-results-390.png'), fullPage: false });
   });
 
-  test('8. Desktop layout ~1440x900 check and evidence screenshot', async ({ page }) => {
+  test('8. Desktop layout ~1440x900 check and evidence screenshot', async ({ page }, testInfo) => {
     await page.setViewportSize({ width: 1440, height: 900 });
-    await page.goto(`${BASE_URL}/quiz`);
-    await page.waitForLoadState('networkidle');
+    await page.goto('/quiz');
 
     await page.getByRole('button', { name: 'Select English' }).click();
     await page.getByRole('button', { name: 'Check Answers for this set' }).click();
@@ -224,24 +215,21 @@ test.describe('Saradakosh Quiz v1 (SQ-AG-001) E2E Tests', () => {
     expect(scrollWidth).toBeLessThanOrEqual(1440);
 
     // Save screenshot evidence
-    await page.screenshot({ path: 'tests/evidence-desktop-results-1440.png', fullPage: false });
+    await page.screenshot({ path: testInfo.outputPath('desktop-results-1440.png'), fullPage: false });
   });
 
   test('9. Existing homepage and secondary routes still load cleanly', async ({ page }) => {
     // Check homepage
-    await page.goto(BASE_URL);
-    await page.waitForLoadState('networkidle');
+    await page.goto('/');
     await expect(page.locator('h1')).toBeVisible();
 
     // Check about page
-    await page.goto(`${BASE_URL}/about`);
-    await page.waitForLoadState('networkidle');
+    await page.goto('/about');
     await expect(page.locator('body')).not.toBeEmpty();
   });
 
   test('10. Shuffled option positions: randomized display order, ID-based scoring, and language stability', async ({ page }) => {
-    await page.goto(`${BASE_URL}/quiz`);
-    await page.waitForLoadState('networkidle');
+    await page.goto('/quiz');
 
     await page.getByRole('button', { name: 'Select English' }).click();
 
