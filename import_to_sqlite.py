@@ -1,8 +1,9 @@
+from database_path import DB_PATH, REPO_ROOT
 import sqlite3
 import pandas as pd
 import os
 
-db_path = 'c:/Saradakosh antigravity/saradakosh.db'
+db_path = DB_PATH
 if os.path.exists(db_path):
     os.remove(db_path)
 
@@ -68,7 +69,7 @@ cursor.executescript('''
 ''')
 
 # Load data
-folder = 'c:/Saradakosh antigravity/tables'
+folder = REPO_ROOT / 'tables'
 du1 = pd.read_excel(os.path.join(folder, 'DU1.xlsx'))
 p1 = pd.read_excel(os.path.join(folder, 'Parameter1.xlsx'))
 pm = pd.read_excel(os.path.join(folder, 'ParaM.xlsx'))
@@ -118,7 +119,7 @@ print("Successfully imported data into saradakosh.db")
 import subprocess
 print("Running embedding sync script...")
 try:
-    subprocess.run(["node", "saradakosh-web/scripts/sync-embeddings.js"], check=True, shell=True)
+    subprocess.run(["node", str(REPO_ROOT / "saradakosh-web/scripts/sync-embeddings.js")], check=True, cwd=REPO_ROOT)
     print("Embedding sync finished successfully.")
 except Exception as e:
     print(f"Warning: Could not run embedding sync script: {e}")

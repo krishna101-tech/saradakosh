@@ -1,10 +1,9 @@
-import sqlite3
+from database_path import connect_database, REPO_ROOT
 import pandas as pd
 import os
 import sys
 
-folder = 'c:/Saradakosh antigravity/tables'
-db_path = 'c:/Saradakosh antigravity/saradakosh.db'
+folder = REPO_ROOT / 'tables'
 
 print("Loading Original Excel Data...")
 du1_xl = pd.read_excel(os.path.join(folder, 'DU1.xlsx'))
@@ -13,7 +12,7 @@ pm_xl = pd.read_excel(os.path.join(folder, 'ParaM.xlsx'))
 matrix_xl = pd.read_excel(os.path.join(folder, 'Matrix.xlsx'))
 
 print("Loading SQLite Data...")
-conn = sqlite3.connect(db_path)
+conn = connect_database(readonly=True)
 events_db = pd.read_sql("SELECT * FROM events", conn)
 params_db = pd.read_sql("SELECT * FROM parameters", conn)
 pm_db = pd.read_sql("SELECT * FROM param_hierarchy", conn)

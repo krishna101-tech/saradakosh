@@ -1,7 +1,7 @@
-import sqlite3
+from database_path import connect_database
 
 def main():
-    conn = sqlite3.connect(r'C:\Saradakosh antigravity\saradakosh.db')
+    conn = connect_database()
     cursor = conn.cursor()
     
     # Reset all child_ids for sub-events that we incorrectly updated

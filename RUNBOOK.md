@@ -9,9 +9,9 @@ Because the primary database is a local `.db` file, taking regular snapshots is 
 **To safely back up the database without locking it:**
 Open your terminal in the root directory and run:
 ```bash
-sqlite3 saradakosh.db ".backup 'saradakosh_backup_$(date +%Y%m%d).db'"
+sqlite3 saradakosh-web/saradakosh.db ".backup 'saradakosh_backup_$(date +%Y%m%d).db'"
 ```
-*(For Windows PowerShell, you can simply copy the file: `Copy-Item saradakosh.db -Destination saradakosh_backup.db`)*
+*(For Windows PowerShell, you can simply copy the file: `Copy-Item saradakosh-web/saradakosh.db -Destination saradakosh_backup.db`)*
 
 ## 🌱 Seeding & Resetting Data
 
@@ -21,9 +21,9 @@ If your local database becomes corrupted or you need to test from a clean slate,
 Simply delete or rename the `.db` file:
 ```bash
 # Mac/Linux
-rm saradakosh.db
+rm saradakosh-web/saradakosh.db
 # Windows
-del saradakosh.db
+del saradakosh-web\saradakosh.db
 ```
 
 **Step 2: Re-seed the Database**

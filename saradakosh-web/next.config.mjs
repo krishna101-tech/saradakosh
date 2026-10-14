@@ -16,6 +16,9 @@ const cspHeader = `
 `.replace(/\n/g, '');
 
 const nextConfig = {
+  outputFileTracingIncludes: {
+    '/*': ['./saradakosh.db', './package.json'],
+  },
   async rewrites() {
     return [
       {

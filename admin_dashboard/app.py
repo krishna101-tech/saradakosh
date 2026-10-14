@@ -1,12 +1,12 @@
 from flask import Flask, render_template, request, jsonify
 import sqlite3
-import os
+from pathlib import Path
 
 app = Flask(__name__)
-DB_PATH = 'c:/Saradakosh antigravity/saradakosh.db'
+DB_PATH = Path(__file__).resolve().parents[1] / 'saradakosh-web' / 'saradakosh.db'
 
 def get_db():
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect(DB_PATH.as_uri() + '?mode=ro', uri=True)
     conn.row_factory = sqlite3.Row
     return conn
 

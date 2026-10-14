@@ -1,12 +1,12 @@
-import sqlite3
+from database_path import connect_database, REPO_ROOT
 import pandas as pd
 
 def main():
-    conn = sqlite3.connect(r'C:\Saradakosh antigravity\saradakosh.db')
+    conn = connect_database()
     cursor = conn.cursor()
     
     print("Loading DU1.xlsx to restore original ChildID mappings...")
-    df = pd.read_excel(r'C:\Saradakosh antigravity\tables\DU1.xlsx')
+    df = pd.read_excel(REPO_ROOT / 'tables' / 'DU1.xlsx')
     
     # We want to restore the child_id column exactly as it was in DU1.xlsx
     # First, reset all child_ids to NULL to wipe out my incorrect inferred mappings

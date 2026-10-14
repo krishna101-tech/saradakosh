@@ -1,15 +1,14 @@
-import sqlite3
+from database_path import connect_database, REPO_ROOT
 import pandas as pd
 import json
 import os
 
-db_path = 'c:/Saradakosh antigravity/saradakosh.db'
-out_dir = 'c:/Saradakosh antigravity/webapp/data'
+out_dir = REPO_ROOT / 'webapp' / 'data'
 
 if not os.path.exists(out_dir):
     os.makedirs(out_dir)
 
-conn = sqlite3.connect(db_path)
+conn = connect_database(readonly=True)
 
 # 1. Export Events
 print("Exporting Events...")
