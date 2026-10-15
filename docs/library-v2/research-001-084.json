@@ -1,0 +1,3664 @@
+{
+  "schema_version": 1,
+  "scope": "Version 02 T1 public research; book IDs 1–84; non-authoritative candidates only",
+  "date": "2026-10-15",
+  "baseline_sha": "4308284efb7ad886e673286b3deed70a131418eb",
+  "provenance": {
+    "researcher": "gpt-6.1-sol, High reasoning; explicitly selected by coordinator under canonical runtime",
+    "cost": "Public web tools and local requests; no paid API, purchases or redistribution",
+    "method": "Actual query and source inspection. Metadata/preview/storefront alone does not establish complete free text. Existing links retained as baseline, not automatically reapproved."
+  },
+  "books": [
+    {
+      "person": "Sri Ramakrishna",
+      "canonical_title": "The Gospel of Sri Ramakrishna",
+      "original_title": "শ্রীশ্রীরামকৃষ্ণকথামৃত",
+      "original_language": "Bengali",
+      "english_title": "The Gospel of Sri Ramakrishna",
+      "bengali_title": "শ্রীশ্রীরামকৃষ্ণকথামৃত",
+      "author": "Mahendranath Gupta (M.)",
+      "summary": null,
+      "sort_order": 0,
+      "book_id": 1,
+      "sheet_row": 2,
+      "baseline_links": [
+        {
+          "language": "English",
+          "label": "English 1",
+          "url": "https://englishbooks.rkmm.org/s/tsr/m/gospel-of-sri-ramakrishna"
+        },
+        {
+          "language": "English",
+          "label": "English 2",
+          "url": "https://cs.rkmvu.ac.in/~tamal/gospel/gospel.html"
+        },
+        {
+          "language": "English",
+          "label": "English 3",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/gospel-of-sri-ramakrishna/gospel-of-sri-ramakrishna.html"
+        },
+        {
+          "language": "English",
+          "label": "English 4",
+          "url": "https://vedantaprov.org/the-gospel-of-sri-ramakrishna/"
+        },
+        {
+          "language": "English",
+          "label": "English 5",
+          "url": "https://vedantaprov.org/wp-content/uploads/2017/03/The-Gospel-of-Sri-Ramakrishna.pdf"
+        },
+        {
+          "language": "English",
+          "label": "English 6",
+          "url": "https://www.estudantedavedanta.net/The-Gospel_SRK.pdf"
+        },
+        {
+          "language": "English",
+          "label": "English 7",
+          "url": "https://www.estudantedavedanta.net/THE%20GOSPEL%20OF%20SRI%20RAMAKRISHNA.pdf"
+        },
+        {
+          "language": "English",
+          "label": "English 8",
+          "url": "https://ia802301.us.archive.org/3/items/shastras-sri-ramakrishna-gospel/Gospel%20of%20Sri%20Ramakrishna.pdf"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali 1",
+          "url": "https://bengalibooks.rkmm.org/s/bnbk/m/%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%95%E0%A7%83%E0%A6%B7%E0%A7%8D%E0%A6%A3-%E0%A6%95%E0%A6%A5%E0%A6%BE%E0%A6%AE%E0%A7%83%E0%A6%A4"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali 2",
+          "url": "https://www.rkmkashi.in/elibrary/bookCnt.php?bookId=2&opid=7"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali 3",
+          "url": "https://rkmlibrary.com/bookCnt.php?bookId=2&cptId=78&pct=469&ptid=809"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali 4",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBengaliBooks/%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%95%E0%A7%83%E0%A6%B7%E0%A7%8D%E0%A6%A3-%E0%A6%95%E0%A6%A5%E0%A6%BE%E0%A6%AE%E0%A7%83%E0%A6%A4/%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%95%E0%A7%83%E0%A6%B7%E0%A7%8D%E0%A6%A3-%E0%A6%95%E0%A6%A5%E0%A6%BE%E0%A6%AE%E0%A7%83%E0%A6%A4.html"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali 5",
+          "url": "https://bn.wikisource.org/wiki/%E0%A6%B0%E0%A6%9A%E0%A6%A8%E0%A6%BE%3A%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%95%E0%A7%83%E0%A6%B7%E0%A7%8D%E0%A6%A3%E0%A6%95%E0%A6%A5%E0%A6%BE%E0%A6%AE%E0%A7%83%E0%A6%A4"
+        }
+      ],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"The Gospel of Sri Ramakrishna\" full text Ramakrishna"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://englishbooks.rkmm.org/s/tsr/m/gospel-of-sri-ramakrishna",
+          "observation": "Official title resolved, but text-only web reader exposes one line; completeness not established there."
+        },
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/gospel/gospel.html",
+          "observation": "HTTP 200 institutional HTML, 2,738,647 text characters; Nikhilananda 1942 preface, chapter sequence through After the Passing Away, appendices, chronology and glossary inspected. Substantial complete English edition structure; no login/paywall."
+        },
+        {
+          "url": "https://en.wikisource.org/wiki/The_Gospel_of_Ramakrishna",
+          "observation": "1907 authorized Abhedananda edition; earlier translation, not the 1942 Nikhilananda edition. Do not conflate."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/gospel/gospel.html",
+          "language": "English",
+          "label": "English",
+          "edition": "Nikhilananda translation, 1942 preface",
+          "volume_coverage": "Single English translation of five Bengali volumes",
+          "access": "Free HTML, HTTP 200",
+          "completeness": "Chapter sequence and back matter present; not proofread line by line",
+          "rights": "Institutional RKMVERI host; no explicit reuse license inspected; link only",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "English institutional full-text candidate; Bengali and remaining baseline mirrors need individual verification.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Ramakrishna",
+      "canonical_title": "Sri Ramakrishna and His Divine Play",
+      "original_title": "শ্রীশ্রীরামকৃষ্ণলীলাপ্রসঙ্গ",
+      "original_language": "Bengali",
+      "english_title": "Sri Ramakrishna and His Divine Play / Sri Ramakrishna: The Great Master",
+      "bengali_title": "শ্রীশ্রীরামকৃষ্ণলীলাপ্রসঙ্গ",
+      "author": "Swami Saradananda",
+      "summary": null,
+      "sort_order": 1,
+      "book_id": 2,
+      "sheet_row": 3,
+      "baseline_links": [
+        {
+          "language": "English",
+          "label": "English 1",
+          "url": "https://englishbooks.rkmm.org/s/lsr/m/sri-ramakrishna-the-great-master"
+        },
+        {
+          "language": "English",
+          "label": "English 2",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/sri-ramakrishna-the-great-master/sri-ramakrishna-the-great-master.html"
+        },
+        {
+          "language": "English",
+          "label": "English 3",
+          "url": "https://cs.rkmvu.ac.in/~tamal/greatmaster/greatmaster.html"
+        },
+        {
+          "language": "English",
+          "label": "English 4",
+          "url": "https://www.estudantedavedanta.net/ramakrishna_great_master.pdf"
+        },
+        {
+          "language": "English",
+          "label": "English Vol. 1",
+          "url": "https://www.estudantedavedanta.net/Great_Master_Vol1c.pdf"
+        },
+        {
+          "language": "English",
+          "label": "English Vol. 2",
+          "url": "https://www.estudantedavedanta.net/Great_Master_Vol2c.pdf"
+        },
+        {
+          "language": "English",
+          "label": "English EPUB",
+          "url": "https://www.estudantedavedanta.net/Sri_Ramakrishna_The_Great_Master_Saradananda.epub"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali 1",
+          "url": "https://bengalibooks.rkmm.org/s/bnbk/m/%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%95%E0%A7%83%E0%A6%B7%E0%A7%8D%E0%A6%A3-%E0%A6%B2%E0%A7%80%E0%A6%B2%E0%A6%BE%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B8%E0%A6%99%E0%A7%8D%E0%A6%97"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali 2",
+          "url": "https://cs.rkmvu.ac.in/~tamal/lilaprasanga/lilaprasanga.html"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali 3",
+          "url": "https://vivekavani.com/lp/"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali 4",
+          "url": "https://shibamoulilahiri.github.io/LilaPrasanga/main.html"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali Vol. 2",
+          "url": "https://www.thakurmaaswamiji.com/2021/03/ebook-Sri-Sri-Ramakrishna-Leela-Prasanga-Volume-2-Swami-Sardananda.html"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali Vol. 5",
+          "url": "https://www.thakurmaaswamiji.com/2021/08/ramakrishna-lila-prasanga-vol-v.html"
+        }
+      ],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Sri Ramakrishna and His Divine Play\" Great Master full text"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://englishbooks.rkmm.org/s/lsr/m/sri-ramakrishna-the-great-master",
+          "observation": "Official reader title resolves; text unavailable to parser."
+        },
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/greatmaster/greatmaster.html",
+          "observation": "HTTP 200 institutional HTML; 2.57 million parsed characters, Jagadananda translator/publisher preface and extensive chapter structure inspected. HTML has encoding/null-padding defects."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/greatmaster/greatmaster.html",
+          "label": "English — The Great Master",
+          "language": "English",
+          "edition": "Jagadananda translation, The Great Master",
+          "volume_coverage": "Work-level translation; chapter sequence extends through Guru/Devotees and appendix",
+          "access": "Free HTTP 200 HTML",
+          "completeness": "Extensive text present; final structural audit needed",
+          "rights": "Institutional host, no explicit redistribution license inspected",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "Translation discrepancy: canonical Divine Play is Chetanananda translation; existing English links are Jagadananda Great Master. Preserve attribution; cannot claim identical edition.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Ramakrishna",
+      "canonical_title": "Life of Sri Ramakrishna",
+      "original_title": "Life of Sri Ramakrishna",
+      "original_language": "English",
+      "english_title": "Life of Sri Ramakrishna",
+      "bengali_title": null,
+      "author": "Swami Nikhilananda",
+      "summary": null,
+      "sort_order": 2,
+      "book_id": 3,
+      "sheet_row": 4,
+      "baseline_links": [
+        {
+          "language": "English",
+          "label": "English 1",
+          "url": "https://www.estudantedavedanta.net/Life%20of%20Sri%20Ramakrishna.pdf"
+        },
+        {
+          "language": "English",
+          "label": "English 2",
+          "url": "https://lakshminarayanlenasia.com/articles/LifeRamakrishna.pdf"
+        },
+        {
+          "language": "English",
+          "label": "English 3",
+          "url": "https://lakshminarayanlenasia.com/wp-content/uploads/2015/07/LifeofSriRamakrishna.pdf"
+        }
+      ],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Life of Sri Ramakrishna\" Nikhilananda pdf"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/life-of-sri-ramakrishna-hb/1237499000010257405",
+          "observation": "Search result identifies Nikhilananda author and Gandhi foreword; storefront excluded."
+        },
+        {
+          "url": "https://www.estudantedavedanta.net/Life%20of%20Sri%20Ramakrishna.pdf",
+          "observation": "Direct local HTTP request returned 403 Cloudflare challenge, not a readable PDF."
+        },
+        {
+          "url": "https://lakshminarayanlenasia.com/articles/LifeRamakrishna.pdf",
+          "observation": "Web fetch failed. Search excerpt describes compiled work using Bengali sources, raising author/edition mismatch; not approved as Nikhilananda without title-page check."
+        }
+      ],
+      "candidates": [],
+      "outcome": "No newly approved complete free text. Baseline PDF access and attribution unresolved; storefront excluded.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Ramakrishna",
+      "canonical_title": "Sri Ramakrishna: A Biography",
+      "original_title": "Sri Ramakrishna: A Biography",
+      "original_language": "English",
+      "english_title": "Sri Ramakrishna: A Biography",
+      "bengali_title": null,
+      "author": "Swami Nikhilananda",
+      "summary": null,
+      "sort_order": 3,
+      "book_id": 4,
+      "sheet_row": 5,
+      "baseline_links": [
+        {
+          "language": "English",
+          "label": "English",
+          "url": "https://web.archive.org/web/20170220020231/https://www.ramakrishna.org/rmk_nik.htm"
+        }
+      ],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Sri Ramakrishna A Biography\" Nikhilananda full text"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://books.google.com/books/about/Sri_Ramakrishna_A_Biography.html?id=VvJVEAAAQBAJ",
+          "observation": "Publisher description: 2021, 186 pages, Gospel introduction plus After the Passing Away chapter. Bibliographic evidence only."
+        },
+        {
+          "url": "https://web.archive.org/web/20170220020231/https://www.ramakrishna.org/rmk_nik.htm",
+          "observation": "HTTP 200 archived institutional essay, 43,902 characters; begins as Town Hall centenary address, ends institutional copyright. It is a short biographical address, not demonstrated complete 186-page book."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Reject baseline archive as evidence of complete book: essay/edition mismatch. Complete free edition gap remains.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Ramakrishna",
+      "canonical_title": "The Life of Ramakrishna",
+      "original_title": "La vie de Ramakrishna",
+      "original_language": "French",
+      "english_title": "The Life of Ramakrishna",
+      "bengali_title": null,
+      "author": "Romain Rolland",
+      "summary": null,
+      "sort_order": 4,
+      "book_id": 5,
+      "sheet_row": 6,
+      "baseline_links": [
+        {
+          "language": "English",
+          "label": "English 1",
+          "url": "https://archive.org/details/in.ernet.dli.2015.54972"
+        },
+        {
+          "language": "English",
+          "label": "English 2",
+          "url": "https://estudantedavedanta.net/The_life_Ramakrishna_Rolland.pdf"
+        }
+      ],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Romain Rolland\" \"Life of Ramakrishna\" full text"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.54972",
+          "observation": "1931 English, Rolland, Advaita Ashrama; DLI/Delhi University provenance, 347 scanned pages; FULL TEXT/PDF links offered. Rights field explicitly Not Available; scan body not yet examined."
+        },
+        {
+          "url": "https://openlibrary.org/books/OL22645347M/The_life_of_Ramakrishna",
+          "observation": "Different later Advaita edition offers Borrow/Preview, not unrestricted complete text."
+        },
+        {
+          "url": "https://estudantedavedanta.net/The_life_Ramakrishna_Rolland.pdf",
+          "observation": "HTTP 403 Cloudflare challenge."
+        }
+      ],
+      "candidates": [],
+      "outcome": "DLI scan promising but rights and end-to-end completeness unresolved; borrowing/preview editions and blocked mirror excluded.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Ramakrishna",
+      "canonical_title": "Ramakrishna as We Saw Him",
+      "original_title": "Ramakrishna as We Saw Him",
+      "original_language": "English",
+      "english_title": "Ramakrishna as We Saw Him",
+      "bengali_title": "শ্রীরামকৃষ্ণকে যেরূপ দেখিয়াছি",
+      "author": "Swami Chetanananda",
+      "summary": null,
+      "sort_order": 5,
+      "book_id": 6,
+      "sheet_row": 7,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Ramakrishna as We Saw Him\" Chetanananda full text pdf"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://sfvedanta.org/books/ramakrishna-as-we-saw-him/",
+          "observation": "Institutional store: Chetanananda editor/translator, 495 pages, revised 45 reminiscences; sales only."
+        }
+      ],
+      "candidates": [],
+      "outcome": "No complete free edition verified; bookstore excluded.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Ramakrishna",
+      "canonical_title": "Sri Ramakrishna: Life and Message",
+      "original_title": "परमहंस चरित",
+      "original_language": "Hindi",
+      "english_title": "Sri Ramakrishna: Life and Message",
+      "bengali_title": null,
+      "author": "Swami Vijnanananda",
+      "summary": null,
+      "sort_order": 6,
+      "book_id": 7,
+      "sheet_row": 8,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Sri Ramakrishna Life and Message\" Vijnanananda pdf Paramahamsa"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://ebooks.advaitaashrama.org/product/ramakrishna-life-and-message",
+          "observation": "Publisher listing identifies Vijnanananda Hindi Paramahamsa Charit translation, 248 pages, paid ebook links. Open failed; indexed description inspected."
+        }
+      ],
+      "candidates": [],
+      "outcome": "No complete free text verified; English/Hindi variant researched.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Ramakrishna",
+      "canonical_title": "Sri Ramakrishna: God of All",
+      "original_title": "Sri Ramakrishna: God of All",
+      "original_language": "English",
+      "english_title": "Sri Ramakrishna: God of All",
+      "bengali_title": null,
+      "author": "Swami Atmasthananda",
+      "summary": null,
+      "sort_order": 7,
+      "book_id": 8,
+      "sheet_row": 9,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Sri Ramakrishna God of All\" Atmasthananda full text"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://books.google.com/books/about/Sri_Ramakrishna_God_of_All.html?id=9XzEDgAAQBAJ",
+          "observation": "Google Books publisher description: English translation by Sunirmalananda of Ek Natun Manush, six essays by Atmasthananda. Selected pages."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Preview excluded; no complete free text verified.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Ramakrishna",
+      "canonical_title": "নিজমুখে শ্রীরামকৃষ্ণের জীবন ও উপলব্ধি",
+      "original_title": "নিজমুখে শ্রীরামকৃষ্ণের জীবন ও উপলব্ধি",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "নিজমুখে শ্রীরামকৃষ্ণের জীবন ও উপলব্ধি",
+      "author": "Gen",
+      "summary": null,
+      "sort_order": 8,
+      "book_id": 9,
+      "sheet_row": 10,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"নিজমুখে শ্রীরামকৃষ্ণের জীবন ও উপলব্ধি\"",
+        "\"Nijmukhe\" \"Ramakrishna\"",
+        "\"নিজমুখে\" \"pdf\""
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/nijamukhe-sri-ramakrishner-jivan-o-upalabdhi/1237499000011856245",
+          "observation": "Institutional store: author Abhaya Dasgupta, Bengali, 246 pages, Golpark. Udbodhan result 286 pages. Catalog Gen author incomplete."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Storefront excluded. Author/page-count editorial discrepancy; no complete free text.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Ramakrishna",
+      "canonical_title": "ব্রাহ্ম ও খ্রিস্টান অনুরাগীদের চোখে শ্রীরামকৃষ্ণ",
+      "original_title": "ব্রাহ্ম ও খ্রিস্টান অনুরাগীদের চোখে শ্রীরামকৃষ্ণ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "ব্রাহ্ম ও খ্রিস্টান অনুরাগীদের চোখে শ্রীরামকৃষ্ণ",
+      "author": "Nanda Mukhopadhyaya",
+      "summary": null,
+      "sort_order": 9,
+      "book_id": 10,
+      "sheet_row": 11,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"ব্রাহ্ম ও খ্রিস্টান অনুরাগীদের চোখে শ্রীরামকৃষ্ণ\"",
+        "\"Brahma O Khristan\" Ramakrishna",
+        "Brahmo Christian admirers Ramakrishna Nanda Mukhopadhyay book",
+        "\"ব্রাহ্ম\" \"খ্রিস্টান\" \"নন্দ\" \"শ্রীরামকৃষ্ণ\"",
+        "\"Brahma\" \"Khristan\" \"Anuragider\""
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://istore.chennaimath.org/products/sri-ramakrishna-in-the-eyes-of-brahmo-and-christian-admirers/3690041000102327584",
+          "observation": "Institutional store: Nanda Mookerjee, English, 141 pages, Golpark. Strong English counterpart; Bengali edition not confirmed."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Storefront excluded; no free complete text; catalog language/title ambiguity.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Ramakrishna",
+      "canonical_title": "রামকৃষ্ণের অন্ত্যলীলা",
+      "original_title": "রামকৃষ্ণের অন্ত্যলীলা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "রামকৃষ্ণের অন্ত্যলীলা",
+      "author": "Prabhananda",
+      "summary": null,
+      "sort_order": 10,
+      "book_id": 11,
+      "sheet_row": 12,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"রামকৃষ্ণের অন্ত্যলীলা\" Prabhananda pdf",
+        "Ramakrishner Antyalila Prabhananda free pdf",
+        "\"শ্রীরামকৃষ্ণের অন্ত্যলীলা\" pdf",
+        "\"Sri Ramakrishner Antyalila\" Prabhananda Udbodhan"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://istore.chennaimath.org/products/Sri_Ramakrishner_Antyalila_Vol_1_Bengali_Deluxe/3690041000559849669",
+          "observation": "Official indexed store identifies Prabhananda, Bengali vol1 163 pages; open timeout. Udbodhan vol2 and institutional booklist establish two-volume work. Scholarly citation PDFs are not book."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Both volumes remain gap; commercial and citation-only sources excluded.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Ramakrishna",
+      "canonical_title": "শ্রীরামকৃষ্ণ পুঁথি",
+      "original_title": "শ্রীরামকৃষ্ণ পুঁথি",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "শ্রীরামকৃষ্ণ পুঁথি",
+      "author": "Akshay Kumar Ghosh",
+      "summary": null,
+      "sort_order": 11,
+      "book_id": 12,
+      "sheet_row": 13,
+      "baseline_links": [
+        {
+          "language": "Bengali",
+          "label": "Bengali",
+          "url": "https://www.ramakrishnavivekananda.info/banglabooks/srisriramakrishnapunthi/srkpunthi_contents.htm"
+        }
+      ],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"শ্রীরামকৃষ্ণ পুঁথি\" Akshay Sen Ghosh"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/banglabooks/srisriramakrishnapunthi/srkpunthi_contents.htm",
+          "observation": "HTTP200 contents lists five parts through final Mathasthapan; author explicitly Akshay Kumar Sen, not catalog Ghosh. Chapter1_01 and4_22 fetched as substantial Bengali verse. Final5_07 web fetch blocked/unavailable."
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/banglabooks/srisriramakrishnapunthi/1_01_prabhujanma.htm",
+          "observation": "Bengali verse body present, no login."
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/banglabooks/srisriramakrishnapunthi/4_22_brahmana.htm",
+          "observation": "Substantial late-part chapter fetched."
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/banglabooks/srisriramakrishnapunthi/5_07_mathasthapan.htm",
+          "observation": "Web fetch inaccessible; not claimed verified."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Strong Bengali candidate, author correction required; complete final-chapter/access audit pending.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Ramakrishna",
+      "canonical_title": "শ্রীরামকৃষ্ণ লীলাকথা",
+      "original_title": "শ্রীরামকৃষ্ণ লীলাকথা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "শ্রীরামকৃষ্ণ লীলাকথা",
+      "author": "Shashankbhushan Bandopadhyay",
+      "summary": null,
+      "sort_order": 12,
+      "book_id": 13,
+      "sheet_row": 14,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"শ্রীরামকৃষ্ণ লীলাকথা\" শশাঙ্কভূষণ pdf",
+        "Sri Ramakrishna Lilakatha Shashankabhushan Bandopadhyay book"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://udbodhan.org/product/%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%95%E0%A7%83%E0%A6%B7%E0%A7%8D%E0%A6%A3-%E0%A6%B2%E0%A7%80%E0%A6%B2%E0%A6%BE-%E0%A6%95%E0%A6%A5%E0%A6%BE-sri-ramakrishna-lila-ka",
+          "observation": "Official Udbodhan sales page matches Shashankabhushan Bandyopadhyay/Bengali; Peek inside is preview."
+        }
+      ],
+      "candidates": [],
+      "outcome": "No complete free text verified; sale/preview excluded.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Ramakrishna",
+      "canonical_title": "শ্রীরামকৃষ্ণ লীলামৃত",
+      "original_title": "শ্রীরামকৃষ্ণ লীলামৃত",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "শ্রীরামকৃষ্ণ লীলামৃত",
+      "author": "Vaikunthanath Sanyal",
+      "summary": null,
+      "sort_order": 13,
+      "book_id": 14,
+      "sheet_row": 15,
+      "baseline_links": [
+        {
+          "language": "Bengali",
+          "label": "Bengali",
+          "url": "https://archive.org/stream/in.ernet.dli.2015.456946"
+        }
+      ],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"শ্রীরামকৃষ্ণ লীলামৃত\" বৈকুণ্ঠনাথ pdf"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://archive.org/metadata/in.ernet.dli.2015.456946",
+          "observation": "HTTP200 archive metadata: Sanyal Baikunthanath, Bengali,1936,225pages,Nabapatra,Tripura library. DLI rights states In Public Domain. Direct djvu.txt HTTP200,517233 chars; first title/author and final closing prose inspected."
+        },
+        {
+          "url": "https://archive.org/download/in.ernet.dli.2015.456946/2015.456946.Sri-Sri-Ramkrishna-Lilamrita_djvu.txt",
+          "observation": "Body first/end sampled; Bengali OCR noisy."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.456946",
+          "label": "Bengali",
+          "language": "Bengali",
+          "edition": "1936 cited, Nabapatra reprint",
+          "volume_coverage": "Single work",
+          "access": "Free OCR body HTTP200",
+          "completeness": "225-page metadata; substantial beginning/end checked; scan audit pending",
+          "rights": "DLI expressly claims In Public Domain; not independently adjudicated",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "Bengali DLI scan candidate, substantial body and closing present; scan page-level completeness not fully audited.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Ramakrishna",
+      "canonical_title": "শ্রীরামকৃষ্ণের অনুধ্যান",
+      "original_title": "শ্রীরামকৃষ্ণের অনুধ্যান",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "শ্রীরামকৃষ্ণের অনুধ্যান",
+      "author": "Mahendranath Dutta",
+      "summary": null,
+      "sort_order": 14,
+      "book_id": 15,
+      "sheet_row": 16,
+      "baseline_links": [
+        {
+          "language": "Bengali",
+          "label": "Bengali",
+          "url": "https://archive.org/stream/in.ernet.dli.2015.298301"
+        }
+      ],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"শ্রীরামকৃষ্ণের অনুধ্যান\" pdf",
+        "\"Sri Ramakrishner Anudhyan\" Mahendranath"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.298301",
+          "observation": "DLI metadata: Mahendranath Dutta, Bengali second edition1954,230pages. Direct djvu.txt HTTP200,265913characters; title/publisher, chapter text and back catalog inspected. Front matter reserves publisher rights; metadata no license."
+        },
+        {
+          "url": "https://archive.org/download/in.ernet.dli.2015.298301/2015.298301.Sri-Sri_djvu.txt",
+          "observation": "Body first/end sampled; second-edition title/author and publisher rights noticed."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Substantial Bengali scan; rights unresolved, hold from new approval.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Ramakrishna",
+      "canonical_title": "সমসাময়িক দৃষ্টিতে শ্রীরামকৃষ্ণ",
+      "original_title": "সমসাময়িক দৃষ্টিতে শ্রীরামকৃষ্ণ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "সমসাময়িক দৃষ্টিতে শ্রীরামকৃষ্ণ",
+      "author": "Gen",
+      "summary": null,
+      "sort_order": 15,
+      "book_id": 16,
+      "sheet_row": 17,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"সমসাময়িক দৃষ্টিতে শ্রীরামকৃষ্ণ\" pdf",
+        "Samakalin Drishtite Sri Ramakrishna book Samasamayik",
+        "\"সমসাময়িক দৃষ্টিতে\" রামকৃষ্ণ বই"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://baatighar.com/shop/8172939140-29720",
+          "observation": "Retail record: Samasamayik Drishtite Sri Ramakrishna Paramahamsa, Brajendranath Bandyopadhyay/Sajanikanta Das,144pages,Mitra Ghosh. Baseline Gen incomplete."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Sales only; no full free text; possible expanded title/editor identity recorded.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Sarada Devi",
+      "canonical_title": "Holy Mother Sri Sarada Devi",
+      "original_title": "শ্রীমা সারদাদেবী",
+      "original_language": "Bengali",
+      "english_title": "Holy Mother Sri Sarada Devi",
+      "bengali_title": "শ্রীমা সারদাদেবী",
+      "author": "Swami Gambhirananda",
+      "summary": null,
+      "sort_order": 16,
+      "book_id": 17,
+      "sheet_row": 18,
+      "baseline_links": [
+        {
+          "language": "English",
+          "label": "English",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/holy-mother-sri-sarada-devi/holy-mother-sri-sarada-devi.html"
+        }
+      ],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Holy Mother Sri Sarada Devi\" Gambhirananda full text"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/holy-mother-sri-sarada-devi/holy-mother-sri-sarada-devi.html",
+          "observation": "Institutional HTTP200 English HTML; Gambhirananda/Sri Ramakrishna Math imprint; chapter sequence1–33 through Valediction, Chronology and Genealogy; substantial narrative present."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/holy-mother-sri-sarada-devi/holy-mother-sri-sarada-devi.html",
+          "label": "English",
+          "language": "English",
+          "volume_coverage": "Single biography",
+          "access": "HTTP200 free institutional HTML",
+          "completeness": "33 chapters and ending chronology inspected",
+          "rights": "RKMVERI institutional host; no explicit reuse license inspected; link only",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "English institutional full-text candidate; Bengali original gap.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Sarada Devi",
+      "canonical_title": "The Gospel of the Holy Mother Sri Sarada Devi",
+      "original_title": "শ্রীশ্রীমায়ের কথা",
+      "original_language": "Bengali",
+      "english_title": "The Gospel of the Holy Mother Sri Sarada Devi",
+      "bengali_title": "শ্রীশ্রীমায়ের কথা",
+      "author": "A Compilation",
+      "summary": null,
+      "sort_order": 17,
+      "book_id": 18,
+      "sheet_row": 19,
+      "baseline_links": [
+        {
+          "language": "English",
+          "label": "English",
+          "url": "https://www.celextel.org/sri-sarada-devi/gospel-of-holy-mother-sarada-devi/"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali",
+          "url": "https://cs.rkmvu.ac.in/~tamal/sarada/mayer_katha.html"
+        }
+      ],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"The Gospel of the Holy Mother\" Sarada Devi full text",
+        "\"শ্রীশ্রীমায়ের কথা\" free পাঠ"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/sarada/mayer_katha.html",
+          "observation": "HTTP200 Bengali HTML,779049chars; Akhanda edition, two parts and final Kshirodbala Ray narrative. Disclaimer explicitly AI-assisted conversion; hard copy authoritative. Celextel direct HTTP520 despite indexed complete-translation contents; copyright Chennai Math acknowledged, no permission demonstrated."
+        },
+        {
+          "url": "https://www.celextel.org/sri-sarada-devi/gospel-of-holy-mother-sarada-devi/",
+          "observation": "LocalHTTP520; search cache provides contents and copyright acknowledgement, not current complete access."
+        },
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-gospel-of-the-holy-mother/the-gospel-of-the-holy-mother.html",
+          "observation": "English institutional alternative fetched; detailed completeness remains to validate."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/sarada/mayer_katha.html",
+          "label": "Bengali",
+          "language": "Bengali",
+          "volume_coverage": "Bengali Akhanda parts1–2",
+          "access": "HTTP200 free institutional HTML",
+          "completeness": "Substantial text from publisher front matter through final account; AI conversion caveat",
+          "rights": "RKMVERI institutional host; no explicit reuse license inspected; link only",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "Bengali substantial full-work candidate with transcription caveat; English institutional alternative inspected.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Sarada Devi",
+      "canonical_title": "Sri Sarada Devi and Her Divine Play",
+      "original_title": "Sri Sarada Devi and Her Divine Play",
+      "original_language": "English",
+      "english_title": "Sri Sarada Devi and Her Divine Play",
+      "bengali_title": null,
+      "author": "Swami Chetanananda",
+      "summary": null,
+      "sort_order": 18,
+      "book_id": 19,
+      "sheet_row": 20,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Sri Sarada Devi and Her Divine Play\" Chetanananda free text pdf"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.vedanta.com/store/Sarada_Devi_and_Her_Divine_Play.htm",
+          "observation": "Institutional store/catalog identifies Chetanananda biography876pages125illustrations. Search trial Kindle claim excluded."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Store/trial/citation-only matches excluded; no complete free edition verified.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Sarada Devi",
+      "canonical_title": "Sri Sarada Devi: The Holy Mother",
+      "original_title": "Sri Sarada Devi: The Holy Mother",
+      "original_language": "English",
+      "english_title": "Sri Sarada Devi: The Holy Mother",
+      "bengali_title": null,
+      "author": "Swami Tapasyananda",
+      "summary": null,
+      "sort_order": 19,
+      "book_id": 20,
+      "sheet_row": 21,
+      "baseline_links": [
+        {
+          "language": "English",
+          "label": "English",
+          "url": "https://www.estudantedavedanta.net/Sri_Sarada_Devi_the_holy_mother_Tapasyananda.pdf"
+        }
+      ],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Sri Sarada Devi\" Tapasyananda pdf full"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://openlibrary.org/books/OL19941899M/Sri_Sarada_Devi",
+          "observation": "English1986,332pages bibliographic record only. Baseline PDF directHTTP403. Publisher description distinguishes1940 life+conversations from later6th edition removing conversations and adding40pages."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Blocked PDF and edition ambiguity; no newly approved full text.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Sarada Devi",
+      "canonical_title": "A Short Life of the Holy Mother",
+      "original_title": "A Short Life of the Holy Mother",
+      "original_language": "English",
+      "english_title": "A Short Life of the Holy Mother",
+      "bengali_title": null,
+      "author": "Swami Pavitrananda",
+      "summary": null,
+      "sort_order": 20,
+      "book_id": 21,
+      "sheet_row": 22,
+      "baseline_links": [
+        {
+          "language": "English",
+          "label": "English",
+          "url": "https://play.google.com/store/books/details/Swami_Pavitrananda_A_Short_Life_of_The_Holy_Mother?id=TDY9DQAAQBAJ"
+        }
+      ],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"A Short Life of the Holy Mother\" Pavitrananda full text"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://media.vivekavani.com/wp-content/uploads/2021/01/A-Short-Life-of-The-Holy-Mother.pdf",
+          "observation": "93-page PDF inspected title/Pavitrananda,1942 preface;TOC15chapters+StrayTalks; final50th saying at printed96 present. Complete narrative structure. Mirror authorization/license not located."
+        },
+        {
+          "url": "https://play.google.com/store/books/details/Swami_Pavitrananda_A_Short_Life_of_The_Holy_Mother?id=TDY9DQAAQBAJ",
+          "observation": "Official publisher GooglePlay listing explicitly Get for free,68ebookpages. Full acquired reader body not tested; cannot certify completeness from price/URL alone."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Official free ebook acquisition listing verified;93pageVivekavaniPDFfullstructureverified,mirrorrightsunclear. GooglePlaybodyreadbackstillneeded.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Sarada Devi",
+      "canonical_title": "Sri Sarada Devi: A Biography in Pictures",
+      "original_title": "Sri Sarada Devi: A Biography in Pictures",
+      "original_language": "English",
+      "english_title": "Sri Sarada Devi: A Biography in Pictures",
+      "bengali_title": null,
+      "author": "A Compilation",
+      "summary": null,
+      "sort_order": 21,
+      "book_id": 22,
+      "sheet_row": 23,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Sri Sarada Devi A Biography in Pictures\" free pdf"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.vedanta.com/store/sarada_devi_bio_pictures.htm",
+          "observation": "Institutional sales: Editors Advaita Ashrama,112pages177photographs; OpenLibrary1988edition107pages locate-only."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Commercial/locate-only matches excluded; no complete free album.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Sarada Devi",
+      "canonical_title": "মা ও জয়রামবাটী",
+      "original_title": "মা ও জয়রামবাটী",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "মা ও জয়রামবাটী",
+      "author": "Parameshwarananda",
+      "summary": null,
+      "sort_order": 22,
+      "book_id": 23,
+      "sheet_row": 24,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"মা ও জয়রামবাটী\" পরমেশ্বরানন্দ pdf",
+        "\"Ma O Jayrambati\" Parameswarananda pdf",
+        "\"মা ও জয়রামবাটী\" বই"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://media.belurmath.org/inspiration-sri-ma-sarada-devi-17-9034/",
+          "observation": "Official Belur excerpt cites Swami Parameshwarananda,SriSriMaOJayrambati,MatriMandir1971p140; bilingual single quotation."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Citation/excerpt excluded; no full free text.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Sarada Devi",
+      "canonical_title": "মাতৃদর্শন",
+      "original_title": "মাতৃদর্শন",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "মাতৃদর্শন",
+      "author": "Chetanananda",
+      "summary": null,
+      "sort_order": 23,
+      "book_id": 24,
+      "sheet_row": 25,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"মাতৃদর্শন\" চেতনানন্দ pdf"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://granthagara.com/boi/312423-matridarshan-ed-2/",
+          "observation": "Actual page author JyotishChandraRoy220pages; wrong book despite exact title. Official Udbodhan Chetanananda book description47reminiscences."
+        },
+        {
+          "url": "https://udbodhan.org/product/%E0%A6%AE%E0%A6%BE%E0%A6%A4%E0%A7%83%E0%A6%A6%E0%A6%B0%E0%A7%8D%E0%A6%B6%E0%A6%A8-matri-darshan",
+          "observation": "Correct Chetanananda book47reminiscences; sales only."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Reject homonym Matridarshan JyotishChandraRoy; official store only for correct book.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Sarada Devi",
+      "canonical_title": "My Blessed Days with Holy Mother",
+      "original_title": "মাতৃসান্নিধ্যে",
+      "original_language": "Bengali",
+      "english_title": "My Blessed Days with Holy Mother",
+      "bengali_title": "মাতৃসান্নিধ্যে",
+      "author": "Swami Ishanananda",
+      "summary": null,
+      "sort_order": 24,
+      "book_id": 25,
+      "sheet_row": 26,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"My Blessed Days with Holy Mother\" Ishanananda pdf",
+        "\"মাতৃসান্নিধ্যে\" ঈশানানন্দ pdf"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://shopref.advaitaashrama.org/product/my-blessed-days-with-holy-mother/",
+          "observation": "Publisher indexed store identifies second English edition216pages,translation of Matrisannidhye,Ishanananda. Fetch error. Official Udbodhan audiobook final-part result exists, but audio outside full-text deliverable."
+        }
+      ],
+      "candidates": [],
+      "outcome": "No complete free text verified; publisher store and audiobook excerpt/series excluded from text candidates.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Sarada Devi",
+      "canonical_title": "মায়ের চিঠি",
+      "original_title": "মায়ের চিঠি",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "মায়ের চিঠি",
+      "author": "Holy Mother",
+      "summary": null,
+      "sort_order": 25,
+      "book_id": 26,
+      "sheet_row": 27,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"মায়ের চিঠি\" সারদা pdf",
+        "\"Mayer Chithi\" Sarada book"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://sriramakrishna.org/product-category/sri-sarada-devi/?product_count=20&product_order=desc&product_orderby=popularity&product_view=list",
+          "observation": "Official Golpark store lists MayerChithi edited SwamiPrabhananda,180rupees. Other homonym ParitoshBarai novel unrelated; excluded."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Only official sales reference; no complete free letters collection verified.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Sarada Devi",
+      "canonical_title": "মায়ের পদপ্রান্তে ১-৪",
+      "original_title": "মায়ের পদপ্রান্তে ১-৪",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "মায়ের পদপ্রান্তে ১-৪",
+      "author": "Purnananda",
+      "summary": null,
+      "sort_order": 26,
+      "book_id": 27,
+      "sheet_row": 28,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"মায়ের পদপ্রান্তে\" \"১\" pdf",
+        "\"Mayer Padaprante\" volume free pdf",
+        "\"মায়ের পদপ্রান্তে\" \"দ্বিতীয়\" pdf",
+        "\"Mayer Padaprante\" \"3\" pdf archive",
+        "\"Mayer Padaprante\" \"4\" pdf archive",
+        "\"মায়ের পদপ্রান্তে\" \"তৃতীয়\" \"চতুর্থ\" বই pdf"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/sri-sri-mayer-padaprante/1237499000019160637",
+          "observation": "Official set5volumes1229pages compiled/edited Purnatmananda. Older institutional catalog1–4. Vol4 official378pages48reminiscences21letters; vol1/2/3 public results stores or secondary citations, no verified full texts."
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/products/sri-sri-mayer-padaprante-vol-4/1237499000010648909",
+          "observation": "Volume4 correct institutional sales listing; excluded as full text."
+        },
+        {
+          "url": "https://mumbairkm.org/wp-content/uploads/2021/06/BENGALI-BOOK-LIST.pdf",
+          "observation": "Indexed institutional catalog lists all4volumes and Purnatmananda; catalog only."
+        }
+      ],
+      "candidates": [],
+      "outcome": "No public complete1–4 found. Vol5 excluded from canonical coverage. Baseline Purnananda vs publisherPurnatmananda discrepancy. Private matches coordinator-confirmed, restricted and withheld.",
+      "volume_audit": [
+        {
+          "volume": 1,
+          "language": "Bengali",
+          "public_complete_text": "not verified",
+          "private_match": "Restricted candidate confirmed by coordinator; no public sharing authorization"
+        },
+        {
+          "volume": 2,
+          "language": "Bengali",
+          "public_complete_text": "not verified",
+          "private_match": "Restricted candidate confirmed by coordinator; no public sharing authorization"
+        },
+        {
+          "volume": 3,
+          "language": "Bengali",
+          "public_complete_text": "not verified",
+          "private_match": "Restricted candidate confirmed by coordinator; no public sharing authorization"
+        },
+        {
+          "volume": 4,
+          "language": "Bengali",
+          "public_complete_text": "not verified",
+          "private_match": "Restricted candidate confirmed by coordinator; no public sharing authorization"
+        }
+      ],
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Sarada Devi",
+      "canonical_title": "মায়ের মহিমায় উদ্ভাসিত দক্ষিণাপথ",
+      "original_title": "মায়ের মহিমায় উদ্ভাসিত দক্ষিণাপথ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "মায়ের মহিমায় উদ্ভাসিত দক্ষিণাপথ",
+      "author": "Prabhananda",
+      "summary": null,
+      "sort_order": 27,
+      "book_id": 28,
+      "sheet_row": 29,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"মায়ের মহিমায় উদ্ভাসিত দক্ষিণাপথ\" pdf"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://udbodhan.org/product/%E0%A6%AE%E0%A6%BE%E0%A6%AF%E0%A6%BC%E0%A7%87%E0%A6%B0-%E0%A6%AE%E0%A6%B9%E0%A6%BF%E0%A6%AE%E0%A6%BE%E0%A7%9F-%E0%A6%89%E0%A6%A6%E0%A7%8D%E0%A6%AD%E0%A6%BE%E0%A6%B8%E0%A6%BF%E0%A6%A4-%E0%A6%A6/",
+          "observation": "Official Udbodhan76page sales listing, transliteration MayerMahimaUdbhasitDakshinapatha. No free reader."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Sales only; no complete free text.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Sarada Devi",
+      "canonical_title": "শ্রীশ্রী মায়ের জীবনকথা",
+      "original_title": "শ্রীশ্রী মায়ের জীবনকথা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "শ্রীশ্রী মায়ের জীবনকথা",
+      "author": "Bhumananda",
+      "summary": null,
+      "sort_order": 28,
+      "book_id": 29,
+      "sheet_row": 30,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"শ্রীশ্রী মায়ের জীবনকথা\" ভূমানন্দ pdf",
+        "\"Sri Sri Mayer Jiban Katha\" Bhumananda pdf",
+        "\"Sri Sri Mayer Jivankatha\" Bhumananda",
+        "\"শ্রীশ্রীমায়ের জীবনকথা\" ভূমানন্দ"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.vivekanandacentre.com/pdf/brochure/brochure-2017.pdf",
+          "observation": "Institutional PDF cites Bhumananda,SriSriMayerJivankatha,PelicanPressCalcutta2001,p143–44; not whole book. Library booklist also identifies Bhumananda. Webopenfailedcontentlengthtool-limit;citationinspectedinsearchindexonly."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Citation-only source rejected as full text; no complete free edition.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Sarada Devi",
+      "canonical_title": "শ্রীশ্রী সারদাদেবী",
+      "original_title": "শ্রীশ্রী সারদাদেবী",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "শ্রীশ্রী সারদাদেবী",
+      "author": "Akshay Chaitanya",
+      "summary": null,
+      "sort_order": 29,
+      "book_id": 30,
+      "sheet_row": 31,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"শ্রীশ্রী সারদাদেবী\" অক্ষয়চৈতন্য pdf",
+        "\"Sri Sri Sarada Devi\" \"Akshay\" pdf",
+        "\"শ্রীশ্রীসারদাদেবী\" \"অক্ষয়চৈতন্য\""
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.thakurmaaswamiji.com/p/blog-page_77.html",
+          "observation": "Public index lists SriSriSaradaDevi by BrahmachariAkshaychaitanya. Institutional Nibodhata and other citations confirm title/author; index alone not body/authorization evidence."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Index candidate requires linked-body/rights verification; no approved complete public text yet.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Sri Sarada Devi",
+      "canonical_title": "শ্রীশ্রীমায়ের বাড়ী ও উদ্বোধন কার্যালয়",
+      "original_title": "শ্রীশ্রীমায়ের বাড়ী ও উদ্বোধন কার্যালয়",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "শ্রীশ্রীমায়ের বাড়ী ও উদ্বোধন কার্যালয়",
+      "author": "Gen",
+      "summary": null,
+      "sort_order": 30,
+      "book_id": 31,
+      "sheet_row": 32,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"শ্রীশ্রীমায়ের বাড়ী ও উদ্বোধন\" pdf",
+        "\"Sr Sri Mayer Bari\" Udbodhan Karyalaya book",
+        "\"শ্রীশ্রীমায়ের বাড়ি\" \"উদ্বোধন কার্যালয়\" বই",
+        "\"শ্রীশ্রীমায়ের বাড়ী ও উদ্বোধন কার্যালয়\"",
+        "\"Sri Sri Mayer Bari\" book Udbodhan"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/sri-sri-mayer-bari-o-udbodhan-karyalay-bengali/1237499000010665869",
+          "observation": "Official store identifies Bengali2024,32pages,Udbodhan,authorNA. Official house history webpage is related but not established full32page booklet."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Store/history page excluded as complete book; free-text gap.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "The Complete Works of Swami Vivekananda",
+      "original_title": "The Complete Works of Swami Vivekananda",
+      "original_language": "not clear",
+      "english_title": "The Complete Works of Swami Vivekananda",
+      "bengali_title": "স্বামী বিবেকানন্দের বাণী ও রচনা",
+      "author": "Swami Vivekananda",
+      "summary": null,
+      "sort_order": 31,
+      "book_id": 32,
+      "sheet_row": 33,
+      "baseline_links": [
+        {
+          "language": "English",
+          "label": "English",
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/complete_works.htm"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali Vol. 1",
+          "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_01.html"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali Vol. 2",
+          "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_02.html"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali Vol. 3",
+          "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_03.html"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali Vol. 4",
+          "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_04.html"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali Vol. 5",
+          "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_05.html"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali Vol. 6",
+          "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_06.html"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali Vol. 7",
+          "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_07.html"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali Vol. 8",
+          "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_08.html"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali Vol. 9",
+          "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_09.html"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali Vol. 10",
+          "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_10.html"
+        }
+      ],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Complete Works of Swami Vivekananda\" full text"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/complete_works.htm",
+          "observation": "Index lists9Englishvolumes plus Unpublished/Appendices; master index detailed. English Wikisource whole-work page explicitly incomplete/fidelity doubts, rejected as complete corpus."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Nine-volume index candidate; full-volume body audit not completed. Bengali10 baseline volumes require health/coverage audit.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "Raja Yoga",
+      "original_title": "Raja Yoga",
+      "original_language": "English",
+      "english_title": "Raja Yoga",
+      "bengali_title": "রাজযোগ",
+      "author": "Swami Vivekananda",
+      "summary": null,
+      "sort_order": 32,
+      "book_id": 33,
+      "sheet_row": 34,
+      "baseline_links": [
+        {
+          "language": "English",
+          "label": "English",
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/preface.htm"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali",
+          "url": "https://bn.wikisource.org/wiki/%E0%A6%B0%E0%A6%9A%E0%A6%A8%E0%A6%BE%3A%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%AF%E0%A7%8B%E0%A6%97"
+        }
+      ],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Raja Yoga\" Vivekananda full text Bengali রাজযোগ"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/raja-yoga_contents.htm",
+          "observation": "All15linked pages HTTP200 substantial text:preface,8narrative chapters,Patanjali introduction+4chapters,appendix. Body starts/end captured. Baseline Bengali Wikisource is edition-disambiguation metadata, not text."
+        },
+        {
+          "url": "https://bn.wikisource.org/wiki/%E0%A6%B0%E0%A6%9A%E0%A6%A8%E0%A6%BE%3A%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%AF%E0%A7%8B%E0%A6%97",
+          "observation": "Redirect normalizes colon; page lists1908/1935/1949editions, no book body."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/raja-yoga_contents.htm",
+          "language": "English",
+          "label": "English",
+          "edition": "Complete Works online text",
+          "volume_coverage": "Complete named work within CWvolume1",
+          "access": "Free HTML; all linked chapters HTTP200",
+          "completeness": "15pages including Patanjali4chapters and appendix",
+          "rights": "Vivekananda original historical text; no new reuse license inferred for editions. Public linking candidate only.",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "English full-book candidate; Bengali baseline metadata link insufficient. SixLessons/SaralRajyog not equivalent whole book.",
+      "checked_date": "2026-10-15",
+      "linked_page_checks": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/preface.htm",
+          "label": "Preface",
+          "status": 200,
+          "text_chars": 4971
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/introductory.htm",
+          "label": "Introductory",
+          "status": 200,
+          "text_chars": 23412
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/the_first_steps.htm",
+          "label": "The\nFirst Steps",
+          "status": 200,
+          "text_chars": 18361
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/prana.htm",
+          "label": "Prana",
+          "status": 200,
+          "text_chars": 25763
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/the_psychic_prana.htm",
+          "label": "The\nPsychic Prana",
+          "status": 200,
+          "text_chars": 11247
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/the_control_of_psychic_prana.htm",
+          "label": "The\nControl of\nPsychic Prana",
+          "status": 200,
+          "text_chars": 9135
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/pratyahara_and_dharana.htm",
+          "label": "Pratyahara\nand Dharana",
+          "status": 200,
+          "text_chars": 14601
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/dhyana_and_samadhi.htm",
+          "label": "Dhyana\nand Samadhi",
+          "status": 200,
+          "text_chars": 19064
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/raja-yoga_in_brief.htm",
+          "label": "Raja-Yoga\nin brief",
+          "status": 200,
+          "text_chars": 11190
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/introduction.htm",
+          "label": "Introduction",
+          "status": 200,
+          "text_chars": 9797
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/concentration_its_spiritual_uses.htm",
+          "label": "Concentration:\nIts spiritual uses",
+          "status": 200,
+          "text_chars": 62498
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/concentration_its_practice.htm",
+          "label": "Concentration:\nIts\npractice",
+          "status": 200,
+          "text_chars": 59205
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/powers.htm",
+          "label": "Powers",
+          "status": 200,
+          "text_chars": 26865
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/independence.htm",
+          "label": "Independence",
+          "status": 200,
+          "text_chars": 25459
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/appendix.htm",
+          "label": "Appendix",
+          "status": 200,
+          "text_chars": 9932
+        }
+      ]
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "Karma Yoga",
+      "original_title": "Karma Yoga",
+      "original_language": "English",
+      "english_title": "Karma Yoga",
+      "bengali_title": "কর্মযোগ",
+      "author": "Swami Vivekananda",
+      "summary": null,
+      "sort_order": 33,
+      "book_id": 34,
+      "sheet_row": 35,
+      "baseline_links": [
+        {
+          "language": "English",
+          "label": "English",
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/karma-yoga/effect_on_character.htm"
+        },
+        {
+          "language": "Bengali",
+          "label": "Bengali",
+          "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_01.html"
+        }
+      ],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Karma Yoga\" Vivekananda full text কর্মযোগ"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/karma-yoga/karma-yoga_contents.htm",
+          "observation": "All8canonical chapters HTTP200,15,838–29,425characters,first and final paragraphs inspected. SacredTexts1921 edition also indexed with public-domain claim."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/karma-yoga/karma-yoga_contents.htm",
+          "language": "English",
+          "label": "English",
+          "edition": "Complete Works online text",
+          "volume_coverage": "Complete named work within CWvolume1",
+          "access": "Free HTML; all linked chapters HTTP200",
+          "completeness": "8canonical chapters",
+          "rights": "Vivekananda original historical text; no new reuse license inferred for editions. Public linking candidate only.",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "English full-book contents candidate; private Office falsepositive rejected by coordinator; Bengali source baseline requires coverage audit.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "Jnana Yoga",
+      "original_title": "Jnana Yoga",
+      "original_language": "English",
+      "english_title": "Jnana Yoga",
+      "bengali_title": "জ্ঞানযোগ",
+      "author": "Swami Vivekananda",
+      "summary": null,
+      "sort_order": 34,
+      "book_id": 35,
+      "sheet_row": 36,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Jnana Yoga\" Vivekananda full text জ্ঞানযোগ"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/jnana-yoga_contents.htm",
+          "observation": "All16canonical chapters HTTP200 substantial15,719–51,078characters,beginning/end sampled; complete canonical CWvol2sequence. Vivekananda.net legacy redirect404. GutenbergPartIISevenLectures is only part."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/jnana-yoga_contents.htm",
+          "language": "English",
+          "label": "English",
+          "edition": "Complete Works online text",
+          "volume_coverage": "Complete named work within CWvolume2",
+          "access": "Free HTML; all linked chapters HTTP200",
+          "completeness": "16canonical lectures",
+          "rights": "Vivekananda original historical text; no new reuse license inferred for editions. Public linking candidate only.",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "English complete16lecture candidate. Private selected beginners classes not complete canonical book, rejected by coordinator.",
+      "checked_date": "2026-10-15",
+      "linked_page_checks": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/the_necessity_of_religion.htm",
+          "label": "The\nNecessity of Religion",
+          "status": 200,
+          "text_chars": 24115
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/the_real_nature_of_man.htm",
+          "label": "The Real\nNature of Man",
+          "status": 200,
+          "text_chars": 35273
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/maya_and_illusion.htm",
+          "label": "Maya and Illusion",
+          "status": 200,
+          "text_chars": 33268
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/maya_and_the_evolution_of_the_conception_of_god.htm",
+          "label": "Maya\nand the Evolution of the Conception of God",
+          "status": 200,
+          "text_chars": 25249
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/maya_and_freedom.htm",
+          "label": "Maya and Freedom",
+          "status": 200,
+          "text_chars": 22210
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/the_absolute_and_manifestation.htm",
+          "label": "The\nAbsolute and Manifestation",
+          "status": 200,
+          "text_chars": 27492
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/god_in_everything.htm",
+          "label": "God in Everything",
+          "status": 200,
+          "text_chars": 20728
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/realisation.htm",
+          "label": "Realisation",
+          "status": 200,
+          "text_chars": 38560
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/unity_in_diversity.htm",
+          "label": "Unity in\nDiversity",
+          "status": 200,
+          "text_chars": 26558
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/the_freedom_of_the_soul.htm",
+          "label": "The Freedom\nof the Soul",
+          "status": 200,
+          "text_chars": 27373
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/the_macrocosm.htm",
+          "label": "The Cosmos: The\nMacrocosm",
+          "status": 200,
+          "text_chars": 17873
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/the_microcosm.htm",
+          "label": "The Cosmos: The\nMicrocosm",
+          "status": 200,
+          "text_chars": 27795
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/immortality.htm",
+          "label": "Immortality",
+          "status": 200,
+          "text_chars": 22954
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/the_atman.htm",
+          "label": "The Atman",
+          "status": 200,
+          "text_chars": 30640
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/the_atman_its_bondage_and_freedom.htm",
+          "label": "The\nAtman: Its Bondage and Freedom",
+          "status": 200,
+          "text_chars": 15719
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/the_real_and_the_apparent_man.htm",
+          "label": "The\nReal and the Apparent Man",
+          "status": 200,
+          "text_chars": 51078
+        }
+      ]
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "Bhakti Yoga",
+      "original_title": "Bhakti Yoga",
+      "original_language": "English",
+      "english_title": "Bhakti Yoga",
+      "bengali_title": "ভক্তিযোগ",
+      "author": "Swami Vivekananda",
+      "summary": null,
+      "sort_order": 35,
+      "book_id": 36,
+      "sheet_row": 37,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Bhakti Yoga\" Vivekananda full text ভক্তিযোগ"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/bhakti-yoga_contents.htm",
+          "observation": "10preparatory chapter pages fetched. ParaBhakti companion index and10linked pages fetched through Conclusion; both sections required. Guessed short para-bhakti_contents URL404 rejected."
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/para-bhakti_or_supreme_devotion_contents.htm",
+          "observation": "Correct companion10linked pages fetchedHTTP200; conclusion present."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/bhakti-yoga_contents.htm",
+          "language": "English",
+          "label": "English",
+          "edition": "Complete Works online text",
+          "volume_coverage": "BhaktiYoga preliminary; ParaBhakti companion needed",
+          "access": "FreeHTTP200HTML",
+          "completeness": "10preparatory chapter pages fetched. ParaBhakti companion index and10linked pages fetched through Conclusion; both sections required. Guessed short para-bhakti_contents URL404 rejected.",
+          "rights": "Historical Vivekananda work; original/edition rights distinction retained, no redistribution performed",
+          "decision": "candidate_pending_QA"
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/para-bhakti_or_supreme_devotion_contents.htm",
+          "language": "English",
+          "label": "English — Para-Bhakti",
+          "edition": "Complete Works online text",
+          "volume_coverage": "Companion ParaBhakti/SupremeDevotion section",
+          "access": "FreeHTTP200HTML",
+          "completeness": "10preparatory chapter pages fetched. ParaBhakti companion index and10linked pages fetched through Conclusion; both sections required. Guessed short para-bhakti_contents URL404 rejected.",
+          "rights": "Historical Vivekananda work; original/edition rights distinction retained, no redistribution performed",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "English candidate requires both Bhakti and ParaBhakti sections; Bengali not verified.",
+      "checked_date": "2026-10-15",
+      "linked_page_checks": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/definition_of_bhakti.htm",
+          "label": "Definition of\nBhakti",
+          "status": 200,
+          "text_chars": 10954
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/the_philosophy_of_ishwara.htm",
+          "label": "The\nPhilosophy of Ishvara",
+          "status": 200,
+          "text_chars": 11650
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/spiritual_realisation_the_aim_of_bhakti-yoga.htm",
+          "label": "Spiritual\nRealisation, the aim of Bhakti-Yoga",
+          "status": 200,
+          "text_chars": 4489
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/the_need_of_guru.htm",
+          "label": "The Need of Guru",
+          "status": 200,
+          "text_chars": 5451
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/qualifications_of_the_aspirant_and_teacher.htm",
+          "label": "Qualifications\nof the Aspirant and the Teacher",
+          "status": 200,
+          "text_chars": 10822
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/incarnate_teachers_and_incarnation.htm",
+          "label": "Incarnate\nTeachers and Incarnation",
+          "status": 200,
+          "text_chars": 6183
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/the_mantra_om_word_and_wisdom.htm",
+          "label": "The\nMantra: Om: Word and Wisdom",
+          "status": 200,
+          "text_chars": 5853
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/worship_of_substitutes_and_images.htm",
+          "label": "Worship\nof Substitutes and Images",
+          "status": 200,
+          "text_chars": 5347
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/the_chosen_ideal.htm",
+          "label": "The Chosen Ideal",
+          "status": 200,
+          "text_chars": 5069
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/the_method_and_the_means.htm",
+          "label": "The Method\nand the Means",
+          "status": 200,
+          "text_chars": 10356
+        }
+      ],
+      "companion_linked_page_checks": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/the_preparatory_renunciation.htm",
+          "label": "The\nPreparatory Renunciation",
+          "status": 200,
+          "text_chars": 6165
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/the_bhaktas_renunciation_results_from_love.htm",
+          "label": "The\nBhakta's Renunciation Results from Love",
+          "status": 200,
+          "text_chars": 7378
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/the_naturalness_of_bhakti-yoga.htm",
+          "label": "The\nNaturalness of Bhakti-Yoga and its Central Secret",
+          "status": 200,
+          "text_chars": 4356
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/the_forms_of_love-manifestation.htm",
+          "label": "The\nForms of Love — Manifestation",
+          "status": 200,
+          "text_chars": 3671
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/universal_love_and_how_it_leads_to_self-surrender.htm",
+          "label": "Universal\nLove and How it Leads to Self Surrender",
+          "status": 200,
+          "text_chars": 8201
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/the_higher_knowledge.htm",
+          "label": "The Higher\nKnowledge and the Higher Love are One to the True Lover",
+          "status": 200,
+          "text_chars": 3103
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/the_triangle_of_love.htm",
+          "label": "The Triangle\nof Love",
+          "status": 200,
+          "text_chars": 7986
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/the_god_of_love_is_his_own_proof.htm",
+          "label": "The\nGod of Love is His Own Proof",
+          "status": 200,
+          "text_chars": 4129
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/human_representations_of_the_divine_ideal_of_love.htm",
+          "label": "Human\nRepresentations of the Divine Ideal of Love",
+          "status": 200,
+          "text_chars": 12284
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/conclusion.htm",
+          "label": "Conclusion",
+          "status": 200,
+          "text_chars": 2993
+        }
+      ]
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "Lectures from Colombo to Almora",
+      "original_title": "Lectures from Colombo to Almora",
+      "original_language": "English",
+      "english_title": "Lectures from Colombo to Almora",
+      "bengali_title": "কলম্বো থেকে আলমোড়া",
+      "author": "Swami Vivekananda",
+      "summary": null,
+      "sort_order": 36,
+      "book_id": 37,
+      "sheet_row": 38,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Lectures from Colombo to Almora\" full text"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/lectures_from_colombo_to_almora_contents.htm",
+          "observation": "29linked lecture/address pages allHTTP200,691498combinedcharacters; indexed full sequence and body starts/end recorded."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/lectures_from_colombo_to_almora_contents.htm",
+          "language": "English",
+          "label": "English",
+          "edition": "Complete Works online text",
+          "volume_coverage": "Named work in CW",
+          "access": "FreeHTTP200HTML",
+          "completeness": "29linked lecture/address pages allHTTP200,691498combinedcharacters; indexed full sequence and body starts/end recorded.",
+          "rights": "Historical Vivekananda work; original/edition rights distinction retained, no redistribution performed",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "English29lecture collection candidate; no standalone later print-edition equivalence assumed.",
+      "checked_date": "2026-10-15",
+      "linked_page_checks": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/first_public_lecture_in_the_east_%28colombo%29.htm",
+          "label": "First\nPublic Lecture in the East (Colombo)",
+          "status": 200,
+          "text_chars": 25263
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/vedantism.htm",
+          "label": "Vedantism",
+          "status": 200,
+          "text_chars": 37705
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/reply_to_the_address_of_welcome_at_pamban.htm",
+          "label": "Reply\nto the Address of Welcome at Pamban",
+          "status": 200,
+          "text_chars": 7758
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/address_at_the_rameshwaram_temple_on_real_worship.htm",
+          "label": "Address\nat the Rameswaram Temple on Real Worship",
+          "status": 200,
+          "text_chars": 4598
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/reply_to_the_address_of_welcome_at_ramnad.htm",
+          "label": "Reply\nto the Address of Welcome at Ramnad",
+          "status": 200,
+          "text_chars": 21543
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/reply_to_the_address_of_welcome_at_paramakudi.htm",
+          "label": "Reply\nto the Address of Welcome at Paramakudi",
+          "status": 200,
+          "text_chars": 14168
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/reply_to_the_address_of_welcome_at_shivaganga_and_manamadura.htm",
+          "label": "Reply\nto the Address of Welcome at Shivaganga and Manamadura",
+          "status": 200,
+          "text_chars": 10682
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/reply_to_the_address_of_welcome_at_madura.htm",
+          "label": "Reply\nto the Address of Welcome at Madura",
+          "status": 200,
+          "text_chars": 13302
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/the_mission_of_the_vedanta.htm",
+          "label": "The\nMission of the Vedanta",
+          "status": 200,
+          "text_chars": 47530
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/reply_to_the_address_of_welcome_at_madras.htm",
+          "label": "Reply\nto the Address of Welcome at Madras",
+          "status": 200,
+          "text_chars": 11932
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/my_plan_of_campaign.htm",
+          "label": "My Plan of\nCampaign",
+          "status": 200,
+          "text_chars": 41471
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/vedanta_in_its_applications_to_indian_life.htm",
+          "label": "Vedanta\nin its Application to Indian Life",
+          "status": 200,
+          "text_chars": 39321
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/the_sages_of_india.htm",
+          "label": "The Sages of\nIndia",
+          "status": 200,
+          "text_chars": 41441
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/the_work_before_us.htm",
+          "label": "The Work before\nus",
+          "status": 200,
+          "text_chars": 32217
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/the_future_of_india.htm",
+          "label": "The Future of\nIndia",
+          "status": 200,
+          "text_chars": 39484
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/on_charity.htm",
+          "label": "On Charity",
+          "status": 200,
+          "text_chars": 1761
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/address_of_welcome_presented_at_calcutta_and_reply.htm",
+          "label": "Address\nof Welcome Presented at Calcutta and Reply",
+          "status": 200,
+          "text_chars": 29829
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/the_vedanta_in_all_its_phases.htm",
+          "label": "The\nVedanta in all its phases",
+          "status": 200,
+          "text_chars": 55142
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/address_of_welcome_at_almora_and_reply.htm",
+          "label": "Address\nof Welcome at Almora and Reply",
+          "status": 200,
+          "text_chars": 9366
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/vedic_teaching_in_theory_and_practice.htm",
+          "label": "Vedic\nTeaching in Theory and Practice",
+          "status": 200,
+          "text_chars": 2566
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/bhakti_1.htm",
+          "label": "Bhakti",
+          "status": 200,
+          "text_chars": 17440
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/the_common_bases_of_hinduism.htm",
+          "label": "The\nCommon Bases of Hinduism",
+          "status": 200,
+          "text_chars": 38487
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/bhakti_2.htm",
+          "label": "Bhakti",
+          "status": 200,
+          "text_chars": 15231
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/the_vedanta.htm",
+          "label": "The Vedanta",
+          "status": 200,
+          "text_chars": 80943
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/vedantism_2.htm",
+          "label": "Vedantism",
+          "status": 200,
+          "text_chars": 11574
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/the_influence.htm",
+          "label": "The Influence of\nIndian Spiritual Thought in England",
+          "status": 200,
+          "text_chars": 11710
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/sannyasa_its_ideal_and_practice.htm",
+          "label": "Sannyasa:\nIts Ideal and Practice",
+          "status": 200,
+          "text_chars": 4860
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/what_have_i_learnt.htm",
+          "label": "What have I\nlearnt?",
+          "status": 200,
+          "text_chars": 8725
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/the_religion_we_are_born_in.htm",
+          "label": "The\nReligion we are born in",
+          "status": 200,
+          "text_chars": 15449
+        }
+      ]
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "Inspired Talks",
+      "original_title": "Inspired Talks",
+      "original_language": "English",
+      "english_title": "Inspired Talks",
+      "bengali_title": "দেববাণী",
+      "author": "Swami Vivekananda",
+      "summary": null,
+      "sort_order": 37,
+      "book_id": 38,
+      "sheet_row": 39,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Inspired Talks\" Vivekananda full text"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/inspired_talks_contents.htm",
+          "observation": "44dated talks allHTTP200,188118combinedcharacters; June19–August6sequence. CW webpage photo caption London1896 is not talk dating evidence."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/inspired_talks_contents.htm",
+          "language": "English",
+          "label": "English",
+          "edition": "Complete Works online text",
+          "volume_coverage": "Named work in CW",
+          "access": "FreeHTTP200HTML",
+          "completeness": "44dated talks allHTTP200,188118combinedcharacters; June19–August6sequence. CW webpage photo caption London1896 is not talk dating evidence.",
+          "rights": "Historical Vivekananda work; original/edition rights distinction retained, no redistribution performed",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "English full-talk sequence candidate; privatepp18–38excerpt rejected coordinator.",
+      "checked_date": "2026-10-15",
+      "linked_page_checks": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/01_wednesday_june_19.htm",
+          "label": "Wednesday,\nJune 19",
+          "status": 200,
+          "text_chars": 5860
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/02_sunday_june_23.htm",
+          "label": "Sunday, June 23",
+          "status": 200,
+          "text_chars": 3016
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/03_monday_june_24.htm",
+          "label": "Monday, June 24",
+          "status": 200,
+          "text_chars": 5729
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/04_tuesday_june_25.htm",
+          "label": "Tuesday, June 25",
+          "status": 200,
+          "text_chars": 5955
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/05_wednesday_june_26.htm",
+          "label": "Wednesday,\nJune 26",
+          "status": 200,
+          "text_chars": 4841
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/06_thursday_june_27.htm",
+          "label": "Thursday, June\n27",
+          "status": 200,
+          "text_chars": 4380
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/07_friday_june_28.htm",
+          "label": "Friday, June 28",
+          "status": 200,
+          "text_chars": 535
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/08_saturday_june_29.htm",
+          "label": "Saturday, June\n29",
+          "status": 200,
+          "text_chars": 2659
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/09_sunday_june_30.htm",
+          "label": "Sunday, June 30",
+          "status": 200,
+          "text_chars": 3469
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/10_monday_july_1.htm",
+          "label": "Monday, July 1",
+          "status": 200,
+          "text_chars": 6409
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/11_tuesday_july_2.htm",
+          "label": "Tuesday, July 2",
+          "status": 200,
+          "text_chars": 2500
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/12_wednesday_july_3.htm",
+          "label": "Wednesday, July\n3",
+          "status": 200,
+          "text_chars": 7351
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/13_friday_july_5.htm",
+          "label": "Friday, July 5",
+          "status": 200,
+          "text_chars": 1356
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/14_saturday_july_6.htm",
+          "label": "Saturday, July 6",
+          "status": 200,
+          "text_chars": 5012
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/15_sunday_july_7.htm",
+          "label": "Sunday, July 7",
+          "status": 200,
+          "text_chars": 3716
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/16_monday_july_8.htm",
+          "label": "Monday, July 8",
+          "status": 200,
+          "text_chars": 2524
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/17_tuesday_july_9.htm",
+          "label": "Tuesday, July 9",
+          "status": 200,
+          "text_chars": 3020
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/18_wednesday_july_10.htm",
+          "label": "Wednesday,\nJuly 10",
+          "status": 200,
+          "text_chars": 4869
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/19_thursday_july_11.htm",
+          "label": "Thursday, July\n11",
+          "status": 200,
+          "text_chars": 5442
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/20_friday_july_12.htm",
+          "label": "Friday, July 12",
+          "status": 200,
+          "text_chars": 3698
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/21_saturday_july_13.htm",
+          "label": "Saturday, July\n13",
+          "status": 200,
+          "text_chars": 2939
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/22_sunday_july_14.htm",
+          "label": "Sunday, July 14",
+          "status": 200,
+          "text_chars": 4104
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/23_monday_july_15.htm",
+          "label": "Monday, July 15",
+          "status": 200,
+          "text_chars": 1023
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/24_tuesday_july_16.htm",
+          "label": "Tuesday, July 16",
+          "status": 200,
+          "text_chars": 3884
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/25_wednesday_july_17.htm",
+          "label": "Wednesday,\nJuly 17",
+          "status": 200,
+          "text_chars": 3588
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/26_thursday_july_18.htm",
+          "label": "Thursday, July\n18",
+          "status": 200,
+          "text_chars": 2246
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/27_friday_july_19.htm",
+          "label": "Friday, July 19",
+          "status": 200,
+          "text_chars": 3731
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/28_saturday_july_20.htm",
+          "label": "Saturday, July\n20",
+          "status": 200,
+          "text_chars": 3955
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/29_sunday_july_21.htm",
+          "label": "Sunday, July 21",
+          "status": 200,
+          "text_chars": 3689
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/30_tuesday_july_23.htm",
+          "label": "Tuesday, July 23",
+          "status": 200,
+          "text_chars": 4186
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/31_wednesday_july_24.htm",
+          "label": "Wednesday,\nJuly 24",
+          "status": 200,
+          "text_chars": 3701
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/32_thursday_july_25.htm",
+          "label": "Thursday, July\n25",
+          "status": 200,
+          "text_chars": 3696
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/33_friday_july_26.htm",
+          "label": "Friday, July 26",
+          "status": 200,
+          "text_chars": 739
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/34_saturday_july_27.htm",
+          "label": "Saturday, July\n27",
+          "status": 200,
+          "text_chars": 4535
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/35_sunday_july_28.htm",
+          "label": "Sunday, July 28",
+          "status": 200,
+          "text_chars": 2958
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/36_monday_july_29.htm",
+          "label": "Monday, July 29",
+          "status": 200,
+          "text_chars": 7475
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/37_tuesday_july_30.htm",
+          "label": "Tuesday, July 30",
+          "status": 200,
+          "text_chars": 4321
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/38_wednesday_july_31.htm",
+          "label": "Wednesday,\nJuly 31",
+          "status": 200,
+          "text_chars": 7409
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/39_thursday_august_1.htm",
+          "label": "Thursday,\nAugust 1",
+          "status": 200,
+          "text_chars": 4486
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/40_friday_august_2.htm",
+          "label": "Friday, August 2",
+          "status": 200,
+          "text_chars": 4342
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/41_saturday_august_3.htm",
+          "label": "Saturday,\nAugust 3",
+          "status": 200,
+          "text_chars": 7414
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/42_sunday_august_4.htm",
+          "label": "Sunday, August 4",
+          "status": 200,
+          "text_chars": 7351
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/43_monday_august_5.htm",
+          "label": "Monday, August 5",
+          "status": 200,
+          "text_chars": 7907
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/44_tuesday_august_6.htm",
+          "label": "Tuesday, August\n6",
+          "status": 200,
+          "text_chars": 6098
+        }
+      ]
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "My Master",
+      "original_title": "My Master",
+      "original_language": "English",
+      "english_title": "My Master",
+      "bengali_title": "আমার গুরুদেব",
+      "author": "Swami Vivekananda",
+      "summary": null,
+      "sort_order": 38,
+      "book_id": 39,
+      "sheet_row": 40,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"My Master\" Vivekananda full text"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_4/lectures_and_discourses/my_master.htm",
+          "observation": "HTTP200,66925characters; identifies combination of two1896lectures; opening and full closing paragraphs read."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_4/lectures_and_discourses/my_master.htm",
+          "language": "English",
+          "label": "English",
+          "edition": "Complete Works online text",
+          "volume_coverage": "Named work in CW",
+          "access": "FreeHTTP200HTML",
+          "completeness": "HTTP200,66925characters; identifies combination of two1896lectures; opening and full closing paragraphs read.",
+          "rights": "Historical Vivekananda work; original/edition rights distinction retained, no redistribution performed",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "English combined work candidate; no new-edition pagination claim.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "The East and the West",
+      "original_title": "প্রাচ্য ও পাশ্চাত্য",
+      "original_language": "Bengali",
+      "english_title": "The East and the West",
+      "bengali_title": "প্রাচ্য ও পাশ্চাত্য",
+      "author": "Swami Vivekananda",
+      "summary": null,
+      "sort_order": 39,
+      "book_id": 40,
+      "sheet_row": 41,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"The East and the West\" Vivekananda প্রাচ্য পাশ্চাত্য full text"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_5/writings_prose_and_poems/the_east_and_the_west.htm",
+          "observation": "HTTP200 substantial English essay; seven thematic sections through Progress of Civilisation and endnotes; paired Bengali section links visible but bodies not yet audited."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_5/writings_prose_and_poems/the_east_and_the_west.htm",
+          "language": "English",
+          "label": "English",
+          "edition": "Complete Works online text",
+          "volume_coverage": "Named work in CW",
+          "access": "FreeHTTP200HTML",
+          "completeness": "HTTP200 substantial English essay; seven thematic sections through Progress of Civilisation and endnotes; paired Bengali section links visible but bodies not yet audited.",
+          "rights": "Historical Vivekananda work; original/edition rights distinction retained, no redistribution performed",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "English complete-work structural candidate; Bengali seven-part coverage needs check.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "Modern India",
+      "original_title": "বর্তমান ভারত",
+      "original_language": "Bengali",
+      "english_title": "Modern India",
+      "bengali_title": "বর্তমান ভারত",
+      "author": "Swami Vivekananda",
+      "summary": null,
+      "sort_order": 40,
+      "book_id": 41,
+      "sheet_row": 42,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Modern India\" Vivekananda বর্তমান ভারত full text",
+        "\"বর্তমান ভারত\" \"বিবেকানন্দ\" পাঠ"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_4/translation_prose/modern_india.htm",
+          "observation": "HTTP200 English84498characters; identified translated March1899Udbodhan Bengali essay, opening and ending/endnotes inspected."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_4/translation_prose/modern_india.htm",
+          "label": "English",
+          "language": "English",
+          "edition": "CWonline translation",
+          "volume_coverage": "Whole essay",
+          "access": "FreeHTML",
+          "completeness": "HTTP200 English84498characters; identified translated March1899Udbodhan Bengali essay, opening and ending/endnotes inspected.",
+          "rights": "Institutional/historical text; edition rights retained; link-only candidate",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "English full essay candidate; Bengali original separate unresolved.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "Memoirs of European Travel",
+      "original_title": "পরিব্রাজক",
+      "original_language": "Bengali",
+      "english_title": "Memoirs of European Travel",
+      "bengali_title": "পরিব্রাজক",
+      "author": "Swami Vivekananda",
+      "summary": null,
+      "sort_order": 41,
+      "book_id": 42,
+      "sheet_row": 43,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Memoirs of European Travel\" Vivekananda পরিব্রাজক full text"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/translation_of_writings/memoirs_of_european_travel_i.htm",
+          "observation": "PartsIandII bothHTTP200 English translation fromBengali; extended travel narrative and finalIIclosing inspected. Need both parts not justI."
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/translation_of_writings/memoirs_of_european_travel_ii.htm",
+          "observation": "HTTP200English49794characters,finalPartIIbodythroughHungary/chillies present."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/translation_of_writings/memoirs_of_european_travel_i.htm",
+          "label": "English",
+          "language": "English",
+          "edition": "CWonline translation",
+          "volume_coverage": "PartI;requiresPartII",
+          "access": "FreeHTML",
+          "completeness": "PartsIandII bothHTTP200 English translation fromBengali; extended travel narrative and finalIIclosing inspected. Need both parts not justI.",
+          "rights": "Institutional/historical text; edition rights retained; link-only candidate",
+          "decision": "candidate_pending_QA"
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/translation_of_writings/memoirs_of_european_travel_ii.htm",
+          "label": "English 2",
+          "language": "English",
+          "edition": "CWonline translation",
+          "volume_coverage": "PartII",
+          "access": "FreeHTML",
+          "completeness": "PartsIandII bothHTTP200 English translation fromBengali; extended travel narrative and finalIIclosing inspected. Need both parts not justI.",
+          "rights": "Institutional/historical text; edition rights retained; link-only candidate",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "English combinedI–IIcandidate; BengaliParivrajak not yet full-body verified.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "Letters of Swami Vivekananda",
+      "original_title": "Letters of Swami Vivekananda",
+      "original_language": "not clear",
+      "english_title": "Letters of Swami Vivekananda",
+      "bengali_title": "পত্রাবলী",
+      "author": "Swami Vivekananda",
+      "summary": null,
+      "sort_order": 42,
+      "book_id": 43,
+      "sheet_row": 44,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Letters of Swami Vivekananda\" full text",
+        "\"Letters of Swami Vivekananda\" \"pdf\" publisher"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://vivekanandavoice.org/library/letters/",
+          "observation": "Large online letters index1779lines. Publisher official revised/enlarged edition now4volumes; old standalone editions vary. Online constituent CWletters do not prove complete specific collected edition."
+        },
+        {
+          "url": "https://ebooks.advaitaashrama.org/product/letters-of-swami-vivekananda-revised-enlarged-edition-in-4-volumes",
+          "observation": "Official paid4volumeedition; not inferred equal to partial/free individual letters."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Hold new approval: collection/edition completeness unresolved despite substantial free individual letters.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "Conversations and Dialogues",
+      "original_title": "স্বামী-শিষ্য-সংবাদ",
+      "original_language": "Bengali",
+      "english_title": "Conversations and Dialogues",
+      "bengali_title": "স্বামী-শিষ্য-সংবাদ",
+      "author": "Swami Vivekananda",
+      "summary": null,
+      "sort_order": 43,
+      "book_id": 44,
+      "sheet_row": 45,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Conversations and Dialogues\" Vivekananda full text স্বামী শিষ্য সংবাদ",
+        "\"স্বামী শিষ্য সংবাদ\" পূর্ণ পাঠ",
+        "\"স্বামী-শিষ্য-সংবাদ\" বিবেকানন্দ pdf",
+        "\"Conversations and Dialogues\" \"ramakrishnavivekananda.info\""
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_09.html",
+          "observation": "Institutional BengaliVol9 HTML3982lines includes SwamiShishyaSambad extended dialogue text. EnglishCWVol7contents only10sections; work spans other volumes too. Catalog attribution Vivekananda vs recorder SharatChandraChakravarty requires care."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_09.html",
+          "label": "Bengali",
+          "language": "Bengali",
+          "edition": "VaniORachanaVol9",
+          "volume_coverage": "Vol9SwamiShishyaSambad; exact standalone coverage not yet certified",
+          "access": "FreeHTML",
+          "completeness": "Institutional BengaliVol9 HTML3982lines includes SwamiShishyaSambad extended dialogue text. EnglishCWVol7contents only10sections; work spans other volumes too. Catalog attribution Vivekananda vs recorder SharatChandraChakravarty requires care.",
+          "rights": "Institutional/historical text; edition rights retained; link-only candidate",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "BengaliVol9candidate pending exact fullbook coverage audit; EnglishVol7alone rejected as whole canonical collection.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "Poems of Swami Vivekananda",
+      "original_title": "Poems of Swami Vivekananda",
+      "original_language": "English",
+      "english_title": "Poems of Swami Vivekananda",
+      "bengali_title": null,
+      "author": "Swami Vivekananda",
+      "summary": null,
+      "sort_order": 44,
+      "book_id": 45,
+      "sheet_row": 46,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Poems of Swami Vivekananda\" full text pdf",
+        "\"Poems of Swami Vivekananda\" free pdf",
+        "Poems of Swami Vivekananda Advaita Ashrama book"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/poems-of-swami-vivekananda/1237499000011876245",
+          "observation": "Official exacttitle326pageEnglishbookbySwamiSuparnananda,commentarytranslationfromBengali,Golparkpublisher. BaselineVivekanandaattributionaloneambiguous. PoetSeersselectedpoemsonly;notcomplete326pageanthology."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Selected poetry/store excluded; anthology completeness/free-text gap.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "Vivekananda: His Call to the Nation",
+      "original_title": "Vivekananda: His Call to the Nation",
+      "original_language": "English",
+      "english_title": "Vivekananda: His Call to the Nation",
+      "bengali_title": null,
+      "author": "Swami Vivekananda",
+      "summary": null,
+      "sort_order": 45,
+      "book_id": 46,
+      "sheet_row": 47,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Vivekananda His Call to the Nation\" full text pdf",
+        "\"Vivekananda His Call to the Nation\" pdf download"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://ebooks.advaitaashrama.org/product/vivekananda-his-call-to-the-nation-1",
+          "observation": "Publisher official ebook product found/opened; anthology-specific content cannot be replaced with generic CWselections."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Commercial ebook listing only; free complete-book gap.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "The Message of Vivekananda",
+      "original_title": "The Message of Vivekananda",
+      "original_language": "English",
+      "english_title": "The Message of Vivekananda",
+      "bengali_title": null,
+      "author": "Swami Vivekananda",
+      "summary": null,
+      "sort_order": 46,
+      "book_id": 47,
+      "sheet_row": 48,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"The Message of Vivekananda\" full text pdf",
+        "\"The Message of Vivekananda\" book"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.exoticindiaart.com/book/details/message-of-vivekananda-azb882/",
+          "observation": "Exacttitle retailer:48pages,2017,English,ISBN9788175050259,RamakrishnaMath. Similar KaranSingh Message ofSwamiVivekananda is different book."
+        }
+      ],
+      "candidates": [],
+      "outcome": "Sale/sample pages excluded; no complete free48pagework.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "To the Youth of India",
+      "original_title": "To the Youth of India",
+      "original_language": "English",
+      "english_title": "To the Youth of India",
+      "bengali_title": null,
+      "author": "Swami Vivekananda",
+      "summary": null,
+      "sort_order": 47,
+      "book_id": 48,
+      "sheet_row": 49,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"To the Youth of India\" Vivekananda full text"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://chandigarh.rkmm.org/Vivek%20Mahotsav/Books/To%20the%20youth%20of%20India.pdf",
+          "observation": "OfficialRKMMChandigarhPDFHTTP200,94pages841783bytes;titleToTheYouthOfIndia/SwamiVivekananda;TOC9lectures,finalTheReligionWeAreBornInendingpresent. LocalPyMuPDFfirst5andlast3pagesinspected;webfollowuptimedoutbutlocalfetchsucceeded."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://chandigarh.rkmm.org/Vivek%20Mahotsav/Books/To%20the%20youth%20of%20India.pdf",
+          "label": "English",
+          "language": "English",
+          "edition": "UndatedinstitutionalPDF",
+          "volume_coverage": "9lecturecollection94PDFpages",
+          "access": "HTTP200application/pdf,nologin",
+          "completeness": "Title/TOC9lectures/finaltextverified;notlineproofread",
+          "rights": "OfficialRKMMbranchhost;linkonly,noredistribution",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "Officialcomplete9lecturePDFcandidate;independentQApending.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "The Life of Swami Vivekananda",
+      "original_title": "The Life of Swami Vivekananda",
+      "original_language": "English",
+      "english_title": "The Life of Swami Vivekananda",
+      "bengali_title": null,
+      "author": "Eastern and Western Disciples",
+      "summary": null,
+      "sort_order": 48,
+      "book_id": 49,
+      "sheet_row": 50,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"The Life of Swami Vivekananda\" \"Eastern and Western\" full text"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/life-of-swami-vivekananda-his-eastern-and-western-disciples/life-of-swami-vivekananda-his-eastern-and-western-disciples.html",
+          "observation": "InstitutionalHTTP2002,635,358textcharacters; title/imprintEasternWesternDisciplesAdvaitaAshrama; two volumes with25chapters each through Mahasamadhi and endingHARIHOMTATSAT. Webtool failed but local request succeeded."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/life-of-swami-vivekananda-his-eastern-and-western-disciples/life-of-swami-vivekananda-his-eastern-and-western-disciples.html",
+          "language": "English",
+          "label": "English 1–2",
+          "edition": "Two-volume Advaita biography online",
+          "volume_coverage": "VolumesIandIIcombined;25chapters each",
+          "access": "HTTP200freeinstitutionalHTML",
+          "completeness": "InstitutionalHTTP2002,635,358textcharacters; title/imprintEasternWesternDisciplesAdvaitaAshrama; two volumes with25chapters each through Mahasamadhi and endingHARIHOMTATSAT. Webtool failed but local request succeeded.",
+          "rights": "Institutionalhost/imprint; no redistribution license inferred",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "English combinedVol1–2candidate; no substitution with shortBiography.",
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "Swami Vivekananda in the West: New Discoveries",
+      "original_title": "Swami Vivekananda in the West: New Discoveries",
+      "original_language": "English",
+      "english_title": "Swami Vivekananda in the West: New Discoveries",
+      "bengali_title": null,
+      "author": "Marie Louise Burke",
+      "summary": null,
+      "sort_order": 49,
+      "book_id": 50,
+      "sheet_row": 51,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Swami Vivekananda in the West\" \"New Discoveries\" full text pdf",
+        "\"Swami Vivekananda in the West\" Burke volumes pdf"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-vivekananda-in-the-west-new-discoveries-6-vols-set/1237499000010261249",
+          "observation": "Official publisher6volumeEnglishBurke/SisterGargiset; online chronology/citations reference it but are not complete volumes."
+        }
+      ],
+      "candidates": [],
+      "outcome": "No complete free six-volume set verified; all6remain gaps.",
+      "volume_audit": [
+        {
+          "volume": 1,
+          "public_complete_text": "not verified"
+        },
+        {
+          "volume": 2,
+          "public_complete_text": "not verified"
+        },
+        {
+          "volume": 3,
+          "public_complete_text": "not verified"
+        },
+        {
+          "volume": 4,
+          "public_complete_text": "not verified"
+        },
+        {
+          "volume": 5,
+          "public_complete_text": "not verified"
+        },
+        {
+          "volume": 6,
+          "public_complete_text": "not verified"
+        }
+      ],
+      "checked_date": "2026-10-15"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "Photographs of Swami Vivekananda",
+      "original_title": "Photographs of Swami Vivekananda",
+      "original_language": "English",
+      "english_title": "Photographs of Swami Vivekananda",
+      "bengali_title": null,
+      "author": "Gen",
+      "summary": null,
+      "sort_order": 50,
+      "book_id": 51,
+      "sheet_row": 52,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "Reminiscences of Swami Vivekananda",
+      "original_title": "Reminiscences of Swami Vivekananda",
+      "original_language": "English",
+      "english_title": "Reminiscences of Swami Vivekananda",
+      "bengali_title": null,
+      "author": "His Eastern and Western Admirers",
+      "summary": null,
+      "sort_order": 51,
+      "book_id": 52,
+      "sheet_row": 53,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [],
+      "direct_url_lookups": [
+        "https://www.ramakrishnavivekananda.info/reminiscences/reminiscences_of_sv.htm"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/reminiscences_of_sv.htm",
+          "observation": "HTTP200; site explicitly identifies entire text of third edition1983AdvaitaAshrama.39book-linked pages fetched:3prefaces,35accountpages,appendix;allHTTP200,888454combinedtextcharacters. Ten additional other_ reminiscences explicitly outside book excluded."
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/000_preface_3.htm",
+          "observation": "Publisher third-edition note dated15April1983,Mayavati; added materials/edition provenance present."
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/001_nng.htm",
+          "observation": "First account NagendraNathGupta substantial39522characters; beginning/end read."
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/391_ss.htm",
+          "observation": "Final named account Sadashivananda47974characters,closing with journal provenance."
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/414_appendix.htm",
+          "observation": "Appendix36308characters;MacLeodletters through finalnotes present."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/reminiscences_of_sv.htm",
+          "language": "English",
+          "label": "English — 1983 third edition",
+          "edition": "AdvaitaAshrama1983thirdedition",
+          "volume_coverage": "Whole1983book;additionalnonbookreminiscencesexcluded",
+          "access": "FreereadableHTML;all39book-linkedpagesHTTP200withoutlogin",
+          "completeness": "Explicitfulltexteditionstatement,threeprefaces,allindexedaccountsandappendixfetched;first/endbodyandprefatoryprovenanceinspected.Notline-by-lineproofread.",
+          "rights": "Site supplies publisherattributedtextpublicly;noexplicitpublisherauthorization/reuselicenseinspected.Link-onlycandidate;noPDorredistributionclaim.",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "outcome": "Complete readable1983edition verified structurally; candidateawaitsindependentQA/rightsassessment. Not a citation-only synopsis.",
+      "checked_date": "2026-10-15",
+      "linked_page_checks": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/000_preface_1.htm",
+          "label": "Publisher's\nNote\nto First Edition",
+          "status": 200,
+          "text_chars": 1761
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/000_preface_2.htm",
+          "label": "Preface to\nSecond\nEdition",
+          "status": 200,
+          "text_chars": 368
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/000_preface_3.htm",
+          "label": "Preface to\nThird\nEdition",
+          "status": 200,
+          "text_chars": 1332
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/001_nng.htm",
+          "label": "Nagendra Nath Gupta",
+          "status": 200,
+          "text_chars": 39522
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/020_bgt.htm",
+          "label": "B. G. Tilak",
+          "status": 200,
+          "text_chars": 3409
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/022_hm.htm",
+          "label": "Haripada Mitra",
+          "status": 200,
+          "text_chars": 63825
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/052_gsb.htm",
+          "label": "G. S. Bhate",
+          "status": 200,
+          "text_chars": 10573
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/057_ksi.htm",
+          "label": "K. Sundarama Iyer",
+          "status": 200,
+          "text_chars": 30533
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/071_ksi.htm",
+          "label": "K. Sundarama Iyer",
+          "status": 200,
+          "text_chars": 58229
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/098_ksrs.htm",
+          "label": "K. S. Ramaswami\nSastri",
+          "status": 200,
+          "text_chars": 15697
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/106_asp.htm",
+          "label": "A. Srinivasa Pai",
+          "status": 200,
+          "text_chars": 13720
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/113_sew.htm",
+          "label": "S. E. Waldo",
+          "status": 200,
+          "text_chars": 17227
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/121_sd.htm",
+          "label": "Sister Devamata",
+          "status": 200,
+          "text_chars": 17488
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/130_cc.htm",
+          "label": "Cornelia Conger",
+          "status": 200,
+          "text_chars": 13625
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/137_mbf.htm",
+          "label": "Martha Browne\nFincke",
+          "status": 200,
+          "text_chars": 12445
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/143_hjvh.htm",
+          "label": "Henry J. Van\nHaagen",
+          "status": 200,
+          "text_chars": 6200
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/146_sc.htm",
+          "label": "Sister Chrisitne",
+          "status": 200,
+          "text_chars": 174548
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/228_jm.htm",
+          "label": "Josephine MacLeod",
+          "status": 200,
+          "text_chars": 36597
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/246_ct.htm",
+          "label": "Constance Towne",
+          "status": 200,
+          "text_chars": 9283
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/251_mcf.htm",
+          "label": "Mary C. Funke",
+          "status": 200,
+          "text_chars": 13050
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/258_mec.htm",
+          "label": "Madam E. Calvé",
+          "status": 200,
+          "text_chars": 9953
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/263_ms.htm",
+          "label": "Maud Stumm",
+          "status": 200,
+          "text_chars": 11756
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/269_sn.htm",
+          "label": "Sister Nivedita",
+          "status": 200,
+          "text_chars": 43481
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/291_eh.htm",
+          "label": "Eric Hammond",
+          "status": 200,
+          "text_chars": 6323
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/294_ets.htm",
+          "label": "E. T. Sturdy",
+          "status": 200,
+          "text_chars": 2383
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/296_tjd.htm",
+          "label": "T. J. Desai",
+          "status": 200,
+          "text_chars": 11519
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/302_sb.htm",
+          "label": "Swami Bodhananda",
+          "status": 200,
+          "text_chars": 8588
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/307_sv.htm",
+          "label": "Swami Vimalananda",
+          "status": 200,
+          "text_chars": 18746
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/316_ss.htm",
+          "label": "Swami Suddhananda",
+          "status": 200,
+          "text_chars": 35670
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/333_knm.htm",
+          "label": "Kamakhya Nath Mitra",
+          "status": 200,
+          "text_chars": 12475
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/339_mng.htm",
+          "label": "Manmatha Nath\nGanguli",
+          "status": 200,
+          "text_chars": 39140
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/358_skb.htm",
+          "label": "Mrs. S. K. Blodgett",
+          "status": 200,
+          "text_chars": 7603
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/362_ia.htm",
+          "label": "Ida Ansell",
+          "status": 200,
+          "text_chars": 32880
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/378_ca.htm",
+          "label": "Christina Albers",
+          "status": 200,
+          "text_chars": 2999
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/380_im.htm",
+          "label": "Isabel Margesson",
+          "status": 200,
+          "text_chars": 3741
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/382_vd.htm",
+          "label": "Viraja Devi",
+          "status": 200,
+          "text_chars": 7918
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/386_rc.htm",
+          "label": "Reeves Calkins",
+          "status": 200,
+          "text_chars": 9565
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/391_ss.htm",
+          "label": "Swami Sadashivananda",
+          "status": 200,
+          "text_chars": 47974
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/414_appendix.htm",
+          "label": "Appendix",
+          "status": 200,
+          "text_chars": 36308
+        }
+      ]
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "Swami Vivekananda in America",
+      "original_title": "Swami Vivekananda in America",
+      "original_language": "English",
+      "english_title": "Swami Vivekananda in America",
+      "bengali_title": null,
+      "author": "Asim Chaudhuri",
+      "summary": null,
+      "sort_order": 52,
+      "book_id": 53,
+      "sheet_row": 54,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "Swami Vivekananda in Chicago",
+      "original_title": "Swami Vivekananda in Chicago",
+      "original_language": "English",
+      "english_title": "Swami Vivekananda in Chicago",
+      "bengali_title": null,
+      "author": "Asim Chaudhuri",
+      "summary": null,
+      "sort_order": 53,
+      "book_id": 54,
+      "sheet_row": 55,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "Swami Vivekananda in Contemporary Indian News",
+      "original_title": "Swami Vivekananda in Contemporary Indian News",
+      "original_language": "English",
+      "english_title": "Swami Vivekananda in Contemporary Indian News",
+      "bengali_title": null,
+      "author": "Shankari Prasad Basu",
+      "summary": null,
+      "sort_order": 54,
+      "book_id": 55,
+      "sheet_row": 56,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "স্বামী বিবেকানন্দ ও সমকালীন ভারতবর্ষ",
+      "original_title": "স্বামী বিবেকানন্দ ও সমকালীন ভারতবর্ষ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী বিবেকানন্দ ও সমকালীন ভারতবর্ষ",
+      "author": "Shankari Prasad Basu",
+      "summary": null,
+      "sort_order": 55,
+      "book_id": 56,
+      "sheet_row": 57,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "কাশীধামে স্বামী বিবেকানন্দ",
+      "original_title": "কাশীধামে স্বামী বিবেকানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "কাশীধামে স্বামী বিবেকানন্দ",
+      "author": "Mahendranath Dutta",
+      "summary": null,
+      "sort_order": 56,
+      "book_id": 57,
+      "sheet_row": 58,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "বিবেকানন্দের জীবনের ঘটনাবলী",
+      "original_title": "বিবেকানন্দের জীবনের ঘটনাবলী",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "বিবেকানন্দের জীবনের ঘটনাবলী",
+      "author": "Mahendranath Dutta",
+      "summary": null,
+      "sort_order": 57,
+      "book_id": 58,
+      "sheet_row": 59,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "যুগনায়ক",
+      "original_title": "যুগনায়ক",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "যুগনায়ক",
+      "author": "Gambhirananda",
+      "summary": null,
+      "sort_order": 58,
+      "book_id": 59,
+      "sheet_row": 60,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "লন্ডনে স্বামী বিবেকানন্দ ১-২",
+      "original_title": "লন্ডনে স্বামী বিবেকানন্দ ১-২",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "লন্ডনে স্বামী বিবেকানন্দ ১-২",
+      "author": "Mahendranath Dutta",
+      "summary": null,
+      "sort_order": 59,
+      "book_id": 60,
+      "sheet_row": 61,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "স্বামী বিবেকানন্দের বাল্যজীবনী",
+      "original_title": "স্বামী বিবেকানন্দের বাল্যজীবনী",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী বিবেকানন্দের বাল্যজীবনী",
+      "author": "Mahendranath Dutta",
+      "summary": null,
+      "sort_order": 60,
+      "book_id": 61,
+      "sheet_row": 62,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "স্বামীজীর পদপ্রান্তে",
+      "original_title": "স্বামীজীর পদপ্রান্তে",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামীজীর পদপ্রান্তে",
+      "author": "Abjajananda",
+      "summary": null,
+      "sort_order": 61,
+      "book_id": 62,
+      "sheet_row": 63,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "স্মৃতির আলোয় স্বামীজী",
+      "original_title": "স্মৃতির আলোয় স্বামীজী",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্মৃতির আলোয় স্বামীজী",
+      "author": "Purnatmananda",
+      "summary": null,
+      "sort_order": 62,
+      "book_id": 63,
+      "sheet_row": 64,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Vivekananda",
+      "canonical_title": "স্বামীজীর স্মৃতিসঞ্চয়ন",
+      "original_title": "স্বামীজীর স্মৃতিসঞ্চয়ন",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামীজীর স্মৃতিসঞ্চয়ন",
+      "author": "Nirlepananda",
+      "summary": null,
+      "sort_order": 63,
+      "book_id": 64,
+      "sheet_row": 65,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Brahmananda",
+      "canonical_title": "The Eternal Companion: Life and Teachings of Swami Brahmananda",
+      "original_title": "The Eternal Companion: Life and Teachings of Swami Brahmananda",
+      "original_language": "English",
+      "english_title": "The Eternal Companion: Life and Teachings of Swami Brahmananda",
+      "bengali_title": null,
+      "author": "Swami Yatiswarananda; Swami Prabhavananda",
+      "summary": null,
+      "sort_order": 64,
+      "book_id": 65,
+      "sheet_row": 66,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Brahmananda",
+      "canonical_title": "A Guide to Spiritual Life",
+      "original_title": "ধর্ম প্রসঙ্গে স্বামী ব্রহ্মানন্দ",
+      "original_language": "Bengali",
+      "english_title": "A Guide to Spiritual Life",
+      "bengali_title": "ধর্ম প্রসঙ্গে স্বামী ব্রহ্মানন্দ",
+      "author": "Swami Brahmananda",
+      "summary": null,
+      "sort_order": 65,
+      "book_id": 66,
+      "sheet_row": 67,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Brahmananda",
+      "canonical_title": "Swami Brahmananda As We Saw Him",
+      "original_title": "Swami Brahmananda As We Saw Him: Reminiscences of Monastic and Lay Devotees",
+      "original_language": "English",
+      "english_title": "Swami Brahmananda As We Saw Him: Reminiscences of Monastic and Lay Devotees",
+      "bengali_title": null,
+      "author": "Swami Atmashraddhananda (compiler/editor)",
+      "summary": null,
+      "sort_order": 66,
+      "book_id": 67,
+      "sheet_row": 68,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Brahmananda",
+      "canonical_title": "Swami Brahmanander Smritikatha",
+      "original_title": "স্বামী ব্রহ্মানন্দের স্মৃতিকথা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী ব্রহ্মানন্দের স্মৃতিকথা",
+      "author": "Swami Chetanananda",
+      "summary": null,
+      "sort_order": 67,
+      "book_id": 68,
+      "sheet_row": 69,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Brahmananda",
+      "canonical_title": "রাজা মহারাজ",
+      "original_title": "রাজা মহারাজ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "রাজা মহারাজ",
+      "author": "Swami Narottamananda",
+      "summary": null,
+      "sort_order": 68,
+      "book_id": 69,
+      "sheet_row": 70,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Brahmananda",
+      "canonical_title": "Japa and Dhyana in a Nutshell",
+      "original_title": "Japa and Dhyana in a Nutshell",
+      "original_language": "English",
+      "english_title": "Japa and Dhyana in a Nutshell",
+      "bengali_title": null,
+      "author": "Swami Brahmananda",
+      "summary": null,
+      "sort_order": 69,
+      "book_id": 70,
+      "sheet_row": 71,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Brahmananda",
+      "canonical_title": "Sadhan Prasange Raja Maharaj",
+      "original_title": "সাধন প্রসঙ্গে রাজা মহারাজ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "সাধন প্রসঙ্গে রাজা মহারাজ",
+      "author": "Swami Brahmananda; Swami Devananda",
+      "summary": null,
+      "sort_order": 70,
+      "book_id": 71,
+      "sheet_row": 72,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Brahmananda",
+      "canonical_title": "ব্রহ্মানন্দ ও রামকৃষ্ণ মিশন",
+      "original_title": "ব্রহ্মানন্দ ও রামকৃষ্ণ মিশন",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "ব্রহ্মানন্দ ও রামকৃষ্ণ মিশন",
+      "author": "Mahendranath Dutta",
+      "summary": null,
+      "sort_order": 71,
+      "book_id": 72,
+      "sheet_row": 73,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Brahmananda",
+      "canonical_title": "ব্রহ্মানন্দ চরিত",
+      "original_title": "ব্রহ্মানন্দ চরিত",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "ব্রহ্মানন্দ চরিত",
+      "author": "Prabhananda",
+      "summary": null,
+      "sort_order": 72,
+      "book_id": 73,
+      "sheet_row": 74,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Brahmananda",
+      "canonical_title": "ব্রহ্মানন্দ মহারাজের অনুধ্যান",
+      "original_title": "ব্রহ্মানন্দ মহারাজের অনুধ্যান",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "ব্রহ্মানন্দ মহারাজের অনুধ্যান",
+      "author": "Mahendranath Dutta",
+      "summary": null,
+      "sort_order": 73,
+      "book_id": 74,
+      "sheet_row": 75,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Brahmananda",
+      "canonical_title": "Reminiscences of Swami Brahmananda",
+      "original_title": "ব্রহ্মানন্দ লীলাকথা",
+      "original_language": "Bengali",
+      "english_title": "Reminiscences of Swami Brahmananda",
+      "bengali_title": "ব্রহ্মানন্দ লীলাকথা",
+      "author": "Brahmachari Akshaychaitanya",
+      "summary": null,
+      "sort_order": 74,
+      "book_id": 75,
+      "sheet_row": 76,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Brahmananda",
+      "canonical_title": "ব্রহ্মানন্দ স্মৃতিকণা",
+      "original_title": "ব্রহ্মানন্দ স্মৃতিকণা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "ব্রহ্মানন্দ স্মৃতিকণা",
+      "author": "Devananda",
+      "summary": null,
+      "sort_order": 75,
+      "book_id": 76,
+      "sheet_row": 77,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Brahmananda",
+      "canonical_title": "স্বামী ব্রহ্মানন্দ",
+      "original_title": "স্বামী ব্রহ্মানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী ব্রহ্মানন্দ",
+      "author": "Ashokananda",
+      "summary": null,
+      "sort_order": 76,
+      "book_id": 77,
+      "sheet_row": 78,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Premananda",
+      "canonical_title": "Memories of a Loving Soul",
+      "original_title": "Memories of a Loving Soul: Teachings & Reminiscences of Swami Premananda",
+      "original_language": "English",
+      "english_title": "Memories of a Loving Soul: Teachings & Reminiscences of Swami Premananda",
+      "bengali_title": null,
+      "author": "A Compilation",
+      "summary": null,
+      "sort_order": 77,
+      "book_id": 78,
+      "sheet_row": 79,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Premananda",
+      "canonical_title": "Swami Premananda: Love Incarnate",
+      "original_title": "Swami Premananda: Love Incarnate",
+      "original_language": "English",
+      "english_title": "Swami Premananda: Love Incarnate",
+      "bengali_title": null,
+      "author": "Swami Swahananda; Brahmachari Akshayachaitanya; Prasun De",
+      "summary": null,
+      "sort_order": 78,
+      "book_id": 79,
+      "sheet_row": 80,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Premananda",
+      "canonical_title": "Swami Premanander Jivan O Smritikatha",
+      "original_title": "স্বামী প্রেমানন্দের জীবন ও স্মৃতিকথা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী প্রেমানন্দের জীবন ও স্মৃতিকথা",
+      "author": "Swami Chetanananda",
+      "summary": null,
+      "sort_order": 79,
+      "book_id": 80,
+      "sheet_row": 81,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Premananda",
+      "canonical_title": "Premik Purush Premananda",
+      "original_title": "প্রেমিক পুরুষ প্রেমানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "প্রেমিক পুরুষ প্রেমানন্দ",
+      "author": "Swami Prabhavananda",
+      "summary": null,
+      "sort_order": 80,
+      "book_id": 81,
+      "sheet_row": 82,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Premananda",
+      "canonical_title": "Kathaprasange Swami Premananda",
+      "original_title": "কথাপ্রসঙ্গে স্বামী প্রেমানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "কথাপ্রসঙ্গে স্বামী প্রেমানন্দ",
+      "author": "Swami Omkareshwarananda",
+      "summary": null,
+      "sort_order": 81,
+      "book_id": 82,
+      "sheet_row": 83,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Premananda",
+      "canonical_title": "প্রেমানন্দ",
+      "original_title": "প্রেমানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "প্রেমানন্দ",
+      "author": "Omkareshwarananda",
+      "summary": null,
+      "sort_order": 82,
+      "book_id": 83,
+      "sheet_row": 84,
+      "baseline_links": [],
+      "research_status": "pending"
+    },
+    {
+      "person": "Swami Premananda",
+      "canonical_title": "প্রেমানন্দ জীবনচরিত",
+      "original_title": "প্রেমানন্দ জীবনচরিত",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "প্রেমানন্দ জীবনচরিত",
+      "author": "Omkareshwarananda",
+      "summary": null,
+      "sort_order": 83,
+      "book_id": 84,
+      "sheet_row": 85,
+      "baseline_links": [],
+      "research_status": "pending"
+    }
+  ],
+  "checkpoint": {
+    "researched": 51,
+    "total": 84,
+    "last_saved_utc": "2026-10-15T08:04:26.709271+00:00"
+  },
+  "execution_status": "PARTIAL_QUOTA_CHECKPOINT — T1 not passed; IDs1–50 and52 researched; IDs51,53–84 pending",
+  "baseline_link_audit": {
+    "scope": "55 pre-existing targets preserved verbatim in baseline_links; selected targets inspected in book records",
+    "bulk_http_audit": "NOT RUN before quota checkpoint",
+    "coverage_limit": "Remaining mirrors not automatically reapproved by baseline existence. Complete all168 and independent QA required beforeT2."
+  },
+  "pending_book_ids": [
+    51,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84
+  ]
+}
