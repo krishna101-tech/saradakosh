@@ -11,6 +11,9 @@ export function stripTimelineOrdinal(label) {
 // Correct known imported heading errors without mutating the read-only DB.
 export function correctVivekanandaTimelineDate(label) {
   if (typeof label !== 'string') return label;
+  if (/^\d*\s*Vedanta in America II$/i.test(label.trim())) {
+    return `${label} (Nov 1895 - Apr 1896)`;
+  }
   if (/America:\s*East\s+coast/i.test(label)) {
     return label.replace(/\b1999\b/g, '1899');
   }

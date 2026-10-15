@@ -6,6 +6,8 @@ test('Vivekananda America date ranges use the nineteenth century', () => {
   assert.equal(correctVivekanandaTimelineDate('26 America: East coast (Aug - Nov 1999)'), '26 America: East coast (Aug - Nov 1899)');
   assert.equal(correctVivekanandaTimelineDate('27 America: West coast (Dec 99- July 1900)'), '27 America: West coast (Dec 1899- July 1900)');
   assert.equal(correctVivekanandaTimelineDate('28 Europe and Mediterranean (July-Nov 1900)'), '28 Europe and Mediterranean (July-Nov 1900)');
+  assert.equal(correctVivekanandaTimelineDate('18 Vedanta in America II'), '18 Vedanta in America II (Nov 1895 - Apr 1896)');
+  assert.equal(correctVivekanandaTimelineDate('18 Vedanta in America II (Nov 1895 - Apr 1896)'), '18 Vedanta in America II (Nov 1895 - Apr 1896)');
 });
 
 test('timeline display preserves dates while removing section ordinals', () => {
