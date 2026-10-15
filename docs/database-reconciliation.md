@@ -24,3 +24,11 @@ SHA-256 before removal:
 - Authoritative web database, retained unchanged: `2611298adf34b438f801b2e029b605ce2dfe20744dea13a3251752ba4fd8d5cf`
 
 The removed database remains recoverable from Git history. Routine backups, ETL, admin reads, and Next.js reads must target the web database. Regression checks run with `python -m unittest discover -s tests` at the repository root and `npm run test:database` in `saradakosh-web`.
+
+## Legacy importer boundary
+
+`python import_to_sqlite.py` now keeps the shared database file and rebuilds only the five workbook-owned legacy tables in one explicit `BEGIN IMMEDIATE` transaction. It uses individual SQLite DDL statements and parameterized inserts, avoiding the implicit commit behavior of `executescript` and pandas' SQLite `to_sql`. Count checks, `PRAGMA integrity_check`, and foreign-key checks for every non-legacy table run before the only commit. Exceptions roll back all changes, including new legacy schema. Library tables, summaries, links, real-cover provenance, and scheduling data remain in place; no persistent staging database is introduced.
+
+The raw workbook source is not equivalent to the retained corrected legacy database documented above. Reimporting intentionally replaces legacy rows from those inputs, including 9,080 deduplicated Matrix relationships rather than the retained 34,100 and potentially older text/labels. Historical legacy orphan relationships are retained losslessly and reported, while a foreign-key defect in any non-legacy table aborts the rebuild. See [the maintenance procedure](../RUNBOOK.md#-reimporting-legacy-workbook-data). Event vectors are invalidated transactionally; optional embedding generation is separate and never runs automatically after commit.
+
+`tests/test_legacy_importer.py` backs up the existing database through a read-only connection into temporary repository layouts and runs the documented CLI there. It checks full preservation of 168 books/55 links, an editorial summary, an approved real-cover fixture and its provenance, future Library tables, and schedules; it also checks repeatability, integrity, Library foreign keys, malformed-input rejection, and byte-for-byte rollback after failures during inserts and final validation. The canonical database is never the import target in these regressions.

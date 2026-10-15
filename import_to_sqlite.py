@@ -1,125 +1,155 @@
-from database_path import DB_PATH, REPO_ROOT
+"""Atomically replace workbook-owned legacy data in the shared SQLite database.
+
+Library, scheduling and other tables are not rebuilt. See docs/database-reconciliation.md.
+"""
+
+from collections import Counter
 import sqlite3
+
 import pandas as pd
-import os
 
-db_path = DB_PATH
-if os.path.exists(db_path):
-    os.remove(db_path)
+from database_path import DB_PATH, REPO_ROOT
 
-conn = sqlite3.connect(db_path)
-cursor = conn.cursor()
 
-# 1. Create tables
-cursor.executescript('''
-    CREATE TABLE events (
-        id INTEGER PRIMARY KEY,
-        du TEXT,
-        ref TEXT,
-        type TEXT,
-        dt REAL,
-        mn REAL,
-        yr REAL,
-        type_2 TEXT,
-        sequence REAL,
-        field1 TEXT,
-        field2 TEXT,
-        child_id REAL,
-        seq2 REAL,
-        gujarati TEXT,
-        gud_du TEXT,
-        lev REAL,
-        new_guj TEXT
-    );
-
-    CREATE TABLE parameters (
-        id INTEGER PRIMARY KEY,
-        para1 TEXT,
-        type TEXT,
-        sequence REAL,
-        person TEXT,
-        remark TEXT,
-        remark2 TEXT,
-        remark3 TEXT,
-        remark4 TEXT
-    );
-
-    CREATE TABLE param_hierarchy (
-        uid INTEGER PRIMARY KEY,
-        parent_id INTEGER,
-        child_id INTEGER,
-        child2_id INTEGER,
+# Execute each statement separately: sqlite3.executescript() and pandas.to_sql()
+# can commit an existing transaction, defeating rollback of a partial rebuild.
+SCHEMAS = {
+    'events': '''CREATE TABLE IF NOT EXISTS events (
+        id INTEGER PRIMARY KEY, du TEXT, ref TEXT, type TEXT,
+        dt REAL, mn REAL, yr REAL, type_2 TEXT, sequence REAL,
+        field1 TEXT, field2 TEXT, child_id REAL, seq2 REAL,
+        gujarati TEXT, gud_du TEXT, lev REAL, new_guj TEXT
+    )''',
+    'parameters': '''CREATE TABLE IF NOT EXISTS parameters (
+        id INTEGER PRIMARY KEY, para1 TEXT, type TEXT, sequence REAL,
+        person TEXT, remark TEXT, remark2 TEXT, remark3 TEXT, remark4 TEXT
+    )''',
+    'param_hierarchy': '''CREATE TABLE IF NOT EXISTS param_hierarchy (
+        uid INTEGER PRIMARY KEY, parent_id INTEGER, child_id INTEGER, child2_id INTEGER,
         FOREIGN KEY(parent_id) REFERENCES parameters(id),
         FOREIGN KEY(child_id) REFERENCES parameters(id),
         FOREIGN KEY(child2_id) REFERENCES parameters(id)
-    );
-
-    CREATE TABLE event_parameters (
-        event_id INTEGER,
-        parameter_id INTEGER,
+    )''',
+    'event_parameters': '''CREATE TABLE IF NOT EXISTS event_parameters (
+        event_id INTEGER, parameter_id INTEGER,
         FOREIGN KEY(event_id) REFERENCES events(id),
         FOREIGN KEY(parameter_id) REFERENCES parameters(id)
-    );
-
-    CREATE TABLE event_embeddings (
-        event_id INTEGER PRIMARY KEY,
-        embedding BLOB,
+    )''',
+    'event_embeddings': '''CREATE TABLE IF NOT EXISTS event_embeddings (
+        event_id INTEGER PRIMARY KEY, embedding BLOB,
         FOREIGN KEY(event_id) REFERENCES events(id) ON DELETE CASCADE
-    );
-''')
+    )''',
+}
 
-# Load data
-folder = REPO_ROOT / 'tables'
-du1 = pd.read_excel(os.path.join(folder, 'DU1.xlsx'))
-p1 = pd.read_excel(os.path.join(folder, 'Parameter1.xlsx'))
-pm = pd.read_excel(os.path.join(folder, 'ParaM.xlsx'))
-matrix = pd.read_excel(os.path.join(folder, 'Matrix.xlsx'))
+WORKBOOKS = {
+    'events': ('DU1.xlsx', {
+        'ID': 'id', 'DU': 'du', 'Ref': 'ref', 'Type': 'type',
+        'dt': 'dt', 'mn': 'mn', 'yr': 'yr', 'Type 2': 'type_2',
+        'Sequence': 'sequence', 'Field1': 'field1', 'Field2': 'field2',
+        'ChildID': 'child_id', 'Seq2': 'seq2', 'Gujarati': 'gujarati',
+        'GudDU': 'gud_du', 'LEV': 'lev', 'NEW GUJ': 'new_guj',
+    }),
+    'parameters': ('Parameter1.xlsx', {
+        'ParaID': 'id', 'Para1': 'para1', 'Type': 'type', 'Sequence': 'sequence',
+        'Person': 'person', 'Remark': 'remark', 'Remark2': 'remark2',
+        'Remark3': 'remark3', 'Remark4': 'remark4',
+    }),
+    'param_hierarchy': ('ParaM.xlsx', {
+        'UID': 'uid', 'ParentID': 'parent_id', 'ChildID': 'child_id',
+        'Child2ID': 'child2_id',
+    }),
+}
 
-# 2. Insert Events
-du1 = du1.rename(columns={
-    'ID': 'id', 'DU': 'du', 'Ref': 'ref', 'Type': 'type',
-    'Type 2': 'type_2', 'Sequence': 'sequence', 'Field1': 'field1',
-    'Field2': 'field2', 'ChildID': 'child_id', 'Seq2': 'seq2',
-    'Gujarati': 'gujarati', 'GudDU': 'gud_du', 'LEV': 'lev', 'NEW GUJ': 'new_guj'
-})
-# Make sure we don't insert NaN where it causes issues, but for sqlite REAL/TEXT NaN becomes NULL
-du1.to_sql('events', conn, if_exists='append', index=False)
 
-# 3. Insert Parameters
-p1 = p1.rename(columns={'ParaID': 'id', 'Para1': 'para1', 'Type': 'type', 'Sequence': 'sequence', 'Person': 'person', 'Remark': 'remark', 'Remark2': 'remark2', 'Remark3': 'remark3', 'Remark4': 'remark4'})
-p1.to_sql('parameters', conn, if_exists='append', index=False)
+def read_workbooks(folder):
+    """Read all inputs before locking/writing the database; retain source nulls."""
+    datasets = {}
+    for table, (filename, mapping) in WORKBOOKS.items():
+        frame = pd.read_excel(folder / filename)
+        if set(frame.columns) != set(mapping):
+            raise ValueError(f'{filename}: unexpected or missing columns')
+        frame = frame[list(mapping)].rename(columns=mapping)
+        frame = frame.astype(object).where(pd.notna(frame), None)
+        datasets[table] = (list(frame.columns), list(frame.itertuples(index=False, name=None)))
 
-# 4. Insert Hierarchy
-pm = pm.rename(columns={'UID': 'uid', 'ParentID': 'parent_id', 'ChildID': 'child_id', 'Child2ID': 'child2_id'})
-pm.to_sql('param_hierarchy', conn, if_exists='append', index=False)
+    matrix = pd.read_excel(folder / 'Matrix.xlsx')
+    required = ['RDU', 'M1', 'M2', 'M3', 'M4']
+    if not set(required).issubset(matrix.columns):
+        raise ValueError('Matrix.xlsx: missing relationship columns')
+    relationships = []
+    for rdu, *parameters in matrix[required].itertuples(index=False, name=None):
+        if pd.isna(rdu):
+            continue
+        for parameter in parameters:
+            if pd.notna(parameter):
+                event_id, parameter_id = int(rdu), int(parameter)
+                if event_id != rdu or parameter_id != parameter:
+                    raise ValueError('Matrix.xlsx: relationship IDs must be integers')
+                relationships.append((event_id, parameter_id))
+    datasets['event_parameters'] = (
+        ['event_id', 'parameter_id'], list(dict.fromkeys(relationships)),
+    )
+    return datasets
 
-# 5. Insert Matrix (Normalized)
-# The matrix table has ID, RDU, M1, M2, M3, M4, Type
-# We want to unpivot M1, M2, M3, M4
-ep_records = []
-for _, row in matrix.iterrows():
-    rdu = row['RDU']
-    if pd.isna(rdu): continue
-    
-    for m_col in ['M1', 'M2', 'M3', 'M4']:
-        val = row[m_col]
-        if pd.notna(val):
-            ep_records.append((int(rdu), int(val)))
 
-ep_df = pd.DataFrame(ep_records, columns=['event_id', 'parameter_id'])
-ep_df = ep_df.drop_duplicates()
-ep_df.to_sql('event_parameters', conn, if_exists='append', index=False)
+def quote_identifier(name):
+    return '"' + name.replace('"', '""') + '"'
 
-conn.commit()
-conn.close()
 
-print("Successfully imported data into saradakosh.db")
+def rebuild_legacy(db_path=DB_PATH, folder=REPO_ROOT / 'tables'):
+    """Replace only legacy data, committing DDL/deletes/inserts/validation together.
 
-# Run embedding sync to populate vector tables
-import subprocess
-print("Running embedding sync script...")
-try:
-    subprocess.run(["node", str(REPO_ROOT / "saradakosh-web/scripts/sync-embeddings.js")], check=True, cwd=REPO_ROOT)
-    print("Embedding sync finished successfully.")
-except Exception as e:
-    print(f"Warning: Could not run embedding sync script: {e}")
+    The historical workbooks have orphan legacy relationships. Keep them losslessly
+    and report them, while enforcing FK validity for every table outside this import.
+    Disabling FK enforcement on this connection also avoids legacy DELETE cascades;
+    the explicit checks below run before the only COMMIT.
+    """
+    datasets = read_workbooks(folder)
+    conn = sqlite3.connect(db_path, isolation_level=None)
+    try:
+        conn.execute('PRAGMA foreign_keys = OFF')
+        conn.execute('BEGIN IMMEDIATE')
+        for schema in SCHEMAS.values():
+            conn.execute(schema)
+        # Child rows and old vectors belong to the replaced events. Keeping their
+        # embeddings could silently associate old descriptions with new content.
+        for table in ('event_embeddings', 'event_parameters', 'param_hierarchy', 'events', 'parameters'):
+            conn.execute(f'DELETE FROM {quote_identifier(table)}')
+        for table, (columns, rows) in datasets.items():
+            column_sql = ', '.join(map(quote_identifier, columns))
+            placeholders = ', '.join('?' for _ in columns)
+            conn.executemany(
+                f'INSERT INTO {quote_identifier(table)} ({column_sql}) VALUES ({placeholders})', rows,
+            )
+            count = conn.execute(f'SELECT COUNT(*) FROM {quote_identifier(table)}').fetchone()[0]
+            if count != len(rows):
+                raise ValueError(f'{table}: imported row count does not match source')
+        if conn.execute('PRAGMA integrity_check').fetchall() != [('ok',)]:
+            raise ValueError('Database integrity check failed')
+        violations = conn.execute('PRAGMA foreign_key_check').fetchall()
+        protected_violations = [row for row in violations if row[0] not in SCHEMAS]
+        if protected_violations:
+            raise ValueError(f'Foreign key check failed outside legacy tables: {protected_violations[:5]}')
+        legacy_orphans = Counter(row[0] for row in violations)
+        conn.execute('COMMIT')
+    except BaseException:
+        if conn.in_transaction:
+            conn.execute('ROLLBACK')
+        raise
+    finally:
+        conn.close()
+    return {table: len(rows) for table, (_, rows) in datasets.items()}, dict(legacy_orphans)
+
+
+def main():
+    counts, legacy_orphans = rebuild_legacy()
+    print(f'Successfully imported legacy data into {DB_PATH}')
+    print('Imported rows:', counts)
+    if legacy_orphans:
+        print('Legacy source foreign-key violations retained:', legacy_orphans)
+    print('Library and other non-legacy tables preserved. Event embeddings cleared; '
+          'run the documented embedding sync separately if needed.')
+
+
+if __name__ == '__main__':
+    main()

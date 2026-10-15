@@ -10,6 +10,8 @@ From `saradakosh-web`, run `npm run import:library`. The importer validates the 
 
 The import updates source-owned book fields and synchronizes source links. It preserves separately approved summaries and cover records. It never rebuilds or changes legacy event, parameter, hierarchy, or scheduling tables. Library link/cover foreign keys are checked separately; preexisting legacy relationship defects are not claimed fixed by this feature.
 
+The separate legacy command `python import_to_sqlite.py` also preserves every Library table, summary, link and cover record. Its transaction replaces only workbook-owned legacy data and invalidates event vectors; embedding generation is a separate operation. Follow [the runbook](../RUNBOOK.md#-reimporting-legacy-workbook-data), keeping the shared database in place. `python -m unittest discover -s tests -p test_legacy_importer.py` exercises the actual command in disposable repository copies, including editorial/real-cover preservation and full failure rollback.
+
 Source original languages are 105 Bengali, 59 English, one French, one Hindi, and two explicitly `not clear`. English titles are absent for 86 books; Bengali titles are absent for 54. No summaries, translations, edition metadata, replacement links, or covers have been invented. The existing Google Play target in source row 22 is retained after coordinator verification that its full ebook is offered free.
 
 ## Representation and navigation
