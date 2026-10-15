@@ -4,13 +4,14 @@ import path from 'node:path';
 
 const quotes = JSON.parse(fs.readFileSync(path.join(__dirname, '../../src/data/quotes.json'), 'utf8'));
 
-test('saved theme and carousel language survive hydration and theme changes persist', async ({ page }) => {
+test('saved theme and carousel language survive hydration and theme changes persist', async ({ page, baseURL }) => {
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
-  await page.addInitScript(() => {
+  await page.addInitScript(appOrigin => {
+    if (window.top !== window || location.origin !== appOrigin) return;
     localStorage.setItem('saradakosh-theme', 'dark');
     localStorage.setItem('sk_quote_lang', 'ben');
-  });
+  }, new URL(baseURL).origin);
   await page.goto('/');
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
   const carousel = page.locator('section').filter({ has: page.getByRole('heading', { name: 'Vivekananda for You', exact: true }) });
