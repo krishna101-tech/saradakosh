@@ -113,12 +113,14 @@ test('multi-link dialog cycles every link and wraps focus in both directions', a
   await expect(trigger).toBeFocused();
 });
 
-test('full-text navigation opens its own tab without opening book details', async ({ page, context }) => {
-  await context.route(url => url.hostname !== '127.0.0.1' && url.hostname !== 'localhost', route => route.fulfill({ status: 200, contentType: 'text/html', body: '<title>External source navigation</title>' }));
+test('full-text navigation opens its own tab without opening book details', async ({ page, context, baseURL }) => {
+  const appOrigin = new URL(baseURL).origin;
+  await context.route(url => url.origin !== appOrigin, route => route.fulfill({ status: 200, contentType: 'text/html', body: '<title>External source navigation</title>' }));
   await page.goto('/reports/refs?lang=english');
   const link = page.locator('[data-book-id="1"]').getByRole('link', { name: 'English 1', exact: true });
   const [popup] = await Promise.all([page.waitForEvent('popup'), link.click()]);
   await popup.waitForLoadState();
+  await expect(popup).toHaveTitle('External source navigation');
   expect(popup.url()).toBe(books[0].links[0].url);
   await expect(page.getByRole('dialog')).not.toBeVisible();
   await expect(page.getByRole('status')).toHaveText('1–24 of 168 books');
