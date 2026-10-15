@@ -1,0 +1,55 @@
+name: Playwright Tests
+
+on:
+  pull_request:
+    branches: [main, staging]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: playwright-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    # A0: no runner is allocated until the coordinator authorizes this exact head.
+    if: >-
+      ${{ vars.SARADAKOSH_E2E_ENABLED == 'true' &&
+          vars.SARADAKOSH_E2E_CANDIDATE_SHA == github.event.pull_request.head.sha }}
+    timeout-minutes: 15
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: saradakosh-web
+    env:
+      CI: 'true'
+      HUSKY: '0'
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Install locked dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Lint application and tests
+        run: npm run lint
+      - name: Check database paths and data
+        run: npm run test:database
+      - name: Check Library source, import and representation invariants
+        run: npm run test:library
+      - name: Run real application browser tests
+        run: npm test
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: failure()
+        with:
+          name: playwright-failure-${{ github.event.pull_request.head.sha }}
+          path: saradakosh-web/test-results/
+          retention-days: 1

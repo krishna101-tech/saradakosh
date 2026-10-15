@@ -3,7 +3,8 @@ import { test, expect } from '@playwright/test';
 test.describe('End-to-End Smoke Tests', () => {
   test('Homepage loads correctly with core theme', async ({ page }) => {
     // Navigate to the local server or staging URL
-    await page.goto(process.env.PLAYWRIGHT_TEST_BASE_URL || 'http://localhost:3000');
+    const response = await page.goto('/');
+    expect(response.status()).toBe(200);
     
     // Assert 200 OK (implicitly verified by successful goto)
     
@@ -17,18 +18,22 @@ test.describe('End-to-End Smoke Tests', () => {
   });
 
   test('SearchBar returns clickable Links', async ({ page }) => {
-    await page.goto(process.env.PLAYWRIGHT_TEST_BASE_URL || 'http://localhost:3000');
+    await page.goto('/');
     
     const searchInput = page.locator('input#search-input');
     await searchInput.fill('Vivekananda');
     
     // Wait for dropdown to appear
-    const resultsContainer = page.locator('div.absolute.z-50.w-full.mt-2');
-    await expect(resultsContainer).toBeVisible({ timeout: 5000 });
+    const resultsContainer = page.locator('#search-results');
+    await expect(resultsContainer).toBeVisible();
     
     // Ensure the results contain <a> tags
     const links = resultsContainer.locator('a');
-    await expect(links.first()).toBeVisible();
+    await expect(links.first()).toBeVisible({ timeout: 45_000 });
     await expect(links.first()).toHaveAttribute('href', /\/quotes\/post\/\d+/);
+    const destination = await links.first().getAttribute('href');
+    await links.first().click();
+    await expect(page).toHaveURL(new RegExp(`${destination}$`));
+    await expect(page.locator('body')).not.toContainText('Record Not Found');
   });
 });

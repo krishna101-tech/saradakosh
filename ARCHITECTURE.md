@@ -12,7 +12,7 @@ The application utilizes a decentralized, multi-stack approach communicating wit
 
 ## 🗄️ Database Schema Documentation
 
-The primary database is a local file named `saradakosh.db`. Below is the structural layout of its core tables.
+The single authoritative database is `saradakosh-web/saradakosh.db`. The Next.js database and embeddings readers locate the application package from their server module URL; Python ETL tools use `database_path.py`, and the admin app resolves it relative to its own file. Shell working directories must never select a different database. See [the reconciliation record](docs/database-reconciliation.md) for why the former root copy was removed. Below is the structural layout of its core tables.
 
 ### `events`
 Stores the core chronological or sequential events and their metadata.

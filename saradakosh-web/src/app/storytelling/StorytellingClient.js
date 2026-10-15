@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform, useSpring } from 'framer-motion';
 import { ReactLenis } from '@studio-freight/react-lenis';
@@ -230,14 +231,14 @@ export default function StorytellingClient() {
           <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between gap-4">
             {/* Left: Home & Title */}
             <div className="flex items-center gap-3 min-w-0">
-              <a 
+              <Link
                 href="/" 
                 className="flex items-center gap-2 group text-text-theme hover:text-quotes-accent transition-colors shrink-0"
                 aria-label="Back to Home"
               >
                 <Home className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 <span className="font-serif tracking-wider font-semibold text-xs uppercase max-md:hidden">SARADAKOSH</span>
-              </a>
+              </Link>
 
               {/* Decorative separator */}
               <div className="h-4 w-[1px] bg-quotes-accent/20 max-md:hidden shrink-0" />
@@ -408,7 +409,7 @@ export default function StorytellingClient() {
               </h2>
               
               <p className="text-text-theme/90 font-light tracking-wide italic text-base md:text-lg font-serif max-w-xl mx-auto mb-8 leading-relaxed">
-                "{uiTexts[lang].footerText}"
+                &quot;{uiTexts[lang].footerText}&quot;
               </p>
 
               <div className="signature-divider max-w-xs mx-auto mb-8" />
@@ -418,12 +419,12 @@ export default function StorytellingClient() {
               </p>
 
               <div className="flex items-center justify-center gap-4">
-                <a 
+                <Link
                   href="/" 
                   className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-stone-950 text-xs font-bold tracking-widest uppercase py-3 px-6 rounded-full transition-all duration-150 transform hover:-translate-y-0.5 active:translate-y-0 hover:shadow-lg hover:shadow-amber-600/20 shadow-md"
                 >
                   {uiTexts[lang].backHome}
-                </a>
+                </Link>
               </div>
             </motion.div>
           </div>

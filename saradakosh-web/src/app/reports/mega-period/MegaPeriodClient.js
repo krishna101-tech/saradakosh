@@ -65,7 +65,7 @@ export default function MegaPeriodClient({ data }) {
               <div 
                 className="font-serif text-2xl font-semibold text-primary-theme mt-6 mb-2.5 border-b-2 border-glass-border pb-1 cursor-pointer select-none flex items-center gap-2 transition-colors hover:text-primary-theme/80"
                 onClick={() => toggleNode(cat)} 
-                role="treeitem"
+                role="treeitem" aria-selected={false}
                 aria-expanded={isCatExpanded}
                 tabIndex={0}
                 onKeyDown={(e) => {
@@ -83,7 +83,7 @@ export default function MegaPeriodClient({ data }) {
                 <div role="group" className="space-y-2">
                   {data[cat].map(item => {
                     return (
-                      <div key={item.id} className="bg-glass-bg border border-glass-border rounded-lg mb-1.5 p-2 px-4 transition-all duration-200 hover:shadow-md hover:-translate-y-0.5" role="treeitem">
+                      <div key={item.id} className="bg-glass-bg border border-glass-border rounded-lg mb-1.5 p-2 px-4 transition-all duration-200 hover:shadow-md hover:-translate-y-0.5" role="treeitem" aria-selected={false}>
                         <Link 
                           href={`/reports/viewer/${item.id}`} 
                           className="block text-text-theme no-underline text-base font-medium leading-relaxed w-full h-full"

@@ -1,16 +1,22 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { useHydrated } from '@/lib/useHydrated';
 import { Sunrise, MoonStar } from 'lucide-react';
 
 export default function ThemeSelector() {
-  const [theme, setTheme] = useState('system');
-  const [mounted, setMounted] = useState(false);
+  const hydrated = useHydrated();
+  if (!hydrated) {
+    return (
+      <div className="absolute top-3 right-3 sm:top-5 sm:right-5 bg-glass-bg backdrop-blur-md border border-glass-border rounded-full p-1 h-9 w-[68px] z-50 invisible">
+        <div className="size-7 rounded-full bg-primary-theme/15 absolute top-1 left-1" />
+      </div>
+    );
+  }
+  return <ClientThemeSelector />;
+}
 
-  useEffect(() => {
-    setMounted(true);
-    const savedTheme = localStorage.getItem('saradakosh-theme') || 'system';
-    setTheme(savedTheme);
-  }, []);
+function ClientThemeSelector() {
+  const [theme, setTheme] = useState(() => localStorage.getItem('saradakosh-theme') || 'system');
 
   const changeTheme = (newTheme) => {
     setTheme(newTheme);
@@ -31,14 +37,6 @@ export default function ThemeSelector() {
   };
 
   const btnClass = "relative z-10 bg-transparent border-none cursor-pointer flex items-center justify-center size-7 rounded-full transition-all duration-200 touch-manipulation outline-none";
-
-  if (!mounted) {
-    return (
-      <div className="absolute top-3 right-3 sm:top-5 sm:right-5 bg-glass-bg backdrop-blur-md border border-glass-border rounded-full p-1 h-9 w-[68px] z-50 invisible">
-        <div className="size-7 rounded-full bg-primary-theme/15 absolute top-1 left-1" />
-      </div>
-    );
-  }
 
   const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const isLightActive = theme === 'light' || (theme === 'system' && !isSystemDark);

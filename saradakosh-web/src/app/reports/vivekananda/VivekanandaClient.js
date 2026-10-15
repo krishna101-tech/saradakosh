@@ -67,7 +67,7 @@ export default function VivekanandaClient({ data }) {
               <div 
                 className="text-primary-theme font-bold text-xl mt-6 mb-2.5 border-b border-glass-border pb-1 cursor-pointer select-none transition-colors duration-200 hover:text-primary-theme/80 flex items-center gap-2"
                 onClick={() => toggleNode(p2.id)}
-                role="treeitem"
+                role="treeitem" aria-selected={false}
                 aria-expanded={isP2Expanded}
                 tabIndex={0}
                 onKeyDown={(e) => {
@@ -90,7 +90,7 @@ export default function VivekanandaClient({ data }) {
                         <div 
                           className="text-secondary-theme font-semibold text-lg ml-5 mt-2.5 mb-1.5 border-l-2 border-secondary-theme pl-3 cursor-pointer select-none transition-colors duration-200 hover:brightness-110 flex items-center gap-2"
                           onClick={() => toggleNode(p3.id)}
-                          role="treeitem"
+                          role="treeitem" aria-selected={false}
                           aria-expanded={isP3Expanded}
                           tabIndex={0}
                           onKeyDown={(e) => {
@@ -109,7 +109,7 @@ export default function VivekanandaClient({ data }) {
                             {p3.children.map((p4, i4) => {
                               const text = p4.para1.replace(/^\d+\s*/, '');
                               return (
-                                <div key={p4.id} className="ml-12 border-b border-dashed border-glass-border transition-colors duration-200 rounded hover:bg-primary-theme/10 mb-0.5" role="treeitem">
+                                <div key={p4.id} className="ml-12 border-b border-dashed border-glass-border transition-colors duration-200 rounded hover:bg-primary-theme/10 mb-0.5" role="treeitem" aria-selected={false}>
                                   <div className="flex" role="none">
                                     <div className="p-2 text-base w-full" role="none">
                                       <Link 

@@ -1,5 +1,5 @@
-import sqlite3
-conn = sqlite3.connect('saradakosh.db')
+from database_path import connect_database
+conn = connect_database()
 c = conn.cursor()
 c.execute("UPDATE schedule_settings SET google_meet_link = 'https://meet.google.com/wmv-cztw-ohw'")
 conn.commit()

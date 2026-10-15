@@ -1,9 +1,7 @@
 import Database from 'better-sqlite3';
-import path from 'path';
-import { searchInMemoryVectors } from './embeddings';
+import { dbPath } from './db-path.mjs';
+import { searchInMemoryVectors } from './embeddings.js';
 
-// Connect to the SQLite database which is in the same directory (Vercel deployment)
-const dbPath = path.resolve(process.cwd(), 'saradakosh.db');
 const db = new Database(dbPath, { readonly: true });
 
 export function getPersons() {

@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const dbPath = path.resolve(__dirname, '../saradakosh.db');
 console.log('Connecting to database at:', dbPath);
-const db = new Database(dbPath);
+const db = new Database(dbPath, { fileMustExist: true });
 
 // Ensure event_embeddings table exists
 db.exec(`

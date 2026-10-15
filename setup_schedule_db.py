@@ -1,13 +1,12 @@
-import sqlite3
+from database_path import connect_database
 import urllib.request
 import csv
 from io import StringIO
 
-DB_FILE = 'saradakosh.db'
 CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTf9NQNnH7EQodlRZalA0JEaPy91ahzvsAQO1ByUer8m8SbprkopNYucNvJzzLlPjuenXvpexZg7k1B/pub?output=csv'
 
 def setup_db():
-    conn = sqlite3.connect(DB_FILE)
+    conn = connect_database()
     cursor = conn.cursor()
 
     # Create Settings Table

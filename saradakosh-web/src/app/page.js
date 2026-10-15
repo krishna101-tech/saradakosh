@@ -126,15 +126,15 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
             <div className="space-y-4">
               <h4 className="text-lg text-secondary-theme font-semibold border-b border-border pb-2.5">On Self-Belief</h4>
-              <blockquote className="italic text-base leading-relaxed pl-4 border-l-2 border-primary-theme text-text-theme opacity-90 my-4">"You cannot believe in God until you believe in yourself."</blockquote>
-              <blockquote className="italic text-base leading-relaxed pl-4 border-l-2 border-primary-theme text-text-theme opacity-90 my-4">"Stand up, be bold, be strong. Take the whole responsibility on your own shoulders, and know that you are the creator of your own destiny."</blockquote>
-              <blockquote className="italic text-base leading-relaxed pl-4 border-l-2 border-primary-theme text-text-theme opacity-90 my-4">"He is an atheist who does not believe in himself."</blockquote>
+              <blockquote className="italic text-base leading-relaxed pl-4 border-l-2 border-primary-theme text-text-theme opacity-90 my-4">&quot;You cannot believe in God until you believe in yourself.&quot;</blockquote>
+              <blockquote className="italic text-base leading-relaxed pl-4 border-l-2 border-primary-theme text-text-theme opacity-90 my-4">&quot;Stand up, be bold, be strong. Take the whole responsibility on your own shoulders, and know that you are the creator of your own destiny.&quot;</blockquote>
+              <blockquote className="italic text-base leading-relaxed pl-4 border-l-2 border-primary-theme text-text-theme opacity-90 my-4">&quot;He is an atheist who does not believe in himself.&quot;</blockquote>
             </div>
             <div className="space-y-4">
               <h4 className="text-lg text-secondary-theme font-semibold border-b border-border pb-2.5">On Strength and Courage</h4>
-              <blockquote className="italic text-base leading-relaxed pl-4 border-l-2 border-primary-theme text-text-theme opacity-90 my-4">"The greatest sin is to think that you are weak."</blockquote>
-              <blockquote className="italic text-base leading-relaxed pl-4 border-l-2 border-primary-theme text-text-theme opacity-90 my-4">"Arise, awake, and stop not until the goal is reached."</blockquote>
-              <blockquote className="italic text-base leading-relaxed pl-4 border-l-2 border-primary-theme text-text-theme opacity-90 my-4">"Take up one idea. Make that one idea your life..."</blockquote>
+              <blockquote className="italic text-base leading-relaxed pl-4 border-l-2 border-primary-theme text-text-theme opacity-90 my-4">&quot;The greatest sin is to think that you are weak.&quot;</blockquote>
+              <blockquote className="italic text-base leading-relaxed pl-4 border-l-2 border-primary-theme text-text-theme opacity-90 my-4">&quot;Arise, awake, and stop not until the goal is reached.&quot;</blockquote>
+              <blockquote className="italic text-base leading-relaxed pl-4 border-l-2 border-primary-theme text-text-theme opacity-90 my-4">&quot;Take up one idea. Make that one idea your life...&quot;</blockquote>
             </div>
           </div>
         </footer>

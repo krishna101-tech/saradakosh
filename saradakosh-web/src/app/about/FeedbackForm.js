@@ -1,24 +1,17 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { submitFeedback } from './actions';
 
 export default function FeedbackForm() {
   const searchParams = useSearchParams();
   const [email, setEmail] = useState('');
-  const [reference, setReference] = useState('');
+  const reference = searchParams.get('ref') || '';
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
-
-  useEffect(() => {
-    const refParam = searchParams.get('ref');
-    if (refParam) {
-      setReference(refParam);
-    }
-  }, [searchParams]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

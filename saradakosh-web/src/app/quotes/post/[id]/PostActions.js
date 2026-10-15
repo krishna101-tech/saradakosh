@@ -1,15 +1,9 @@
 'use client';
-import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Share2, Download } from 'lucide-react';
 export default function PostActions({ imageUrl }) {
-  const [currentUrl, setCurrentUrl] = useState('');
-
-  useEffect(() => {
-    setCurrentUrl(window.location.href);
-  }, []);
-
   const handleShare = async () => {
+    const currentUrl = window.location.href;
     if (navigator.share) {
       try {
         await navigator.share({

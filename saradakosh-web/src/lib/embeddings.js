@@ -1,6 +1,6 @@
 import fs from 'fs';
-import path from 'path';
 import Database from 'better-sqlite3';
+import { dbPath } from './db-path.mjs';
 
 // Cache structure
 const cache = {
@@ -9,8 +9,6 @@ const cache = {
   count: 0,
   mtimeMs: 0
 };
-
-const dbPath = path.resolve(process.cwd(), 'saradakosh.db');
 
 // Helper to load cache from database
 function loadCache(newMtimeMs) {

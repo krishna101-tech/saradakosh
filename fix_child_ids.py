@@ -1,12 +1,12 @@
-import sqlite3
+from database_path import connect_database, REPO_ROOT
 import pandas as pd
 
 def main():
     # We will use the original DU1.xlsx to determine the physical sequential order
     # since MS Access export balyaparva.xls preserves that implicit grouping.
-    df = pd.read_excel(r'C:\Saradakosh antigravity\tables\DU1.xlsx')
+    df = pd.read_excel(REPO_ROOT / 'tables' / 'DU1.xlsx')
     
-    conn = sqlite3.connect(r'C:\Saradakosh antigravity\saradakosh.db')
+    conn = connect_database()
     cursor = conn.cursor()
     
     updates = []
