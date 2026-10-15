@@ -65,6 +65,8 @@
 .book-links { display:flex; align-items:center; flex-wrap:wrap; gap:6px; margin-top:5px; }
 .book-link { display:inline-flex; align-items:center; justify-content:center; gap:6px; padding:7px 9px; min-height:36px; border:1px solid var(--library-border, var(--glass-border)); border-radius:6px; color:var(--library-accent, var(--primary-color)); background:var(--library-surface, var(--glass-bg)); text-decoration:none; font-size:13px; line-height:1.5; }
 .book-link:hover { background:var(--primary-glow); }
+.book-link-entry { display:flex; flex-direction:column; align-items:flex-start; gap:4px; max-width:100%; }
+.book-link-note { font-size:13px; line-height:1.5; color:var(--library-muted, var(--text-color)); overflow-wrap:anywhere; }
 .book-no-links { font-size:13px; line-height:1.5; color:var(--library-muted, var(--text-color)); }
 .library-list { margin:0; padding:0; list-style:none; }
 .book-list-row { display:flex; align-items:center; gap:24px; border-top:1px solid var(--library-border); padding:20px 4px; }
