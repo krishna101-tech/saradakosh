@@ -9,6 +9,8 @@
     "lint": "eslint",
     "test": "playwright test",
     "test:database": "node --test tests/database.test.mjs",
+    "test:library": "node --test tests/library.test.mjs",
+    "import:library": "node scripts/import-library.mjs",
     "prepare": "husky"
   },
   "dependencies": {
