@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import quotesData from '@/data/quotes.json';
 import SectionHeading from '@/components/SectionHeading';
+import { useHydrated } from '@/lib/useHydrated';
 
 const AUTOPLAY_INTERVAL = 4000;
 
@@ -24,25 +25,19 @@ function shuffleArray(array) {
 }
 
 export default function QuoteCarousel() {
-  const [quotes, setQuotes] = useState([]);
-  const [language, setLanguage] = useState('eng');
+  const hydrated = useHydrated();
+  return hydrated ? <ClientQuoteCarousel /> : null;
+}
+
+function ClientQuoteCarousel() {
+  const [{ quotes, language }] = useState(() => {
+    const language = localStorage.getItem('sk_quote_lang') || 'eng';
+    const validQuotes = quotesData.filter(quote => quote.images?.[language]);
+    return { language, quotes: shuffleArray(validQuotes).slice(0, 10) };
+  });
   const scrollRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
   const timerRef = useRef(null);
-
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-    const savedLang = localStorage.getItem('sk_quote_lang') || 'eng';
-    setLanguage(savedLang);
-
-    const validQuotes = quotesData.filter(q => {
-      const imgs = q.images || {};
-      return !!imgs[savedLang];
-    });
-
-    const shuffled = shuffleArray(validQuotes);
-    setQuotes(shuffled.slice(0, 10)); // up to 10 quotes
-  }, []);
 
   useEffect(() => {
     if (quotes.length <= 1) return;

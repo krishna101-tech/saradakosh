@@ -1,7 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useMemo, useState } from 'react';
 import { scheduleConfig } from '@/lib/scheduleConfig';
+import { useHydrated } from '@/lib/useHydrated';
 
 function formatDateRange(start, end) {
   const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -25,14 +26,10 @@ const ShimmerSkeleton = () => (
   </div>
 );
 
-export default function ClassSchedule() {
-  const [scheduleData, setScheduleData] = useState([]);
-  const [clipboardWithLinks, setClipboardWithLinks] = useState('');
-  const [clipboardWithoutLinks, setClipboardWithoutLinks] = useState('');
-  const [toastMessage, setToastMessage] = useState(null);
+const EMPTY_SCHEDULE = { scheduleData: [], clipboardWithLinks: '', clipboardWithoutLinks: '' };
 
-  useEffect(() => {
-    if (!scheduleConfig.startDate) return;
+function buildSchedule() {
+    if (!scheduleConfig.startDate) return EMPTY_SCHEDULE;
 
     const initialStartDate = new Date(scheduleConfig.startDate + 'T00:00:00');
     const effectiveDate = new Date();
@@ -50,7 +47,7 @@ export default function ClassSchedule() {
     const weeksPassed = diffDays >= 0 ? Math.floor(diffDays / 7) : 0;
     
     const topics = scheduleConfig.topics;
-    if (!topics || topics.length === 0) return;
+    if (!topics || topics.length === 0) return EMPTY_SCHEDULE;
     
     const currentTopicIndex = weeksPassed % topics.length;
     const displayTopics = [...topics.slice(currentTopicIndex), ...topics.slice(0, currentTopicIndex)];
@@ -82,11 +79,20 @@ export default function ClassSchedule() {
         tempWithoutLinks += `*${dateRange}* ${topic.name}\n\n`;
     }
 
-    setScheduleData(newScheduleData);
-    setClipboardWithLinks(tempWithLinks.trim());
-    setClipboardWithoutLinks(tempWithoutLinks.trim());
+    return {
+      scheduleData: newScheduleData,
+      clipboardWithLinks: tempWithLinks.trim(),
+      clipboardWithoutLinks: tempWithoutLinks.trim()
+    };
+}
 
-  }, []);
+export default function ClassSchedule() {
+  const hydrated = useHydrated();
+  const { scheduleData, clipboardWithLinks, clipboardWithoutLinks } = useMemo(
+    () => hydrated ? buildSchedule() : EMPTY_SCHEDULE,
+    [hydrated]
+  );
+  const [toastMessage, setToastMessage] = useState(null);
 
   const showToast = (message) => {
     setToastMessage(message);

@@ -39,6 +39,8 @@ jobs:
         run: npm ci --no-audit --no-fund
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
+      - name: Lint application and tests
+        run: npm run lint
       - name: Check database paths and data
         run: npm run test:database
       - name: Check Library source, import and representation invariants
