@@ -1,10 +1,6 @@
-# Version 02 T1 research: book IDs 1–84
+# Version 02 T1 research: book IDs1-84
 
-**Partial quota checkpoint. T1 has not passed.** IDs 1–50 and 52 researched (51 records); IDs 51 and 53–84 pending.
-
-Researcher: gpt-6.1-sol, High reasoning. Candidate preparation only; independent QA and approval are pending. Baseline identities and all 55 existing links are preserved. Sheet row = book ID + 1. No book text is redistributed.
-
-The JSON ledger records actual query strings, source URLs, access observations, edition and volume issues, rejected matches, and remaining gaps. A full bulk HTTP audit of all baseline targets has not run.
+All84 lower IDs researched; independent QA and public-link adjudication pending. All55 original targets preserved. Transport checks are not completeness/rights approval. Mirror ordinals are not volume numbers. Sheet row = book ID +1. Private inventory stays outside this repository.
 
 | ID | Book | Research | Candidate outcome |
 |---|---|---|---|
@@ -58,37 +54,37 @@ The JSON ledger records actual query strings, source URLs, access observations, 
 | 48 | To the Youth of India | researched_with_gaps | Officialcomplete9lecturePDFcandidate;independentQApending. |
 | 49 | The Life of Swami Vivekananda | researched_with_gaps | English combinedVol1–2candidate; no substitution with shortBiography. |
 | 50 | Swami Vivekananda in the West: New Discoveries | researched_with_gaps | No complete free six-volume set verified; all6remain gaps. |
-| 51 | Photographs of Swami Vivekananda | pending | Pending actual research |
+| 51 | Photographs of Swami Vivekananda | researched | Public institutional illustrated reader candidate; exact edition and visual fidelity remain qualified. |
 | 52 | Reminiscences of Swami Vivekananda | researched_with_gaps | Complete readable1983edition verified structurally; candidateawaitsindependentQA/rightsassessment. Not a citation-only synopsis. |
-| 53 | Swami Vivekananda in America | pending | Pending actual research |
-| 54 | Swami Vivekananda in Chicago | pending | Pending actual research |
-| 55 | Swami Vivekananda in Contemporary Indian News | pending | Pending actual research |
-| 56 | স্বামী বিবেকানন্দ ও সমকালীন ভারতবর্ষ | pending | Pending actual research |
-| 57 | কাশীধামে স্বামী বিবেকানন্দ | pending | Pending actual research |
-| 58 | বিবেকানন্দের জীবনের ঘটনাবলী | pending | Pending actual research |
-| 59 | যুগনায়ক | pending | Pending actual research |
-| 60 | লন্ডনে স্বামী বিবেকানন্দ ১-২ | pending | Pending actual research |
-| 61 | স্বামী বিবেকানন্দের বাল্যজীবনী | pending | Pending actual research |
-| 62 | স্বামীজীর পদপ্রান্তে | pending | Pending actual research |
-| 63 | স্মৃতির আলোয় স্বামীজী | pending | Pending actual research |
-| 64 | স্বামীজীর স্মৃতিসঞ্চয়ন | pending | Pending actual research |
-| 65 | The Eternal Companion: Life and Teachings of Swami Brahmananda | pending | Pending actual research |
-| 66 | A Guide to Spiritual Life | pending | Pending actual research |
-| 67 | Swami Brahmananda As We Saw Him | pending | Pending actual research |
-| 68 | Swami Brahmanander Smritikatha | pending | Pending actual research |
-| 69 | রাজা মহারাজ | pending | Pending actual research |
-| 70 | Japa and Dhyana in a Nutshell | pending | Pending actual research |
-| 71 | Sadhan Prasange Raja Maharaj | pending | Pending actual research |
-| 72 | ব্রহ্মানন্দ ও রামকৃষ্ণ মিশন | pending | Pending actual research |
-| 73 | ব্রহ্মানন্দ চরিত | pending | Pending actual research |
-| 74 | ব্রহ্মানন্দ মহারাজের অনুধ্যান | pending | Pending actual research |
-| 75 | Reminiscences of Swami Brahmananda | pending | Pending actual research |
-| 76 | ব্রহ্মানন্দ স্মৃতিকণা | pending | Pending actual research |
-| 77 | স্বামী ব্রহ্মানন্দ | pending | Pending actual research |
-| 78 | Memories of a Loving Soul | pending | Pending actual research |
-| 79 | Swami Premananda: Love Incarnate | pending | Pending actual research |
-| 80 | Swami Premanander Jivan O Smritikatha | pending | Pending actual research |
-| 81 | Premik Purush Premananda | pending | Pending actual research |
-| 82 | Kathaprasange Swami Premananda | pending | Pending actual research |
-| 83 | প্রেমানন্দ | pending | Pending actual research |
-| 84 | প্রেমানন্দ জীবনচরিত | pending | Pending actual research |
+| 53 | Swami Vivekananda in America | researched | Exact-title bibliography found; no verified free whole text. |
+| 54 | Swami Vivekananda in Chicago | researched | Publisher identity confirmed; no verified free complete text. |
+| 55 | Swami Vivekananda in Contemporary Indian News | researched | Substantial institutional combined English Volumes1–3 reader; Volume4 gap explicit. |
+| 56 | স্বামী বিবেকানন্দ ও সমকালীন ভারতবর্ষ | researched | Volume1 archive body inspected but held; no verified complete seven-volume set. |
+| 57 | কাশীধামে স্বামী বিবেকানন্দ | researched | Bengali scan/transcription lead verified at sample level; whole reader held. |
+| 58 | বিবেকানন্দের জীবনের ঘটনাবলী | researched | Volume1 scan/introduction leads; no verified free complete three-volume set. |
+| 59 | যুগনায়ক | researched | Three institutional Bengali volume candidates; retain AI-transcription fidelity warning. |
+| 60 | লন্ডনে স্বামী বিবেকানন্দ ১-২ | researched | Bengali Volume1 scan/sample lead; two-volume coverage unverified. |
+| 61 | স্বামী বিবেকানন্দের বাল্যজীবনী | researched | Title/author bibliography found; complete free text remains a gap. |
+| 62 | স্বামীজীর পদপ্রান্তে | researched | Matching Bengali archive body; held for rights and scan/fidelity QA. |
+| 63 | স্মৃতির আলোয় স্বামীজী | researched | Official scope confirmed and archive body inspected; rights/edition held. |
+| 64 | স্বামীজীর স্মৃতিসঞ্চয়ন | researched | Identity/citation corroborated; no verified complete free reader. |
+| 65 | The Eternal Companion: Life and Teachings of Swami Brahmananda | researched | Official identity confirmed; PDF blocked and library borrow/preview only. |
+| 66 | A Guide to Spiritual Life | researched | Translation relationship confirmed; complete free English/Bengali gap. |
+| 67 | Swami Brahmananda As We Saw Him | researched | Substantial matching institutional English reader candidate. |
+| 68 | Swami Brahmanander Smritikatha | researched | Official Bengali title confirmed; free whole-text gap. |
+| 69 | রাজা মহারাজ | researched | Official identity confirmed; archive body unavailable and held. |
+| 70 | Japa and Dhyana in a Nutshell | researched | Exact English booklet bibliography verified; free complete-reader gap. |
+| 71 | Sadhan Prasange Raja Maharaj | researched | Exact compilation identified; complete free-reader gap. |
+| 72 | ব্রহ্মানন্দ ও রামকৃষ্ণ মিশন | researched | Matching substantial Bengali archive body; held for rights/edition QA. |
+| 73 | ব্রহ্মানন্দ চরিত | researched_with_gaps | No verified complete free Bengali/English text in bounded exact-title and transliterated searches. Retail metadata only; unresolved public text gap. |
+| 74 | ব্রহ্মানন্দ মহারাজের অনুধ্যান | researched_with_gaps | Substantial Bengali scan reader candidate located; 185-page list and separated body samples inspected. Hold for final-page visual/completeness and scan-rights QA. |
+| 75 | Reminiscences of Swami Brahmananda | researched_with_gaps | Free Bengali DLI scan/OCR candidate found and body identity sampled, held pending rights and scan-completeness QA. English institutional excerpt rejected. |
+| 76 | ব্রহ্মানন্দ স্মৃতিকণা | researched_with_gaps | Identity confirmed by primary publisher description; no complete free reader verified in bounded Bengali/romanized searches. |
+| 77 | স্বামী ব্রহ্মানন্দ | researched_with_gaps | No complete free text of exact Ashokananda standalone Bengali book verified. Institutional compilation with Ashokananda chapter is not substituted; edition/title provenance remains a gap. |
+| 78 | Memories of a Loving Soul | researched_with_gaps | Exact English identity confirmed; Bengali translation relation established toID81. No complete free public English/Bengali reader verified by bounded searches; institutional catalogues are not book bodies. |
+| 79 | Swami Premananda: Love Incarnate | researched_with_gaps | Publisher identity established for240page English book; free institutional full text not verified. Selected-passages results rejected; unrelated short60page Chetanananda title not substituted. |
+| 80 | Swami Premanander Jivan O Smritikatha | researched_with_gaps | Exact Bengali compilation verified from primary shop metadata/description; heading author discrepancy documented. No complete free text verified; sample pages and catalogs insufficient. |
+| 81 | Premik Purush Premananda | researched_with_gaps | Bengali translation identity and relation toEnglishID78 established. No verified complete free text in Bengali/romanized bounded searches; preserve separate baseline identity. |
+| 82 | Kathaprasange Swami Premananda | researched_with_gaps | Bengali whole-book reader gap. Authorized English serial instalment found and read but cannot establish complete book coverage without full instalment/end audit; not approved as full text. |
+| 83 | প্রেমানন্দ | researched_with_gaps | Exact short-title Bengali book body and edition not located. Author/short-title reference found in journal mirror; relation toID82 remains unresolved. Serial excerpts and non-English storefront translations not accepted as whole text. |
+| 84 | প্রেমানন্দ জীবনচরিত | researched_with_gaps | Publication identity corroborated with primary news and matching author/title retail listing. No complete free Bengali/English text verified after original/transliterated variants; citation and retail gaps retained. |
