@@ -1,5 +1,6 @@
 import Database from 'better-sqlite3';
 import { dbPath } from './db-path.mjs';
+import { correctVivekanandaTimelineDate } from './vivekananda-labels.mjs';
 import { searchInMemoryVectors } from './embeddings.js';
 
 const db = new Database(dbPath, { readonly: true });
@@ -182,7 +183,10 @@ export function getVivekanandaHierarchy() {
     `);
 
     const p2Items = p2Stmt.all();
-    const p3Items = p3Stmt.all();
+    const p3Items = p3Stmt.all().map(p3 => ({
+      ...p3,
+      para1: correctVivekanandaTimelineDate(p3.para1)
+    }));
     const p4Items = p4Stmt.all();
 
     const p3Map = new Map();

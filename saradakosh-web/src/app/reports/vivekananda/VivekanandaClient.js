@@ -3,6 +3,7 @@ import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { ChevronDown, ChevronRight, ArrowLeft } from 'lucide-react';
 import ThemeSelector from '@/components/ThemeSelector';
+import { stripTimelineOrdinal } from '@/lib/vivekananda-labels.mjs';
 
 export default function VivekanandaClient({ data }) {
   const allP2Ids = useMemo(() => data.map(p2 => p2.id), [data]);
@@ -78,7 +79,7 @@ export default function VivekanandaClient({ data }) {
                 }}
               >
                 {isP2Expanded ? <ChevronDown className="size-4" /> : <ChevronRight className="size-4" />}
-                {i2 + 1} {p2.para1.replace(/^\d+\s*/, '')}
+                {i2 + 1} {stripTimelineOrdinal(p2.para1)}
               </div>
               
               {isP2Expanded && (
@@ -101,13 +102,13 @@ export default function VivekanandaClient({ data }) {
                           }}
                         >
                           {isP3Expanded ? <ChevronDown className="size-4" /> : <ChevronRight className="size-4" />}
-                          {i3 + 1} {p3.para1.replace(/^\d+\s*/, '')}
+                          {i3 + 1} {stripTimelineOrdinal(p3.para1)}
                         </div>
                         
                         {isP3Expanded && (
                           <div role="group" className="space-y-1">
                             {p3.children.map((p4, i4) => {
-                              const text = p4.para1.replace(/^\d+\s*/, '');
+                              const text = stripTimelineOrdinal(p4.para1);
                               return (
                                 <div key={p4.id} className="ml-12 border-b border-dashed border-glass-border transition-colors duration-200 rounded hover:bg-primary-theme/10 mb-0.5" role="treeitem" aria-selected={false}>
                                   <div className="flex" role="none">
