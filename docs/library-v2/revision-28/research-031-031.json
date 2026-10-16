@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "scope": "Issue28 renewed bounded research only;retained legacy IDs31–31;candidate evidence requires independent QA",
+  "baseline_sha": "1069fc336c1e9f900440fea2f1bfa2a0404cd98c",
+  "researcher": "gpt-6.1-sol High",
+  "cost": "Included public web search and local HTTP inspection only; no purchase/API spend/hosted build/upload",
+  "privacy": "No private Drive IDs or text copied.",
+  "method": "Renewed English/original-language/transliterated queries. Product pictures and lawful clearance counted separately. Search absence is bounded not exhaustive.",
+  "books": [
+    {
+      "book_id": 31,
+      "title": "শ্রীশ্রীমায়ের বাড়ী ও উদ্বোধন কার্যালয়",
+      "catalog_author": "Gen",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:29:30.574833+00:00",
+      "renewed_queries": [
+        "\"শ্রীশ্রীমায়ের বাড়ী ও উদ্বোধন\" pdf",
+        "\"Sri Sri Mayer Bari O Udbodhan Karyalay\" pdf"
+      ],
+      "text_decision": "no_complete_free_text_verified",
+      "text_evidence": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/sri-sri-mayer-bari-o-udbodhan-karyalay-bengali/1237499000010665869",
+          "observation": "Official Bengali2024,32page Udbodhan booklet listing; paid sales page,not free complete text."
+        },
+        {
+          "url": "https://udbodhan.org/publication-department",
+          "observation": "Official institutional history relates to subject but not proven as complete32page booklet. Reject as substitution."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/sri-sri-mayer-bari-o-udbodhan-karyalay-bengali/1237499000010665869",
+          "checked_at": "2026-10-16T11:29:30.577239+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/UOB059_1.jpg/1237499000010707996/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            807,
+            1200
+          ],
+          "edition_metadata": {
+            "publisher": "Udbodhan Karyalaya",
+            "binding": "Paperback",
+            "language": "Bengali",
+            "year": "2024",
+            "pages": "32"
+          }
+        }
+      ],
+      "editorial_hold": null
+    }
+  ],
+  "checkpoints": [
+    {
+      "ids": [
+        31
+      ],
+      "completed_at": "2026-10-16T11:29:32.838918+00:00",
+      "new_complete_texts_verified": 0,
+      "lawfully_cleared_cover_assets": 0,
+      "status": "completed_bounded_research_candidate_only"
+    }
+  ],
+  "scorecard": {
+    "works_researched": 1,
+    "works_with_source_image_discoveries": 1,
+    "source_images_discovered": 1,
+    "cover_assets_legally_cleared": 0,
+    "new_text_links_approved": 0,
+    "candidate_only": true,
+    "warning": "First/final body evidence and official free offer remain separate from independent publication approval."
+  }
+}

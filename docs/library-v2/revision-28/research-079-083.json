@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "issue": "https://github.com/krishna101-tech/saradakosh/issues/28",
+  "scope": "Frozen checkpoint retainedIDs79–83 only; research, not approved content",
+  "checked_at": "2026-10-16",
+  "provenance": {
+    "researcher": "gpt-6.1-sol High, assigned research worker",
+    "cost": "Included public web and local requests; no purchase, paid API, hosted build or redistribution",
+    "quota": "Parent supplied primary0% start; weekly62%;credits0; worker telemetry not observable",
+    "AAA_GOAL": "Luna coordinates; latest eligible Sol High research/implementation and independent Sol Medium QA under current owner task packet; sequential approval stages; zero incremental cost",
+    "method": "Bounded exact-title/original Bengali/transliteration searches, actual reader beginning/end and volume checks where accessible; discovery distinct from legal clearance. Prior candidates explicitly marked historical until rechecked."
+  },
+  "books": [
+    {
+      "book_id": 79,
+      "canonical_title": "Swami Premananda: Love Incarnate",
+      "author": "Swami Swahananda; Brahmachari Akshayachaitanya; Prasun De",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "Swami Premananda Love Incarnate pdf",
+        "Swami Premananda Love Incarnate full text free"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-premananda-love-incarnate/1237499000010250837",
+          "observation": "OwnerprovidedcurrentofficialAdvaitacoverconfirmed; English240pageSwahanandaattribution. PriorcontributorAkshayachaitanya/PrasunDe retainedasresearchidentity. Notfreebody."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-premananda-love-incarnate/1237499000010250837",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-premananda-love-incarnate/1237499000010250837",
+          "page_title": "Swami Premananda: Love Incarnate by Swami Swahananda",
+          "identity_metadata": {
+            "Publisher": "Advaita Ashrama",
+            "List of Authors/Contributors": "Swami Swahananda",
+            "Binding": "Paperback",
+            "Language": "English",
+            "Year of Publishing": "NA",
+            "Total Pages": "240",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/ADE012_1.jpg/1237499000010325015/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/ADE012_1.jpg/1237499000010325015/1100x1100",
+            "width": 400,
+            "height": 619,
+            "format": "JPEG",
+            "bytes": 41631,
+            "sha256": "fc7cfac35995d5d85855741cce71aa7e312850c4d4bbb0b0851b4cf76f862837",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "No completefreeEnglishtextverified; ownercoverleadconfirmed; referencesandselectedpassagesnotwholebook."
+    },
+    {
+      "book_id": 80,
+      "canonical_title": "Swami Premanander Jivan O Smritikatha",
+      "author": "Swami Chetanananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "স্বামী প্রেমানন্দের জীবন ও স্মৃতিকথা pdf"
+      ],
+      "sources": [
+        {
+          "url": "https://udbodhan.org/product/স্বামী-প্রেমানন্দের-জীবন",
+          "observation": "CurrentofficialdescriptioncreditscompilerChetanananda;headingChaitanyanandaisdiscrepant. AdvaitametadataChetanananda367pagesISBN9788180400841 corroborates. Paidproductnotfulltext."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-premanander-jivan-o-smritikatha/1237499000010647539",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-premanander-jivan-o-smritikatha/1237499000010647539",
+          "page_title": "Swami Premanander Jivan O Smritikatha by Swami Chetanananda | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Udbodhan Karyalaya",
+            "List of Authors/Contributors": "Swami Chetanananda",
+            "Binding": "Deluxe (Hardbound)",
+            "Language": "Bengali",
+            "Total Pages": "367",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB040_1.jpg/1237499000010704047/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/UDB040_1.jpg/1237499000010704047/1100x1100",
+            "width": 767,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 33588,
+            "sha256": "e9e81e9972c7044bb89f032e85defd8f050f6f7c68bd233752868bd28b6a0f29",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "No completefreeBengalitextverified; ChetananandadescriptionversusChaitanyanandaheadingdiscrepancy retained; nodataoverwrite."
+    },
+    {
+      "book_id": 81,
+      "canonical_title": "Premik Purush Premananda",
+      "author": "Swami Prabhavananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "প্রেমিক পুরুষ প্রেমানন্দ pdf"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/premik-purush-premananda-life-teachings-and-reminiscences-of-swami-premananda/1237499000010647323",
+          "observation": "OfficialBengaliUdbodhanPrabhavanandatitlematched; relationshipasMemoriesofLovingSoultranslationpreviouslydocumented. Noactualfreewholebodyfound."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/premik-purush-premananda-life-teachings-and-reminiscences-of-swami-premananda/1237499000010647323",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/premik-purush-premananda-life-teachings-and-reminiscences-of-swami-premananda/1237499000010647323",
+          "page_title": "Premik Purush Premananda: Life, Teachings & Reminiscences | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Udbodhan Karyalaya",
+            "List of Authors/Contributors": "Swami Prabhavananda",
+            "Binding": "Paperback",
+            "Language": "Bengali",
+            "Total Pages": "171",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB034_1.jpg/1237499000010703881/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/UDB034_1.jpg/1237499000010703881/1100x1100",
+            "width": 219,
+            "height": 325,
+            "format": "JPEG",
+            "bytes": 26189,
+            "sha256": "7c0ef044a47bc9365d3658d1d106d41a1bba75ce5b39647071099d86dc70a4ef",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "No wholefreeBengalitextverified; EnglishID78relationshipnotwholetextsubstitution."
+    },
+    {
+      "book_id": 82,
+      "canonical_title": "Kathaprasange Swami Premananda",
+      "author": "Swami Omkareshwarananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "কথাপ্রসঙ্গে স্বামী প্রেমানন্দ pdf"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/kathaprasange-swami-premananda/1237499000010662557",
+          "observation": "OfficialOmkareshwaranandaBengali262pagesISBN9788193821053,paidbook."
+        },
+        {
+          "url": "https://advaitaashrama.org/pb/2022/APB010_1222.pdf",
+          "observation": "Prioractualpublisherjournalexcerptstarts4thcantoandidentifiesfirst3cantosFeb–Jul2016serial. Retainedashistoricalpartialtranslationevidence; notcompleteoriginalorfullEnglishtranslation. No repeatfetchafterpartialhold."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/kathaprasange-swami-premananda/1237499000010662557",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/kathaprasange-swami-premananda/1237499000010662557",
+          "page_title": "Kathaprasange Swami Premananda by Omkareshwarananda | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Udbodhan Karyalaya",
+            "List of Authors/Contributors": "Swami Omkareshwarananda",
+            "Binding": "Paperback",
+            "Language": "Bengali",
+            "Total Pages": "262",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB063_1.jpg/1237499000010704514/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/UDB063_1.jpg/1237499000010704514/1100x1100",
+            "width": 600,
+            "height": 933,
+            "format": "JPEG",
+            "bytes": 77816,
+            "sha256": "8826f61aab0a8cf1a707146312199efe4594331673e83bb15b1bce142bb94b53",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "No wholefreebookverified. Officialserialtranslationlead remainspartial;262pageBengalioriginalnotprovided."
+    },
+    {
+      "book_id": 83,
+      "canonical_title": "প্রেমানন্দ",
+      "author": "Omkareshwarananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "প্রেমানন্দ ওঙ্কারেশ্বরানন্দ pdf",
+        "প্রেমানন্দ ওংকারেশ্বরানন্দ pdf"
+      ],
+      "sources": [
+        {
+          "url": "https://advaitaashrama.org/wp-content/uploads/APB010_0526.pdf",
+          "observation": "Priorofficial11pageMay2026serialexcerptConversationswithSwamiPremanandabyOmkareshwarananda; historicalpartialleadonly; exactshorttitlePremananda versusKathaprasangeidentityunresolved."
+        }
+      ],
+      "covers": [],
+      "readers": [],
+      "prior_candidates": [],
+      "rejected_cover_leads": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-premananda/1237499000010254563",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-premananda/1237499000010254563",
+          "page_title": "Swami Premananda by Arundev Bhattacharya | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Advaita Ashrama",
+            "List of Authors/Contributors": "Arundev Bhattacharya",
+            "Binding": "Paperback",
+            "Language": "Hindi",
+            "Year of Publishing": "NA",
+            "Total Pages": "152",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/AOH013_1.jpg/1237499000010283491/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/AOH013_1.jpg/1237499000010283491/1100x1100",
+            "width": 959,
+            "height": 1400,
+            "format": "JPEG",
+            "bytes": 247306,
+            "sha256": "d63f95db7602f7c8d25b584a988b8df88eb26a7599958999674fc6a38eff18b4",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          },
+          "decision": "REJECT — HindiArundevBhattacharyabook152pages, mismatchtoBengaliOmkareshwarananda"
+        }
+      ],
+      "text_outcome": "No exactcompleteBengalishorttitletextverified; Omkareshwaranandajournalserialnotwholebook. RelationshiptoID82unresolved.",
+      "cover_outcome": "HindiArundevBhattacharyaofficialproductexplicitlyREJECTED asauthor/languagemismatch. No exactBengaliOmkareshwaranandacoververified."
+    }
+  ],
+  "checkpoints": [
+    {
+      "works": 5,
+      "official_matching_cover_leads": 4,
+      "pixels_measured_matching_covers": 4,
+      "rejected_cover_lead_ids": [
+        83
+      ],
+      "covers_cleared": 0,
+      "new_complete_reader_ids": [],
+      "partial_serial_or_identity_holds": [
+        82,
+        83
+      ],
+      "no_verified_free_full_text_ids": [
+        79,
+        80,
+        81
+      ],
+      "new_public_links_approved": 0,
+      "QA": "pending"
+    }
+  ]
+}

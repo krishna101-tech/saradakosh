@@ -1,0 +1,585 @@
+{
+  "schema_version": 1,
+  "issue": "https://github.com/krishna101-tech/saradakosh/issues/28",
+  "scope": "Frozen checkpoint retainedIDs49–53 only; research, not approved content",
+  "checked_at": "2026-10-16",
+  "provenance": {
+    "researcher": "gpt-6.1-sol High, assigned research worker",
+    "cost": "Included public web and local requests; no purchase, paid API, hosted build or redistribution",
+    "quota": "Parent supplied primary0% start; weekly62%;credits0; worker telemetry not observable",
+    "AAA_GOAL": "Luna coordinates; latest eligible Sol High research/implementation and independent Sol Medium QA under current owner task packet; sequential approval stages; zero incremental cost",
+    "method": "Bounded exact-title/original Bengali/transliteration searches, actual reader beginning/end and volume checks where accessible; discovery distinct from legal clearance. Prior candidates explicitly marked historical until rechecked."
+  },
+  "books": [
+    {
+      "book_id": 49,
+      "canonical_title": "The Life of Swami Vivekananda",
+      "author": "Eastern and Western Disciples",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "The Life of Swami Vivekananda Eastern Western Disciples full text volume2"
+      ],
+      "sources": [],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/life-of-swami-vivekananda-2-vol-set/1237499000010265093",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/life-of-swami-vivekananda-2-vol-set/1237499000010265093",
+          "page_title": "Life of Swami Vivekananda (2 vol set) by Eastern and Western Disciples | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Advaita Ashrama",
+            "List of Authors/Contributors": "Eastern and Western Disciples",
+            "Binding": "Deluxe (Hardbound)",
+            "Language": "English",
+            "Year of Publishing": "NA",
+            "Total Pages": "1328",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/AVED01_1.jpg/1237499000010315988/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/AVED01_1.jpg/1237499000010315988/1100x1100",
+            "width": 212,
+            "height": 325,
+            "format": "JPEG",
+            "bytes": 25589,
+            "sha256": "33f11d28ade13ce3a5279139b617322a6d962fc7e8961b530270a474d48a0c5a",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/life-of-swami-vivekananda-his-eastern-and-western-disciples/life-of-swami-vivekananda-his-eastern-and-western-disciples.html",
+          "http_status": 200,
+          "actual_text_characters": 2635358,
+          "decision": "candidate_pending_independent_QA",
+          "rights": "No text redistribution licence inferred from free public access.",
+          "completeness": "Two volumes,25actual chapters each; VolumeIAncestry through SettingIndianWorkInMotion; VolumeII BeginningAmericanWork through Mahasamadhi, final renunciation conclusion and notes. Actual body2,635,358characters; no paywall. Exact print impression unknown."
+        }
+      ],
+      "prior_candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/life-of-swami-vivekananda-his-eastern-and-western-disciples/life-of-swami-vivekananda-his-eastern-and-western-disciples.html",
+          "language": "English",
+          "label": "English 1–2",
+          "edition": "Two-volume Advaita biography online",
+          "volume_coverage": "VolumesIandIIcombined;25chapters each",
+          "access": "HTTP200freeinstitutionalHTML",
+          "completeness": "InstitutionalHTTP2002,635,358textcharacters; title/imprintEasternWesternDisciplesAdvaitaAshrama; two volumes with25chapters each through Mahasamadhi and endingHARIHOMTATSAT. Webtool failed but local request succeeded.",
+          "rights": "Institutionalhost/imprint; no redistribution license inferred",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "cover_outcome": "Authentic official product-cover lead found; image pixels measured; rights HOLD.",
+      "text_outcome": "Existing reader rechecked; pending independent QA."
+    },
+    {
+      "book_id": 50,
+      "canonical_title": "Swami Vivekananda in the West: New Discoveries",
+      "author": "Marie Louise Burke",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "Swami Vivekananda in the West New Discoveries full text",
+        "Swami Vivekananda in the West archive.org/details Burke"
+      ],
+      "sources": [],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-vivekananda-in-the-west-new-discoveries-6-vols-set/1237499000010261249",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-vivekananda-in-the-west-new-discoveries-6-vols-set/1237499000010261249",
+          "page_title": "Swami Vivekananda in the West by Burke | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Advaita Ashrama",
+            "List of Authors/Contributors": "Marie Louise Burke",
+            "Binding": "Deluxe (Hardbound)",
+            "Language": "English",
+            "Year of Publishing": "NA",
+            "Total Pages": "3294",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/AVE047_1.jpg/1237499000010312390/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/AVE047_1.jpg/1237499000010312390/1100x1100",
+            "width": 300,
+            "height": 325,
+            "format": "JPEG",
+            "bytes": 35531,
+            "sha256": "bdb62a2e18bf5ce7da3f7071e740df1f679da9fb06b1a0fcbb7bd8a44aa519f0",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/NewDiscoveries/swami-vivekananda-in-the-west-new-discoveries.html",
+          "http_status": 200,
+          "actual_text_characters": 5532301,
+          "decision": "candidate_pending_independent_QA",
+          "rights": "No text redistribution licence inferred from free public access.",
+          "completeness": "All6actual volume bodies fetched: character sizes897993,832636,1085789,1077003,803269,832702. OpeningV1arrivalVancouver; V2EasternTour;V3NewYorkSpring1895;V4DetroitMarch1896;V5SecondVoyage;V6NorthernCalifornia, lastHomewardBoundII and newspaper appendix. No page-for-page print collation; index/bibliography fidelity requires QA."
+        }
+      ],
+      "prior_candidates": [],
+      "cover_outcome": "Authentic official product-cover lead found; image pixels measured; rights HOLD.",
+      "text_outcome": "FALSE NEGATIVE: new institutional six-volume reader candidate verified structurally."
+    },
+    {
+      "book_id": 51,
+      "canonical_title": "Photographs of Swami Vivekananda",
+      "author": "Gen",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "Photographs of Swami Vivekananda book",
+        "site:shop.advaitaashrama.org/products/ Photographs of Swami Vivekananda"
+      ],
+      "sources": [],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/photographs-of-swami-vivekananda/1237499000010759383",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/photographs-of-swami-vivekananda/1237499000010759383",
+          "page_title": "Photographs of Swami Vivekananda | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Ramakrishna Math - Chennai",
+            "List of Authors/Contributors": "A Compilation",
+            "Binding": "Deluxe (Hardbound)",
+            "Language": "English",
+            "Total Pages": "286",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MVE021_1.jpg/1237499000010857455/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/MVE021_1.jpg/1237499000010857455/1100x1100",
+            "width": 242,
+            "height": 325,
+            "format": "JPEG",
+            "bytes": 27502,
+            "sha256": "f4d56f2aa6380674fecf3fa859187a3afd4e0345c3b33da18e0776105a80c144",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/photographs-of-swami-vivekananda/photographs-of-swami-vivekananda.html",
+          "http_status": 200,
+          "actual_text_characters": 279221,
+          "decision": "held_illustrated_edition_fidelity",
+          "rights": "No text redistribution licence inferred from free public access.",
+          "completeness": "Five substantive chapters from WanderingYears to SettingSun and closing Ramakrishnananda hymn. Text279221characters. Illustrated book exact print-page/photo fidelity remains unverified; do not count as fully approved illustrated edition."
+        }
+      ],
+      "prior_candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/photographs-of-swami-vivekananda/photographs-of-swami-vivekananda.html",
+          "language": "English",
+          "volume": "Single illustrated book; five chapters",
+          "edition": "Photographs of Swami Vivekananda; exact print edition not conclusively matched",
+          "access": "Public HTML; text and 108 image resources loaded without login",
+          "completeness": "Five chapters through final memorial/hymn inspected. Image resource loading confirmed; visual fidelity/page correspondence not audited.",
+          "rights": "Institutional hosting establishes public access, not an explicit redistribution license.",
+          "decision": "pending_independent_QA"
+        }
+      ],
+      "cover_outcome": "Authentic official product-cover lead found; image pixels measured; rights HOLD.",
+      "text_outcome": "Substantial illustrated reader held for exact edition/photo fidelity."
+    },
+    {
+      "book_id": 52,
+      "canonical_title": "Reminiscences of Swami Vivekananda",
+      "author": "His Eastern and Western Admirers",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "Reminiscences of Swami Vivekananda entire text"
+      ],
+      "sources": [],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/reminiscences-of-swami-vivekananda-new-and-enlarged/1237499000010261169",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/reminiscences-of-swami-vivekananda-new-and-enlarged/1237499000010261169",
+          "page_title": "Reminiscences of Swami Vivekananda | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Advaita Ashrama",
+            "List of Authors/Contributors": "A Compilation",
+            "Binding": "Deluxe (Hardbound)",
+            "Language": "English",
+            "Year of Publishing": "NA",
+            "Total Pages": "736",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/AVE045_1.jpg/1237499000010312286/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/AVE045_1.jpg/1237499000010312286/1100x1100",
+            "width": 564,
+            "height": 886,
+            "format": "JPEG",
+            "bytes": 53445,
+            "sha256": "750a8574dd96f4dcb60f60d7b1eb47c446e4c32f94bc68aa7df1ba0218a3b3a9",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/reminiscences_of_sv.htm",
+          "http_status": 200,
+          "actual_text_characters": 1109,
+          "decision": "candidate_pending_independent_QA",
+          "rights": "No text redistribution licence inferred from free public access.",
+          "child_audit": {
+            "pages": 39,
+            "all_http_200": true,
+            "characters_total": 888454,
+            "excluded": "Other reminiscences explicitly outside book excluded",
+            "pages_evidence": [
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/000_preface_1.htm",
+                "http_status": 200,
+                "text_characters": 1761,
+                "text_sha256": "f1c642c9180c76c73bd4d7edcfc6f48c5b0f8389b5a5f17b372df4988d412ec0"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/000_preface_2.htm",
+                "http_status": 200,
+                "text_characters": 368,
+                "text_sha256": "cc8490116167915e80da1cade5f5a2809310d3f0bc2a0257afe19457b8c88f71"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/000_preface_3.htm",
+                "http_status": 200,
+                "text_characters": 1332,
+                "text_sha256": "66db079a4c59adb9c84f44220665344152e6d7a35051ec53746e39a0819a31fe"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/001_nng.htm",
+                "http_status": 200,
+                "text_characters": 39522,
+                "text_sha256": "df59728636b2c87b5b422dd2f73c72452e3a52d20e8180fdd691797ab722a7cd"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/020_bgt.htm",
+                "http_status": 200,
+                "text_characters": 3409,
+                "text_sha256": "544d39af28edc9e90af0ddc0e989a76b0913b1687ec270722634225ae5c122d6"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/022_hm.htm",
+                "http_status": 200,
+                "text_characters": 63825,
+                "text_sha256": "b428b6ba32f4cf2fa73fdce130db6a966bb597a0f8d10bd65e3fb2f2e9ae73b4"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/052_gsb.htm",
+                "http_status": 200,
+                "text_characters": 10573,
+                "text_sha256": "6815dd43a3c2c1920af67a4b7911e1e4526c4c76e0305fa80ba2f55b821c3b98"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/057_ksi.htm",
+                "http_status": 200,
+                "text_characters": 30533,
+                "text_sha256": "37f5cbb948d6de39407d91d9a2ead0a50d10bb2e550842a966568f61eb43dbd4"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/071_ksi.htm",
+                "http_status": 200,
+                "text_characters": 58229,
+                "text_sha256": "9ed16597317496bd3d32194e0c4a34fc2d4d8fd5fd33a5b029f2602a3da1cafe"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/098_ksrs.htm",
+                "http_status": 200,
+                "text_characters": 15697,
+                "text_sha256": "b99feb2a9e961b7f9e22d72df876aba15d9bad17c6818d335143c75942acdd0d"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/106_asp.htm",
+                "http_status": 200,
+                "text_characters": 13720,
+                "text_sha256": "aeee915520b9d67d6921d64512a6b950bae72674c0a288439c2f9a9f61b6f7ab"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/113_sew.htm",
+                "http_status": 200,
+                "text_characters": 17227,
+                "text_sha256": "c1b39e1e06a4bb2cf13f593a679493d31f7260fed671df57f400f28a3aaf2a20"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/121_sd.htm",
+                "http_status": 200,
+                "text_characters": 17488,
+                "text_sha256": "493b009454850768c90a12cbf487656c6ee9a5af8de95e29b770318a77dc9339"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/130_cc.htm",
+                "http_status": 200,
+                "text_characters": 13625,
+                "text_sha256": "16676515172d2a40cbc8cb749dc1510a579c4dd5f238c8965c75749c13b7b146"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/137_mbf.htm",
+                "http_status": 200,
+                "text_characters": 12445,
+                "text_sha256": "a1674c1fee5bc3d1cf26ec78edd745f255bc8c60b380deb60a4f3611a7ce3814"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/143_hjvh.htm",
+                "http_status": 200,
+                "text_characters": 6200,
+                "text_sha256": "e8d6b7b95d65c0d90d27bf0abc8e2ffe3085b3504e9ab47294cc4b1a6d3c6d0b"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/146_sc.htm",
+                "http_status": 200,
+                "text_characters": 174548,
+                "text_sha256": "95ff3dd0f2accc5288f59879ae805fdd9b5d5feb23d2872f051f581027d24baa"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/228_jm.htm",
+                "http_status": 200,
+                "text_characters": 36597,
+                "text_sha256": "3dbc46275d96a2fada25afd0a531d41e1219ac3cec77d4c1ef41b9854dd31c05"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/246_ct.htm",
+                "http_status": 200,
+                "text_characters": 9283,
+                "text_sha256": "f86b4a6bc01b1cecc94db86e4bb8e5404d28d997c168e7353f629e17a3742893"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/251_mcf.htm",
+                "http_status": 200,
+                "text_characters": 13050,
+                "text_sha256": "082d5e76812d87224f426fa97bd08b5643caa996756d512b51eab5459c541495"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/258_mec.htm",
+                "http_status": 200,
+                "text_characters": 9953,
+                "text_sha256": "b7f06b7283020918778c1045f929770d4db8a4ba0fbbe8bb8691c28230ef484d"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/263_ms.htm",
+                "http_status": 200,
+                "text_characters": 11756,
+                "text_sha256": "8448dd28f573dc02f3d90cde9a6b9dd4f1ed2c00029621f67e0177f2aa8d1862"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/269_sn.htm",
+                "http_status": 200,
+                "text_characters": 43481,
+                "text_sha256": "01b30ec4eed256b7bf5c3d210144c231ca1fe79c6e4943b89b1fc6dbb16620cb"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/291_eh.htm",
+                "http_status": 200,
+                "text_characters": 6323,
+                "text_sha256": "573611cefd683f999f715d1343be6b111046680f4f6b05d3318c536800accbcb"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/294_ets.htm",
+                "http_status": 200,
+                "text_characters": 2383,
+                "text_sha256": "aa163cb258b64ae38d639a84f72e816c3e4b664445def2a93f2f8662f6b57b5b"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/296_tjd.htm",
+                "http_status": 200,
+                "text_characters": 11519,
+                "text_sha256": "0615ce7db1fb79fc98a3c69f1e1ae58347a8031952b8318741f545561a2096fd"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/302_sb.htm",
+                "http_status": 200,
+                "text_characters": 8588,
+                "text_sha256": "ae8fb50545d92d47cd8c571b31a78ce89b31827d8ce0de4b501ab72b8e15bbcc"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/307_sv.htm",
+                "http_status": 200,
+                "text_characters": 18746,
+                "text_sha256": "0e71b949752b159f4c8672e82de2d6da6303777b69855bea7b5a8be2b83340ae"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/316_ss.htm",
+                "http_status": 200,
+                "text_characters": 35670,
+                "text_sha256": "3756db7990450584e2bcd633e9d933fa7add618e69a88e565dd4b37a6a1c0726"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/333_knm.htm",
+                "http_status": 200,
+                "text_characters": 12475,
+                "text_sha256": "3a9dc83ae0a55314eb8dbe4166950569029f3b228d718ddac52606a656c20225"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/339_mng.htm",
+                "http_status": 200,
+                "text_characters": 39140,
+                "text_sha256": "47ad0d661726c0e528783534a61d5987749d0999450ae0509a02fb583bf854db"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/358_skb.htm",
+                "http_status": 200,
+                "text_characters": 7603,
+                "text_sha256": "2354bcd6d3d9b51edc0c18ad3dd0dcc5e4ed4b299539e282f6c3a90f0542e703"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/362_ia.htm",
+                "http_status": 200,
+                "text_characters": 32880,
+                "text_sha256": "6d976b6ca3cebcb23640ace2b939ee305a9be472630b285ecf26a479cd293b50"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/378_ca.htm",
+                "http_status": 200,
+                "text_characters": 2999,
+                "text_sha256": "66b156da33e2508bad3471ea13b8f844f80093d8540a6edf288c4bf6014c38a4"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/380_im.htm",
+                "http_status": 200,
+                "text_characters": 3741,
+                "text_sha256": "d5275549a56cca1abf65f00ab27d9c441e634a1d3eeaae03df2c376179ace4f5"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/382_vd.htm",
+                "http_status": 200,
+                "text_characters": 7918,
+                "text_sha256": "ee83b6df74ed2520afebad6d56bcf34428f7a1932cd8f6d44105546b4947dd7d"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/386_rc.htm",
+                "http_status": 200,
+                "text_characters": 9565,
+                "text_sha256": "22aa457963e6a01bb28cda69ce2d472259269fecb0864747afd45d7eb9592cdc"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/391_ss.htm",
+                "http_status": 200,
+                "text_characters": 47974,
+                "text_sha256": "a494d43ee222968f9b7def2ec8803d12f5fdec72a3d7a9735f667ced8a8a2442"
+              },
+              {
+                "url": "https://www.ramakrishnavivekananda.info/reminiscences/414_appendix.htm",
+                "http_status": 200,
+                "text_characters": 36308,
+                "text_sha256": "d1b324e82d6b5ae674b61a118487d8c435bb939da32ca7b9cd2fc2c9283028db"
+              }
+            ]
+          },
+          "completeness": "Fresh audit39linked book pages:3prefaces,35reminiscence accounts and appendix; actual opening Gupta and last Sadashivananda plus MacLeod appendix closing note inspected. Whole1983third edition; current736page enlarged retail cover is later edition."
+        }
+      ],
+      "prior_candidates": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/reminiscences/reminiscences_of_sv.htm",
+          "language": "English",
+          "label": "English — 1983 third edition",
+          "edition": "AdvaitaAshrama1983thirdedition",
+          "volume_coverage": "Whole1983book;additionalnonbookreminiscencesexcluded",
+          "access": "FreereadableHTML;all39book-linkedpagesHTTP200withoutlogin",
+          "completeness": "Explicitfulltexteditionstatement,threeprefaces,allindexedaccountsandappendixfetched;first/endbodyandprefatoryprovenanceinspected.Notline-by-lineproofread.",
+          "rights": "Site supplies publisherattributedtextpublicly;noexplicitpublisherauthorization/reuselicenseinspected.Link-onlycandidate;noPDorredistributionclaim.",
+          "decision": "candidate_pending_QA"
+        }
+      ],
+      "cover_outcome": "Authentic official product-cover lead found; image pixels measured; rights HOLD.",
+      "text_outcome": "Existing whole1983third-edition reader rechecked; enlarged736page retail edition differs."
+    },
+    {
+      "book_id": 53,
+      "canonical_title": "Swami Vivekananda in America",
+      "author": "Asim Chaudhuri",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "Swami Vivekananda in America Asim book",
+        "Swami Vivekananda in America full text",
+        "Swami Vivekananda in America New Findings ISBN"
+      ],
+      "sources": [
+        {
+          "url": "https://openlibrary.org/works/OL43331170W/Swami_Vivekananda_In_America",
+          "observation": "Search-indexed2016AdvaitaEnglish1054pages: PreviewOnly. Not accepted as whole free text. Official current cover page1068pages/ISBN9788175052970; print edition not silently equated."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-vivekananda-in-america-new-findings/1237499000010264573",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-vivekananda-in-america-new-findings/1237499000010264573",
+          "page_title": "Swami Vivekananda in America: New Findings",
+          "identity_metadata": {
+            "Publisher": "Advaita Ashrama",
+            "List of Authors/Contributors": "Asim Chaudhuri",
+            "Binding": "Deluxe (Hardbound)",
+            "Language": "English",
+            "Year of Publishing": "NA",
+            "Total Pages": "968",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/AVE116_1.jpg/1237499000010314601/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/AVE116_1.jpg/1237499000010314601/1100x1100",
+            "width": 556,
+            "height": 878,
+            "format": "JPEG",
+            "bytes": 75406,
+            "sha256": "fb62b88fe9d1517a13234a35c43c2361f334c010cd825804a7debd7c9918e7a3",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "cover_outcome": "Authentic official product-cover lead found; image pixels measured; rights HOLD.",
+      "text_outcome": "No free whole text verified. OpenLibrary2016entry PreviewOnly; retail/sample and Burke1959similarly titled review rejected."
+    }
+  ],
+  "checkpoints": [
+    {
+      "range": "049-053",
+      "works": 5,
+      "new_structurally_verified_reader_work_ids": [
+        50
+      ],
+      "rechecked_existing_complete_text_candidates": [
+        49,
+        52
+      ],
+      "illustrated_text_held_ids": [
+        51
+      ],
+      "no_verified_free_full_text_ids": [
+        53
+      ],
+      "authentic_official_cover_leads": 5,
+      "cover_pixels_measured": 5,
+      "covers_cleared_for_rehosting": 0,
+      "new_public_links_approved": 0,
+      "independent_QA": "pending"
+    }
+  ]
+}

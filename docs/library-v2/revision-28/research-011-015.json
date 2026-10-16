@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "scope": "Issue28 renewed bounded research only;retained legacy IDs11–15;candidate evidence requires independent QA",
+  "baseline_sha": "1069fc336c1e9f900440fea2f1bfa2a0404cd98c",
+  "researcher": "gpt-6.1-sol High",
+  "cost": "Included public web search and local HTTP inspection only; no purchase/API spend/hosted build/upload",
+  "privacy": "No private Drive IDs or text copied.",
+  "method": "Renewed English/original-language/transliterated queries. Product pictures and lawful clearance counted separately. Search absence is bounded not exhaustive.",
+  "books": [
+    {
+      "book_id": 11,
+      "title": "রামকৃষ্ণের অন্ত্যলীলা",
+      "catalog_author": "Prabhananda",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:21:52.324384+00:00",
+      "renewed_queries": [
+        "\"শ্রীরামকৃষ্ণের অন্ত্যলীলা\" pdf ১ ২",
+        "\"Sri Ramakrishner Antyalila\" pdf"
+      ],
+      "text_decision": "no_complete_free_text_verified",
+      "text_evidence": [
+        {
+          "url": "https://istore.chennaimath.org/products/Sri_Ramakrishner_Antyalila_Vol_1_Bengali_Deluxe/3690041000559849669",
+          "observation": "Official paid publisher edition; not a free complete reader."
+        },
+        {
+          "url": "https://www.ramakrishnamath.in/pages/book_store/AdvaitaAshramaBooklist.htm",
+          "observation": "Institutional catalogue distinguishes Bengali Vol1 ISBN818040028X and Vol2 ISBN8180400298. Both volumes required; renewed queries returned citation PDFs rather than verified full text."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://istore.chennaimath.org/products/Sri_Ramakrishner_Antyalila_Vol_1_Bengali_Deluxe/3690041000559849669",
+          "checked_at": "2026-10-16T11:21:52.330423+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://istore.chennaimath.org/product-images/Sri+Ramakrishner+Antyalila+Vol+1+-+1.jpg/3690041000564124031/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            209,
+            325
+          ],
+          "edition_metadata": {}
+        },
+        {
+          "source_product_url": "https://udbodhan.org/product/শ্রীরামকৃষ্ণের-অন্ত্যল-2",
+          "checked_at": "2026-10-16T11:21:52.331293+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://udbodhan.org/api/media/file/45-m1227.jpg",
+          "image_http_status": 200,
+          "dimensions": [
+            633,
+            1024
+          ],
+          "edition_metadata": {}
+        }
+      ],
+      "editorial_hold": null
+    },
+    {
+      "book_id": 12,
+      "title": "শ্রীরামকৃষ্ণ পুঁথি",
+      "catalog_author": "Akshay Kumar Ghosh",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:21:55.634026+00:00",
+      "renewed_queries": [
+        "\"শ্রীরামকৃষ্ণ পুঁথি\" pdf",
+        "site:shop.advaitaashrama.org \"Ramakrishna Punthi\""
+      ],
+      "text_decision": "bengali_first_last_and_five_part_index_verified_pending_author_rights_QA",
+      "text_evidence": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/banglabooks/srisriramakrishnapunthi/srkpunthi_contents.htm",
+          "observation": "Five-part table of contents including final Mathasthapan chapter; prior source is renewed with live first/final body inspection."
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/banglabooks/srisriramakrishnapunthi/1_01_prabhujanma.htm",
+          "observation": "HTTP200;14051 text characters, first-part birth chapter substantial verse body."
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/banglabooks/srisriramakrishnapunthi/5_07_mathasthapan.htm",
+          "observation": "HTTP200;38606 characters, final chapter verse1–540 and explicit fifth-part/work completion markers. Previous final-access negative resolved. Link-source authorization remains unestablished; no reuse rights inferred."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/sri-sri-ramakrishna-punthi/1237499000010653809",
+          "checked_at": "2026-10-16T11:23:50.081520+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/URB007_1.jpg/1237499000010711386/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            903,
+            1200
+          ],
+          "edition_metadata": {
+            "publisher": "Udbodhan Karyalaya",
+            "author": "Akshay Kumar Sen",
+            "binding": "Deluxe (Hardbound)",
+            "language": "Bengali",
+            "pages": "638"
+          }
+        }
+      ],
+      "editorial_hold": "Publisher/reader identify Akshay Kumar Sen; catalog says Ghosh. Do not silently approve wrong author."
+    },
+    {
+      "book_id": 13,
+      "title": "শ্রীরামকৃষ্ণ লীলাকথা",
+      "catalog_author": "Shashankbhushan Bandopadhyay",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:21:55.634178+00:00",
+      "renewed_queries": [
+        "\"শ্রীরামকৃষ্ণ লীলাকথা\" pdf শশাঙ্কভূষণ",
+        "site:udbodhan.org \"শ্রীরামকৃষ্ণ লীলা কথা\""
+      ],
+      "text_decision": "no_complete_free_text_verified",
+      "text_evidence": [
+        {
+          "url": "https://udbodhan.org/product/%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%95%E0%A7%83%E0%A6%B7%E0%A7%8D%E0%A6%A3-%E0%A6%B2%E0%A7%80%E0%A6%B2%E0%A6%BE-%E0%A6%95%E0%A6%A5%E0%A6%BE-sri-ramakrishna-lila-ka",
+          "observation": "Official paid publisher edition; not a free complete reader."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://udbodhan.org/product/%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%95%E0%A7%83%E0%A6%B7%E0%A7%8D%E0%A6%A3-%E0%A6%B2%E0%A7%80%E0%A6%B2%E0%A6%BE-%E0%A6%95%E0%A6%A5%E0%A6%BE-sri-ramakrishna-lila-ka",
+          "checked_at": "2026-10-16T11:21:55.634460+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://udbodhan.org/api/media/file/Sri-Ramakrishna-Lila-Katha_1-1.webp",
+          "image_http_status": 200,
+          "dimensions": [
+            729,
+            1100
+          ],
+          "edition_metadata": {}
+        }
+      ],
+      "editorial_hold": null
+    },
+    {
+      "book_id": 14,
+      "title": "শ্রীরামকৃষ্ণ লীলামৃত",
+      "catalog_author": "Vaikunthanath Sanyal",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:21:58.058791+00:00",
+      "renewed_queries": [
+        "\"শ্রীরামকৃষ্ণ লীলামৃত\" বৈকুণ্ঠনাথ pdf",
+        "\"Sri Sri Ramkrishna Lilamrita\" Sanyal archive"
+      ],
+      "text_decision": "existing_bengali_archive_body_renewed_pending_scan_and_rights_QA",
+      "text_evidence": [
+        {
+          "url": "https://archive.org/metadata/in.ernet.dli.2015.456946",
+          "observation": "Renewed DLI metadata/title check; Bengali Sanyal,225p. First publication1343BE does not date this Nabapatra reprint."
+        },
+        {
+          "url": "https://archive.org/download/in.ernet.dli.2015.456946/2015.456946.Sri-Sri-Ramkrishna-Lilamrita_djvu.txt",
+          "observation": "HTTP200;517240characters. Title/author/front matter and final concluding prose present; final-page visual/missing-page audit pending. DLI metadata PD claim does not clear modern reprint cover credited to Somnath Ghosh."
+        }
+      ],
+      "cover_candidates": [],
+      "editorial_hold": null,
+      "cover_search_hold": "No exact official publisher product image discovered in bounded title/author searches; do not substitute unrelated Lilamrita."
+    },
+    {
+      "book_id": 15,
+      "title": "শ্রীরামকৃষ্ণের অনুধ্যান",
+      "catalog_author": "Mahendranath Dutta",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:21:58.058834+00:00",
+      "renewed_queries": [
+        "\"শ্রীরামকৃষ্ণের অনুধ্যান\" pdf",
+        "\"Sri Ramakrishner Anudhyan\" Dutta publisher"
+      ],
+      "text_decision": "existing_bengali_archive_body_renewed_hold_rights",
+      "text_evidence": [
+        {
+          "url": "https://archive.org/download/in.ernet.dli.2015.298301/2015.298301.Sri-Sri_djvu.txt",
+          "observation": "HTTP200;265917characters. First author/publisher, second-edition1361BE front matter and final chapter/page190 before errata/back catalogue checked. Front matter reserves publisher rights; metadata lacks license. Full scan page audit not done."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/sri-sri-ramakrishner-anudhyan-bengali/1237499000011869805",
+          "checked_at": "2026-10-16T11:21:58.059108+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/OOB557_1.jpg/1237499000011918107/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            773,
+            1200
+          ],
+          "edition_metadata": {
+            "publisher": "The Mohendra Publishing Committee",
+            "author": "Mohendra Nath Dutta",
+            "binding": "Paperback",
+            "language": "Bengali",
+            "year": "2024",
+            "pages": "148"
+          }
+        }
+      ],
+      "editorial_hold": "Modern cover product is2024/148p; historical second-edition scan230leaves/page190 text. Do not imply edition identity."
+    }
+  ],
+  "checkpoints": [
+    {
+      "ids": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "completed_at": "2026-10-16T11:24:02.072923+00:00",
+      "status": "completed_bounded_research_candidate_only",
+      "new_complete_texts_approved": 0,
+      "complete_first_last_text_candidates": 3,
+      "lawfully_cleared_cover_assets": 0
+    }
+  ],
+  "scorecard": {
+    "works_researched": 5,
+    "works_with_source_image_discoveries": 4,
+    "source_images_discovered": 5,
+    "cover_assets_legally_cleared": 0,
+    "new_text_links_approved": 0,
+    "candidate_only": true,
+    "warning": "First/final body evidence and official free offer remain separate from independent publication approval."
+  }
+}
