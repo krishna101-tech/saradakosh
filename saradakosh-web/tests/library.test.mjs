@@ -16,6 +16,20 @@ const rows = snapshot.spreadsheet.sheets[0].data[0].rowData.slice(1);
 const approvedAsset = 'https://res.cloudinary.com/dljwhlvid/image/upload/library/example.webp';
 const tableContents = db => ['library_books', 'library_book_links', 'library_book_covers'].map(table => db.prepare(`SELECT * FROM ${table} ORDER BY id`).all());
 
+test('confirmed dead inherited reader is unavailable in every representation without changing the frozen ledger', () => {
+  const gospel = parsed.books[0];
+  const before = JSON.stringify(gospel);
+  for (const mode of ['original', 'bengali']) {
+    const links = resolveBookDisplay(gospel, mode).displayLinks;
+    assert.equal(links.length, 5);
+    assert.equal(links.filter(link => link.unavailable).length, 1);
+    assert.equal(links.find(link => link.unavailable).label, 'Bengali 3');
+  }
+  assert.equal(resolveBookDisplay(gospel, 'english').displayLinks.filter(link => link.unavailable).length, 0);
+  assert.equal(JSON.stringify(gospel), before);
+  assert.equal(parsed.links.length, 85);
+});
+
 test('committed canonical database matches every source field and every approved link mapping', () => {
   const db = new Database(dbPath, { readonly: true });
   try {

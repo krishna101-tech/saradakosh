@@ -42,9 +42,10 @@ export function BookLinks({ book }) {
     <div className="book-links" aria-label={`Full text in ${book.displayLanguage}`}>
       {book.displayLinks.length ? book.displayLinks.map(link => (
         <span key={link.id} className="book-link-entry">
-          <a href={link.url} target="_blank" rel="noopener noreferrer" className="book-link">
+          {link.unavailable ? <span className="book-no-links">{link.label} — unavailable</span> : <a href={link.url} target="_blank" rel="noopener noreferrer" className="book-link">
             {link.label}<ExternalLink size={14} aria-hidden="true" />
-          </a>
+          </a>}
+          {link.unavailable && <span className="book-link-note">{link.unavailable}</span>}
           {link.annotation && <span className="book-link-note">{link.annotation}</span>}
         </span>
       )) : <span className="book-no-links">Full text not listed</span>}

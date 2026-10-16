@@ -2,6 +2,7 @@
 
 from contextlib import contextmanager
 import hashlib
+import json
 from pathlib import Path
 import shutil
 import sqlite3
@@ -14,6 +15,9 @@ from database_path import DB_PATH, REPO_ROOT
 
 
 LEGACY_TABLES = {'events', 'parameters', 'param_hierarchy', 'event_parameters', 'event_embeddings'}
+APPROVED_LINK_COUNT = json.loads(
+    (REPO_ROOT / 'saradakosh-web/data/library/books-source-manifest.json').read_text(encoding='utf-8')
+)['approved_links']
 SUMMARY = 'Approved editorial summary — preserved exactly বাংলা.'
 COVER = (
     1, 'Bengali',
@@ -84,7 +88,7 @@ class LegacyImporterTests(unittest.TestCase):
                 FOREIGN KEY(event_id) REFERENCES events(id) ON DELETE CASCADE)''')
             db.execute("INSERT OR REPLACE INTO event_embeddings VALUES (?, X'ABCD')", (self.event_id,))
             self.assertEqual(db.execute('SELECT COUNT(*) FROM library_books').fetchone()[0], 168)
-            self.assertEqual(db.execute('SELECT COUNT(*) FROM library_book_links').fetchone()[0], 55)
+            self.assertEqual(db.execute('SELECT COUNT(*) FROM library_book_links').fetchone()[0], APPROVED_LINK_COUNT)
             self.protected_before = table_state(db, protected_only=True)
 
     def run_cli(self):
@@ -99,7 +103,7 @@ class LegacyImporterTests(unittest.TestCase):
     def assert_library_preserved(self, db):
         self.assertEqual(table_state(db, protected_only=True), self.protected_before)
         self.assertEqual(db.execute('SELECT COUNT(*) FROM library_books').fetchone()[0], 168)
-        self.assertEqual(db.execute('SELECT COUNT(*) FROM library_book_links').fetchone()[0], 55)
+        self.assertEqual(db.execute('SELECT COUNT(*) FROM library_book_links').fetchone()[0], APPROVED_LINK_COUNT)
         self.assertEqual(db.execute('SELECT summary FROM library_books WHERE id=1').fetchone(), (SUMMARY,))
         self.assertEqual(db.execute('''SELECT book_id, language, asset_url, source_url,
             source_name, is_generated, is_primary, sort_order FROM library_book_covers''').fetchall(), [COVER])
