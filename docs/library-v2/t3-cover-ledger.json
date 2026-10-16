@@ -1,0 +1,2815 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-10-16",
+  "scope": "All 168 canonical identities accounted for. Bounded cover survey, not an exhaustive worldwide per-title search. Text-link research does not authorize image redistribution.",
+  "counts": {
+    "canonical_books": 168,
+    "accepted_assets": 1,
+    "uploaded_variants": 4,
+    "accepted_by_language": {
+      "English": 1
+    },
+    "uploaded_source_assets": 1,
+    "books_with_cover": 1,
+    "books_without_any_cover": 167,
+    "missing_language_representations": 199
+  },
+  "books": [
+    {
+      "book_id": 1,
+      "canonical_title": "The Gospel of Sri Ramakrishna",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 2,
+      "canonical_title": "Sri Ramakrishna and His Divine Play",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 3,
+      "canonical_title": "Life of Sri Ramakrishna",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 4,
+      "canonical_title": "Sri Ramakrishna: A Biography",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 5,
+      "canonical_title": "The Life of Ramakrishna",
+      "original_language": "French",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "French",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 6,
+      "canonical_title": "Ramakrishna as We Saw Him",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 7,
+      "canonical_title": "Sri Ramakrishna: Life and Message",
+      "original_language": "Hindi",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Hindi",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 8,
+      "canonical_title": "Sri Ramakrishna: God of All",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 9,
+      "canonical_title": "নিজমুখে শ্রীরামকৃষ্ণের জীবন ও উপলব্ধি",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 10,
+      "canonical_title": "ব্রাহ্ম ও খ্রিস্টান অনুরাগীদের চোখে শ্রীরামকৃষ্ণ",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 11,
+      "canonical_title": "রামকৃষ্ণের অন্ত্যলীলা",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 12,
+      "canonical_title": "শ্রীরামকৃষ্ণ পুঁথি",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 13,
+      "canonical_title": "শ্রীরামকৃষ্ণ লীলাকথা",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 14,
+      "canonical_title": "শ্রীরামকৃষ্ণ লীলামৃত",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 15,
+      "canonical_title": "শ্রীরামকৃষ্ণের অনুধ্যান",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 16,
+      "canonical_title": "সমসাময়িক দৃষ্টিতে শ্রীরামকৃষ্ণ",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 17,
+      "canonical_title": "Holy Mother Sri Sarada Devi",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 18,
+      "canonical_title": "The Gospel of the Holy Mother Sri Sarada Devi",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 19,
+      "canonical_title": "Sri Sarada Devi and Her Divine Play",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 20,
+      "canonical_title": "Sri Sarada Devi: The Holy Mother",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 21,
+      "canonical_title": "A Short Life of the Holy Mother",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 22,
+      "canonical_title": "Sri Sarada Devi: A Biography in Pictures",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 23,
+      "canonical_title": "মা ও জয়রামবাটী",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 24,
+      "canonical_title": "মাতৃদর্শন",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 25,
+      "canonical_title": "My Blessed Days with Holy Mother",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 26,
+      "canonical_title": "মায়ের চিঠি",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 27,
+      "canonical_title": "মায়ের পদপ্রান্তে ১-৪",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 28,
+      "canonical_title": "মায়ের মহিমায় উদ্ভাসিত দক্ষিণাপথ",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 29,
+      "canonical_title": "শ্রীশ্রী মায়ের জীবনকথা",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 30,
+      "canonical_title": "শ্রীশ্রী সারদাদেবী",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 31,
+      "canonical_title": "শ্রীশ্রীমায়ের বাড়ী ও উদ্বোধন কার্যালয়",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 32,
+      "canonical_title": "The Complete Works of Swami Vivekananda",
+      "original_language": "not clear",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 33,
+      "canonical_title": "Raja Yoga",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 34,
+      "canonical_title": "Karma Yoga",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 35,
+      "canonical_title": "Jnana Yoga",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 36,
+      "canonical_title": "Bhakti Yoga",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 37,
+      "canonical_title": "Lectures from Colombo to Almora",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 38,
+      "canonical_title": "Inspired Talks",
+      "original_language": "English",
+      "status": "partially-covered",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [
+            "038-english-inspired-talks-1910-second"
+          ],
+          "missing": false,
+          "reason": null
+        },
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": [
+        {
+          "key": "038-english-inspired-talks-1910-second",
+          "book_id": 38,
+          "canonical_title": "Inspired Talks",
+          "language": "English",
+          "edition": "1910 second edition; The Ramakrishna Mission, Mylapore, Madras",
+          "volume": "Single volume",
+          "representation": "single",
+          "sort_order": 0,
+          "identity_evidence": "https://iiif.archive.org/iiif/inspiredtalks00viverich/manifest.json",
+          "confidence": "verified",
+          "reviewed_date": "2026-10-16",
+          "source": {
+            "publisher": "The Ramakrishna Mission, Mylapore, Madras; University of California/Internet Archive scan",
+            "url": "https://archive.org/details/inspiredtalks00viverich",
+            "image_url": "https://iiif.archive.org/image/iiif/3/inspiredtalks00viverich%2Finspiredtalks00viverich_jp2.zip%2Finspiredtalks00viverich_jp2%2Finspiredtalks00viverich_0001.jp2/full/max/0/default.jpg",
+            "width": 2502,
+            "height": 3912,
+            "bytes": 1843422,
+            "format": "jpeg",
+            "cdn_source_url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1792101550/saradakosh/library-covers/038-en-inspired-1910-320-avifsaradakosh/library-covers/038-en-inspired-1910-source.jpg",
+            "page": "First scanned canvas (outer binding); title/second-edition leaf independently checked in the same1910 scan"
+          },
+          "rights": {
+            "basis": "public-domain",
+            "evidence_url": "https://commons.wikimedia.org/wiki/File:Inspired_Talks_of_Swami_Vivekananda_1910_edition.pdf",
+            "additional_evidence_urls": [
+              "https://belurmath.org/emblem/",
+              "https://copyright.gov.in/Copyright_Act_1957/chapter_v.html"
+            ],
+            "assessment": "Faithful reproduction of the genuine1910 outer binding. Commons marks the exact historical scan PD-US. Official Belur Math attributes the pictured emblem design to Vivekananda (d1902); that known artwork and the1910 binding context exceed the relevant Indian life+60/posthumous publication terms. Independent Sol Medium inspected edition, artwork and source-country term evidence before upload. This reasoned public-domain assessment does not assert modern publisher permission, first-print status or endorsement."
+          },
+          "publication": {
+            "method": "Authenticated Cloudinary console Web Address URL upload; no API credential access or MFA bypass; bounded free transformations and reingest as preoptimized assets",
+            "provider": "Cloudinary dljwhlvid",
+            "plan": "Free; coordinator verified $0 and8.57/25 credits used before actions",
+            "source_uploaded": true
+          },
+          "variants": [
+            {
+              "url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1792101800/saradakosh/library-covers/038-en-inspired-1910-320-avif.avif",
+              "width": 320,
+              "height": 500,
+              "format": "avif",
+              "bytes": 6698,
+              "sha256": "0149ddc6df03e28b85534279fb47a3e66bf4a2f756b72e7af120e93510d02376",
+              "http_status": 200,
+              "content_type": "image/avif"
+            },
+            {
+              "url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1792101928/saradakosh/library-covers/038-en-inspired-1910-480-avif.avif",
+              "width": 480,
+              "height": 751,
+              "format": "avif",
+              "bytes": 16586,
+              "sha256": "1915070a8641d3b00227619f6a39843fbb71a37aede539a284456d865430ccdd",
+              "http_status": 200,
+              "content_type": "image/avif"
+            },
+            {
+              "url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1792101954/saradakosh/library-covers/038-en-inspired-1910-720-avif.avif",
+              "width": 720,
+              "height": 1126,
+              "format": "avif",
+              "bytes": 65195,
+              "sha256": "c0e74ee15de474735a3582c7a88e7197e655cd14a6543ce316a71514e2c466c2",
+              "http_status": 200,
+              "content_type": "image/avif"
+            },
+            {
+              "url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1792101980/saradakosh/library-covers/038-en-inspired-1910-320-webp.webp",
+              "width": 320,
+              "height": 500,
+              "format": "webp",
+              "bytes": 26566,
+              "sha256": "19c2477ceceaca903b6dda3191954279634a057f762c500216d71818dafe2fa3",
+              "http_status": 200,
+              "content_type": "image/webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "book_id": 39,
+      "canonical_title": "My Master",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 40,
+      "canonical_title": "The East and the West",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 41,
+      "canonical_title": "Modern India",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 42,
+      "canonical_title": "Memoirs of European Travel",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 43,
+      "canonical_title": "Letters of Swami Vivekananda",
+      "original_language": "not clear",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 44,
+      "canonical_title": "Conversations and Dialogues",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 45,
+      "canonical_title": "Poems of Swami Vivekananda",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 46,
+      "canonical_title": "Vivekananda: His Call to the Nation",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 47,
+      "canonical_title": "The Message of Vivekananda",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 48,
+      "canonical_title": "To the Youth of India",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 49,
+      "canonical_title": "The Life of Swami Vivekananda",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 50,
+      "canonical_title": "Swami Vivekananda in the West: New Discoveries",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 51,
+      "canonical_title": "Photographs of Swami Vivekananda",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 52,
+      "canonical_title": "Reminiscences of Swami Vivekananda",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 53,
+      "canonical_title": "Swami Vivekananda in America",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 54,
+      "canonical_title": "Swami Vivekananda in Chicago",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 55,
+      "canonical_title": "Swami Vivekananda in Contemporary Indian News",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 56,
+      "canonical_title": "স্বামী বিবেকানন্দ ও সমকালীন ভারতবর্ষ",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 57,
+      "canonical_title": "কাশীধামে স্বামী বিবেকানন্দ",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 58,
+      "canonical_title": "বিবেকানন্দের জীবনের ঘটনাবলী",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 59,
+      "canonical_title": "যুগনায়ক",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 60,
+      "canonical_title": "লন্ডনে স্বামী বিবেকানন্দ ১-২",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 61,
+      "canonical_title": "স্বামী বিবেকানন্দের বাল্যজীবনী",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 62,
+      "canonical_title": "স্বামীজীর পদপ্রান্তে",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 63,
+      "canonical_title": "স্মৃতির আলোয় স্বামীজী",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 64,
+      "canonical_title": "স্বামীজীর স্মৃতিসঞ্চয়ন",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 65,
+      "canonical_title": "The Eternal Companion: Life and Teachings of Swami Brahmananda",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 66,
+      "canonical_title": "A Guide to Spiritual Life",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 67,
+      "canonical_title": "Swami Brahmananda As We Saw Him",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 68,
+      "canonical_title": "Swami Brahmanander Smritikatha",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 69,
+      "canonical_title": "রাজা মহারাজ",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 70,
+      "canonical_title": "Japa and Dhyana in a Nutshell",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 71,
+      "canonical_title": "Sadhan Prasange Raja Maharaj",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 72,
+      "canonical_title": "ব্রহ্মানন্দ ও রামকৃষ্ণ মিশন",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 73,
+      "canonical_title": "ব্রহ্মানন্দ চরিত",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 74,
+      "canonical_title": "ব্রহ্মানন্দ মহারাজের অনুধ্যান",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 75,
+      "canonical_title": "Reminiscences of Swami Brahmananda",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 76,
+      "canonical_title": "ব্রহ্মানন্দ স্মৃতিকণা",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 77,
+      "canonical_title": "স্বামী ব্রহ্মানন্দ",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 78,
+      "canonical_title": "Memories of a Loving Soul",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 79,
+      "canonical_title": "Swami Premananda: Love Incarnate",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 80,
+      "canonical_title": "Swami Premanander Jivan O Smritikatha",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 81,
+      "canonical_title": "Premik Purush Premananda",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 82,
+      "canonical_title": "Kathaprasange Swami Premananda",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 83,
+      "canonical_title": "প্রেমানন্দ",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 84,
+      "canonical_title": "প্রেমানন্দ জীবনচরিত",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 85,
+      "canonical_title": "প্রেমানন্দ প্রেমকথা",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 86,
+      "canonical_title": "স্বামী প্রেমানন্দের পত্রাবলী",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 87,
+      "canonical_title": "স্বামী প্রেমানন্দ",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 88,
+      "canonical_title": "Niranjanananda Charit",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 89,
+      "canonical_title": "Swami Ramakrishnananda: Apostle of Sri Ramakrishna to the South",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 90,
+      "canonical_title": "Swami Ramakrishnananda As We Saw Him",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 91,
+      "canonical_title": "Swami Ramakrishnananda: A Portrait in Pictures",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 92,
+      "canonical_title": "Swami Ramakrishnananda: His Life and Legacy",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 93,
+      "canonical_title": "Swami Ramakrishnanander Smritimala",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 94,
+      "canonical_title": "Sevadarshe Ramakrishnananda",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 95,
+      "canonical_title": "The Complete Works of Swami Ramakrishnananda",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 96,
+      "canonical_title": "Life of Sri Ramanuja",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 97,
+      "canonical_title": "God and Divine Incarnation",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 98,
+      "canonical_title": "Sri Krishna: Pastoral and the King-Maker",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 99,
+      "canonical_title": "The Soul of Man",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 100,
+      "canonical_title": "The Universe and Man",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 101,
+      "canonical_title": "For Thinkers on Education",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 102,
+      "canonical_title": "Search after Happiness",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 103,
+      "canonical_title": "Sri Ramakrishna, Our Refuge",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 104,
+      "canonical_title": "Days in an Indian Monastery",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 105,
+      "canonical_title": "স্বামী রামকৃষ্ণানন্দ",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 106,
+      "canonical_title": "The Story of a Dedicated Life",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 107,
+      "canonical_title": "Patramala: Letters of Swami Saradananda",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 108,
+      "canonical_title": "Saradananda Prasange",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 109,
+      "canonical_title": "Swami Saradanander Smritikatha",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 110,
+      "canonical_title": "Saradananda Charit",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 111,
+      "canonical_title": "Swami Saradananda: Ek Ananya Jivan",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 112,
+      "canonical_title": "Glimpses of a Great Soul",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 113,
+      "canonical_title": "যেমন দেখিয়াছি",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 114,
+      "canonical_title": "স্বামী সারদানন্দের জীবনী",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 115,
+      "canonical_title": "সারদানন্দ স্বামীজীর জীবনের ঘটনাবলী",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 116,
+      "canonical_title": "স্বামী সারদানন্দ",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 117,
+      "canonical_title": "Swami Turiyananda: Life and Teachings",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 118,
+      "canonical_title": "The Eternal Quest: A Life Sketch of Swami Turiyananda",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 119,
+      "canonical_title": "Spiritual Treasures: Letters of Swami Turiyananda",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 120,
+      "canonical_title": "Swami Turiyanander Patra",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 121,
+      "canonical_title": "Swami Turiyanander Smriti Katha",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 122,
+      "canonical_title": "জীবনমুক্তি সুখপ্রাপ্তি",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 123,
+      "canonical_title": "স্বামী তুরীয়ানন্দ",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 124,
+      "canonical_title": "Letters for Spiritual Seekers: Letters of Swami Shivananda",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 125,
+      "canonical_title": "For Seekers of God: Conversations with Swami Shivananda",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 126,
+      "canonical_title": "Mahapurush Maharaj As We Saw Him",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 127,
+      "canonical_title": "Saga of a Great Soul: Life and Work of Swami Shivananda",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 128,
+      "canonical_title": "Mahapurushjir Patravali",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 129,
+      "canonical_title": "Shivananda Smriti Samgraha",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 130,
+      "canonical_title": "দেবলোকে",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 131,
+      "canonical_title": "মহাপুরুষ শিবানন্দ",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 132,
+      "canonical_title": "শিবানন্দ মহারাজের অনুধ্যান",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 133,
+      "canonical_title": "শ্রীশ্রীমহাপুরুষজীর কথা",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 134,
+      "canonical_title": "Swami Abhedananda: A Spiritual Biography",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 135,
+      "canonical_title": "Swami Abhedananda: Janma Sardhashatabarser Shraddhanjali",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 136,
+      "canonical_title": "Epistles",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 137,
+      "canonical_title": "Swami Abhedananda in America",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 138,
+      "canonical_title": "আমার জীবনকথা",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 139,
+      "canonical_title": "যেমন শুনিয়াছি",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 140,
+      "canonical_title": "Swami Trigunatitananda Chitre Jivani",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 141,
+      "canonical_title": "Trigunatita Rachana Samgraha",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 142,
+      "canonical_title": "Swami Trigunatitananda",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 143,
+      "canonical_title": "Swami Akhandananda",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 144,
+      "canonical_title": "Swami Akhandananda As We Saw Him",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 145,
+      "canonical_title": "From Holy Wanderings to Service of God in Man",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 146,
+      "canonical_title": "Sharanagati O Seva",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 147,
+      "canonical_title": "Akhandanandajir Smriti",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 148,
+      "canonical_title": "Swami Akhandanander Smritisanchoi",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 149,
+      "canonical_title": "Tibbater Pathe Himalaye",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 150,
+      "canonical_title": "Swami Adbhutananda: As We Saw Him",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 151,
+      "canonical_title": "Adbhutananda Prasanga",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 152,
+      "canonical_title": "Eternal Words: Spiritual Instructions of Swami Adbhutananda",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 153,
+      "canonical_title": "তাপস লাটুমহারাজের অনুধ্যান",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 154,
+      "canonical_title": "Swami Subodhananda",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 155,
+      "canonical_title": "স্বামী সুবোধানন্দের স্মৃতিকথা",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 156,
+      "canonical_title": "খোকা মহারাজঃ স্বামী সুবোধানন্দ",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 157,
+      "canonical_title": "স্বামী সুবোধানন্দের জীবনী ও পত্র",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 158,
+      "canonical_title": "Swami Vijnanananda: Life and Teachings",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        },
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 159,
+      "canonical_title": "Swami Vijnanananda",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 160,
+      "canonical_title": "Swami Vijnananander Smritikatha",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 161,
+      "canonical_title": "Pratyakshadarshir Smritipate Swami Vijnanananda",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 162,
+      "canonical_title": "Satprasange Swami Vijnanananda",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 163,
+      "canonical_title": "Swami Vijnanananda: The Beacon Light of Allahabad",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 164,
+      "canonical_title": "ভক্ত মালিকা",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 165,
+      "canonical_title": "শ্রীমা ও শ্রীরামকৃষ্ণ পার্ষদগণের স্মৃতিকথা",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 166,
+      "canonical_title": "শ্রীরামকৃষ্ণ পরিকর প্রসঙ্গ",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 167,
+      "canonical_title": "Photographs of Shri Ramakrishna - Saradadevi",
+      "original_language": "English",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "English",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    },
+    {
+      "book_id": 168,
+      "canonical_title": "শ্রীচৈতন্য ও শ্রীরামকৃষ্ণ",
+      "original_language": "Bengali",
+      "status": "fallback",
+      "languages": [
+        {
+          "language": "Bengali",
+          "accepted": [],
+          "missing": true,
+          "reason": "No matching cover with verified rights, edition and source quality accepted in this bounded survey; designed fallback retained."
+        }
+      ],
+      "covers": []
+    }
+  ]
+}

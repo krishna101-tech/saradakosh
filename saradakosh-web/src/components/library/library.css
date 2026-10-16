@@ -55,7 +55,9 @@
 .cover-disciples { --cover-bg:#dee2e8; --cover-fg:#34475c; }
 .cover-general { --cover-bg:#e8e2cd; --cover-fg:#504c32; }
 .book-cover::after { content:''; position:absolute; inset:0 auto 0 0; width:9px; background:#0000000c; border-right:1px solid #ffffff40; pointer-events:none; }
-.book-cover img { width:100%; height:100%; object-fit:cover; }
+.book-cover picture { display:block; width:100%; height:100%; }
+.book-cover img { display:block; width:100%; height:100%; object-fit:contain; }
+.cover-volume { position:absolute; bottom:0; left:0; right:0; background:var(--cover-bg); color:var(--cover-fg); padding:4px 8px; font-size:12px; text-align:center; }
 .cover-design { display:flex; flex-direction:column; align-items:flex-start; height:100%; padding:24px 23px 20px; }
 .cover-imprint { font-size:13px; letter-spacing:.12em; line-height:1.5; font-weight:600; }
 .cover-rule { width:38px; border-top:1px solid currentColor; margin:20px 0; opacity:.5; }
@@ -65,6 +67,8 @@
 .book-links { display:flex; align-items:center; flex-wrap:wrap; gap:6px; margin-top:5px; }
 .book-link { display:inline-flex; align-items:center; justify-content:center; gap:6px; padding:7px 9px; min-height:36px; border:1px solid var(--library-border, var(--glass-border)); border-radius:6px; color:var(--library-accent, var(--primary-color)); background:var(--library-surface, var(--glass-bg)); text-decoration:none; font-size:13px; line-height:1.5; }
 .book-link:hover { background:var(--primary-glow); }
+.book-link-entry { display:flex; flex-direction:column; align-items:flex-start; gap:4px; max-width:100%; }
+.book-link-note { font-size:13px; line-height:1.5; color:var(--library-muted, var(--text-color)); overflow-wrap:anywhere; }
 .book-no-links { font-size:13px; line-height:1.5; color:var(--library-muted, var(--text-color)); }
 .library-list { margin:0; padding:0; list-style:none; }
 .book-list-row { display:flex; align-items:center; gap:24px; border-top:1px solid var(--library-border); padding:20px 4px; }
@@ -133,4 +137,8 @@
   .dialog-copy { padding:0; }
   .dialog-copy h2 { font-size:26px; }
 }
-@media (max-width:340px) { .library-grid { grid-template-columns:minmax(0,1fr); } }
+@media (max-width:340px) {
+  .library-grid { grid-template-columns:minmax(0,1fr); }
+  .library-toggles { flex-wrap:wrap; }
+  .library-toggles > .segmented-control { flex:1 1 100%; min-width:0; }
+}

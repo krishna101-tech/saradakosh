@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "issue": "https://github.com/krishna101-tech/saradakosh/issues/28",
+  "scope": "Frozen checkpoint retainedIDs54–58 only; research, not approved content",
+  "checked_at": "2026-10-16",
+  "provenance": {
+    "researcher": "gpt-6.1-sol High, assigned research worker",
+    "cost": "Included public web and local requests; no purchase, paid API, hosted build or redistribution",
+    "quota": "Parent supplied primary0% start; weekly62%;credits0; worker telemetry not observable",
+    "AAA_GOAL": "Luna coordinates; latest eligible Sol High research/implementation and independent Sol Medium QA under current owner task packet; sequential approval stages; zero incremental cost",
+    "method": "Bounded exact-title/original Bengali/transliteration searches, actual reader beginning/end and volume checks where accessible; discovery distinct from legal clearance. Prior candidates explicitly marked historical until rechecked."
+  },
+  "books": [
+    {
+      "book_id": 54,
+      "canonical_title": "Swami Vivekananda in Chicago",
+      "author": "Asim Chaudhuri",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "Swami Vivekananda in Chicago pdf Chaudhuri",
+        "Swami Vivekananda in Chicago full text Chaudhuri"
+      ],
+      "sources": [],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-vivekananda-in-chicago-new-findings/1237499000010264331",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-vivekananda-in-chicago-new-findings/1237499000010264331",
+          "page_title": "Swami Vivekananda in Chicago: New Findings | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Advaita Ashrama",
+            "List of Authors/Contributors": "Asim Chaudhuri",
+            "Binding": "Deluxe (Hardbound)",
+            "Language": "English",
+            "Year of Publishing": "NA",
+            "Total Pages": "260",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/AVE109_1.jpg/1237499000010314355/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/AVE109_1.jpg/1237499000010314355/1100x1100",
+            "width": 852,
+            "height": 1400,
+            "format": "JPEG",
+            "bytes": 326063,
+            "sha256": "3690c585cc47c91209fa46869b7bf211e0a720f56575367badc1bf3e1adec5b6",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "No whole free text verified; official retail and unrelated1893Chicago speech results rejected."
+    },
+    {
+      "book_id": 55,
+      "canonical_title": "Swami Vivekananda in Contemporary Indian News",
+      "author": "Shankari Prasad Basu",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "Swami Vivekananda in Contemporary Indian News volumes official"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/categories/vivekananda-life/1237499000000056230",
+          "observation": "Current official catalogue includes ContemporaryIndianNewsVolume5; later series extent exceeds older research noteVolume4."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-vivekananda-in-contemporary-indian-news-vol-1/1237499000019160671",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-vivekananda-in-contemporary-indian-news-vol-1/1237499000019160671",
+          "page_title": "Swami Vivekananda in Contemporary Indian News (1893-1902) Vol. I â€“ Sankari Prasad Basu | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Ramakrishna Mission - Golpark",
+            "List of Authors/Contributors": "Shankari Prasad Basu",
+            "Binding": "Deluxe (Hardbound)",
+            "Language": "English",
+            "Year of Publishing": "2024",
+            "Total Pages": "652",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/IVE015-510x663.jpg/1237499000021024892/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/IVE015-510x663.jpg/1237499000021024892/1100x1100",
+            "width": 510,
+            "height": 663,
+            "format": "JPEG",
+            "bytes": 51184,
+            "sha256": "5168f9ba3d410c41b2ffeec1f00ad2c811362e7068cf092a9f2227ac8d4efd42",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-vivekananda-in-contemporary-indian-news-1893-1902/swami-vivekananda-in-contemporary-indian-news-1893-1902.html",
+          "http_status": 200,
+          "actual_text_characters": 7258969,
+          "decision": "candidate_partial_series_pending_QA",
+          "rights": "No text redistribution licence inferred from free public access.",
+          "completeness": "Actual body7258969characters; threevolume divisions, V1HinduMadras introduction, laterIndian/AngloIndian articles, finalobituary observed. Dec2023digitalpublication. ONLYVolumes1–3; current official catalogue includesVolumes4and5. Not complete series."
+        }
+      ],
+      "prior_candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-vivekananda-in-contemporary-indian-news-1893-1902/swami-vivekananda-in-contemporary-indian-news-1893-1902.html",
+          "language": "English",
+          "volume": "Volumes 1–3 combined",
+          "edition": "Institutional digital edition December 2023; print edition correspondence not fully collated",
+          "access": "Public HTML, no login",
+          "completeness": "All three volume divisions and substantial body present; actual Volume2 and Volume3 articles checked. No claim to later Volume4.",
+          "rights": "Institutional public reader; no explicit reuse license inspected.",
+          "decision": "pending_independent_QA"
+        }
+      ],
+      "text_outcome": "Institutional volumes1–3 rechecked; later official volumes4–5 remain missing. Do not label complete series."
+    },
+    {
+      "book_id": 56,
+      "canonical_title": "স্বামী বিবেকানন্দ ও সমকালীন ভারতবর্ষ",
+      "author": "Shankari Prasad Basu",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "বিবেকানন্দ ও সমকালীন ভারতবর্ষ pdf download",
+        "Vivekananda O Samakalin Bharatbarsha pdf"
+      ],
+      "sources": [
+        {
+          "url": "https://granthagara.com/boi/333014-vibekananda-o-somokalin-bharatbarsha-vol-1/",
+          "observation": "450pageVolume1 scan discovery; sample/machineOCR only inspected. Not7volume coverage or verified rights."
+        },
+        {
+          "url": "https://www.deyspublishing.com/books/vivekananda-o-samakalin-bharatbarsha-vol-1",
+          "observation": "Official multi-publisher retailer confirmsSankariPrasadBasu,Bengali,2022PaschimbangaBanglaAkademi,339pages,Volume1. Paid book not fulltext."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://www.deyspublishing.com/books/vivekananda-o-samakalin-bharatbarsha-vol-1",
+          "http_status": 200,
+          "resolved_url": "https://www.deyspublishing.com/books/vivekananda-o-samakalin-bharatbarsha-vol-1",
+          "page_title": "Dey's publishing",
+          "identity_metadata": {
+            "Publisher": "Paschimbanga Bangla Akademi via Deys multi-publisher shop",
+            "Author": "Sankari Prasad Basu",
+            "Language": "Bengali",
+            "Year": "2022",
+            "Pages": "339",
+            "Volume": "1 only; not7volumes",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://deys-publishing.blr1.digitaloceanspaces.com/aA9OiE5Ez2thumbnail_1727937501.jpeg",
+          "image_observation": {
+            "width": 400,
+            "height": 590,
+            "format": "JPEG",
+            "meaning": "Actual returned raster; original master unknown"
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "Seven-volume work; Volume1scan discovery only; whole-series completeness and publisher-authorized access not verified. HOLD."
+    },
+    {
+      "book_id": 57,
+      "canonical_title": "কাশীধামে স্বামী বিবেকানন্দ",
+      "author": "Mahendranath Dutta",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "কাশীধামে স্বামী বিবেকানন্দ পাঠ"
+      ],
+      "sources": [],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/kashidhame-swami-vivekananda/1237499000011869767",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/kashidhame-swami-vivekananda/1237499000011869767",
+          "page_title": "Kashidhame Swami Vivekananda by M.N. Dutta | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "The Mohendra Publishing Committee",
+            "List of Authors/Contributors": "Mohendra Nath Dutta",
+            "Binding": "Paperback",
+            "Language": "Bengali",
+            "Year of Publishing": "2024",
+            "Total Pages": "111",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/OOB555_1.jpg/1237499000011918025/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/OOB555_1.jpg/1237499000011918025/1100x1100",
+            "width": 828,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 83198,
+            "sha256": "2179241235648f90ed6b2c64b87c253af455ec798238937ae89a0f6270da95b7",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [
+        {
+          "url": "https://bn.wikisource.org/wiki/নির্ঘণ্ট:কাশীধামে_স্বামী_বিবেকানন্দ_-_মহেন্দ্রনাথ_দত্ত.pdf",
+          "edition": "2nd1953Kolkata,MahendranathDutta;109scanindex",
+          "completeness": "Actual prefacepage8, narrativemiddle48,closingnotespage100,backmattercatalogue104,terminal109markedno-text. Index0%proofread/validated; everypagegap audit not done.",
+          "sample_urls": [
+            "https://bn.wikisource.org/wiki/পাতা:কাশীধামে_স্বামী_বিবেকানন্দ_-_মহেন্দ্রনাথ_দত্ত.pdf/৮",
+            "https://bn.wikisource.org/wiki/পাতা:কাশীধামে_স্বামী_বিবেকানন্দ_-_মহেন্দ্রনাথ_দত্ত.pdf/৪৮",
+            "https://bn.wikisource.org/wiki/পাতা:কাশীধামে_স্বামী_বিবেকানন্দ_-_মহেন্দ্রনাথ_দত্ত.pdf/১০০",
+            "https://bn.wikisource.org/wiki/পাতা:কাশীধামে_স্বামী_বিবেকানন্দ_-_মহেন্দ্রনাথ_দত্ত.pdf/১০৪",
+            "https://bn.wikisource.org/wiki/পাতা:কাশীধামে_স্বামী_বিবেকানন্দ_-_মহেন্দ্রনাথ_দত্ত.pdf/১০৯"
+          ],
+          "rights": "Wikisource transcription CC-BY-SA footer; original scan-specific rights basis unresolved. No automatic modern-cover clearance.",
+          "decision": "held_scan_rights_and_completeness"
+        }
+      ],
+      "prior_candidates": [],
+      "text_outcome": "Newly located109scanWikisource edition: actualfront/middle/endnotes/backmatter inspected; HOLD original-scan rights and gap audit."
+    },
+    {
+      "book_id": 58,
+      "canonical_title": "বিবেকানন্দের জীবনের ঘটনাবলী",
+      "author": "Mahendranath Dutta",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "বিবেকানন্দের জীবনের ঘটনাবলী পাঠ",
+        "শ্রীমৎ বিবেকানন্দ স্বামীজীর জীবনের ঘটনাবলী পাঠ",
+        "শ্রীমৎ বিবেকানন্দ ঘটনাবলী site:bn.wikisource.org"
+      ],
+      "sources": [
+        {
+          "url": "https://www.thakurmaaswamiji.com/2021/03/Events-in-the-Life-of-Srimat-Vivekananda-Swamiji-Part-1.html",
+          "observation": "Actual page contains authorpreface and linksParts2/3; embeddedexternalPDF not verified, no personal Drive identifiers recorded. Blog not complete body proof."
+        },
+        {
+          "url": "https://bn.wikisource.org/wiki/বিষয়শ্রেণী:মহেন্দ্রনাথ_দত্ত_রচিত",
+          "observation": "Wikisource lists1956Part1scan350pages; parts2–3not verified. No whole3partclaim."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/srimat-vivekananda-swamijir-jivaner-ghatanavali-bengali/1237499000011857139",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/srimat-vivekananda-swamijir-jivaner-ghatanavali-bengali/1237499000011857139",
+          "page_title": "Srimat Vivekananda Swamijir Jivaner Ghatanavali by Dutta | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "The Mohendra Publishing Committee",
+            "List of Authors/Contributors": "Mohendra Nath Dutta",
+            "Binding": "Deluxe (Hardbound)",
+            "Language": "Bengali",
+            "Year of Publishing": "2022",
+            "Total Pages": "508",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/OOB533_1.jpg/1237499000011917278/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/OOB533_1.jpg/1237499000011917278/1100x1100",
+            "width": 781,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 83773,
+            "sha256": "d6a3e2da8ba495415431e1ee53036e551d9d00e53188d8de314aecad576d5ec8",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "Three-part work; blogpreface/embeddedPDF lead and WikisourcePart1scan found; all3actualendpoints/completeness/rights unresolved. HOLD."
+    }
+  ],
+  "checkpoints": [
+    {
+      "works": 5,
+      "official_cover_leads": 5,
+      "pixels_measured": 5,
+      "covers_cleared": 0,
+      "rechecked_partial_series_ids": [
+        55
+      ],
+      "new_scan_hold_ids": [
+        57,
+        58
+      ],
+      "no_verified_complete_series_or_work_ids": [
+        54,
+        56
+      ],
+      "new_public_links_approved": 0,
+      "QA": "pending"
+    }
+  ]
+}

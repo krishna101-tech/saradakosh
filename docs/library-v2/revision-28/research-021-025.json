@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "scope": "Issue28 renewed bounded research only;retained legacy IDs21–25;candidate evidence requires independent QA",
+  "baseline_sha": "1069fc336c1e9f900440fea2f1bfa2a0404cd98c",
+  "researcher": "gpt-6.1-sol High",
+  "cost": "Included public web search and local HTTP inspection only; no purchase/API spend/hosted build/upload",
+  "privacy": "No private Drive IDs or text copied.",
+  "method": "Renewed English/original-language/transliterated queries. Product pictures and lawful clearance counted separately. Search absence is bounded not exhaustive.",
+  "books": [
+    {
+      "book_id": 21,
+      "title": "A Short Life of the Holy Mother",
+      "catalog_author": "Swami Pavitrananda",
+      "catalog_original_language": "English",
+      "renewed_checked_at": "2026-10-16T11:27:17.876656+00:00",
+      "renewed_queries": [
+        "\"A Short Life of the Holy Mother\" Pavitrananda full pdf",
+        "site:shop.advaitaashrama.org/products \"A Short Life of the Holy Mother\""
+      ],
+      "text_decision": "first_last_pdf_verified_publisher_free_ebook_lead_pending_QA",
+      "text_evidence": [
+        {
+          "url": "https://media.vivekavani.com/wp-content/uploads/2021/01/A-Short-Life-of-The-Holy-Mother.pdf",
+          "observation": "HTTP200 application/pdf;93pages. Title Pavitrananda,1942preface,contents15chapters+StrayTalks. First Discovery chapter and final talks43–50 with clean ending checked; no truncation evident. PDF permissions/source authorization QA pending."
+        },
+        {
+          "url": "https://ebooks.advaitaashrama.org/product-category/sri-sarada-devi",
+          "observation": "Official publisher explicitly categorizes A Short Life as free ebook; distinguishes it from paid/trial My Blessed Days. Exact offered reader and complete download still to resolve."
+        },
+        {
+          "url": "https://ebooks.advaitaashrama.org/product/a-short-life-of-holy-mother-1",
+          "observation": "Official publisher explicitly offers this title as free ebook and links GooglePlay. Does not independently authorize another site PDF or cover reuse."
+        },
+        {
+          "url": "https://play.google.com/store/books/details/Swami_Pavitrananda_A_Short_Life_of_The_Holy_Mother?id=TDY9DQAAQBAJ",
+          "observation": "Live listing shows Get for free;Pavitrananda;AdvaitaAshrama;68digital pages. Full acquired ebook first/final text was not opened; do not count storefront as complete reader. Separately inspected PDF93pages is different pagination."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/a-short-life-of-the-holy-mother/1237499000010251117",
+          "checked_at": "2026-10-16T11:27:17.879376+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/AHE001_1.jpg/1237499000010325470/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            448,
+            681
+          ],
+          "edition_metadata": {
+            "publisher": "Advaita Ashrama",
+            "author": "Swami Pavitrananda",
+            "binding": "Paperback",
+            "language": "English",
+            "year": "NA",
+            "pages": "96",
+            "isbn": "9788175050310"
+          }
+        }
+      ],
+      "editorial_hold": null
+    },
+    {
+      "book_id": 22,
+      "title": "Sri Sarada Devi: A Biography in Pictures",
+      "catalog_author": "A Compilation",
+      "catalog_original_language": "English",
+      "renewed_checked_at": "2026-10-16T11:27:19.389040+00:00",
+      "renewed_queries": [
+        "\"Sarada Devi A Biography in Pictures\" free pdf",
+        "site:shop.advaitaashrama.org/products \"Sarada Devi\" \"Biography in Pictures\""
+      ],
+      "text_decision": "no_complete_free_text_verified",
+      "text_evidence": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/sarada-devi-a-biography-in-pictures/1237499000010251237",
+          "observation": "Official English112page biographical album;Smaranananda/Gitananda contributors,177photographs. Storefront and citations only; no complete free album verified. Different Chetanananda Divine Life in Pictures is not automatically this work."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/sarada-devi-a-biography-in-pictures/1237499000010251237",
+          "checked_at": "2026-10-16T11:27:19.389239+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/AHE004_1.jpg/1237499000010325581/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            847,
+            1101
+          ],
+          "edition_metadata": {
+            "publisher": "Advaita Ashrama",
+            "author": "Swami Smaranananda Swami Gitananda",
+            "binding": "Deluxe (Hardbound)",
+            "language": "English",
+            "year": "NA",
+            "pages": "112"
+          }
+        }
+      ],
+      "editorial_hold": null
+    },
+    {
+      "book_id": 23,
+      "title": "মা ও জয়রামবাটী",
+      "catalog_author": "Parameshwarananda",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:27:20.458595+00:00",
+      "renewed_queries": [
+        "\"মা ও জয়রামবাটী\" pdf",
+        "\"Ma O Jayrambati\" book",
+        "\"Sri Sri Ma O Jayrambati\" publisher"
+      ],
+      "text_decision": "no_complete_free_text_verified",
+      "text_evidence": [
+        {
+          "url": "https://media.belurmath.org/inspiration-sri-ma-sarada-devi-17-9034/",
+          "observation": "Official excerpt cites Parameshwarananda,MatriMandir Jayrambati1971p140; this is one excerpt, not complete book."
+        }
+      ],
+      "cover_candidates": [],
+      "editorial_hold": "Nearby Devitirtha Jayrambati and Holy Jayrambati are distinct titles; no substitution. Exact official product cover search still open."
+    },
+    {
+      "book_id": 24,
+      "title": "মাতৃদর্শন",
+      "catalog_author": "Chetanananda",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:27:20.458633+00:00",
+      "renewed_queries": [
+        "\"মাতৃদর্শন\" চেতনানন্দ pdf",
+        "\"Matridarshan\" Chetanananda \"pdf\"",
+        "\"মাতৃদর্শন\" \"জ্যোতিষ\" \"চেতনানন্দ\""
+      ],
+      "text_decision": "no_complete_free_text_verified",
+      "text_evidence": [
+        {
+          "url": "https://udbodhan.org/product/মাতৃদর্শন-matri-darshan",
+          "observation": "Official Chetanananda compilation contains47reminiscences; sales/peek-inside is not free full text."
+        },
+        {
+          "url": "https://granthagara.com/boi/312423-matridarshan-ed-2/",
+          "observation": "Free-scan hit identifies JyotishChandraRoy,220pages,not Chetanananda. Reject as different work despite same Matridarshan title."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://udbodhan.org/product/মাতৃদর্শন-matri-darshan",
+          "checked_at": "2026-10-16T11:27:20.458846+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://udbodhan.org/api/media/file/Matridarshan_1.webp",
+          "image_http_status": 200,
+          "dimensions": [
+            696,
+            1100
+          ],
+          "edition_metadata": {}
+        }
+      ],
+      "editorial_hold": "Author/title collision explicitly rejected."
+    },
+    {
+      "book_id": 25,
+      "title": "My Blessed Days with Holy Mother",
+      "catalog_author": "Swami Ishanananda",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:27:21.855646+00:00",
+      "renewed_queries": [
+        "\"My Blessed Days with Holy Mother\" pdf free",
+        "\"My Blessed Days With Holy Mother\" ebook",
+        "\"Matrisannidhye\" \"pdf\"",
+        "\"মাতৃসান্নিধ্যে\" ঈশানানন্দ pdf"
+      ],
+      "text_decision": "no_complete_free_text_verified",
+      "text_evidence": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/my-blessed-days-with-holy-mother/1237499000010269133",
+          "observation": "Owner paid-only example renewed: Ishanananda;English;216p;ISBN9788175054721. Paid paperback;translation of Bengali Matrisannidhye; no complete free reader on page."
+        },
+        {
+          "url": "https://ebooks.advaitaashrama.org/product-category/sri-sarada-devi",
+          "observation": "Official ebook catalogue links commercial stores,not itself a reader. Only explicitly free entries can be treated as such."
+        },
+        {
+          "url": "https://www.everand.com/book/397179392/My-Blessed-Days-with-Holy-Mother",
+          "observation": "30daytrial claim excluded. Renewed Bengali query found publisher audiobook series,not verified complete text."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/my-blessed-days-with-holy-mother/1237499000010269133",
+          "checked_at": "2026-10-16T11:27:21.855879+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/AHE012_1.jpg/1237499000010325949/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            600,
+            926
+          ],
+          "edition_metadata": {
+            "publisher": "Advaita Ashrama",
+            "author": "Swami Ishanananda",
+            "binding": "Paperback",
+            "language": "English",
+            "year": "NA",
+            "pages": "216",
+            "isbn": "9788175054721"
+          }
+        }
+      ],
+      "editorial_hold": null
+    }
+  ],
+  "checkpoints": [
+    {
+      "ids": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "completed_at": "2026-10-16T11:27:22.906242+00:00",
+      "new_complete_texts_verified": 0,
+      "lawfully_cleared_cover_assets": 0,
+      "status": "completed_bounded_research_candidate_only"
+    }
+  ],
+  "scorecard": {
+    "works_researched": 5,
+    "works_with_source_image_discoveries": 4,
+    "source_images_discovered": 4,
+    "cover_assets_legally_cleared": 0,
+    "new_text_links_approved": 0,
+    "candidate_only": true,
+    "warning": "First/final body evidence and official free offer remain separate from independent publication approval."
+  }
+}

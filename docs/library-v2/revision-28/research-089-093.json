@@ -1,0 +1,245 @@
+{
+  "issue": 28,
+  "observed_at": "2026-10-16T11:24:58.671813+00:00",
+  "source_sha": "1069fc336c1e9f900440fea2f1bfa2a0404cd98c",
+  "scorecard": {
+    "works": 5,
+    "cover_leads": 5,
+    "cover_pixels_measured": 5,
+    "covers_cleared": 0,
+    "new_readers_approved": 0,
+    "existing_readers_reverified": 3
+  },
+  "books": [
+    {
+      "legacy_id": 89,
+      "title": "Swami Ramakrishnananda: Apostle of Sri Ramakrishna to the South",
+      "author": "Swami Tapasyananda",
+      "language": "English",
+      "cover": {
+        "product_url": "https://shop.advaitaashrama.org/products/swami-ramakrishnananda-apostle-of-sri-ramakrishna-to-the-south/1237499000010758697",
+        "image": [
+          {
+            "url": "https://cdn2.zohoecommerce.com/product-images/MDE001_1.jpg/1237499000010826981/800x800?storefront_domain=shop.advaitaashrama.org",
+            "alt": "Swami Ramakrishnananda: Apostle of Sri Ramakrishna to the South",
+            "status": 200,
+            "dimensions": [
+              202,
+              315
+            ],
+            "bytes": 9391,
+            "sha256": "d3e409595fb4dcd91211d84c464383c042c4169af282c92cca52ac6ff7e6626a"
+          }
+        ],
+        "rights": "HOLD_NO_REDISTRIBUTION_PERMISSION",
+        "edition": "Current official listing; print year unestablished",
+        "quality": "Small raster, not high-resolution",
+        "visually_inspected": true
+      },
+      "reader": {
+        "decision": "NO_NEW_VERIFIED_COMPLETE_READER",
+        "research": "Exact title/original title +free fulltext/pdf/read/archive queries; official paid listings/references found, no inspected completeauthorized reader. Bounded search, not universalabsence."
+      },
+      "qa": "PENDING",
+      "rejected": [
+        {
+          "url": "https://srv.org/antaranga-swami-ramakrishnananda/",
+          "reason": "Biographical article citing book, not complete book"
+        },
+        {
+          "url": "https://godivinity.org/swami-ramakrishnananda-the-apostle-of-sri-ramakrishna-to-the-south-by-swami-tapasyananda/",
+          "reason": "Bookreview"
+        }
+      ]
+    },
+    {
+      "legacy_id": 90,
+      "title": "Swami Ramakrishnananda As We Saw Him",
+      "author": "A Compilation",
+      "language": "English",
+      "cover": {
+        "product_url": "https://shop.advaitaashrama.org/products/swami-ramakrishnananda-as-we-saw-him-reminiscences-of-monastic-and-lay-devotees/1237499000010758841",
+        "image": [
+          {
+            "url": "https://cdn2.zohoecommerce.com/product-images/MDE024_1.jpg/1237499000010839077/800x800?storefront_domain=shop.advaitaashrama.org",
+            "alt": "Swami Ramakrishnananda As We Saw Him: Reminiscences of Monastic and Lay Devotees",
+            "status": 200,
+            "dimensions": [
+              208,
+              311
+            ],
+            "bytes": 25873,
+            "sha256": "906886db9fff261e47afd22b64c76e8e9a95438531c59f2f274a2fe089eb6b82"
+          }
+        ],
+        "rights": "HOLD_NO_REDISTRIBUTION_PERMISSION",
+        "edition": "Current official listing; print year unestablished",
+        "quality": "Small raster, not high-resolution",
+        "visually_inspected": true
+      },
+      "reader": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-as-we-saw-him/swami-ramakrishnananda-as-we-saw-him.html",
+        "status": 200,
+        "bytes": 2185393,
+        "first_sections": [
+          "Swami Ramakrishnananda As We Saw Him",
+          "Contents",
+          "Cover",
+          "Title",
+          "Swami Ramakrishnananda as We Saw Him",
+          "Author",
+          "A Compilation"
+        ],
+        "last_sections": [
+          "Illumination",
+          "Contributors     Part - 2",
+          "Sources and References All references to the articles published in this book are from the following sources.",
+          "Glossary of the some of the words used in this book"
+        ],
+        "toc_link_count": 65,
+        "decision": "RETAIN_EXISTING_APPROVED_READER",
+        "completeness": "Renewed institutional HTML opening/main/final apparatus; no new print-equivalence/reuse-licence claim"
+      },
+      "qa": "PENDING"
+    },
+    {
+      "legacy_id": 91,
+      "title": "Swami Ramakrishnananda: A Portrait in Pictures",
+      "author": "A Compilation",
+      "language": "English",
+      "cover": {
+        "product_url": "https://shop.advaitaashrama.org/products/swami-ramakrishnananda-a-portrait-in-pictures/1237499000010758733",
+        "image": [
+          {
+            "url": "https://cdn2.zohoecommerce.com/product-images/MDE016_1.jpg/1237499000010827658/800x800?storefront_domain=shop.advaitaashrama.org",
+            "alt": "Swami Ramakrishnananda: A Portrait in Pictures",
+            "status": 200,
+            "dimensions": [
+              249,
+              325
+            ],
+            "bytes": 26583,
+            "sha256": "d652dbcb7e20583cfd4ef05cd5bdeab7f5f4196569c4f9c170ac44c3f46fcbea"
+          }
+        ],
+        "rights": "HOLD_NO_REDISTRIBUTION_PERMISSION",
+        "edition": "Current official listing; print year unestablished",
+        "quality": "Small raster, not high-resolution",
+        "visually_inspected": true
+      },
+      "reader": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-a-portrait-in-pictures/swami-ramakrishnananda-a-portrait-in-pictures.html",
+        "status": 200,
+        "bytes": 599214,
+        "first_sections": [
+          "Swami Ramakrishnananda-A Portrait In Pictures",
+          "Contents",
+          "COVER",
+          "Birth and Early Life",
+          "At the Feet of Sri Ramakrishna",
+          "After the Master’s Passing",
+          "Founding of the Madras Math"
+        ],
+        "last_sections": [
+          "Sayings of Swami Ramakrishnananda",
+          "Glory of Swami Ramakrishnananda",
+          "Bibliography",
+          "Appendix 10"
+        ],
+        "toc_link_count": 43,
+        "decision": "RETAIN_EXISTING_APPROVED_READER",
+        "completeness": "Renewed institutional HTML opening/main/final apparatus; no new print-equivalence/reuse-licence claim"
+      },
+      "qa": "PENDING"
+    },
+    {
+      "legacy_id": 92,
+      "title": "Swami Ramakrishnananda: His Life and Legacy",
+      "author": "A Compilation",
+      "language": "English",
+      "cover": {
+        "product_url": "https://istore.chennaimath.org/products/swami-ramakrishnananda-his-life-and-legacy/3690041000102330864",
+        "image_url": "https://istore.chennaimath.org/product-images/Swami-Ramakrishnananda-His-Life-and-Legacy1.jpg/3690041000102445603/1100x1100",
+        "pixels": "PENDING",
+        "rights": "HOLD_NO_REDISTRIBUTION_PERMISSION",
+        "edition": "Current highlysubsidized English198pagepaperback; printlayout not certified",
+        "url": "https://istore.chennaimath.org/products/swami-ramakrishnananda-his-life-and-legacy/3690041000102330864",
+        "status": 200,
+        "image_status": 200,
+        "dimensions": [
+          600,
+          600
+        ],
+        "bytes": 65500,
+        "visually_inspected": true,
+        "quality": "600x600 perspective product photograph with white margins, not flat cover artwork; HOLD rights and presentation fit."
+      },
+      "reader": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-his-life-and-legacy/swami-ramakrishnananda-his-life-and-legacy.html",
+        "status": 200,
+        "bytes": 411363,
+        "first_sections": [
+          "Swami Ramakrishnananda His Life And Legacy",
+          "Contents",
+          "COVER",
+          "Title",
+          "Swami Ramakrishnananda - His Life and Legacy",
+          "Author",
+          "A Compilation"
+        ],
+        "last_sections": [
+          "SISTER DEVAMATA",
+          "SELECTED TEACHINGS",
+          "BIBLIOGRAPHY",
+          "BOOKS BY SWAMI RAMAKRISHNANANDA"
+        ],
+        "toc_link_count": 42,
+        "decision": "RETAIN_EXISTING_APPROVED_READER",
+        "completeness": "Renewed institutional HTML opening/main/final apparatus; no new print-equivalence/reuse-licence claim"
+      },
+      "qa": "PENDING"
+    },
+    {
+      "legacy_id": 93,
+      "title": "Swami Ramakrishnanander Smritimala",
+      "author": "Swami Chetanananda",
+      "language": "Bengali",
+      "cover": {
+        "product_url": "https://shop.advaitaashrama.org/products/swami-ramakrishnanander-smritimala/1237499000010647863",
+        "image": [
+          {
+            "url": "https://cdn2.zohoecommerce.com/product-images/UDB053_1.jpg/1237499000010704297/800x800?storefront_domain=shop.advaitaashrama.org",
+            "alt": "Swami Ramakrishnanander Smritimala: Reminiscences, letters, and minor works of Swami Ramakrishnananda",
+            "status": 200,
+            "dimensions": [
+              525,
+              800
+            ],
+            "bytes": 107769,
+            "sha256": "b4ecdb013345ae18c847a9255b23a89475eccf688758f5401467a9fe4a357395"
+          }
+        ],
+        "rights": "HOLD_NO_REDISTRIBUTION_PERMISSION",
+        "edition": "Current official listing; print year unestablished",
+        "quality": "800px raster",
+        "visually_inspected": true
+      },
+      "reader": {
+        "decision": "NO_NEW_VERIFIED_COMPLETE_READER",
+        "research": "Exact title/original title +free fulltext/pdf/read/archive queries; official paid listings/references found, no inspected completeauthorized reader. Bounded search, not universalabsence."
+      },
+      "qa": "PENDING",
+      "publisher_metadata": {
+        "publisher": "Udbodhan Karyalaya",
+        "isbn": "9788180405433",
+        "pages": 683,
+        "qualification": "Extendedtitle includesletters/minorworks, independenteditorialwork"
+      }
+    }
+  ],
+  "limitations": [
+    "No new link/image approved; independent QA pending.",
+    "No copied full text, private content or cover files included.",
+    "Paid listing is not a free reader; image display is not redistribution permission."
+  ]
+}

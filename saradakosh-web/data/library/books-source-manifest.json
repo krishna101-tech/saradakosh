@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "source_range": "Books!A1:I169",
+  "source_sha256": "a9326e5e1d3119950f75bdee3a7c7ccd25ffa4fe175fbbbecdbbd205edc25bd0",
+  "spreadsheet_sha256": "6cf0d4484faabaa3f7240a2027b82000fc265b40f06381d72f091ec7049f1114",
+  "identities_sha256": "d42704b12c6458cc271307646f678fc583a886e35d631bb74d36805938958c08",
+  "adjudicated_manifest_sha256": "a8b672743698e84d18072dc25eefcab59e72692be485348225aeb3280c95ba46",
+  "expected_books": 168,
+  "approved_links": 85,
+  "baseline_links": 55,
+  "new_links": 30,
+  "books_with_links": 39,
+  "native_backup_sha256": "d9d05e54e76a3b4dd7deec51e72126afc6c593200baeb289e3a0cb6ea8d8c2b8"
+}

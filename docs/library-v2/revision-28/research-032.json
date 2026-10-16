@@ -1,0 +1,59 @@
+{
+  "issue": 28,
+  "legacy_id": 32,
+  "title": "The Complete Works of Swami Vivekananda",
+  "qa": "PENDING",
+  "observed_at": "2026-10-16T11:26:58.528410+00:00",
+  "readers": {
+    "english": "https://www.ramakrishnavivekananda.info/vivekananda/complete_works.htm",
+    "bengali": "Existing10volume institutional readers retained; no9English/10Bengali confusion",
+    "decision": "RETAIN_EXISTING; consolidatedsubworkanchors subject to independentdedupapproval"
+  },
+  "cover_leads": [
+    {
+      "url": "https://shop.advaitaashrama.org/products/i89a75411d/1237499000010260409",
+      "publisher": "Advaita Ashrama",
+      "language": "English",
+      "binding": "Paperback9volume set",
+      "isbn": "9788175053823",
+      "pages": 5062,
+      "rights": "HOLD_NO_REDISTRIBUTION_PERMISSION",
+      "quality": "Officialsetart;actualpixelsstilltomeasure"
+    },
+    {
+      "url": "https://shop.advaitaashrama.org/products/the-complete-works-of-swami-vivekananda-subsidized-set-of-8-vols/1237499000010267373",
+      "publisher": "Advaita Ashrama",
+      "language": "English",
+      "qualification": "Explicitly8volumes; ninthmustbepurchasedseparately. Cannotrepresentascomplete9volumeset.",
+      "actual_pixels": [
+        737,
+        800
+      ],
+      "image_sha256": "b7004a51e5586fafc41b1daa8fb69b909f8e7291dc1ba7927485244be0c417c4",
+      "rights": "HOLD_NO_REDISTRIBUTION_PERMISSION"
+    }
+  ],
+  "historic_cover_rejections": [
+    {
+      "url": "https://archive.org/details/dli.ministry.28347",
+      "reason": "ActualfirstleafNationalLibrarybookplate andnext1908PartIII titlepage, notauthenticouterbinding.767x1224 source, cannotmasqueradeascover."
+    },
+    {
+      "url": "https://archive.org/details/in.ernet.dli.2015.204949",
+      "reason": "Actualleaf0PartI secondedition1915 titlepage despitecatalogCompleteWorks3; lowqualitymonochrometitlepage, notouterbinding. Metadata mismatchrecorded."
+    },
+    {
+      "url": "https://archive.org/details/in.ernet.dli.2015.514406",
+      "reason": "Inspectedearlyleaves0/1/2/5 blankorvirtuallyblank; noacceptableoutercoverfound. Boundedscaninspection, notclaimnoothercoverexists."
+    }
+  ],
+  "scorecard": {
+    "publisher_cover_leads": 2,
+    "covers_cleared": 0,
+    "historic_scans_inspected": 3
+  },
+  "limitations": [
+    "No image publishing approval. PD text status alone doesnot establishcoveridentity/quality.",
+    "No independent cover for removed33-48; existingInspiredTalkscover historicalonly."
+  ]
+}
