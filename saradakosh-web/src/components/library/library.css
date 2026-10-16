@@ -137,4 +137,8 @@
   .dialog-copy { padding:0; }
   .dialog-copy h2 { font-size:26px; }
 }
-@media (max-width:340px) { .library-grid { grid-template-columns:minmax(0,1fr); } }
+@media (max-width:340px) {
+  .library-grid { grid-template-columns:minmax(0,1fr); }
+  .library-toggles { flex-wrap:wrap; }
+  .library-toggles > .segmented-control { flex:1 1 100%; min-width:0; }
+}
