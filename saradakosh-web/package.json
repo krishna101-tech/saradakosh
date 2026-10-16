@@ -11,6 +11,8 @@
     "test:database": "node --test tests/database.test.mjs",
     "test:library": "node --test tests/library.test.mjs",
     "import:library": "node scripts/import-library.mjs",
+    "import:covers": "node scripts/import-covers.mjs",
+    "test:covers": "node --test tests/covers.test.mjs",
     "prepare": "husky"
   },
   "dependencies": {

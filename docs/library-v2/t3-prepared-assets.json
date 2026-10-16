@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "status": "historical-superseded-preparation-not-production-evidence",
+  "superseded_by": "saradakosh-web/data/library/covers-manifest.json; original color Internet Archive source and four actual published variants",
+  "reviewed_date": "2026-10-16",
+  "book_id": 38,
+  "language": "English",
+  "edition": "1910 second edition, The Ramakrishna Mission, Mylapore, Madras",
+  "source_approved": true,
+  "uploaded": 0,
+  "native_source_width": 834,
+  "native_source_height": 1304,
+  "source_format": "faithful PDF outer-binding raster composite, native width; 1305 to1304px height downsample only",
+  "source_pdf_bytes": 9461086,
+  "note": "Prepared artifacts only, not production assets. Upload only after provider gate and independent file QA. No CDN URL invented. Recommended four-file set: three AVIF widths plus320px WebP fallback; optional WebP480 is q10 and requires final visual approval. Format-bearing public IDs avoid cross-format overwrite.",
+  "variants": [
+    {
+      "width": 320,
+      "height": 500,
+      "format": "webp",
+      "quality": 70,
+      "bytes": 38194,
+      "filename": "038-en-inspired-1910-320.webp",
+      "sha256": "2017359cac043fb31a29703fc0b657da7264193b75aaa0a2c2c0e97d3bf0f45c",
+      "suggested_public_id": "saradakosh/library-covers/038-en-inspired-1910-320-webp",
+      "production_url": null,
+      "recommended": true
+    },
+    {
+      "width": 320,
+      "height": 500,
+      "format": "avif",
+      "quality": 45,
+      "bytes": 21562,
+      "filename": "038-en-inspired-1910-320.avif",
+      "sha256": "2e5d9ab11905d2d57a72bd55d77b01a6e1f8f33248d45d2681d0092a00c3364b",
+      "suggested_public_id": "saradakosh/library-covers/038-en-inspired-1910-320-avif",
+      "production_url": null,
+      "recommended": true
+    },
+    {
+      "width": 480,
+      "height": 751,
+      "format": "webp",
+      "quality": 10,
+      "bytes": 32674,
+      "filename": "038-en-inspired-1910-480.webp",
+      "sha256": "b12fe0e554d4e0e22608f4256224652dfb5b4d35f0cc0cec4bb34abdaeb398ce",
+      "suggested_public_id": "saradakosh/library-covers/038-en-inspired-1910-480-webp",
+      "production_url": null,
+      "recommended": false
+    },
+    {
+      "width": 480,
+      "height": 751,
+      "format": "avif",
+      "quality": 35,
+      "bytes": 39604,
+      "filename": "038-en-inspired-1910-480.avif",
+      "sha256": "f16d196b54d4509985e8a37a29bb2b82ec3e82eb550a001d3d8f035706e844a2",
+      "suggested_public_id": "saradakosh/library-covers/038-en-inspired-1910-480-avif",
+      "production_url": null,
+      "recommended": true
+    },
+    {
+      "width": 720,
+      "height": 1126,
+      "format": "webp",
+      "quality": 25,
+      "bytes": 135622,
+      "filename": "038-en-inspired-1910-720.webp",
+      "sha256": "bc931e710af22cc1acabbf4c0859590b5ed9c73dcbf837f285d0bdc8507f86fb",
+      "suggested_public_id": "saradakosh/library-covers/038-en-inspired-1910-720-webp",
+      "production_url": null,
+      "recommended": false
+    },
+    {
+      "width": 720,
+      "height": 1126,
+      "format": "avif",
+      "quality": 45,
+      "bytes": 132685,
+      "filename": "038-en-inspired-1910-720.avif",
+      "sha256": "b30c043b838339064b2dacc9dcf76718c76439b7384440a959cf70bcfec23b61",
+      "suggested_public_id": "saradakosh/library-covers/038-en-inspired-1910-720-avif",
+      "production_url": null,
+      "recommended": true
+    }
+  ],
+  "status": "superseded-preparation-not-production",
+  "superseded_by": "Higher-resolution original COLOR IA JP2 cover,2502x3912 JPEG1843422B, independently approved before publication. These earlier B&W local variants remain preparation/fixture evidence only."
+}

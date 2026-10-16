@@ -2,16 +2,28 @@
 
 import { useEffect, useId, useRef, useState } from 'react';
 import { ExternalLink, X } from 'lucide-react';
+import { coverDelivery } from '@/lib/library/covers.mjs';
 
-export function BookCover({ book }) {
+export function BookCover({ book, detail = false }) {
   const asset = book.displayCover?.asset_url;
+  const delivery = coverDelivery(book.displayCover, detail);
   const [failed, setFailed] = useState(null);
   return (
     <span className={`book-cover cover-${book.category}`} data-cover-language={book.displayLanguage} aria-hidden="true">
-      {asset && failed !== asset ? (
-        // Approved Cloudinary content assets have a defensive designed-cover fallback.
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={asset} alt="" onError={() => setFailed(asset)} />
+      {delivery && asset && failed !== asset ? (
+        <picture>
+          {delivery?.sources.map(source => <source key={source.type} type={source.type} srcSet={source.srcSet} sizes={delivery.sizes} />)}
+          {/* Native pre-optimized CDN variants avoid application-server resizing. */}
+          <img src={delivery.src} srcSet={delivery.sources.find(source => source.type === 'image/webp')?.srcSet}
+            sizes={delivery.sizes} width={delivery.width} height={delivery.height}
+            loading={detail ? 'eager' : 'lazy'} decoding="async" fetchPriority="low" alt=""
+            ref={element => {
+              // An SSR image may fail before hydration attaches onError.
+              if (element?.complete && element.naturalWidth === 0) setFailed(asset);
+            }}
+            onError={() => setFailed(asset)} />
+          {book.displayCover.representation === 'series-volume' && <span className="cover-volume">{book.displayCover.volume}</span>}
+        </picture>
       ) : (
         <span className="cover-design">
           <span className="cover-imprint">SARADAKOSH<br />LIBRARY</span>
@@ -107,7 +119,7 @@ export function BookDetailDialog({ book, onClose }) {
       }}>
       <button className="dialog-close" aria-label="Close book details" onClick={close} autoFocus><X size={22} /></button>
       <div className="dialog-layout">
-        <BookCover book={book} />
+        <BookCover book={book} detail />
         <div className="dialog-copy">
           <h2 id="book-dialog-title" lang={{ Bengali: 'bn', Hindi: 'hi', French: 'fr', English: 'en' }[book.displayLanguage]}>{book.displayTitle}</h2>
           {book.author && <p className="dialog-author">{book.author}</p>}

@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-10-16",
+  "method": "Bounded primary publisher and historical scan survey. No inference of image rights from T1 text links. Later authentic editions are allowed only with exact language/edition mapping. Outer bindings inspected separately from title pages.",
+  "provider": {
+    "cloud": "dljwhlvid",
+    "plan": "Free",
+    "gate": "FREE_VERIFIED",
+    "evidence": "Coordinator authenticated official console readback, 2026-10-16; plan details $0, no upgrade actions.",
+    "credits_used": 8.57,
+    "credits_limit": 25,
+    "credit_utilization_percent": 34.28,
+    "transformations_last30days": 313,
+    "bandwidth_gb_last30days": 1.89,
+    "storage_gb": 6.54,
+    "actions": "Historical pre-publication gate; later independent approval allowed the single 2502x3912,1843422-byte Internet Archive outer cover source via authenticated Web Address upload and four preoptimized derivatives. No PDF, unrelated/full-library content or runtime transformation URL creation.",
+    "post_publication_readback": {
+      "source": "Coordinator authenticated official console screenshots, 2026-10-16",
+      "plan": "Free; $0",
+      "credits_used": 8.88,
+      "credits_limit": 25,
+      "credit_utilization_percent": 35.52,
+      "remaining_credits": 16.12,
+      "decision": "No further uploads or transformations required"
+    }
+  },
+  "findings": [
+    {
+      "book_id": 8,
+      "source": "https://shop.advaitaashrama.org/products/sri-ramakrishna-god-of-all/1237499000010257085",
+      "rights_evidence": "https://shop.advaitaashrama.org/terms-and-conditions",
+      "status": "held-rights",
+      "assessment": "Official product identity confirmed. Store terms do not grant reproduction permission; written permission was not supplied. No storefront image redistributed."
+    },
+    {
+      "book_id": 33,
+      "source": "https://commons.wikimedia.org/wiki/File:Raja_Yoga_Vivekananda_title_page.jpg",
+      "edition": "1920",
+      "width": 599,
+      "height": 463,
+      "bytes": null,
+      "status": "rejected-not-cover",
+      "assessment": "A title page, not an outer cover; not substituted for a real cover."
+    },
+    {
+      "book_id": 33,
+      "source": "https://archive.org/details/yogaphilosophyle00viverich",
+      "edition": "1896 Longmans, Green, English",
+      "status": "rejected-quality",
+      "assessment": "Coordinator inspected native JP2 first leaves. Actual outer cover has a prominent UC-NRLF barcode and wear. No barcode removal/crop or production publication."
+    },
+    {
+      "book_id": 36,
+      "source": "https://commons.wikimedia.org/wiki/File:ভক্তিযোগ_-_স্বামী_বিবেকানন্দ.pdf",
+      "edition": "1911 fifth edition, Bengali, Udbodhan Karyalay",
+      "status": "rejected-not-cover",
+      "assessment": "Original PDF downloaded and first six pages visually inspected. PD-old-100 permission is promising, but scan starts with a title page; no authentic outer binding was available in those leaves. No invented cover."
+    },
+    {
+      "book_id": 37,
+      "source": "https://commons.wikimedia.org/wiki/File:Lectures_from_Colombo_to_Almora_front_cover_1897_edition.jpg",
+      "edition": "1897 Vyjayanti Press, English",
+      "width": 310,
+      "height": 501,
+      "status": "held-resolution",
+      "assessment": "True front-cover candidate, but 310px is below 2x desktop card width284px. Higher-resolution source https://www.vivekananda.net/PDFBooks/ColomboToAlmora1897.pdf returned404. Not upscaled."
+    },
+    {
+      "book_id": 38,
+      "source": "https://commons.wikimedia.org/wiki/File:Inspired_Talks_of_Swami_Vivekananda_1910_edition.pdf",
+      "edition": "1910 second edition, English, The Ramakrishna Mission, Mylapore, Madras",
+      "status": "superseded-preparation",
+      "assessment": "First scan leaf is genuine clean cloth outer binding; seventh leaf independently confirms title, author, second edition and publisher. Native background834x1304, higher-resolution mask2502x3912; PDF page750x1172 is Commons nominal preview, not acquisition resolution. Faithful composite rendered at background-native width834 then height downsampled1305->1304 to avoid rounding enlargement. No other content restoration or title fabrication.",
+      "rights": {
+        "basis": "reasoned-public-domain-assessment",
+        "evidence": [
+          "https://commons.wikimedia.org/wiki/File:Inspired_Talks_of_Swami_Vivekananda_1910_edition.pdf",
+          "https://belurmath.org/emblem/",
+          "https://copyright.gov.in/Copyright_Act_1957/chapter_v.html"
+        ],
+        "assessment": "Commons exact scan is PD-US. Official Belur Math attributes pictured emblem design to Vivekananda (d1902); known historical artwork and1910 anonymous binding context exceed relevant Indian life+60/posthumous publication terms. This is a historical faithful-reproduction assessment, not modern publisher permission or endorsement. Independently approved by Sol Medium before upload."
+      },
+      "source_pdf_bytes": 9461086,
+      "source_sha256": "a8a7c142ce1685184f3edf0eebe345b6c0b4e50fa271764ee8c756892d27385c",
+      "native_cover_sha256": "e60221895e05155564ae8df8327810ca5ec197f5a3cd8089c96fc5dd8bbf4c61"
+    },
+    {
+      "book_id": 39,
+      "source": "https://commons.wikimedia.org/wiki/File:My_Master_1901_title_page.jpg",
+      "edition": "1901 Baker and Taylor, English",
+      "width": 346,
+      "height": 462,
+      "status": "rejected-not-cover",
+      "assessment": "Tiny title-page image, not outer cover; not upscaled or published."
+    },
+    {
+      "book_id": 38,
+      "source": "https://archive.org/details/inspiredtalks00viverich",
+      "image_url": "https://iiif.archive.org/image/iiif/3/inspiredtalks00viverich%2Finspiredtalks00viverich_jp2.zip%2Finspiredtalks00viverich_jp2%2Finspiredtalks00viverich_0001.jp2/full/max/0/default.jpg",
+      "identity_evidence": "https://iiif.archive.org/iiif/inspiredtalks00viverich/manifest.json",
+      "edition": "1910 second edition, English, The Ramakrishna Mission, Mylapore, Madras",
+      "width": 2502,
+      "height": 3912,
+      "bytes": 1843422,
+      "format": "jpeg",
+      "status": "published-verified",
+      "assessment": "Official IA IIIF first-canvas original color binding,2502x3912. Coordinator and independent Medium verified the same genuine1910SecondEdition artwork and edition. Four optimized immutable Cloudinary variants independently passed HTTP/MIME/dimensions/bytes/SHA and live browser decode. Earlier smaller B&W preparation is superseded, not production.",
+      "rights": {
+        "basis": "reasoned-public-domain-assessment",
+        "evidence": [
+          "https://commons.wikimedia.org/wiki/File:Inspired_Talks_of_Swami_Vivekananda_1910_edition.pdf",
+          "https://belurmath.org/emblem/",
+          "https://copyright.gov.in/Copyright_Act_1957/chapter_v.html"
+        ],
+        "assessment": "Commons exact scan is PD-US. Official Belur Math attributes pictured emblem design to Vivekananda (d1902); known historical artwork and1910 anonymous binding context exceed relevant Indian life+60/posthumous publication terms. This is a historical faithful-reproduction assessment, not modern publisher permission or endorsement. Independently approved by Sol Medium before upload."
+      }
+    }
+  ]
+}
