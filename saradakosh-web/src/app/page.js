@@ -78,7 +78,7 @@ export default function Home() {
       <main className="max-w-[1000px] mx-auto p-5 md:p-8">
         <Link href="/classes" className="block p-6 mt-6 rounded-xl border border-border bg-card hover:border-primary-theme no-underline text-text-theme">
           <h2 className="text-xl font-semibold text-primary-theme">Morning Classes →</h2>
-          <p className="mt-2 text-sm">Browse the subject library, chapters, and lecture videos.</p>
+          <p className="mt-2 text-[13pt]">Browse the subject library, chapters, and lecture videos.</p>
         </Link>
         {/* Reports */}
         <div className="mt-12">

@@ -18,6 +18,7 @@ const cspHeader = `
 const nextConfig = {
   outputFileTracingIncludes: {
     '/*': ['./saradakosh.db', './package.json'],
+    '/classes/transcripts/**': ['./data/class-transcripts/*.json.gz'],
   },
   async rewrites() {
     return [
