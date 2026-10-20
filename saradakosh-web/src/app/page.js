@@ -76,6 +76,10 @@ export default function Home() {
       </header>
 
       <main className="max-w-[1000px] mx-auto p-5 md:p-8">
+        <Link href="/classes" className="block p-6 mt-6 rounded-xl border border-border bg-card hover:border-primary-theme no-underline text-text-theme">
+          <h2 className="text-xl font-semibold text-primary-theme">Morning Classes →</h2>
+          <p className="mt-2 text-sm">Browse the subject library, chapters, and lecture videos.</p>
+        </Link>
         {/* Reports */}
         <div className="mt-12">
           <SectionHeading>Reports & Directories</SectionHeading>
@@ -121,6 +125,7 @@ export default function Home() {
             <Link href="/about" className="hover:text-primary-theme transition-colors no-underline">About & Sources</Link>
             <Link href="/quotes" className="hover:text-primary-theme transition-colors no-underline">Quotes</Link>
             <Link href="/schedule" className="hover:text-primary-theme transition-colors no-underline">Schedule</Link>
+            <Link href="/classes" className="hover:text-primary-theme transition-colors no-underline">Classes</Link>
           </div>
           <h3 className="h3-title text-3xl mb-8">Swami Vivekananda Quotes</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
