@@ -1,0 +1,2591 @@
+{
+  "schema_version": 1,
+  "scope": "Version02 T1 adjudicated external public reader links; preparation artifact only, no T2 execution",
+  "date": "2026-10-15",
+  "baseline_sha": "4308284efb7ad886e673286b3deed70a131418eb",
+  "provenance": {
+    "prepared_by": "gpt-6.1-sol, High reasoning",
+    "independent_qa": "gpt-6.1-sol, Medium reasoning",
+    "incremental_spend": 0,
+    "approval_basis": "Exact candidate URLs adjudicated by independent QA; preserved baseline entries have distinct status.",
+    "input_sha256": {
+      "research-001-084.json": "380419a35dff4f101f8e7c5265f4fa247947e0a21694a96fea44b3190bdc7cd9",
+      "research-085-168.json": "c7b520e9aadceb53006ec4ef1913bba5670d59897b5711222b21eb6fbb986aab",
+      "baseline-http-audit.json": "67a57237f5580bedd6e020401363d9e9f777eeee5819c5e8ecb5d05924cced72"
+    }
+  },
+  "policy": {
+    "baseline": "Preserve all55 original URLs and original labels verbatim; ordinals do not imply volumes.",
+    "public_access_vs_rights": "Public access supports a reader link only within adjudicated source provenance. It does not imply permission to copy/redistribute text or images.",
+    "identity": "No silent author, translator or canonical title corrections. Edition/translation differences stay explicit.",
+    "private_material": "No private Drive IDs or links in this artifact. Book27 private-only matches remain withheld.",
+    "stage_gate": "T1 artifact requires final integration validation; source/Sheet/database/UI/CDN unchanged by this manifest."
+  },
+  "baseline_links": [
+    {
+      "book_id": 1,
+      "source_ordinal": 1,
+      "language": "English",
+      "label": "English 1",
+      "url": "https://englishbooks.rkmm.org/s/tsr/m/gospel-of-sri-ramakrishna",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 1,
+      "source_ordinal": 2,
+      "language": "English",
+      "label": "English 2",
+      "url": "https://cs.rkmvu.ac.in/~tamal/gospel/gospel.html",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 1,
+      "source_ordinal": 3,
+      "language": "English",
+      "label": "English 3",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/gospel-of-sri-ramakrishna/gospel-of-sri-ramakrishna.html",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 1,
+      "source_ordinal": 4,
+      "language": "English",
+      "label": "English 4",
+      "url": "https://vedantaprov.org/the-gospel-of-sri-ramakrishna/",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 1,
+      "source_ordinal": 5,
+      "language": "English",
+      "label": "English 5",
+      "url": "https://vedantaprov.org/wp-content/uploads/2017/03/The-Gospel-of-Sri-Ramakrishna.pdf",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 1,
+      "source_ordinal": 6,
+      "language": "English",
+      "label": "English 6",
+      "url": "https://www.estudantedavedanta.net/The-Gospel_SRK.pdf",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 1,
+      "source_ordinal": 7,
+      "language": "English",
+      "label": "English 7",
+      "url": "https://www.estudantedavedanta.net/THE%20GOSPEL%20OF%20SRI%20RAMAKRISHNA.pdf",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 1,
+      "source_ordinal": 8,
+      "language": "English",
+      "label": "English 8",
+      "url": "https://ia802301.us.archive.org/3/items/shastras-sri-ramakrishna-gospel/Gospel%20of%20Sri%20Ramakrishna.pdf",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 1,
+      "source_ordinal": 9,
+      "language": "Bengali",
+      "label": "Bengali 1",
+      "url": "https://bengalibooks.rkmm.org/s/bnbk/m/%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%95%E0%A7%83%E0%A6%B7%E0%A7%8D%E0%A6%A3-%E0%A6%95%E0%A6%A5%E0%A6%BE%E0%A6%AE%E0%A7%83%E0%A6%A4",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 1,
+      "source_ordinal": 10,
+      "language": "Bengali",
+      "label": "Bengali 2",
+      "url": "https://www.rkmkashi.in/elibrary/bookCnt.php?bookId=2&opid=7",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 1,
+      "source_ordinal": 11,
+      "language": "Bengali",
+      "label": "Bengali 3",
+      "url": "https://rkmlibrary.com/bookCnt.php?bookId=2&cptId=78&pct=469&ptid=809",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 1,
+      "source_ordinal": 12,
+      "language": "Bengali",
+      "label": "Bengali 4",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBengaliBooks/%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%95%E0%A7%83%E0%A6%B7%E0%A7%8D%E0%A6%A3-%E0%A6%95%E0%A6%A5%E0%A6%BE%E0%A6%AE%E0%A7%83%E0%A6%A4/%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%95%E0%A7%83%E0%A6%B7%E0%A7%8D%E0%A6%A3-%E0%A6%95%E0%A6%A5%E0%A6%BE%E0%A6%AE%E0%A7%83%E0%A6%A4.html",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 1,
+      "source_ordinal": 13,
+      "language": "Bengali",
+      "label": "Bengali 5",
+      "url": "https://bn.wikisource.org/wiki/%E0%A6%B0%E0%A6%9A%E0%A6%A8%E0%A6%BE%3A%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%95%E0%A7%83%E0%A6%B7%E0%A7%8D%E0%A6%A3%E0%A6%95%E0%A6%A5%E0%A6%BE%E0%A6%AE%E0%A7%83%E0%A6%A4",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 2,
+      "source_ordinal": 1,
+      "language": "English",
+      "label": "English 1",
+      "url": "https://englishbooks.rkmm.org/s/lsr/m/sri-ramakrishna-the-great-master",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 2,
+      "source_ordinal": 2,
+      "language": "English",
+      "label": "English 2",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/sri-ramakrishna-the-great-master/sri-ramakrishna-the-great-master.html",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 2,
+      "source_ordinal": 3,
+      "language": "English",
+      "label": "English 3",
+      "url": "https://cs.rkmvu.ac.in/~tamal/greatmaster/greatmaster.html",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 2,
+      "source_ordinal": 4,
+      "language": "English",
+      "label": "English 4",
+      "url": "https://www.estudantedavedanta.net/ramakrishna_great_master.pdf",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 2,
+      "source_ordinal": 5,
+      "language": "English",
+      "label": "English Vol. 1",
+      "url": "https://www.estudantedavedanta.net/Great_Master_Vol1c.pdf",
+      "label_semantics": "baseline_volume_label_not_newly_certified",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 2,
+      "source_ordinal": 6,
+      "language": "English",
+      "label": "English Vol. 2",
+      "url": "https://www.estudantedavedanta.net/Great_Master_Vol2c.pdf",
+      "label_semantics": "baseline_volume_label_not_newly_certified",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 2,
+      "source_ordinal": 7,
+      "language": "English",
+      "label": "English EPUB",
+      "url": "https://www.estudantedavedanta.net/Sri_Ramakrishna_The_Great_Master_Saradananda.epub",
+      "label_semantics": "format",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 2,
+      "source_ordinal": 8,
+      "language": "Bengali",
+      "label": "Bengali 1",
+      "url": "https://bengalibooks.rkmm.org/s/bnbk/m/%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%95%E0%A7%83%E0%A6%B7%E0%A7%8D%E0%A6%A3-%E0%A6%B2%E0%A7%80%E0%A6%B2%E0%A6%BE%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B8%E0%A6%99%E0%A7%8D%E0%A6%97",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 2,
+      "source_ordinal": 9,
+      "language": "Bengali",
+      "label": "Bengali 2",
+      "url": "https://cs.rkmvu.ac.in/~tamal/lilaprasanga/lilaprasanga.html",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 2,
+      "source_ordinal": 10,
+      "language": "Bengali",
+      "label": "Bengali 3",
+      "url": "https://vivekavani.com/lp/",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 2,
+      "source_ordinal": 11,
+      "language": "Bengali",
+      "label": "Bengali 4",
+      "url": "https://shibamoulilahiri.github.io/LilaPrasanga/main.html",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 2,
+      "source_ordinal": 12,
+      "language": "Bengali",
+      "label": "Bengali Vol. 2",
+      "url": "https://www.thakurmaaswamiji.com/2021/03/ebook-Sri-Sri-Ramakrishna-Leela-Prasanga-Volume-2-Swami-Sardananda.html",
+      "label_semantics": "baseline_volume_label_not_newly_certified",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 2,
+      "source_ordinal": 13,
+      "language": "Bengali",
+      "label": "Bengali Vol. 5",
+      "url": "https://www.thakurmaaswamiji.com/2021/08/ramakrishna-lila-prasanga-vol-v.html",
+      "label_semantics": "baseline_volume_label_not_newly_certified",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 3,
+      "source_ordinal": 1,
+      "language": "English",
+      "label": "English 1",
+      "url": "https://www.estudantedavedanta.net/Life%20of%20Sri%20Ramakrishna.pdf",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 3,
+      "source_ordinal": 2,
+      "language": "English",
+      "label": "English 2",
+      "url": "https://lakshminarayanlenasia.com/articles/LifeRamakrishna.pdf",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 3,
+      "source_ordinal": 3,
+      "language": "English",
+      "label": "English 3",
+      "url": "https://lakshminarayanlenasia.com/wp-content/uploads/2015/07/LifeofSriRamakrishna.pdf",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 4,
+      "source_ordinal": 1,
+      "language": "English",
+      "label": "English",
+      "url": "https://web.archive.org/web/20170220020231/https://www.ramakrishna.org/rmk_nik.htm",
+      "label_semantics": "language",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 5,
+      "source_ordinal": 1,
+      "language": "English",
+      "label": "English 1",
+      "url": "https://archive.org/details/in.ernet.dli.2015.54972",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 5,
+      "source_ordinal": 2,
+      "language": "English",
+      "label": "English 2",
+      "url": "https://estudantedavedanta.net/The_life_Ramakrishna_Rolland.pdf",
+      "label_semantics": "source_copy_ordinal_not_volume",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 12,
+      "source_ordinal": 1,
+      "language": "Bengali",
+      "label": "Bengali",
+      "url": "https://www.ramakrishnavivekananda.info/banglabooks/srisriramakrishnapunthi/srkpunthi_contents.htm",
+      "label_semantics": "language",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 14,
+      "source_ordinal": 1,
+      "language": "Bengali",
+      "label": "Bengali",
+      "url": "https://archive.org/stream/in.ernet.dli.2015.456946",
+      "label_semantics": "language",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 15,
+      "source_ordinal": 1,
+      "language": "Bengali",
+      "label": "Bengali",
+      "url": "https://archive.org/stream/in.ernet.dli.2015.298301",
+      "label_semantics": "language",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 17,
+      "source_ordinal": 1,
+      "language": "English",
+      "label": "English",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/holy-mother-sri-sarada-devi/holy-mother-sri-sarada-devi.html",
+      "label_semantics": "language",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 18,
+      "source_ordinal": 1,
+      "language": "English",
+      "label": "English",
+      "url": "https://www.celextel.org/sri-sarada-devi/gospel-of-holy-mother-sarada-devi/",
+      "label_semantics": "language",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 18,
+      "source_ordinal": 2,
+      "language": "Bengali",
+      "label": "Bengali",
+      "url": "https://cs.rkmvu.ac.in/~tamal/sarada/mayer_katha.html",
+      "label_semantics": "language",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 20,
+      "source_ordinal": 1,
+      "language": "English",
+      "label": "English",
+      "url": "https://www.estudantedavedanta.net/Sri_Sarada_Devi_the_holy_mother_Tapasyananda.pdf",
+      "label_semantics": "language",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 21,
+      "source_ordinal": 1,
+      "language": "English",
+      "label": "English",
+      "url": "https://play.google.com/store/books/details/Swami_Pavitrananda_A_Short_Life_of_The_Holy_Mother?id=TDY9DQAAQBAJ",
+      "label_semantics": "language",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 32,
+      "source_ordinal": 1,
+      "language": "English",
+      "label": "English",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/complete_works.htm",
+      "label_semantics": "language",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 32,
+      "source_ordinal": 2,
+      "language": "Bengali",
+      "label": "Bengali Vol. 1",
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_01.html",
+      "label_semantics": "baseline_volume_label_not_newly_certified",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 32,
+      "source_ordinal": 3,
+      "language": "Bengali",
+      "label": "Bengali Vol. 2",
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_02.html",
+      "label_semantics": "baseline_volume_label_not_newly_certified",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 32,
+      "source_ordinal": 4,
+      "language": "Bengali",
+      "label": "Bengali Vol. 3",
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_03.html",
+      "label_semantics": "baseline_volume_label_not_newly_certified",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 32,
+      "source_ordinal": 5,
+      "language": "Bengali",
+      "label": "Bengali Vol. 4",
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_04.html",
+      "label_semantics": "baseline_volume_label_not_newly_certified",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 32,
+      "source_ordinal": 6,
+      "language": "Bengali",
+      "label": "Bengali Vol. 5",
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_05.html",
+      "label_semantics": "baseline_volume_label_not_newly_certified",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 32,
+      "source_ordinal": 7,
+      "language": "Bengali",
+      "label": "Bengali Vol. 6",
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_06.html",
+      "label_semantics": "baseline_volume_label_not_newly_certified",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 32,
+      "source_ordinal": 8,
+      "language": "Bengali",
+      "label": "Bengali Vol. 7",
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_07.html",
+      "label_semantics": "baseline_volume_label_not_newly_certified",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 32,
+      "source_ordinal": 9,
+      "language": "Bengali",
+      "label": "Bengali Vol. 8",
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_08.html",
+      "label_semantics": "baseline_volume_label_not_newly_certified",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 32,
+      "source_ordinal": 10,
+      "language": "Bengali",
+      "label": "Bengali Vol. 9",
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_09.html",
+      "label_semantics": "baseline_volume_label_not_newly_certified",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 32,
+      "source_ordinal": 11,
+      "language": "Bengali",
+      "label": "Bengali Vol. 10",
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_10.html",
+      "label_semantics": "baseline_volume_label_not_newly_certified",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 33,
+      "source_ordinal": 1,
+      "language": "English",
+      "label": "English",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/preface.htm",
+      "label_semantics": "language",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 33,
+      "source_ordinal": 2,
+      "language": "Bengali",
+      "label": "Bengali",
+      "url": "https://bn.wikisource.org/wiki/%E0%A6%B0%E0%A6%9A%E0%A6%A8%E0%A6%BE%3A%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%AF%E0%A7%8B%E0%A6%97",
+      "label_semantics": "language",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 34,
+      "source_ordinal": 1,
+      "language": "English",
+      "label": "English",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/karma-yoga/effect_on_character.htm",
+      "label_semantics": "language",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    },
+    {
+      "book_id": 34,
+      "source_ordinal": 2,
+      "language": "Bengali",
+      "label": "Bengali",
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_01.html",
+      "label_semantics": "language",
+      "decision": "preserve_baseline_verbatim",
+      "approval_note": "Preservation is not new completeness, identity or rights approval."
+    }
+  ],
+  "approved_reader_links": [
+    {
+      "book_id": 1,
+      "canonical_title": "The Gospel of Sri Ramakrishna",
+      "canonical_author": "Mahendranath Gupta (M.)",
+      "url": "https://cs.rkmvu.ac.in/~tamal/gospel/gospel.html",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": true,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=1",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/gospel/gospel.html",
+        "language": "English",
+        "label": "English",
+        "edition": "Nikhilananda translation, 1942 preface",
+        "volume_coverage": "Single English translation of five Bengali volumes",
+        "access": "Free HTML, HTTP 200",
+        "completeness": "Chapter sequence and back matter present; not proofread line by line",
+        "rights": "Institutional RKMVERI host; no explicit reuse license inspected; link only",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 2,
+      "canonical_title": "Sri Ramakrishna and His Divine Play",
+      "canonical_author": "Swami Saradananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/greatmaster/greatmaster.html",
+      "language": "English",
+      "label": "English — The Great Master (Jagadananda translation)",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": true,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=2",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/greatmaster/greatmaster.html",
+        "label": "English — The Great Master",
+        "language": "English",
+        "edition": "Jagadananda translation, The Great Master",
+        "volume_coverage": "Work-level translation; chapter sequence extends through Guru/Devotees and appendix",
+        "access": "Free HTTP 200 HTML",
+        "completeness": "Extensive text present; final structural audit needed",
+        "rights": "Institutional host, no explicit redistribution license inspected",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "identity_qualification": "Jagadananda translation titled The Great Master; not Chetanananda translation Sri Ramakrishna and His Divine Play. Canonical author/title remain unchanged."
+    },
+    {
+      "book_id": 17,
+      "canonical_title": "Holy Mother Sri Sarada Devi",
+      "canonical_author": "Swami Gambhirananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/holy-mother-sri-sarada-devi/holy-mother-sri-sarada-devi.html",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": true,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=17",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/holy-mother-sri-sarada-devi/holy-mother-sri-sarada-devi.html",
+        "label": "English",
+        "language": "English",
+        "volume_coverage": "Single biography",
+        "access": "HTTP200 free institutional HTML",
+        "completeness": "33 chapters and ending chronology inspected",
+        "rights": "RKMVERI institutional host; no explicit reuse license inspected; link only",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 18,
+      "canonical_title": "The Gospel of the Holy Mother Sri Sarada Devi",
+      "canonical_author": "A Compilation",
+      "url": "https://cs.rkmvu.ac.in/~tamal/sarada/mayer_katha.html",
+      "language": "Bengali",
+      "label": "Bengali — AI transcription",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": true,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=18",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/sarada/mayer_katha.html",
+        "label": "Bengali",
+        "language": "Bengali",
+        "volume_coverage": "Bengali Akhanda parts1–2",
+        "access": "HTTP200 free institutional HTML",
+        "completeness": "Substantial text from publisher front matter through final account; AI conversion caveat",
+        "rights": "RKMVERI institutional host; no explicit reuse license inspected; link only",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "fidelity_qualification": "Host explicitly describes AI-assisted reference transcription. Printed edition remains authoritative."
+    },
+    {
+      "book_id": 33,
+      "canonical_title": "Raja Yoga",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/raja-yoga_contents.htm",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=33",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/raja-yoga_contents.htm",
+        "language": "English",
+        "label": "English",
+        "edition": "Complete Works online text",
+        "volume_coverage": "Complete named work within CWvolume1",
+        "access": "Free HTML; all linked chapters HTTP200",
+        "completeness": "15pages including Patanjali4chapters and appendix",
+        "rights": "Vivekananda original historical text; no new reuse license inferred for editions. Public linking candidate only.",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 34,
+      "canonical_title": "Karma Yoga",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/karma-yoga/karma-yoga_contents.htm",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=34",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/karma-yoga/karma-yoga_contents.htm",
+        "language": "English",
+        "label": "English",
+        "edition": "Complete Works online text",
+        "volume_coverage": "Complete named work within CWvolume1",
+        "access": "Free HTML; all linked chapters HTTP200",
+        "completeness": "8canonical chapters",
+        "rights": "Vivekananda original historical text; no new reuse license inferred for editions. Public linking candidate only.",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 35,
+      "canonical_title": "Jnana Yoga",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/jnana-yoga_contents.htm",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=35",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/jnana-yoga_contents.htm",
+        "language": "English",
+        "label": "English",
+        "edition": "Complete Works online text",
+        "volume_coverage": "Complete named work within CWvolume2",
+        "access": "Free HTML; all linked chapters HTTP200",
+        "completeness": "16canonical lectures",
+        "rights": "Vivekananda original historical text; no new reuse license inferred for editions. Public linking candidate only.",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 36,
+      "canonical_title": "Bhakti Yoga",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/bhakti-yoga_contents.htm",
+      "language": "English",
+      "label": "English — Bhakti Yoga",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=36",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/bhakti-yoga_contents.htm",
+        "language": "English",
+        "label": "English",
+        "edition": "Complete Works online text",
+        "volume_coverage": "BhaktiYoga preliminary; ParaBhakti companion needed",
+        "access": "FreeHTTP200HTML",
+        "completeness": "10preparatory chapter pages fetched. ParaBhakti companion index and10linked pages fetched through Conclusion; both sections required. Guessed short para-bhakti_contents URL404 rejected.",
+        "rights": "Historical Vivekananda work; original/edition rights distinction retained, no redistribution performed",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "coverage_qualification": "Both Bhakti Yoga and Para-Bhakti links are required for combined coverage."
+    },
+    {
+      "book_id": 36,
+      "canonical_title": "Bhakti Yoga",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/para-bhakti_or_supreme_devotion_contents.htm",
+      "language": "English",
+      "label": "English — Para-Bhakti",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=36",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/para-bhakti_or_supreme_devotion_contents.htm",
+        "language": "English",
+        "label": "English — Para-Bhakti",
+        "edition": "Complete Works online text",
+        "volume_coverage": "Companion ParaBhakti/SupremeDevotion section",
+        "access": "FreeHTTP200HTML",
+        "completeness": "10preparatory chapter pages fetched. ParaBhakti companion index and10linked pages fetched through Conclusion; both sections required. Guessed short para-bhakti_contents URL404 rejected.",
+        "rights": "Historical Vivekananda work; original/edition rights distinction retained, no redistribution performed",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "coverage_qualification": "Both Bhakti Yoga and Para-Bhakti links are required for combined coverage."
+    },
+    {
+      "book_id": 37,
+      "canonical_title": "Lectures from Colombo to Almora",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/lectures_from_colombo_to_almora_contents.htm",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=37",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/lectures_from_colombo_to_almora_contents.htm",
+        "language": "English",
+        "label": "English",
+        "edition": "Complete Works online text",
+        "volume_coverage": "Named work in CW",
+        "access": "FreeHTTP200HTML",
+        "completeness": "29linked lecture/address pages allHTTP200,691498combinedcharacters; indexed full sequence and body starts/end recorded.",
+        "rights": "Historical Vivekananda work; original/edition rights distinction retained, no redistribution performed",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 38,
+      "canonical_title": "Inspired Talks",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/inspired_talks_contents.htm",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=38",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/inspired_talks_contents.htm",
+        "language": "English",
+        "label": "English",
+        "edition": "Complete Works online text",
+        "volume_coverage": "Named work in CW",
+        "access": "FreeHTTP200HTML",
+        "completeness": "44dated talks allHTTP200,188118combinedcharacters; June19–August6sequence. CW webpage photo caption London1896 is not talk dating evidence.",
+        "rights": "Historical Vivekananda work; original/edition rights distinction retained, no redistribution performed",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 39,
+      "canonical_title": "My Master",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_4/lectures_and_discourses/my_master.htm",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=39",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_4/lectures_and_discourses/my_master.htm",
+        "language": "English",
+        "label": "English",
+        "edition": "Complete Works online text",
+        "volume_coverage": "Named work in CW",
+        "access": "FreeHTTP200HTML",
+        "completeness": "HTTP200,66925characters; identifies combination of two1896lectures; opening and full closing paragraphs read.",
+        "rights": "Historical Vivekananda work; original/edition rights distinction retained, no redistribution performed",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 40,
+      "canonical_title": "The East and the West",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_5/writings_prose_and_poems/the_east_and_the_west.htm",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=40",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_5/writings_prose_and_poems/the_east_and_the_west.htm",
+        "language": "English",
+        "label": "English",
+        "edition": "Complete Works online text",
+        "volume_coverage": "Named work in CW",
+        "access": "FreeHTTP200HTML",
+        "completeness": "HTTP200 substantial English essay; seven thematic sections through Progress of Civilisation and endnotes; paired Bengali section links visible but bodies not yet audited.",
+        "rights": "Historical Vivekananda work; original/edition rights distinction retained, no redistribution performed",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 41,
+      "canonical_title": "Modern India",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_4/translation_prose/modern_india.htm",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=41",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_4/translation_prose/modern_india.htm",
+        "label": "English",
+        "language": "English",
+        "edition": "CWonline translation",
+        "volume_coverage": "Whole essay",
+        "access": "FreeHTML",
+        "completeness": "HTTP200 English84498characters; identified translated March1899Udbodhan Bengali essay, opening and ending/endnotes inspected.",
+        "rights": "Institutional/historical text; edition rights retained; link-only candidate",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 42,
+      "canonical_title": "Memoirs of European Travel",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/translation_of_writings/memoirs_of_european_travel_i.htm",
+      "language": "English",
+      "label": "English — Part I",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=42",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/translation_of_writings/memoirs_of_european_travel_i.htm",
+        "label": "English",
+        "language": "English",
+        "edition": "CWonline translation",
+        "volume_coverage": "PartI;requiresPartII",
+        "access": "FreeHTML",
+        "completeness": "PartsIandII bothHTTP200 English translation fromBengali; extended travel narrative and finalIIclosing inspected. Need both parts not justI.",
+        "rights": "Institutional/historical text; edition rights retained; link-only candidate",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "coverage_qualification": "PartsIandII of the named work; not invented separate volumes."
+    },
+    {
+      "book_id": 42,
+      "canonical_title": "Memoirs of European Travel",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/translation_of_writings/memoirs_of_european_travel_ii.htm",
+      "language": "English",
+      "label": "English — Part II",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=42",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/translation_of_writings/memoirs_of_european_travel_ii.htm",
+        "label": "English 2",
+        "language": "English",
+        "edition": "CWonline translation",
+        "volume_coverage": "PartII",
+        "access": "FreeHTML",
+        "completeness": "PartsIandII bothHTTP200 English translation fromBengali; extended travel narrative and finalIIclosing inspected. Need both parts not justI.",
+        "rights": "Institutional/historical text; edition rights retained; link-only candidate",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "coverage_qualification": "PartsIandII of the named work; not invented separate volumes."
+    },
+    {
+      "book_id": 48,
+      "canonical_title": "To the Youth of India",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://chandigarh.rkmm.org/Vivek%20Mahotsav/Books/To%20the%20youth%20of%20India.pdf",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=48",
+      "source_candidate_evidence": {
+        "url": "https://chandigarh.rkmm.org/Vivek%20Mahotsav/Books/To%20the%20youth%20of%20India.pdf",
+        "label": "English",
+        "language": "English",
+        "edition": "UndatedinstitutionalPDF",
+        "volume_coverage": "9lecturecollection94PDFpages",
+        "access": "HTTP200application/pdf,nologin",
+        "completeness": "Title/TOC9lectures/finaltextverified;notlineproofread",
+        "rights": "OfficialRKMMbranchhost;linkonly,noredistribution",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 49,
+      "canonical_title": "The Life of Swami Vivekananda",
+      "canonical_author": "Eastern and Western Disciples",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/life-of-swami-vivekananda-his-eastern-and-western-disciples/life-of-swami-vivekananda-his-eastern-and-western-disciples.html",
+      "language": "English",
+      "label": "English 1–2",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=49",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/life-of-swami-vivekananda-his-eastern-and-western-disciples/life-of-swami-vivekananda-his-eastern-and-western-disciples.html",
+        "language": "English",
+        "label": "English 1–2",
+        "edition": "Two-volume Advaita biography online",
+        "volume_coverage": "VolumesIandIIcombined;25chapters each",
+        "access": "HTTP200freeinstitutionalHTML",
+        "completeness": "InstitutionalHTTP2002,635,358textcharacters; title/imprintEasternWesternDisciplesAdvaitaAshrama; two volumes with25chapters each through Mahasamadhi and endingHARIHOMTATSAT. Webtool failed but local request succeeded.",
+        "rights": "Institutionalhost/imprint; no redistribution license inferred",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 51,
+      "canonical_title": "Photographs of Swami Vivekananda",
+      "canonical_author": "Gen",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/photographs-of-swami-vivekananda/photographs-of-swami-vivekananda.html",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=51",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/photographs-of-swami-vivekananda/photographs-of-swami-vivekananda.html",
+        "language": "English",
+        "volume": "Single illustrated book; five chapters",
+        "edition": "Photographs of Swami Vivekananda; exact print edition not conclusively matched",
+        "access": "Public HTML; text and 108 image resources loaded without login",
+        "completeness": "Five chapters through final memorial/hymn inspected. Image resource loading confirmed; visual fidelity/page correspondence not audited.",
+        "rights": "Institutional hosting establishes public access, not an explicit redistribution license.",
+        "decision": "pending_independent_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "fidelity_qualification": "Five chapters and108loadedimage resources verified; image/layout fidelity not certified."
+    },
+    {
+      "book_id": 55,
+      "canonical_title": "Swami Vivekananda in Contemporary Indian News",
+      "canonical_author": "Shankari Prasad Basu",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-vivekananda-in-contemporary-indian-news-1893-1902/swami-vivekananda-in-contemporary-indian-news-1893-1902.html",
+      "language": "English",
+      "label": "English 1–3",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=55",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-vivekananda-in-contemporary-indian-news-1893-1902/swami-vivekananda-in-contemporary-indian-news-1893-1902.html",
+        "language": "English",
+        "volume": "Volumes 1–3 combined",
+        "edition": "Institutional digital edition December 2023; print edition correspondence not fully collated",
+        "access": "Public HTML, no login",
+        "completeness": "All three volume divisions and substantial body present; actual Volume2 and Volume3 articles checked. No claim to later Volume4.",
+        "rights": "Institutional public reader; no explicit reuse license inspected.",
+        "decision": "pending_independent_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "coverage_qualification": "English Volumes1–3 only. Later Volume4 not included."
+    },
+    {
+      "book_id": 59,
+      "canonical_title": "যুগনায়ক",
+      "canonical_author": "Gambhirananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/yuganayak/yuganayak_v1.html",
+      "language": "Bengali",
+      "label": "Bengali 1 — AI transcription",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=59",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/yuganayak/yuganayak_v1.html",
+        "language": "Bengali",
+        "volume": "1",
+        "edition": "Swami Gambhirananda; print edition not conclusively identified",
+        "access": "Public institutional HTML without login",
+        "completeness": "Substantial volume-specific narrative and back matter; sampled opening/end, not line-by-line collated",
+        "rights": "Public institutional hosting; no explicit redistribution license inspected",
+        "fidelity": "Host explicitly warns AI-assisted reference transcription and printed edition authority",
+        "decision": "pending_independent_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "fidelity_qualification": "Host explicitly describes AI-assisted reference transcription. Printed edition remains authoritative."
+    },
+    {
+      "book_id": 59,
+      "canonical_title": "যুগনায়ক",
+      "canonical_author": "Gambhirananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/yuganayak/yuganayak_v2.html",
+      "language": "Bengali",
+      "label": "Bengali 2 — AI transcription",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=59",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/yuganayak/yuganayak_v2.html",
+        "language": "Bengali",
+        "volume": "2",
+        "edition": "Swami Gambhirananda; print edition not conclusively identified",
+        "access": "Public institutional HTML without login",
+        "completeness": "Substantial volume-specific narrative and back matter; sampled opening/end, not line-by-line collated",
+        "rights": "Public institutional hosting; no explicit redistribution license inspected",
+        "fidelity": "Host explicitly warns AI-assisted reference transcription and printed edition authority",
+        "decision": "pending_independent_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "fidelity_qualification": "Host explicitly describes AI-assisted reference transcription. Printed edition remains authoritative."
+    },
+    {
+      "book_id": 59,
+      "canonical_title": "যুগনায়ক",
+      "canonical_author": "Gambhirananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/yuganayak/yuganayak_v3.html",
+      "language": "Bengali",
+      "label": "Bengali 3 — AI transcription",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=59",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/yuganayak/yuganayak_v3.html",
+        "language": "Bengali",
+        "volume": "3",
+        "edition": "Swami Gambhirananda; print edition not conclusively identified",
+        "access": "Public institutional HTML without login",
+        "completeness": "Substantial volume-specific narrative and back matter; sampled opening/end, not line-by-line collated",
+        "rights": "Public institutional hosting; no explicit redistribution license inspected",
+        "fidelity": "Host explicitly warns AI-assisted reference transcription and printed edition authority",
+        "decision": "pending_independent_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "fidelity_qualification": "Host explicitly describes AI-assisted reference transcription. Printed edition remains authoritative."
+    },
+    {
+      "book_id": 67,
+      "canonical_title": "Swami Brahmananda As We Saw Him",
+      "canonical_author": "Swami Atmashraddhananda (compiler/editor)",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-brahmananda-as-we-saw-him/swami-brahmananda-as-we-saw-him.html",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=67",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-brahmananda-as-we-saw-him/swami-brahmananda-as-we-saw-him.html",
+        "language": "English",
+        "volume": "Single collection;40accounts plus appendices",
+        "edition": "Atmashraddhananda; Sri Ramakrishna Math Chennai; exact print impression not conclusively matched",
+        "access": "Public institutional HTML without login",
+        "completeness": "Substantial40-account collection and back matter present; body/opening/end sampled, not page-for-page print collation",
+        "rights": "Institutional public hosting; no explicit redistribution license inspected",
+        "decision": "pending_independent_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 90,
+      "canonical_title": "Swami Ramakrishnananda As We Saw Him",
+      "canonical_author": "A Compilation",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-as-we-saw-him/swami-ramakrishnananda-as-we-saw-him.html",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=90",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-as-we-saw-him/swami-ramakrishnananda-as-we-saw-him.html",
+        "label": "English",
+        "evidence": "Opened institutional HTML archive sourced from englishbooks.rkmm.org: compilation Chennai Math, digital publication March2024.53 articles; biography, monastic/lay reminiscences, death reports, letters, appendices, references and glossary present. Free text without login. Publisher catalogue525p confirms identity.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "Print edition year not shown in HTML; link only, no reproduction licence asserted."
+    },
+    {
+      "book_id": 91,
+      "canonical_title": "Swami Ramakrishnananda: A Portrait in Pictures",
+      "canonical_author": "A Compilation",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-a-portrait-in-pictures/swami-ramakrishnananda-a-portrait-in-pictures.html",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=91",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-a-portrait-in-pictures/swami-ramakrishnananda-a-portrait-in-pictures.html",
+        "label": "English",
+        "evidence": "Opened institution complete21-article HTML archive1865 lines with chapter contents, life narrative, photographs, appendices1–9, bibliography. Title matches publisher129p compilation. No login/payment.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "HTML digital edition; print image/layout equivalence not certified. No reuse licence inferred."
+    },
+    {
+      "book_id": 92,
+      "canonical_title": "Swami Ramakrishnananda: His Life and Legacy",
+      "canonical_author": "A Compilation",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-his-life-and-legacy/swami-ramakrishnananda-his-life-and-legacy.html",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=92",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-his-life-and-legacy/swami-ramakrishnananda-his-life-and-legacy.html",
+        "label": "English",
+        "evidence": "Opened institutional21-article1067-line text: Chennai compilation; life sketch, reminiscences, teachings, bibliography and books list present. Official Chennai198p book description matches. Free without login.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "Edition year absent in HTML; institutional access provenance supports external reader link only."
+    },
+    {
+      "book_id": 95,
+      "canonical_title": "The Complete Works of Swami Ramakrishnananda",
+      "canonical_author": "Swami Ramakrishnananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+      "language": "English",
+      "label": "English 1–3",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=95",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+        "label": "English 1–3",
+        "evidence": "Web parser failed on5.8MB page; direct HTTPS requests returned200 with5,789,244 bytes. Parsed288 articles, Chennai Math title/author/publisher, volume1.1–1.3,2.1–2.3,3.1–3.3 ending True Education. Vol3 contains letters and lectures. Official publisher3vol1466p catalogue confirms canonical series.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "One canonical book; candidate covers English volumes1–3. Institutional HTML is digital edition, no scan-page equality or reproduction licence claimed."
+    },
+    {
+      "book_id": 96,
+      "canonical_title": "Life of Sri Ramanuja",
+      "canonical_author": "Swami Ramakrishnananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000260059",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=96",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000260059",
+        "label": "English",
+        "evidence": "Parsed vol2 part1, lineage chapters2.1.1.1–10 and life chapters2.1.2.1–31 through installation/death. Complete work incorporated in official omnibus; English translation rather than Bengali original.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "Bengali original not found; English omnibus candidate excludes2017 expanded colour-photo edition additions."
+    },
+    {
+      "book_id": 97,
+      "canonical_title": "God and Divine Incarnation",
+      "canonical_author": "Swami Ramakrishnananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000256029",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=97",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000256029",
+        "label": "English",
+        "evidence": "Omnibus vol1 part2 chapters1.2.3–20, from God through Sri Krishna Avatara. Opening/final substantive bodies inspected. Matches standalone160p work contents via publisher/retailer descriptions.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "Candidate is incorporated text within omnibus; standalone pagination/front matter not duplicated."
+    },
+    {
+      "book_id": 98,
+      "canonical_title": "Sri Krishna: Pastoral and the King-Maker",
+      "canonical_author": "Swami Ramakrishnananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000254171",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=98",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000254171",
+        "label": "English",
+        "evidence": "Directly parsed complete adjacent Pastoral Sri Krishna and Kingmaker Sri Krishna chapters1.2.1–2;96k and98k characters respectively. Title/author confirmed via omnibus and Chennai descriptions.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "Two constituent lectures in omnibus; standalone edition year not asserted."
+    },
+    {
+      "book_id": 99,
+      "canonical_title": "The Soul of Man",
+      "canonical_author": "Swami Ramakrishnananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000256973",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=99",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000256973",
+        "label": "English",
+        "evidence": "Omnibus vol1 part3 four chapters:Science Modern and Ancient; Determination of Conscious Tendencies; Regions Higher and Lower; Locus of the Soul. All have substantial bodies32k–55k chars. Institutional annual report independently calls standalone four1909 lectures.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "Standalone140p edition omitted front matter; English incorporated work available."
+    },
+    {
+      "book_id": 100,
+      "canonical_title": "The Universe and Man",
+      "canonical_author": "Swami Ramakrishnananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=100",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+        "label": "English",
+        "evidence": "Parsed six lecture contents across1.1.6 Message of Sri Ramakrishna and2.3.1–5 Universe,Space/Time,Self-imposed Struggle,Vedanta,Bhakti.1938 Message of Eternal Wisdom indexed contents confirms six titles; full bodies present.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "Omnibus rearranges the six lectures across two sections. Six lecture bodies mapped; separate standalone edition front matter, pagination and layout not reproduced or certified. Institutional free reading access does not establish a redistribution licence.",
+      "lecture_coverage": [
+        {
+          "source_order": "I",
+          "title": "The Message of Sri Ramakrishna",
+          "source_printed_page": 3,
+          "omnibus_section": "1.1.6",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000254125",
+          "inspected_body_characters": 27540
+        },
+        {
+          "source_order": "II",
+          "title": "The Universe",
+          "source_printed_page": 20,
+          "omnibus_section": "2.3.1",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268137",
+          "inspected_body_characters": 26053
+        },
+        {
+          "source_order": "III",
+          "title": "Space and Time",
+          "source_printed_page": 35,
+          "omnibus_section": "2.3.2",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268143",
+          "inspected_body_characters": 11798
+        },
+        {
+          "source_order": "IV",
+          "title": "The Self-imposed Struggle",
+          "source_printed_page": 45,
+          "omnibus_section": "2.3.3",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268151",
+          "inspected_body_characters": 26876
+        },
+        {
+          "source_order": "V",
+          "title": "The Vedanta",
+          "source_printed_page": 61,
+          "omnibus_section": "2.3.4",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268159",
+          "inspected_body_characters": 23652
+        },
+        {
+          "source_order": "VI",
+          "title": "Bhakti",
+          "source_printed_page": 76,
+          "omnibus_section": "2.3.5",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268165",
+          "inspected_body_characters": 15865
+        }
+      ]
+    },
+    {
+      "book_id": 102,
+      "canonical_title": "Search after Happiness",
+      "canonical_author": "Swami Ramakrishnananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287185",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=102",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287185",
+        "label": "English",
+        "evidence": "2006 standalone14chapter TOC compared:12sequential3.2.3.1–12 plus Mind and Maya3.2.1.10 and Sri Ramakrishna and His Mission1.1.5. All14 substantial bodies present.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "Omnibus chapters rearranged; front matter not identical."
+    }
+  ],
+  "proposed_additions": [
+    {
+      "book_id": 33,
+      "canonical_title": "Raja Yoga",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/raja-yoga_contents.htm",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=33",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/raja-yoga_contents.htm",
+        "language": "English",
+        "label": "English",
+        "edition": "Complete Works online text",
+        "volume_coverage": "Complete named work within CWvolume1",
+        "access": "Free HTML; all linked chapters HTTP200",
+        "completeness": "15pages including Patanjali4chapters and appendix",
+        "rights": "Vivekananda original historical text; no new reuse license inferred for editions. Public linking candidate only.",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 34,
+      "canonical_title": "Karma Yoga",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/karma-yoga/karma-yoga_contents.htm",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=34",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/karma-yoga/karma-yoga_contents.htm",
+        "language": "English",
+        "label": "English",
+        "edition": "Complete Works online text",
+        "volume_coverage": "Complete named work within CWvolume1",
+        "access": "Free HTML; all linked chapters HTTP200",
+        "completeness": "8canonical chapters",
+        "rights": "Vivekananda original historical text; no new reuse license inferred for editions. Public linking candidate only.",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 35,
+      "canonical_title": "Jnana Yoga",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/jnana-yoga_contents.htm",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=35",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/jnana-yoga_contents.htm",
+        "language": "English",
+        "label": "English",
+        "edition": "Complete Works online text",
+        "volume_coverage": "Complete named work within CWvolume2",
+        "access": "Free HTML; all linked chapters HTTP200",
+        "completeness": "16canonical lectures",
+        "rights": "Vivekananda original historical text; no new reuse license inferred for editions. Public linking candidate only.",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 36,
+      "canonical_title": "Bhakti Yoga",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/bhakti-yoga_contents.htm",
+      "language": "English",
+      "label": "English — Bhakti Yoga",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=36",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/bhakti-yoga_contents.htm",
+        "language": "English",
+        "label": "English",
+        "edition": "Complete Works online text",
+        "volume_coverage": "BhaktiYoga preliminary; ParaBhakti companion needed",
+        "access": "FreeHTTP200HTML",
+        "completeness": "10preparatory chapter pages fetched. ParaBhakti companion index and10linked pages fetched through Conclusion; both sections required. Guessed short para-bhakti_contents URL404 rejected.",
+        "rights": "Historical Vivekananda work; original/edition rights distinction retained, no redistribution performed",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "coverage_qualification": "Both Bhakti Yoga and Para-Bhakti links are required for combined coverage."
+    },
+    {
+      "book_id": 36,
+      "canonical_title": "Bhakti Yoga",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/para-bhakti_or_supreme_devotion_contents.htm",
+      "language": "English",
+      "label": "English — Para-Bhakti",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=36",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/para-bhakti_or_supreme_devotion_contents.htm",
+        "language": "English",
+        "label": "English — Para-Bhakti",
+        "edition": "Complete Works online text",
+        "volume_coverage": "Companion ParaBhakti/SupremeDevotion section",
+        "access": "FreeHTTP200HTML",
+        "completeness": "10preparatory chapter pages fetched. ParaBhakti companion index and10linked pages fetched through Conclusion; both sections required. Guessed short para-bhakti_contents URL404 rejected.",
+        "rights": "Historical Vivekananda work; original/edition rights distinction retained, no redistribution performed",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "coverage_qualification": "Both Bhakti Yoga and Para-Bhakti links are required for combined coverage."
+    },
+    {
+      "book_id": 37,
+      "canonical_title": "Lectures from Colombo to Almora",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/lectures_from_colombo_to_almora_contents.htm",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=37",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/lectures_from_colombo_to_almora_contents.htm",
+        "language": "English",
+        "label": "English",
+        "edition": "Complete Works online text",
+        "volume_coverage": "Named work in CW",
+        "access": "FreeHTTP200HTML",
+        "completeness": "29linked lecture/address pages allHTTP200,691498combinedcharacters; indexed full sequence and body starts/end recorded.",
+        "rights": "Historical Vivekananda work; original/edition rights distinction retained, no redistribution performed",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 38,
+      "canonical_title": "Inspired Talks",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/inspired_talks_contents.htm",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=38",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/inspired_talks_contents.htm",
+        "language": "English",
+        "label": "English",
+        "edition": "Complete Works online text",
+        "volume_coverage": "Named work in CW",
+        "access": "FreeHTTP200HTML",
+        "completeness": "44dated talks allHTTP200,188118combinedcharacters; June19–August6sequence. CW webpage photo caption London1896 is not talk dating evidence.",
+        "rights": "Historical Vivekananda work; original/edition rights distinction retained, no redistribution performed",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 39,
+      "canonical_title": "My Master",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_4/lectures_and_discourses/my_master.htm",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=39",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_4/lectures_and_discourses/my_master.htm",
+        "language": "English",
+        "label": "English",
+        "edition": "Complete Works online text",
+        "volume_coverage": "Named work in CW",
+        "access": "FreeHTTP200HTML",
+        "completeness": "HTTP200,66925characters; identifies combination of two1896lectures; opening and full closing paragraphs read.",
+        "rights": "Historical Vivekananda work; original/edition rights distinction retained, no redistribution performed",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 40,
+      "canonical_title": "The East and the West",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_5/writings_prose_and_poems/the_east_and_the_west.htm",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=40",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_5/writings_prose_and_poems/the_east_and_the_west.htm",
+        "language": "English",
+        "label": "English",
+        "edition": "Complete Works online text",
+        "volume_coverage": "Named work in CW",
+        "access": "FreeHTTP200HTML",
+        "completeness": "HTTP200 substantial English essay; seven thematic sections through Progress of Civilisation and endnotes; paired Bengali section links visible but bodies not yet audited.",
+        "rights": "Historical Vivekananda work; original/edition rights distinction retained, no redistribution performed",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 41,
+      "canonical_title": "Modern India",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_4/translation_prose/modern_india.htm",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=41",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_4/translation_prose/modern_india.htm",
+        "label": "English",
+        "language": "English",
+        "edition": "CWonline translation",
+        "volume_coverage": "Whole essay",
+        "access": "FreeHTML",
+        "completeness": "HTTP200 English84498characters; identified translated March1899Udbodhan Bengali essay, opening and ending/endnotes inspected.",
+        "rights": "Institutional/historical text; edition rights retained; link-only candidate",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 42,
+      "canonical_title": "Memoirs of European Travel",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/translation_of_writings/memoirs_of_european_travel_i.htm",
+      "language": "English",
+      "label": "English — Part I",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=42",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/translation_of_writings/memoirs_of_european_travel_i.htm",
+        "label": "English",
+        "language": "English",
+        "edition": "CWonline translation",
+        "volume_coverage": "PartI;requiresPartII",
+        "access": "FreeHTML",
+        "completeness": "PartsIandII bothHTTP200 English translation fromBengali; extended travel narrative and finalIIclosing inspected. Need both parts not justI.",
+        "rights": "Institutional/historical text; edition rights retained; link-only candidate",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "coverage_qualification": "PartsIandII of the named work; not invented separate volumes."
+    },
+    {
+      "book_id": 42,
+      "canonical_title": "Memoirs of European Travel",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/translation_of_writings/memoirs_of_european_travel_ii.htm",
+      "language": "English",
+      "label": "English — Part II",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=42",
+      "source_candidate_evidence": {
+        "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/translation_of_writings/memoirs_of_european_travel_ii.htm",
+        "label": "English 2",
+        "language": "English",
+        "edition": "CWonline translation",
+        "volume_coverage": "PartII",
+        "access": "FreeHTML",
+        "completeness": "PartsIandII bothHTTP200 English translation fromBengali; extended travel narrative and finalIIclosing inspected. Need both parts not justI.",
+        "rights": "Institutional/historical text; edition rights retained; link-only candidate",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "coverage_qualification": "PartsIandII of the named work; not invented separate volumes."
+    },
+    {
+      "book_id": 48,
+      "canonical_title": "To the Youth of India",
+      "canonical_author": "Swami Vivekananda",
+      "url": "https://chandigarh.rkmm.org/Vivek%20Mahotsav/Books/To%20the%20youth%20of%20India.pdf",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=48",
+      "source_candidate_evidence": {
+        "url": "https://chandigarh.rkmm.org/Vivek%20Mahotsav/Books/To%20the%20youth%20of%20India.pdf",
+        "label": "English",
+        "language": "English",
+        "edition": "UndatedinstitutionalPDF",
+        "volume_coverage": "9lecturecollection94PDFpages",
+        "access": "HTTP200application/pdf,nologin",
+        "completeness": "Title/TOC9lectures/finaltextverified;notlineproofread",
+        "rights": "OfficialRKMMbranchhost;linkonly,noredistribution",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 49,
+      "canonical_title": "The Life of Swami Vivekananda",
+      "canonical_author": "Eastern and Western Disciples",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/life-of-swami-vivekananda-his-eastern-and-western-disciples/life-of-swami-vivekananda-his-eastern-and-western-disciples.html",
+      "language": "English",
+      "label": "English 1–2",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=49",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/life-of-swami-vivekananda-his-eastern-and-western-disciples/life-of-swami-vivekananda-his-eastern-and-western-disciples.html",
+        "language": "English",
+        "label": "English 1–2",
+        "edition": "Two-volume Advaita biography online",
+        "volume_coverage": "VolumesIandIIcombined;25chapters each",
+        "access": "HTTP200freeinstitutionalHTML",
+        "completeness": "InstitutionalHTTP2002,635,358textcharacters; title/imprintEasternWesternDisciplesAdvaitaAshrama; two volumes with25chapters each through Mahasamadhi and endingHARIHOMTATSAT. Webtool failed but local request succeeded.",
+        "rights": "Institutionalhost/imprint; no redistribution license inferred",
+        "decision": "candidate_pending_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 51,
+      "canonical_title": "Photographs of Swami Vivekananda",
+      "canonical_author": "Gen",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/photographs-of-swami-vivekananda/photographs-of-swami-vivekananda.html",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=51",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/photographs-of-swami-vivekananda/photographs-of-swami-vivekananda.html",
+        "language": "English",
+        "volume": "Single illustrated book; five chapters",
+        "edition": "Photographs of Swami Vivekananda; exact print edition not conclusively matched",
+        "access": "Public HTML; text and 108 image resources loaded without login",
+        "completeness": "Five chapters through final memorial/hymn inspected. Image resource loading confirmed; visual fidelity/page correspondence not audited.",
+        "rights": "Institutional hosting establishes public access, not an explicit redistribution license.",
+        "decision": "pending_independent_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "fidelity_qualification": "Five chapters and108loadedimage resources verified; image/layout fidelity not certified."
+    },
+    {
+      "book_id": 55,
+      "canonical_title": "Swami Vivekananda in Contemporary Indian News",
+      "canonical_author": "Shankari Prasad Basu",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-vivekananda-in-contemporary-indian-news-1893-1902/swami-vivekananda-in-contemporary-indian-news-1893-1902.html",
+      "language": "English",
+      "label": "English 1–3",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=55",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-vivekananda-in-contemporary-indian-news-1893-1902/swami-vivekananda-in-contemporary-indian-news-1893-1902.html",
+        "language": "English",
+        "volume": "Volumes 1–3 combined",
+        "edition": "Institutional digital edition December 2023; print edition correspondence not fully collated",
+        "access": "Public HTML, no login",
+        "completeness": "All three volume divisions and substantial body present; actual Volume2 and Volume3 articles checked. No claim to later Volume4.",
+        "rights": "Institutional public reader; no explicit reuse license inspected.",
+        "decision": "pending_independent_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "coverage_qualification": "English Volumes1–3 only. Later Volume4 not included."
+    },
+    {
+      "book_id": 59,
+      "canonical_title": "যুগনায়ক",
+      "canonical_author": "Gambhirananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/yuganayak/yuganayak_v1.html",
+      "language": "Bengali",
+      "label": "Bengali 1 — AI transcription",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=59",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/yuganayak/yuganayak_v1.html",
+        "language": "Bengali",
+        "volume": "1",
+        "edition": "Swami Gambhirananda; print edition not conclusively identified",
+        "access": "Public institutional HTML without login",
+        "completeness": "Substantial volume-specific narrative and back matter; sampled opening/end, not line-by-line collated",
+        "rights": "Public institutional hosting; no explicit redistribution license inspected",
+        "fidelity": "Host explicitly warns AI-assisted reference transcription and printed edition authority",
+        "decision": "pending_independent_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "fidelity_qualification": "Host explicitly describes AI-assisted reference transcription. Printed edition remains authoritative."
+    },
+    {
+      "book_id": 59,
+      "canonical_title": "যুগনায়ক",
+      "canonical_author": "Gambhirananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/yuganayak/yuganayak_v2.html",
+      "language": "Bengali",
+      "label": "Bengali 2 — AI transcription",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=59",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/yuganayak/yuganayak_v2.html",
+        "language": "Bengali",
+        "volume": "2",
+        "edition": "Swami Gambhirananda; print edition not conclusively identified",
+        "access": "Public institutional HTML without login",
+        "completeness": "Substantial volume-specific narrative and back matter; sampled opening/end, not line-by-line collated",
+        "rights": "Public institutional hosting; no explicit redistribution license inspected",
+        "fidelity": "Host explicitly warns AI-assisted reference transcription and printed edition authority",
+        "decision": "pending_independent_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "fidelity_qualification": "Host explicitly describes AI-assisted reference transcription. Printed edition remains authoritative."
+    },
+    {
+      "book_id": 59,
+      "canonical_title": "যুগনায়ক",
+      "canonical_author": "Gambhirananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/yuganayak/yuganayak_v3.html",
+      "language": "Bengali",
+      "label": "Bengali 3 — AI transcription",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=59",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/yuganayak/yuganayak_v3.html",
+        "language": "Bengali",
+        "volume": "3",
+        "edition": "Swami Gambhirananda; print edition not conclusively identified",
+        "access": "Public institutional HTML without login",
+        "completeness": "Substantial volume-specific narrative and back matter; sampled opening/end, not line-by-line collated",
+        "rights": "Public institutional hosting; no explicit redistribution license inspected",
+        "fidelity": "Host explicitly warns AI-assisted reference transcription and printed edition authority",
+        "decision": "pending_independent_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "fidelity_qualification": "Host explicitly describes AI-assisted reference transcription. Printed edition remains authoritative."
+    },
+    {
+      "book_id": 67,
+      "canonical_title": "Swami Brahmananda As We Saw Him",
+      "canonical_author": "Swami Atmashraddhananda (compiler/editor)",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-brahmananda-as-we-saw-him/swami-brahmananda-as-we-saw-him.html",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-001-084.json",
+      "source_record_key": "book_id=67",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-brahmananda-as-we-saw-him/swami-brahmananda-as-we-saw-him.html",
+        "language": "English",
+        "volume": "Single collection;40accounts plus appendices",
+        "edition": "Atmashraddhananda; Sri Ramakrishna Math Chennai; exact print impression not conclusively matched",
+        "access": "Public institutional HTML without login",
+        "completeness": "Substantial40-account collection and back matter present; body/opening/end sampled, not page-for-page print collation",
+        "rights": "Institutional public hosting; no explicit redistribution license inspected",
+        "decision": "pending_independent_QA"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion."
+    },
+    {
+      "book_id": 90,
+      "canonical_title": "Swami Ramakrishnananda As We Saw Him",
+      "canonical_author": "A Compilation",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-as-we-saw-him/swami-ramakrishnananda-as-we-saw-him.html",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=90",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-as-we-saw-him/swami-ramakrishnananda-as-we-saw-him.html",
+        "label": "English",
+        "evidence": "Opened institutional HTML archive sourced from englishbooks.rkmm.org: compilation Chennai Math, digital publication March2024.53 articles; biography, monastic/lay reminiscences, death reports, letters, appendices, references and glossary present. Free text without login. Publisher catalogue525p confirms identity.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "Print edition year not shown in HTML; link only, no reproduction licence asserted."
+    },
+    {
+      "book_id": 91,
+      "canonical_title": "Swami Ramakrishnananda: A Portrait in Pictures",
+      "canonical_author": "A Compilation",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-a-portrait-in-pictures/swami-ramakrishnananda-a-portrait-in-pictures.html",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=91",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-a-portrait-in-pictures/swami-ramakrishnananda-a-portrait-in-pictures.html",
+        "label": "English",
+        "evidence": "Opened institution complete21-article HTML archive1865 lines with chapter contents, life narrative, photographs, appendices1–9, bibliography. Title matches publisher129p compilation. No login/payment.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "HTML digital edition; print image/layout equivalence not certified. No reuse licence inferred."
+    },
+    {
+      "book_id": 92,
+      "canonical_title": "Swami Ramakrishnananda: His Life and Legacy",
+      "canonical_author": "A Compilation",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-his-life-and-legacy/swami-ramakrishnananda-his-life-and-legacy.html",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=92",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-his-life-and-legacy/swami-ramakrishnananda-his-life-and-legacy.html",
+        "label": "English",
+        "evidence": "Opened institutional21-article1067-line text: Chennai compilation; life sketch, reminiscences, teachings, bibliography and books list present. Official Chennai198p book description matches. Free without login.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "Edition year absent in HTML; institutional access provenance supports external reader link only."
+    },
+    {
+      "book_id": 95,
+      "canonical_title": "The Complete Works of Swami Ramakrishnananda",
+      "canonical_author": "Swami Ramakrishnananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+      "language": "English",
+      "label": "English 1–3",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=95",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+        "label": "English 1–3",
+        "evidence": "Web parser failed on5.8MB page; direct HTTPS requests returned200 with5,789,244 bytes. Parsed288 articles, Chennai Math title/author/publisher, volume1.1–1.3,2.1–2.3,3.1–3.3 ending True Education. Vol3 contains letters and lectures. Official publisher3vol1466p catalogue confirms canonical series.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "One canonical book; candidate covers English volumes1–3. Institutional HTML is digital edition, no scan-page equality or reproduction licence claimed."
+    },
+    {
+      "book_id": 96,
+      "canonical_title": "Life of Sri Ramanuja",
+      "canonical_author": "Swami Ramakrishnananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000260059",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=96",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000260059",
+        "label": "English",
+        "evidence": "Parsed vol2 part1, lineage chapters2.1.1.1–10 and life chapters2.1.2.1–31 through installation/death. Complete work incorporated in official omnibus; English translation rather than Bengali original.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "Bengali original not found; English omnibus candidate excludes2017 expanded colour-photo edition additions."
+    },
+    {
+      "book_id": 97,
+      "canonical_title": "God and Divine Incarnation",
+      "canonical_author": "Swami Ramakrishnananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000256029",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=97",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000256029",
+        "label": "English",
+        "evidence": "Omnibus vol1 part2 chapters1.2.3–20, from God through Sri Krishna Avatara. Opening/final substantive bodies inspected. Matches standalone160p work contents via publisher/retailer descriptions.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "Candidate is incorporated text within omnibus; standalone pagination/front matter not duplicated."
+    },
+    {
+      "book_id": 98,
+      "canonical_title": "Sri Krishna: Pastoral and the King-Maker",
+      "canonical_author": "Swami Ramakrishnananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000254171",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=98",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000254171",
+        "label": "English",
+        "evidence": "Directly parsed complete adjacent Pastoral Sri Krishna and Kingmaker Sri Krishna chapters1.2.1–2;96k and98k characters respectively. Title/author confirmed via omnibus and Chennai descriptions.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "Two constituent lectures in omnibus; standalone edition year not asserted."
+    },
+    {
+      "book_id": 99,
+      "canonical_title": "The Soul of Man",
+      "canonical_author": "Swami Ramakrishnananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000256973",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=99",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000256973",
+        "label": "English",
+        "evidence": "Omnibus vol1 part3 four chapters:Science Modern and Ancient; Determination of Conscious Tendencies; Regions Higher and Lower; Locus of the Soul. All have substantial bodies32k–55k chars. Institutional annual report independently calls standalone four1909 lectures.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "Standalone140p edition omitted front matter; English incorporated work available."
+    },
+    {
+      "book_id": 100,
+      "canonical_title": "The Universe and Man",
+      "canonical_author": "Swami Ramakrishnananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=100",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+        "label": "English",
+        "evidence": "Parsed six lecture contents across1.1.6 Message of Sri Ramakrishna and2.3.1–5 Universe,Space/Time,Self-imposed Struggle,Vedanta,Bhakti.1938 Message of Eternal Wisdom indexed contents confirms six titles; full bodies present.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "Omnibus rearranges the six lectures across two sections. Six lecture bodies mapped; separate standalone edition front matter, pagination and layout not reproduced or certified. Institutional free reading access does not establish a redistribution licence.",
+      "lecture_coverage": [
+        {
+          "source_order": "I",
+          "title": "The Message of Sri Ramakrishna",
+          "source_printed_page": 3,
+          "omnibus_section": "1.1.6",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000254125",
+          "inspected_body_characters": 27540
+        },
+        {
+          "source_order": "II",
+          "title": "The Universe",
+          "source_printed_page": 20,
+          "omnibus_section": "2.3.1",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268137",
+          "inspected_body_characters": 26053
+        },
+        {
+          "source_order": "III",
+          "title": "Space and Time",
+          "source_printed_page": 35,
+          "omnibus_section": "2.3.2",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268143",
+          "inspected_body_characters": 11798
+        },
+        {
+          "source_order": "IV",
+          "title": "The Self-imposed Struggle",
+          "source_printed_page": 45,
+          "omnibus_section": "2.3.3",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268151",
+          "inspected_body_characters": 26876
+        },
+        {
+          "source_order": "V",
+          "title": "The Vedanta",
+          "source_printed_page": 61,
+          "omnibus_section": "2.3.4",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268159",
+          "inspected_body_characters": 23652
+        },
+        {
+          "source_order": "VI",
+          "title": "Bhakti",
+          "source_printed_page": 76,
+          "omnibus_section": "2.3.5",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268165",
+          "inspected_body_characters": 15865
+        }
+      ]
+    },
+    {
+      "book_id": 102,
+      "canonical_title": "Search after Happiness",
+      "canonical_author": "Swami Ramakrishnananda",
+      "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287185",
+      "language": "English",
+      "label": "English",
+      "decision": "approved_external_reader_link",
+      "already_in_baseline": false,
+      "source_ledger": "research-085-168.json",
+      "source_record_key": "id=102",
+      "source_candidate_evidence": {
+        "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287185",
+        "label": "English",
+        "evidence": "2006 standalone14chapter TOC compared:12sequential3.2.3.1–12 plus Mind and Maya3.2.1.10 and Sri Ramakrishna and His Mission1.1.5. All14 substantial bodies present.",
+        "disposition": "candidate_complete_institutional_reader"
+      },
+      "qa_provenance": {
+        "reviewer": "gpt-6.1-sol, Medium reasoning; independent T1 QA",
+        "report": "docs/library-v2/t1-quality-review.md",
+        "decision_received": "2026-10-15"
+      },
+      "rights_scope": "External public reader link only. No redistribution, public-domain or reproduction-licence assertion.",
+      "limitations": "Omnibus chapters rearranged; front matter not identical."
+    }
+  ],
+  "excluded_new_candidates": [
+    {
+      "book_id": 14,
+      "url": "https://archive.org/details/in.ernet.dli.2015.456946",
+      "decision": "exclude_from_new_public_additions",
+      "reason": "Scan readability/completeness and rights unresolved; preserve existing baseline URL only.",
+      "source_ledger": "research-001-084.json",
+      "baseline_preserved": false
+    },
+    {
+      "book_id": 44,
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_09.html",
+      "decision": "exclude_from_new_public_additions",
+      "reason": "Exact complete standalone book coverage not certified.",
+      "source_ledger": "research-001-084.json",
+      "baseline_preserved": false
+    },
+    {
+      "book_id": 52,
+      "url": "https://www.ramakrishnavivekananda.info/reminiscences/reminiscences_of_sv.htm",
+      "decision": "exclude_from_new_public_additions",
+      "reason": "Complete1983thirdedition text verified, but unaffiliated host authorization for this work not established. Homepage publisher support pertains to Complete Works/Nikhilananda biography, not Reminiscences.",
+      "source_ledger": "research-001-084.json",
+      "baseline_preserved": false
+    },
+    {
+      "book_id": 74,
+      "url": "https://bn.wikisource.org/wiki/নির্ঘণ্ট:অজাতশত্রু_শ্রীমৎ_স্বামী_ব্রহ্মানন্দ_মহারাজের_অনুধ্যান_-_মহেন্দ্রনাথ_দত্ত.pdf",
+      "decision": "exclude_from_new_public_additions",
+      "reason": "Scan completeness and rights unresolved.",
+      "source_ledger": "research-001-084.json",
+      "baseline_preserved": false
+    },
+    {
+      "book_id": 75,
+      "url": "https://archive.org/details/in.ernet.dli.2015.453385",
+      "decision": "exclude_from_new_public_additions",
+      "reason": "Scan completeness and rights unresolved.",
+      "source_ledger": "research-001-084.json",
+      "baseline_preserved": false
+    },
+    {
+      "book_id": 56,
+      "url": "https://archive.org/details/in.ernet.dli.2015.298518",
+      "language": "Bengali",
+      "volume": "1",
+      "reason": "Substantial public OCR verified, but hosting rights and edition/date reconciliation unresolved; do not promote as approved free reader.",
+      "decision": "exclude_from_new_public_additions",
+      "source_ledger": "research-001-084.json"
+    },
+    {
+      "book_id": 57,
+      "url": "https://bn.wikisource.org/wiki/নির্ঘণ্ট:কাশীধামে_স্বামী_বিবেকানন্দ_-_মহেন্দ্রনাথ_দত্ত.pdf",
+      "language": "Bengali",
+      "volume": "Single book",
+      "reason": "Scan index and sampled text exist; complete scan readability and edition-specific rights not independently audited. Unproofread transcription.",
+      "decision": "exclude_from_new_public_additions",
+      "source_ledger": "research-001-084.json"
+    },
+    {
+      "book_id": 62,
+      "url": "https://archive.org/details/in.ernet.dli.2015.456844",
+      "language": "Bengali",
+      "volume": "Single book",
+      "edition": "1964 first edition",
+      "reason": "Actual substantial matching body verified, but permission/rights status not established. Do not confuse this with Mayer Padaprante.",
+      "decision": "exclude_from_new_public_additions",
+      "source_ledger": "research-001-084.json"
+    },
+    {
+      "book_id": 63,
+      "url": "https://archive.org/details/in.ernet.dli.2015.299472",
+      "language": "Bengali",
+      "volume": "Single collection",
+      "reason": "Substantial archive OCR matches title/topic, but edition/full contents reconciliation and rights unresolved.",
+      "decision": "exclude_from_new_public_additions",
+      "source_ledger": "research-001-084.json"
+    },
+    {
+      "book_id": 69,
+      "url": "https://archive.org/details/in.ernet.dli.2015.355628",
+      "language": "Bengali",
+      "volume": "Single book",
+      "reason": "Matching metadata; body request500 and rights unresolved. No completeness approval.",
+      "decision": "exclude_from_new_public_additions",
+      "source_ledger": "research-001-084.json"
+    },
+    {
+      "book_id": 72,
+      "url": "https://archive.org/details/in.ernet.dli.2015.455427",
+      "language": "Bengali",
+      "volume": "Single book",
+      "edition": "First edition; imprint13Chaitra1371; archive date1964 inconsistent",
+      "reason": "Substantial matching body available, but rights and exact edition/date unresolved. No public-link promotion approval.",
+      "decision": "exclude_from_new_public_additions",
+      "source_ledger": "research-001-084.json"
+    }
+  ],
+  "baseline_anomalies": [
+    {
+      "book_id": 4,
+      "decision": "preserve_baseline_pending_independent_adjudication",
+      "reason": "Research found the existing link is a short centenary-address essay rather than the complete186-page biography. No baseline deletion authorized in this manifest."
+    }
+  ],
+  "required_gaps": [
+    {
+      "book_id": 27,
+      "gap": "MayerPadaprante requestedVolumes1–4 have no verified lawful public whole-text reader; private matches withheld. Volume5 excluded from requested scope; author attribution discrepancy requires editorial review."
+    },
+    {
+      "book_id": 52,
+      "gap": "Complete1983thirdedition text verified, but unaffiliated host authorization for this work not established. Homepage publisher support pertains to Complete Works/Nikhilananda biography, not Reminiscences."
+    }
+  ],
+  "counts": {
+    "baseline_links_preserved": 55,
+    "approved_reader_links": 34,
+    "approved_books": 30,
+    "proposed_additions": 30,
+    "newly_approved_existing_baseline_matches": 4,
+    "excluded_new_candidates": 11
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "issue": "https://github.com/krishna101-tech/saradakosh/issues/28",
+  "scope": "Frozen checkpoint retainedIDs64–68 only; research, not approved content",
+  "checked_at": "2026-10-16",
+  "provenance": {
+    "researcher": "gpt-6.1-sol High, assigned research worker",
+    "cost": "Included public web and local requests; no purchase, paid API, hosted build or redistribution",
+    "quota": "Parent supplied primary0% start; weekly62%;credits0; worker telemetry not observable",
+    "AAA_GOAL": "Luna coordinates; latest eligible Sol High research/implementation and independent Sol Medium QA under current owner task packet; sequential approval stages; zero incremental cost",
+    "method": "Bounded exact-title/original Bengali/transliteration searches, actual reader beginning/end and volume checks where accessible; discovery distinct from legal clearance. Prior candidates explicitly marked historical until rechecked."
+  },
+  "books": [
+    {
+      "book_id": 64,
+      "canonical_title": "স্বামীজীর স্মৃতিসঞ্চয়ন",
+      "author": "Nirlepananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "স্বামীজীর স্মৃতিসঞ্চয়ন নির্লেপানন্দ",
+        "Swamijir Smritisanchayan Nirlepananda",
+        "স্বামীজীর স্মৃতি নির্লেপানন্দ বই"
+      ],
+      "sources": [
+        {
+          "url": "https://vivekavani.com/h10/",
+          "observation": "ChunilalBasuarticle citesSwamijirSmritisanchayanpp136–137; citationonly notwholebook or exactNirlepanandaeditioncover."
+        }
+      ],
+      "covers": [],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "No wholefree text verified; namedbookcitation is notreader.",
+      "cover_outcome": "No exactNirlepanandatitle/editioncover verified inofficialAdvaitasitemap/Udbodhancatalogue search; otherSmritiSanchayanbooks rejected asidentitymismatch."
+    },
+    {
+      "book_id": 65,
+      "canonical_title": "The Eternal Companion: Life and Teachings of Swami Brahmananda",
+      "author": "Swami Yatiswarananda; Swami Prabhavananda",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "The Eternal Companion full text Brahmananda",
+        "The Eternal Companion Brahmananda pdf",
+        "Eternal Companion site:rkmath.org"
+      ],
+      "sources": [
+        {
+          "url": "https://rkmath.org/wp-content/uploads/2020/01/The-Eternal-Companion-Brahmananda.pdf",
+          "observation": "SearchindexedofficialHyderabadPDFtitle, butfreshlocalrequest returnedNotFoundnonPDF andwebopenfailed. Noactualfullbody/completeness accepted."
+        },
+        {
+          "url": "https://estudantedavedanta.net/Eternal_Companion.pdf",
+          "observation": "Searchindexed1944Prabhavanandapreface; freshHTTP403bothlocalandweb; body/endnotverified. EarlierPrabhavanandavariant notsilently equated toYatiswarananda+PrabhavanandaChennai359pageedition."
+        },
+        {
+          "url": "https://www.vedanta.gr/wp-content/uploads/2012/03/SwYatis_Readings-on-SwBrahmSpirTchgs_ENA5.pdf",
+          "observation": "ReadingsONSpiritualTeachings iscommentary/references, notactualEternalCompanion; rejectassubstitute."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/the-eternal-companion-life-and-teachings-of-swami-brahmananda/1237499000010763979",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/the-eternal-companion-life-and-teachings-of-swami-brahmananda/1237499000010763979",
+          "page_title": "The Eternal Companion by Yatiswarananda | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Ramakrishna Math - Chennai",
+            "List of Authors/Contributors": "Swami Yatiswarananda",
+            "Binding": "Paperback",
+            "Language": "English",
+            "Total Pages": "359",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MDE005_01.jpg/1237499000047538770/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/MDE005_01.jpg/1237499000047538770/1100x1100",
+            "width": 542,
+            "height": 780,
+            "format": "JPEG",
+            "bytes": 57003,
+            "sha256": "48ebd0308c6d63436268cbe551de1a5163d7382f222c2b87359b437daf2f1a9c",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "OfficialPDFlead currently unavailable, mirror403; differentearlieredition scope and endingunverified. HOLD; paidcurrentlisting notfree."
+    },
+    {
+      "book_id": 66,
+      "canonical_title": "A Guide to Spiritual Life",
+      "author": "Swami Brahmananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "A Guide to Spiritual Life Brahmananda pdf",
+        "ধর্ম প্রসঙ্গে স্বামী ব্রহ্মানন্দ pdf",
+        "ধর্মপ্রসঙ্গে ব্রহ্মানন্দ pdf"
+      ],
+      "sources": [
+        {
+          "url": "https://swamibrahmananda.blogspot.com/2018/06/blog-post_34.html",
+          "observation": "SelectedBengalipassage referencespage41; notcompletebook."
+        },
+        {
+          "url": "https://media.belurmath.org/reading-from-the-eternal-companion-bhakta-sammelan-2020-video-5843/",
+          "observation": "OfficialselectedBengalireadingvideo; notcompletewrittenreader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/dharma-prasange-swami-brahmananda/1237499000010646783",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/dharma-prasange-swami-brahmananda/1237499000010646783",
+          "page_title": "Dharma Prasange Swami Brahmananda by Brahmananda | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Udbodhan Karyalaya",
+            "List of Authors/Contributors": "Swami Brahmananda",
+            "Binding": "Paperback",
+            "Language": "Bengali",
+            "Total Pages": "167",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB014_1.jpg/1237499000010703423/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/UDB014_1.jpg/1237499000010703423/1100x1100",
+            "width": 826,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 214384,
+            "sha256": "38f596b56aa9eddc86e964fd7bfb65838237e74f34e500472327d2a08edafca9",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "No completefree EnglishGuide or BengaliDharmaprasange verified. Excerpts/lectures rejected; Bengali cover does notsupply Englishtranslation."
+    },
+    {
+      "book_id": 67,
+      "canonical_title": "Swami Brahmananda As We Saw Him",
+      "author": "Swami Atmashraddhananda (compiler/editor)",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "Swami Brahmananda As We Saw Him free full text"
+      ],
+      "sources": [],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-brahmananda-as-we-saw-him-reminiscences-of-monastic-and-lay-devotees/1237499000010758769",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-brahmananda-as-we-saw-him-reminiscences-of-monastic-and-lay-devotees/1237499000010758769",
+          "page_title": "Swami Brahmananda As We Saw Him: Reminiscences | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Ramakrishna Math - Chennai",
+            "List of Authors/Contributors": "A Compilation",
+            "Binding": "Deluxe (Hardbound)",
+            "Language": "English",
+            "Year of Publishing": "2024",
+            "Total Pages": "588",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MDE021_1.jpg/1237499000010827911/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/MDE021_1.jpg/1237499000010827911/1100x1100",
+            "width": 767,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 95066,
+            "sha256": "a84bebed68cd87b225fd8ae47e27cb1c38b69fb87fe86daac7abcf8450cf10ed",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-brahmananda-as-we-saw-him/swami-brahmananda-as-we-saw-him.html",
+          "http_status": 200,
+          "actual_text_characters": 972754,
+          "decision": "candidate_existing_reader_pending_QA",
+          "rights": "No text redistribution licence inferred from free public access.",
+          "completeness": "Actualbody972754characters,40accountsplusappendices,contributors,sourcesandfinalglossarythroughViveka. OpeningVijnananandareminiscence andlastVenkateshwaranbody observed. InstitutionalAtmashraddhananda/Chennaiidentity; exactprintimpressionnotmatched."
+        }
+      ],
+      "prior_candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-brahmananda-as-we-saw-him/swami-brahmananda-as-we-saw-him.html",
+          "language": "English",
+          "volume": "Single collection;40accounts plus appendices",
+          "edition": "Atmashraddhananda; Sri Ramakrishna Math Chennai; exact print impression not conclusively matched",
+          "access": "Public institutional HTML without login",
+          "completeness": "Substantial40-account collection and back matter present; body/opening/end sampled, not page-for-page print collation",
+          "rights": "Institutional public hosting; no explicit redistribution license inspected",
+          "decision": "pending_independent_QA"
+        }
+      ],
+      "text_outcome": "Existing institutional40accountcollection plusappendices/glossary rechecked; exactprintimpressionunknown. PendingQA."
+    },
+    {
+      "book_id": 68,
+      "canonical_title": "Swami Brahmanander Smritikatha",
+      "author": "Swami Chetanananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "স্বামী ব্রহ্মানন্দের স্মৃতিকথা pdf",
+        "স্বামী ব্রহ্মানন্দের স্মৃতিকথা অনলাইনে"
+      ],
+      "sources": [
+        {
+          "url": "https://udbodhan.org/product/স্বামী-ব্রহ্মানন্দের-স্ম",
+          "observation": "OfficialpaidBengalititle; noactualwholetext found. Chetananandaidentity confirmed byAdvaitaproduct metadata. RelatedEnglishcompilationID67 isnotautomaticallysameBengaliedition."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-brahmanander-smritikatha-reminiscences-of-swami-brahmananda/1237499000010647575",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-brahmanander-smritikatha-reminiscences-of-swami-brahmananda/1237499000010647575",
+          "page_title": "Reminiscences of Swami Brahmananda | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Udbodhan Karyalaya",
+            "List of Authors/Contributors": "Swami Chetanananda",
+            "Binding": "Deluxe (Hardbound)",
+            "Language": "Bengali",
+            "Year of Publishing": "2024",
+            "Total Pages": "540",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB042_1.jpg/1237499000010704088/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/UDB042_1.jpg/1237499000010704088/1100x1100",
+            "width": 755,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 83740,
+            "sha256": "a85b285607dcfa417e1fb2a29533d5e329e5e2c11983fd75948fab6001e67917",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "No completefree BengaliChetananandacollection verified. RelatedEnglishID67 isnot silently substituted."
+    }
+  ],
+  "checkpoints": [
+    {
+      "works": 5,
+      "official_cover_leads": 4,
+      "pixels_measured": 4,
+      "covers_cleared": 0,
+      "existing_reader_work_ids": [
+        67
+      ],
+      "new_complete_reader_ids": [],
+      "inaccessible_pdf_hold_ids": [
+        65
+      ],
+      "no_verified_free_full_text_ids": [
+        64,
+        66,
+        68
+      ],
+      "new_public_links_approved": 0,
+      "QA": "pending"
+    }
+  ]
+}

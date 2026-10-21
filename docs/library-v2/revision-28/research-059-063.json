@@ -1,0 +1,345 @@
+{
+  "schema_version": 1,
+  "issue": "https://github.com/krishna101-tech/saradakosh/issues/28",
+  "scope": "Frozen checkpoint retainedIDs59–63 only; research, not approved content",
+  "checked_at": "2026-10-16",
+  "provenance": {
+    "researcher": "gpt-6.1-sol High, assigned research worker",
+    "cost": "Included public web and local requests; no purchase, paid API, hosted build or redistribution",
+    "quota": "Parent supplied primary0% start; weekly62%;credits0; worker telemetry not observable",
+    "AAA_GOAL": "Luna coordinates; latest eligible Sol High research/implementation and independent Sol Medium QA under current owner task packet; sequential approval stages; zero incremental cost",
+    "method": "Bounded exact-title/original Bengali/transliteration searches, actual reader beginning/end and volume checks where accessible; discovery distinct from legal clearance. Prior candidates explicitly marked historical until rechecked."
+  },
+  "books": [
+    {
+      "book_id": 59,
+      "canonical_title": "যুগনায়ক",
+      "author": "Gambhirananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "যুগনায়ক বিবেকানন্দ পাঠ গম্ভীরানন্দ"
+      ],
+      "sources": [],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/yuganayak-vivekananda-vol-1/1237499000010659461",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/yuganayak-vivekananda-vol-1/1237499000010659461",
+          "page_title": "Yuganayak Vivekananda (Vol.1) by Swami Gambhirananda | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Udbodhan Karyalaya",
+            "List of Authors/Contributors": "Swami Gambhirananda",
+            "Binding": "Deluxe (Hardbound)",
+            "Language": "Bengali",
+            "Total Pages": "376",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UVB051_1.jpg/1237499000010717715/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/UVB051_1.jpg/1237499000010717715/1100x1100",
+            "width": 210,
+            "height": 325,
+            "format": "JPEG",
+            "bytes": 31073,
+            "sha256": "183e57b8b4e1ff37bff67451fdf1be3551c32e08c0692a890b2faafa1ec243f2",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/yuganayak/yuganayak_v1.html",
+          "http_status": 200,
+          "actual_text_characters": 894729,
+          "decision": "candidate_existing_AI_transcription_pending_QA",
+          "rights": "No text redistribution licence inferred from free public access.",
+          "completeness": "Actualvolume1body894729characters; volume-specificopeningnarrative and terminalindex/bibliography observed. All3volumes. HostAI-assistedreferenceonlywarning retained; printededitionauthority. Exactprintimpression unverified."
+        },
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/yuganayak/yuganayak_v2.html",
+          "http_status": 200,
+          "actual_text_characters": 884286,
+          "decision": "candidate_existing_AI_transcription_pending_QA",
+          "rights": "No text redistribution licence inferred from free public access.",
+          "completeness": "Actualvolume2body884286characters; volume-specificopeningnarrative and terminalindex/bibliography observed. All3volumes. HostAI-assistedreferenceonlywarning retained; printededitionauthority. Exactprintimpression unverified."
+        },
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/yuganayak/yuganayak_v3.html",
+          "http_status": 200,
+          "actual_text_characters": 898002,
+          "decision": "candidate_existing_AI_transcription_pending_QA",
+          "rights": "No text redistribution licence inferred from free public access.",
+          "completeness": "Actualvolume3body898002characters; volume-specificopeningnarrative and terminalindex/bibliography observed. All3volumes. HostAI-assistedreferenceonlywarning retained; printededitionauthority. Exactprintimpression unverified."
+        }
+      ],
+      "prior_candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/yuganayak/yuganayak_v1.html",
+          "language": "Bengali",
+          "volume": "1",
+          "edition": "Swami Gambhirananda; print edition not conclusively identified",
+          "access": "Public institutional HTML without login",
+          "completeness": "Substantial volume-specific narrative and back matter; sampled opening/end, not line-by-line collated",
+          "rights": "Public institutional hosting; no explicit redistribution license inspected",
+          "fidelity": "Host explicitly warns AI-assisted reference transcription and printed edition authority",
+          "decision": "pending_independent_QA"
+        },
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/yuganayak/yuganayak_v2.html",
+          "language": "Bengali",
+          "volume": "2",
+          "edition": "Swami Gambhirananda; print edition not conclusively identified",
+          "access": "Public institutional HTML without login",
+          "completeness": "Substantial volume-specific narrative and back matter; sampled opening/end, not line-by-line collated",
+          "rights": "Public institutional hosting; no explicit redistribution license inspected",
+          "fidelity": "Host explicitly warns AI-assisted reference transcription and printed edition authority",
+          "decision": "pending_independent_QA"
+        },
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/yuganayak/yuganayak_v3.html",
+          "language": "Bengali",
+          "volume": "3",
+          "edition": "Swami Gambhirananda; print edition not conclusively identified",
+          "access": "Public institutional HTML without login",
+          "completeness": "Substantial volume-specific narrative and back matter; sampled opening/end, not line-by-line collated",
+          "rights": "Public institutional hosting; no explicit redistribution license inspected",
+          "fidelity": "Host explicitly warns AI-assisted reference transcription and printed edition authority",
+          "decision": "pending_independent_QA"
+        }
+      ],
+      "text_outcome": "All3existing institutionalAItranscription volumes rechecked; printededitionauthority warning mandatory. No new readercount."
+    },
+    {
+      "book_id": 60,
+      "canonical_title": "লন্ডনে স্বামী বিবেকানন্দ ১-২",
+      "author": "Mahendranath Dutta",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "লন্ডনে স্বামী বিবেকানন্দ pdf",
+        "Wikisource Mahendranath Dutta category Londone"
+      ],
+      "sources": [
+        {
+          "url": "https://bn.wikisource.org/wiki/বিষয়শ্রেণী:মহেন্দ্রনাথ_দত্ত_রচিত",
+          "observation": "Actual indexed category identifies1956Part1scan242pages plus anotherLondonescan197pages. Directindexopensfailed; actualall-volume first/lastbody not established."
+        },
+        {
+          "url": "https://granthagara.com/boi/331511-londone-swami-vivekananda-vol1-ed2nd/",
+          "observation": "DiscoveryPart1secondedition242pages, MahendranathDutta. Sampletext/metadata not proof of2volumes or originalscanrights."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/londone-swami-vivekananda-bengali/1237499000011857101",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/londone-swami-vivekananda-bengali/1237499000011857101",
+          "page_title": "Londone Swami Vivekananda (Bengali) by Mohendra Nath Dutta | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "The Mohendra Publishing Committee",
+            "List of Authors/Contributors": "Mohendra Nath Dutta",
+            "Binding": "Deluxe (Hardbound)",
+            "Language": "Bengali",
+            "Year of Publishing": "2024",
+            "Total Pages": "359",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/OOB556_1.jpg/1237499000011918050/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/OOB556_1.jpg/1237499000011918050/1100x1100",
+            "width": 774,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 79034,
+            "sha256": "ec277e6ff121cc3d029c341513177b56b2fb8394d5d268f797d3da57616b0fd6",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "242pagePart1and197pageWikisourcescan leads; directindexaccess failed. Both-volume actualfirst/lastandrights unresolved; HOLD."
+    },
+    {
+      "book_id": 61,
+      "canonical_title": "স্বামী বিবেকানন্দের বাল্যজীবনী",
+      "author": "Mahendranath Dutta",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "Swami Vivekanander Balya Jivani free text",
+        "স্বামী বিবেকানন্দের বাল্যজীবনী pdf মহেন্দ্রনাথ",
+        "স্বামী বিবেকানন্দের বাল্য মহেন্দ্রনাথ pdf"
+      ],
+      "sources": [
+        {
+          "url": "https://www.mugberiagangadharmahavidyalaya.ac.in/Files/1700224688ARTICLE%2C%20PRITAM%20KATHAM%202023.pdf",
+          "observation": "Institutionalarticle referencesMahendranathDuttachildhoodbook; citationonly, notbookbody."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-vivekanander-balya-jivani-bengali/1237499000011869881",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-vivekanander-balya-jivani-bengali/1237499000011869881",
+          "page_title": "Swami Vivekanander Balya Jivani by M.N. Dutta | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "The Mohendra Publishing Committee",
+            "List of Authors/Contributors": "Mohendra Nath Dutta",
+            "Binding": "Paperback",
+            "Language": "Bengali",
+            "Year of Publishing": "2023",
+            "Total Pages": "84",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/OOB534_1.jpg/1237499000011917335/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/OOB534_1.jpg/1237499000011917335/1100x1100",
+            "width": 813,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 67919,
+            "sha256": "b48b1978784b7e44f92d0aad429e53b1b34571e11c9681633a6615e981e821aa",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "No completefree text verified after Bengali/transliteration search; citations and officialpaidbook only."
+    },
+    {
+      "book_id": 62,
+      "canonical_title": "স্বামীজীর পদপ্রান্তে",
+      "author": "Abjajananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "স্বামীজীর পদপ্রান্তে pdf"
+      ],
+      "sources": [
+        {
+          "url": "https://udbodhan.org/product/স্বামীজীর-পদপ্রান্তে-swamijir-padaprante",
+          "observation": "OfficialBengalipublication retails300rupees, subjectsVivekanandadisciples. Peekinside/sample notwholebook. Audiobooksegments notapprovedreader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swamijir-padaprante/1237499000010647503",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swamijir-padaprante/1237499000010647503",
+          "page_title": "Swamijir Padaprante by Swami Abjajananda | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Udbodhan Karyalaya",
+            "List of Authors/Contributors": "Swami Abjajananda",
+            "Binding": "Deluxe (Hardbound)",
+            "Language": "Bengali",
+            "Year of Publishing": "2024",
+            "Total Pages": "464",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB039_1.jpg/1237499000010704018/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/UDB039_1.jpg/1237499000010704018/1100x1100",
+            "width": 778,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 108907,
+            "sha256": "b473a423749e8bf3ef0ecd6f0fd5a0030a1f9f65f049756a4960a5a75c8805e7",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "No completefree writtenreader verified. Officialpaidlisting and isolatedaudiobookepisodes notaccepted."
+    },
+    {
+      "book_id": 63,
+      "canonical_title": "স্মৃতির আলোয় স্বামীজী",
+      "author": "Purnatmananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "স্মৃতির আলোয় স্বামীজী পূর্ণাত্মানন্দ পাঠ"
+      ],
+      "sources": [
+        {
+          "url": "https://granthagara.com/boi/324196-smritir-aloy-swamiji/",
+          "observation": "402pages, SwamiPurnatmananda scanlead; samplemachineOCR only, archivefullbody andrights notverified."
+        },
+        {
+          "url": "https://udbodhan.org/product/স্মৃতির-আলোয়-স্বামীজী-smritir-aloy-swamiji",
+          "observation": "Officialdescription46mainreminiscences+9appendix; paid230rupees. Completenessbenchmark only."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/smritir-aloye-swamiji/1237499000010660613",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/smritir-aloye-swamiji/1237499000010660613",
+          "page_title": "Smritir Aloye Swamiji by A Compilation | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Udbodhan Karyalaya",
+            "List of Authors/Contributors": "A Compilation",
+            "Binding": "Deluxe (Hardbound)",
+            "Language": "Bengali",
+            "Total Pages": "383",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UVB087_1.jpg/1237499000010719594/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/UVB087_1.jpg/1237499000010719594/1100x1100",
+            "width": 218,
+            "height": 325,
+            "format": "JPEG",
+            "bytes": 22114,
+            "sha256": "955511bafebc3421dee2e0d1c96adf338ff2c5aa7fb38250e163348c09512c74",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "402page scanlead found; officialbenchmark46main+9appendix; no all-body/rights verification. HOLD; baseline languagecell alone is notpublicreader."
+    }
+  ],
+  "checkpoints": [
+    {
+      "works": 5,
+      "official_cover_leads": 5,
+      "pixels_measured": 5,
+      "covers_cleared": 0,
+      "existing_reader_work_ids": [
+        59
+      ],
+      "new_complete_reader_ids": [],
+      "scan_leads_held_ids": [
+        60,
+        63
+      ],
+      "no_verified_free_full_text_ids": [
+        61,
+        62
+      ],
+      "new_public_links_approved": 0,
+      "QA": "pending"
+    }
+  ]
+}

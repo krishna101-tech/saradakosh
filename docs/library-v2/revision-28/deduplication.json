@@ -1,0 +1,687 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-16",
+  "issue": "https://github.com/krishna101-tech/saradakosh/issues/28",
+  "baseline_sha": "1069fc336c1e9f900440fea2f1bfa2a0404cd98c",
+  "researcher": "gpt-6.1-sol High",
+  "status": "DESIGN_ONLY_PENDING_INDEPENDENT_QA",
+  "source_mutations": false,
+  "all_16_duplicates_verified": false,
+  "visible_count_152_approved": false,
+  "findings": "Underlying named texts33–42 are included. Edition/editorial extras remain qualified. IDs43,45,46,47 have material independent-content or identity holds;44/48 need full exact-edition reconciliation. No removal/migration authorized by this evidence alone.",
+  "primary_extra_sources": [
+    {
+      "url": "https://advaitaashrama.org/letters-of-swami-vivekananda-pre-booking/",
+      "finding": "2025 four-volume815-letter edition adds restored readings and historical apparatus."
+    },
+    {
+      "url": "https://shop.advaitaashrama.org/products/poems-of-swami-vivekananda/1237499000011876245",
+      "finding": "Suparnananda326-page commentary, not a pure Vivekananda-text reprint."
+    },
+    {
+      "url": "https://shop.advaitaashrama.org/products/vivekananda-his-call-to-the-nation/1237499000010262129",
+      "finding": "112-page anthology; actual full selection contents not established."
+    },
+    {
+      "url": "https://shop.advaitaashrama.org/categories/vivekananda-teachings/1237499000000056234",
+      "finding": "Message of Vivekananda catalogue identity only."
+    }
+  ],
+  "english_cw_volumes": [
+    {
+      "volume": 1,
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/complete_works_v1_contents.htm",
+      "http_status": 200
+    },
+    {
+      "volume": 2,
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/volume_2_contents.htm",
+      "http_status": 200
+    },
+    {
+      "volume": 3,
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/volume_3_contents.htm",
+      "http_status": 200
+    },
+    {
+      "volume": 4,
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_4/volume_4_contents.htm",
+      "http_status": 200
+    },
+    {
+      "volume": 5,
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_5/volume_5_contents.htm",
+      "http_status": 200
+    },
+    {
+      "volume": 6,
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_6/volume_6_contents.htm",
+      "http_status": 200
+    },
+    {
+      "volume": 7,
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/volume_7_contents.htm",
+      "http_status": 200
+    },
+    {
+      "volume": 8,
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_8/volume_8_contents.htm",
+      "http_status": 200
+    },
+    {
+      "volume": 9,
+      "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_9/volume_9_contents.htm",
+      "http_status": 200
+    }
+  ],
+  "bengali_cw_volumes": [
+    {
+      "volume": 1,
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_01.html",
+      "http_status": 200,
+      "body_scope": "actual body inspected structurally; no complete modern edition or scan-page equivalence certified"
+    },
+    {
+      "volume": 2,
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_02.html",
+      "http_status": 200,
+      "body_scope": "actual body inspected structurally; no complete modern edition or scan-page equivalence certified"
+    },
+    {
+      "volume": 3,
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_03.html",
+      "http_status": 200,
+      "body_scope": "actual body inspected structurally; no complete modern edition or scan-page equivalence certified"
+    },
+    {
+      "volume": 4,
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_04.html",
+      "http_status": 200,
+      "body_scope": "actual body inspected structurally; no complete modern edition or scan-page equivalence certified"
+    },
+    {
+      "volume": 5,
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_05.html",
+      "http_status": 200,
+      "body_scope": "actual body inspected structurally; no complete modern edition or scan-page equivalence certified"
+    },
+    {
+      "volume": 6,
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_06.html",
+      "http_status": 200,
+      "body_scope": "actual body inspected structurally; no complete modern edition or scan-page equivalence certified"
+    },
+    {
+      "volume": 7,
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_07.html",
+      "http_status": 200,
+      "body_scope": "actual body inspected structurally; no complete modern edition or scan-page equivalence certified"
+    },
+    {
+      "volume": 8,
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_08.html",
+      "http_status": 200,
+      "body_scope": "actual body inspected structurally; no complete modern edition or scan-page equivalence certified"
+    },
+    {
+      "volume": 9,
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_09.html",
+      "http_status": 200,
+      "body_scope": "actual body inspected structurally; no complete modern edition or scan-page equivalence certified"
+    },
+    {
+      "volume": 10,
+      "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_10.html",
+      "http_status": 200,
+      "body_scope": "actual body inspected structurally; no complete modern edition or scan-page equivalence certified"
+    }
+  ],
+  "legacy_mapping": [
+    {
+      "legacy_id": 33,
+      "legacy_sheet_row": 34,
+      "title": "Raja Yoga",
+      "candidate_canonical_id": 32,
+      "status": "WORK_TEXT_INCLUSION_VERIFIED_EDITORIAL_EDITION_HOLD",
+      "public_removal_approved": false,
+      "evidence": "Named Vivekananda work body is constituent of CW. Specific modern standalone publisher prefaces/front matter not supplied by baseline; do not claim edition facsimile or delete editorial metadata.",
+      "english_cw_anchors": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/raja-yoga_contents.htm",
+          "http_status": 200,
+          "coverage_status": "actual body or contents inspected"
+        }
+      ],
+      "editorial_action": "Preserve title/author/edition/front matter and original source URLs in historical mapping. Do not replace a qualified selection with a whole-volume completeness claim.",
+      "bengali_cw_mapping": {
+        "volume": 1,
+        "section": "রাজযোগ",
+        "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_01.html#content-37",
+        "anchor_id_observed": true,
+        "caveat": "Actual div ID and section heading observed; hash navigation/user-visible selection requires browser QA. Volume equivalence is work-level, not pagination/modern edition identity."
+      },
+      "first_last_body_checks": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/preface.htm",
+          "status": 200,
+          "actual_text_chars": 4971,
+          "first_section_evidence": "Preface ← Home / Complete-Works / Volume 1 / Raja-Yoga / → RAJA-YOGA PREFACE Since the dawn of",
+          "last_section_evidence": "whole of religion. Doctrines, or dogmas, or rituals, or books, or temples, or forms, are but secondary details."
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/appendix.htm",
+          "status": 200,
+          "actual_text_chars": 9932,
+          "first_section_evidence": "Appendix ← Home / Complete-Works / Volume 1 / Raja-Yoga / → PATANJALI'S YOGA APHORISMS APPENDIX REFERENCES TO",
+          "last_section_evidence": "These several extracts give an idea of what other systems of Indian Philosophy have to say upon Yoga."
+        }
+      ]
+    },
+    {
+      "legacy_id": 34,
+      "legacy_sheet_row": 35,
+      "title": "Karma Yoga",
+      "candidate_canonical_id": 32,
+      "status": "WORK_TEXT_INCLUSION_VERIFIED_EDITORIAL_EDITION_HOLD",
+      "public_removal_approved": false,
+      "evidence": "Named Vivekananda work body is constituent of CW. Specific modern standalone publisher prefaces/front matter not supplied by baseline; do not claim edition facsimile or delete editorial metadata.",
+      "english_cw_anchors": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/karma-yoga/karma-yoga_contents.htm",
+          "http_status": 200,
+          "coverage_status": "actual body or contents inspected"
+        }
+      ],
+      "editorial_action": "Preserve title/author/edition/front matter and original source URLs in historical mapping. Do not replace a qualified selection with a whole-volume completeness claim.",
+      "bengali_cw_mapping": {
+        "volume": 1,
+        "section": "কর্মযোগ",
+        "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_01.html#content-12",
+        "anchor_id_observed": true,
+        "caveat": "Actual div ID and section heading observed; hash navigation/user-visible selection requires browser QA. Volume equivalence is work-level, not pagination/modern edition identity."
+      },
+      "first_last_body_checks": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/karma-yoga/effect_on_character.htm",
+          "status": 200,
+          "actual_text_chars": 15838,
+          "first_section_evidence": "Effect on character ← Home / Complete-Works / Volume 1 / Karma-Yoga / → CHAPTER I KARMA IN",
+          "last_section_evidence": "attain to that, all our powers will be concentrated, and the knowledge which is ours will be manifest."
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_1/karma-yoga/the_ideal.htm",
+          "status": 200,
+          "actual_text_chars": 19992,
+          "first_section_evidence": "The ideal ← Home / Complete-Works / Volume 1 / Karma-Yoga / → CHAPTER VIII THE IDEAL OF",
+          "last_section_evidence": "in such a manner as will transform the world. This man represents the very highest ideal of Karma-Yoga."
+        }
+      ]
+    },
+    {
+      "legacy_id": 35,
+      "legacy_sheet_row": 36,
+      "title": "Jnana Yoga",
+      "candidate_canonical_id": 32,
+      "status": "WORK_TEXT_INCLUSION_VERIFIED_EDITORIAL_EDITION_HOLD",
+      "public_removal_approved": false,
+      "evidence": "Named Vivekananda work body is constituent of CW. Specific modern standalone publisher prefaces/front matter not supplied by baseline; do not claim edition facsimile or delete editorial metadata.",
+      "english_cw_anchors": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/jnana-yoga_contents.htm",
+          "http_status": 200,
+          "coverage_status": "actual body or contents inspected"
+        }
+      ],
+      "editorial_action": "Preserve title/author/edition/front matter and original source URLs in historical mapping. Do not replace a qualified selection with a whole-volume completeness claim.",
+      "bengali_cw_mapping": {
+        "volume": 2,
+        "section": "জ্ঞানযোগ",
+        "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_02.html#content-60",
+        "anchor_id_observed": true,
+        "caveat": "Actual div ID and section heading observed; hash navigation/user-visible selection requires browser QA. Volume equivalence is work-level, not pagination/modern edition identity."
+      },
+      "first_last_body_checks": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/the_necessity_of_religion.htm",
+          "status": 200,
+          "actual_text_chars": 24115,
+          "first_section_evidence": "The necessity of religion ← Home / Complete-Works / Volume 2 / Jnana-Yoga / → CHAPTER I THE",
+          "last_section_evidence": "both, where the mind and senses cannot reach — the Absolute, the Infinite, the One without a second."
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_2/jnana-yoga/the_real_and_the_apparent_man.htm",
+          "status": 200,
+          "actual_text_chars": 51078,
+          "first_section_evidence": "The real and the apparent man ← Home / Complete-Works / Volume 2 / Jnana-Yoga / → CHAPTER",
+          "last_section_evidence": "its myriads of suns and moons, through everything that speaks, with one voice will say, \"Thou art That\"."
+        }
+      ]
+    },
+    {
+      "legacy_id": 36,
+      "legacy_sheet_row": 37,
+      "title": "Bhakti Yoga",
+      "candidate_canonical_id": 32,
+      "status": "WORK_TEXT_INCLUSION_VERIFIED_EDITORIAL_EDITION_HOLD",
+      "public_removal_approved": false,
+      "evidence": "Named Vivekananda work body is constituent of CW. Specific modern standalone publisher prefaces/front matter not supplied by baseline; do not claim edition facsimile or delete editorial metadata.",
+      "english_cw_anchors": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/bhakti-yoga_contents.htm",
+          "http_status": 200,
+          "coverage_status": "actual body or contents inspected"
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/para-bhakti_or_supreme_devotion_contents.htm",
+          "http_status": 200,
+          "coverage_status": "actual body or contents inspected"
+        }
+      ],
+      "editorial_action": "Preserve title/author/edition/front matter and original source URLs in historical mapping. Do not replace a qualified selection with a whole-volume completeness claim.",
+      "bengali_cw_mapping": {
+        "volume": 4,
+        "section": "ভক্তিযোগ",
+        "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_04.html#content-162",
+        "anchor_id_observed": true,
+        "caveat": "Actual div ID and section heading observed; hash navigation/user-visible selection requires browser QA. Volume equivalence is work-level, not pagination/modern edition identity."
+      },
+      "first_last_body_checks": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/definition_of_bhakti.htm",
+          "status": 200,
+          "actual_text_chars": 10954,
+          "first_section_evidence": "Definition of Bhakti ← Home / Complete-Works / Volume 3 / Bhakti-Yoga / → CHAPTER I PRAYER स",
+          "last_section_evidence": "efforts at religious realisation beginning with ordinary worship and ending in a supreme intensity of love for Ishvara."
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/bhakti-yoga/the_method_and_the_means.htm",
+          "status": 200,
+          "actual_text_chars": 10356,
+          "first_section_evidence": "The method and the means ← Home / Complete-Works / Volume 3 / Bhakti-Yoga / → CHAPTER X",
+          "last_section_evidence": "condition of harmonious equilibrium. It is thus that one may begin to learn how to love the Lord."
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/the_preparatory_renunciation.htm",
+          "status": 200,
+          "actual_text_chars": 6165,
+          "first_section_evidence": "The preparatory reununciation ← Home / Complete-Works / Volume 3 / Para-Bhakti or Supreme Devotion / → CHAPTER",
+          "last_section_evidence": "suppress any single one of his emotions, he only strives to intensify them and direct them to God."
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/para-bhakti_or_supreme_devotion/conclusion.htm",
+          "status": 200,
+          "actual_text_chars": 2993,
+          "first_section_evidence": "Conclusion ← Home / Complete-Works / Volume 3 / Para-Bhakti or Supreme Devotion → CHAPTER X CONCLUSION When",
+          "last_section_evidence": "he realises at last the beautiful and inspiring truth that Love, the Lover, and the Beloved are One."
+        }
+      ]
+    },
+    {
+      "legacy_id": 37,
+      "legacy_sheet_row": 38,
+      "title": "Lectures from Colombo to Almora",
+      "candidate_canonical_id": 32,
+      "status": "WORK_TEXT_INCLUSION_VERIFIED_EDITORIAL_EDITION_HOLD",
+      "public_removal_approved": false,
+      "evidence": "Named Vivekananda work body is constituent of CW. Specific modern standalone publisher prefaces/front matter not supplied by baseline; do not claim edition facsimile or delete editorial metadata.",
+      "english_cw_anchors": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/lectures_from_colombo_to_almora_contents.htm",
+          "http_status": 200,
+          "coverage_status": "actual body or contents inspected"
+        }
+      ],
+      "editorial_action": "Preserve title/author/edition/front matter and original source URLs in historical mapping. Do not replace a qualified selection with a whole-volume completeness claim.",
+      "bengali_cw_mapping": {
+        "volume": 5,
+        "section": "ভারতে বিবেকানন্দ",
+        "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_05.html#content-226",
+        "anchor_id_observed": true,
+        "caveat": "Actual div ID and section heading observed; hash navigation/user-visible selection requires browser QA. Volume equivalence is work-level, not pagination/modern edition identity."
+      },
+      "first_last_body_checks": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/first_public_lecture_in_the_east_%28colombo%29.htm",
+          "status": 200,
+          "actual_text_chars": 25263,
+          "first_section_evidence": "First public lesture in the East (Colombo) ← Home / Complete-Works / Volume 3 / Lectures from Colombo",
+          "last_section_evidence": "or unlearned, without respect of race, caste, or creed. \"They call Thee by various names; Thou art One.\""
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/the_religion_we_are_born_in.htm",
+          "status": 200,
+          "actual_text_chars": 15449,
+          "first_section_evidence": "The religion we are born in ← Home / Complete-Works / Volume 3 / Lectures from Colombo to",
+          "last_section_evidence": "to one and all, and give the downtrodden masses once more their just and legitimate rights and privileges.\""
+        }
+      ]
+    },
+    {
+      "legacy_id": 38,
+      "legacy_sheet_row": 39,
+      "title": "Inspired Talks",
+      "candidate_canonical_id": 32,
+      "status": "WORK_TEXT_INCLUSION_VERIFIED_EDITORIAL_EDITION_HOLD",
+      "public_removal_approved": false,
+      "evidence": "Named Vivekananda work body is constituent of CW. Specific modern standalone publisher prefaces/front matter not supplied by baseline; do not claim edition facsimile or delete editorial metadata.",
+      "english_cw_anchors": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/inspired_talks_contents.htm",
+          "http_status": 200,
+          "coverage_status": "actual body or contents inspected"
+        }
+      ],
+      "editorial_action": "Preserve title/author/edition/front matter and original source URLs in historical mapping. Do not replace a qualified selection with a whole-volume completeness claim.",
+      "bengali_cw_mapping": {
+        "volume": 4,
+        "section": "দেববাণী",
+        "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_04.html#content-190",
+        "anchor_id_observed": true,
+        "caveat": "Actual div ID and section heading observed; hash navigation/user-visible selection requires browser QA. Volume equivalence is work-level, not pagination/modern edition identity."
+      },
+      "first_last_body_checks": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/01_wednesday_june_19.htm",
+          "status": 200,
+          "actual_text_chars": 5860,
+          "first_section_evidence": "Wednesday June 19 1895 ← Home / Complete-Works / Volume 7 / Inspired Talks / → RECORDED BY",
+          "last_section_evidence": "primary principles one being called Ormuzd (the principle of Good) and the other Ahriman (the principle of Evil)."
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/44_tuesday_august_6.htm",
+          "status": 200,
+          "actual_text_chars": 6098,
+          "first_section_evidence": "Tuesday August 6 1895 ← Home / Complete-Works / Volume 7 / Inspired Talks / → RECORDED BY",
+          "last_section_evidence": "of our beloved Guru. The following Monday he left Thousand Island Park and returned to New York. )"
+        }
+      ]
+    },
+    {
+      "legacy_id": 39,
+      "legacy_sheet_row": 40,
+      "title": "My Master",
+      "candidate_canonical_id": 32,
+      "status": "WORK_TEXT_INCLUSION_VERIFIED_EDITORIAL_EDITION_HOLD",
+      "public_removal_approved": false,
+      "evidence": "Named Vivekananda work body is constituent of CW. Specific modern standalone publisher prefaces/front matter not supplied by baseline; do not claim edition facsimile or delete editorial metadata.",
+      "english_cw_anchors": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_4/lectures_and_discourses/my_master.htm",
+          "http_status": 200,
+          "coverage_status": "actual body or contents inspected"
+        }
+      ],
+      "editorial_action": "Preserve title/author/edition/front matter and original source URLs in historical mapping. Do not replace a qualified selection with a whole-volume completeness claim.",
+      "bengali_cw_mapping": {
+        "volume": 8,
+        "section": "মদীয় আচার্যদেব",
+        "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_08.html#content-459",
+        "anchor_id_observed": true,
+        "caveat": "Actual div ID and section heading observed; hash navigation/user-visible selection requires browser QA. Volume equivalence is work-level, not pagination/modern edition identity."
+      },
+      "first_last_body_checks": []
+    },
+    {
+      "legacy_id": 40,
+      "legacy_sheet_row": 41,
+      "title": "The East and the West",
+      "candidate_canonical_id": 32,
+      "status": "WORK_TEXT_INCLUSION_VERIFIED_EDITORIAL_EDITION_HOLD",
+      "public_removal_approved": false,
+      "evidence": "Named Vivekananda work body is constituent of CW. Specific modern standalone publisher prefaces/front matter not supplied by baseline; do not claim edition facsimile or delete editorial metadata.",
+      "english_cw_anchors": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_5/writings_prose_and_poems/the_east_and_the_west.htm",
+          "http_status": 200,
+          "coverage_status": "actual body or contents inspected"
+        }
+      ],
+      "editorial_action": "Preserve title/author/edition/front matter and original source URLs in historical mapping. Do not replace a qualified selection with a whole-volume completeness claim.",
+      "bengali_cw_mapping": {
+        "volume": 6,
+        "section": "প্রাচ্য ও পাশ্চাত্য",
+        "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_06.html#content-307",
+        "anchor_id_observed": true,
+        "caveat": "Actual div ID and section heading observed; hash navigation/user-visible selection requires browser QA. Volume equivalence is work-level, not pagination/modern edition identity."
+      },
+      "first_last_body_checks": []
+    },
+    {
+      "legacy_id": 41,
+      "legacy_sheet_row": 42,
+      "title": "Modern India",
+      "candidate_canonical_id": 32,
+      "status": "WORK_TEXT_INCLUSION_VERIFIED_EDITORIAL_EDITION_HOLD",
+      "public_removal_approved": false,
+      "evidence": "Named Vivekananda work body is constituent of CW. Specific modern standalone publisher prefaces/front matter not supplied by baseline; do not claim edition facsimile or delete editorial metadata.",
+      "english_cw_anchors": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_4/translation_prose/modern_india.htm",
+          "http_status": 200,
+          "coverage_status": "actual body or contents inspected"
+        }
+      ],
+      "editorial_action": "Preserve title/author/edition/front matter and original source URLs in historical mapping. Do not replace a qualified selection with a whole-volume completeness claim.",
+      "bengali_cw_mapping": {
+        "volume": 6,
+        "section": "বর্তমান ভারত",
+        "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_06.html#content-324",
+        "anchor_id_observed": true,
+        "caveat": "Actual div ID and section heading observed; hash navigation/user-visible selection requires browser QA. Volume equivalence is work-level, not pagination/modern edition identity."
+      },
+      "first_last_body_checks": []
+    },
+    {
+      "legacy_id": 42,
+      "legacy_sheet_row": 43,
+      "title": "Memoirs of European Travel",
+      "candidate_canonical_id": 32,
+      "status": "WORK_TEXT_INCLUSION_VERIFIED_EDITORIAL_EDITION_HOLD",
+      "public_removal_approved": false,
+      "evidence": "Named Vivekananda work body is constituent of CW. Specific modern standalone publisher prefaces/front matter not supplied by baseline; do not claim edition facsimile or delete editorial metadata.",
+      "english_cw_anchors": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/translation_of_writings/memoirs_of_european_travel_i.htm",
+          "http_status": 200,
+          "coverage_status": "actual body or contents inspected"
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/translation_of_writings/memoirs_of_european_travel_ii.htm",
+          "http_status": 200,
+          "coverage_status": "actual body or contents inspected"
+        }
+      ],
+      "editorial_action": "Preserve title/author/edition/front matter and original source URLs in historical mapping. Do not replace a qualified selection with a whole-volume completeness claim.",
+      "bengali_cw_mapping": {
+        "volume": 6,
+        "section": "পরিব্রাজক",
+        "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_06.html#content-287",
+        "anchor_id_observed": true,
+        "caveat": "Actual div ID and section heading observed; hash navigation/user-visible selection requires browser QA. Volume equivalence is work-level, not pagination/modern edition identity."
+      },
+      "first_last_body_checks": []
+    },
+    {
+      "legacy_id": 43,
+      "legacy_sheet_row": 44,
+      "title": "Letters of Swami Vivekananda",
+      "candidate_canonical_id": null,
+      "status": "HOLD_INDEPENDENT_REVISED_CONTENT",
+      "public_removal_approved": false,
+      "evidence": "CW Epistles Series1–4 occupy EnglishVol5–8; Bengali letters Vol6–8. Publisher 2025 revised four-volume edition has815 letters, restored original readings/names, new historical notes/charts/appendices/photographs. Cannot infer this edition contained by older nine-volume CW. Preserve ID43 until exact baseline edition and extra content reconciliation.",
+      "english_cw_anchors": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_5/epistles_first_series/epistles_first_series_contents.htm",
+          "http_status": null,
+          "coverage_status": "volume contents confirms named section; complete section audit pending"
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_6/epistles_second_series/epistles_second_series_contents.htm",
+          "http_status": null,
+          "coverage_status": "volume contents confirms named section; complete section audit pending"
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/epistles_third_series/epistles_third_series_contents.htm",
+          "http_status": null,
+          "coverage_status": "volume contents confirms named section; complete section audit pending"
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_8/epistles_fourth_series/epistles_fourth_series_contents.htm",
+          "http_status": null,
+          "coverage_status": "volume contents confirms named section; complete section audit pending"
+        }
+      ],
+      "editorial_action": "Preserve title/author/edition/front matter and original source URLs in historical mapping. Do not replace a qualified selection with a whole-volume completeness claim.",
+      "bengali_cw_mapping": {
+        "volume": 6,
+        "section": "পত্রাবলী (continues Vol7–8)",
+        "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_06.html#content-351",
+        "anchor_id_observed": true,
+        "caveat": "Actual div ID and section heading observed; hash navigation/user-visible selection requires browser QA. Volume equivalence is work-level, not pagination/modern edition identity."
+      },
+      "first_last_body_checks": []
+    },
+    {
+      "legacy_id": 44,
+      "legacy_sheet_row": 45,
+      "title": "Conversations and Dialogues",
+      "candidate_canonical_id": 32,
+      "status": "NAMED_CORPUS_INCLUDED_FULL_EDITION_HOLD",
+      "public_removal_approved": false,
+      "evidence": "English Conversations spread Vol5,6,7; Vol9 has Conversations and Interviews. BengaliVol9 explicitly lists Swami-Shishya-Sambad sections1–46, followed by independent reminiscence materials. Recorder Sharat Chandra Chakravarty attribution and standalone editorial extras must survive. EnglishVol7 alone is insufficient.",
+      "english_cw_anchors": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_5/conversations_and_dialogues/conversations_and_dialogues_contents.htm",
+          "http_status": null,
+          "coverage_status": "volume contents confirms named section; complete section audit pending"
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_6/conversations_and_dialogues/conversations_and_dialogues_contents.htm",
+          "http_status": null,
+          "coverage_status": "volume contents confirms named section; complete section audit pending"
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/conversations_and_dialogues/conversations_and_dialogues_contents.htm",
+          "http_status": null,
+          "coverage_status": "volume contents confirms named section; complete section audit pending"
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_9/conversations_and_interviews.htm",
+          "http_status": null,
+          "coverage_status": "volume contents confirms named section; complete section audit pending"
+        }
+      ],
+      "editorial_action": "Preserve title/author/edition/front matter and original source URLs in historical mapping. Do not replace a qualified selection with a whole-volume completeness claim.",
+      "bengali_cw_mapping": {
+        "volume": 9,
+        "section": "স্বামী-শিষ্য-সংবাদ",
+        "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_09.html#content-470",
+        "anchor_id_observed": true,
+        "caveat": "Actual div ID and section heading observed; hash navigation/user-visible selection requires browser QA. Volume equivalence is work-level, not pagination/modern edition identity."
+      },
+      "first_last_body_checks": []
+    },
+    {
+      "legacy_id": 45,
+      "legacy_sheet_row": 46,
+      "title": "Poems of Swami Vivekananda",
+      "candidate_canonical_id": null,
+      "status": "HOLD_INDEPENDENT_COMMENTARY",
+      "public_removal_approved": false,
+      "evidence": "Exact-title primary publisher matches326-page Swami Suparnananda commentary/translation, ISBN9789388542128. Independent prose scholarship cannot be collapsed merely because underlying Vivekananda poems appear in CW EnglishVol4,5,6,8,9 and BengaliVol6/7. Baseline author Vivekananda is ambiguous: retain ID45 pending authoritative edition disambiguation.",
+      "english_cw_anchors": [
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_4/writings_poems/writings_poems_contents.htm",
+          "http_status": null,
+          "coverage_status": "volume contents confirms named section; complete section audit pending"
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_4/translation_poems/translation_poems_contents.htm",
+          "http_status": null,
+          "coverage_status": "volume contents confirms named section; complete section audit pending"
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_5/writings_prose_and_poems/writings_prose_and_poems_contents.htm",
+          "http_status": null,
+          "coverage_status": "volume contents confirms named section; complete section audit pending"
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_6/writings_prose_and_poems/writings_prose_and_poems_contents.htm",
+          "http_status": null,
+          "coverage_status": "volume contents confirms named section; complete section audit pending"
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_8/writings_poems/writings_poems_contents.htm",
+          "http_status": null,
+          "coverage_status": "volume contents confirms named section; complete section audit pending"
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_9/writings_prose_and_poems/writings_prose_and_poems_contents.htm",
+          "http_status": null,
+          "coverage_status": "volume contents confirms named section; complete section audit pending"
+        }
+      ],
+      "editorial_action": "Preserve title/author/edition/front matter and original source URLs in historical mapping. Do not replace a qualified selection with a whole-volume completeness claim.",
+      "bengali_cw_mapping": {
+        "volume": 6,
+        "section": "বীরবাণী; translated poems also Vol7 content-399",
+        "url": "https://cs.rkmvu.ac.in/~tamal/vani_rachana/vol_06.html#content-339",
+        "anchor_id_observed": true,
+        "caveat": "Actual div ID and section heading observed; hash navigation/user-visible selection requires browser QA. Volume equivalence is work-level, not pagination/modern edition identity."
+      },
+      "first_last_body_checks": []
+    },
+    {
+      "legacy_id": 46,
+      "legacy_sheet_row": 47,
+      "title": "Vivekananda: His Call to the Nation",
+      "candidate_canonical_id": null,
+      "status": "HOLD_SELECTION_EDITION_UNMAPPED",
+      "public_removal_approved": false,
+      "evidence": "Publisher confirms112-page anthology ISBN9788175050181. No actual full anthology TOC/body/editorial introduction inspected; national-life selection theme does not prove exact passage inclusion. Retain historical identity; do not fabricate a CW deep anchor.",
+      "english_cw_anchors": [],
+      "editorial_action": "Preserve title/author/edition/front matter and original source URLs in historical mapping. Do not replace a qualified selection with a whole-volume completeness claim.",
+      "bengali_cw_mapping": {
+        "status": "No exact anthology mapping; do not invent Bengali translation/volume."
+      },
+      "first_last_body_checks": []
+    },
+    {
+      "legacy_id": 47,
+      "legacy_sheet_row": 48,
+      "title": "The Message of Vivekananda",
+      "candidate_canonical_id": null,
+      "status": "HOLD_SELECTION_EDITION_UNMAPPED",
+      "public_removal_approved": false,
+      "evidence": "Exact anthology body/TOC/editorial extras not inspected. Similar Karan Singh Message of Swami Vivekananda is different work. Primary catalogue confirms title, not full content inclusion. Retain until exact edition mapped.",
+      "english_cw_anchors": [],
+      "editorial_action": "Preserve title/author/edition/front matter and original source URLs in historical mapping. Do not replace a qualified selection with a whole-volume completeness claim.",
+      "bengali_cw_mapping": {
+        "status": "No exact anthology mapping; do not invent Bengali translation/volume."
+      },
+      "first_last_body_checks": []
+    },
+    {
+      "legacy_id": 48,
+      "legacy_sheet_row": 49,
+      "title": "To the Youth of India",
+      "candidate_canonical_id": 32,
+      "status": "COMPLETE_INSTITUTIONAL_SELECTION_CW_MAPPING_HOLD",
+      "public_removal_approved": false,
+      "evidence": "Actual official Chandigarh PDF200,94pages841783bytes, nine-lecture TOC and final Religion We Are Born In ending inspected. Seven headings map by title to CWVol3 Colombo–Almora; India’s Message and Why India Still Lives need exact renamed-excerpt matching. No editorial extras in institutional PDF beyond title/TOC, but standalone print edition not certified.",
+      "english_cw_anchors": [
+        {
+          "url": "https://chandigarh.rkmm.org/Vivek%20Mahotsav/Books/To%20the%20youth%20of%20India.pdf",
+          "http_status": null,
+          "coverage_status": "volume contents confirms named section; complete section audit pending"
+        }
+      ],
+      "editorial_action": "Preserve title/author/edition/front matter and original source URLs in historical mapping. Do not replace a qualified selection with a whole-volume completeness claim.",
+      "bengali_cw_mapping": {
+        "status": "No exact anthology mapping; do not invent Bengali translation/volume."
+      },
+      "first_last_body_checks": []
+    }
+  ],
+  "migration_design": "deduplication.md"
+}

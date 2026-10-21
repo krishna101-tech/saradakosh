@@ -1,0 +1,129 @@
+{
+  "observed_at": "2026-10-15T22:00:53.166Z",
+  "mode": "LOCAL FIXTURE: prepared approved image served through intercepted CDN requests; no real CDN asset exists and this is not publication proof",
+  "evidence": [
+    {
+      "width": 390,
+      "dpr": 3,
+      "lowDataRequest": true,
+      "card": {
+        "src": "https://res.cloudinary.com/dljwhlvid/image/upload/v1/saradakosh/library-covers/local-fixture-038-en-inspired-1910-480.avif",
+        "naturalWidth": 169,
+        "naturalHeight": 264,
+        "width": 172,
+        "loading": "lazy",
+        "decoding": "async",
+        "objectFit": "contain"
+      },
+      "modal": {
+        "src": "https://res.cloudinary.com/dljwhlvid/image/upload/v1/saradakosh/library-covers/local-fixture-038-en-inspired-1910-480.avif",
+        "width": 150,
+        "naturalWidth": 150
+      },
+      "assets": [
+        {
+          "url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1/saradakosh/library-covers/local-fixture-038-en-inspired-1910-480.avif",
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1/saradakosh/library-covers/local-fixture-038-en-inspired-1910-480.avif",
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1/saradakosh/library-covers/local-fixture-038-en-inspired-1910-480.avif",
+          "status": 200
+        }
+      ],
+      "failureFallback": true,
+      "fallbackHeight": 229.328125,
+      "fontFallback": true,
+      "fontsBlocked": 9,
+      "listDoesNotLoadImages": true,
+      "lastPage24": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "dpr": 2,
+      "lowDataRequest": false,
+      "card": {
+        "src": "https://res.cloudinary.com/dljwhlvid/image/upload/v1/saradakosh/library-covers/local-fixture-038-en-inspired-1910-480.avif",
+        "naturalWidth": 224,
+        "naturalHeight": 350,
+        "width": 224,
+        "loading": "lazy",
+        "decoding": "async",
+        "objectFit": "contain"
+      },
+      "modal": {
+        "src": "https://res.cloudinary.com/dljwhlvid/image/upload/v1/saradakosh/library-covers/local-fixture-038-en-inspired-1910-480.avif",
+        "width": 240,
+        "naturalWidth": 240
+      },
+      "assets": [
+        {
+          "url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1/saradakosh/library-covers/local-fixture-038-en-inspired-1910-480.avif",
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1/saradakosh/library-covers/local-fixture-038-en-inspired-1910-480.avif",
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1/saradakosh/library-covers/local-fixture-038-en-inspired-1910-480.avif",
+          "status": 200
+        }
+      ],
+      "failureFallback": true,
+      "fallbackHeight": 298.65625,
+      "fontFallback": true,
+      "fontsBlocked": 9,
+      "listDoesNotLoadImages": true,
+      "lastPage24": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "dpr": 1,
+      "lowDataRequest": false,
+      "card": {
+        "src": "https://res.cloudinary.com/dljwhlvid/image/upload/v1/saradakosh/library-covers/local-fixture-038-en-inspired-1910-320.avif",
+        "naturalWidth": 284,
+        "naturalHeight": 443,
+        "width": 284,
+        "loading": "lazy",
+        "decoding": "async",
+        "objectFit": "contain"
+      },
+      "modal": {
+        "src": "https://res.cloudinary.com/dljwhlvid/image/upload/v1/saradakosh/library-covers/local-fixture-038-en-inspired-1910-320.avif",
+        "width": 240,
+        "naturalWidth": 240
+      },
+      "assets": [
+        {
+          "url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1/saradakosh/library-covers/local-fixture-038-en-inspired-1910-320.avif",
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1/saradakosh/library-covers/local-fixture-038-en-inspired-1910-320.avif",
+          "status": 200
+        },
+        {
+          "url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1/saradakosh/library-covers/local-fixture-038-en-inspired-1910-320.avif",
+          "status": 200
+        }
+      ],
+      "failureFallback": true,
+      "fallbackHeight": 378.65625,
+      "fontFallback": true,
+      "fontsBlocked": 9,
+      "listDoesNotLoadImages": true,
+      "lastPage24": true,
+      "overflow": false,
+      "errors": []
+    }
+  ]
+}

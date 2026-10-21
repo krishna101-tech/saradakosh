@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "scope": "Issue28 renewed bounded research only;retained legacy IDs94–98;candidate evidence requires independent QA",
+  "baseline_sha": "1069fc336c1e9f900440fea2f1bfa2a0404cd98c",
+  "researcher": "gpt-6.1-sol High",
+  "cost": "Included public web search and local HTTP inspection only; no purchase/API spend/hosted build/upload",
+  "privacy": "No private Drive IDs or text copied.",
+  "method": "Renewed English/original-language/transliterated queries. Product pictures and lawful clearance counted separately. Search absence is bounded not exhaustive.",
+  "books": [
+    {
+      "book_id": 94,
+      "title": "Sevadarshe Ramakrishnananda",
+      "catalog_author": "Swami Prameyananda",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:33:06.434975+00:00",
+      "renewed_queries": [
+        "\"Sevadarshe Ramakrishnananda\" pdf",
+        "\"সেবাদর্শে রামকৃষ্ণানন্দ\" pdf"
+      ],
+      "text_decision": "no_complete_free_text_verified",
+      "text_evidence": [
+        {
+          "url": "https://www.ramakrishnamath.in/pages/book_store/AdvaitaAshramaBooklist.htm",
+          "observation": "Renewed English/Bengali searches found catalogue evidence,not complete free Bengali text. Paid unrelated Ramakrishnananda biography does not satisfy this title."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/sevadarshe-ramakrishnananda/1237499000010647251",
+          "checked_at": "2026-10-16T11:33:06.437809+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/UDB032_1.jpg/1237499000010703823/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            791,
+            1200
+          ],
+          "edition_metadata": {
+            "publisher": "Udbodhan Karyalaya",
+            "author": "Swami Prameyananda",
+            "binding": "Deluxe (Hardbound)",
+            "language": "Bengali",
+            "pages": "210"
+          }
+        }
+      ],
+      "editorial_hold": null
+    },
+    {
+      "book_id": 95,
+      "title": "The Complete Works of Swami Ramakrishnananda",
+      "catalog_author": "Swami Ramakrishnananda",
+      "catalog_original_language": "English",
+      "renewed_checked_at": "2026-10-16T11:33:13.709027+00:00",
+      "renewed_queries": [
+        "\"The Complete Works of Swami Ramakrishnananda\" free full text volumes"
+      ],
+      "text_decision": "institutional_three_volume_body_reverified_pending_QA",
+      "text_evidence": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+          "observation": "HTTP200;2247632textcharacters;288articleelements. Numbered volume1=35,volume2=53,volume3=196articles plus introductory/cover material. First teachings and final3.3.3TrueEducation body/clean ending inspected. Digital body covers1–3;not claim scan-page equality or reproduction licence."
+        },
+        {
+          "url": "https://istore.chennaimath.org/products/complete-works-of-swami-ramakrishnananda-volume-1/3690041000102340088",
+          "observation": "Official publisher describes three-volume work contents. Set listing1466pages;MessageofEternalWisdom is earlier/revised collection,not automatically full modern3volume substitute."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/the-complete-works-of-swami-ramakrishnananda-3-vol-set/1237499000010758877",
+          "checked_at": "2026-10-16T11:33:13.709294+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/MDE025_1.jpg/1237499000010839134/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            202,
+            315
+          ],
+          "edition_metadata": {
+            "publisher": "Ramakrishna Math - Chennai",
+            "author": "Swami Ramakrishnananda",
+            "binding": "Deluxe (Hardbound)",
+            "language": "English",
+            "pages": "1466"
+          }
+        }
+      ],
+      "editorial_hold": "Set product displays an image;visual volume/series correspondence not inspected. Do not assert this is a complete set composite or all three individual covers."
+    },
+    {
+      "book_id": 96,
+      "title": "Life of Sri Ramanuja",
+      "catalog_author": "Swami Ramakrishnananda",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:33:17.127577+00:00",
+      "renewed_queries": [
+        "\"Life of Sri Ramanuja\" Ramakrishnananda pdf Bengali"
+      ],
+      "text_decision": "english_constituent_reader_candidate_original_bengali_gap",
+      "text_evidence": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000260059",
+          "observation": "English constituent inCW2;first teachers-line article and subsequent substantial biographies present. Complete standalone edition/front matter not certified. Bengali original and modern2017photo-expandededition remain gaps."
+        },
+        {
+          "url": "https://www.rarebooksocietyofindia.org/book_archive/196174216674_10155069175276675.pdf",
+          "observation": "Renewed primary-scan lead for1959English edition,distinct frommodern446page expansion. PDF first/final not newly verified;hold."
+        }
+      ],
+      "cover_candidates": [],
+      "editorial_hold": "Catalog original languageBengali;English translation and modernillustrated edition must be labelled separately."
+    },
+    {
+      "book_id": 97,
+      "title": "God and Divine Incarnation",
+      "catalog_author": "Swami Ramakrishnananda",
+      "catalog_original_language": "English",
+      "renewed_checked_at": "2026-10-16T11:33:17.127618+00:00",
+      "renewed_queries": [
+        "\"God and Divine Incarnation\" Ramakrishnananda pdf"
+      ],
+      "text_decision": "english_constituent_reader_reverified_pending_QA",
+      "text_evidence": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000256029",
+          "observation": "CW1.2.3–1.2.20 contains18God/Incarnation sections. FirstGod11150characters and finalSriKrishnaAvatara13925characters with ending present;standalonecontents/frontmattercomparison pending."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://sfvedanta.org/books/god-and-divine-incarnations/",
+          "checked_at": "2026-10-16T11:33:17.127874+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Discovery listing unavailable during direct fetch;actual cover image not observed. No reuse permission supplied;do not count as source-image discovery.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 406,
+          "actual_image_url": null,
+          "edition_metadata": {}
+        }
+      ],
+      "editorial_hold": null
+    },
+    {
+      "book_id": 98,
+      "title": "Sri Krishna: Pastoral and the King-Maker",
+      "catalog_author": "Swami Ramakrishnananda",
+      "catalog_original_language": "English",
+      "renewed_checked_at": "2026-10-16T11:33:18.291210+00:00",
+      "renewed_queries": [
+        "\"Sri Krishna Pastoral and the King Maker\" pdf"
+      ],
+      "text_decision": "two_lecture_institutional_body_reverified_pending_QA",
+      "text_evidence": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000254171",
+          "observation": "Pastoral lecture96254characters;followingKingmaker98208characters at#a-6211928000000256023. First/final prose of both full lecture articles checked;both end cleanly. Exact standaloneeditionpages/frontmatter notcertified;sourcepermission forcoverreuse separate."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://www.vivekanandabookworld.com/product-page/sri-krishna-pastoral-and-king-maker",
+          "checked_at": "2026-10-16T11:33:18.291486+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://static.wixstatic.com/media/d1ef44_c5a899b0e8b24f32ab6adef0125d28b8~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "image_http_status": 200,
+          "dimensions": [
+            500,
+            500
+          ],
+          "edition_metadata": {
+            "language": "English",
+            "author": "Swami Ramakrishnananda",
+            "publisher": "Ramakrishna Math,Chennai (catalogue identity;exact pictured edition pending visual QA)"
+          },
+          "source_classification": "institutional bookstore candidate;publishing authority not independently verified"
+        }
+      ],
+      "editorial_hold": null
+    }
+  ],
+  "checkpoints": [
+    {
+      "ids": [
+        94,
+        95,
+        96,
+        97,
+        98
+      ],
+      "completed_at": "2026-10-16T11:33:22.463237+00:00",
+      "new_complete_texts_verified": 0,
+      "lawfully_cleared_cover_assets": 0,
+      "status": "completed_bounded_research_candidate_only"
+    }
+  ],
+  "scorecard": {
+    "works_researched": 5,
+    "works_with_source_image_discoveries": 3,
+    "source_images_discovered": 3,
+    "cover_assets_legally_cleared": 0,
+    "new_text_links_approved": 0,
+    "candidate_only": true
+  }
+}

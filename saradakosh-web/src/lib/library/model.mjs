@@ -4,6 +4,11 @@ export const CATEGORIES = [
 ];
 export const PAGE_SIZE = 24;
 
+// Preserve the frozen source/SQLite ledger, while keeping a confirmed dead
+// inherited target from being offered as a functioning reader. Client-specific
+// 403s/timeouts are not enough to mark another source unavailable.
+const UNAVAILABLE_READER = 'https://rkmlibrary.com/bookCnt.php?bookId=2&cptId=78&pct=469&ptid=809';
+
 export function categoryFor(person) {
   return ({ 'Sri Ramakrishna': 'ramakrishna', 'Sri Sarada Devi': 'sarada', 'Swami Vivekananda': 'vivekananda', General: 'general' })[person] || 'disciples';
 }
@@ -26,7 +31,10 @@ export function resolveBookDisplay(book, mode = 'original') {
   return {
     ...book, displayTitle: translated || book.original_title, displayLanguage,
     displayCover: covers[0] || null,
-    displayLinks: (book.links || []).filter(link => link.language === displayLanguage),
+    displayLinks: (book.links || []).filter(link => link.language === displayLanguage).map(link =>
+      book.id === 1 && link.url === UNAVAILABLE_READER
+        ? { ...link, unavailable: 'Source currently unavailable (HTTP 404); retained in the source ledger.' }
+        : link),
     availabilityTag: requested && !translated ? `${requested} not available` : null,
     category: categoryFor(book.person),
   };

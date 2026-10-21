@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "scope": "Issue28 renewed bounded research only;retained legacy IDs26–30;candidate evidence requires independent QA",
+  "baseline_sha": "1069fc336c1e9f900440fea2f1bfa2a0404cd98c",
+  "researcher": "gpt-6.1-sol High",
+  "cost": "Included public web search and local HTTP inspection only; no purchase/API spend/hosted build/upload",
+  "privacy": "No private Drive IDs or text copied.",
+  "method": "Renewed English/original-language/transliterated queries. Product pictures and lawful clearance counted separately. Search absence is bounded not exhaustive.",
+  "books": [
+    {
+      "book_id": 26,
+      "title": "মায়ের চিঠি",
+      "catalog_author": "Holy Mother",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:28:53.274513+00:00",
+      "renewed_queries": [
+        "\"মায়ের চিঠি\" সারদা pdf",
+        "\"Mayer Chithi\" Sarada Udbodhan"
+      ],
+      "text_decision": "no_complete_free_text_verified",
+      "text_evidence": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/mayer-chithi/1237499000011878085",
+          "observation": "Official Golpark title catalogued as Mayer Chithi; author not available. Paid edition,not free reader. Udbodhan storefront is another sales lead."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/mayer-chithi/1237499000011878085",
+          "checked_at": "2026-10-16T11:28:53.277416+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/IHB004_1.jpg/1237499000011921118/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            541,
+            826
+          ],
+          "edition_metadata": {
+            "publisher": "Ramakrishna Mission - Golpark",
+            "author": "Not Available",
+            "binding": "Paperback",
+            "language": "Bengali"
+          }
+        },
+        {
+          "source_product_url": "https://udbodhan.org/product/mayer-chithi/",
+          "checked_at": "2026-10-16T11:28:53.277843+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://udbodhan.org/api/media/file/Mayer-Chithi.jpg",
+          "image_http_status": 200,
+          "dimensions": [
+            1800,
+            1800
+          ],
+          "edition_metadata": {}
+        }
+      ],
+      "editorial_hold": "Letters in other works (e.g.PadapranteVol3) do not verify this edition or complete collection."
+    },
+    {
+      "book_id": 27,
+      "title": "মায়ের পদপ্রান্তে ১-৪",
+      "catalog_author": "Purnananda",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:28:55.425451+00:00",
+      "renewed_queries": [
+        "\"মায়ের পদপ্রান্তে\" ১ ২ ৩ ৪ pdf",
+        "\"Sri Sri Mayer Padaprante\" pdf vol1 vol2 vol3 vol4"
+      ],
+      "text_decision": "no_complete_free_text_verified",
+      "text_evidence": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/sri-sri-mayer-padaprante/1237499000019160637",
+          "observation": "Publisher currently lists5volume set;catalog scope1–4. Individual1–4officialproducts exist;English Reminiscences is an editorial selection,not complete Bengali1–4."
+        },
+        {
+          "url": "https://www.ramakrishnamath.in/pages/book_store/AdvaitaAshramaBooklist.htm",
+          "observation": "Institutional catalogue distinguishes older4volume set ISBN8180400727 and constituent volume ISBNs. No full free text for all4verified."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/sri-sri-mayer-padaprante-vol-1/1237499000010648261",
+          "checked_at": "2026-10-16T11:28:55.425694+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/UHB013_1.jpg/1237499000010704945/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            824,
+            1200
+          ],
+          "edition_metadata": {
+            "publisher": "Udbodhan Karyalaya",
+            "author": "A Compilation",
+            "binding": "Paperback",
+            "language": "Bengali",
+            "pages": "217"
+          }
+        },
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/sri-sri-mayer-padaprante-vol-2/1237499000010648297",
+          "checked_at": "2026-10-16T11:28:55.426153+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/UHB014_1.jpg/1237499000010704978/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            818,
+            1200
+          ],
+          "edition_metadata": {
+            "publisher": "Udbodhan Karyalaya",
+            "author": "A Compilation",
+            "binding": "Paperback",
+            "language": "Bengali",
+            "pages": "272"
+          }
+        },
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/sri-sri-mayer-padaprante-vol-3/1237499000010648333",
+          "checked_at": "2026-10-16T11:28:55.426508+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/UHB015_1.jpg/1237499000010705007/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            830,
+            1200
+          ],
+          "edition_metadata": {
+            "publisher": "Udbodhan Karyalaya",
+            "author": "A Compilation",
+            "binding": "Paperback",
+            "language": "Bengali",
+            "pages": "378"
+          }
+        },
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/sri-sri-mayer-padaprante-vol-4/1237499000010648909",
+          "checked_at": "2026-10-16T11:28:55.427294+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/UHB032_1.jpg/1237499000010705431/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            803,
+            1200
+          ],
+          "edition_metadata": {
+            "publisher": "Udbodhan Karyalaya",
+            "author": "A Compilation",
+            "binding": "Paperback",
+            "language": "Bengali",
+            "pages": "378"
+          }
+        }
+      ],
+      "editorial_hold": "Catalog authorPurnananda vs publisherPurnatmananda/Compilation requires correction;5volume modern set must not silently expand1–4."
+    },
+    {
+      "book_id": 28,
+      "title": "মায়ের মহিমায় উদ্ভাসিত দক্ষিণাপথ",
+      "catalog_author": "Prabhananda",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:28:57.709323+00:00",
+      "renewed_queries": [
+        "\"মায়ের মহিমায় উদ্ভাসিত দক্ষিণাপথ\" pdf",
+        "\"Mayer Mahima Udbhasit Dakshinapatha\""
+      ],
+      "text_decision": "no_complete_free_text_verified",
+      "text_evidence": [
+        {
+          "url": "https://udbodhan.org/product/%E0%A6%AE%E0%A6%BE%E0%A6%AF%E0%A6%BC%E0%A7%87%E0%A6%B0-%E0%A6%AE%E0%A6%B9%E0%A6%BF%E0%A6%AE%E0%A6%BE%E0%A7%9F-%E0%A6%89%E0%A6%A6%E0%A7%8D%E0%A6%AD%E0%A6%BE%E0%A6%B8%E0%A6%BF%E0%A6%A4-%E0%A6%A6/",
+          "observation": "Official Udbodhan76page paid booklet; digital sale/sample entries do not establish free complete body. No complete reader verified."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://udbodhan.org/product/%E0%A6%AE%E0%A6%BE%E0%A6%AF%E0%A6%BC%E0%A7%87%E0%A6%B0-%E0%A6%AE%E0%A6%B9%E0%A6%BF%E0%A6%AE%E0%A6%BE%E0%A7%9F-%E0%A6%89%E0%A6%A6%E0%A7%8D%E0%A6%AD%E0%A6%BE%E0%A6%B8%E0%A6%BF%E0%A6%A4-%E0%A6%A6/",
+          "checked_at": "2026-10-16T11:28:57.709562+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://udbodhan.org/api/media/file/WhatsApp-Image-2022-08-24-at-3.48.27-PM.jpeg",
+          "image_http_status": 200,
+          "dimensions": [
+            1078,
+            1600
+          ],
+          "edition_metadata": {}
+        }
+      ],
+      "editorial_hold": null
+    },
+    {
+      "book_id": 29,
+      "title": "শ্রীশ্রী মায়ের জীবনকথা",
+      "catalog_author": "Bhumananda",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:28:59.170300+00:00",
+      "renewed_queries": [
+        "\"শ্রীশ্রী মায়ের জীবনকথা\" ভূমানন্দ pdf",
+        "\"Sri Sri Mayer Jivankatha\" Bhumananda pdf",
+        "\"Sri Sri Mayer Jiban Katha\" Bhumananda book"
+      ],
+      "text_decision": "no_complete_free_text_verified",
+      "text_evidence": [
+        {
+          "url": "https://www.wpse.in/downloads/REGISTER-OF-LIBRARY-BOOKS-FOR-BEd.pdf",
+          "observation": "Institutional catalogue confirms S.Bhumananda/PelicanPress identity. This is a library catalogue,not book body. Archive title query returned0; publicblog excerpts do not prove full first/final coverage."
+        }
+      ],
+      "cover_candidates": [],
+      "editorial_hold": "Do not substitute Vedantananda Jiban Katha or Gambhirananda biography."
+    },
+    {
+      "book_id": 30,
+      "title": "শ্রীশ্রী সারদাদেবী",
+      "catalog_author": "Akshay Chaitanya",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:28:59.170352+00:00",
+      "renewed_queries": [
+        "\"Sri Sri Sarada Devi\" Akshay Chaitanya pdf",
+        "\"শ্রীশ্রী সারদাদেবী\" অক্ষয়চৈতন্য pdf"
+      ],
+      "text_decision": "new_bengali_archive_first_last_verified_candidate_pending_rights_scan_QA",
+      "text_evidence": [
+        {
+          "url": "https://www.thakurmaaswamiji.com/2021/03/Sri-Sri-Sarada-Devi-by-Brahmachari-Akshay-Chaitanya.html",
+          "observation": "Public title index833chars includes chapters/appendices and links a public IA item. Index itself is not complete text; no personalDrive link retained."
+        },
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.456874",
+          "observation": "DLI Bengali1963 ninth edition;231pages;BrahmachariAkshaychaitanya;CalcuttaBookHouse. Metadata claims InPublicDomain; not independently cleared."
+        },
+        {
+          "url": "https://archive.org/download/in.ernet.dli.2015.456874/2015.456874.Sri-Sri_djvu.txt",
+          "observation": "HTTP200;514467characters. First author/ninth-edition1370BE contents and final appendix/prose ending inspected. Public index TOC differs in chapter breakdown; exact scan pagination/coverage and legal status require QA. No private source or excerpts retained."
+        }
+      ],
+      "cover_candidates": [],
+      "editorial_hold": "OfficialEnglish CompassionateMother/HindiKarunamayi are translated editions,not automatically Bengali cover matches."
+    }
+  ],
+  "checkpoints": [
+    {
+      "ids": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "completed_at": "2026-10-16T11:28:59.170370+00:00",
+      "new_complete_texts_verified": 0,
+      "lawfully_cleared_cover_assets": 0,
+      "status": "completed_bounded_research_candidate_only",
+      "new_first_last_text_candidates": 1
+    }
+  ],
+  "scorecard": {
+    "works_researched": 5,
+    "works_with_source_image_discoveries": 3,
+    "source_images_discovered": 7,
+    "cover_assets_legally_cleared": 0,
+    "new_text_links_approved": 0,
+    "candidate_only": true,
+    "warning": "First/final body evidence and official free offer remain separate from independent publication approval."
+  }
+}

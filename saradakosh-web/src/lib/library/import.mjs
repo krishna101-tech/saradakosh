@@ -1,6 +1,13 @@
+import fs from 'node:fs';
+import { ADJUDICATED_MANIFEST_SHA256, approvedMappings, cellText, identityValues, sha256 } from './curation.mjs';
+
+const manifestRaw = fs.readFileSync(new URL('../../../../docs/library-v2/adjudicated-public-links.json', import.meta.url));
+if (sha256(manifestRaw) !== ADJUDICATED_MANIFEST_SHA256) throw new Error('Adjudicated manifest hash mismatch');
+const approved = approvedMappings(JSON.parse(manifestRaw));
+const audit = JSON.parse(fs.readFileSync(new URL('../../../data/library/books-source-manifest.json', import.meta.url), 'utf8'));
 const HEADERS = ['Person', 'Canonical Title', 'Original Title', 'Author', 'English Title', 'Bengali Title', 'Original Language', 'NotebookLM', 'Link'];
 const LANGUAGES = new Set(['English', 'Bengali', 'French', 'Hindi', 'not clear']);
-const text = cell => cell?.formattedValue ?? cell?.effectiveValue?.stringValue ?? '';
+const text = cellText;
 
 function sourceLinks(cell, bookId) {
   const value = text(cell);
@@ -57,7 +64,14 @@ export function parseLibrarySnapshot(snapshot) {
     };
   });
   const links = books.flatMap(book => book.links);
-  if (links.length !== 55) throw new Error('Expected all 55 curated hyperlink mappings');
+  if (audit.adjudicated_manifest_sha256 !== ADJUDICATED_MANIFEST_SHA256 ||
+      sha256(snapshot.spreadsheet) !== audit.spreadsheet_sha256 ||
+      sha256(identityValues(rows)) !== audit.identities_sha256 ||
+      links.length !== approved.length || links.length !== audit.approved_links ||
+      links.some((link, i) => ['book_id', 'language', 'label', 'url', 'sort_order'].some(key => link[key] !== approved[i][key]))) {
+    throw new Error('Source hash, immutable identities or approved hyperlink mappings differ from manifest');
+  }
+  for (const book of books) book.links.forEach(link => { link.annotation = approved.find(item => item.book_id === link.book_id && item.sort_order === link.sort_order).annotation; });
   return { books, links };
 }
 
@@ -87,6 +101,11 @@ export function importLibrary(db, snapshot) {
       CREATE INDEX IF NOT EXISTS library_links_book ON library_book_links(book_id, sort_order);
       CREATE INDEX IF NOT EXISTS library_covers_book ON library_book_covers(book_id, language);
     `);
+    if (!db.prepare('PRAGMA table_info(library_book_links)').all().some(column => column.name === 'annotation')) db.exec('ALTER TABLE library_book_links ADD COLUMN annotation TEXT');
+    db.exec(`CREATE TABLE IF NOT EXISTS library_import_provenance (
+      source_sha256 TEXT PRIMARY KEY, manifest_sha256 TEXT NOT NULL, identities_sha256 TEXT NOT NULL,
+      book_count INTEGER NOT NULL, link_count INTEGER NOT NULL, source_range TEXT NOT NULL
+    )`);
     const existing = db.prepare('SELECT id, canonical_title FROM library_books ORDER BY id').all();
     if (existing.length && (existing.length !== books.length || existing.some((book, i) => book.id !== books[i].id || book.canonical_title !== books[i].canonical_title))) {
       throw new Error('Canonical identity changed; an explicit catalogue migration is required');
@@ -99,11 +118,13 @@ export function importLibrary(db, snapshot) {
       bengali_title=excluded.bengali_title, author=excluded.author, sort_order=excluded.sort_order`);
     books.forEach(book => bookStatement.run(book));
     db.exec('DELETE FROM library_book_links');
-    const linkStatement = db.prepare(`INSERT INTO library_book_links (id, book_id, language, label, url, sort_order)
-      VALUES (@id, @book_id, @language, @label, @url, @sort_order)`);
+    const linkStatement = db.prepare(`INSERT INTO library_book_links (id, book_id, language, label, url, sort_order, annotation)
+      VALUES (@id, @book_id, @language, @label, @url, @sort_order, @annotation)`);
     links.forEach((link, i) => linkStatement.run({ ...link, id: i + 1 }));
     const count = db.prepare('SELECT COUNT(*) AS count FROM library_books').get().count;
     if (count !== books.length || db.pragma('foreign_key_check(library_book_links)').length) throw new Error('Library import invariant failed');
+    db.prepare(`INSERT OR IGNORE INTO library_import_provenance VALUES (?, ?, ?, ?, ?, ?)`)
+      .run(audit.spreadsheet_sha256, ADJUDICATED_MANIFEST_SHA256, audit.identities_sha256, count, links.length, snapshot.source_range);
     return { books: count, links: links.length };
   })();
 }

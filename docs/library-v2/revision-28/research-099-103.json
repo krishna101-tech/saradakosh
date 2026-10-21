@@ -1,0 +1,580 @@
+{
+  "schema_version": 1,
+  "issue": 28,
+  "baseline_sha": "47aa26a5209e6c2647ef8edbff1bef0c2976e22a",
+  "researched_at_utc": "2026-10-21T03:07:45.294077+00:00",
+  "researcher": "gpt-6.1-sol High",
+  "method": "Renewed actual public searches and primary HTTP body/metadata inspections. Search absence is bounded, not exhaustive. No paid or external model call; no private IDs, full reader bodies or cover binaries in artifacts.",
+  "status": "RESEARCH_CANDIDATES_PENDING_INDEPENDENT_QA",
+  "source_mutations": false,
+  "books": [
+    {
+      "author": "Swami Ramakrishnananda",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "readers": [],
+      "book_id": 99,
+      "canonical_title": "The Soul of Man",
+      "queries": [
+        "\"The Soul of Man\" Ramakrishnananda site:shop.advaitaashrama.org"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/the-soul-of-a-man/1237499000010768731",
+          "observation": "HTTP200actualpublisherretailpage:four1909lectures; paid book,notfree reader."
+        },
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+          "observation": "HTTP2005789244bytes288articles. Four substantial1.3.1–1.3.4body openings/endings inspected:Science Modern and Ancient,Determination of Conscious Tendencies,Regions Higher and Lower,The Locus of the Soul. Exactstandalonefrontmatter/pagination not certified."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/the-soul-of-a-man/1237499000010768731",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/the-soul-of-a-man/1237499000010768731",
+          "page_title": "The Soul of a Man by Swami Ramakrishnananda | Advaita Ashrama",
+          "edition_match": "English,Ramakrishnananda,Chennai,139pages,ISBN9788178230597. Shop title The Soul of a Man versus baseline The Soul of Man; four1909lecture description corroborates named work, exact impression not established.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MPE013_1.jpg/1237499000010848698/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 215,
+            "height": 325,
+            "format": "JPEG",
+            "bytes": 34813,
+            "sha256": "61d75e012f26265027a48187ec5a7461aebdfea6d65028dc387f669d17f32e67",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "reader_sections": [
+        {
+          "heading": "1.3.1 SCIENCE, MODERN AND ANCIENT",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000256973",
+          "body_characters": 32842,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "1.3.2 DETERMINATION OF CONSCIOUS TENDENCIES",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000256983",
+          "body_characters": 34362,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "1.3.3 REGIONS, HIGHER AND LOWER",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000256989",
+          "body_characters": 35380,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "1.3.4 THE LOCUS OF THE SOUL",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000256997",
+          "body_characters": 55610,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        }
+      ],
+      "text_outcome": "Four-lecture institutional incorporated-work candidate reverified; external-link candidate only pending independent QA. No free standalone facsimile claim or reproduction licence."
+    },
+    {
+      "author": "Swami Ramakrishnananda",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "readers": [],
+      "book_id": 100,
+      "canonical_title": "The Universe and Man",
+      "queries": [
+        "\"The Universe and Man\" Ramakrishnananda free full text",
+        "\"The Universe and Man\" site:istore.chennaimath.org"
+      ],
+      "sources": [
+        {
+          "url": "https://istore.chennaimath.org/products/complete-works-of-swami-ramakrishnananda-volume-2/3690041000102340116",
+          "observation": "Currentprimarypublisherdescription explicitly incorporates Universe and Man in CWvolume2. Paid460pageomnibusnotfree reader."
+        },
+        {
+          "url": "https://play.google.com/store/books/details/Swami_Ramakrishnananda_The_Universe_And_Man?id=wRO2EAAAQBAJ",
+          "observation": "Publisher-supplied2023description119pages six1907lectures; paid/free sample excluded."
+        },
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+          "observation": "Actualsixcorrespondingarticlebodies inspected across1.1.6and2.3.1–5; structural ordering differs from standalone. Earlier1938indexedTOC mapping retained as historical evidence,not a newlyvalidatedPDF."
+        }
+      ],
+      "covers": [],
+      "reader_sections": [
+        {
+          "heading": "1.1.6 THE MESSAGE OF SRI RAMAKRISHNA",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000254125",
+          "body_characters": 27540,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "2.3.1 THE UNIVERSE",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268137",
+          "body_characters": 26053,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "2.3.2 SPACE AND TIME",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268143",
+          "body_characters": 11798,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "2.3.3 THE SELF-IMPOSED STRUGGLE",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268151",
+          "body_characters": 26876,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "2.3.4 THE VEDANTA",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268159",
+          "body_characters": 23652,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "2.3.5 BHAKTI",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268165",
+          "body_characters": 15865,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        }
+      ],
+      "text_outcome": "Six-lecture incorporated-work candidate reverified across separatedCWsections. Requires explicit chapter navigation; standalone cover/edition not newly established. No free sample counted."
+    },
+    {
+      "author": "Swami Ramakrishnananda",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "readers": [],
+      "book_id": 101,
+      "canonical_title": "For Thinkers on Education",
+      "queries": [
+        "\"For Thinkers on Education\" full text Ramakrishnananda",
+        "\"For Thinkers on Education\" contents 22"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/for-thinkers-on-education/1237499000010765023",
+          "observation": "Actualpaidprimary234pageedition describes22informalwritings."
+        },
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+          "observation": "ActualCW3.2.2contains20namedchapterarticles plus5shortPartI–Vepigrapharticles. FirstSchemeofLifeandEducation24418characters;finalModernEducation28394characters. This25article structure is not proof of22standalonewritings; exactTOC reconciliation remains held."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/for-thinkers-on-education/1237499000010765023",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/for-thinkers-on-education/1237499000010765023",
+          "page_title": "For Thinkers on Education | Advaita Ashrama",
+          "edition_match": "English,Ramakrishnananda,Chennai,234pages,ISBN9788178230559. Twenty-two informal writings described; standaloneTOC not certified.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MOE007_1.jpg/1237499000010840122/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 817,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 243539,
+            "sha256": "8527516ec3db438f75aea5aa94bb6da9501bc9858872bd19a8bd59aad4e48504",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "reader_sections": [
+        {
+          "heading": "3.2.2.1 THE SCHEME OF LIFE AND EDUCATION IN ANCIENT INDIA",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000283997",
+          "body_characters": 24415,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.2 EDUCATION VEDANTIC",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287003",
+          "body_characters": 20403,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.3 EDUCATION THAT WAS IMPARTED IN KURUKSHETRA",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287009",
+          "body_characters": 10059,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.4 THE TWO POLES OF EXISTENCE",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287017",
+          "body_characters": 6195,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.5 THE TWO PATHS",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287027",
+          "body_characters": 10300,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.6 HEAVEN AND TRUE HAPPINESS",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287035",
+          "body_characters": 9197,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.7 RENUNCIATION AND FREEDOM",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287043",
+          "body_characters": 4627,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.8 SELF-ABNEGATION AND REALIZATION",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287051",
+          "body_characters": 6920,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.9 ARGUMENTS AGAINST ATHEISM",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287061",
+          "body_characters": 20345,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.10 MORALITY AS A FACTOR IN THE PROGRESS OF HUMANITY",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287071",
+          "body_characters": 33613,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.11 CONTROL OF THE SENSES",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287079",
+          "body_characters": 10351,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.12 THINKING NATURALLY OF ONESELF",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287087",
+          "body_characters": 7269,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.13 THE WAY TO FREEDOM",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287093",
+          "body_characters": 1695,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.14 THE COMMON BASIS OF ALL RELIGIONS",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287099",
+          "body_characters": 8168,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.15 HARMONY OF RELIGIONS*",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287107",
+          "body_characters": 14313,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.16 TRUE RELIGION",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287113",
+          "body_characters": 4704,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.17 TRUE LOVE",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287123",
+          "body_characters": 1989,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.18 A MAN OF STEADY WISDOM",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287129",
+          "body_characters": 11464,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.19 THE BLESSED MAN",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287137",
+          "body_characters": 1566,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.20 MODERN EDUCATION AS IT HOLDS IN INDIA",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287143",
+          "body_characters": 28394,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.1 PART - I",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287151",
+          "body_characters": 922,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.2 PART - II",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287157",
+          "body_characters": 821,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.3 PART - III",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287163",
+          "body_characters": 338,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.4 PART - IV",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287171",
+          "body_characters": 343,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.2.5 PART - V",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287177",
+          "body_characters": 364,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        }
+      ],
+      "text_outcome": "HOLD completeness: substantial related institutional section exists, but22writingstandalonecontents not independently reconciled. Earlier403alternatehost block retained,not retried. No new complete reader approved."
+    },
+    {
+      "author": "Swami Ramakrishnananda",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "readers": [],
+      "book_id": 102,
+      "canonical_title": "Search after Happiness",
+      "queries": [
+        "\"Search after Happiness\" Ramakrishnananda free pdf"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/search-after-happiness/1237499000010764267",
+          "observation": "HTTP200actualprimarypaid195pagepaperback. Publisher-suppliedGoogleBooks2024edition196pageshas14chapterTOC; previewnotfreewholetext."
+        },
+        {
+          "url": "https://books.google.com/books/about/Search_after_Happiness.html?id=XSb8EAAAQBAJ",
+          "observation": "2024SriRamakrishnaMathpublisherTOC confirms14titles; previews excluded. Currentmetadata differs inpaginationfromolder2006edition."
+        },
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+          "observation": "All12sequential3.2.3articles plusMindandMaya3.2.1.10andSriRamakrishnaandHisMission1.1.5 body/opening/ending inspected. All14namedlecturebodies exist; sourceorderdiffers. FinalNecessityofReligion45182characters; finalstandalonechapterOurMission mapped separately1.1.5."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/search-after-happiness/1237499000010764267",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/search-after-happiness/1237499000010764267",
+          "page_title": "Search after Happiness by Swami Ramakrishnananda | Advaita Ashrama",
+          "edition_match": "English,Ramakrishnananda,Chennai,195pages. CurrentGooglepublisher2024edition196pages; earlier2006catalogue200pages. Work matches; pagination/impression differ and image must not imply facsimile equality.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MDE017_1.jpg/1237499000010827683/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 217,
+            "height": 325,
+            "format": "JPEG",
+            "bytes": 26551,
+            "sha256": "39d1ce5aed3e042bf12917a6b8660bbd8d8ba435f0a1d46957a5c23d6d6bb43c",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "reader_sections": [
+        {
+          "heading": "1.1.5 SRI RAMAKRISHNA AND HIS MISSION",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000254117",
+          "body_characters": 61038,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.1.10 MIND AND MAYA",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000283967",
+          "body_characters": 14283,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.3.1 WHO AM I ?",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287185",
+          "body_characters": 5222,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.3.2 WHAT IS THE SOUL ?",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287191",
+          "body_characters": 7644,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.3.3 THE TRUE SELF OF MAN",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287521",
+          "body_characters": 14788,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.3.4 MAN, THE BEGGAR?",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287527",
+          "body_characters": 11922,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.3.5 THE FINITE AND THE INFINITE IN MAN",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287533",
+          "body_characters": 16950,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.3.6 THE POWER OF SPIRIT",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287539",
+          "body_characters": 7886,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.3.7 WHY THIS LOVE OF SELF ?",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287549",
+          "body_characters": 7309,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.3.8 SEARCH AFTER HAPPINESS",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287557",
+          "body_characters": 10170,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.3.9 THE TRIPLE QUEST",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287567",
+          "body_characters": 14596,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.3.10 IS A BELIEF IN TRANSMIGRATION CONSISTENT WITH REASONING?",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287575",
+          "body_characters": 33873,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.3.11 HOW TO BE A REAL MASTER",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287583",
+          "body_characters": 29940,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        },
+        {
+          "heading": "3.2.3.12 THE NECESSITY OF RELIGION",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287591",
+          "body_characters": 45182,
+          "opening_ending_inspected": true,
+          "ends_with_contents_link": true
+        }
+      ],
+      "text_outcome": "Fourteen-lecture institutional incorporated-work candidate reverified. A single3.2.3anchor misses2chapters; publish only after independentQA accepts complete explicit navigation and edition qualification."
+    },
+    {
+      "author": "Swami Ramakrishnananda",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "readers": [],
+      "book_id": 103,
+      "canonical_title": "Sri Ramakrishna, Our Refuge",
+      "queries": [
+        "\"Sri Ramakrishna Our Refuge\" letters free pdf"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/sri-ramakrishna-our-refuge-letters-of-swami-ramakrishnananda/1237499000010764339",
+          "observation": "HTTP200actualprimaryEnglish68pagecollection; paid paperback excluded."
+        },
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+          "observation": "ActualCW3.1letterarticles includeHolyMother,monasticandotherrecipients; sampledopeningandendingletterbodies exist. Standalone48letterselection/order remains unmapped. GeneralCWletters not represented as exactwholebook."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/sri-ramakrishna-our-refuge-letters-of-swami-ramakrishnananda/1237499000010764339",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/sri-ramakrishna-our-refuge-letters-of-swami-ramakrishnananda/1237499000010764339",
+          "page_title": "Sri Ramakrishna, Our Refuge | Advaita Ashrama",
+          "edition_match": "English,Ramakrishnananda,Chennai,paperback68pages. PriorHyderabadprimaryretailmetadata48letters ISBN9788178234335; exact48letterselection not mapped toCW.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MDE019_1.jpg/1237499000010827797/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 808,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 183668,
+            "sha256": "0edd9966d6bc11b20209407a184bbef96217570487058cea32be205b16c1ba21",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "text_outcome": "HOLD exact48letterselection completeness. Existingomnibuslettersare relatedcontent; no completefree standalone or justified whole-selectionlink newly verified."
+    }
+  ],
+  "checkpoints": [
+    {
+      "book_ids": [
+        99,
+        100,
+        101,
+        102,
+        103
+      ],
+      "works": 5,
+      "matching_cover_leads": 4,
+      "covers_cleared": 0,
+      "new_public_links_approved": 0,
+      "QA": "pending independent review"
+    }
+  ]
+}

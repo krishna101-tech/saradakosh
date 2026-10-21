@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-10-16",
+  "status": "published-verified-assets-awaiting-final-task-qa",
+  "covers": [
+    {
+      "key": "038-english-inspired-talks-1910-second",
+      "book_id": 38,
+      "canonical_title": "Inspired Talks",
+      "language": "English",
+      "edition": "1910 second edition; The Ramakrishna Mission, Mylapore, Madras",
+      "volume": "Single volume",
+      "representation": "single",
+      "sort_order": 0,
+      "identity_evidence": "https://iiif.archive.org/iiif/inspiredtalks00viverich/manifest.json",
+      "confidence": "verified",
+      "reviewed_date": "2026-10-16",
+      "source": {
+        "publisher": "The Ramakrishna Mission, Mylapore, Madras; University of California/Internet Archive scan",
+        "url": "https://archive.org/details/inspiredtalks00viverich",
+        "image_url": "https://iiif.archive.org/image/iiif/3/inspiredtalks00viverich%2Finspiredtalks00viverich_jp2.zip%2Finspiredtalks00viverich_jp2%2Finspiredtalks00viverich_0001.jp2/full/max/0/default.jpg",
+        "width": 2502,
+        "height": 3912,
+        "bytes": 1843422,
+        "format": "jpeg",
+        "cdn_source_url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1792101550/saradakosh/library-covers/038-en-inspired-1910-320-avifsaradakosh/library-covers/038-en-inspired-1910-source.jpg",
+        "page": "First scanned canvas (outer binding); title/second-edition leaf independently checked in the same1910 scan"
+      },
+      "rights": {
+        "basis": "public-domain",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Inspired_Talks_of_Swami_Vivekananda_1910_edition.pdf",
+        "additional_evidence_urls": [
+          "https://belurmath.org/emblem/",
+          "https://copyright.gov.in/Copyright_Act_1957/chapter_v.html"
+        ],
+        "assessment": "Faithful reproduction of the genuine1910 outer binding. Commons marks the exact historical scan PD-US. Official Belur Math attributes the pictured emblem design to Vivekananda (d1902); that known artwork and the1910 binding context exceed the relevant Indian life+60/posthumous publication terms. Independent Sol Medium inspected edition, artwork and source-country term evidence before upload. This reasoned public-domain assessment does not assert modern publisher permission, first-print status or endorsement."
+      },
+      "publication": {
+        "method": "Authenticated Cloudinary console Web Address URL upload; no API credential access or MFA bypass; bounded free transformations and reingest as preoptimized assets",
+        "provider": "Cloudinary dljwhlvid",
+        "plan": "Free; coordinator verified $0 and8.57/25 credits used before actions",
+        "source_uploaded": true
+      },
+      "variants": [
+        {
+          "url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1792101800/saradakosh/library-covers/038-en-inspired-1910-320-avif.avif",
+          "width": 320,
+          "height": 500,
+          "format": "avif",
+          "bytes": 6698,
+          "sha256": "0149ddc6df03e28b85534279fb47a3e66bf4a2f756b72e7af120e93510d02376",
+          "http_status": 200,
+          "content_type": "image/avif"
+        },
+        {
+          "url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1792101928/saradakosh/library-covers/038-en-inspired-1910-480-avif.avif",
+          "width": 480,
+          "height": 751,
+          "format": "avif",
+          "bytes": 16586,
+          "sha256": "1915070a8641d3b00227619f6a39843fbb71a37aede539a284456d865430ccdd",
+          "http_status": 200,
+          "content_type": "image/avif"
+        },
+        {
+          "url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1792101954/saradakosh/library-covers/038-en-inspired-1910-720-avif.avif",
+          "width": 720,
+          "height": 1126,
+          "format": "avif",
+          "bytes": 65195,
+          "sha256": "c0e74ee15de474735a3582c7a88e7197e655cd14a6543ce316a71514e2c466c2",
+          "http_status": 200,
+          "content_type": "image/avif"
+        },
+        {
+          "url": "https://res.cloudinary.com/dljwhlvid/image/upload/v1792101980/saradakosh/library-covers/038-en-inspired-1910-320-webp.webp",
+          "width": 320,
+          "height": 500,
+          "format": "webp",
+          "bytes": 26566,
+          "sha256": "19c2477ceceaca903b6dda3191954279634a057f762c500216d71818dafe2fa3",
+          "http_status": 200,
+          "content_type": "image/webp"
+        }
+      ]
+    }
+  ]
+}
