@@ -1,6 +1,10 @@
-@import "tailwindcss";
+@import "tailwindcss" source(none);
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
+
+/* Generate utilities from rendered UI, excluding catalog data and audit files. */
+@source "./";
+@source "../components";
 
 @custom-variant dark (&:is(.dark *));
 
