@@ -26,6 +26,12 @@ export async function POST(req) {
     return Response.json({ error: 'Unauthorized: valid Bearer token required.' }, { status: 401 });
   }
 
+  if (process.env.VERCEL === '1' && !process.env.TURSO_DATABASE_URL) {
+    return Response.json({
+      error: 'NEEDS OWNER AUTH: Turso persistent database credentials (TURSO_DATABASE_URL & TURSO_AUTH_TOKEN) are not configured in Vercel environment variables. In-memory/ephemeral SQLite cannot persist across serverless instances.'
+    }, { status: 503 });
+  }
+
   let payload;
   try {
     payload = await req.json();

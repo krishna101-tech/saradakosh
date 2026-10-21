@@ -262,3 +262,24 @@ test('API POST /api/sync/classes enforces monotonic revisions and handles publis
   assert.ok(found);
   assert.equal(found.title, 'Updated Title Rev 4');
 });
+
+test('API POST /api/sync/classes fails closed with NEEDS OWNER AUTH when VERCEL=1 without remote persistence', async () => {
+  const origVercel = process.env.VERCEL;
+  const origTurso = process.env.TURSO_DATABASE_URL;
+  try {
+    process.env.VERCEL = '1';
+    delete process.env.TURSO_DATABASE_URL;
+    const req = new Request('http://localhost:3000/api/sync/classes', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${process.env.SARADAKOSH_SYNC_SECRET}` },
+      body: JSON.stringify({ version: 1, action: 'publish', classId: 'c1' })
+    });
+    const res = await POST(req);
+    assert.equal(res.status, 503);
+    const body = await res.json();
+    assert.match(body.error, /NEEDS OWNER AUTH/);
+  } finally {
+    if (origVercel !== undefined) process.env.VERCEL = origVercel; else delete process.env.VERCEL;
+    if (origTurso !== undefined) process.env.TURSO_DATABASE_URL = origTurso; else delete process.env.TURSO_DATABASE_URL;
+  }
+});
