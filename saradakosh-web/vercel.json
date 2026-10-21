@@ -2,7 +2,8 @@
   "git": {
     "deploymentEnabled": {
       "codex/books-library-v1": false,
-      "codex/sk-v02-stabilization": false
+      "codex/sk-v02-stabilization": false,
+      "codex/v02-stabilization": false
     }
   }
 }
