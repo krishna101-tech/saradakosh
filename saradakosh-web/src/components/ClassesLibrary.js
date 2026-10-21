@@ -27,7 +27,7 @@ export default function ClassesLibrary({ records, subject }) {
 
   return <main className={styles.page}>
     <nav className={styles.nav} aria-label="Breadcrumb">
-      <Link href={subject ? '/classes' : '/'}><ArrowLeft size={17} />{subject ? 'All subjects' : 'Saradakosh'}</Link>
+      <Link prefetch={false} href={subject ? '/classes' : '/'}><ArrowLeft size={17} />{subject ? 'All subjects' : 'Saradakosh'}</Link>
       <div className={styles.theme}><ThemeSelector /></div>
     </nav>
     <header className={styles.header}>
@@ -43,7 +43,7 @@ export default function ClassesLibrary({ records, subject }) {
     {!subject ? <section className={styles.grid} aria-label="Subject Library">
       {subjects.map(name => {
         const rows = records.filter(record => record.subject === name);
-        return <Link key={name} href={`/classes/${encodeURIComponent(name)}`} className={styles.card}>
+        return <Link prefetch={false} key={name} href={`/classes/${encodeURIComponent(name)}`} className={styles.card}>
           <BookOpen size={25} aria-hidden="true" /><h2>{name}</h2>
           <div className={styles.cardFooter}><span><strong>{rows.length}</strong> classes · {new Set(rows.map(record => record.chapter)).size} chapters</span><ArrowUpRight size={20} aria-hidden="true" /></div>
         </Link>;
@@ -71,6 +71,6 @@ export default function ClassesLibrary({ records, subject }) {
       </details>)}
     </section>}
     {!matching.length && <p role="status" className={styles.empty}>No classes match your search.</p>}
-    <footer className={styles.footer}><Link href="/">Saradakosh</Link><Link href="/classes">Classes</Link><Link href="/schedule">Class schedule</Link></footer>
+    <footer className={styles.footer}><Link prefetch={false} href="/">Saradakosh</Link><Link prefetch={false} href="/classes">Classes</Link><Link prefetch={false} href="/schedule">Class schedule</Link></footer>
   </main>;
 }
