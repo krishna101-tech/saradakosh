@@ -1,6 +1,10 @@
 # Current bounded resume — 21 October 2026 (Antigravity Update)
 
-Renewed research now covers **97 retained works** outside proposed duplicates 33–48: previous 92 plus 109–113. **55 remain: 114–168**. Checkpoint `research-109-113.json` records 4 new official publisher cover leads (IDs 109, 110, 111, 112) with decoded dimensions and SHA256 hashes. ID 109 DLI scan held as unpermitted scan of modern copyrighted work; IDs 110–112 in-print copyrighted works with no open digital edition; ID 113 confirmed as a constituent journal article / chapter (in ID 109) rather than an independent monograph. All new candidates are pending independent review; zero assets cleared and zero new reader approvals.
+Renewed research now covers **102 retained works** outside proposed duplicates 33–48: previous 97 plus 114–118. **50 remain: 119–168**. Checkpoint `research-114-118.json` records 1 verified complete 1948 Bengali scan candidate on Internet Archive / DLI (ID 115 Saradananda Swamijir Jibaner Ghatanabali by Mahendranath Dutta, 264 pages, public domain in India), 1 new official publisher cover lead (ID 117 Swami Turiyananda by Swami Ritajananda, 808x1200 JPEG, Advaita Ashrama / Chennai Math edition) with decoded dimensions and SHA256 hash. IDs 114, 116, 118 have no complete free digital text verified. All new candidates are pending independent review; zero assets cleared and zero new reader approvals.
+
+## Earlier bounded resume — 21 October 2026 (IDs 109–113)
+
+Renewed research covered **97 retained works** outside proposed duplicates 33–48: previous 92 plus 109–113. Checkpoint `research-109-113.json` records 4 new official publisher cover leads (IDs 109, 110, 111, 112) with decoded dimensions and SHA256 hashes. ID 109 DLI scan held as unpermitted scan of modern copyrighted work; IDs 110–112 in-print copyrighted works with no open digital edition; ID 113 confirmed as a constituent journal article / chapter (in ID 109) rather than an independent monograph. All candidates pending independent review; zero assets cleared and zero new reader approvals.
 
 ## Earlier bounded resume — 21 October 2026 (IDs 104–108)
 

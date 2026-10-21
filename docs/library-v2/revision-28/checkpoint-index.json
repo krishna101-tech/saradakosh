@@ -99,15 +99,15 @@
     110,
     111,
     112,
-    113
-  ],
-  "researched_count": 97,
-  "remaining_outside_proposed_duplicates": [
+    113,
     114,
     115,
     116,
     117,
-    118,
+    118
+  ],
+  "researched_count": 102,
+  "remaining_outside_proposed_duplicates": [
     119,
     120,
     121,
@@ -159,7 +159,7 @@
     167,
     168
   ],
-  "remaining_count": 55,
+  "remaining_count": 50,
   "deduplication_scope": [
     33,
     34,
@@ -435,10 +435,22 @@
       ],
       "sha256": "d6fb04407998bd3dd0ee7e5a429a98abf41a9dd3220354d4363a787aaa0bac35",
       "qa": "Pending independent review; ID109 marked hold_rights_edition / no_authorized_free_text_verified (unpermitted DLI scan of modern copyrighted work), IDs 110-112 no_complete_free_text_verified, ID113 constituent serial article/chapter."
+    },
+    {
+      "path": "research-114-118.json",
+      "ids": [
+        114,
+        115,
+        116,
+        117,
+        118
+      ],
+      "sha256": "08d804e9be359221ab62b37354519ccb5cb8854920da718a53d4fe543291e8e0",
+      "qa": "Pending independent review; ID115 candidate reader proposed pending QA (complete 1948 scan on DLI/IA, author PD in India), ID117 official cover lead recorded with HOLD, IDs 114/116/118 no_complete_free_text_verified."
     }
   ],
   "latest_research_date": "2026-10-21",
   "latest_research_addendum": "deduplication-resume-2026-10-21.json",
   "latest_research_addendum_sha256": "56c7570e69215d0af17804a845710aef5766f19784af3920a2bd6ec60724d4d6",
-  "latest_stop": "Antigravity checkpoint 109-113 complete. 97 works researched outside 16 proposed duplicates; 55 remaining 114–168."
+  "latest_stop": "Antigravity checkpoint 114-118 complete. 102 works researched outside 16 proposed duplicates; 50 remaining 119–168."
 }
