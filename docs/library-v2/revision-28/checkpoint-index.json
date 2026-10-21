@@ -421,8 +421,8 @@
         107,
         108
       ],
-      "sha256": "77773bddb89dc21cd07ef8f9d429f517668db8d6aecccab3c74686c6f1837d81",
-      "qa": "Pending independent review; no new reader or cover approval."
+      "sha256": "8b56f32908186e21166820211a9218aec47adb399cd5ce1884c4e82638e9dfa1",
+      "qa": "Pending independent review; ID104 marked NOT_APPROVED_FREE_FULL_TEXT (lending barrier), ID106 marked SOURCE_NOT_VERIFIED, ID107 candidate reader proposed pending QA."
     }
   ],
   "latest_research_date": "2026-10-21",

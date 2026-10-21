@@ -54,7 +54,7 @@
         }
       ],
       "readers": [],
-      "text_outcome": "Complete historical 1927 edition exists on Archive.org (daysinindianmona0000sist), but is currently subject to borrow/lending access on Internet Archive. No open HTML reader certified on institutional hosts (RKMVU, Belur Math). Candidate pending QA."
+      "text_outcome": "NOT_APPROVED_FREE_FULL_TEXT. Historical 1927 and 1975 editions exist on Archive.org (daysinindianmona0000sist, daysinindianmona0000unse) only under controlled digital lending/borrowing requiring an account and loan queue; no unrestricted, no-login, freely readable complete public text certified on institutional hosts. Publisher retail page is a commercial listing, not a free reader."
     },
     {
       "book_id": 105,
@@ -96,7 +96,7 @@
       ],
       "covers": [],
       "readers": [],
-      "text_outcome": "no_complete_free_text_verified. Out of print 1948 standalone edition is not freely available in full digital facsimile on open institutional libraries."
+      "text_outcome": "SOURCE_NOT_VERIFIED / no_complete_free_text_verified. Out of print 1948 standalone Golden Jubilee commemorative edition by Sri Ramakrishna Math Madras is not freely available in full digital facsimile on open institutional libraries; later superseded by Swami Tapasyananda's 1972 expanded biography. Earlier DLI citation was an inadvertent cross-book reference to Patramala and has been removed."
     },
     {
       "book_id": 107,
@@ -146,10 +146,10 @@
           "edition": "1953 2nd edition, Udbodhan Karyalaya, Kolkata, 200 pages",
           "host": "Internet Archive / Digital Library of India",
           "type": "institutional_historical_scan",
-          "observation": "Complete 200-page historical Bengali scan of Swami Saradananda's Patramala published by Udbodhan. Open public access; candidate external reader pending independent QA."
+          "observation": "Verified 200-page historical Bengali scan of Swami Saradananda's Patramala published by Udbodhan Karyalaya (Ed. 2nd, 1953; Publisher: Swami Atmobodhananda, Baghbazar). Public read and download access on Internet Archive / DLI (2015.355549.Patramala-Ed2nd.pdf, 6,994,634 bytes). Candidate reader proposed for independent QA, NOT auto-ingested. Publisher cover image display does not grant redistribution rights."
         }
       ],
-      "text_outcome": "Complete verified historical 1953 Bengali scan on Internet Archive / DLI (in.ernet.dli.2015.355549, 200 pages). Candidate external reader pending independent QA."
+      "text_outcome": "Candidate external reader proposed pending independent QA (NOT auto-ingested). Verified complete 1953 Bengali 2nd edition scan on Internet Archive / DLI (in.ernet.dli.2015.355549, 200 pages, 6.99 MB PDF). Publisher retail cover lead identified on Udbodhan, but rehosting rights not granted."
     },
     {
       "book_id": 108,
