@@ -28,7 +28,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <header className="relative py-16 px-6 sm:px-8 border-b border-glass-border max-w-3xl mx-auto bg-bg-theme text-center">
-        <ThemeSelector />
+        <ThemeSelector floating />
         <StaggerContainer className="space-y-6 pt-8">
           <StaggerItem className="flex justify-center mb-2">
             <img

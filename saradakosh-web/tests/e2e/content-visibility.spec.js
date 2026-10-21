@@ -42,3 +42,26 @@ test('homepage footer remains within narrow viewports and theme controls support
   expect(box.width).toBeGreaterThanOrEqual(44);
   expect(box.height).toBeGreaterThanOrEqual(44);
 });
+
+test('theme controls and quiz language controls remain independently clickable on mobile', async ({ page }) => {
+  for (const width of [320, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    for (const route of ['/about', '/reports/vivekananda', '/reports/mega-period', '/reports/refs', '/classes']) {
+      await page.goto(route);
+      const theme = page.getByRole('button', { name: 'Switch to Midnight Theme (Dark Mode)', exact: true });
+      await theme.click();
+      const back = page.locator('a[href="/"]').first();
+      await back.click();
+      await expect(page).toHaveURL(/\/$/);
+    }
+    await page.goto('/quiz');
+    await page.getByRole('button', { name: 'Select English', exact: true }).click();
+    for (const language of ['Bengali', 'Hindi', 'English']) {
+      const button = page.getByRole('button', { name: `Switch to ${language}`, exact: true });
+      await button.click();
+      await expect(button).toHaveAttribute('aria-pressed', 'true');
+    }
+    await page.getByRole('button', { name: 'Switch to Midnight Theme (Dark Mode)', exact: true }).click();
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `${width}px quiz overflow`).toBe(true);
+  }
+});

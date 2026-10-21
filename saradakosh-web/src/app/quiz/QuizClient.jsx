@@ -233,7 +233,7 @@ export default function QuizClient() {
     <div className="min-h-screen bg-bg-theme text-text-theme font-sans flex flex-col selection:bg-primary-theme/20 overflow-x-hidden">
       {/* Top Header */}
       <header className="sticky top-0 z-40 bg-bg-theme/95 backdrop-blur-md border-b border-glass-border">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between gap-4">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-3.5 flex flex-wrap items-center justify-between gap-4">
           <Link
             href="/"
             className="flex items-center gap-2 text-text-theme hover:text-primary-theme transition-colors font-serif font-bold text-lg tracking-tight"
@@ -248,10 +248,10 @@ export default function QuizClient() {
             <span>Saradakosh</span>
           </Link>
 
-          <div className="flex items-center gap-2 sm:gap-3">
+          <div className="contents">
             {/* Language Switcher (shown always when a language has been selected) */}
             {selectedLanguage && (
-              <nav aria-label="Language selection" className="flex items-center bg-glass-bg border border-glass-border rounded-lg p-0.5">
+              <nav aria-label="Language selection" className="order-3 basis-full sm:order-none sm:basis-auto sm:ml-auto flex items-center justify-center bg-glass-bg border border-glass-border rounded-lg p-0.5">
                 {SUPPORTED_LANGUAGES.map((lang) => {
                   const isActive = selectedLanguage === lang.code;
                   return (
