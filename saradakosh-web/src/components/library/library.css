@@ -24,7 +24,7 @@
 .collection-total > span { display:block; font:13px var(--font-sans), sans-serif; color:var(--library-muted); margin-top:9px; }
 .library-lede { color:var(--library-muted); max-width:680px; line-height:1.7; margin:16px 0 0; font-size:16px; }
 .library-toolbar { padding:23px; border:1px solid var(--library-border); border-radius:var(--library-radius); background:var(--library-surface); display:flex; flex-wrap:wrap; align-items:end; gap:22px; }
-.library-search { flex:1 1 300px; }
+.library-search { flex:1 1 300px; min-width:0; }
 .library-search label { display:block; font-size:13px; font-weight:600; margin-bottom:9px; }
 .library-search > div { display:flex; align-items:center; border:1px solid var(--library-border); border-radius:8px; gap:10px; padding-left:12px; min-height:46px; }
 .library-search input { width:100%; min-width:0; border:0; background:transparent; outline-offset:0; height:44px; }
@@ -106,7 +106,7 @@
   .collection-total > span { max-width:70px; line-height:1.4; }
   .library-lede { font-size:15px; }
   .library-toolbar { padding:15px; gap:16px; }
-  .library-toggles { gap:8px; flex-wrap:nowrap; }
+  .library-toggles { gap:8px; }
   .segmented-control { flex:1 1 auto; }
   .segmented-control button { flex:1; padding:0 7px; gap:5px; font-size:13px; }
   .category-controls { gap:2px; padding-top:12px; flex-wrap:nowrap; overflow-x:auto; min-width:0; scrollbar-width:thin; }
@@ -126,7 +126,7 @@
   .book-list-row { flex-direction:column; align-items:stretch; gap:10px; padding:20px 0; }
   .book-list-row .book-open { gap:16px; }
   .book-list-row .book-links { justify-content:flex-start; flex:auto; margin-left:42px; }
-  .library-pagination { gap:12px; font-size:13px; }
+  .library-pagination { gap:12px; font-size:13px; flex-wrap:wrap; }
   .book-dialog { padding:44px 22px 26px; }
   .dialog-layout { grid-template-columns:minmax(0,1fr); gap:22px; }
   .dialog-layout > .book-cover { width:150px; margin:auto; }
