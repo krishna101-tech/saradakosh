@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -137,6 +138,45 @@ test('API POST /api/sync/classes enforces strict allowlist and publish eligibili
     })
   });
   assert.equal((await POST(req4)).status, 400);
+
+  // Publish with hash mismatch is rejected
+  const req5 = new Request('http://localhost:3000/api/sync/classes', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${secret}` },
+    body: JSON.stringify({
+      version: 1,
+      action: 'publish',
+      classId: 'c1',
+      date: '2026-10-21',
+      subject: 'Gita',
+      videoId: 'K8GlawawxVg',
+      transcript: {
+        markdown: '# Verified Gita Class Markdown Content At Least 20 Chars',
+        hash: '0000000000000000000000000000000000000000000000000000000000000000',
+        driveFileId: '1hpUro0wTeUvAgQks_Yifw8iH3rAWsvXl'
+      }
+    })
+  });
+  assert.equal((await POST(req5)).status, 400);
+
+  // Publish without driveFileId is rejected
+  const req6 = new Request('http://localhost:3000/api/sync/classes', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${secret}` },
+    body: JSON.stringify({
+      version: 1,
+      action: 'publish',
+      classId: 'c1',
+      date: '2026-10-21',
+      subject: 'Gita',
+      videoId: 'K8GlawawxVg',
+      transcript: {
+        markdown: '# Verified Gita Class Markdown Content At Least 20 Chars',
+        hash: crypto.createHash('sha256').update('# Verified Gita Class Markdown Content At Least 20 Chars', 'utf8').digest('hex')
+      }
+    })
+  });
+  assert.equal((await POST(req6)).status, 400);
 });
 
 test('API POST /api/sync/classes enforces monotonic revisions and handles publish/withdraw lifecycle', async () => {
@@ -145,6 +185,10 @@ test('API POST /api/sync/classes enforces monotonic revisions and handles publis
   const testVideoId = 'K8GlawawxVg';
 
   // 1. Initial Publish with revision 2
+  const sampleMarkdown = '# Katha Upanishad\n\n## Peace Invocation\n\nOriginal transcript body.';
+  const sampleHash = crypto.createHash('sha256').update(sampleMarkdown, 'utf8').digest('hex');
+  const sampleDriveId = '1hpUro0wTeUvAgQks_Yifw8iH3rAWsvXl';
+
   const publishRev2 = {
     version: 1,
     classId: testClassId,
@@ -158,9 +202,10 @@ test('API POST /api/sync/classes enforces monotonic revisions and handles publis
     videoId: testVideoId,
     topics: [{ startTime: '00:00:00', endTime: '00:05:00', text: 'Peace Invocation' }],
     transcript: {
-      markdown: '# Katha Upanishad\n\n## Peace Invocation\n\nOriginal transcript body.',
-      hash: 'hash-888',
-      language: 'hi'
+      markdown: sampleMarkdown,
+      hash: sampleHash,
+      language: 'hi',
+      driveFileId: sampleDriveId
     }
   };
 
@@ -196,6 +241,30 @@ test('API POST /api/sync/classes enforces monotonic revisions and handles publis
   assert.equal(res2.status, 200);
   const body2 = await res2.json();
   assert.equal(body2.status, 'idempotent_duplicate');
+
+  // 2b. Replay of same revision with differing videoId is rejected with 409
+  const resDiffPayload = await POST(new Request('http://localhost:3000/api/sync/classes', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${secret}` },
+    body: JSON.stringify({ ...publishRev2, videoId: 'Different11' })
+  }));
+  assert.equal(resDiffPayload.status, 409);
+
+  // 2c. Withdraw at same revision as publish is rejected with 409
+  const resConflictWithdraw = await POST(new Request('http://localhost:3000/api/sync/classes', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${secret}` },
+    body: JSON.stringify({
+      version: 1,
+      classId: testClassId,
+      revision: 2,
+      action: 'withdraw',
+      date: '2026-10-21',
+      subject: 'Katha Upanishad Monotonic Test',
+      videoId: testVideoId
+    })
+  }));
+  assert.equal(resConflictWithdraw.status, 409);
 
   // 3. Stale revision (revision 1 < existing revision 2) is rejected with 409 Conflict
   const stalePayload = { ...publishRev2, revision: 1 };

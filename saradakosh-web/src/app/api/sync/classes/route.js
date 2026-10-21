@@ -26,9 +26,9 @@ export async function POST(req) {
     return Response.json({ error: 'Unauthorized: valid Bearer token required.' }, { status: 401 });
   }
 
-  if (process.env.VERCEL === '1' && !process.env.TURSO_DATABASE_URL) {
+  if (process.env.VERCEL === '1') {
     return Response.json({
-      error: 'NEEDS OWNER AUTH: Turso persistent database credentials (TURSO_DATABASE_URL & TURSO_AUTH_TOKEN) are not configured in Vercel environment variables. In-memory/ephemeral SQLite cannot persist across serverless instances.'
+      error: 'NEEDS OWNER AUTH: Cloud persistent database credentials (TURSO_DATABASE_URL & TURSO_AUTH_TOKEN) and remote storage adapter are not configured in Vercel environment. Ephemeral serverless filesystem cannot persist sync writes across instances.'
     }, { status: 503 });
   }
 
@@ -80,12 +80,25 @@ export async function POST(req) {
   }
 
   // Publish eligibility gate
+  let cleanMarkdown = '';
+  let computedHash = '';
   if (action === 'publish') {
     if (!videoId || !/^[A-Za-z0-9_-]{11}$/.test(videoId)) {
       return Response.json({ error: 'Public classes require a valid 11-character videoId.' }, { status: 400 });
     }
     if (!transcript || typeof transcript.markdown !== 'string' || !transcript.markdown.trim()) {
       return Response.json({ error: 'Public classes require a verified transcript with non-empty markdown.' }, { status: 400 });
+    }
+    cleanMarkdown = transcript.markdown.trim();
+    if (cleanMarkdown.length < 20) {
+      return Response.json({ error: 'Public classes transcript markdown is too short to be valid.' }, { status: 400 });
+    }
+    computedHash = crypto.createHash('sha256').update(cleanMarkdown, 'utf8').digest('hex');
+    if (transcript.hash && transcript.hash !== computedHash) {
+      return Response.json({ error: 'Transcript SHA-256 hash verification failed: hash does not match content.' }, { status: 400 });
+    }
+    if (!transcript.driveFileId || typeof transcript.driveFileId !== 'string' || !/^([a-zA-Z0-9_-]{20,}|local-[a-f0-9]+)$/.test(transcript.driveFileId)) {
+      return Response.json({ error: 'Public classes require verified cloud Drive provenance (driveFileId).' }, { status: 400 });
     }
   }
 
@@ -96,55 +109,6 @@ export async function POST(req) {
 
     const now = new Date().toISOString();
 
-    // Monotonic revision check
-    const existing = db.prepare('SELECT revision, is_withdrawn FROM synced_classes WHERE class_id = ?').get(classId);
-    if (existing) {
-      if (incomingRevision < existing.revision) {
-        return Response.json({
-          error: `Stale revision ${incomingRevision}; current is ${existing.revision}.`,
-          classId,
-          currentRevision: existing.revision
-        }, { status: 409 });
-      }
-
-      if (incomingRevision === existing.revision) {
-        if (existing.is_withdrawn === 1 && action === 'publish') {
-          return Response.json({
-            error: `Cannot publish with revision ${incomingRevision}; class was already withdrawn at revision ${existing.revision}.`,
-            classId,
-            currentRevision: existing.revision
-          }, { status: 409 });
-        }
-        return Response.json({
-          success: true,
-          status: 'idempotent_duplicate',
-          action,
-          classId,
-          revision: incomingRevision
-        });
-      }
-    }
-
-    if (action === 'withdraw') {
-      db.prepare(`
-        INSERT INTO synced_classes (
-          class_id, session_id, revision, date, subject, chapter, title, video_id, is_withdrawn, updated_at
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 1, ?)
-        ON CONFLICT(class_id) DO UPDATE SET
-          revision = excluded.revision,
-          is_withdrawn = 1,
-          updated_at = excluded.updated_at
-      `).run(classId, sessionId || null, incomingRevision, date, subject, chapter, title, videoId, now);
-
-      return Response.json({
-        success: true,
-        action: 'withdraw',
-        classId,
-        revision: incomingRevision
-      });
-    }
-
-    // action === 'publish'
     const cleanTopics = Array.isArray(topics) ? topics.map(t => ({
       startTime: String(t.startTime || t.start_time || '00:00:00'),
       endTime: String(t.endTime || t.end_time || ''),
@@ -152,7 +116,55 @@ export async function POST(req) {
     })).filter(t => t.text) : [];
     const topicsJson = JSON.stringify(cleanTopics);
 
-    db.transaction(() => {
+    // Atomic transaction for monotonic check + write
+    const tx = db.transaction(() => {
+      const existing = db.prepare('SELECT revision, is_withdrawn, video_id FROM synced_classes WHERE class_id = ?').get(classId);
+      if (existing) {
+        if (incomingRevision < existing.revision) {
+          const err = new Error(`Stale revision ${incomingRevision}; current is ${existing.revision}.`);
+          err.statusCode = 409;
+          err.currentRevision = existing.revision;
+          throw err;
+        }
+
+        if (incomingRevision === existing.revision) {
+          if (existing.is_withdrawn === 1 && action === 'publish') {
+            const err = new Error(`Cannot publish with revision ${incomingRevision}; class was already withdrawn at revision ${existing.revision}.`);
+            err.statusCode = 409;
+            err.currentRevision = existing.revision;
+            throw err;
+          }
+          if (existing.is_withdrawn === 0 && action === 'withdraw') {
+            const err = new Error(`Cannot withdraw with revision ${incomingRevision}; class was already published at revision ${existing.revision}. Newer revision required.`);
+            err.statusCode = 409;
+            err.currentRevision = existing.revision;
+            throw err;
+          }
+          if (existing.video_id !== (videoId || null)) {
+            const err = new Error(`Revision conflict: differing payload for same revision ${incomingRevision}.`);
+            err.statusCode = 409;
+            err.currentRevision = existing.revision;
+            throw err;
+          }
+          return { status: 'idempotent_duplicate', revision: incomingRevision };
+        }
+      }
+
+      if (action === 'withdraw') {
+        db.prepare(`
+          INSERT INTO synced_classes (
+            class_id, session_id, revision, date, subject, chapter, title, video_id, is_withdrawn, updated_at
+          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 1, ?)
+          ON CONFLICT(class_id) DO UPDATE SET
+            revision = excluded.revision,
+            is_withdrawn = 1,
+            updated_at = excluded.updated_at
+        `).run(classId, sessionId || null, incomingRevision, date, subject, chapter, title, videoId, now);
+
+        return { status: 'withdrawn', revision: incomingRevision };
+      }
+
+      // action === 'publish'
       db.prepare(`
         INSERT INTO synced_classes (
           class_id, session_id, revision, date, subject, chapter, title, video_id, topics_json, transcript_available, is_withdrawn, updated_at
@@ -192,15 +204,38 @@ export async function POST(req) {
           language = excluded.language,
           drive_file_id = excluded.drive_file_id,
           updated_at = excluded.updated_at
-        `).run(
-          videoId,
-          transcript.markdown.trim(),
-          transcript.hash || '',
-          transcript.language || 'hi',
-          transcript.driveFileId || null,
-          now
-        );
-    })();
+      `).run(
+        videoId,
+        cleanMarkdown,
+        computedHash,
+        transcript.language || 'hi',
+        transcript.driveFileId || null,
+        now
+      );
+
+      return { status: 'published', revision: incomingRevision };
+    });
+
+    const txResult = tx();
+
+    if (txResult.status === 'idempotent_duplicate') {
+      return Response.json({
+        success: true,
+        status: 'idempotent_duplicate',
+        action,
+        classId,
+        revision: txResult.revision
+      });
+    }
+
+    if (txResult.status === 'withdrawn') {
+      return Response.json({
+        success: true,
+        action: 'withdraw',
+        classId,
+        revision: txResult.revision
+      });
+    }
 
     return Response.json({
       success: true,
@@ -208,10 +243,17 @@ export async function POST(req) {
       classId,
       videoId,
       transcriptAvailable: true,
-      revision: incomingRevision
+      revision: txResult.revision
     });
 
   } catch (err) {
+    if (err.statusCode === 409) {
+      return Response.json({
+        error: err.message,
+        classId,
+        currentRevision: err.currentRevision
+      }, { status: 409 });
+    }
     console.error('Error processing class sync ingest:', err);
     return Response.json({ error: err.message }, { status: 500 });
   } finally {
