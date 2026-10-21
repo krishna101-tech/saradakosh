@@ -47,14 +47,22 @@ export function initSyncedTables(db) {
 export function getPublishedClasses() {
   let db;
   let syncedRows = [];
+  const dbExisted = fs.existsSync(dbPath);
   try {
-    db = new Database(dbPath, { readonly: true });
-    const hasTable = Boolean(db.prepare("SELECT 1 FROM sqlite_master WHERE type='table' AND name='synced_classes'").get());
-    if (hasTable) {
-      syncedRows = db.prepare('SELECT * FROM synced_classes').all();
+    if (dbExisted) {
+      db = new Database(dbPath, { readonly: true, fileMustExist: true });
+      const hasTable = Boolean(db.prepare("SELECT 1 FROM sqlite_master WHERE type='table' AND name='synced_classes'").get());
+      if (hasTable) {
+        syncedRows = db.prepare('SELECT * FROM synced_classes').all();
+      }
     }
-  } catch {
-    // If DB is locked or uninitialized, fallback safely to baseline
+  } catch (err) {
+    console.error('Error querying synced_classes database:', err);
+    if (dbExisted) {
+      // Fail closed: if dynamic store exists but throws a query error,
+      // fail rather than risk serving previously withdrawn classes.
+      throw new Error('Classes data temporarily unavailable due to database query error');
+    }
   } finally {
     db?.close();
   }
@@ -123,25 +131,32 @@ export function getPublishedTranscript(videoId) {
   if (!videoId || !/^[A-Za-z0-9_-]{11}$/.test(videoId)) return null;
 
   let db;
+  const dbExisted = fs.existsSync(dbPath);
   try {
-    db = new Database(dbPath, { readonly: true });
-    // Check if withdrawn
-    const hasSyncedClasses = Boolean(db.prepare("SELECT 1 FROM sqlite_master WHERE type='table' AND name='synced_classes'").get());
-    if (hasSyncedClasses) {
-      const withdrawn = db.prepare('SELECT 1 FROM synced_classes WHERE video_id = ? AND is_withdrawn = 1').get(videoId);
-      if (withdrawn) return null;
-    }
+    if (dbExisted) {
+      db = new Database(dbPath, { readonly: true, fileMustExist: true });
+      // Check if withdrawn
+      const hasSyncedClasses = Boolean(db.prepare("SELECT 1 FROM sqlite_master WHERE type='table' AND name='synced_classes'").get());
+      if (hasSyncedClasses) {
+        const withdrawn = db.prepare('SELECT 1 FROM synced_classes WHERE video_id = ? AND is_withdrawn = 1').get(videoId);
+        if (withdrawn) return null;
+      }
 
-    // Check synced_transcripts table first
-    const hasSyncedTranscripts = Boolean(db.prepare("SELECT 1 FROM sqlite_master WHERE type='table' AND name='synced_transcripts'").get());
-    if (hasSyncedTranscripts) {
-      const row = db.prepare('SELECT markdown FROM synced_transcripts WHERE video_id = ?').get(videoId);
-      if (row && typeof row.markdown === 'string' && row.markdown.trim()) {
-        return { markdown: row.markdown.trim() };
+      // Check synced_transcripts table first
+      const hasSyncedTranscripts = Boolean(db.prepare("SELECT 1 FROM sqlite_master WHERE type='table' AND name='synced_transcripts'").get());
+      if (hasSyncedTranscripts) {
+        const row = db.prepare('SELECT markdown FROM synced_transcripts WHERE video_id = ?').get(videoId);
+        if (row && typeof row.markdown === 'string' && row.markdown.trim()) {
+          return { markdown: row.markdown.trim() };
+        }
       }
     }
-  } catch {
-    // DB error, fallback to static archive
+  } catch (err) {
+    console.error('Error querying synced_transcripts:', err);
+    if (dbExisted) {
+      // Fail closed: do not serve static transcript if dynamic store is degraded
+      return null;
+    }
   } finally {
     db?.close();
   }

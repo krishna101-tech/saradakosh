@@ -19,4 +19,4 @@ while (true) {
   directory = parent;
 }
 
-export const dbPath = databasePath;
+export const dbPath = process.env.SARADAKOSH_DB_PATH || databasePath;

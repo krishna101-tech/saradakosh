@@ -9,7 +9,11 @@ function verifyAuth(req) {
   const match = authHeader.match(/^Bearer\s+(.+)$/i);
   if (!match) return false;
   const token = match[1].trim();
-  const expectedSecret = process.env.SARADAKOSH_SYNC_SECRET || process.env.SYNC_BEARER_TOKEN || 'saradakosh-sync-secret-2026';
+  const expectedSecret = process.env.SARADAKOSH_SYNC_SECRET || process.env.SYNC_BEARER_TOKEN;
+  if (!expectedSecret) {
+    // Fail closed if sync secret is unconfigured
+    return false;
+  }
   
   const bufA = Buffer.from(token, 'utf8');
   const bufB = Buffer.from(expectedSecret, 'utf8');
@@ -64,12 +68,56 @@ export async function POST(req) {
     return Response.json({ error: 'videoId must be an 11-character string.' }, { status: 400 });
   }
 
+  const incomingRevision = Number.isInteger(Number(revision)) ? Number(revision) : null;
+  if (incomingRevision === null || incomingRevision < 1) {
+    return Response.json({ error: 'revision must be a positive integer.' }, { status: 400 });
+  }
+
+  // Publish eligibility gate
+  if (action === 'publish') {
+    if (!videoId || !/^[A-Za-z0-9_-]{11}$/.test(videoId)) {
+      return Response.json({ error: 'Public classes require a valid 11-character videoId.' }, { status: 400 });
+    }
+    if (!transcript || typeof transcript.markdown !== 'string' || !transcript.markdown.trim()) {
+      return Response.json({ error: 'Public classes require a verified transcript with non-empty markdown.' }, { status: 400 });
+    }
+  }
+
   let db;
   try {
     db = getSyncDb(false);
     initSyncedTables(db);
 
     const now = new Date().toISOString();
+
+    // Monotonic revision check
+    const existing = db.prepare('SELECT revision, is_withdrawn FROM synced_classes WHERE class_id = ?').get(classId);
+    if (existing) {
+      if (incomingRevision < existing.revision) {
+        return Response.json({
+          error: `Stale revision ${incomingRevision}; current is ${existing.revision}.`,
+          classId,
+          currentRevision: existing.revision
+        }, { status: 409 });
+      }
+
+      if (incomingRevision === existing.revision) {
+        if (existing.is_withdrawn === 1 && action === 'publish') {
+          return Response.json({
+            error: `Cannot publish with revision ${incomingRevision}; class was already withdrawn at revision ${existing.revision}.`,
+            classId,
+            currentRevision: existing.revision
+          }, { status: 409 });
+        }
+        return Response.json({
+          success: true,
+          status: 'idempotent_duplicate',
+          action,
+          classId,
+          revision: incomingRevision
+        });
+      }
+    }
 
     if (action === 'withdraw') {
       db.prepare(`
@@ -80,18 +128,17 @@ export async function POST(req) {
           revision = excluded.revision,
           is_withdrawn = 1,
           updated_at = excluded.updated_at
-      `).run(classId, sessionId || null, Number(revision) || 1, date, subject, chapter, title, videoId, now);
+      `).run(classId, sessionId || null, incomingRevision, date, subject, chapter, title, videoId, now);
 
       return Response.json({
         success: true,
         action: 'withdraw',
         classId,
-        revision: Number(revision) || 1
+        revision: incomingRevision
       });
     }
 
     // action === 'publish'
-    const hasTranscript = Boolean(transcript && typeof transcript.markdown === 'string' && transcript.markdown.trim());
     const cleanTopics = Array.isArray(topics) ? topics.map(t => ({
       startTime: String(t.startTime || t.start_time || '00:00:00'),
       endTime: String(t.endTime || t.end_time || ''),
@@ -100,11 +147,10 @@ export async function POST(req) {
     const topicsJson = JSON.stringify(cleanTopics);
 
     db.transaction(() => {
-      // 1. Upsert synced_classes
       db.prepare(`
         INSERT INTO synced_classes (
           class_id, session_id, revision, date, subject, chapter, title, video_id, topics_json, transcript_available, is_withdrawn, updated_at
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, ?)
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 1, 0, ?)
         ON CONFLICT(class_id) DO UPDATE SET
           session_id = excluded.session_id,
           revision = excluded.revision,
@@ -114,35 +160,32 @@ export async function POST(req) {
           title = excluded.title,
           video_id = excluded.video_id,
           topics_json = excluded.topics_json,
-          transcript_available = excluded.transcript_available,
+          transcript_available = 1,
           is_withdrawn = 0,
           updated_at = excluded.updated_at
       `).run(
         classId,
         sessionId || null,
-        Number(revision) || 1,
+        incomingRevision,
         date,
         subject,
         chapter,
         title,
         videoId,
         topicsJson,
-        hasTranscript ? 1 : 0,
         now
       );
 
-      // 2. If transcript provided, upsert synced_transcripts
-      if (hasTranscript && videoId) {
-        db.prepare(`
-          INSERT INTO synced_transcripts (
-            video_id, markdown, hash, language, drive_file_id, updated_at
-          ) VALUES (?, ?, ?, ?, ?, ?)
-          ON CONFLICT(video_id) DO UPDATE SET
-            markdown = excluded.markdown,
-            hash = excluded.hash,
-            language = excluded.language,
-            drive_file_id = excluded.drive_file_id,
-            updated_at = excluded.updated_at
+      db.prepare(`
+        INSERT INTO synced_transcripts (
+          video_id, markdown, hash, language, drive_file_id, updated_at
+        ) VALUES (?, ?, ?, ?, ?, ?)
+        ON CONFLICT(video_id) DO UPDATE SET
+          markdown = excluded.markdown,
+          hash = excluded.hash,
+          language = excluded.language,
+          drive_file_id = excluded.drive_file_id,
+          updated_at = excluded.updated_at
         `).run(
           videoId,
           transcript.markdown.trim(),
@@ -151,7 +194,6 @@ export async function POST(req) {
           transcript.driveFileId || null,
           now
         );
-      }
     })();
 
     return Response.json({
@@ -159,8 +201,8 @@ export async function POST(req) {
       action: 'publish',
       classId,
       videoId,
-      transcriptAvailable: hasTranscript,
-      revision: Number(revision) || 1
+      transcriptAvailable: true,
+      revision: incomingRevision
     });
 
   } catch (err) {

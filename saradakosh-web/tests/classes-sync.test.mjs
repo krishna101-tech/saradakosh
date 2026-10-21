@@ -1,9 +1,26 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 import Database from 'better-sqlite3';
-import { dbPath } from '../src/lib/db-path.mjs';
-import { getPublishedClasses, getPublishedTranscript, initSyncedTables } from '../src/lib/classes-data.js';
-import { POST } from '../src/app/api/sync/classes/route.js';
+
+// Set up isolated temporary test database BEFORE importing classes-data
+const testDbDir = fs.mkdtempSync(path.join(os.tmpdir(), 'sk-classes-sync-test-'));
+const testDbPath = path.join(testDbDir, 'test-saradakosh-sync.db');
+process.env.SARADAKOSH_DB_PATH = testDbPath;
+process.env.SARADAKOSH_SYNC_SECRET = 'test-saradakosh-secret-12345';
+
+const { getPublishedClasses, getPublishedTranscript, initSyncedTables } = await import('../src/lib/classes-data.js');
+const { POST } = await import('../src/app/api/sync/classes/route.js');
+
+test.after(() => {
+  try {
+    fs.rmSync(testDbDir, { recursive: true, force: true });
+  } catch {}
+  delete process.env.SARADAKOSH_DB_PATH;
+  delete process.env.SARADAKOSH_SYNC_SECRET;
+});
 
 test('getPublishedClasses returns baseline catalog when no synced classes exist', () => {
   const records = getPublishedClasses();
@@ -20,8 +37,8 @@ test('getPublishedTranscript returns baseline transcript for known video', () =>
   assert.equal(unknown, null);
 });
 
-test('API POST /api/sync/classes rejects unauthorized requests', async () => {
-  // Missing auth header
+test('API POST /api/sync/classes fails closed when unconfigured or unauthorized', async () => {
+  // 1. Missing auth header
   const req1 = new Request('http://localhost:3000/api/sync/classes', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -30,7 +47,7 @@ test('API POST /api/sync/classes rejects unauthorized requests', async () => {
   const res1 = await POST(req1);
   assert.equal(res1.status, 401);
 
-  // Wrong token
+  // 2. Wrong token
   const req2 = new Request('http://localhost:3000/api/sync/classes', {
     method: 'POST',
     headers: {
@@ -41,128 +58,207 @@ test('API POST /api/sync/classes rejects unauthorized requests', async () => {
   });
   const res2 = await POST(req2);
   assert.equal(res2.status, 401);
+
+  // 3. Unconfigured server secret fails closed
+  const originalSecret = process.env.SARADAKOSH_SYNC_SECRET;
+  delete process.env.SARADAKOSH_SYNC_SECRET;
+  delete process.env.SYNC_BEARER_TOKEN;
+  try {
+    const req3 = new Request('http://localhost:3000/api/sync/classes', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer any-token'
+      },
+      body: JSON.stringify({ version: 1, action: 'publish' })
+    });
+    const res3 = await POST(req3);
+    assert.equal(res3.status, 401);
+  } finally {
+    process.env.SARADAKOSH_SYNC_SECRET = originalSecret;
+  }
 });
 
-test('API POST /api/sync/classes validates allowlist schema and rejects invalid payload', async () => {
-  const secret = process.env.SARADAKOSH_SYNC_SECRET || 'saradakosh-sync-secret-2026';
+test('API POST /api/sync/classes enforces strict allowlist and publish eligibility gates', async () => {
+  const secret = process.env.SARADAKOSH_SYNC_SECRET;
 
   // Bad version
   const req1 = new Request('http://localhost:3000/api/sync/classes', {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${secret}`
-    },
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${secret}` },
     body: JSON.stringify({ version: 2, action: 'publish', classId: 'c1' })
   });
-  const res1 = await POST(req1);
-  assert.equal(res1.status, 400);
+  assert.equal((await POST(req1)).status, 400);
 
   // Missing date
   const req2 = new Request('http://localhost:3000/api/sync/classes', {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${secret}`
-    },
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${secret}` },
     body: JSON.stringify({ version: 1, action: 'publish', classId: 'c1', subject: 'Gita' })
   });
-  const res2 = await POST(req2);
-  assert.equal(res2.status, 400);
+  assert.equal((await POST(req2)).status, 400);
+
+  // Invalid revision (0 or negative) is rejected with 400
+  const reqRev0 = new Request('http://localhost:3000/api/sync/classes', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${secret}` },
+    body: JSON.stringify({ version: 1, action: 'publish', classId: 'c1', date: '2026-10-21', subject: 'Gita', revision: 0 })
+  });
+  assert.equal((await POST(reqRev0)).status, 400);
+
+  // Publish without videoId is rejected
+  const req3 = new Request('http://localhost:3000/api/sync/classes', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${secret}` },
+    body: JSON.stringify({
+      version: 1,
+      action: 'publish',
+      classId: 'c1',
+      date: '2026-10-21',
+      subject: 'Gita',
+      videoId: null,
+      transcript: { markdown: 'some text' }
+    })
+  });
+  assert.equal((await POST(req3)).status, 400);
+
+  // Publish without verified non-empty transcript markdown is rejected
+  const req4 = new Request('http://localhost:3000/api/sync/classes', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${secret}` },
+    body: JSON.stringify({
+      version: 1,
+      action: 'publish',
+      classId: 'c1',
+      date: '2026-10-21',
+      subject: 'Gita',
+      videoId: 'K8GlawawxVg',
+      transcript: { markdown: '   ' }
+    })
+  });
+  assert.equal((await POST(req4)).status, 400);
 });
 
-test('API POST /api/sync/classes publishes, updates and withdraws classes dynamically', async () => {
-  const secret = process.env.SARADAKOSH_SYNC_SECRET || 'saradakosh-sync-secret-2026';
-  const testClassId = 'catalog:test-sync-class-999';
+test('API POST /api/sync/classes enforces monotonic revisions and handles publish/withdraw lifecycle', async () => {
+  const secret = process.env.SARADAKOSH_SYNC_SECRET;
+  const testClassId = 'catalog:test-sync-class-888';
   const testVideoId = 'K8GlawawxVg';
 
-  // 1. Publish new class
-  const publishPayload = {
+  // 1. Initial Publish with revision 2
+  const publishRev2 = {
     version: 1,
     classId: testClassId,
-    sessionId: 'test-session-uuid-999',
-    revision: 1,
+    sessionId: 'session-uuid-888',
+    revision: 2,
     action: 'publish',
     date: '2026-10-21',
-    subject: 'Katha Upanishad Sync Test',
+    subject: 'Katha Upanishad Monotonic Test',
     chapter: 'Valli 1',
-    title: 'Katha Upanishad Sync Video',
+    title: 'Katha Upanishad Video Title',
     videoId: testVideoId,
-    topics: [
-      { startTime: '00:00:00', endTime: '00:05:00', text: 'Shanti Mantra Sync' }
-    ],
+    topics: [{ startTime: '00:00:00', endTime: '00:05:00', text: 'Peace Invocation' }],
     transcript: {
-      markdown: '# Katha Upanishad Sync\n\n## Shanti Mantra\n\nशान्ति पाठ।',
-      hash: 'testhash123',
+      markdown: '# Katha Upanishad\n\n## Peace Invocation\n\nOriginal transcript body.',
+      hash: 'hash-888',
       language: 'hi'
     }
   };
 
-  const req1 = new Request('http://localhost:3000/api/sync/classes', {
+  const res1 = await POST(new Request('http://localhost:3000/api/sync/classes', {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${secret}`
-    },
-    body: JSON.stringify(publishPayload)
-  });
-  const res1 = await POST(req1);
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${secret}` },
+    body: JSON.stringify(publishRev2)
+  }));
   assert.equal(res1.status, 200);
   const body1 = await res1.json();
   assert.equal(body1.success, true);
   assert.equal(body1.action, 'publish');
+  assert.equal(body1.revision, 2);
 
-  // Verify class appears in getPublishedClasses
+  // Verify visible in public catalog
   let records = getPublishedClasses();
   let found = records.find(r => r.id === testClassId);
   assert.ok(found);
-  assert.equal(found.subject, 'Katha Upanishad Sync Test');
+  assert.equal(found.subject, 'Katha Upanishad Monotonic Test');
   assert.equal(found.transcriptAvailable, true);
 
-  // Verify transcript is readable via getPublishedTranscript
+  // Verify transcript readable
   let t = getPublishedTranscript(testVideoId);
   assert.ok(t);
-  assert.ok(t.markdown.includes('शान्ति पाठ।'));
+  assert.ok(t.markdown.includes('Original transcript body.'));
 
-  // 2. Withdraw class (tombstone)
-  const withdrawPayload = {
-    version: 1,
-    classId: testClassId,
-    revision: 2,
-    action: 'withdraw',
-    date: '2026-10-21',
-    subject: 'Katha Upanishad Sync Test',
-    videoId: testVideoId
-  };
-
-  const req2 = new Request('http://localhost:3000/api/sync/classes', {
+  // 2. Replay of same revision (idempotent duplicate)
+  const res2 = await POST(new Request('http://localhost:3000/api/sync/classes', {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${secret}`
-    },
-    body: JSON.stringify(withdrawPayload)
-  });
-  const res2 = await POST(req2);
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${secret}` },
+    body: JSON.stringify(publishRev2)
+  }));
   assert.equal(res2.status, 200);
   const body2 = await res2.json();
-  assert.equal(body2.action, 'withdraw');
+  assert.equal(body2.status, 'idempotent_duplicate');
 
-  // Verify class is removed from getPublishedClasses
+  // 3. Stale revision (revision 1 < existing revision 2) is rejected with 409 Conflict
+  const stalePayload = { ...publishRev2, revision: 1 };
+  const resStale = await POST(new Request('http://localhost:3000/api/sync/classes', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${secret}` },
+    body: JSON.stringify(stalePayload)
+  }));
+  assert.equal(resStale.status, 409);
+
+  // 4. Withdraw with revision 3 (tombstone)
+  const withdrawRev3 = {
+    version: 1,
+    classId: testClassId,
+    revision: 3,
+    action: 'withdraw',
+    date: '2026-10-21',
+    subject: 'Katha Upanishad Monotonic Test',
+    videoId: testVideoId
+  };
+  const resWithdraw = await POST(new Request('http://localhost:3000/api/sync/classes', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${secret}` },
+    body: JSON.stringify(withdrawRev3)
+  }));
+  assert.equal(resWithdraw.status, 200);
+  const bodyWithdraw = await resWithdraw.json();
+  assert.equal(bodyWithdraw.action, 'withdraw');
+  assert.equal(bodyWithdraw.revision, 3);
+
+  // Verify class is removed from catalog
   records = getPublishedClasses();
   found = records.find(r => r.id === testClassId);
   assert.equal(found, undefined);
 
-  // Verify transcript is inaccessible (returns null)
+  // Verify transcript is inaccessible
   t = getPublishedTranscript(testVideoId);
   assert.equal(t, null);
 
-  // Clean up test rows from saradakosh.db
-  const db = new Database(dbPath);
-  try {
-    db.prepare('DELETE FROM synced_classes WHERE class_id = ?').run(testClassId);
-    db.prepare('DELETE FROM synced_transcripts WHERE video_id = ?').run(testVideoId);
-  } finally {
-    db.close();
-  }
+  // 5. Attempting to publish with older or same revision (revision 3) CANNOT overturn the withdrawal
+  const conflictPublish = { ...publishRev2, revision: 3 };
+  const resConflict = await POST(new Request('http://localhost:3000/api/sync/classes', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${secret}` },
+    body: JSON.stringify(conflictPublish)
+  }));
+  assert.equal(resConflict.status, 409);
+
+  // 6. Genuine newer revision (revision 4) re-publishes successfully
+  const republicRev4 = { ...publishRev2, revision: 4, title: 'Updated Title Rev 4' };
+  const resRepublic = await POST(new Request('http://localhost:3000/api/sync/classes', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${secret}` },
+    body: JSON.stringify(republicRev4)
+  }));
+  assert.equal(resRepublic.status, 200);
+  const bodyRepublic = await resRepublic.json();
+  assert.equal(bodyRepublic.action, 'publish');
+  assert.equal(bodyRepublic.revision, 4);
+
+  // Verify visible again
+  records = getPublishedClasses();
+  found = records.find(r => r.id === testClassId);
+  assert.ok(found);
+  assert.equal(found.title, 'Updated Title Rev 4');
 });
