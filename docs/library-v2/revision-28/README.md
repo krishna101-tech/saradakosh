@@ -1,6 +1,10 @@
-# Current bounded resume — 21 October 2026 (Antigravity Update)
+# Current bounded resume — 21 October 2026 (Antigravity Update: IDs 139–143)
 
-Renewed research now covers **122 retained works** outside proposed duplicates 33–48: previous 117 plus 134–138. **30 remain: 139–168**. Checkpoint `research-134-138.json` records 1 verified complete 1957 Bengali scan candidate on Wikimedia Commons / Wikisource (ID 138 Amar Jivan Katha by Swami Abhedananda, 271 pages, author public domain worldwide), 5 new official publisher cover leads (IDs 134, 135, 136, 137, 138) with decoded dimensions and SHA256 hashes from Advaita Ashrama storefront. IDs 134–137 in-print copyrighted works with no authorized free digital edition. All new candidates are pending independent review; zero assets cleared and zero new reader approvals.
+Renewed research now covers **127 retained works** outside proposed duplicates 33–48: previous 122 plus 139–143. **25 remain: 144–168**. Checkpoint `research-139-143.json` records 4 new official publisher cover leads (IDs 140, 141, 142, 143) with decoded dimensions and SHA256 hashes from Advaita Ashrama storefront. ID 139 (three-volume reminiscences by Swami Sambuddhananda) and ID 143 (biography by Swami Annadananda) DLI scans are held under copyright (authors d. 1974 and d. 1980; protected under Indian Copyright Act Section 22 until 2035 and 2041 respectively); IDs 140–142 in-print copyrighted works with no authorized free digital edition. All new candidates are pending independent review; zero assets cleared and zero new reader approvals.
+
+## Earlier bounded resume — 21 October 2026 (IDs 134–138)
+
+Renewed research covered **122 retained works** outside proposed duplicates 33–48: previous 117 plus 134–138. Checkpoint `research-134-138.json` records 1 verified complete 1957 Bengali scan candidate on Wikimedia Commons / Wikisource (ID 138 Amar Jivan Katha by Swami Abhedananda, 271 pages, author public domain worldwide), 5 new official publisher cover leads (IDs 134, 135, 136, 137, 138) with decoded dimensions and SHA256 hashes from Advaita Ashrama storefront. IDs 134–137 in-print copyrighted works with no authorized free digital edition. All candidates pending independent review; zero assets cleared and zero new reader approvals.
 
 ## Earlier bounded resume — 21 October 2026 (IDs 129–133)
 

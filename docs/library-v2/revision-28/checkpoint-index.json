@@ -124,15 +124,15 @@
     135,
     136,
     137,
-    138
-  ],
-  "researched_count": 122,
-  "remaining_outside_proposed_duplicates": [
+    138,
     139,
     140,
     141,
     142,
-    143,
+    143
+  ],
+  "researched_count": 127,
+  "remaining_outside_proposed_duplicates": [
     144,
     145,
     146,
@@ -159,7 +159,7 @@
     167,
     168
   ],
-  "remaining_count": 30,
+  "remaining_count": 25,
   "deduplication_scope": [
     33,
     34,
@@ -495,10 +495,22 @@
       ],
       "sha256": "6eba288f384f08817ac74dd75079949ec959c62fc393025c4ac4e830250c8c0d",
       "qa": "Pending independent review; ID138 candidate reader proposed pending QA (1957 scan on Commons/Wikisource, author PD worldwide), official publisher cover leads recorded for IDs 134-138 with HOLD, IDs 134-137 no_complete_free_text_verified."
+    },
+    {
+      "path": "research-139-143.json",
+      "ids": [
+        139,
+        140,
+        141,
+        142,
+        143
+      ],
+      "sha256": "cbdb6b56d547e17df92f60a62c29e5333ede306e99c00222fdedeb06fcd3c521",
+      "qa": "Pending independent review; official publisher cover leads recorded for IDs 140-143 with HOLD, ID 139 multi-volume set held (Part 3 scan held under copyright; author d. 1974; Parts 1-2 missing), ID 143 DLI scan held (author in-copyright until 2041), IDs 140-142 in-print copyrighted works with no authorized free digital edition."
     }
   ],
   "latest_research_date": "2026-10-21",
   "latest_research_addendum": "deduplication-resume-2026-10-21.json",
   "latest_research_addendum_sha256": "56c7570e69215d0af17804a845710aef5766f19784af3920a2bd6ec60724d4d6",
-  "latest_stop": "Antigravity checkpoint 134-138 complete. 122 works researched outside 16 proposed duplicates; 30 remaining 139–168."
+  "latest_stop": "Antigravity checkpoint 139-143 complete. 127 works researched outside 16 proposed duplicates; 25 remaining 144–168."
 }
