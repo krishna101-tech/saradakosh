@@ -12,7 +12,9 @@ The application utilizes a decentralized, multi-stack approach communicating wit
 
 ## 🗄️ Database Schema Documentation
 
-The single authoritative database is `saradakosh-web/saradakosh.db`. The Next.js database and embeddings readers locate the application package from their server module URL; Python ETL tools use `database_path.py`, and the admin app resolves it relative to its own file. Shell working directories must never select a different database. See [the reconciliation record](docs/database-reconciliation.md) for why the former root copy was removed. Below is the structural layout of its core tables.
+The single authoritative database is `saradakosh-web/saradakosh.db`. The Next.js database reader locates the application package from its server module URL; Python ETL tools use `database_path.py`, and the admin app resolves it relative to its own file. Shell working directories must never select a different database. See [the reconciliation record](docs/database-reconciliation.md) for why the former root copy was removed. Below is the structural layout of its core tables.
+
+Global event search uses SQLite `LIKE` over parent-event descriptions, returning at most 50 keyword matches. The canonical database has no event-embedding table or active vector index; search does not initialize or download an embedding model. Vector search requires a separately approved activation and index design.
 
 ### `events`
 Stores the core chronological or sequential events and their metadata.

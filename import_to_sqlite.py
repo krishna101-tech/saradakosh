@@ -4,6 +4,7 @@ Library, scheduling and other tables are not rebuilt. See docs/database-reconcil
 """
 
 from collections import Counter
+from pathlib import Path
 import sqlite3
 
 import pandas as pd
@@ -105,7 +106,10 @@ def rebuild_legacy(db_path=DB_PATH, folder=REPO_ROOT / 'tables'):
     the explicit checks below run before the only COMMIT.
     """
     datasets = read_workbooks(folder)
-    conn = sqlite3.connect(db_path, isolation_level=None)
+    # A workbook rebuild cannot recover the Library/editorial data in a missing
+    # database. Fail instead of silently creating an incomplete replacement.
+    conn = sqlite3.connect(Path(db_path).resolve().as_uri() + '?mode=rw',
+                           uri=True, isolation_level=None)
     try:
         conn.execute('PRAGMA foreign_keys = OFF')
         conn.execute('BEGIN IMMEDIATE')
@@ -148,7 +152,7 @@ def main():
     if legacy_orphans:
         print('Legacy source foreign-key violations retained:', legacy_orphans)
     print('Library and other non-legacy tables preserved. Event embeddings cleared; '
-          'run the documented embedding sync separately if needed.')
+          'search uses keyword matching without an embedding model.')
 
 
 if __name__ == '__main__':

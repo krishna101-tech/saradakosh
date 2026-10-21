@@ -60,6 +60,6 @@ python app.py
 
 This project currently relies on hardcoded path resolutions rather than strict `.env` variables for database connectivity:
 - **Admin Dashboard and Python tools:** Paths are anchored to the source files and select `saradakosh-web/saradakosh.db`, regardless of the terminal working directory.
-- **Next.js Web App:** Database connections and embeddings use the same path anchored to the application package. Next.js output tracing explicitly includes the database in server deployments. See [the database reconciliation record](docs/database-reconciliation.md).
+- **Next.js Web App:** Database connections use a path anchored to the application package. Global event search uses SQLite keyword matching without an embedding model. Next.js output tracing explicitly includes the database in server deployments. See [the database reconciliation record](docs/database-reconciliation.md).
 
-For legacy workbook imports, follow [the maintenance runbook](RUNBOOK.md#-reimporting-legacy-workbook-data). `python import_to_sqlite.py` replaces only legacy data in one transaction, preserves Library and scheduling tables, and leaves embedding generation as a separate operation. Keep the shared database in place; the raw workbooks do not contain its Library editorial content or all accepted legacy corrections.
+For legacy workbook imports, follow [the maintenance runbook](RUNBOOK.md#-reimporting-legacy-workbook-data). `python import_to_sqlite.py` replaces only legacy data in one transaction, preserves Library and scheduling tables, and does not generate embeddings or download a model. Keep the shared database in place; the raw workbooks do not contain its Library editorial content or all accepted legacy corrections.

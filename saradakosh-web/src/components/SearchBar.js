@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Search, Sparkles } from 'lucide-react';
+import { Search } from 'lucide-react';
 import { fetchSearchResults } from '@/app/actions';
 import Link from 'next/link';
 export default function SearchBar() {
@@ -63,17 +63,8 @@ export default function SearchBar() {
                 <Link href={`/quotes/post/${m.id}`} key={m.id} className="py-3 border-b border-dashed border-glass-border text-sm text-text-theme last:border-b-0 flex flex-col gap-1 hover:bg-bg-theme/5 px-2 transition-colors duration-200 block">
                   <div className="flex items-center gap-2 flex-wrap">
                     <strong className="text-[var(--primary-theme)]">{displayDt}</strong>
-                    {m.isVectorMatch && m.isTextMatch && (
-                      <span className="text-[10px] bg-[rgba(211,84,0,0.1)] text-[#D35400] px-2 py-0.5 rounded-full font-medium border border-[rgba(211,84,0,0.2)] flex items-center gap-1"><Sparkles className="size-3" /> AI & Keyword Match</span>
-                    )}
-                    {m.isVectorMatch && !m.isTextMatch && (
-                      <span className="text-[10px] bg-purple-500/10 text-purple-700 dark:text-purple-400 px-2 py-0.5 rounded-full font-medium border border-purple-500/20 flex items-center gap-1"><Sparkles className="size-3" /> AI Semantic Match</span>
-                    )}
-                    {!m.isVectorMatch && m.isTextMatch && (
+                    {m.isTextMatch && (
                       <span className="text-[10px] bg-blue-500/10 text-blue-700 dark:text-blue-400 px-2 py-0.5 rounded-full font-medium border border-blue-500/20 flex items-center gap-1"><Search className="size-3" /> Keyword Match</span>
-                    )}
-                    {m.similarityScore !== undefined && (
-                      <span className="text-[10px] opacity-60 font-mono">({Math.round(m.similarityScore * 100)}% match)</span>
                     )}
                   </div>
                   <div className="leading-relaxed opacity-95">{m.du}</div>
