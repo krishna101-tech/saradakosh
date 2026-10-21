@@ -8,6 +8,6 @@ DB_PATH = REPO_ROOT / "saradakosh-web" / "saradakosh.db"
 
 
 def connect_database(*, readonly=False):
-    """Open the existing canonical database; only the initial importer creates it."""
+    """Open the existing canonical database without creating a missing file."""
     mode = 'ro' if readonly else 'rw'
     return sqlite3.connect(f'{DB_PATH.as_uri()}?mode={mode}', uri=True)
