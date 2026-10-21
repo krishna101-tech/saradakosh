@@ -139,15 +139,15 @@
     150,
     151,
     152,
-    153
-  ],
-  "researched_count": 137,
-  "remaining_outside_proposed_duplicates": [
+    153,
     154,
     155,
     156,
     157,
-    158,
+    158
+  ],
+  "researched_count": 142,
+  "remaining_outside_proposed_duplicates": [
     159,
     160,
     161,
@@ -159,7 +159,7 @@
     167,
     168
   ],
-  "remaining_count": 15,
+  "remaining_count": 10,
   "deduplication_scope": [
     33,
     34,
@@ -531,10 +531,22 @@
       ],
       "sha256": "8fa2513f8bb7ed7e6b1bd3f338144d2525e0c11825e4420a742dbb092702b3ee",
       "qa": "Pending independent review; ID 149 candidate reader proposed pending QA (1938 scan on Internet Archive, author PD worldwide), official publisher cover leads recorded for IDs 149-153 with HOLD (8 total cover leads across Bengali and English editions), IDs 150-153 no_complete_free_text_verified."
+    },
+    {
+      "path": "research-154-158.json",
+      "ids": [
+        154,
+        155,
+        156,
+        157,
+        158
+      ],
+      "sha256": "ea336d5c3ee47a0594134b297be2e84c4c1aa63ee063e75bd1c06d4c660ab177",
+      "qa": "Pending independent review; official publisher cover leads recorded for IDs 154, 155, 158 with HOLD, IDs 154-158 in-print/out-of-print works with no authorized complete free digital edition verified."
     }
   ],
   "latest_research_date": "2026-10-21",
   "latest_research_addendum": "deduplication-resume-2026-10-21.json",
   "latest_research_addendum_sha256": "56c7570e69215d0af17804a845710aef5766f19784af3920a2bd6ec60724d4d6",
-  "latest_stop": "Antigravity checkpoint 149-153 complete. 137 works researched outside 16 proposed duplicates; 15 remaining 154–168."
+  "latest_stop": "Antigravity checkpoint 154-158 complete. 142 works researched outside 16 proposed duplicates; 10 remaining 159–168."
 }

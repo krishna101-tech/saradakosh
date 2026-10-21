@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "issue": 28,
+  "baseline_sha": "d59a7924152c4d7e7fd346492b6b93cb62bc3285",
+  "researched_at_utc": "2026-10-21T05:55:00.000000+00:00",
+  "researcher": "Antigravity (Gemini 3.8 Flash High)",
+  "method": "Renewed actual public searches and primary HTTP body/metadata inspections. Search absence is bounded, not exhaustive. No paid or external model call; no private IDs, full reader bodies or cover binaries in artifacts.",
+  "status": "RESEARCH_CANDIDATES_PENDING_INDEPENDENT_QA",
+  "source_mutations": false,
+  "books": [
+    {
+      "book_id": 154,
+      "canonical_title": "Swami Subodhananda",
+      "author": "Swami Chetanananda; Swami Vimohananda",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Swami Subodhananda\" Advaita Ashrama",
+        "\"Swami Subodhananda\" \"Chetanananda\" \"Vimohananda\"",
+        "site:shop.advaitaashrama.org \"swami-subodhananda\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-subodhananda/1237499000010273013",
+          "observation": "HTTP 200 actual publisher retail page. Published by Advaita Ashrama (paperback, 212 pages, ISBN 9788175054516, SKU ADE020, price ₹100). Comprehensive English biography, teachings, reminiscences, and letters of Swami Subodhananda (Khoka Maharaj) compiled by Swami Chetanananda and Swami Vimohananda. In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-subodhananda/1237499000010273013",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-subodhananda/1237499000010273013",
+          "page_title": "Swami Subodhananda | Advaita Ashrama",
+          "edition_match": "English, Swami Chetanananda and Swami Vimohananda, Advaita Ashrama, paperback 212 pages, ISBN 9788175054516, SKU ADE020.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/ADE020_1.jpg/1237499000010325329/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 553,
+            "height": 859,
+            "format": "JPEG",
+            "bytes": 37805,
+            "sha256": "de6809e1340b8b84b5798ba76afa02de214329f0aa9f7e77662be7436048652d",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. In-print English biography, teachings, and reminiscences of Swami Subodhananda by Swami Chetanananda and Swami Vimohananda, published by Advaita Ashrama (212 pages, ISBN 9788175054516). Under active statutory copyright; no authorized complete free digital edition verified on open public repositories."
+    },
+    {
+      "book_id": 155,
+      "canonical_title": "স্বামী সুবোধানন্দের স্মৃতিকথা",
+      "author": "Swami Chetanananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Swami Subodhanander Smritikatha\" Advaita Ashrama",
+        "\"স্বামী সুবোধানন্দের স্মৃতিকথা\" উদ্বোধন",
+        "site:shop.advaitaashrama.org \"swami-subodhanander-smritikatha\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-subodhanander-smritikatha/1237499000010647647",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Udbodhan Karyalaya, distributed by Advaita Ashrama (paperback, ISBN 9788180404993, SKU UDB045, price ₹70). Comprehensive Bengali compilation of reminiscences of Swami Subodhananda (Khoka Maharaj) compiled by Swami Chetanananda. In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-subodhanander-smritikatha/1237499000010647647",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-subodhanander-smritikatha/1237499000010647647",
+          "page_title": "Swami Subodhanander Smritikatha | Advaita Ashrama",
+          "edition_match": "Bengali, Swami Chetanananda, Udbodhan Karyalaya / Advaita Ashrama, paperback, ISBN 9788180404993, SKU UDB045.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB045_1.jpg/1237499000010704163/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 220,
+            "height": 325,
+            "format": "JPEG",
+            "bytes": 31559,
+            "sha256": "55947f060bfdff2c3aac8f12b40be2d121f3dba8d1c7873c51a9a52440405e7a",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. In-print Bengali compilation of reminiscences of Swami Subodhananda edited by Swami Chetanananda, published by Udbodhan Karyalaya, Kolkata (ISBN 9788180404993). In-print copyrighted publication; no authorized complete free digital edition verified on open public repositories."
+    },
+    {
+      "book_id": 156,
+      "canonical_title": "খোকা মহারাজঃ স্বামী সুবোধানন্দ",
+      "author": "Abanimohan Gupta",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"খোকা মহারাজ স্বামী সুবোধানন্দ\" \"অবনীমোহন গুপ্ত\"",
+        "\"Khoka Maharaj: Swami Subodhananda\" Abanimohan Gupta",
+        "\"খোকা মহারাজ\" \"অবনীমোহন\" pdf"
+      ],
+      "sources": [],
+      "covers": [],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Historical Bengali biography of Swami Subodhananda (Khoka Maharaj) authored by Abanimohan Gupta. Out of print monograph; no active official digital publisher storefront raster and no complete, authorized free digital edition verified on open public repositories."
+    },
+    {
+      "book_id": 157,
+      "canonical_title": "স্বামী সুবোধানন্দের জীবনী ও পত্র",
+      "author": "Sonargaon Ramakrishna Math, Dhaka",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"স্বামী সুবোধানন্দের জীবনী ও পত্র\" সোনারগাঁও রামকৃষ্ণ মঠ",
+        "\"Sri Sri Swami Subodhanander Jibani O Patra\" Sonargaon",
+        "\"Subodhanander Jibani O Patra\" Dhaka"
+      ],
+      "sources": [],
+      "covers": [],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Regional Bengali biographical and epistolary volume published by Sonargaon Ramakrishna Math, Dhaka (Bangladesh). Regional monograph out of circulation; no official publisher digital storefront raster and no complete, authorized free digital edition verified on open public repositories."
+    },
+    {
+      "book_id": 158,
+      "canonical_title": "Swami Vijnanananda: Life and Teachings",
+      "author": "Swami Vishwashrayananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Swami Vijnanananda: Life and Teachings\" Chennai Math",
+        "\"Swami Vijnanananda Life and Teachings\" Advaita Ashrama",
+        "\"স্বামী বিজ্ঞানানন্দের জীবন ও বাণী\" বিশ্বাশ্রয়ানন্দ"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-vijnanananda-life-and-teachings/1237499000010763907",
+          "observation": "HTTP 200 actual publisher retail page for English translation. Translated by Devavrata Basu Ray from Swami Vishwashrayananda's Bengali biography 'Swami Vijnananander Jivan O Vani', published by Sri Ramakrishna Math Chennai, distributed by Advaita Ashrama (paperback, ISBN 9788171207220, SKU MDE003, price ₹18). In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-vijnanananda-life-and-teachings/1237499000010763907",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-vijnanananda-life-and-teachings/1237499000010763907",
+          "page_title": "Swami Vijnanananda: Life and Teachings | Advaita Ashrama",
+          "edition_match": "English translation, Devavrata Basu Ray from Swami Vishwashrayananda, Sri Ramakrishna Math Chennai / Advaita Ashrama, paperback, ISBN 9788171207220, SKU MDE003.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MDE003_1.jpg/1237499000010827095/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 789,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 39694,
+            "sha256": "6a154aa369c2e350ac13f71a2f1a2a0eb38a7900e3767c51ab3dafcbcb481adc",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Definitive biography of Swami Vijnanananda (4th President of the Ramakrishna Order and architect of the Belur Math Sri Ramakrishna Temple) by Swami Vishwashrayananda, translated into English by Devavrata Basu Ray and published by Sri Ramakrishna Math Chennai (ISBN 9788171207220). In-print commercial edition; under active copyright; no authorized complete free digital edition verified on open public repositories."
+    }
+  ]
+}
