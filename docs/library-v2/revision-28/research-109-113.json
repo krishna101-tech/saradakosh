@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "issue": 28,
+  "baseline_sha": "b70ebd7d82891b00ef95c6d97a4ef1f02026ac07",
+  "researched_at_utc": "2026-10-21T04:45:00.000000+00:00",
+  "researcher": "Antigravity (Gemini 3.8 Flash High)",
+  "method": "Renewed actual public searches and primary HTTP body/metadata inspections. Search absence is bounded, not exhaustive. No paid or external model call; no private IDs, full reader bodies or cover binaries in artifacts.",
+  "status": "RESEARCH_CANDIDATES_PENDING_INDEPENDENT_QA",
+  "source_mutations": false,
+  "books": [
+    {
+      "book_id": 109,
+      "canonical_title": "Swami Saradanander Smritikatha",
+      "author": "Swami Chetanananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"স্বামী সারদানন্দের স্মৃতিকথা\" site:udbodhan.org",
+        "\"Swami Saradanander Smritikatha\" Chetanananda",
+        "site:archive.org \"in.ernet.dli.2015.456901\"",
+        "site:archive.org \"Swami Saradanander Smritikatha\""
+      ],
+      "sources": [
+        {
+          "url": "https://udbodhan.org/product/%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AE%E0%A7%80-%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A6%A6%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A7%8D%E0%A6%AE%E0%A7%83%E0%A6%A4%E0%A6%BF/",
+          "observation": "HTTP 200 actual publisher retail page. Publisher Udbodhan Karyalaya, Kolkata (paperback, 411 pages, price ₹120). Compiled and edited by Swami Chetanananda. In-print copyrighted publication, not a free reader."
+        },
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.456901",
+          "observation": "Digital Library of India scan from Birchandra State Central Library, Tripura (411 pages, 25.1 MB PDF). Metadata indicates 'In Public Domain' without legal basis; publisher Udbodhan Karyalaya and editor Swami Chetanananda hold active copyright under the Indian Copyright Act. Unverified/unauthorized reproduction; cannot be certified as an authorized free public reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://udbodhan.org/product/%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AE%E0%A7%80-%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A6%A6%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A7%8D%E0%A6%AE%E0%A7%83%E0%A6%A4%E0%A6%BF/",
+          "http_status": 200,
+          "resolved_url": "https://udbodhan.org/product/%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AE%E0%A7%80-%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A6%A6%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A7%8D%E0%A6%AE%E0%A7%83%E0%A6%A4%E0%A6%BF/",
+          "page_title": "স্বামী সারদানন্দের স্মৃতিকথা · Udbodhan",
+          "edition_match": "Bengali, Swami Chetanananda (Ed.), Udbodhan Karyalaya, Kolkata, paperback 411 pages, price ₹120.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://udbodhan.org/api/media/file/Swami-Saradanander-Smritikatha_1.webp",
+          "image_observation": {
+            "http_status": 200,
+            "width": 715,
+            "height": 1100,
+            "format": "WEBP",
+            "bytes": 258062,
+            "sha256": "91ec0f77effe838777e778706a5880418cf4e2a5d73a8ce0196410d28468441d",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "hold_rights_edition / no_authorized_free_text_verified. Modern copyrighted anthology compiled and edited by Swami Chetanananda, published by Udbodhan Karyalaya (411 pages). DLI item in.ernet.dli.2015.456901 on Internet Archive is an unpermitted scan lacking public domain or open licence verification for modern editorial content. In-print commercial edition, not an approved free reader."
+    },
+    {
+      "book_id": 110,
+      "canonical_title": "Saradananda Charit",
+      "author": "Swami Prabhananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"সারদানন্দ চরিত\" site:udbodhan.org",
+        "\"Saradananda Charit\" Prabhananda",
+        "\"সারদানন্দচরিত\" \"প্রভানন্দ\""
+      ],
+      "sources": [
+        {
+          "url": "https://udbodhan.org/product/%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A6%A6%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A6%9A%E0%A6%B0%E0%A6%BF%E0%A6%A4-saradanandacharit/",
+          "observation": "HTTP 200 actual publisher retail page. Publisher Udbodhan Karyalaya, Kolkata (hardback/paperback, 472 pages, ISBN 9788180400599, SKU UDB029, price ₹150). Modern authoritative biography by Swami Prabhananda. In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://udbodhan.org/product/%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A6%A6%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A6%9A%E0%A6%B0%E0%A6%BF%E0%A6%A4-saradanandacharit/",
+          "http_status": 200,
+          "resolved_url": "https://udbodhan.org/product/%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A6%A6%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A6%9A%E0%A6%B0%E0%A6%BF%E0%A6%A4-saradanandacharit/",
+          "page_title": "সারদানন্দচরিত · Udbodhan",
+          "edition_match": "Bengali, Swami Prabhananda, Udbodhan Karyalaya, Kolkata, 472 pages, ISBN 9788180400599, SKU UDB029.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://udbodhan.org/api/media/file/Saradanandacharit_1-1.webp",
+          "image_observation": {
+            "http_status": 200,
+            "width": 675,
+            "height": 1100,
+            "format": "WEBP",
+            "bytes": 131326,
+            "sha256": "59c58be5041761448df37028353b0b5e3700af4e1fb6890868c8bdbfebc26957",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Authoritative biography of Swami Saradananda by Swami Prabhananda (1931–2023), published by Udbodhan Karyalaya. In-print copyrighted work under active copyright protection; no open authorized digital facsimile verified on public libraries."
+    },
+    {
+      "book_id": 111,
+      "canonical_title": "Swami Saradananda: Ek Ananya Jivan",
+      "author": "Swami Chaitanyananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Swami Saradananda: Ek Ananya Jivan\" Advaita Ashrama",
+        "\"স্বামী সারদানন্দ: এক অনন্য জীবন\" চৈতন্যানন্দ",
+        "site:shop.advaitaashrama.org \"Swami Saradananda: Ek Ananya Jivan\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-saradananda-ek-ananya-jivan/1237499000010662449",
+          "observation": "HTTP 200 actual publisher distributor retail page. Publisher Udbodhan Karyalaya, distributed by Advaita Ashrama (hardcover, 1088 pages, ISBN 9788193821015, SKU UDB061, price ₹350). Modern 2015 biographical monograph by Swami Chaitanyananda. In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-saradananda-ek-ananya-jivan/1237499000010662449",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-saradananda-ek-ananya-jivan/1237499000010662449",
+          "page_title": "Swami Saradananda: Ek Ananya Jivan | Advaita Ashrama",
+          "edition_match": "Bengali, Swami Chaitanyananda, Udbodhan Karyalaya / Advaita Ashrama, hardback 1088 pages, ISBN 9788193821015, SKU UDB061.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB061_1.jpg/1237499000010704460/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 600,
+            "height": 955,
+            "format": "JPEG",
+            "bytes": 94218,
+            "sha256": "20300eb55bc5b01d43a7849f69bf3e21989394c5b642cc1df2f2bf5aa9ba9829",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Comprehensive 1088-page biographical work published in 2015 by Udbodhan Karyalaya. In-print copyrighted work; no open authorized digital facsimile verified on public libraries."
+    },
+    {
+      "book_id": 112,
+      "canonical_title": "Glimpses of a Great Soul",
+      "author": "Swami Aseshananda",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Glimpses of a Great Soul\" \"Aseshananda\" Advaita Ashrama",
+        "\"Glimpses of a Great Soul\" Vedanta Press",
+        "site:shop.advaitaashrama.org \"Glimpses of a Great Soul\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/glimpses-of-a-great-soul/1237499000010764375",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Vedanta Society of Western Washington / Vedanta Press (Hollywood), distributed by Advaita Ashrama (paperback, 274 pages, ISBN 9780874810363, SKU MDE020, price ₹90) and Sri Ramakrishna Math Chennai (335 pages, ISBN 9788171204060). In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/glimpses-of-a-great-soul/1237499000010764375",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/glimpses-of-a-great-soul/1237499000010764375",
+          "page_title": "Glimpses of a Great Soul | Advaita Ashrama",
+          "edition_match": "English, Swami Aseshananda, Vedanta Society of Western Washington / Vedanta Press / Advaita Ashrama, paperback 274 pages, ISBN 9780874810363, SKU MDE020.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MDE020_1.jpg/1237499000010827854/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 216,
+            "height": 331,
+            "format": "JPEG",
+            "bytes": 29275,
+            "sha256": "c24dd769ab71fde3c394808ce275210507a6f34728ad94768e6463d9ae7b8a47",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Subtitled 'A Portrait of Swami Saradananda'. Copyright 1982 by Vedanta Society of Western Washington (Portland). Swami Aseshananda (1899–1996) was a disciple of Holy Mother Sri Sarada Devi and lived with Swami Saradananda as his private secretary. Work is under active copyright; no open authorized digital facsimile verified on public libraries."
+    },
+    {
+      "book_id": 113,
+      "canonical_title": "যেমন দেখিয়াছি",
+      "author": "Bhumananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"যেমন দেখিয়াছি\" \"ভূমানন্দ\" \"সারদানন্দ\"",
+        "\"স্বামী সারদানন্দ (যেমন দেখিয়াছি)\"",
+        "site:udbodhan.org \"ভূমানন্দ\""
+      ],
+      "sources": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.456901",
+          "observation": "Primary text examination reveals 'স্বামী সারদানন্দ (যেমন দেখিয়াছি)' by Swami Bhumananda is not an independent freestanding monograph; it was originally published serially in Udbodhan Patrika (1334 BS / 1927–1928) and is collected as Chapter 9 (pages 83–94) of the anthology volume 'Swami Saradanander Smritikatha' (Udbodhan Karyalaya, compiled by Swami Chetanananda)."
+        }
+      ],
+      "covers": [],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Not an independent freestanding monograph in print. Bibliographic examination shows this work consists of reminiscence articles serially published in Udbodhan Patrika after Swami Saradananda's Mahasamadhi and collected as a chapter in Swami Chetanananda's anthology 'Swami Saradanander Smritikatha'. No standalone publisher volume or cover exists."
+    }
+  ]
+}

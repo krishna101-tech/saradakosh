@@ -94,15 +94,15 @@
     105,
     106,
     107,
-    108
-  ],
-  "researched_count": 92,
-  "remaining_outside_proposed_duplicates": [
+    108,
     109,
     110,
     111,
     112,
-    113,
+    113
+  ],
+  "researched_count": 97,
+  "remaining_outside_proposed_duplicates": [
     114,
     115,
     116,
@@ -159,7 +159,7 @@
     167,
     168
   ],
-  "remaining_count": 60,
+  "remaining_count": 55,
   "deduplication_scope": [
     33,
     34,
@@ -423,10 +423,22 @@
       ],
       "sha256": "8b56f32908186e21166820211a9218aec47adb399cd5ce1884c4e82638e9dfa1",
       "qa": "Pending independent review; ID104 marked NOT_APPROVED_FREE_FULL_TEXT (lending barrier), ID106 marked SOURCE_NOT_VERIFIED, ID107 candidate reader proposed pending QA."
+    },
+    {
+      "path": "research-109-113.json",
+      "ids": [
+        109,
+        110,
+        111,
+        112,
+        113
+      ],
+      "sha256": "d6fb04407998bd3dd0ee7e5a429a98abf41a9dd3220354d4363a787aaa0bac35",
+      "qa": "Pending independent review; ID109 marked hold_rights_edition / no_authorized_free_text_verified (unpermitted DLI scan of modern copyrighted work), IDs 110-112 no_complete_free_text_verified, ID113 constituent serial article/chapter."
     }
   ],
   "latest_research_date": "2026-10-21",
   "latest_research_addendum": "deduplication-resume-2026-10-21.json",
   "latest_research_addendum_sha256": "56c7570e69215d0af17804a845710aef5766f19784af3920a2bd6ec60724d4d6",
-  "latest_stop": "Antigravity checkpoint 104-108 complete. 92 works researched outside 16 proposed duplicates; 60 remaining 109\u2013168."
+  "latest_stop": "Antigravity checkpoint 109-113 complete. 97 works researched outside 16 proposed duplicates; 55 remaining 114–168."
 }
