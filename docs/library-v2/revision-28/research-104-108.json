@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "issue": 28,
+  "baseline_sha": "e623beb74be420370425717a61d102e3b169527f",
+  "researched_at_utc": "2026-10-21T03:56:00.000000+00:00",
+  "researcher": "Antigravity (Gemini 3.8 Flash High)",
+  "method": "Renewed actual public searches and primary HTTP body/metadata inspections. Search absence is bounded, not exhaustive. No paid or external model call; no private IDs, full reader bodies or cover binaries in artifacts.",
+  "status": "RESEARCH_CANDIDATES_PENDING_INDEPENDENT_QA",
+  "source_mutations": false,
+  "books": [
+    {
+      "book_id": 104,
+      "canonical_title": "Days in an Indian Monastery",
+      "author": "Sister Devamata",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Days in an Indian Monastery\" Sister Devamata archive.org",
+        "\"Days in an Indian Monastery\" site:shop.advaitaashrama.org",
+        "site:archive.org \"Days in an Indian monastery\" 1927"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/days-in-an-indian-monastery/1237499000010766967",
+          "observation": "HTTP 200 actual publisher retail page. Publisher Sri Ramakrishna Math, Chennai; distributed by Advaita Ashrama (SKU MOE101, ISBN 9788178230894, 326 pages, paperback). Paid book, not free reader."
+        },
+        {
+          "url": "https://archive.org/details/daysinindianmona0000sist",
+          "observation": "Historical 1927 edition (Ananda-Ashrama, La Crescenta, CA, 326 pp., digitized by Internet Archive). Available under lending library borrowing; not open direct unrestricted PDF/HTML."
+        },
+        {
+          "url": "https://archive.org/details/daysinindianmona0000unse",
+          "observation": "1975 edition (Sri Ramakrishna Math, Madras, 326 pp.). Available under lending library borrowing."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/days-in-an-indian-monastery/1237499000010766967",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/days-in-an-indian-monastery/1237499000010766967",
+          "page_title": "Days in an Indian Monastery | Advaita Ashrama",
+          "edition_match": "English, Sister Devamata, Sri Ramakrishna Math Chennai / Advaita Ashrama, paperback 326 pages, ISBN 9788178230894, SKU MOE101.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MOE101_1.jpg/1237499000010844864/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 819,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 267383,
+            "sha256": "5294ac212676296f3e71627bebba2abc3e826e8f338cdb90846e55203ee21769",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "Complete historical 1927 edition exists on Archive.org (daysinindianmona0000sist), but is currently subject to borrow/lending access on Internet Archive. No open HTML reader certified on institutional hosts (RKMVU, Belur Math). Candidate pending QA."
+    },
+    {
+      "book_id": 105,
+      "canonical_title": "স্বামী রামকৃষ্ণানন্দ",
+      "author": "Jagadishwarananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"স্বামী রামকৃষ্ণানন্দ\" \"জগদীশ্বরানন্দ\"",
+        "\"Swami Ramakrishnananda\" \"Jagadiswarananda\" site:udbodhan.org",
+        "site:archive.org \"স্বামী রামকৃষ্ণানন্দ\" \"জগদীশ্বরানন্দ\""
+      ],
+      "sources": [
+        {
+          "url": "https://udbodhan.org/",
+          "observation": "Swami Jagadiswarananda authored biographical articles and recollections of Swami Ramakrishnananda in Udbodhan Patrika (48th year issue 11, 49th year issue 8). These form part of the compilation volume 'স্বামী রামকৃষ্ণানন্দের স্মৃতিমালা, তাঁর পত্র ও রচনাসংগ্রহ' (Udbodhan Karyalaya). No standalone monograph by this exact title/author currently in print."
+        }
+      ],
+      "covers": [],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Constituent articles exist in Udbodhan archives, but no standalone complete book facsimile verified on open digital libraries."
+    },
+    {
+      "book_id": 106,
+      "canonical_title": "The Story of a Dedicated Life",
+      "author": "Gen",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"The Story of a Dedicated Life\" \"Swami Ramakrishnananda\"",
+        "site:istore.chennaimath.org \"The Story of a Dedicated Life\"",
+        "site:archive.org \"The Story of a Dedicated Life\" \"Ramakrishnananda\""
+      ],
+      "sources": [
+        {
+          "url": "https://istore.chennaimath.org/",
+          "observation": "Originally published in 1948 by Sri Ramakrishna Math, Mylapore, Madras for the Golden Jubilee of Swami Ramakrishnananda's arrival in South India. Later in 1972 (Platinum Jubilee), this biographical work was revised, expanded, and superseded by Swami Tapasyananda's volume 'Swami Ramakrishnananda: The Apostle of Sri Ramakrishna to the South'."
+        }
+      ],
+      "covers": [],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Out of print 1948 standalone edition is not freely available in full digital facsimile on open institutional libraries."
+    },
+    {
+      "book_id": 107,
+      "canonical_title": "Patramala: Letters of Swami Saradananda",
+      "author": "Swami Saradananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"পত্রমালা\" \"সারদানন্দ\" site:udbodhan.org",
+        "site:archive.org \"in.ernet.dli.2015.355549\"",
+        "site:udbodhan.org/product/ \"পত্রমালা\""
+      ],
+      "sources": [
+        {
+          "url": "https://udbodhan.org/product/%E0%A6%AA%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%AE%E0%A6%BE%E0%A6%B2%E0%A6%BE-patramala/",
+          "observation": "HTTP 200 actual publisher retail page on Udbodhan Karyalaya. In-print Bengali publication; price ₹30."
+        },
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.355549",
+          "observation": "HTTP 200 Digital Library of India complete scan. Title: Patramala (Ed. 2nd, 1953), Publisher: Swami Atmobodhananda, Udbodhan Karyalaya, Kolkata, 200 pages, Bengali text complete, free public access."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://udbodhan.org/product/%E0%A6%AA%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%AE%E0%A6%BE%E0%A6%B2%E0%A6%BE-patramala/",
+          "http_status": 200,
+          "resolved_url": "https://udbodhan.org/product/%E0%A6%AA%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%AE%E0%A6%BE%E0%A6%B2%E0%A6%BE-patramala/",
+          "page_title": "পত্রমালা · Udbodhan",
+          "edition_match": "Bengali, Swami Saradananda, Udbodhan Karyalaya, Baghbazar, Kolkata, paperback, ₹30.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://udbodhan.org/api/media/file/WhatsApp-Image-2022-07-28-at-3.09.14-PM.jpeg",
+          "image_observation": {
+            "http_status": 200,
+            "width": 1076,
+            "height": 1600,
+            "format": "JPEG",
+            "bytes": 354398,
+            "sha256": "faf389f41fdb0616f0c90404edd7a52b1a5a1c844c341d06fe207e41a9e9db2e",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.355549",
+          "title": "Patramala (Ed. 2nd)",
+          "edition": "1953 2nd edition, Udbodhan Karyalaya, Kolkata, 200 pages",
+          "host": "Internet Archive / Digital Library of India",
+          "type": "institutional_historical_scan",
+          "observation": "Complete 200-page historical Bengali scan of Swami Saradananda's Patramala published by Udbodhan. Open public access; candidate external reader pending independent QA."
+        }
+      ],
+      "text_outcome": "Complete verified historical 1953 Bengali scan on Internet Archive / DLI (in.ernet.dli.2015.355549, 200 pages). Candidate external reader pending independent QA."
+    },
+    {
+      "book_id": 108,
+      "canonical_title": "Saradananda Prasange",
+      "author": "Swami Aseshananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"সারদানন্দ প্রসঙ্গে\" \"অশেষানন্দ\" site:udbodhan.org",
+        "site:udbodhan.org/product/ \"সারদানন্দ প্রসঙ্গে\"",
+        "\"সারদানন্দ প্রসঙ্গে\" site:archive.org"
+      ],
+      "sources": [
+        {
+          "url": "https://udbodhan.org/product/%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A6%A6%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B8%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%87-saradananda-prasange/",
+          "observation": "HTTP 200 actual publisher retail page on Udbodhan Karyalaya. In-print Bengali publication; translated by Ajaykumar Bhattacharya."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://udbodhan.org/product/%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A6%A6%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B8%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%87-saradananda-prasange/",
+          "http_status": 200,
+          "resolved_url": "https://udbodhan.org/product/%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A6%A6%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B8%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%87-saradananda-prasange/",
+          "page_title": "সারদানন্দ প্রসঙ্গে · Udbodhan",
+          "edition_match": "Bengali, Swami Aseshananda (trans. Ajaykumar Bhattacharya), Udbodhan Karyalaya, Baghbazar, Kolkata.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://udbodhan.org/api/media/file/%25E0%25A6%25B8%25E0%25A6%25BE%25E0%25A6%25B0%25E0%25A6%25A6%25E0%25A6%25BE%25E0%25A6%25A8%25E0%25A6%25A8%25E0%25A7%258D%25E0%25A6%25A6-%25E0%25A6%25AA%25E0%25A7%258D%25E0%25A6%25B0%25E0%25A6%25B8%25E0%25A6%2599%25E0%25A7%258D%25E0%25A6%2597%25E0%25A7%2587.jpeg",
+          "image_observation": {
+            "http_status": 200,
+            "width": 1090,
+            "height": 1600,
+            "format": "JPEG",
+            "bytes": 399398,
+            "sha256": "1600f5d78ea4b9fca2d9a3b6c5000e37e2d5bdb59b847735c4920277532392ad",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. In-print copyrighted Udbodhan publication; no complete standalone free digital text verified on open digital libraries."
+    }
+  ]
+}
