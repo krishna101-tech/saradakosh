@@ -41,6 +41,7 @@ function ClientQuoteCarousel() {
 
   useEffect(() => {
     if (quotes.length <= 1) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     
     if (isHovered) {
       if (timerRef.current) clearInterval(timerRef.current);
@@ -86,6 +87,10 @@ function ClientQuoteCarousel() {
     <section className="w-full max-w-[1400px] mx-auto my-12 px-4 sm:px-6 relative group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onFocusCapture={() => setIsHovered(true)}
+      onBlurCapture={event => {
+        if (!event.currentTarget.contains(event.relatedTarget)) setIsHovered(false);
+      }}
     >
       <SectionHeading>Vivekananda for You</SectionHeading>
 
@@ -95,14 +100,14 @@ function ClientQuoteCarousel() {
           <>
             <button
               onClick={scrollLeft}
-              className="absolute -left-4 sm:left-[-1rem] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-bg-theme/80 text-primary-theme shadow-md backdrop-blur-sm border border-glass-border transition-colors duration-300 hover:bg-bg-theme z-10"
+              className="absolute -left-4 sm:left-[-1rem] top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center rounded-full bg-bg-theme/80 text-primary-theme shadow-md backdrop-blur-sm border border-glass-border transition-colors duration-300 hover:bg-bg-theme z-10"
               aria-label="Scroll Left"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
             <button
               onClick={scrollRight}
-              className="absolute -right-4 sm:right-[-1rem] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-bg-theme/80 text-primary-theme shadow-md backdrop-blur-sm border border-glass-border transition-colors duration-300 hover:bg-bg-theme z-10"
+              className="absolute -right-4 sm:right-[-1rem] top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center rounded-full bg-bg-theme/80 text-primary-theme shadow-md backdrop-blur-sm border border-glass-border transition-colors duration-300 hover:bg-bg-theme z-10"
               aria-label="Scroll Right"
             >
               <ChevronRight className="w-6 h-6" />
@@ -123,6 +128,8 @@ function ClientQuoteCarousel() {
               <img
                 src={getOptimizedUrl(quote.images[language], 600)}
                 alt={`Quote card in ${language}`}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto object-cover"
                 draggable={false}
               />

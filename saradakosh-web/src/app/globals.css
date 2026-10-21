@@ -31,9 +31,9 @@
   /* Light Theme Defaults (Udbodhan Parchment) */
   --bg-color: #F2E8D5;
   --text-color: #211D1A;
-  --primary-color: #5C1A1B; 
+  --primary-color: #5C1A1B;
   --primary-glow: rgba(92, 26, 27, 0.1);
-  --secondary-color: #A67C27;
+  --secondary-color: #80601E;
   --glass-bg: #FAF6EC;
   --glass-border: rgba(92, 26, 27, 0.15);
   --glass-hover: rgba(92, 26, 27, 0.05);
@@ -79,7 +79,7 @@
 
   /* Quotes Section (Udbodhan) */
   --quotes-primary: #5C1A1B;
-  --quotes-accent: #A67C27;
+  --quotes-accent: #80601E;
   --quotes-bg: #FAF6EC;
   --quotes-text: #211D1A;
   --quotes-muted: #6B7A5E;
@@ -96,7 +96,7 @@
   /* Dark Theme (Midnight Udbodhan) */
   --bg-color: #1E1B18;
   --text-color: #EADECE;
-  --primary-color: #b05355; 
+  --primary-color: #ce7779;
   --primary-glow: rgba(176, 83, 85, 0.15);
   --secondary-color: #d1ab5a;
   --glass-bg: #27221e;
@@ -128,7 +128,7 @@
   --ring: var(--primary-color);
 
   /* Quotes Section (Dark Udbodhan) */
-  --quotes-primary: #b05355;
+  --quotes-primary: #ce7779;
   --quotes-accent: #d1ab5a;
   --quotes-bg: #27221e;
   --quotes-text: #e5dec9;
@@ -138,8 +138,18 @@
   --warm-border: rgba(176, 83, 85, 0.2);
   --warm-bg: #27221e;
   --warm-text: #e5dec9;
-  --warm-heading: #b05355;
+  --warm-heading: #ce7779;
   --warm-link: #8ea57e;
+}
+
+/* Entrance motion never hides server content behind hydration. */
+@keyframes contentEnter {
+  from { transform: translateY(8px); }
+  to { transform: translateY(0); }
+}
+.content-enter { animation: contentEnter 250ms ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .content-enter { animation: none; }
 }
 
 /* Animations */
@@ -256,7 +266,7 @@
       transform: scale(1.02);
     }
   }
-  
+
   /* Buttons */
   .btn-primary {
     @apply inline-flex items-center justify-center bg-primary text-primary-foreground rounded-full px-6 py-2.5 font-bold hover:bg-primary/90 transition-all active:scale-95 text-sm;

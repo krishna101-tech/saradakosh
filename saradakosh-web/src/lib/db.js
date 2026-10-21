@@ -1,7 +1,6 @@
 import Database from 'better-sqlite3';
 import { dbPath } from './db-path.mjs';
 import { correctVivekanandaTimelineDate } from './vivekananda-labels.mjs';
-import { searchInMemoryVectors } from './embeddings.js';
 
 const db = new Database(dbPath, { readonly: true });
 
@@ -293,36 +292,6 @@ export function searchEvents(term, limit = 50) {
     return stmt.all(`%${term}%`, limit);
   } catch (error) {
     console.error("Error searching events:", error);
-    return [];
-  }
-}
-
-export function searchEventsVector(queryVector, limit = 50) {
-  try {
-    const vectorResults = searchInMemoryVectors(queryVector, limit);
-    if (vectorResults.length === 0) return [];
-    
-    const ids = vectorResults.map(r => r.id);
-    
-    // Load details from DB
-    const stmt = db.prepare(`
-      SELECT * FROM events 
-      WHERE id IN (${ids.map(() => '?').join(',')})
-      AND (child_id IS NULL OR child_id = '' OR child_id IN (SELECT id FROM events))
-    `);
-    const events = stmt.all(...ids);
-    
-    // Sort events to match the exact order of the similarity scores
-    const eventMap = new Map(events.map(e => [e.id, e]));
-    return vectorResults
-      .map(r => {
-        const event = eventMap.get(r.id);
-        if (!event) return null;
-        return { ...event, similarityScore: r.score };
-      })
-      .filter(Boolean);
-  } catch (error) {
-    console.error("Error searching events by vector:", error);
     return [];
   }
 }

@@ -11,7 +11,7 @@ const appRoot = path.resolve(fileURLToPath(new URL('../', import.meta.url)));
 const moduleUrl = new URL('../src/lib/db.js', import.meta.url).href;
 const pathUrl = new URL('../src/lib/db-path.mjs', import.meta.url).href;
 
-test('actual database and embeddings readers ignore root, app and unrelated cwd', () => {
+test('actual database reader ignores root, app and unrelated cwd', () => {
   const unrelated = mkdtempSync(path.join(tmpdir(), 'saradakosh-db-'));
   try {
     // A plausible decoy makes the regression fail even when a wrong path exists.
@@ -28,7 +28,7 @@ test('actual database and embeddings readers ignore root, app and unrelated cwd'
       assert.equal(data.getParameterById(79).para1, 'Athens  (Nov 1900)');
       assert.ok(data.getPersons().length > 1);
       assert.ok(Object.keys(data.getRefsHierarchy()).length > 0);
-      assert.deepEqual(data.searchEventsVector(new Array(384).fill(0)), []);
+      assert.ok(data.searchEvents('Vivekananda').length > 0);
       data.default.close();
     `;
     for (const cwd of [path.dirname(appRoot), appRoot, unrelated]) {

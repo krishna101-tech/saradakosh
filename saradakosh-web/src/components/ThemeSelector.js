@@ -3,19 +3,20 @@ import { useState } from 'react';
 import { useHydrated } from '@/lib/useHydrated';
 import { Sunrise, MoonStar } from 'lucide-react';
 
-export default function ThemeSelector() {
+export default function ThemeSelector({ floating = false }) {
   const hydrated = useHydrated();
+  const positionClass = floating ? 'absolute top-3 right-3 sm:top-5 sm:right-5' : 'relative shrink-0';
   if (!hydrated) {
     return (
-      <div className="absolute top-3 right-3 sm:top-5 sm:right-5 bg-glass-bg backdrop-blur-md border border-glass-border rounded-full p-1 h-9 w-[68px] z-50 invisible">
-        <div className="size-7 rounded-full bg-primary-theme/15 absolute top-1 left-1" />
+      <div className={`${positionClass} bg-glass-bg backdrop-blur-md border border-glass-border rounded-full p-1 h-[52px] w-[100px] z-50 invisible`}>
+        <div className="size-11 rounded-full bg-primary-theme/15 absolute top-1 left-1" />
       </div>
     );
   }
-  return <ClientThemeSelector />;
+  return <ClientThemeSelector positionClass={positionClass} />;
 }
 
-function ClientThemeSelector() {
+function ClientThemeSelector({ positionClass }) {
   const [theme, setTheme] = useState(() => localStorage.getItem('saradakosh-theme') || 'system');
 
   const changeTheme = (newTheme) => {
@@ -36,25 +37,25 @@ function ClientThemeSelector() {
     }
   };
 
-  const btnClass = "relative z-10 bg-transparent border-none cursor-pointer flex items-center justify-center size-7 rounded-full transition-all duration-200 touch-manipulation outline-none";
+  const btnClass = "relative z-10 bg-transparent border-none cursor-pointer flex items-center justify-center size-11 shrink-0 rounded-full transition-all duration-200 touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-theme";
 
   const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const isLightActive = theme === 'light' || (theme === 'system' && !isSystemDark);
   const isDarkActive = theme === 'dark' || (theme === 'system' && isSystemDark);
 
   return (
-    <div className="absolute top-3 right-3 sm:top-5 sm:right-5 bg-glass-bg backdrop-blur-md border border-glass-border rounded-full p-1 h-9 w-[68px] flex items-center justify-start z-50 select-none relative">
+    <div className={`${positionClass} bg-glass-bg backdrop-blur-md border border-glass-border rounded-full p-1 h-[52px] w-[100px] flex items-center justify-start z-50 select-none`}>
       {/* Sliding Highlight Indicator */}
       <div 
-        className="size-7 rounded-full bg-primary-theme/15 absolute top-1 left-1 transition-transform duration-300 ease-out pointer-events-none"
+        className="size-11 rounded-full bg-primary-theme/15 absolute top-1 left-1 transition-transform duration-300 ease-out pointer-events-none"
         style={{ 
-          transform: isDarkActive ? 'translateX(32px)' : 'translateX(0px)',
+          transform: isDarkActive ? 'translateX(44px)' : 'translateX(0px)',
           background: isDarkActive ? 'var(--primary-color)' : 'rgba(92, 26, 27, 0.15)'
         }}
       />
 
       <button 
-        className={`${btnClass} ${isLightActive ? 'text-primary-theme opacity-100 scale-105' : 'text-text-theme opacity-40 hover:opacity-75'}`}
+        className={`${btnClass} ${isLightActive ? 'text-primary-theme opacity-100 scale-105' : 'text-text-theme opacity-70 hover:opacity-100'}`}
         onClick={() => changeTheme('light')}
         aria-label="Switch to Dawn Theme (Light Mode)"
         title="Dawn (Light Theme)"
@@ -63,7 +64,7 @@ function ClientThemeSelector() {
       </button>
       
       <button 
-        className={`${btnClass} ${isDarkActive ? 'text-bg-theme opacity-100 scale-105' : 'text-text-theme opacity-40 hover:opacity-75'}`}
+        className={`${btnClass} ${isDarkActive ? 'text-bg-theme opacity-100 scale-105' : 'text-text-theme opacity-70 hover:opacity-100'}`}
         onClick={() => changeTheme('dark')}
         aria-label="Switch to Midnight Theme (Dark Mode)"
         title="Midnight (Dark Theme)"

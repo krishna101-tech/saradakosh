@@ -1,6 +1,5 @@
 import { Baskervville, Noto_Sans, Philosopher } from "next/font/google";
 import "./globals.css";
-import { PageTransition } from "@/components/MotionWrapper";
 
 const baskervville = Baskervville({
   variable: "--font-serif",
@@ -95,9 +94,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${noto.variable} ${baskervville.variable} ${philosopher.variable} antialiased`}
       >
-        <PageTransition>
-          {children}
-        </PageTransition>
+        {children}
       </body>
     </html>
   );

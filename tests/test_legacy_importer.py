@@ -172,6 +172,14 @@ class LegacyImporterTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertEqual(file_hash(self.db_path), before_hash)
 
+    def test_cli_missing_database_fails_without_creating_a_replacement(self):
+        self.db_path.unlink()
+        result = self.run_cli()
+        self.assertNotEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn('unable to open database file', result.stderr)
+        self.assertFalse(self.db_path.exists())
+        self.assertFalse((self.root / 'saradakosh.db').exists())
+
 
 if __name__ == '__main__':
     unittest.main()

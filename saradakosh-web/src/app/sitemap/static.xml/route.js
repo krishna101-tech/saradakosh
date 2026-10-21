@@ -4,6 +4,7 @@ export async function GET() {
   const DOMAIN = 'https://www.saradakosh.org';
   const staticPaths = [
     { url: `${DOMAIN}`, changefreq: 'daily', priority: 1.0 },
+    { url: `${DOMAIN}/classes`, changefreq: 'weekly', priority: 0.8 },
     { url: `${DOMAIN}/quotes`, changefreq: 'weekly', priority: 0.8 },
     { url: `${DOMAIN}/about`, changefreq: 'monthly', priority: 0.8 },
     { url: `${DOMAIN}/reports/vivekananda`, changefreq: 'monthly', priority: 0.8 },
