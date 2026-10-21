@@ -1,8 +1,8 @@
-# Current bounded resume — 21 October 2026 (Antigravity Update: IDs 144–148)
+# Current bounded resume — 21 October 2026 (Antigravity Update: IDs 149–153)
 
-Renewed research now covers **132 retained works** outside proposed duplicates 33–48: previous 127 plus 144–148. **20 remain: 149–168**. Checkpoint `research-144-148.json` records 6 new official publisher cover leads across English and Bengali editions (IDs 144, 145, 146, 147, 148) with decoded dimensions and SHA256 hashes from Advaita Ashrama, Udbodhan, and Chennai Math storefronts. IDs 144–148 in-print works with no authorized complete free digital edition verified on open public repositories. All new candidates are pending independent review; zero assets cleared and zero new reader approvals.
+Renewed research now covers **137 retained works** outside proposed duplicates 33–48: previous 132 plus 149–153. **15 remain: 154–168**. Checkpoint `research-149-153.json` records 1 verified complete 1938 Bengali edition scan candidate on Internet Archive (ID 149 Tibbater Pathe Himalaye by Swami Akhandananda, 186 pages, author public domain worldwide), 8 new official publisher cover leads across Bengali and English editions (IDs 149, 150, 151, 152, 153) with decoded dimensions and SHA256 hashes from Advaita Ashrama, Udbodhan, Chennai Math, and Mahendra Publishing Committee storefronts. IDs 150–153 in-print works with no authorized complete free digital edition verified on open public repositories. All new candidates are pending independent review; zero assets cleared and zero new reader approvals.
 
-## Earlier bounded resume — 21 October 2026 (IDs 139–143)
+## Earlier bounded resume — 21 October 2026 (IDs 144–148)
 
 Renewed research covered **122 retained works** outside proposed duplicates 33–48: previous 117 plus 134–138. Checkpoint `research-134-138.json` records 1 verified complete 1957 Bengali scan candidate on Wikimedia Commons / Wikisource (ID 138 Amar Jivan Katha by Swami Abhedananda, 271 pages, author public domain worldwide), 5 new official publisher cover leads (IDs 134, 135, 136, 137, 138) with decoded dimensions and SHA256 hashes from Advaita Ashrama storefront. IDs 134–137 in-print copyrighted works with no authorized free digital edition. All candidates pending independent review; zero assets cleared and zero new reader approvals.
 
