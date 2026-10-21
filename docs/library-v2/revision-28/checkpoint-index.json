@@ -144,22 +144,22 @@
     155,
     156,
     157,
-    158
-  ],
-  "researched_count": 142,
-  "remaining_outside_proposed_duplicates": [
+    158,
     159,
     160,
     161,
     162,
-    163,
+    163
+  ],
+  "researched_count": 147,
+  "remaining_outside_proposed_duplicates": [
     164,
     165,
     166,
     167,
     168
   ],
-  "remaining_count": 10,
+  "remaining_count": 5,
   "deduplication_scope": [
     33,
     34,
@@ -543,10 +543,22 @@
       ],
       "sha256": "ea336d5c3ee47a0594134b297be2e84c4c1aa63ee063e75bd1c06d4c660ab177",
       "qa": "Pending independent review; official publisher cover leads recorded for IDs 154, 155, 158 with HOLD, IDs 154-158 in-print/out-of-print works with no authorized complete free digital edition verified."
+    },
+    {
+      "path": "research-159-163.json",
+      "ids": [
+        159,
+        160,
+        161,
+        162,
+        163
+      ],
+      "sha256": "1163caa389dfc20b604f038a961a1e3bfc5baaf39b89520c0f4dd9015157453c",
+      "qa": "Pending independent review; official publisher cover leads recorded for IDs 159-162 with HOLD (including high-resolution 1496x2328 raster for ID 159 from Udbodhan), IDs 159-163 in-print/out-of-print works with no authorized complete free digital edition verified."
     }
   ],
   "latest_research_date": "2026-10-21",
   "latest_research_addendum": "deduplication-resume-2026-10-21.json",
   "latest_research_addendum_sha256": "56c7570e69215d0af17804a845710aef5766f19784af3920a2bd6ec60724d4d6",
-  "latest_stop": "Antigravity checkpoint 154-158 complete. 142 works researched outside 16 proposed duplicates; 10 remaining 159–168."
+  "latest_stop": "Antigravity checkpoint 159-163 complete. 147 works researched outside 16 proposed duplicates; 5 remaining 164–168."
 }

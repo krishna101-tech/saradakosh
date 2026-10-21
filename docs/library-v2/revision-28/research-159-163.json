@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "issue": 28,
+  "baseline_sha": "84e9f714af2dec25a1c7e817d15d549957a14324",
+  "researched_at_utc": "2026-10-21T06:05:00.000000+00:00",
+  "researcher": "Antigravity (Gemini 3.8 Flash High)",
+  "method": "Renewed actual public searches and primary HTTP body/metadata inspections. Search absence is bounded, not exhaustive. No paid or external model call; no private IDs, full reader bodies or cover binaries in artifacts.",
+  "status": "RESEARCH_CANDIDATES_PENDING_INDEPENDENT_QA",
+  "source_mutations": false,
+  "books": [
+    {
+      "book_id": 159,
+      "canonical_title": "Swami Vijnanananda",
+      "author": "Swami Jagadiswarananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"স্বামী বিজ্ঞানানন্দ\" \"স্বামী জগদীশ্বরানন্দ\" উদ্বোধন",
+        "\"Swami Vijnanananda\" \"Jagadiswarananda\" Udbodhan",
+        "udbodhan.org product swami-vijnanananda"
+      ],
+      "sources": [
+        {
+          "url": "https://udbodhan.org/product/%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AE%E0%A7%80-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6-swami-vijnanananda/",
+          "observation": "HTTP 200 actual publisher retail page on Udbodhan Karyalaya official bookstore. Definitive Bengali biography of Swami Vijnanananda by Swami Jagadiswarananda (1896–1984), price ₹280. Under Section 22 of the Indian Copyright Act 1957, copyright subsists until 60 years post-mortem (until 1 January 2045). In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://udbodhan.org/product/%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AE%E0%A7%80-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6-swami-vijnanananda/",
+          "http_status": 200,
+          "resolved_url": "https://udbodhan.org/product/%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AE%E0%A7%80-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6-swami-vijnanananda/",
+          "page_title": "স্বামী বিজ্ঞানানন্দ - Udbodhan",
+          "edition_match": "Bengali, Swami Jagadiswarananda, Udbodhan Karyalaya, standard edition.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://udbodhan.org/api/media/file/image00004.jpg",
+          "image_observation": {
+            "http_status": 200,
+            "width": 1496,
+            "height": 2328,
+            "format": "JPEG",
+            "bytes": 479783,
+            "sha256": "49702600b770b58c70b531705c2a72fef65d7802d53e2e44ddccad3b6ccb905f",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Definitive Bengali biography of Swami Vijnanananda by Swami Jagadiswarananda (1896–1984), published by Udbodhan Karyalaya, Kolkata. Author passed away in 1984; under Section 22 of the Indian Copyright Act 1957, copyright in India subsists until 2045. In-print commercial edition; no authorized complete free digital edition verified on open public repositories."
+    },
+    {
+      "book_id": 160,
+      "canonical_title": "Swami Vijnananander Smritikatha",
+      "author": "A Compilation",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Swami Vijnananander Smritikatha\" Advaita Ashrama",
+        "\"স্বামী বিজ্ঞানানন্দের স্মৃতিকথা\" উদ্বোধন",
+        "site:shop.advaitaashrama.org \"swami-vijnananander-smritikatha\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-vijnananander-smritikatha/1237499000010645231",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Udbodhan Karyalaya, distributed by Advaita Ashrama (paperback, ISBN 9788180405709, SKU UDB055, price ₹150). Comprehensive Bengali compilation of reminiscences of Swami Vijnanananda. In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-vijnananander-smritikatha/1237499000010645231",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-vijnananander-smritikatha/1237499000010645231",
+          "page_title": "Swami Vijnananander Smritikatha | Advaita Ashrama",
+          "edition_match": "Bengali, A Compilation, Udbodhan Karyalaya / Advaita Ashrama, paperback, ISBN 9788180405709, SKU UDB055.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB055_1.jpg/1237499000010704398/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 206,
+            "height": 314,
+            "format": "JPEG",
+            "bytes": 27205,
+            "sha256": "9cf2dbe2e849d9a40d5bf7cde6c45d2deac17f21c84ab2ec544002ce8f918069",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Comprehensive Bengali collection of reminiscences and memories of Swami Vijnanananda, published by Udbodhan Karyalaya, Kolkata (ISBN 9788180405709). In-print copyrighted publication; no authorized complete free digital edition verified on open public repositories."
+    },
+    {
+      "book_id": 161,
+      "canonical_title": "Pratyakshadarshir Smritipate Swami Vijnanananda",
+      "author": "Jyotirmay Basuray; Sureshchandra Das",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Pratyakshadarshir Smritipate Swami Vijnanananda\" Advaita Ashrama",
+        "\"প্রত্যক্ষদর্শীর স্মৃতিপটে স্বামী বিজ্ঞানানন্দ\" উদ্বোধন",
+        "site:shop.advaitaashrama.org \"pratyakshadarshir-smritipate-swami-vijnanananda\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/pratyakshadarshir-smritipate-swami-vijnanananda/1237499000010647791",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Udbodhan Karyalaya, distributed by Advaita Ashrama (paperback, ISBN 9788180405341, SKU UDB051, price ₹90). Firsthand eyewitness reminiscences of Swami Vijnanananda recorded by Jyotirmay Basuray and Sureshchandra Das. In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/pratyakshadarshir-smritipate-swami-vijnanananda/1237499000010647791",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/pratyakshadarshir-smritipate-swami-vijnanananda/1237499000010647791",
+          "page_title": "Pratyakshadarshir Smritipate Swami Vijnanananda | Advaita Ashrama",
+          "edition_match": "Bengali, Jyotirmay Basuray and Sureshchandra Das, Udbodhan Karyalaya / Advaita Ashrama, paperback, ISBN 9788180405341, SKU UDB051.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB051_1.jpg/1237499000010704247/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 209,
+            "height": 326,
+            "format": "JPEG",
+            "bytes": 30611,
+            "sha256": "09091dafd7074903fc91aefdd9be67359a45b92e5644da13f1edcfc421e3aa7b",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Firsthand Bengali eyewitness memories of Swami Vijnanananda compiled by Jyotirmay Basuray and Sureshchandra Das, published by Udbodhan Karyalaya, Kolkata (ISBN 9788180405341). In-print copyrighted work; no authorized complete free digital edition verified on open public repositories."
+    },
+    {
+      "book_id": 162,
+      "canonical_title": "Satprasange Swami Vijnanananda",
+      "author": "Swami Vijnanananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Satprasange Swami Vijnanananda\" Advaita Ashrama",
+        "\"সৎপ্রসঙ্গে স্বামী বিজ্ঞানানন্দ\" উদ্বোধন",
+        "site:shop.advaitaashrama.org \"satprasange-swami-vijnanananda\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/satprasange-swami-vijnanananda-conversations-with-swami-vijnanananda/1237499000010647755",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Udbodhan Karyalaya, distributed by Advaita Ashrama (paperback, ISBN 9788180405303, SKU UDB048, price ₹70). Spiritual conversations and counsels of Swami Vijnanananda recorded by Swami Apurvananda (1897–1984). Under Indian Copyright Act 1957 Section 22, copyright subsists for 60 years post-mortem (until 1 January 2045). In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/satprasange-swami-vijnanananda-conversations-with-swami-vijnanananda/1237499000010647755",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/satprasange-swami-vijnanananda-conversations-with-swami-vijnanananda/1237499000010647755",
+          "page_title": "Satprasange Swami Vijnanananda: Conversations with Swami Vijnanananda | Advaita Ashrama",
+          "edition_match": "Bengali, recorded by Swami Apurvananda, Udbodhan Karyalaya / Advaita Ashrama, paperback, ISBN 9788180405303, SKU UDB048.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB048_1.jpg/1237499000010704226/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 216,
+            "height": 331,
+            "format": "JPEG",
+            "bytes": 29928,
+            "sha256": "5f1f038106eb98ecfdf2854e3aac47300ed69f11abc4b65a2c298311e68c4081",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Spiritual conversations and teachings of Swami Vijnanananda recorded by Swami Apurvananda (1897–1984), published by Udbodhan Karyalaya, Kolkata (ISBN 9788180405303). Recorder passed away in 1984; under Section 22 of the Indian Copyright Act 1957, statutory copyright in India subsists until 2045. In-print commercial edition; no authorized complete free digital edition verified on open public repositories."
+    },
+    {
+      "book_id": 163,
+      "canonical_title": "Swami Vijnanananda: The Beacon Light of Allahabad",
+      "author": "Tarini Shankar Chakrabarti",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Swami Vijnanananda: The Beacon Light of Allahabad\" Tarini Shankar Chakrabarti",
+        "\"Beacon Light of Allahabad\" \"Chakrabarti\" OR \"Chakravarty\"",
+        "\"Swami Vijnanananda\" Allahabad \"Tarini Shankar\""
+      ],
+      "sources": [],
+      "covers": [],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. English commemorative biographical volume on Swami Vijnanananda by Tarini Shankar Chakrabarti, published by Ramakrishna Math, Allahabad (Mutthiganj, Prayagraj). Localized regional commemorative monograph out of print; no active official digital publisher storefront raster and no complete, authorized free digital edition verified on open public repositories."
+    }
+  ]
+}
