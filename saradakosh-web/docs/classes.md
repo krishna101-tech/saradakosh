@@ -9,7 +9,9 @@ not part of the published dataset.
 Subjects sort alphabetically. Videos sort by the app's class dates, oldest first.
 All visible Classes and transcript-reader text is at least 13pt (17.333 CSS px).
 Video and transcript buttons share one row beneath the thumbnail, including on
-phones. Transcript content appears only in the formatted reader, never in the
+phones. On phones, a third icon button expands the initially collapsed class
+details. All three actions stay on one line; desktop details remain visible.
+Topic lists are labelled "Video chapters". Transcript content appears only in the formatted reader, never in the
 summary field. Missing summaries remain blank; a summary must be based on the
 matched script and contain no more than five sentences.
 

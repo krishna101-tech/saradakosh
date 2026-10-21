@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, ArrowUpRight, BookOpen, Search, Play, FileText } from 'lucide-react';
+import { ArrowLeft, ArrowUpRight, BookOpen, Search, Play, FileText, ChevronDown, ChevronUp } from 'lucide-react';
 import ThemeSelector from '@/components/ThemeSelector';
 import styles from './ClassesLibrary.module.css';
 
@@ -11,6 +11,7 @@ const dateLabel = date => new Intl.DateTimeFormat('en-GB', { day: '2-digit', mon
 export default function ClassesLibrary({ records, subject }) {
   const [query, setQuery] = useState('');
   const [chapter, setChapter] = useState('');
+  const [expandedVideos, setExpandedVideos] = useState({});
   const term = query.trim().toLocaleLowerCase();
   const chapters = [...new Set(records.map(record => record.chapter))].sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
   const matching = records.filter(record => (!chapter || record.chapter === chapter) && (!term || [record.subject, record.chapter, record.title, record.date, ...record.topics].join(' ').toLocaleLowerCase().includes(term)));
@@ -56,14 +57,15 @@ export default function ClassesLibrary({ records, subject }) {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img loading="lazy" width="320" height="180" src={`https://i.ytimg.com/vi/${record.videoId}/hqdefault.jpg`} alt="" />
             <div className={styles.actions}>
-              <a className={styles.watch} href={`https://www.youtube.com/watch?v=${record.videoId}`} target="_blank" rel="noopener noreferrer"><Play size={16} />Open video<span className={styles.srOnly}>: {record.title} (opens in a new tab)</span></a>
-              {record.transcriptAvailable ? <Link prefetch={false} className={styles.read} href={`/classes/transcripts/${record.videoId}`} target="_blank" rel="noopener noreferrer"><FileText size={16} />Read transcript<span className={styles.srOnly}>: {record.title} (opens in a new tab)</span></Link> : <button type="button" className={styles.unavailable} disabled title="Transcript unavailable" aria-label="Read transcript: unavailable for this class"><FileText size={16} />Read transcript</button>}
+              <a className={styles.watch} href={`https://www.youtube.com/watch?v=${record.videoId}`} target="_blank" rel="noopener noreferrer"><Play size={16} /><span className={styles.desktopLabel}>Open video</span><span className={styles.mobileLabel}>Video</span><span className={styles.srOnly}>: {record.title} (opens in a new tab)</span></a>
+              {record.transcriptAvailable ? <Link prefetch={false} className={styles.read} href={`/classes/transcripts/${record.videoId}`} target="_blank" rel="noopener noreferrer"><FileText size={16} /><span className={styles.desktopLabel}>Read transcript</span><span className={styles.mobileLabel}>Transcript</span><span className={styles.srOnly}>: {record.title} (opens in a new tab)</span></Link> : <button type="button" className={styles.unavailable} disabled title="Transcript unavailable" aria-label="Read transcript: unavailable for this class"><FileText size={16} /><span className={styles.desktopLabel}>Read transcript</span><span className={styles.mobileLabel}>Transcript</span></button>}
+              <button type="button" className={styles.expand} aria-label={expandedVideos[record.id] ? 'Collapse video details' : 'Expand video details'} aria-expanded={!!expandedVideos[record.id]} aria-controls={`video-details-${record.id}`} onClick={() => setExpandedVideos(current => ({ ...current, [record.id]: !current[record.id] }))}>{expandedVideos[record.id] ? <ChevronUp size={21} /> : <ChevronDown size={21} />}</button>
             </div>
           </div>}
-          <div className={styles.content}>
+          <div id={`video-details-${record.id}`} className={`${styles.content} ${record.videoId && !expandedVideos[record.id] ? styles.mobileCollapsed : ''}`}>
             <time dateTime={record.date}>{dateLabel(record.date)}</time><h3>{record.title}</h3>
             {record.summary && <p className={styles.summary}>{record.summary}</p>}
-            {!!record.topics.length && <ul>{record.topics.map((topic, index) => <li key={index}>{topic}</li>)}</ul>}
+            {!!record.topics.length && <><h4 className={styles.chapterLabel}>Video chapters</h4><ul>{record.topics.map((topic, index) => <li key={index}>{topic}</li>)}</ul></>}
           </div>
         </article>)}
       </details>)}
