@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "issue": 28,
+  "baseline_sha": "63d2509ce1843b4df9d36e8284534a7d42cf531e",
+  "researched_at_utc": "2026-10-21T05:00:00.000000+00:00",
+  "researcher": "Antigravity (Gemini 3.8 Flash High)",
+  "method": "Renewed actual public searches and primary HTTP body/metadata inspections. Search absence is bounded, not exhaustive. No paid or external model call; no private IDs, full reader bodies or cover binaries in artifacts.",
+  "status": "RESEARCH_CANDIDATES_PENDING_INDEPENDENT_QA",
+  "source_mutations": false,
+  "books": [
+    {
+      "book_id": 124,
+      "canonical_title": "Letters for Spiritual Seekers: Letters of Swami Shivananda",
+      "author": "Swami Shivananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Letters for Spiritual Seekers\" Advaita Ashrama",
+        "\"Letters for Spiritual Seekers\" \"Lokeswarananda\"",
+        "site:shop.advaitaashrama.org \"Letters for Spiritual Seekers\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/letters-for-spiritual-seekers/1237499000010250797",
+          "observation": "HTTP 200 actual publisher retail page. Publisher Advaita Ashrama (paperback, 296 pages, ISBN 9788175051799, SKU ADE007, price ₹140). English translation of selected spiritual letters of Swami Shivananda by Swami Lokeswarananda. In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/letters-for-spiritual-seekers/1237499000010250797",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/letters-for-spiritual-seekers/1237499000010250797",
+          "page_title": "Letters for Spiritual Seekers by Swami Lokeswarananda",
+          "edition_match": "English, Swami Shivananda / Swami Lokeswarananda (Trans.), Advaita Ashrama, paperback 296 pages, ISBN 9788175051799, SKU ADE007.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/ADE007_1.jpg/1237499000010324812/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 934,
+            "height": 1400,
+            "format": "JPEG",
+            "bytes": 331633,
+            "sha256": "27ef50e03d21d80759b5bddaa603881b79c554edd14586a8719c03fd5d7ac1ad",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. English translation of Swami Shivananda's spiritual letters by Swami Lokeswarananda (1917–1998), published by Advaita Ashrama (296 pages). Under active statutory copyright protection; no authorized free digital edition verified on public libraries."
+    },
+    {
+      "book_id": 125,
+      "canonical_title": "For Seekers of God: Conversations with Swami Shivananda",
+      "author": "Swami Shivananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"For Seekers of God\" Advaita Ashrama",
+        "site:archive.org \"in.ernet.dli.2015.149178\"",
+        "\"For Seekers of God\" \"Vividishananda\" Gambhirananda"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/for-seekers-of-god/1237499000010255645",
+          "observation": "HTTP 200 actual publisher retail page. Publisher Advaita Ashrama (paperback, 332 pages, ISBN 9788175051058, SKU APE008, price ₹150). English translation of Shivananda Vani by Swami Vividishananda and Swami Gambhirananda. In-print copyrighted work, not a free reader."
+        },
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.149178",
+          "observation": "Digital Library of India scan from Birchandra State Central Library, Tripura (331 pages, 1975 4th edition published by Advaita Ashrama). Translators Swami Vividishananda (1899–1980) and Swami Gambhirananda (1899–1988) and publisher Advaita Ashrama hold active copyright under the Indian Copyright Act. DLI metadata assertion of 'In Public Domain' lacks legal basis for modern translation. Unpermitted scan; cannot be certified as an authorized free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/for-seekers-of-god/1237499000010255645",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/for-seekers-of-god/1237499000010255645",
+          "page_title": "For Seekers of God: Swami Shivananda Conversations | Advaita Ashrama",
+          "edition_match": "English, Swami Shivananda / Swami Vividishananda & Swami Gambhirananda (Trans.), Advaita Ashrama, paperback 332 pages, ISBN 9788175051058, SKU APE008.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/APE008_1.jpg/1237499000010286497/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 818,
+            "height": 1293,
+            "format": "JPEG",
+            "bytes": 1344677,
+            "sha256": "c180f0b39268b8c972037f84ae69d316bf56d316ee7bef4412201e4b455c3d68",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "hold_rights_edition / no_authorized_free_text_verified. Authoritative English translation of Swami Shivananda's spiritual conversations (Shivananda Vani) by Swami Vividishananda and Swami Gambhirananda, published by Advaita Ashrama (332 pages). Translators and publisher retain active copyright. DLI item in.ernet.dli.2015.149178 is an unpermitted digital scan lacking public domain validity. In-print commercial edition, not an approved free reader."
+    },
+    {
+      "book_id": 126,
+      "canonical_title": "Mahapurush Maharaj As We Saw Him",
+      "author": "A Compilation",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Mahapurush Maharaj As We Saw Him\" Advaita Ashrama",
+        "site:shop.advaitaashrama.org \"Mahapurush Maharaj As We Saw Him\"",
+        "\"Mahapurush Maharaj As We Saw Him\" pdf free"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/mahapurush-maharaj-as-we-saw-him/1237499000010268493",
+          "observation": "HTTP 200 actual publisher retail page. Publisher Advaita Ashrama (paperback, 496 pages, ISBN 9788175052048, SKU ADE010, price ₹150). Comprehensive compilation of reminiscences of Swami Shivananda by monastic and lay disciples. In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/mahapurush-maharaj-as-we-saw-him/1237499000010268493",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/mahapurush-maharaj-as-we-saw-him/1237499000010268493",
+          "page_title": "Mahapurush Maharaj as We Saw Him | Advaita Ashrama",
+          "edition_match": "English, A Compilation, Advaita Ashrama, paperback 496 pages, ISBN 9788175052048, SKU ADE010.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/ADE010_1.jpg/1237499000010324929/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 889,
+            "height": 1400,
+            "format": "JPEG",
+            "bytes": 220872,
+            "sha256": "161684a48db576a53bace171008bc2c0567c0f94c8072766a6d30a8e87b0562f",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Comprehensive English collection of reminiscences of Swami Shivananda by his monastic and lay disciples, published by Advaita Ashrama (496 pages, ISBN 9788175052048). Under active statutory copyright; no authorized free digital edition verified on public libraries."
+    },
+    {
+      "book_id": 127,
+      "canonical_title": "Saga of a Great Soul: Life and Work of Swami Shivananda",
+      "author": "Swami Vividishananda",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Saga of a Great Soul\" Advaita Ashrama",
+        "\"Saga of a Great Soul\" \"Vividishananda\" Chennai Math",
+        "site:shop.advaitaashrama.org \"Saga of a Great Soul\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/saga-of-a-great-soul-swami-shivananda-life-and-work-of-swami-shivananada/1237499000010764195",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Sri Ramakrishna Math, Mylapore, Chennai, distributed by Advaita Ashrama (paperback, 258 pages, ISBN 9788171206285, SKU MDE012, price ₹80). Authoritative biography of Swami Shivananda with foreword by Christopher Isherwood (formerly published as 'A Man of God'). In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/saga-of-a-great-soul-swami-shivananda-life-and-work-of-swami-shivananada/1237499000010764195",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/saga-of-a-great-soul-swami-shivananda-life-and-work-of-swami-shivananada/1237499000010764195",
+          "page_title": "Saga of a Great Soul | Advaita Ashrama",
+          "edition_match": "English, Swami Vividishananda, Sri Ramakrishna Math Chennai / Advaita Ashrama, paperback 258 pages, ISBN 9788171206285, SKU MDE012.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MDE012_1.jpg/1237499000010827487/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 817,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 210720,
+            "sha256": "083f0b99581a422f9b1f9a582fb6354bfb1acb7f079bb4fa98e41255a29b19fd",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Definitive biography of Swami Shivananda by Swami Vividishananda (1899–1980), foreword by Christopher Isherwood, published by Sri Ramakrishna Math Chennai (258 pages). Under active statutory copyright; no authorized free digital facsimile verified on open public repositories."
+    },
+    {
+      "book_id": 128,
+      "canonical_title": "Mahapurushjir Patravali",
+      "author": "Swami Shivananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"মহাপুরুষজীর পত্রাবলী\" site:udbodhan.org",
+        "\"Mahapurushjir Patravali\" Advaita Ashrama",
+        "site:shop.advaitaashrama.org \"Mahapurushjir Patravali\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/mahapurushjir-patravali-letters-of-swami-shivananda/1237499000010646927",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Udbodhan Karyalaya, distributed by Advaita Ashrama (paperback, 268 pages, SKU UDB019, price ₹50). Original Bengali spiritual letters of Swami Shivananda. In-print publication, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/mahapurushjir-patravali-letters-of-swami-shivananda/1237499000010646927",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/mahapurushjir-patravali-letters-of-swami-shivananda/1237499000010646927",
+          "page_title": "Mahapurushjir Patravali by Swami Shivananda | Advaita Ashrama",
+          "edition_match": "Bengali, Swami Shivananda, Udbodhan Karyalaya / Advaita Ashrama, paperback 268 pages, SKU UDB019.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB019_1.jpg/1237499000010703540/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 204,
+            "height": 325,
+            "format": "JPEG",
+            "bytes": 22312,
+            "sha256": "e5765d2b8e88a657d2a0b079b1663175d42eb0e28dc756acab7d7fd2f1aabfa6",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Original Bengali letters of Swami Shivananda compiled and published by Udbodhan Karyalaya (268 pages). In-print work; no open complete digital edition verified on public libraries."
+    }
+  ]
+}

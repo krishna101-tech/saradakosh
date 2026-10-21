@@ -109,15 +109,15 @@
     120,
     121,
     122,
-    123
-  ],
-  "researched_count": 107,
-  "remaining_outside_proposed_duplicates": [
+    123,
     124,
     125,
     126,
     127,
-    128,
+    128
+  ],
+  "researched_count": 112,
+  "remaining_outside_proposed_duplicates": [
     129,
     130,
     131,
@@ -159,7 +159,7 @@
     167,
     168
   ],
-  "remaining_count": 45,
+  "remaining_count": 40,
   "deduplication_scope": [
     33,
     34,
@@ -459,10 +459,22 @@
       ],
       "sha256": "8e6b583f82b424d5cda71d0b3e4d961c83e7c4deb9a75708f37db7d2369e63ed",
       "qa": "Pending independent review; ID120 candidate reader proposed pending QA (complete 1950 scan on DLI/IA, author PD), official publisher cover leads recorded for IDs 119-123 with HOLD, ID123 DLI scan held (author in-copyright until 2044)."
+    },
+    {
+      "path": "research-124-128.json",
+      "ids": [
+        124,
+        125,
+        126,
+        127,
+        128
+      ],
+      "sha256": "2dbf1e6c5808d1459016f4b510b56fbb4357e123cf42316eb71cc3d72fedb315",
+      "qa": "Pending independent review; ID125 DLI scan held (modern translation by Vividishananda/Gambhirananda in copyright), official publisher cover leads recorded for IDs 124-128 with HOLD, IDs 124/126/127/128 no_complete_free_text_verified."
     }
   ],
   "latest_research_date": "2026-10-21",
   "latest_research_addendum": "deduplication-resume-2026-10-21.json",
   "latest_research_addendum_sha256": "56c7570e69215d0af17804a845710aef5766f19784af3920a2bd6ec60724d4d6",
-  "latest_stop": "Antigravity checkpoint 119-123 complete. 107 works researched outside 16 proposed duplicates; 45 remaining 124–168."
+  "latest_stop": "Antigravity checkpoint 124-128 complete. 112 works researched outside 16 proposed duplicates; 40 remaining 129–168."
 }
