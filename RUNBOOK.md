@@ -26,13 +26,7 @@ The command reads `tables/DU1.xlsx`, `Parameter1.xlsx`, `ParaM.xlsx`, and `Matri
 
 This is a **replacement of legacy data from raw workbook inputs**, not a restoration of accepted database corrections. The checked-in Matrix currently yields 9,080 distinct mappings rather than the retained database's 34,100; workbook text/labels can also predate editorial corrections described in [the reconciliation record](docs/database-reconciliation.md). Review the inputs and use a disposable copy for rehearsals. Known orphan relationships in these historical legacy inputs are retained and reported explicitly; the command does not claim to repair them. Foreign-key defects outside those five legacy tables abort the import.
 
-Old event embeddings are cleared within the same transaction because event descriptions may change. The importer no longer launches a post-commit subprocess or downloads a model. If vector search is needed after an authorized rebuild, generate embeddings as a separate maintenance operation:
-
-```bash
-node saradakosh-web/scripts/sync-embeddings.js
-```
-
-That separate command targets the same canonical database and may download the configured model; its failure cannot undo the already committed workbook import. Library imports remain separate: run `npm run import:library` from `saradakosh-web` only when updating the approved Library source.
+Old event embeddings are cleared within the same transaction because event descriptions may change. The importer does not launch a post-commit subprocess or download a model. Global event search uses keyword matching; the unused embedding runtime and generation scripts have been removed because the canonical database has no vector index. Activating vector search requires a separately approved index and maintenance design. Library imports remain separate: run `npm run import:library` from `saradakosh-web` only when updating the approved Library source.
 
 Run `python -m unittest discover -s tests` for regressions. The importer tests execute the actual CLI inside temporary repository copies backed up from a read-only source connection. They preserve 168 books/55 links plus seeded editorial summary/real-cover records across two imports, and prove full rollback after both mid-import and post-insert validation failures. They never reimport into the canonical database.
 

@@ -9,6 +9,7 @@
     "lint": "eslint",
     "test": "playwright test",
     "test:database": "node --test tests/database.test.mjs",
+    "test:search": "node --test tests/search.test.mjs",
     "test:library": "node --test tests/library.test.mjs",
     "import:library": "node scripts/import-library.mjs",
     "prepare": "husky"
@@ -16,7 +17,6 @@
   "dependencies": {
     "@base-ui/react": "^1.6.0",
     "@gsap/react": "^2.1.2",
-    "@huggingface/transformers": "^4.2.0",
     "@sentry/nextjs": "^10.64.0",
     "@studio-freight/react-lenis": "^0.0.47",
     "better-sqlite3": "^12.10.0",
