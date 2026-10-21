@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "issue": 28,
+  "baseline_sha": "ce3946a3641b960c1d1a8e1b6c7e2b1b369c9ff4",
+  "researched_at_utc": "2026-10-21T04:55:00.000000+00:00",
+  "researcher": "Antigravity (Gemini 3.8 Flash High)",
+  "method": "Renewed actual public searches and primary HTTP body/metadata inspections. Search absence is bounded, not exhaustive. No paid or external model call; no private IDs, full reader bodies or cover binaries in artifacts.",
+  "status": "RESEARCH_CANDIDATES_PENDING_INDEPENDENT_QA",
+  "source_mutations": false,
+  "books": [
+    {
+      "book_id": 119,
+      "canonical_title": "Spiritual Treasures: Letters of Swami Turiyananda",
+      "author": "Swami Turiyananda; Swami Chetanananda",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Spiritual Treasures: Letters of Swami Turiyananda\" Advaita Ashrama",
+        "\"Spiritual Treasures\" Chetanananda",
+        "site:shop.advaitaashrama.org \"Spiritual Treasures\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/spiritual-treasures-letters-of-swami-turiyananda/1237499000019160620",
+          "observation": "HTTP 200 actual publisher retail page. Publisher Advaita Ashrama (paperback, 288 pages, ISBN 9788175051188, SKU ADE006, price ₹140). Compiled and translated by Swami Chetanananda. Section I contains translated Bengali letters, Section II original English letters. In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/spiritual-treasures-letters-of-swami-turiyananda/1237499000019160620",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/spiritual-treasures-letters-of-swami-turiyananda/1237499000019160620",
+          "page_title": "Spiritual Treasures – Swami Chetanananda | Advaita Ashrama",
+          "edition_match": "English, Swami Turiyananda / Swami Chetanananda, Advaita Ashrama, paperback 288 pages, ISBN 9788175051188, SKU ADE006.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/ADE006-0-247x367.jpg/1237499000021024170/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 247,
+            "height": 367,
+            "format": "JPEG",
+            "bytes": 30242,
+            "sha256": "79dec1805cb13439c19bd5d355b692cf4758ef7036b1372a2a45c8b049a50ab2",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Modern copyrighted translation and editorial compilation by Swami Chetanananda, published by Advaita Ashrama (288 pages). Under active statutory copyright; no authorized free digital edition verified on open public repositories."
+    },
+    {
+      "book_id": 120,
+      "canonical_title": "Swami Turiyanander Patra",
+      "author": "Swami Turiyananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"স্বামী তুরীয়ানন্দের পত্র\" site:udbodhan.org",
+        "site:archive.org \"in.ernet.dli.2015.355856\"",
+        "site:archive.org \"Swami Turiyanander Patra\""
+      ],
+      "sources": [
+        {
+          "url": "https://udbodhan.org/product/%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AE%E0%A7%80-%E0%A6%A4%E0%A7%81%E0%A6%B0%E0%A7%80%E0%A7%9F%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%A4%E0%A7%8D%E0%A6%B0/",
+          "observation": "HTTP 200 actual publisher retail page. Publisher Udbodhan Karyalaya, Kolkata, Vol. 1 (price ₹120); Vol. 2 published separately. In-print multi-volume collection of Swami Turiyananda's Bengali letters."
+        },
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.355856",
+          "observation": "Digital Library of India complete 1950 edition scan from State Central Library, Kolkata. Title: স্বামী তুরীয়ানন্দের পত্র (Swami Turiyanander Patra), published by Swami Atmobodhananda, Udbodhan Karyalaya, 1 Udbodhan Lane, Calcutta, 1357 B.S. (1950), printed by Sri Krishna Printing Works, 370 pages, complete Bengali text (file: 2015.355856.Swami-Turiyanander.pdf, 15,214,960 bytes). Author Swami Turiyananda (1863–1922) passed away >100 years ago (public domain worldwide). Candidate external reader proposed pending independent QA (NOT auto-ingested)."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://udbodhan.org/product/%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AE%E0%A7%80-%E0%A6%A4%E0%A7%81%E0%A6%B0%E0%A7%80%E0%A7%9F%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%A4%E0%A7%8D%E0%A6%B0/",
+          "http_status": 200,
+          "resolved_url": "https://udbodhan.org/product/%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AE%E0%A7%80-%E0%A6%A4%E0%A7%81%E0%A6%B0%E0%A7%80%E0%A7%9F%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%A4%E0%A7%8D%E0%A6%B0/",
+          "page_title": "স্বামী তুরীয়ানন্দের পত্র (প্রথম ভাগ) · Udbodhan",
+          "edition_match": "Bengali, Swami Turiyananda, Udbodhan Karyalaya, Kolkata, Vol. 1, price ₹120.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://udbodhan.org/api/media/file/Swami-Turiyanander-Patra_1.webp",
+          "image_observation": {
+            "http_status": 200,
+            "width": 702,
+            "height": 1100,
+            "format": "WEBP",
+            "bytes": 89814,
+            "sha256": "b0340f720586019a73d554c04e5a5552bc2ba490090a6a862f2e0b2ff49f1cd0",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.355856",
+          "label": "Bengali",
+          "evidence": "Digital Library of India complete 1950 edition scan (370 pages, 15.2 MB PDF). Complete front matter, publisher notice ('নিবেদন'), biographical sketch, and full chronologically arranged letters. Author Swami Turiyananda died in 1922 (public domain worldwide).",
+          "disposition": "candidate_reader_pending_QA"
+        }
+      ],
+      "text_outcome": "candidate_reader_proposed_pending_QA. Complete 1950 Bengali scan on Internet Archive / Digital Library of India (in.ernet.dli.2015.355856, 370 pages, 15.2 MB PDF). Published by Swami Atmobodhananda, Udbodhan Karyalaya, Calcutta (1357 B.S. / 1950). Author Swami Turiyananda (1863–1922) died over a century ago (public domain worldwide). Proposed as candidate external reader pending independent QA; NOT auto-ingested. Official publisher cover lead recorded on Udbodhan Karyalaya with HOLD."
+    },
+    {
+      "book_id": 121,
+      "canonical_title": "Swami Turiyanander Smriti Katha",
+      "author": "Swami Chetanananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Swami Turiyanander Smriti Katha\" Advaita Ashrama",
+        "\"স্বামী তুরীয়ানন্দের স্মৃতিকথা\" চেতনানন্দ",
+        "site:shop.advaitaashrama.org \"Swami Turiyanander Smriti Katha\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-turiyanander-smriti-katha/1237499000010647719",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Udbodhan Karyalaya, distributed by Advaita Ashrama (paperback, 424 pages, ISBN 9788180405174, SKU UDB047, price ₹120). Compiled and edited by Swami Chetanananda. In-print copyrighted compilation, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-turiyanander-smriti-katha/1237499000010647719",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-turiyanander-smriti-katha/1237499000010647719",
+          "page_title": "Swami Turiyanander Smriti Katha by Chetanananda | Advaita Ashrama",
+          "edition_match": "Bengali, Swami Chetanananda (Ed.), Udbodhan Karyalaya / Advaita Ashrama, paperback 424 pages, ISBN 9788180405174, SKU UDB047.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://cdn2.zohoecommerce.com/product-images/UDB047_1.jpg/1237499000010704205/1200x1200?storefront_domain=shop.advaitaashrama.org",
+          "image_observation": {
+            "http_status": 200,
+            "width": 212,
+            "height": 325,
+            "format": "JPEG",
+            "bytes": 26795,
+            "sha256": "f29880d77f25c058db7f677be36d0cdcb607ae9c19c3fb23f70891c403c5f670",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Comprehensive anthology of reminiscences of Swami Turiyananda compiled and edited by Swami Chetanananda, published by Udbodhan Karyalaya (424 pages). In-print work under active statutory copyright; no authorized free digital facsimile verified on public libraries."
+    },
+    {
+      "book_id": 122,
+      "canonical_title": "জীবনমুক্তি সুখপ্রাপ্তি",
+      "author": "Gen",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"জীবন্মুক্তি সুখপ্রাপ্তি\" site:udbodhan.org",
+        "\"Jivanmukti Sukhaprapti\" Turiyananda",
+        "site:udbodhan.org \"জীবনমুক্তি সুখপ্রাপ্তি\""
+      ],
+      "sources": [
+        {
+          "url": "https://udbodhan.org/product/%E0%A6%9C%E0%A7%80%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%AE%E0%A7%81%E0%A6%95%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%B8%E0%A7%81%E0%A6%96%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BF/",
+          "observation": "HTTP 200 actual publisher retail page. Publisher Udbodhan Karyalaya, Kolkata (paperback, 174 pages, ISBN 9788180403125, price ₹60). Teachings and spiritual conversations of Swami Turiyananda on liberation in life. In-print copyrighted publication, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://udbodhan.org/product/%E0%A6%9C%E0%A7%80%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%AE%E0%A7%81%E0%A6%95%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%B8%E0%A7%81%E0%A6%96%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BF/",
+          "http_status": 200,
+          "resolved_url": "https://udbodhan.org/product/%E0%A6%9C%E0%A7%80%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%AE%E0%A7%81%E0%A6%95%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%B8%E0%A7%81%E0%A6%96%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BF/",
+          "page_title": "জীবন্মুক্তি সুখপ্রাপ্তি · Udbodhan",
+          "edition_match": "Bengali, Swami Turiyananda, Udbodhan Karyalaya, Kolkata, paperback 174 pages, ISBN 9788180403125, price ₹60.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://udbodhan.org/api/media/file/image-30.webp",
+          "image_observation": {
+            "http_status": 200,
+            "width": 594,
+            "height": 880,
+            "format": "WEBP",
+            "bytes": 34258,
+            "sha256": "ab2e021a9f32e5c5c065891df0d9cb1f101e2f724867538b9571e568d3d3cdf5",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Spiritual conversations and teachings of Swami Turiyananda compiled by Udbodhan Karyalaya (174 pages, ISBN 9788180403125). In-print copyrighted publication; no open authorized digital edition verified on public libraries."
+    },
+    {
+      "book_id": 123,
+      "canonical_title": "স্বামী তুরীয়ানন্দ",
+      "author": "Jagadishwarananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Swami Turiyananda\" Jagadiswarananda Advaita Ashrama",
+        "\"স্বামী তুরীয়ানন্দ\" জগদীশ্বরানন্দ",
+        "site:archive.org \"in.ernet.dli.2015.355855\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-turiyananda/1237499000010646637",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Udbodhan Karyalaya, distributed by Advaita Ashrama (paperback, 213 pages, ISBN 9788180403385, SKU UDB007, price ₹60). Authoritative Bengali biography of Swami Turiyananda by Swami Jagadiswarananda. In-print copyrighted work, not a free reader."
+        },
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.355855",
+          "observation": "Digital Library of India scan from State Central Library, Kolkata (350 pages, 19.2 MB PDF). Author Swami Jagadiswarananda (1896–1984) passed away in 1984; work remains protected under Indian copyright law until 2044 (60 years post-mortem). DLI metadata claim of 'In Public Domain' lacks legal basis for in-copyright 20th-century author. Unpermitted scan; cannot be certified as an authorized free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-turiyananda/1237499000010646637",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-turiyananda/1237499000010646637",
+          "page_title": "Swami Turiyananda by Swami Jagadiswarananda | Advaita Ashrama",
+          "edition_match": "Bengali, Swami Jagadiswarananda, Udbodhan Karyalaya / Advaita Ashrama, paperback 213 pages, ISBN 9788180403385, SKU UDB007.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB007_1.jpg/1237499000010703273/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 773,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 27231,
+            "sha256": "7c24cb884256efcccde3f899fc4405849efb23985fbfcff2e63a45aeb282b0c7",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "hold_rights_edition / no_authorized_free_text_verified. Comprehensive Bengali biography of Swami Turiyananda by Swami Jagadiswarananda (1896–1984), published by Udbodhan Karyalaya. Author passed away in 1984; work remains under active statutory copyright in India until 2044. DLI scan in.ernet.dli.2015.355855 is an unpermitted digital scan lacking public domain validity. In-print commercial edition, not an approved free reader."
+    }
+  ]
+}

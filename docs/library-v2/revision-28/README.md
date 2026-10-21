@@ -1,6 +1,10 @@
 # Current bounded resume — 21 October 2026 (Antigravity Update)
 
-Renewed research now covers **102 retained works** outside proposed duplicates 33–48: previous 97 plus 114–118. **50 remain: 119–168**. Checkpoint `research-114-118.json` records 1 verified complete 1948 Bengali scan candidate on Internet Archive / DLI (ID 115 Saradananda Swamijir Jibaner Ghatanabali by Mahendranath Dutta, 264 pages, public domain in India), 1 new official publisher cover lead (ID 117 Swami Turiyananda by Swami Ritajananda, 808x1200 JPEG, Advaita Ashrama / Chennai Math edition) with decoded dimensions and SHA256 hash. IDs 114, 116, 118 have no complete free digital text verified. All new candidates are pending independent review; zero assets cleared and zero new reader approvals.
+Renewed research now covers **107 retained works** outside proposed duplicates 33–48: previous 102 plus 119–123. **45 remain: 124–168**. Checkpoint `research-119-123.json` records 1 verified complete 1950 Bengali scan candidate on Internet Archive / DLI (ID 120 Swami Turiyanander Patra, 370 pages, author public domain worldwide), 5 new official publisher cover leads (IDs 119, 120, 121, 122, 123) with decoded dimensions and SHA256 hashes. ID 123 DLI scan held as unpermitted scan of in-copyright work (author died 1984; protected until 2044); IDs 119, 121, 122 in-print copyrighted publications with no authorized free digital edition. All new candidates are pending independent review; zero assets cleared and zero new reader approvals.
+
+## Earlier bounded resume — 21 October 2026 (IDs 114–118)
+
+Renewed research covered **102 retained works** outside proposed duplicates 33–48: previous 97 plus 114–118. Checkpoint `research-114-118.json` records 1 verified complete 1948 Bengali scan candidate on Internet Archive / DLI (ID 115 Saradananda Swamijir Jibaner Ghatanabali by Mahendranath Dutta, 264 pages, public domain in India), 1 new official publisher cover lead (ID 117 Swami Turiyananda by Swami Ritajananda, 808x1200 JPEG, Advaita Ashrama / Chennai Math edition) with decoded dimensions and SHA256 hash. IDs 114, 116, 118 have no complete free digital text verified. All new candidates are pending independent review; zero assets cleared and zero new reader approvals.
 
 ## Earlier bounded resume — 21 October 2026 (IDs 109–113)
 
