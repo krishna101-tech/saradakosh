@@ -1,10 +1,12 @@
 import { test, expect } from '@playwright/test';
-import fs from 'node:fs';
 import path from 'node:path';
-import { parseLibrarySnapshot } from '../../src/lib/library/import.mjs';
+import { execFileSync } from 'node:child_process';
+import { pathToFileURL } from 'node:url';
 
-const source = JSON.parse(fs.readFileSync(path.join(__dirname, '../../data/library/books-source.json'), 'utf8'));
-const { books } = parseLibrarySnapshot(source);
+// Run the ESM importer in Node: Playwright's CJS transform cannot evaluate import.meta.
+const { books } = JSON.parse(execFileSync(process.execPath, ['--input-type=module', '-e',
+  `import fs from 'node:fs'; import { parseLibrarySnapshot } from ${JSON.stringify(pathToFileURL(path.join(__dirname, '../../src/lib/library/import.mjs')).href)}; console.log(JSON.stringify(parseLibrarySnapshot(JSON.parse(fs.readFileSync(${JSON.stringify(path.join(__dirname, '../../data/library/books-source.json'))}, 'utf8')))));`,
+], { encoding: 'utf8' }));
 const fallback = books.find(book => !book.english_title && book.original_language === 'Bengali' && book.links.some(link => link.language === 'Bengali'));
 const items = page => page.locator('ul[aria-label="Books"] > li');
 const identities = page => items(page).evaluateAll(elements => elements.map(element => element.dataset.bookId));
@@ -173,4 +175,40 @@ test('responsive Cards and List remain usable at mobile, tablet and laptop width
     }
   }
   expect(errors).toEqual([]);
+});
+
+test('T2 held rows 28 and 53 remain canonical single books with accurate no-link states', async ({ page }) => {
+  for (const id of [27, 52]) {
+    const book = books[id - 1];
+    await page.goto(`/reports/refs?q=${encodeURIComponent(book.canonical_title)}`);
+    const item = page.locator(`[data-book-id="${id}"]`);
+    await expect(item).toBeVisible();
+    await expect(item).toContainText('Full text not listed');
+    await expect(item.getByRole('link')).toHaveCount(0);
+    await item.getByRole('button').click();
+    await expect(page.getByRole('dialog')).toContainText('Full text not listed');
+    await page.keyboard.press('Escape');
+  }
+});
+
+test('T2 volume order, mirror semantics, edition and AI qualifications survive Cards, List and modal', async ({ page }) => {
+  for (const view of ['cards', 'list']) {
+    await page.goto(`/reports/refs?view=${view}&lang=bengali&q=${encodeURIComponent(books[58].canonical_title)}`);
+    const item = page.locator('[data-book-id="59"]');
+    await expect(item.getByRole('link')).toHaveText(['Bengali 1 — AI transcription', 'Bengali 2 — AI transcription', 'Bengali 3 — AI transcription']);
+    await expect(item).toContainText('Printed edition remains authoritative.');
+    await item.getByRole('button').click();
+    await expect(page.getByRole('dialog').getByRole('link')).toHaveText(['Bengali 1 — AI transcription', 'Bengali 2 — AI transcription', 'Bengali 3 — AI transcription']);
+    await page.keyboard.press('Escape');
+    await page.goto(`/reports/refs?view=${view}&lang=english&q=${encodeURIComponent(books[1].canonical_title)}`);
+    await expect(page.locator('[data-book-id="2"]')).toContainText('Jagadananda translation');
+    await expect(page.locator('[data-book-id="2"]')).toContainText('Source copy number; not a volume number.');
+    await page.goto(`/reports/refs?view=${view}&lang=english&q=${encodeURIComponent(books[54].canonical_title)}`);
+    await expect(page.locator('[data-book-id="55"]')).toContainText('Later Volume4 not included.');
+  }
+  await page.goto(`/reports/refs?lang=bengali&q=${encodeURIComponent(books[31].canonical_title)}`);
+  const mixed = page.locator('[data-book-id="32"]');
+  await expect(mixed.getByRole('link')).toHaveText(Array.from({ length: 10 }, (_, i) => `Bengali Vol. ${i + 1}`));
+  await page.getByRole('group', { name: 'Book language' }).getByRole('button', { name: 'English', exact: true }).click();
+  await expect(mixed.getByRole('link')).toHaveText(['English']);
 });

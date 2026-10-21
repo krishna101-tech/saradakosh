@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "issue": 28,
+  "baseline_sha": "5913a0279527fefaebe6858e38d7212fe928424a",
+  "researched_at_utc": "2026-10-21T05:05:00.000000+00:00",
+  "researcher": "Antigravity (Gemini 3.8 Flash High)",
+  "method": "Renewed actual public searches and primary HTTP body/metadata inspections. Search absence is bounded, not exhaustive. No paid or external model call; no private IDs, full reader bodies or cover binaries in artifacts.",
+  "status": "RESEARCH_CANDIDATES_PENDING_INDEPENDENT_QA",
+  "source_mutations": false,
+  "books": [
+    {
+      "book_id": 129,
+      "canonical_title": "Shivananda Smriti Samgraha",
+      "author": "A Compilation",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Shivananda Smriti Samgraha\" Advaita Ashrama",
+        "\"শিবানন্দ স্মৃতি সংগ্রহ\" site:udbodhan.org",
+        "site:shop.advaitaashrama.org \"Shivananda Smriti Samgraha\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/shivananda-smriti-samgraha/1237499000010647467",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Udbodhan Karyalaya, distributed by Advaita Ashrama (paperback, 753 pages, ISBN 9788180404849, SKU UDB038, price ₹250). Comprehensive anthology of reminiscences of Swami Shivananda by monastic and lay contemporaries. In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/shivananda-smriti-samgraha/1237499000010647467",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/shivananda-smriti-samgraha/1237499000010647467",
+          "page_title": "Swami Shivananda Smriti Samgraha | Advaita Ashrama",
+          "edition_match": "Bengali, A Compilation, Udbodhan Karyalaya / Advaita Ashrama, paperback 753 pages, ISBN 9788180404849, SKU UDB038.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB038_1.jpg/1237499000010703997/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 207,
+            "height": 325,
+            "format": "JPEG",
+            "bytes": 25761,
+            "sha256": "85f07f429bb3c24d73f46b0bf734a5a0e91f2ba2bcfc90b939994791b77fc86b",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Comprehensive 753-page Bengali anthology of reminiscences of Swami Shivananda published by Udbodhan Karyalaya (ISBN 9788180404849). Under active statutory copyright; no authorized free digital edition verified on open public repositories."
+    },
+    {
+      "book_id": 130,
+      "canonical_title": "দেবলোকে",
+      "author": "Apurvananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"দেবলোকে\" \"অপূর্বানন্দ\" Advaita Ashrama",
+        "\"Devloke\" Apurvananda",
+        "site:shop.advaitaashrama.org \"devloke\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/devloke/1237499000011872893",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Udbodhan Karyalaya, distributed by Advaita Ashrama (paperback, SKU IOB001). Classical reminiscences and spiritual memoirs by Swami Apurvananda (1896–1984), who lived with Swami Shivananda. Translated into English under the title 'In The Divine Realm'. In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/devloke/1237499000011872893",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/devloke/1237499000011872893",
+          "page_title": "Devloke by Swami Apurvananda | Advaita Ashrama",
+          "edition_match": "Bengali, Swami Apurvananda, Udbodhan Karyalaya / Advaita Ashrama, paperback, SKU IOB001.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/IOB001_1.jpg/1237499000011925421/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 204,
+            "height": 325,
+            "format": "JPEG",
+            "bytes": 31458,
+            "sha256": "ff7cd40e3c3050f36fb4c65c158be2b5697de664d89f45c5af2e7fd01cfed117",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Celebrated spiritual memoir and recollections of the monastic disciples of Sri Ramakrishna by Swami Apurvananda (1896–1984). Author passed away in 1984; work remains protected under Indian copyright law until 2044. In-print work; no open complete digital edition verified on public libraries."
+    },
+    {
+      "book_id": 131,
+      "canonical_title": "মহাপুরুষ শিবানন্দ",
+      "author": "Apurvananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"মহাপুরুষ শিবানন্দ\" অপূর্বানন্দ Advaita Ashrama",
+        "site:archive.org \"in.ernet.dli.2015.355373\"",
+        "site:shop.advaitaashrama.org \"mahapurush-shivananda\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/mahapurush-shivananda/1237499000010646601",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Udbodhan Karyalaya, distributed by Advaita Ashrama (paperback, 368 pages, ISBN 9788180402920, SKU UDB006, price ₹120). Comprehensive Bengali biography of Swami Shivananda by Swami Apurvananda. In-print copyrighted work, not a free reader."
+        },
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.355373",
+          "observation": "Digital Library of India scan of 1952 2nd edition (366 pages). Author Swami Apurvananda (1896–1984) passed away in 1984; work remains protected under the Indian Copyright Act until 2044. DLI metadata claim of 'In Public Domain' lacks legal validity for 20th-century author. Unpermitted scan; cannot be certified as an authorized free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/mahapurush-shivananda/1237499000010646601",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/mahapurush-shivananda/1237499000010646601",
+          "page_title": "Mahapurush Shivananda by Swami Apurvananda | Advaita Ashrama",
+          "edition_match": "Bengali, Swami Apurvananda, Udbodhan Karyalaya / Advaita Ashrama, paperback 368 pages, ISBN 9788180402920, SKU UDB006.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB006_1.jpg/1237499000010703244/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 825,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 173027,
+            "sha256": "e5e631ad3bb31f70048b85743a0007be47cc1b5575f679fce038d1ae7e21d9d3",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "hold_rights_edition / no_authorized_free_text_verified. Authoritative Bengali biography of Swami Shivananda by Swami Apurvananda (1896–1984), published by Udbodhan Karyalaya. Author passed away in 1984; work remains under statutory copyright until 2044 under the Indian Copyright Act. DLI scan in.ernet.dli.2015.355373 is an unpermitted digital scan lacking public domain validity. In-print commercial edition, not an approved free reader."
+    },
+    {
+      "book_id": 132,
+      "canonical_title": "শিবানন্দ মহারাজের অনুধ্যান",
+      "author": "Mahendranath Dutta",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"শিবানন্দ মহারাজের অনুধ্যান\" মহেন্দ্রনাথ দত্ত",
+        "\"মহাপুরুষ শ্রীমৎ স্বামী শিবানন্দ মহারাজের অনুধ্যান\"",
+        "site:shop.advaitaashrama.org \"shivananda-maharajer-anudhyan\""
+      ],
+      "sources": [
+        {
+          "url": "https://upload.wikimedia.org/wikisource/bn/c/c0/%E0%A6%AE%E0%A6%B9%E0%A6%BE%E0%A6%AA%E0%A7%81%E0%A6%B0%E0%A7%81%E0%A6%B7_%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%AE%E0%A7%8E_%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%B6%E0%A6%BF%E0%A6%AC%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6_%E0%A6%AE%E0%A6%B9%E0%A6%BE%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%87%E0%A6%B0_%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%A7%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8_-_%E0%A6%AE%E0%A6%B9%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%A8%E0%A6%BE%E0%A6%A5_%E0%A6%A6%E0%A6%A4%E0%A7%8D%E0%A6%A4_%28%E0%A7%A7%E0%A7%AF%E0%A7%A9%E0%A7%AB%29.pdf",
+          "observation": "Complete 1935 1st edition scan on Wikimedia Commons / Bengali Wikisource (243 scanned pages, 11,537,060 bytes). Authored by Mahendranath Dutta (1869–1956), published by Mahendra Publishing Committee, Calcutta. Author died in 1956 (>60 years post-mortem, in the public domain in India under the Indian Copyright Act). Candidate external reader proposed pending independent QA (NOT auto-ingested)."
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/products/mahapurush-srimat-swami-shivananda-maharajer-anudhyan-bengali/1237499000042857158",
+          "observation": "HTTP 200 actual publisher retail page for modern reprint. Published by Advaita Ashrama / Mahendra Publishing Committee (paperback, 248 pages, SKU MPDDBE002, price ₹100)."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/mahapurush-srimat-swami-shivananda-maharajer-anudhyan-bengali/1237499000042857158",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/mahapurush-srimat-swami-shivananda-maharajer-anudhyan-bengali/1237499000042857158",
+          "page_title": "Mahapurush Srimat Swami Shivananda Maharajer Anudhyan (Bengali)",
+          "edition_match": "Bengali, Mahendranath Dutta, Advaita Ashrama / Mahendra Publishing Committee, paperback 248 pages, SKU MPDDBE002.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MPDDBE002_01.jpg/1237499000043656506/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 488,
+            "height": 740,
+            "format": "JPEG",
+            "bytes": 52048,
+            "sha256": "63490d66acf74aad403e193f804d6fc3986547e4776d24902faa6d1a6cbb54b6",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [
+        {
+          "url": "https://upload.wikimedia.org/wikisource/bn/c/c0/%E0%A6%AE%E0%A6%B9%E0%A6%BE%E0%A6%AA%E0%A7%81%E0%A6%B0%E0%A7%81%E0%A6%B7_%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%AE%E0%A7%8E_%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%B6%E0%A6%BF%E0%A6%AC%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6_%E0%A6%AE%E0%A6%B9%E0%A6%BE%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%87%E0%A6%B0_%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%A7%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8_-_%E0%A6%AE%E0%A6%B9%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%A8%E0%A6%BE%E0%A6%A5_%E0%A6%A6%E0%A6%A4%E0%A7%8D%E0%A6%A4_%28%E0%A7%A7%E0%A7%AF%E0%A7%A9%E0%A7%AB%29.pdf",
+          "label": "Bengali",
+          "evidence": "Complete 1935 1st edition scan hosted on Wikimedia Commons / Bengali Wikisource (243 pages, 11.5 MB PDF). Complete front matter, preface, and narrative text. Author Mahendranath Dutta died in 1956 (public domain in India).",
+          "disposition": "candidate_reader_pending_QA"
+        }
+      ],
+      "text_outcome": "candidate_reader_proposed_pending_QA. Complete 1935 1st edition Bengali scan on Wikimedia Commons / Bengali Wikisource (243 pages, 11.5 MB PDF). Published by Mahendra Publishing Committee, Calcutta (1935). Author Mahendranath Dutta (1869–1956) is in the public domain in India (>60 years post-mortem). Proposed as candidate external reader pending independent QA; NOT auto-ingested. Official publisher cover lead recorded on Advaita Ashrama with HOLD."
+    },
+    {
+      "book_id": 133,
+      "canonical_title": "শ্রীশ্রীমহাপুরুষজীর কথা",
+      "author": "Gen",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"শ্রীশ্রীমহাপুরুষজীর কথা\" site:udbodhan.org",
+        "\"মহাপুরুষজীর কথা\" শিবানন্দ",
+        "\"Sri Sri Mahapurushjir Katha\""
+      ],
+      "sources": [
+        {
+          "url": "https://udbodhan.org/",
+          "observation": "Baseline title represents spiritual conversations of Mahapurush Maharaj (Swami Shivananda) recorded by devotees and disciples, serially published across Udbodhan Patrika before compilation into standard volumes (such as 'Shivananda Vani'). Not an independent in-print monograph by this exact title in active publisher retail catalogues."
+        }
+      ],
+      "covers": [],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Bibliographic investigation indicates this baseline entry represents devotional conversations of Swami Shivananda originally published in Ramakrishna Order periodicals and subsequently integrated into standard compilation volumes (e.g. Shivananda Vani). No standalone freestanding volume or publisher cover exists."
+    }
+  ]
+}

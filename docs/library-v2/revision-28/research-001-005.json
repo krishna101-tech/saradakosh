@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "scope": "Issue28 retained checkpoint IDs1–5; research only",
+  "researcher": "gpt-6.1-sol, High reasoning, assigned by Luna under canonical runtime profile",
+  "date": "2026-10-16",
+  "issue": "https://github.com/krishna101-tech/saradakosh/issues/28",
+  "baseline_sha": "1069fc336c1e9f900440fea2f1bfa2a0404cd98c",
+  "authority": "https://github.com/krishna101-tech/software-engineering-standards/blob/main/docs/AAA_RUNTIME_PROFILE.md",
+  "cost": "Public read-only HTTP/web and local inspection; no paid tools, purchases, Sheet/DB writes, uploads or deployment",
+  "status": "RESEARCH_CANDIDATE_PENDING_INDEPENDENT_QA",
+  "raw_evidence": "External local evidence directory; no full reader bodies or cover binaries in repository",
+  "scorecard": {
+    "works_researched": 5,
+    "exact_publisher_cover_leads": 5,
+    "actual_cover_pixels_inspected": 5,
+    "cleared_cover_assets": 0,
+    "new_reader_candidates": 1,
+    "new_reader_approvals": 0,
+    "count_note": "ID4 embedded introduction is a qualified new lead; ID1 companion and Bengali body are not freshly approved. ID3 false-match PDF and ID5 gap are excluded. Existing accepted links remain historical until revised integrated QA."
+  },
+  "books": [
+    {
+      "book_id": 1,
+      "canonical_title": "The Gospel of Sri Ramakrishna",
+      "queries": [
+        "\"The Gospel of Sri Ramakrishna\" full text Ramakrishna",
+        "Renewed exact-title primary publisher catalogue / free text / original Bengali and transliterated titles, 2026-10-16"
+      ],
+      "cover": {
+        "publisher_listing": "https://shop.advaitaashrama.org/products/the-gospel-of-sri-ramakrishna-royal/1237499000010759273",
+        "listing_http": 200,
+        "publisher": "Ramakrishna Math Chennai",
+        "language": "English",
+        "edition": "Royal, 2021, 1062 pages",
+        "isbn": "9788171207275",
+        "author": "Mahendranath Gupta; translated by Swami Nikhilananda",
+        "pixel_inspection": "True yellow outer cover, Gospel title and Sri Ramakrishna Math Madras imprint visible; no invented text.",
+        "image_url": "https://cdn2.zohoecommerce.com/product-images/MRED07_1.jpg/1237499000010853443/800x800?storefront_domain=shop.advaitaashrama.org",
+        "image_http": 200,
+        "width": 564,
+        "height": 800,
+        "bytes": 43077,
+        "sha256": "404607ddcabd028698d042546d75c2e4654ef3d7fc2c90ad6799efc7a4ece9bb",
+        "crop": "Entire original image inspected; no crop, reconstruction or generated stand-in.",
+        "rights_status": "HOLD_NO_REPRODUCTION_PERMISSION",
+        "rights_evidence": "Publisher listing/footer copyright and shop terms provide no inspected reusable cover licence; no author/artist permission supplied. Public accessibility is not redistribution permission.",
+        "deployment_asset": null,
+        "deployment_decision": "Fallback pending per-cover written licence or defensible independent legal assessment; ID4 also insufficient resolution for 2x 284px card."
+      },
+      "reader_candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/gospel/gospel.html",
+          "status": 200,
+          "language": "English",
+          "edition": "Nikhilananda translation, 1942 preface",
+          "actual_text_chars": 2738647,
+          "coverage": "52 chapter bodies through After the Passing Away, appendices A/B, chronology and glossary. Foreword/preface/recorder front matter present. Introduction navigation points to a missing relative reader, so this combined HTML is not certified to include all introduction pages.",
+          "first_section": "Foreword; first narrative Master and Disciple",
+          "last_section": "Glossary and footnotes",
+          "sha256": "4b0664f0930967b66e0dd2068d4693ec03a13ad0f8a57d3db0d3044825cd718e",
+          "decision": "Existing English work-level reader rechecked; introduction needs companion EssentialBooks edition below; no fresh publication approval."
+        },
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/gospel-of-sri-ramakrishna/gospel-of-sri-ramakrishna.html",
+          "status": 200,
+          "language": "English",
+          "edition": "Institutional offline archive of Chennai EnglishBooks RKMM reader; labels Vol 1–2",
+          "coverage": "Introduction and chapter 52 bodies are present; exact introduction anchor a-6211928000001690947; chapter52 anchor a-6211928000000019589. Whole-book fidelity not certified.",
+          "decision": "Companion candidate pending independent QA."
+        },
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBengaliBooks/শ্রীশ্রীরামকৃষ্ণ-কথামৃত/শ্রীশ্রীরামকৃষ্ণ-কথামৃত.html",
+          "status": 200,
+          "language": "Bengali",
+          "actual_text_chars": 2205050,
+          "coverage": "Large actual institutional Bengali body, contents and beginning/end inspected; terminal material includes M. biography. Numbered five-volume print coverage not yet reconciled end-to-end.",
+          "decision": "Hold exact five-volume completeness/fidelity; substantial body is not proof of every volume."
+        }
+      ],
+      "new_publication_approved": false
+    },
+    {
+      "book_id": 2,
+      "canonical_title": "Sri Ramakrishna and His Divine Play",
+      "queries": [
+        "\"Sri Ramakrishna and His Divine Play\" Great Master full text",
+        "Renewed exact-title primary publisher catalogue / free text / original Bengali and transliterated titles, 2026-10-16"
+      ],
+      "cover": {
+        "publisher_listing": "https://shop.advaitaashrama.org/products/sri-ramakrishna-and-his-divine-play-subsidized/1237499000010267133",
+        "listing_http": 200,
+        "publisher": "Advaita Ashrama listing; Chetanananda translation",
+        "language": "English",
+        "edition": "2003, 1003 pages, subsidized hardbound",
+        "isbn": "0916356817",
+        "author": "Swami Saradananda; translated by Swami Chetanananda",
+        "pixel_inspection": "True illustrated cover, hut/tree scene, Saradananda and translator Chetanananda printed visibly. This cover must not label Jagadananda Great Master edition.",
+        "image_url": "https://cdn2.zohoecommerce.com/product-images/Sri-Ramakrishna-and-His-Divine-Play.jpg/1237499000025096065/800x800?storefront_domain=shop.advaitaashrama.org",
+        "image_http": 200,
+        "width": 547,
+        "height": 800,
+        "bytes": 61332,
+        "sha256": "8bef28ddb43bc80830c94d1e0d81aa3ebd1fdf9f5867148302885b38178a32fb",
+        "crop": "Entire original image inspected; no crop, reconstruction or generated stand-in.",
+        "rights_status": "HOLD_NO_REPRODUCTION_PERMISSION",
+        "rights_evidence": "Publisher listing/footer copyright and shop terms provide no inspected reusable cover licence; no author/artist permission supplied. Public accessibility is not redistribution permission.",
+        "deployment_asset": null,
+        "deployment_decision": "Fallback pending per-cover written licence or defensible independent legal assessment; ID4 also insufficient resolution for 2x 284px card."
+      },
+      "reader_candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/greatmaster/greatmaster.html",
+          "status": 200,
+          "language": "English",
+          "actual_text_chars": 2570040,
+          "edition": "Jagadananda Great Master, not Chetanananda Divine Play",
+          "coverage": "Publisher/translator prefaces, chapter1 Need of the Age through guru/devotee chapters and Swami Nirvedananda appendix. HTML encoding defects remain.",
+          "first_section": "Publisher; Hindu Religion and Sri Ramakrishna; Preface",
+          "last_section": "Appendix ending Swami Nirvedananda",
+          "decision": "Distinct translation candidate under same original work only with explicit label; no claim complete Chetanananda edition."
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/products/sri-ramakrishna-and-his-divine-play-subsidized/1237499000010267133",
+          "status": 200,
+          "coverage": "Publisher metadata confirms Chetanananda Divine Play English 1003-page 2003 edition. Product sale page has no complete reader.",
+          "decision": "Rejected as free text; authoritative edition identity only."
+        }
+      ],
+      "new_publication_approved": false
+    },
+    {
+      "book_id": 3,
+      "canonical_title": "Life of Sri Ramakrishna",
+      "queries": [
+        "\"Life of Sri Ramakrishna\" Nikhilananda pdf",
+        "Renewed exact-title primary publisher catalogue / free text / original Bengali and transliterated titles, 2026-10-16"
+      ],
+      "cover": {
+        "publisher_listing": "https://shop.advaitaashrama.org/products/life-of-sri-ramakrishna-hb/1237499000010257405",
+        "listing_http": 200,
+        "publisher": "Advaita Ashrama",
+        "language": "English",
+        "edition": "Hardbound, listing says first publishing 1928, 514 pages",
+        "isbn": null,
+        "author": "Swami Nikhilananda; foreword Mahatma Gandhi",
+        "pixel_inspection": "True blue cover with shrine doorway, title/author/Gandhi foreword visible.",
+        "image_url": "https://cdn2.zohoecommerce.com/product-images/ARED01_1.jpg/1237499000010307675/800x800?storefront_domain=shop.advaitaashrama.org",
+        "image_http": 200,
+        "width": 519,
+        "height": 800,
+        "bytes": 94458,
+        "sha256": "8b5862fda8bd011003ed4311f01ef88773c11e3d9567c7a04d9b68cd864393f7",
+        "crop": "Entire original image inspected; no crop, reconstruction or generated stand-in.",
+        "rights_status": "HOLD_NO_REPRODUCTION_PERMISSION",
+        "rights_evidence": "Publisher listing/footer copyright and shop terms provide no inspected reusable cover licence; no author/artist permission supplied. Public accessibility is not redistribution permission.",
+        "deployment_asset": null,
+        "deployment_decision": "Fallback pending per-cover written licence or defensible independent legal assessment; ID4 also insufficient resolution for 2x 284px card."
+      },
+      "reader_candidates": [
+        {
+          "url": "https://www.estudantedavedanta.net/Life%20of%20Sri%20Ramakrishna.pdf",
+          "status": 403,
+          "content_type": "text/html",
+          "coverage": "Cloudflare challenge; no book bytes",
+          "decision": "Rejected blocked reader."
+        },
+        {
+          "url": "https://lakshminarayanlenasia.com/articles/LifeRamakrishna.pdf",
+          "status": 200,
+          "content_type": "application/pdf",
+          "pages": 123,
+          "bytes": 19882169,
+          "sha256": "d4c4ed69b026dec4d36ab1a9dcb06ba03f0a2164b9bd343d6aca4f9e73e846a0",
+          "coverage": "Actual first/title and preface pages rendered and visually read. Title says compiled from various authentic sources; no Nikhilananda attribution or Gandhi foreword on title. Preface follows five-volume Lila-prasanga.",
+          "decision": "Rejected for exact ID3 attribution/edition: compiled work is not proved Nikhilananda 514-page work."
+        }
+      ],
+      "new_publication_approved": false
+    },
+    {
+      "book_id": 4,
+      "canonical_title": "Sri Ramakrishna: A Biography",
+      "queries": [
+        "\"Sri Ramakrishna A Biography\" Nikhilananda full text",
+        "Renewed exact-title primary publisher catalogue / free text / original Bengali and transliterated titles, 2026-10-16"
+      ],
+      "cover": {
+        "publisher_listing": "https://shop.advaitaashrama.org/products/sri-ramakrishna-a-biography/1237499000010769487",
+        "listing_http": 200,
+        "publisher": "Ramakrishna Math Chennai",
+        "language": "English",
+        "edition": "Paperback, 184 pages",
+        "isbn": "9788171209712",
+        "author": "Swami Nikhilananda",
+        "pixel_inspection": "True blue portrait/sky cover, exact title and author visible. Actual fetched source only 219 by 325; URL requested 800 does not mean 800 actual pixels.",
+        "image_url": "https://cdn2.zohoecommerce.com/product-images/MRE011_1.jpg/1237499000010852079/800x800?storefront_domain=shop.advaitaashrama.org",
+        "image_http": 200,
+        "width": 219,
+        "height": 325,
+        "bytes": 30771,
+        "sha256": "fc5dff798b03c2045ceb0cec581f748522148b432ac69bd19b61212a422bd850",
+        "crop": "Entire original image inspected; no crop, reconstruction or generated stand-in.",
+        "rights_status": "HOLD_NO_REPRODUCTION_PERMISSION",
+        "rights_evidence": "Publisher listing/footer copyright and shop terms provide no inspected reusable cover licence; no author/artist permission supplied. Public accessibility is not redistribution permission.",
+        "deployment_asset": null,
+        "deployment_decision": "Fallback pending per-cover written licence or defensible independent legal assessment; ID4 also insufficient resolution for 2x 284px card."
+      },
+      "reader_candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/gospel-of-sri-ramakrishna/gospel-of-sri-ramakrishna.html#a-6211928000001690947",
+          "status": 200,
+          "language": "English",
+          "edition": "Nikhilananda Gospel introduction embedded in institutional reader",
+          "coverage": "Actual Introduction body begins Sri Ramakrishna at Kamarpukur; matching publisher description says ID4 reproduces Gospel introduction. Chapter52 After the Passing Away also present at a-6211928000000019589. Introduction spans multiple sections; standalone 184-page edition/front matter not audited.",
+          "first_section": "Introduction, Swami Nikhilananda; birth at Kamarpukur",
+          "last_section": "After the Passing Away candidate; exact standalone ending unverified",
+          "decision": "New embedded-text candidate, hold full standalone edition scope reconciliation; never label prior short centenary address as whole book."
+        },
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/gospel/introduction/introduction.htm",
+          "status": 404,
+          "decision": "Rejected broken relative introduction target."
+        }
+      ],
+      "new_publication_approved": false
+    },
+    {
+      "book_id": 5,
+      "canonical_title": "The Life of Ramakrishna",
+      "queries": [
+        "\"Romain Rolland\" \"Life of Ramakrishna\" full text",
+        "Renewed exact-title primary publisher catalogue / free text / original Bengali and transliterated titles, 2026-10-16"
+      ],
+      "cover": {
+        "publisher_listing": "https://shop.advaitaashrama.org/products/the-life-of-ramakrishna-by-romain-rolland/1237499000010257445",
+        "listing_http": 200,
+        "publisher": "Advaita Ashrama",
+        "language": "English",
+        "edition": "Deluxe hardbound, 268 pages; year not supplied",
+        "isbn": null,
+        "author": "Romain Rolland",
+        "pixel_inspection": "True blue/green landscape-and-birds cover; exact title and author visibly printed. Not the 1931 archive scan cover.",
+        "image_url": "https://cdn2.zohoecommerce.com/product-images/ARED03_1.jpg/1237499000010307724/800x800?storefront_domain=shop.advaitaashrama.org",
+        "image_http": 200,
+        "width": 505,
+        "height": 800,
+        "bytes": 664067,
+        "sha256": "ee1e170d297dde2b653c127b2980c3d8bb0dab688d1449994de1702b34265441",
+        "crop": "Entire original image inspected; no crop, reconstruction or generated stand-in.",
+        "rights_status": "HOLD_NO_REPRODUCTION_PERMISSION",
+        "rights_evidence": "Publisher listing/footer copyright and shop terms provide no inspected reusable cover licence; no author/artist permission supplied. Public accessibility is not redistribution permission.",
+        "deployment_asset": null,
+        "deployment_decision": "Fallback pending per-cover written licence or defensible independent legal assessment; ID4 also insufficient resolution for 2x 284px card."
+      },
+      "reader_candidates": [
+        {
+          "url": "https://archive.org/download/in.ernet.dli.2015.54972/2015.54972.Life-Of-Ramakrishna_text.pdf",
+          "status": 200,
+          "content_type": "application/pdf",
+          "pages": 347,
+          "bytes": 12838935,
+          "sha256": "d0c57762cfdb53c888ce3801d3e548d2f7c21d0a8187b7c40b6b66ec5c001227",
+          "edition": "1931 Advaita Ashrama, translated from French by E. F. Malcolm-Smith",
+          "coverage": "Actual PDF read and first/end leaves rendered. Title PDF p4; Contents p8. PDF p341 printed326 is followed by PDF p342 printed335: missing printed327–334 apparent. End p346 Iconography printed339, p347 blank. Other continuity not certified.",
+          "first_section": "To My Eastern Readers / To My Western Readers; Prelude",
+          "last_section": "Bibliography; Iconography",
+          "rights": "Archive metadata rights/licenseurl absent. Rolland died1944 but translation/edition rights distinct; no global clearance inferred.",
+          "decision": "Hold, not a complete-reader approval: apparent eight-page gap plus scan/translation rights unresolved."
+        }
+      ],
+      "new_publication_approved": false
+    }
+  ]
+}

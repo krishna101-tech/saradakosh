@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "scope": "Issue28 renewed bounded research only;retained legacy IDs16–20;candidate evidence requires independent QA",
+  "baseline_sha": "1069fc336c1e9f900440fea2f1bfa2a0404cd98c",
+  "researcher": "gpt-6.1-sol High",
+  "cost": "Included public web search and local HTTP inspection only; no purchase/API spend/hosted build/upload",
+  "privacy": "No private Drive IDs or text copied.",
+  "method": "Renewed English/original-language/transliterated queries. Product pictures and lawful clearance counted separately. Search absence is bounded not exhaustive.",
+  "books": [
+    {
+      "book_id": 16,
+      "title": "সমসাময়িক দৃষ্টিতে শ্রীরামকৃষ্ণ",
+      "catalog_author": "Gen",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:25:13.365050+00:00",
+      "renewed_queries": [
+        "\"সমসাময়িক দৃষ্টিতে শ্রীরামকৃষ্ণ\" pdf",
+        "\"Samasamayik Drishtite Sri Ramakrishna\" pdf",
+        "\"সমসাময়িক দৃষ্টিতে\" \"শ্রীরামকৃষ্ণ\" বই প্রকাশক"
+      ],
+      "text_decision": "no_complete_free_text_verified",
+      "text_evidence": [
+        {
+          "url": "https://srisaradamath.org/publication/nibodhata/340605.pdf",
+          "observation": "Institutional article cites edited collection by Brajendranath Bandyopadhyay/Sajanikanta Das. Citation PDF is not the book."
+        }
+      ],
+      "cover_candidates": [],
+      "editorial_hold": "Catalog Gen incomplete; expanded Paramahamsa title/editor identification needs editorial confirmation. Official publisher image not discovered; retailer leads not treated as official."
+    },
+    {
+      "book_id": 17,
+      "title": "Holy Mother Sri Sarada Devi",
+      "catalog_author": "Swami Gambhirananda",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:25:13.367643+00:00",
+      "renewed_queries": [
+        "\"Holy Mother Sri Sarada Devi\" Gambhirananda full text",
+        "\"Holy Mother\" Gambhirananda site:englishbooks.rkmm.org"
+      ],
+      "text_decision": "existing_institutional_body_reverified_pending_QA",
+      "text_evidence": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/holy-mother-sri-sarada-devi/holy-mother-sri-sarada-devi.html",
+          "observation": "HTTP200;1001702text characters. Contents opens Prelude/Blessed Hamlet; substantial first body and final chronology plus chapter33genealogy inspected. Last genealogy appears image-based; image/anchor audit remains. Does not establish publisher cover reuse."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/holy-mother-sri-sarada-devi-by-sw-gambhirananda/1237499000010764447",
+          "checked_at": "2026-10-16T11:25:13.369201+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/MHE001_1.jpg/1237499000010839159/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            515,
+            775
+          ],
+          "edition_metadata": {
+            "publisher": "Ramakrishna Math - Chennai",
+            "author": "Swami Gambhirananda",
+            "binding": "Paperback",
+            "language": "English",
+            "pages": "540",
+            "isbn": "9788178231860"
+          }
+        }
+      ],
+      "editorial_hold": null
+    },
+    {
+      "book_id": 18,
+      "title": "The Gospel of the Holy Mother Sri Sarada Devi",
+      "catalog_author": "A Compilation",
+      "catalog_original_language": "Bengali",
+      "renewed_checked_at": "2026-10-16T11:25:20.192737+00:00",
+      "renewed_queries": [
+        "\"The Gospel of the Holy Mother\" Bengali mayer katha full text",
+        "\"The Gospel of the Holy Mother\" site:englishbooks.rkmm.org"
+      ],
+      "text_decision": "existing_institutional_body_reverified_pending_QA",
+      "text_evidence": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-gospel-of-the-holy-mother/the-gospel-of-the-holy-mother.html",
+          "observation": "HTTP200;878307text characters. Narrator contents, initial Sarayubala material and final reminiscence text checked. Final fish/surrender narrative ends cleanly; anchor-by-anchor independent QA pending."
+        },
+        {
+          "url": "https://englishbooks.rkmm.org/s/tsd/m/the-gospel-of-the-holy-mother/a/smt-sailabala-chowdhury",
+          "observation": "Renewed search finds official institutional section path; full navigational coverage not yet independently audited."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/the-gospel-of-holy-mother/1237499000010764519",
+          "checked_at": "2026-10-16T11:25:20.193229+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/MHE003_1.jpg/1237499000010839273/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            203,
+            314
+          ],
+          "edition_metadata": {
+            "publisher": "Ramakrishna Math - Chennai",
+            "author": "A Compilation",
+            "binding": "Paperback",
+            "language": "English",
+            "pages": "409"
+          }
+        }
+      ],
+      "editorial_hold": null
+    },
+    {
+      "book_id": 19,
+      "title": "Sri Sarada Devi and Her Divine Play",
+      "catalog_author": "Swami Chetanananda",
+      "catalog_original_language": "English",
+      "renewed_checked_at": "2026-10-16T11:25:26.551149+00:00",
+      "renewed_queries": [
+        "\"Sri Sarada Devi and Her Divine Play\" \"pdf\"",
+        "\"Sri Sarada Devi and Her Divine Play\" Chetanananda free full text"
+      ],
+      "text_decision": "no_complete_free_text_verified",
+      "text_evidence": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/sri-sarada-devi-and-her-divine-play/1237499000011860115",
+          "observation": "Owner lead explicitly verified: Chetanananda;Vedanta Society St.Louis;English;2017;876p;paid hardbound listing with actual source image. No full free book on product page."
+        },
+        {
+          "url": "https://www.vedanta.com/store/Sarada_Devi_and_Her_Divine_Play.htm",
+          "observation": "Publisher sales page; independent title confirmation. Search found excerpt series/talks and Kindle trial claim, none qualifies as complete free edition."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/sri-sarada-devi-and-her-divine-play/1237499000011860115",
+          "checked_at": "2026-10-16T11:25:26.551480+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/FOE005_1.jpg/1237499000011925272/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            218,
+            325
+          ],
+          "edition_metadata": {
+            "publisher": "Vedanta Society of St. Louis",
+            "author": "Swami Chetanananda",
+            "binding": "Deluxe (Hardbound)",
+            "language": "English",
+            "year": "2017",
+            "pages": "876"
+          }
+        }
+      ],
+      "editorial_hold": null
+    },
+    {
+      "book_id": 20,
+      "title": "Sri Sarada Devi: The Holy Mother",
+      "catalog_author": "Swami Tapasyananda",
+      "catalog_original_language": "English",
+      "renewed_checked_at": "2026-10-16T11:25:31.800507+00:00",
+      "renewed_queries": [
+        "\"Sri Sarada Devi The Holy Mother\" Tapasyananda \"pdf\"",
+        "\"Sri Sarada Devi\" \"Tapasyananda\" pdf download"
+      ],
+      "text_decision": "new_pdf_lead_access_hold",
+      "text_evidence": [
+        {
+          "url": "https://estudantedavedanta.net/Sri_Sarada_Devi_the_holy_mother_Tapasyananda.pdf",
+          "observation": "Renewed search indexed title/author PDF, but direct local request returned HTML rather than a valid PDF. No first/final sections verified; do not count complete."
+        },
+        {
+          "url": "https://istore.chennaimath.org/products/sri-sarada-devi-holy-mother-life-teachings/3690041000102328980",
+          "observation": "Separate compact Life and Teachings edition exists. Do not conflate that edition or Nikhilananda joint volume with catalog Tapasyananda title without title-page comparison."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://istore.chennaimath.org/products/sri-sarada-devi-the-holy-mother/3690041000102328952",
+          "checked_at": "2026-10-16T11:25:31.800765+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "lawfully_cleared": false,
+          "rights_assessment": "Authentic publisher/catalogue lead only. No explicit cover reuse licence or written permission supplied or found. Do not rehost.",
+          "visual_QA": "pending exact edition/printed cover inspection",
+          "http_status": 200,
+          "actual_image_url": "https://istore.chennaimath.org/product-images/Sri-Sarada-Devi-The-Holy-Mother.jpg/3690041000102391306/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            600,
+            600
+          ],
+          "edition_metadata": {}
+        }
+      ],
+      "editorial_hold": null
+    }
+  ],
+  "checkpoints": [
+    {
+      "ids": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "completed_at": "2026-10-16T11:25:37.062863+00:00",
+      "new_complete_texts_verified": 0,
+      "lawfully_cleared_cover_assets": 0,
+      "status": "completed_bounded_research_candidate_only"
+    }
+  ],
+  "scorecard": {
+    "works_researched": 5,
+    "works_with_source_image_discoveries": 4,
+    "source_images_discovered": 4,
+    "cover_assets_legally_cleared": 0,
+    "new_text_links_approved": 0,
+    "candidate_only": true,
+    "warning": "First/final body evidence and official free offer remain separate from independent publication approval."
+  }
+}

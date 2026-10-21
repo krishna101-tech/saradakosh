@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "issue": 28,
+  "baseline_sha": "e86fb33385a460b6aec5b3e92bf9ac983a06da44",
+  "researched_at_utc": "2026-10-21T06:15:00.000000+00:00",
+  "researcher": "Antigravity (Gemini 3.8 Flash High)",
+  "method": "Renewed actual public searches and primary HTTP body/metadata inspections. Search absence is bounded, not exhaustive. No paid or external model call; no private IDs, full reader bodies or cover binaries in artifacts.",
+  "status": "RESEARCH_CANDIDATES_PENDING_INDEPENDENT_QA",
+  "source_mutations": false,
+  "books": [
+    {
+      "book_id": 164,
+      "canonical_title": "ভক্ত মালিকা",
+      "author": "Swami Gambhirananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Sri Ramakrishna Bhaktamalika\" Advaita Ashrama",
+        "\"শ্রীরামকৃষ্ণ ভক্তমালিকা\" উদ্বোধন",
+        "archive.org details in.ernet.dli.2015.266035"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/sri-ramakrishna-bhaktamalika/1237499000010646493",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Udbodhan Karyalaya, distributed by Advaita Ashrama (2 volumes, hardcover, ISBN 9788180404931, SKU UDB044, price ₹575). Monumental Bengali biographical work on the direct disciples and householder devotees of Sri Ramakrishna by Swami Gambhirananda (1899–1988). Under Section 22 of the Indian Copyright Act 1957, copyright subsists for 60 years post-mortem (until 1 January 2049). In-print copyrighted work, not a free reader."
+        },
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.266035",
+          "observation": "HTTP 200 Digital Library of India upload on Internet Archive. Title: 'Sri Ramakrishna Bhaktamalika Part 1' (1997 reprint, 532 pages). Held under statutory copyright (author died in 1988; protected until 2049). Unpermitted scan of in-copyright work."
+        },
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.453436",
+          "observation": "HTTP 200 Digital Library of India upload on Internet Archive. Title: 'Sri Ramakrishna Bhaktamalika Part 2' (1952 4th ed., 550 pages). Held under statutory copyright (author died in 1988; protected until 2049). Unpermitted scan of in-copyright work."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/sri-ramakrishna-bhaktamalika/1237499000010646493",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/sri-ramakrishna-bhaktamalika/1237499000010646493",
+          "page_title": "Sri Ramakrishna Bhaktamalika | Advaita Ashrama",
+          "edition_match": "Bengali, Swami Gambhirananda, Udbodhan Karyalaya / Advaita Ashrama, 2 vols set, hardcover, ISBN 9788180404931, SKU UDB044.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB044_1.jpg/1237499000010704142/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 794,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 38538,
+            "sha256": "ba575d90a59bff4b8afc89b57b3a07fe49c5ced648779744399b03dae69d3f0c",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Two-volume monumental Bengali biographical work on the direct disciples and devotees of Sri Ramakrishna by Swami Gambhirananda (1899–1988), 11th President of the Ramakrishna Order, published by Udbodhan Karyalaya (ISBN 9788180404931). Author passed away in December 1988; under Section 22 of the Indian Copyright Act 1957, copyright in India subsists until 2049. Archival DLI scans on Internet Archive (items in.ernet.dli.2015.266035 and in.ernet.dli.2015.453436) are held as unpermitted scans of an in-copyright work; in-print commercial publication; no authorized complete free digital edition."
+    },
+    {
+      "book_id": 165,
+      "canonical_title": "শ্রীমা ও শ্রীরামকৃষ্ণ পার্ষদগণের স্মৃতিকথা",
+      "author": "Gen",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"শ্রীমা ও শ্রীরামকৃষ্ণ পার্ষদগণের স্মৃতিকথা\" pdf",
+        "\"Srima O Sri Ramakrishna Parshadganer Smritikatha\"",
+        "\"শ্রীমা\" \"পার্ষদগণের\" স্মৃতিকথা বই"
+      ],
+      "sources": [],
+      "covers": [],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Baseline anthology title referring to collective reminiscences of Holy Mother Sri Sarada Devi and the monastic/lay disciples of Sri Ramakrishna. No independent, matching complete published monograph or authorized free digital reader verified on open public repositories; generic title preserved."
+    },
+    {
+      "book_id": 166,
+      "canonical_title": "শ্রীরামকৃষ্ণ পরিকর প্রসঙ্গ",
+      "author": "Swami Kamaleswarananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"শ্রীরামকৃষ্ণ পরিকর প্রসঙ্গ\" কমলেশ্বরানন্দ",
+        "\"Sriramakrishna-parikar-prasanga\" Kamaleswarananda",
+        "archive.org details in.ernet.dli.2015.457945"
+      ],
+      "sources": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.457945",
+          "observation": "HTTP 200 Digital Library of India upload on Internet Archive. Title: 'Sriramakrishna-parikar-prasanga' by Swami Kamaleswarananda (Lalit Maharaj, 1892–1936), head of Gadadhar Ashrama, Bagbazar. Published by Sri Taraknath Majumdar, Calcutta (189 scanned pages, 11.3 MB PDF, barcode 07019990363422). Author passed away on 25 October 1936 (>85 years post-mortem, in the public domain in India and worldwide). Complete historical monograph on the monastic and lay companions of Sri Ramakrishna. Proposed as candidate external reader pending independent QA (NOT auto-ingested)."
+        }
+      ],
+      "covers": [],
+      "readers": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.457945",
+          "label": "Bengali",
+          "format": "PDF",
+          "page_count": 189,
+          "access_type": "free_public_access",
+          "provenance": "Digital Library of India / Internet Archive (Birchandra State Central Library, Tripura)",
+          "rights_status": "public_domain_author_died_1936",
+          "disposition": "candidate_reader_proposed_pending_QA"
+        }
+      ],
+      "text_outcome": "candidate_reader_proposed_pending_QA. Complete Bengali biographical work on the associates, monastic disciples, and devotees of Sri Ramakrishna by Swami Kamaleswarananda (Lalit Maharaj, 1892–1936), senior monk and head of Gadadhar Ashrama, Bagbazar. Published by Sri Taraknath Majumdar, Calcutta (189 scanned pages, 11.3 MB PDF, item in.ernet.dli.2015.457945). Author passed away on 25 October 1936; work entered the public domain in India in 1997. Proposed as candidate external reader pending independent QA (NOT auto-ingested). Out-of-print historical volume; no active digital storefront raster."
+    },
+    {
+      "book_id": 167,
+      "canonical_title": "Photographs of Shri Ramakrishna - Saradadevi",
+      "author": "Gen",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Photographs of Sri Ramakrishna- Sarada Devi\" Chennai Math",
+        "\"Photographs of Sri Ramakrishna and Holy Mother\" Chennai Math",
+        "site:shop.advaitaashrama.org \"photographs-of-sri-ramakrishna-sarada-devi\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/photographs-of-sri-ramakrishna-sarada-devi/1237499000010778557",
+          "observation": "HTTP 200 actual publisher retail page. Published by Sri Ramakrishna Math, Chennai, distributed by Advaita Ashrama (paperback, 92 pages, ISBN 9788178231181, SKU MRE035, price ₹80). Definitive photographic album and scholarly research on the authentic photographs of Sri Ramakrishna and Holy Mother Sri Sarada Devi by Swami Vidyatmananda and Purba Sengupta. In-print copyrighted publication, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/photographs-of-sri-ramakrishna-sarada-devi/1237499000010778557",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/photographs-of-sri-ramakrishna-sarada-devi/1237499000010778557",
+          "page_title": "Photographs of Sri Ramakrishna- Sarada Devi | Advaita Ashrama",
+          "edition_match": "English, researched by Swami Vidyatmananda and Purba Sengupta, Sri Ramakrishna Math Chennai / Advaita Ashrama, paperback 92 pages, ISBN 9788178231181, SKU MRE035.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MRE035_1.jpg/1237499000010852696/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 242,
+            "height": 325,
+            "format": "JPEG",
+            "bytes": 30360,
+            "sha256": "805fe8709bfe9ef363cdf8db1245907edb4639108a6c79ce4a6feaf31b8d3b05",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Definitive English photographic album and historical documentation of all authentic photographs of Sri Ramakrishna and Holy Mother Sri Sarada Devi, researched by Swami Vidyatmananda and Purba Sengupta, published by Sri Ramakrishna Math Chennai (92 pages, ISBN 9788178231181). In-print commercial edition under active copyright; no authorized complete free digital edition verified on open public repositories."
+    },
+    {
+      "book_id": 168,
+      "canonical_title": "শ্রীচৈতন্য ও শ্রীরামকৃষ্ণ",
+      "author": "Akshay Kumar Ghosh",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"শ্রীচৈতন্য ও শ্রীরামকৃষ্ণ\" \"অক্ষয় কুমার ঘোষ\"",
+        "\"Sri Chaitanya O Sri Ramakrishna\" Akshay Kumar Ghosh",
+        "\"শ্রীচৈতন্য ও শ্রীরামকৃষ্ণ\" ঘোষ pdf"
+      ],
+      "sources": [],
+      "covers": [],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Comparative Bengali study of Sri Chaitanya Mahaprabhu and Sri Ramakrishna Paramahamsa by Akshay Kumar Ghosh. Out-of-print historical volume; no active digital publisher storefront raster and no complete, authorized free digital edition verified on open public repositories."
+    }
+  ]
+}

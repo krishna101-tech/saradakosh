@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "issue": 28,
+  "baseline_sha": "de11163eb39e7d82582bfdafc47d792d774e14f6",
+  "researched_at_utc": "2026-10-21T05:10:00.000000+00:00",
+  "researcher": "Antigravity (Gemini 3.8 Flash High)",
+  "method": "Renewed actual public searches and primary HTTP body/metadata inspections. Search absence is bounded, not exhaustive. No paid or external model call; no private IDs, full reader bodies or cover binaries in artifacts.",
+  "status": "RESEARCH_CANDIDATES_PENDING_INDEPENDENT_QA",
+  "source_mutations": false,
+  "books": [
+    {
+      "book_id": 134,
+      "canonical_title": "Swami Abhedananda: A Spiritual Biography",
+      "author": "Moni Bagchi",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Swami Abhedananda: A Spiritual Biography\" Advaita Ashrama",
+        "\"Swami Abhedananda: A Spiritual Biography\" \"Moni Bagchi\"",
+        "site:shop.advaitaashrama.org \"Swami Abhedananda: A Spiritual Biography\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-abhedananda-a-spiritual-biography/1237499000011857177",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Ramakrishna Vedanta Math, distributed by Advaita Ashrama (paperback, 480 pages, ISBN 9789380568553, SKU VOE033, price ₹200). Definitive English biography of Swami Abhedananda by Moni Bagchi. In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-abhedananda-a-spiritual-biography/1237499000011857177",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-abhedananda-a-spiritual-biography/1237499000011857177",
+          "page_title": "Swami Abhedananda: A Spiritual Biography | Advaita Ashrama",
+          "edition_match": "English, Moni Bagchi, Ramakrishna Vedanta Math / Advaita Ashrama, paperback 480 pages, ISBN 9789380568553, SKU VOE033.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/VOE033_1.jpg/1237499000011910189/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 214,
+            "height": 325,
+            "format": "JPEG",
+            "bytes": 20837,
+            "sha256": "e9909f0e0040cd225c13b210e119c0f7c27e544ea9a12597e15ad315a066901d",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Definitive English biography of Swami Abhedananda by Moni Bagchi, published by Ramakrishna Vedanta Math, Kolkata (480 pages, ISBN 9789380568553). Under active statutory copyright; no authorized free digital edition verified on open public repositories."
+    },
+    {
+      "book_id": 135,
+      "canonical_title": "Swami Abhedananda: Janma Sardhashatabarser Shraddhanjali",
+      "author": "A Compilation",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Swami Abhedananda: Janma Sardhashatabarser Shraddhanjali\" Advaita Ashrama",
+        "\"স্বামী অভেদানন্দ: জন্ম সার্ধশতবর্ষের শ্রদ্ধাঞ্জলি\"",
+        "site:shop.advaitaashrama.org \"swami-abhedananda-janma-sardhashatabarser-shraddhanjali\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-abhedananda-janma-sardhashatabarser-shraddhanjali/1237499000010662521",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Udbodhan Karyalaya, distributed by Advaita Ashrama (hardcover, 659 pages, ISBN 9788193821046, SKU UDB062, price ₹200). 150th birth anniversary commemorative anthology on Swami Abhedananda. In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-abhedananda-janma-sardhashatabarser-shraddhanjali/1237499000010662521",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-abhedananda-janma-sardhashatabarser-shraddhanjali/1237499000010662521",
+          "page_title": "Swami Abhedananda: Janma Sardhashatabarser Shraddhanjali | Advaita Ashrama",
+          "edition_match": "Bengali, A Compilation, Udbodhan Karyalaya / Advaita Ashrama, hardback 659 pages, ISBN 9788193821046, SKU UDB062.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB062_1.jpg/1237499000010704493/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 600,
+            "height": 962,
+            "format": "JPEG",
+            "bytes": 74489,
+            "sha256": "545afb6e123e1586c3362a95736ac31675361c3961a4b9a6e03a1ee894813fe5",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Commemorative 659-page Bengali anthology on Swami Abhedananda published by Udbodhan Karyalaya (ISBN 9788193821046). In-print work under active statutory copyright; no open authorized digital facsimile verified on public libraries."
+    },
+    {
+      "book_id": 136,
+      "canonical_title": "Epistles",
+      "author": "Swami Abhedananda",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Epistles of Swami Abhedananda\" Advaita Ashrama",
+        "\"Epistles\" \"Swami Abhedananda\" Vedanta Math",
+        "site:shop.advaitaashrama.org \"epistles-letters-of-swami-abhedananda\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/epistles-letters-of-swami-abhedananda/1237499000011859351",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Ramakrishna Vedanta Math, Kolkata, distributed by Advaita Ashrama (paperback, 141 pages, SKU VOE019, price ₹98). Letters and epistles of Swami Abhedananda. In-print copyrighted collection, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/epistles-letters-of-swami-abhedananda/1237499000011859351",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/epistles-letters-of-swami-abhedananda/1237499000011859351",
+          "page_title": "Epistles of Swami Abhedananda | Advaita Ashrama",
+          "edition_match": "English, Swami Abhedananda, Ramakrishna Vedanta Math / Advaita Ashrama, paperback 141 pages, SKU VOE019.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/VOE019_1.jpg/1237499000011909720/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 776,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 114432,
+            "sha256": "70b436bf1f71b5033caa6ad2dae02a23ecd22714b193e0cd70a96e3d9b03ec1f",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. English letters and epistles of Swami Abhedananda published by Ramakrishna Vedanta Math, Kolkata (141 pages). In-print work; no open complete digital edition verified on public libraries."
+    },
+    {
+      "book_id": 137,
+      "canonical_title": "Swami Abhedananda in America",
+      "author": "Sister Shivani",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Swami Abhedananda in America\" Sister Shivani Advaita Ashrama",
+        "\"Swami Abhedananda in America\" \"Mary LePage\"",
+        "site:shop.advaitaashrama.org \"swami-abhedananda-in-america\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-abhedananda-in-america/1237499000011858017",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Ramakrishna Vedanta Math, Kolkata, distributed by Advaita Ashrama (paperback, 314 pages, SKU VOE048, price ₹90). Historical account of Swami Abhedananda's ministry in America by Sister Shivani (Mary LePage). In-print publication, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-abhedananda-in-america/1237499000011858017",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-abhedananda-in-america/1237499000011858017",
+          "page_title": "Swami Abhedananda in America by Sister Shivani | Advaita Ashrama",
+          "edition_match": "English, Sister Shivani (Mary LePage), Ramakrishna Vedanta Math / Advaita Ashrama, paperback 314 pages, SKU VOE048.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/VOE048_1.jpg/1237499000011910443/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 768,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 267891,
+            "sha256": "52cb4890e5a845efae29a458e1a38966b53840abe6f1eb829fc3e3536955d5a3",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Detailed historical record of Swami Abhedananda's quarter-century of spiritual teaching in the United States by his disciple Sister Shivani (Mary LePage), published by Ramakrishna Vedanta Math (314 pages). In-print work; no open complete digital edition verified on public libraries."
+    },
+    {
+      "book_id": 138,
+      "canonical_title": "আমার জীবনকথা",
+      "author": "Swami Abhedananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"আমার জীবনকথা\" \"স্বামী অভেদানন্দ\" Wikisource",
+        "site:bn.wikisource.org \"আমার জীবনকথা\"",
+        "site:shop.advaitaashrama.org \"amar-jivan-katha\""
+      ],
+      "sources": [
+        {
+          "url": "https://upload.wikimedia.org/wikisource/bn/7/78/%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%B0_%E0%A6%9C%E0%A7%80%E0%A6%AC%E0%A6%A8%E0%A6%95%E0%A6%A5%E0%A6%BE_-_%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%85%E0%A6%AD%E0%A7%87%E0%A6%A6%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6.pdf",
+          "observation": "Complete 1957 edition Bengali scan hosted on Wikimedia Commons / Bengali Wikisource (271 scanned pages, 19,006,492 bytes). Autobiography of Swami Abhedananda (1866–1939), direct monastic disciple of Sri Ramakrishna. Author passed away in 1939 (>85 years ago, public domain worldwide). Candidate external reader proposed pending independent QA (NOT auto-ingested)."
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/products/amar-jivan-katha-vol-1/1237499000011858173",
+          "observation": "HTTP 200 actual publisher distributor retail page for in-print edition. Published by Ramakrishna Vedanta Math, distributed by Advaita Ashrama (paperback, SKU VOB002, price ₹98)."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/amar-jivan-katha-vol-1/1237499000011858173",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/amar-jivan-katha-vol-1/1237499000011858173",
+          "page_title": "Amar Jivan Katha Vol. 1 by Swami Abhedananda | Advaita Ashrama",
+          "edition_match": "Bengali, Swami Abhedananda, Ramakrishna Vedanta Math / Advaita Ashrama, paperback, SKU VOB002.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/VOB002_1.jpg/1237499000011908441/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 201,
+            "height": 325,
+            "format": "JPEG",
+            "bytes": 50657,
+            "sha256": "90b552119adfef586812d821bc1cd1c2ae2aee22484ec541084373f7411a2028",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [
+        {
+          "url": "https://upload.wikimedia.org/wikisource/bn/7/78/%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%B0_%E0%A6%9C%E0%A7%80%E0%A6%AC%E0%A6%A8%E0%A6%95%E0%A6%A5%E0%A6%BE_-_%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%85%E0%A6%AD%E0%A7%87%E0%A6%A6%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6.pdf",
+          "label": "Bengali",
+          "evidence": "Complete 1957 Bengali edition scan hosted on Wikimedia Commons / Bengali Wikisource (271 pages, 19.0 MB PDF). Complete front matter, preface, and autobiography text. Author Swami Abhedananda died in 1939 (public domain worldwide).",
+          "disposition": "candidate_reader_pending_QA"
+        }
+      ],
+      "text_outcome": "candidate_reader_proposed_pending_QA. Complete 1957 Bengali edition scan on Wikimedia Commons / Bengali Wikisource (271 pages, 19.0 MB PDF). Autobiography of Swami Abhedananda (1866–1939). Author died in 1939 (in public domain worldwide). Proposed as candidate external reader pending independent QA; NOT auto-ingested. Official publisher cover lead recorded on Advaita Ashrama with HOLD."
+    }
+  ]
+}

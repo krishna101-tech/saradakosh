@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "issue": "https://github.com/krishna101-tech/saradakosh/issues/28",
+  "scope": "Frozen checkpoint retainedIDs69–73 only; research, not approved content",
+  "checked_at": "2026-10-16",
+  "provenance": {
+    "researcher": "gpt-6.1-sol High, assigned research worker",
+    "cost": "Included public web and local requests; no purchase, paid API, hosted build or redistribution",
+    "quota": "Parent supplied primary0% start; weekly62%;credits0; worker telemetry not observable",
+    "AAA_GOAL": "Luna coordinates; latest eligible Sol High research/implementation and independent Sol Medium QA under current owner task packet; sequential approval stages; zero incremental cost",
+    "method": "Bounded exact-title/original Bengali/transliteration searches, actual reader beginning/end and volume checks where accessible; discovery distinct from legal clearance. Prior candidates explicitly marked historical until rechecked."
+  },
+  "books": [
+    {
+      "book_id": 69,
+      "canonical_title": "রাজা মহারাজ",
+      "author": "Swami Narottamananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "রাজা মহারাজ নরোত্তমানন্দ pdf",
+        "Raja Maharaj Narottamananda archive"
+      ],
+      "sources": [
+        {
+          "url": "https://granthagara.com/boi/315448-raja-maharaj/",
+          "observation": "Actualdiscoverypage144pages,Narottamananda,machineOCRsample; archivewholebodyrightsnotverified."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/raja-maharaj-a-short-life-of-swami-brahmananda/1237499000010646565",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/raja-maharaj-a-short-life-of-swami-brahmananda/1237499000010646565",
+          "page_title": "Raja Maharaj: Life of Swami Brahmananda | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Udbodhan Karyalaya",
+            "List of Authors/Contributors": "Swami Narottamananda",
+            "Binding": "Paperback",
+            "Language": "Bengali",
+            "Total Pages": "136",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB005_1.jpg/1237499000010703219/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/UDB005_1.jpg/1237499000010703219/1100x1100",
+            "width": 752,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 165033,
+            "sha256": "8158a1acd9fe7e28c70a518eb43250dff64c8a8d10362d3582815162dce94aef",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "Matching144pagescanlead; noactualfirst/lastwholebodyorrights verified. HOLD."
+    },
+    {
+      "book_id": 70,
+      "canonical_title": "Japa and Dhyana in a Nutshell",
+      "author": "Swami Brahmananda",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "Japa and Dhyana in a Nutshell pdf",
+        "Japa and Dhyana in a Nutshell book free"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/japa-and-dhyana-in-a-nutshell/1237499000010764411",
+          "observation": "ActualofficialChennaiEnglishbook, paidAddtoCart; nofreebody. GenericJapaDhyanaexcerptsnotidentityproof."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/japa-and-dhyana-in-a-nutshell/1237499000010764411",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/japa-and-dhyana-in-a-nutshell/1237499000010764411",
+          "page_title": "Japa and Dhyana by Brahmananda | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Ramakrishna Math - Chennai",
+            "List of Authors/Contributors": "Swami Brahmananda",
+            "Binding": "Paperback",
+            "Language": "English",
+            "Year of Publishing": "2023",
+            "Total Pages": "35",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MDE023_1.jpg/1237499000010839030/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/MDE023_1.jpg/1237499000010839030/1100x1100",
+            "width": 894,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 120032,
+            "sha256": "2f3e3878b7f91dc5ae99f38699fb7d200cde871f2c442033b3fd9d3811718806",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "No completefreeEnglishbookverified; officialpaidlisting only."
+    },
+    {
+      "book_id": 71,
+      "canonical_title": "Sadhan Prasange Raja Maharaj",
+      "author": "Swami Brahmananda; Swami Devananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "সাধন প্রসঙ্গে রাজা মহারাজ pdf"
+      ],
+      "sources": [
+        {
+          "url": "https://udbodhan.org/product/সাধন-প্রসঙ্গে-রাজা-মহারা",
+          "observation": "OfficialDevanandaBengalicompilation,150+instructions; paid10rupees,notfreebody."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/sadhan-prasange-raja-maharaj/1237499000010663241",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/sadhan-prasange-raja-maharaj/1237499000010663241",
+          "page_title": "Sadhan Prasange Raja Maharaj by Swami Brahmananda | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Udbodhan Karyalaya",
+            "List of Authors/Contributors": "Swami Brahmananda",
+            "Binding": "Paperback",
+            "Language": "Bengali",
+            "Total Pages": "46",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB027_1.jpg/1237499000010703719/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/UDB027_1.jpg/1237499000010703719/1100x1100",
+            "width": 886,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 89137,
+            "sha256": "2968cfbb6267fce5d97d11814bfa174898dc8046c61332635df0843c016632fe",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "No completefreewrittenbookverified; official150+instructioncompilationbenchmark retained."
+    },
+    {
+      "book_id": 72,
+      "canonical_title": "ব্রহ্মানন্দ ও রামকৃষ্ণ মিশন",
+      "author": "Mahendranath Dutta",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "ব্রহ্মানন্দ ও রামকৃষ্ণ মিশন মহেন্দ্রনাথ pdf",
+        "Brahmananda O Ramakrishna Mission pdf"
+      ],
+      "sources": [
+        {
+          "url": "https://www.scribd.com/document/898050910/Bramhananda-O-Ramakrishna-Mission",
+          "observation": "SearchindexedMahendranathDutta/MohendraPublishingCommitteeOCRbody throughlateprintedpage90; uploaderAllRightsReserved, noauthorizedcompletefreeaccessverified. Rejectedaspublicreader."
+        }
+      ],
+      "covers": [],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "MatchingOCRuploadlead; unauthorizedprovenanceandcompleteaccessunverified. HOLD.",
+      "cover_outcome": "Noexactofficialeditioncoververified inAdvaitasitemap/Udbodhansearch; Scribduploadnotcoverauthority."
+    },
+    {
+      "book_id": 73,
+      "canonical_title": "ব্রহ্মানন্দ চরিত",
+      "author": "Prabhananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "ব্রহ্মানন্দ চরিত pdf প্রভানন্দ"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/brahmananda-charit/1237499000010646529",
+          "observation": "OwnerprovidedleadconfirmedofficialBengaliUdbodhanPrabhanandabook350pages; paidbooknotfulltext. HindiGooglePlaysamplerejected."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/brahmananda-charit/1237499000010646529",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/brahmananda-charit/1237499000010646529",
+          "page_title": "Brahmananda Charit by Swami Prabhananda | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Udbodhan Karyalaya",
+            "List of Authors/Contributors": "Swami Prabhananda",
+            "Binding": "Deluxe (Hardbound)",
+            "Language": "Bengali",
+            "Total Pages": "350",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB004_1.jpg/1237499000010703190/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/UDB004_1.jpg/1237499000010703190/1100x1100",
+            "width": 787,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 198240,
+            "sha256": "0460ca23f09616154c7fd808ca0fe9510cc960fdb21dfe754b44c7b7599f02fa",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "No wholefreeBengalitextverified; ownercoverlead confirmed, paidlistings/translatedsamplesrejected."
+    }
+  ],
+  "checkpoints": [
+    {
+      "works": 5,
+      "official_cover_leads": 4,
+      "pixels_measured": 4,
+      "covers_cleared": 0,
+      "new_complete_reader_ids": [],
+      "scan_or_upload_hold_ids": [
+        69,
+        72
+      ],
+      "no_verified_free_full_text_ids": [
+        70,
+        71,
+        73
+      ],
+      "new_public_links_approved": 0,
+      "QA": "pending"
+    }
+  ]
+}

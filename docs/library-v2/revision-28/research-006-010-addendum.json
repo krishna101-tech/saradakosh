@@ -1,0 +1,8 @@
+{
+  "scope": "ID7 follow-up to frozen research-006-010 checkpoint",
+  "checked_at": "2026-10-16T11:29:32.854129+00:00",
+  "book_id": 7,
+  "decision": "new_original_hindi_scan_first_last_verified_pending_edition_rights_QA",
+  "url": "https://archive.org/download/in.ernet.dli.2015.475358/2015.475358.Shree-Shree_djvu.txt",
+  "evidence": "HTTP200;285113characters;265page DLI item. First text credits revised Vijnanananda collection/translation published by1936centenary committee atAllahabad;final appendix and religious closing present. This is not a verification of modern English translation. Metadata CopyrightPermitted is not a general reuse licence. Exact original/edition relationship and page completeness need independent QA."
+}

@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "issue": "https://github.com/krishna101-tech/saradakosh/issues/28",
+  "scope": "Frozen checkpoint retainedIDs74–78 only; research, not approved content",
+  "checked_at": "2026-10-16",
+  "provenance": {
+    "researcher": "gpt-6.1-sol High, assigned research worker",
+    "cost": "Included public web and local requests; no purchase, paid API, hosted build or redistribution",
+    "quota": "Parent supplied primary0% start; weekly62%;credits0; worker telemetry not observable",
+    "AAA_GOAL": "Luna coordinates; latest eligible Sol High research/implementation and independent Sol Medium QA under current owner task packet; sequential approval stages; zero incremental cost",
+    "method": "Bounded exact-title/original Bengali/transliteration searches, actual reader beginning/end and volume checks where accessible; discovery distinct from legal clearance. Prior candidates explicitly marked historical until rechecked."
+  },
+  "books": [
+    {
+      "book_id": 74,
+      "canonical_title": "ব্রহ্মানন্দ মহারাজের অনুধ্যান",
+      "author": "Mahendranath Dutta",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "ব্রহ্মানন্দ মহারাজের অনুধ্যান pdf"
+      ],
+      "sources": [
+        {
+          "url": "https://bn.wikisource.org/wiki/পাতা:অজাতশত্রু_শ্রীমৎ_স্বামী_ব্রহ্মানন্দ_মহারাজের_অনুধ্যান_-_মহেন্দ্রনাথ_দত্ত.pdf/৮",
+          "observation": "ActualprefatoryBengalibodyread; statesbookportraysmental/spiritualdevelopment,notchronologicbiography. Middlepage59textsearchindexed. Freshlatepage178openfailed; prior185scanindexheldnotreapproved."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/ajatshatru-srimat-swami-brahmananda-maharajer-anudhyan-bengali/1237499000036676105",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/ajatshatru-srimat-swami-brahmananda-maharajer-anudhyan-bengali/1237499000036676105",
+          "page_title": "Ajatshatru Srimat Swami Brahmananda Maharaj er Anudhyan (Bengali)",
+          "identity_metadata": {
+            "Publisher": "The Mahendra Publishing Committee",
+            "List of Authors/Contributors": "Mahendranath Dutta",
+            "Binding": "Paperback",
+            "Language": "Bengali",
+            "Year of Publishing": "1939",
+            "Total Pages": "124",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/oob567.jpg/1237499000036676146/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/oob567.jpg/1237499000036676146/1100x1100",
+            "width": 535,
+            "height": 827,
+            "format": "JPEG",
+            "bytes": 60148,
+            "sha256": "83009686cc020e0566f6c92bb5eb32c5281ed1e1e9f9ffd8f6199a12c131e628",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [
+        {
+          "url": "https://bn.wikisource.org/wiki/নির্ঘণ্ট:অজাতশত্রু_শ্রীমৎ_স্বামী_ব্রহ্মানন্দ_মহারাজের_অনুধ্যান_-_মহেন্দ্রনাথ_দত্ত.pdf",
+          "language": "Bengali",
+          "label": "Bengali",
+          "edition": "1939 Kolkata, expanded title Ajatashatru Srimat Swami Brahmananda Maharajer Anudhyan; Mahendranath Dutta",
+          "volume_coverage": "Single book, 185 scan-page index",
+          "access": "Free Wikisource reader; web reader resolves, direct requests403",
+          "completeness": "Front/middle/late scan-page bodies present; final page image wrapper. Index itself marked needs checking; final-scan visual and gap audit unresolved.",
+          "rights": "Wikisource transcription footer CC BY-SA with additional terms; original scan-specific rights page could not be opened. Hold until independent rights/access QA; no redistribution.",
+          "decision": "held_completeness_and_rights_QA"
+        }
+      ],
+      "text_outcome": "Prior185scanWikisourcecandidate retained; freshprefacebodyworks,latepageaccessfailed. HOLDactualfinalcoverage/rights; officialcurrentcoverdifferentedition."
+    },
+    {
+      "book_id": 75,
+      "canonical_title": "Reminiscences of Swami Brahmananda",
+      "author": "Brahmachari Akshaychaitanya",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "Brahmananda Lilakatha Akshaychaitanya archive",
+        "Reminiscences of Swami Brahmananda free text"
+      ],
+      "sources": [],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/reminiscences-of-swami-brahmananda/1237499000010764303",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/reminiscences-of-swami-brahmananda/1237499000010764303",
+          "page_title": "Reminiscences of Swami Brahmananda | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Ramakrishna Math - Chennai",
+            "List of Authors/Contributors": "Swami Bhaskarananda",
+            "Binding": "Paperback",
+            "Language": "English",
+            "Total Pages": "265",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "EnglishBhaskaranandatranslation265pages; canonicaloriginalBengaliAkshayachaitanya. GenuineEnglishvariantcover only; cannotserve asBengalioriginalcover.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MDE018_1.jpg/1237499000010827740/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/MDE018_1.jpg/1237499000010827740/1100x1100",
+            "width": 797,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 178580,
+            "sha256": "8e42b1a62f94db1081aad583d4114a3b844c463519e3029681ebe9287b2aebb2",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [
+        {
+          "url": "https://archive.org/download/in.ernet.dli.2015.453385/2015.453385.Brahmananda-lilakatha-Ed-2nd_djvu.txt",
+          "http_status": 200,
+          "text_characters": 372619,
+          "text_sha256": "8e777ba5143be886656eac58614a6c430aebe4c22588c636ecbf61e09ad5a3bd",
+          "edition": "BengaliBrahmanandaLilakatha2nd1965,Nababharat,Akshayachaitanya",
+          "completeness": "ActualOCRfrontmattersecondedition1372andclosingreviewmatter observed;241scanpagespriorarchiveinventory; severeOCRnoise, printedpagegaps/finalnarrativeunverified.",
+          "rights": "DLIclaimPublicDomainnotindependentlysubstantiated for1965edition; HOLD",
+          "decision": "held_scan_completeness_and_rights"
+        }
+      ],
+      "prior_candidates": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.453385",
+          "language": "Bengali",
+          "label": "Bengali",
+          "edition": "Brahmananda-lilakatha,2nd edition1965; Brahmachari Akshaychaitanya; Nababharat Publishers",
+          "volume_coverage": "Single Bengali original,241 scan pages according to DLI metadata; English translation not supplied",
+          "access": "Free Archive item/OCR HTTP200, no login to OCR",
+          "completeness": "Actual OCR front matter and final review matter sampled;241-page scan claim; image-by-image and printed final-page sequence unverified",
+          "rights": "DLI metadata asserts In Public Domain; 1965 edition rights basis not independently established. Hold, no public approval or redistribution.",
+          "decision": "held_rights_and_scan_completeness"
+        }
+      ],
+      "text_outcome": "Fresh372619characterBengaliOCRfetched;2nd1965originalconfirmed. Finalreviews/OCRnoise andscanrights unresolved; HOLD. CoverisEnglishtranslation,explicitlanguagevariant."
+    },
+    {
+      "book_id": 76,
+      "canonical_title": "ব্রহ্মানন্দ স্মৃতিকণা",
+      "author": "Devananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "ব্রহ্মানন্দ স্মৃতিকণা দেবানন্দ"
+      ],
+      "sources": [],
+      "covers": [
+        {
+          "product_url": "https://udbodhan.org/product/ব্রহ্মানন্দ-স্মৃতিকথা-brahmananda-smr",
+          "http_status": 200,
+          "resolved_url": "https://udbodhan.org/product/%E0%A6%AC%E0%A7%8D%E0%A6%B0%E0%A6%B9%E0%A7%8D%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6-%E0%A6%B8%E0%A7%8D%E0%A6%AE%E0%A7%83%E0%A6%A4%E0%A6%BF%E0%A6%95%E0%A6%A5%E0%A6%BE-brahmananda-smr",
+          "page_title": "ব্রহ্মানন্দ-স্মৃতিকণা · Udbodhan",
+          "identity_metadata": {
+            "Publisher": "UdbodhanKaryalaya",
+            "Binding": "Standard edition",
+            "Language": "Bengali",
+            "ISBN": null,
+            "Author": "SwamiDevananda (description)",
+            "Title": "ব্রহ্মানন্দ-স্মৃতিকণা"
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://udbodhan.org/api/media/file/Brahmananda-Smritikana_1-1.webp",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://udbodhan.org/api/media/file/Brahmananda-Smritikana_1-1.webp",
+            "width": 807,
+            "height": 1100,
+            "format": "WEBP",
+            "bytes": 111724,
+            "sha256": "e27879c2a6a4f06ade32f847620094a800bf5ff5a0f4c16209e6dc27f17734fb",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "ExactofficialDevanandaSmritikana coverfound despitemisleadingURLslugsmritikatha. Paidpublicationonly; nofullfreebodyverified."
+    },
+    {
+      "book_id": 77,
+      "canonical_title": "স্বামী ব্রহ্মানন্দ",
+      "author": "Ashokananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "স্বামী ব্রহ্মানন্দ অশোকানন্দ বই pdf"
+      ],
+      "sources": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-brahmananda-as-we-saw-him/swami-brahmananda-as-we-saw-him.html",
+          "observation": "Ashokanandaaccountchapter04inEnglishcompilation,notstandaloneBengaliAshokanandabook. Rejectidentitysubstitution."
+        }
+      ],
+      "covers": [],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "No exactstandaloneBengalifulltextverified; AshokanandachapterinID67doesnotprovewholebook.",
+      "cover_outcome": "NoexactAshokanandaBengalistandalonecover verified; otherBrahmanandatitlesnotinterchangeable."
+    },
+    {
+      "book_id": 78,
+      "canonical_title": "Memories of a Loving Soul",
+      "author": "A Compilation",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "Memories of a Loving Soul pdf"
+      ],
+      "sources": [
+        {
+          "url": "https://ramakrishna.org/shopdisc.html",
+          "observation": "OfficialVedantaNewYorkretail listingPrabhavanandatranslator; nofreebody."
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/products/memories-of-a-loving-soul/1237499000010250677",
+          "observation": "FreshofficialAdvaitaEnglishpublication; paidbooknotfulltext. RelatedBengaliID81translationdoesnotsupplyEnglishfullbody."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/memories-of-a-loving-soul/1237499000010250677",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/memories-of-a-loving-soul/1237499000010250677",
+          "page_title": "Memories of Swami Premananda by Swami Premananda | Advaita Ashrama",
+          "identity_metadata": {
+            "Publisher": "Advaita Ashrama",
+            "List of Authors/Contributors": "A Compilation",
+            "Binding": "Paperback",
+            "Language": "English",
+            "Total Pages": "240",
+            "ISBN": null
+          },
+          "rights_decision": "HOLD — official shop display establishes discovery/provenance only. No explicit redistribution licence or permission established for this cover; no rehosting/hotlink deployment approved.",
+          "edition_match": "Exact title/author/language below; print impression/year/ISBN may remain unavailable. Cover not automatically matched to an older online text edition.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/ADE002_1.jpg/1237499000010324664/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "resolved_url": "https://shop.advaitaashrama.org/product-images/ADE002_1.jpg/1237499000010324664/1100x1100",
+            "width": 876,
+            "height": 1400,
+            "format": "JPEG",
+            "bytes": 54339,
+            "sha256": "f7846e63c86f2433e902108f93a874919c4055ea245f150984ea9e3ef6ce8655",
+            "meaning": "Actual returned raster dimensions; URL size token is not treated as original source size. Original master dimensions unknown."
+          }
+        }
+      ],
+      "readers": [],
+      "prior_candidates": [],
+      "text_outcome": "No wholefreeEnglishreaderverified; officialpaidbook andBengalitranslationrelationship retained."
+    }
+  ],
+  "checkpoints": [
+    {
+      "works": 5,
+      "official_cover_leads": 4,
+      "cover_language_variant_ids": [
+        75
+      ],
+      "pixels_measured": 4,
+      "covers_cleared": 0,
+      "rechecked_held_scan_ids": [
+        74,
+        75
+      ],
+      "new_complete_reader_ids": [],
+      "no_verified_free_full_text_ids": [
+        76,
+        77,
+        78
+      ],
+      "new_public_links_approved": 0,
+      "QA": "pending"
+    }
+  ]
+}

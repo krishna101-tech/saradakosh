@@ -1,0 +1,542 @@
+{
+  "schema_version": 1,
+  "scope": "Version02 T1 supplemental public research book IDs73–84 only; non-authoritative candidates pending independent QA",
+  "date": "2026-10-15",
+  "baseline_sha": "4308284efb7ad886e673286b3deed70a131418eb",
+  "provenance": {
+    "researcher": "gpt-6.1-sol, High reasoning; coordinator-selected per current canonical runtime",
+    "method": "Actual Bengali/English/transliterated public web queries and source/page-body inspection; bounded discovery, explicit unverified gaps. SQLite library_books read-only used to verify identities.",
+    "cost": "Included web tools and local requests; no paid API, purchase or hosted compute. Tokens/quota not observable at worker level.",
+    "boundary": "Only supplemental ledger modified. No source Sheet,source snapshot,SQLite,UI,CDN/private Drive changes; no public-approved links until QA."
+  },
+  "books": [
+    {
+      "person": "Swami Brahmananda",
+      "canonical_title": "ব্রহ্মানন্দ চরিত",
+      "original_title": "ব্রহ্মানন্দ চরিত",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "ব্রহ্মানন্দ চরিত",
+      "author": "Prabhananda",
+      "summary": null,
+      "sort_order": 72,
+      "book_id": 73,
+      "sheet_row": 74,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"ব্রহ্মানন্দ চরিত\" প্রভানন্দ pdf",
+        "\"Brahmananda Charit\" Prabhananda full text",
+        "\"Brahmananda Charit\" \"pdf\""
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://shopref.advaitaashrama.org/product/brahmananda-charit/",
+          "observation": "Publisher search result identifies Bengali, Swami Prabhananda, Udbodhan, 350 pages, ISBN 9788180403507. Retail Add to cart; direct open failed. No whole-text body or free reader verified."
+        },
+        {
+          "url": "https://play.google.com/store/books/details/Swami_Prabhananda_%E0%A4%B8_%E0%A4%B5_%E0%A4%AE_%E0%A4%AC_%E0%A4%B0%E0%A4%B9_%E0%A4%AE_%E0%A4%A8%E0%A4%A8_%E0%A4%A6_%E0%A4%9A%E0%A4%B0_%E0%A4%A4_Swami_Bra?id=aIdcDwAAQBAJ",
+          "observation": "Hindi translation, 2018 Nagpur, 399 pages, paid ebook with Free sample. Rejected: language outside requested English/Bengali and sample/paywall, not complete free text."
+        }
+      ],
+      "candidates": [],
+      "checked_date": "2026-10-15",
+      "outcome": "No verified complete free Bengali/English text in bounded exact-title and transliterated searches. Retail metadata only; unresolved public text gap."
+    },
+    {
+      "person": "Swami Brahmananda",
+      "canonical_title": "ব্রহ্মানন্দ মহারাজের অনুধ্যান",
+      "original_title": "ব্রহ্মানন্দ মহারাজের অনুধ্যান",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "ব্রহ্মানন্দ মহারাজের অনুধ্যান",
+      "author": "Mahendranath Dutta",
+      "summary": null,
+      "sort_order": 73,
+      "book_id": 74,
+      "sheet_row": 75,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"ব্রহ্মানন্দ মহারাজের অনুধ্যান\" pdf",
+        "\"Brahmananda Maharajer Anudhyan\""
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://bn.wikisource.org/wiki/নির্ঘণ্ট:অজাতশত্রু_শ্রীমৎ_স্বামী_ব্রহ্মানন্দ_মহারাজের_অনুধ্যান_-_মহেন্দ্রনাথ_দত্ত.pdf",
+          "observation": "Wikisource index matches expanded title and Mahendranath Dutta; Kolkata 1939/1346. Page list 1–185. Free page bodies sampled at scan 3 (dedication), 59 (printed 43), 178 (printed 164); final scan 185 has image and no OCR. Unproofread index (0% validated). Requests client 403 whereas web reader succeeds; no claim of PDF download verification."
+        },
+        {
+          "url": "https://bn.wikisource.org/wiki/পাতা:অজাতশত্রু_শ্রীমৎ_স্বামী_ব্রহ্মানন্দ_মহারাজের_অনুধ্যান_-_মহেন্দ্রনাথ_দত্ত.pdf/৩",
+          "observation": "Free scan-page HTML inspected; Bengali body or image wrapper. Endpoint availability is sample evidence, not every-page completeness proof."
+        },
+        {
+          "url": "https://bn.wikisource.org/wiki/পাতা:অজাতশত্রু_শ্রীমৎ_স্বামী_ব্রহ্মানন্দ_মহারাজের_অনুধ্যান_-_মহেন্দ্রনাথ_দত্ত.pdf/৫৯",
+          "observation": "Free scan-page HTML inspected; Bengali body or image wrapper. Endpoint availability is sample evidence, not every-page completeness proof."
+        },
+        {
+          "url": "https://bn.wikisource.org/wiki/পাতা:অজাতশত্রু_শ্রীমৎ_স্বামী_ব্রহ্মানন্দ_মহারাজের_অনুধ্যান_-_মহেন্দ্রনাথ_দত্ত.pdf/১৭৮",
+          "observation": "Free scan-page HTML inspected; Bengali body or image wrapper. Endpoint availability is sample evidence, not every-page completeness proof."
+        },
+        {
+          "url": "https://bn.wikisource.org/wiki/পাতা:অজাতশত্রু_শ্রীমৎ_স্বামী_ব্রহ্মানন্দ_মহারাজের_অনুধ্যান_-_মহেন্দ্রনাথ_দত্ত.pdf/১৮৫",
+          "observation": "Free scan-page HTML inspected; Bengali body or image wrapper. Endpoint availability is sample evidence, not every-page completeness proof."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://bn.wikisource.org/wiki/নির্ঘণ্ট:অজাতশত্রু_শ্রীমৎ_স্বামী_ব্রহ্মানন্দ_মহারাজের_অনুধ্যান_-_মহেন্দ্রনাথ_দত্ত.pdf",
+          "language": "Bengali",
+          "label": "Bengali",
+          "edition": "1939 Kolkata, expanded title Ajatashatru Srimat Swami Brahmananda Maharajer Anudhyan; Mahendranath Dutta",
+          "volume_coverage": "Single book, 185 scan-page index",
+          "access": "Free Wikisource reader; web reader resolves, direct requests403",
+          "completeness": "Front/middle/late scan-page bodies present; final page image wrapper. Index itself marked needs checking; final-scan visual and gap audit unresolved.",
+          "rights": "Wikisource transcription footer CC BY-SA with additional terms; original scan-specific rights page could not be opened. Hold until independent rights/access QA; no redistribution.",
+          "decision": "held_completeness_and_rights_QA"
+        }
+      ],
+      "checked_date": "2026-10-15",
+      "outcome": "Substantial Bengali scan reader candidate located; 185-page list and separated body samples inspected. Hold for final-page visual/completeness and scan-rights QA."
+    },
+    {
+      "person": "Swami Brahmananda",
+      "canonical_title": "Reminiscences of Swami Brahmananda",
+      "original_title": "ব্রহ্মানন্দ লীলাকথা",
+      "original_language": "Bengali",
+      "english_title": "Reminiscences of Swami Brahmananda",
+      "bengali_title": "ব্রহ্মানন্দ লীলাকথা",
+      "author": "Brahmachari Akshaychaitanya",
+      "summary": null,
+      "sort_order": 74,
+      "book_id": 75,
+      "sheet_row": 76,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"ব্রহ্মানন্দ লীলাকথা\" pdf",
+        "\"Reminiscences of Swami Brahmananda\" Akshayachaitanya full text"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://granthagara.com/boi/304858-brahmanandalilakatha-ed-2/",
+          "observation": "Discovery page identifies Akshaychaitanya and 241 pages, links to Digital Library of India Internet Archive scan. Discovery metadata/sample alone not accepted."
+        },
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.453385",
+          "observation": "Archive DLI item: 1965 second Bengali edition, Nababharat Publishers, BirChandra State Central Library Tripura provenance;241 pages. Archive stream redirects to details?view=theater. Metadata asserts In Public Domain but no independent license/basis verified."
+        },
+        {
+          "url": "https://archive.org/download/in.ernet.dli.2015.453385/2015.453385.Brahmananda-lilakatha-Ed-2nd_djvu.txt",
+          "observation": "Direct requests HTTP 200,372619 Unicode characters. Actual Bengali OCR title/author and second-edition 1372 front matter inspected, plus final review/endorsement matter. Severe OCR noise. PDF file inventory present; scan pagination not visually verified."
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/products/reminiscences-of-swami-brahmananda/1237499000010764303?quick_look=true",
+          "observation": "Official retail identifies English translation by Swami Bhaskarananda of Akshaychaitanya Bengali Lilakatha,265 pages. Paid book, rejected as full text."
+        },
+        {
+          "url": "https://vedanta-seattle.org/wp-content/uploads/simple-file-list/2015-3-GV-Summer.pdf",
+          "observation": "Institutional journal explicitly excerpts English translation of Brahmananda Leelakatha. Rejected: selected passages only, not whole book."
+        }
+      ],
+      "candidates": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.453385",
+          "language": "Bengali",
+          "label": "Bengali",
+          "edition": "Brahmananda-lilakatha,2nd edition1965; Brahmachari Akshaychaitanya; Nababharat Publishers",
+          "volume_coverage": "Single Bengali original,241 scan pages according to DLI metadata; English translation not supplied",
+          "access": "Free Archive item/OCR HTTP200, no login to OCR",
+          "completeness": "Actual OCR front matter and final review matter sampled;241-page scan claim; image-by-image and printed final-page sequence unverified",
+          "rights": "DLI metadata asserts In Public Domain; 1965 edition rights basis not independently established. Hold, no public approval or redistribution.",
+          "decision": "held_rights_and_scan_completeness"
+        }
+      ],
+      "checked_date": "2026-10-15",
+      "outcome": "Free Bengali DLI scan/OCR candidate found and body identity sampled, held pending rights and scan-completeness QA. English institutional excerpt rejected."
+    },
+    {
+      "person": "Swami Brahmananda",
+      "canonical_title": "ব্রহ্মানন্দ স্মৃতিকণা",
+      "original_title": "ব্রহ্মানন্দ স্মৃতিকণা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "ব্রহ্মানন্দ স্মৃতিকণা",
+      "author": "Devananda",
+      "summary": null,
+      "sort_order": 75,
+      "book_id": 76,
+      "sheet_row": 77,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"ব্রহ্মানন্দ স্মৃতিকণা\" pdf",
+        "\"Brahmananda Smritikana\" Devananda",
+        "\"ব্রহ্মানন্দ-স্মৃতিকণা\" দেবানন্দ"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://udbodhan.org/product/ব্রহ্মানন্দ-স্মৃতিকথা-brahmananda-smr",
+          "observation": "Official product actual body identifies Brahmananda Smritikana, Bengali, Udbodhan, Devananda in description; short biography/teachings. Paid Add to bag/Buy now; Peek inside is preview language. Not full free text."
+        }
+      ],
+      "candidates": [],
+      "checked_date": "2026-10-15",
+      "outcome": "Identity confirmed by primary publisher description; no complete free reader verified in bounded Bengali/romanized searches."
+    },
+    {
+      "person": "Swami Brahmananda",
+      "canonical_title": "স্বামী ব্রহ্মানন্দ",
+      "original_title": "স্বামী ব্রহ্মানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী ব্রহ্মানন্দ",
+      "author": "Ashokananda",
+      "summary": null,
+      "sort_order": 76,
+      "book_id": 77,
+      "sheet_row": 78,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Swami Brahmananda\" \"Ashokananda\" Bengali book pdf",
+        "\"ব্রহ্মানন্দ\" \"অশোকানন্দ\" pdf",
+        "\"স্বামী ব্রহ্মানন্দ\" \"অশোকানন্দ\" বই",
+        "\"Swami Brahmananda\" \"Ashokananda\" archive.org"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-brahmananda-as-we-saw-him/swami-brahmananda-as-we-saw-him.html",
+          "observation": "Institutional actual HTML title,author Atmashraddhananda,publisher Sri Ramakrishna Math Chennai inspected. Contains a chapter 04 by Ashokananda, but entire book is a different compilation. Rejected as identity mismatch to catalog Bengali Ashokananda standalone book; no relabelling."
+        },
+        {
+          "url": "https://estudantedavedanta.net/Sri-Ramakrishna-and-His-Disciples-in-Orissa.pdf",
+          "observation": "Search-index bibliography cites Swami Brahmananda by Ashokananda pages 25/36. Citation-only discovery evidence, not actual book body; not opened or claimed complete."
+        }
+      ],
+      "candidates": [],
+      "checked_date": "2026-10-15",
+      "outcome": "No complete free text of exact Ashokananda standalone Bengali book verified. Institutional compilation with Ashokananda chapter is not substituted; edition/title provenance remains a gap."
+    },
+    {
+      "person": "Swami Premananda",
+      "canonical_title": "Memories of a Loving Soul",
+      "original_title": "Memories of a Loving Soul: Teachings & Reminiscences of Swami Premananda",
+      "original_language": "English",
+      "english_title": "Memories of a Loving Soul: Teachings & Reminiscences of Swami Premananda",
+      "bengali_title": null,
+      "author": "A Compilation",
+      "summary": null,
+      "sort_order": 77,
+      "book_id": 78,
+      "sheet_row": 79,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Memories of a Loving Soul\" full text",
+        "\"Memories of a Loving Soul\" Premananda read online",
+        "\"Memories of a Loving Soul\" rkmm",
+        "\"Memories of a Loving Soul\" \"pdf\"",
+        "\"Memories of a Loving Soul\" site:cs.rkmvu.ac.in",
+        "\"Memories of a Loving Soul\" site:englishbooks.rkmm.org",
+        "\"Memories of a Loving Soul\" free ebook"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://ramakrishna.org/shopdisc.html",
+          "observation": "Official New York center shop actual page identifies Memories of a Loving Soul: Swami Premananda, Teachings and Reminiscences, Prabhavananda translator. Retail paper/Add to Cart, not book body; rejected as free text."
+        },
+        {
+          "url": "https://www.ramakrishnamath.in/pages/book_store/AdvaitaAshramaBooklist.htm",
+          "observation": "Official Ulsoor actual catalog table identifies English compilation ISBN 81-7505-094-2. Price listing only; rejected as full text."
+        },
+        {
+          "url": "https://udbodhan.org/product/প্রেমিক-পুরুষ-প্রেমানন্দ/",
+          "observation": "Official publisher actual description identifies Bengali Premikpurush Premananda as translation of English Memories of a Loving Soul edited by Prabhavananda. Confirms relation toID 81 but does not merge catalog identities. Retail only."
+        },
+        {
+          "url": "https://shopref.advaitaashrama.org/product/memories-of-a-loving-soul/",
+          "observation": "Direct open failed; indexed publisher storefront not a complete reading source. No access claim."
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/products/memories-of-a-loving-soul/1237499000010250677",
+          "observation": "Current official product page opened successfully; Memories of a Loving Soul / Reminiscences & Teachings of Swami Premananda. Paid shop metadata/description only; not a free full-text reader."
+        }
+      ],
+      "candidates": [],
+      "checked_date": "2026-10-15",
+      "outcome": "Exact English identity confirmed; Bengali translation relation established toID81. No complete free public English/Bengali reader verified by bounded searches; institutional catalogues are not book bodies."
+    },
+    {
+      "person": "Swami Premananda",
+      "canonical_title": "Swami Premananda: Love Incarnate",
+      "original_title": "Swami Premananda: Love Incarnate",
+      "original_language": "English",
+      "english_title": "Swami Premananda: Love Incarnate",
+      "bengali_title": null,
+      "author": "Swami Swahananda; Brahmachari Akshayachaitanya; Prasun De",
+      "summary": null,
+      "sort_order": 78,
+      "book_id": 79,
+      "sheet_row": 80,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"Swami Premananda Love Incarnate\" full text pdf",
+        "\"Swami Premananda\" \"Love Incarnate\" \"read\"",
+        "\"Swami Premananda\" \"Love Incarnate\" site:cs.rkmvu.ac.in"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://shopref.advaitaashrama.org/product/swami-premananda-love-incarnate/",
+          "observation": "Indexed official publisher retail identifies Akshayachaitanya,Prasun De,Swahananda; English 240 pages,ISBN 9788175052529. Add to cart; direct open failed. Identity evidence only, not full text."
+        },
+        {
+          "url": "https://www.ramakrishnamath.in/pages/book_store/AdvaitaAshramaBooklist.htm",
+          "observation": "Actual official catalog matches English title,ISBN 81-7505-252-X,and Akshay Chaitanya in parenthetical title; author-column attribution differs (Chetanananda). Preserve baseline author and rely on modern publisher contributors; catalog is retail, not body."
+        },
+        {
+          "url": "https://groups.google.com/g/holy_trinity/c/ILo3rEjngDA",
+          "observation": "Search result explicitly SELECT PASSAGES 16; not opened and not counted as complete free text. Rejected as excerpts."
+        }
+      ],
+      "candidates": [],
+      "checked_date": "2026-10-15",
+      "outcome": "Publisher identity established for240page English book; free institutional full text not verified. Selected-passages results rejected; unrelated short60page Chetanananda title not substituted."
+    },
+    {
+      "person": "Swami Premananda",
+      "canonical_title": "Swami Premanander Jivan O Smritikatha",
+      "original_title": "স্বামী প্রেমানন্দের জীবন ও স্মৃতিকথা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী প্রেমানন্দের জীবন ও স্মৃতিকথা",
+      "author": "Swami Chetanananda",
+      "summary": null,
+      "sort_order": 79,
+      "book_id": 80,
+      "sheet_row": 81,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"স্বামী প্রেমানন্দের জীবন ও স্মৃতিকথা\" pdf",
+        "\"Swami Premanander Jivan O Smritikatha\" pdf",
+        "\"স্বামী প্রেমানন্দের জীবন\" \"pdf\""
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://udbodhan.org/product/স্বামী-প্রেমানন্দের-জীবন",
+          "observation": "Actual official retail page Bengali description credits compiler/editor Chetanananda,matching baseline; heading incorrectly shows Chaitanyananda. Record discrepancy,do not alter original identity. Paid 200 rupee book, no complete reader verified."
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-premanander-jivan-o-smritikatha/1237499000010647539",
+          "observation": "Actual official shop page identifies Chetanananda,Bengali,Udbodhan,367 pages,ISBN 9788180400841. Paid product, not book body. Rejected as full text."
+        }
+      ],
+      "candidates": [],
+      "checked_date": "2026-10-15",
+      "outcome": "Exact Bengali compilation verified from primary shop metadata/description; heading author discrepancy documented. No complete free text verified; sample pages and catalogs insufficient."
+    },
+    {
+      "person": "Swami Premananda",
+      "canonical_title": "Premik Purush Premananda",
+      "original_title": "প্রেমিক পুরুষ প্রেমানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "প্রেমিক পুরুষ প্রেমানন্দ",
+      "author": "Swami Prabhavananda",
+      "summary": null,
+      "sort_order": 80,
+      "book_id": 81,
+      "sheet_row": 82,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"প্রেমিক পুরুষ প্রেমানন্দ\" pdf",
+        "\"Premik Purush Premananda\" Prabhavananda",
+        "\"প্রেমিকপুরুষ প্রেমানন্দ\" পড়ুন",
+        "\"প্রেমিকপুরুষ প্রেমানন্দ\" site:udbodhan.org/product",
+        "\"Premikpurush Premananda\" Prabhavananda"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://udbodhan.org/product/প্রেমিক-পুরুষ-প্রেমানন্দ/",
+          "observation": "Actual primary publisher product body confirms this is Bengali translation of Memories of a Loving Soul edited by Swami Prabhavananda; biography,teachings,reminiscences,letters. Add to cart paid 50 rupee listing; no free complete text."
+        },
+        {
+          "url": "https://www.ramakrishnamath.in/pages/book_store/AdvaitaAshramaBooklist.htm",
+          "observation": "Official retail catalog also lists Premik Purush Premananda,Prabhavananda,Bengali. Metadata corroborates identity, not body proof."
+        }
+      ],
+      "candidates": [],
+      "checked_date": "2026-10-15",
+      "outcome": "Bengali translation identity and relation toEnglishID78 established. No verified complete free text in Bengali/romanized bounded searches; preserve separate baseline identity."
+    },
+    {
+      "person": "Swami Premananda",
+      "canonical_title": "Kathaprasange Swami Premananda",
+      "original_title": "কথাপ্রসঙ্গে স্বামী প্রেমানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "কথাপ্রসঙ্গে স্বামী প্রেমানন্দ",
+      "author": "Swami Omkareshwarananda",
+      "summary": null,
+      "sort_order": 81,
+      "book_id": 82,
+      "sheet_row": 83,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"কথাপ্রসঙ্গে স্বামী প্রেমানন্দ\"",
+        "\"Kathaprasange Swami Premananda\" pdf",
+        "\"প্রেমানন্দ\" \"ওঙ্কারেশ্বরানন্দ\" pdf"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://udbodhan.org/product/কথাপ্রসঙ্গে-স্বামী-প্রেম",
+          "observation": "Actual primary retail page matches Bengali title,price 80 rupees; no full body. Rejected as text link."
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/products/kathaprasange-swami-premananda/1237499000010662557",
+          "observation": "Actual official product identifies Omkareshwarananda,Bengali,Udbodhan,262 pages,ISBN 9788193821053. Paid paperback, not a free complete text."
+        },
+        {
+          "url": "https://advaitaashrama.org/pb/2022/APB010_1222.pdf",
+          "observation": "Actual official 10 page journal PDF opens freely. Spiritual Conversations translation by Atmaswarupananda explicitly identifies original Kathaprasange Swami Premananda and starts fourth canto; says first three cantos ran Feb–Jul 2016. Rejected as complete book: serial instalment, not whole 262 page original; no invented combined-volume claim."
+        }
+      ],
+      "candidates": [],
+      "checked_date": "2026-10-15",
+      "outcome": "Bengali whole-book reader gap. Authorized English serial instalment found and read but cannot establish complete book coverage without full instalment/end audit; not approved as full text."
+    },
+    {
+      "person": "Swami Premananda",
+      "canonical_title": "প্রেমানন্দ",
+      "original_title": "প্রেমানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "প্রেমানন্দ",
+      "author": "Omkareshwarananda",
+      "summary": null,
+      "sort_order": 82,
+      "book_id": 83,
+      "sheet_row": 84,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"প্রেমানন্দ\" \"ওঙ্কারেশ্বরানন্দ\" pdf",
+        "\"Premananda\" \"Omkareshwarananda\" book read online",
+        "\"Premananda\" \"Omkareshwarananda\" \"full text\"",
+        "\"প্রেমানন্দ\" \"ওংকারেশ্বরানন্দ\" বই",
+        "\"প্রেমানন্দ\" \"ওঙ্কারেশ্বরানন্দ\" \"অনলাইন\"",
+        "\"Swami Premananda’s Teachings\" \"2016\""
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://www.scribd.com/document/639242470/Untitled",
+          "observation": "Actual March 2016 Prabuddha Bharata OCR mirror inspected: This Month editorial identifies second instalment of Omkareshwarananda teachings translated from Bengali Premananda. Journal mirror, not complete original; uploader copyright All Rights Reserved, no verified permission/free whole-book access. Rejected as complete free text; discovery identity only."
+        },
+        {
+          "url": "https://advaitaashrama.org/pb/2016/032016.pdf",
+          "observation": "Attempted primary publisher March 2016 path based on archive pattern; web fetch failed. Not claimed valid or complete; no alternative guessed URL promoted."
+        },
+        {
+          "url": "https://advaitaashrama.org/pb/2022/APB010_1222.pdf",
+          "observation": "Actual official PDF identifies later serial by same author as translation of Kathaprasange Swami Premananda (ID 82),first three cantos translated 2016. This suggests a possible historical short-title relation but does not prove that catalogID 83 Premananda is the identical edition/book. Preserve both identities, no merge or whole-text substitution."
+        },
+        {
+          "url": "https://advaitaashrama.org/wp-content/uploads/APB010_0526.pdf",
+          "observation": "Official May 2026 journal excerpt PDF opens,11 pages,TOC lists Conversations with Swami Premananda by Omkareshwarananda. Serial installment only, not a demonstrated complete original or complete English translation. No reproduction license inferred."
+        }
+      ],
+      "candidates": [],
+      "checked_date": "2026-10-15",
+      "outcome": "Exact short-title Bengali book body and edition not located. Author/short-title reference found in journal mirror; relation toID82 remains unresolved. Serial excerpts and non-English storefront translations not accepted as whole text."
+    },
+    {
+      "person": "Swami Premananda",
+      "canonical_title": "প্রেমানন্দ জীবনচরিত",
+      "original_title": "প্রেমানন্দ জীবনচরিত",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "প্রেমানন্দ জীবনচরিত",
+      "author": "Omkareshwarananda",
+      "summary": null,
+      "sort_order": 83,
+      "book_id": 84,
+      "sheet_row": 85,
+      "baseline_links": [],
+      "research_status": "researched_with_gaps",
+      "queries": [
+        "\"প্রেমানন্দ জীবনচরিত\" pdf",
+        "\"Premananda Jibancharit\"",
+        "\"প্রেমানন্দ-জীবনচরিত\" বই",
+        "\"প্রেমানন্দ জীবনচরিত\" \"ওঙ্কারেশ্বরানন্দ\"",
+        "\"Premananda Jivancharit\" Bengali Omkareshwarananda",
+        "\"Premananda Jivancharit\" site:udbodhan.org",
+        "\"প্রেমানন্দ জীবনচরিত\" সম্পূর্ণ",
+        "\"Premananda Jivancharit\" pdf download"
+      ],
+      "sources_inspected": [
+        {
+          "url": "https://udbodhan.org/gallery/21",
+          "observation": "Actual primary publisher gallery body identifies formal release of Premananda Jivancharit and Swami Premananda Patrasamgraha at Ma Sarada Dham inauguration. Publication news confirms title existence, not full text or permission."
+        },
+        {
+          "url": "https://media.belurmath.org/inauguration-of-ma-sarada-dham-at-mothers-house-baghbazar-19523/",
+          "observation": "Search result corroborates official publication-release news. Direct open failed; no complete-text/access claim."
+        },
+        {
+          "url": "https://www.exoticindiaart.com/book/details/premananda-jivancharit-bengali-hci248/",
+          "observation": "Retail actual page reached from New Arrivals link; identifies Bengali Premananda Jivancharit by Swami Omkareshwarananda,paid 30 USD product. Sample/retail page not whole-text evidence. No license or free complete reader verified."
+        },
+        {
+          "url": "https://udbodhan.org/product/প্রেমানন্দ-জীবনচরিত/",
+          "observation": "Attempted guessed publisher product slug failed. Not a valid candidate; official gallery is identity evidence only."
+        }
+      ],
+      "candidates": [],
+      "checked_date": "2026-10-15",
+      "outcome": "Publication identity corroborated with primary news and matching author/title retail listing. No complete free Bengali/English text verified after original/transliterated variants; citation and retail gaps retained."
+    }
+  ],
+  "checkpoints": [
+    {
+      "book_ids": [
+        73,
+        74,
+        75,
+        76,
+        77
+      ],
+      "saved_at_utc": "2026-10-15T13:02:08.622369+00:00",
+      "status": "researched_with_explicit_gaps"
+    },
+    {
+      "book_ids": [
+        78,
+        79,
+        80,
+        81,
+        82
+      ],
+      "saved_at_utc": "2026-10-15T13:03:52.884236+00:00",
+      "status": "researched_with_explicit_gaps"
+    },
+    {
+      "book_ids": [
+        83,
+        84
+      ],
+      "saved_at_utc": "2026-10-15T13:05:50.472692+00:00",
+      "status": "researched_with_explicit_gaps_final_two"
+    }
+  ],
+  "stats": {
+    "researched_books": 12,
+    "held_full_text_candidates": 2,
+    "public_approved_candidates": 0,
+    "books_without_verified_complete_public_text": 12,
+    "note": "Two substantial scan candidates remain held; no false100%full-text claim. Research coverage12/12,publication approval0/12. All12had no original baseline links."
+  }
+}

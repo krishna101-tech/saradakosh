@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "issue": 28,
+  "baseline_sha": "ba69221198f12c2a373b9e4a836da1eb6347fecb",
+  "researched_at_utc": "2026-10-21T04:50:00.000000+00:00",
+  "researcher": "Antigravity (Gemini 3.8 Flash High)",
+  "method": "Renewed actual public searches and primary HTTP body/metadata inspections. Search absence is bounded, not exhaustive. No paid or external model call; no private IDs, full reader bodies or cover binaries in artifacts.",
+  "status": "RESEARCH_CANDIDATES_PENDING_INDEPENDENT_QA",
+  "source_mutations": false,
+  "books": [
+    {
+      "book_id": 114,
+      "canonical_title": "স্বামী সারদানন্দের জীবনী",
+      "author": "Akshay Chaitanya",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"স্বামী সারদানন্দের জীবনী\" \"অক্ষয়চৈতন্য\"",
+        "\"Swami Saradanander Jibani\" \"Akshay Chaitanya\"",
+        "site:archive.org \"Saradanander Jibani\" \"Akshay\"",
+        "\"সারদানন্দের জীবনী\" \"অক্ষয়\""
+      ],
+      "sources": [
+        {
+          "url": "https://estudantedavedanta.net/Sri-Ramakrishna-and-His-Disciples-in-Orissa.pdf",
+          "observation": "Historical citation confirms Brahmachari Akshay Chaitanya's Bengali biography 'স্বামী সারদানন্দের জীবনী' (Calcutta: Bhattacharyya & Sons / Maya Press, 1345 B.S. / 1938). Pioneering early biography of Swami Saradananda by Brahmachari Akshay Chaitanya (1888–1978)."
+        }
+      ],
+      "covers": [],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Pioneering 1938 Bengali biography of Swami Saradananda by Brahmachari Akshay Chaitanya (Calcutta: Bhattacharyya & Sons / Maya Press). Out of print; no complete digital facsimile verified on open public repositories."
+    },
+    {
+      "book_id": 115,
+      "canonical_title": "সারদানন্দ স্বামীজীর জীবনের ঘটনাবলী",
+      "author": "Mahendranath Dutta",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"সারদানন্দ স্বামীজীর জীবনের ঘটনাবলী\" মহেন্দ্রনাথ",
+        "site:archive.org \"in.ernet.dli.2015.298302\"",
+        "site:archive.org \"Srimath Saradananda Swamijir Jibaner Ghatanabali\"",
+        "\"Mahendra Publishing\" \"সারদানন্দ\""
+      ],
+      "sources": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.298302",
+          "observation": "Digital Library of India complete 1948 1st edition scan from Birchandra State Central Library, Tripura. Title: শ্রীমৎ সারদানন্দ স্বামিজীর জীবনের ঘটনাবলী (Srimat Saradananda Swamijir Jibaner Ghatanabali) by Sri Mahendranath Dutta, edited by Sri Lakshminarayan Ganguly, published by Pyari Mohan Mukhopadhyay, Mahendra Publishing Committee, 3 Gour Mohan Mukherjee Street, Calcutta-6, printed by Balai Charan Ghosh, Diamond Printing House, 1948, 264 scanned pages, complete Bengali text (file: 2015.298302.Srimath-Saradananda.pdf, 11,935,899 bytes). Author Mahendranath Dutta (1869–1956) passed away >60 years ago (public domain in India under Indian Copyright Act). Candidate external reader proposed pending independent QA (NOT auto-ingested)."
+        },
+        {
+          "url": "https://mohendranathdutta.com/bengali.html",
+          "observation": "Historical bibliography confirming exact title in Mahendra Publishing Committee catalogue."
+        }
+      ],
+      "covers": [],
+      "readers": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.298302",
+          "label": "Bengali",
+          "evidence": "Digital Library of India complete 1948 1st edition scan (264 pages, 11.9 MB PDF). Complete front matter, publisher details, preface ('গ্রন্থ প্রসঙ্গ'), and full narrative text (pages 1-244). Author Mahendranath Dutta died in 1956 (public domain under Indian Copyright Act).",
+          "disposition": "candidate_reader_pending_QA"
+        }
+      ],
+      "text_outcome": "candidate_reader_proposed_pending_QA. Complete 1948 1st edition Bengali scan on Internet Archive / Digital Library of India (in.ernet.dli.2015.298302, 264 pages, 11.9 MB PDF). Published by Mahendra Publishing Committee, Calcutta (1948). Author Mahendranath Dutta (1869–1956) is in the public domain in India (>60 years post-mortem). Proposed as candidate external reader pending independent QA; NOT auto-ingested."
+    },
+    {
+      "book_id": 116,
+      "canonical_title": "স্বামী সারদানন্দ",
+      "author": "Brahmachari Prakash",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"স্বামী সারদানন্দ\" \"ব্রহ্মচারী প্রকাশ\"",
+        "\"Swami Saradananda\" \"Brahmachari Prakash\"",
+        "\"সারদানন্দ\" \"প্রকাশ\" \"বসুমতী\"",
+        "site:archive.org \"Brahmachari Prakash\""
+      ],
+      "sources": [
+        {
+          "url": "https://srisaradamath.org/publication/nibodhata/370102.pdf",
+          "observation": "Historical citation and bibliographic confirmation in Nibodhata (Sri Sarada Math) referencing 'স্বামী সারদানন্দ' by Brahmachari Prakash (Prakash Chandra Bandyopadhyay), published in 1963 by Basumati Sahitya Mandir, Calcutta (p. 125)."
+        }
+      ],
+      "covers": [],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Out-of-print 1963 Bengali biography of Swami Saradananda by Brahmachari Prakash, published by Basumati Sahitya Mandir, Calcutta. No complete digital facsimile verified on open public repositories."
+    },
+    {
+      "book_id": 117,
+      "canonical_title": "Swami Turiyananda: Life and Teachings",
+      "author": "Swami Ritajananda",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Swami Turiyananda: Life and Teachings\" Ritajananda",
+        "site:shop.advaitaashrama.org \"Swami Turiyananda: Life and Teachings\"",
+        "site:istore.chennaimath.org \"Swami Turiyananda: Life and Teachings\"",
+        "site:archive.org \"Swami Turiyananda\" \"Ritajananda\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-turiyananda-life-and-teachings/1237499000010763871",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Sri Ramakrishna Math, Mylapore, Chennai, distributed by Advaita Ashrama (paperback, 233 pages, ISBN 9788171207213, SKU MDE002, price ₹20). In-print copyrighted work, not a free reader."
+        },
+        {
+          "url": "https://istore.chennaimath.org/",
+          "observation": "Primary publisher Sri Ramakrishna Math Chennai storefront listing."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-turiyananda-life-and-teachings/1237499000010763871",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-turiyananda-life-and-teachings/1237499000010763871",
+          "page_title": "Swami Turiyananda: Life & Teachings | Advaita Ashrama",
+          "edition_match": "English, Swami Ritajananda, Sri Ramakrishna Math Chennai / Advaita Ashrama, paperback 233 pages, ISBN 9788171207213, SKU MDE002.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MDE002_1.jpg/1237499000010827038/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 808,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 274117,
+            "sha256": "50f15ff3f301670dcb69d694cd04ac9d3a9d0be464744f51e639a4abc59ec27f",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Comprehensive English biography of Swami Turiyananda by Swami Ritajananda (1906–1994), published by Sri Ramakrishna Math Chennai (233 pages, ISBN 9788171207213). Under active statutory copyright; no authorized free digital edition on public repositories."
+    },
+    {
+      "book_id": 118,
+      "canonical_title": "The Eternal Quest: A Life Sketch of Swami Turiyananda",
+      "author": "Mihir K. Das",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"The Eternal Quest\" \"Mihir\" \"Turiyananda\"",
+        "\"Mihir Kanti Das\" \"Turiyananda\" Almora",
+        "site:almora.rkmm.org \"Mihir Kanti Das\"",
+        "site:archive.org \"The Eternal Quest\" Turiyananda"
+      ],
+      "sources": [
+        {
+          "url": "https://almora.rkmm.org/news/post/almora-visit-of-srimad-swami-suhitanandaji-maharaj-2-4-nov.-202411",
+          "observation": "Official Ramakrishna Kutir, Almora publication announcement. Dr. Mihir Kanti Das formally transferred all intellectual property rights and copyright of his biography of Swami Turiyananda ('The Eternal Quest') to Ramakrishna Kutir, Almora (released November 2024 by General Secretary Srimad Swami Suhitānandaji Maharaj). Proceeds dedicated to the Ashrama. In-print copyrighted work, not a free public web reader."
+        }
+      ],
+      "covers": [],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Modern biographical work by Dr. Mihir Kanti Das. Author transferred intellectual property rights and copyright to Ramakrishna Kutir, Almora (released November 2024). In-print Ashrama publication under active copyright; no open authorized digital facsimile on public libraries."
+    }
+  ]
+}

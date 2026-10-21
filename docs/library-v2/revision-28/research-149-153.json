@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "issue": 28,
+  "baseline_sha": "7bbfaf855270f927702e7ef2c9b5959f9548fd08",
+  "researched_at_utc": "2026-10-21T05:45:00.000000+00:00",
+  "researcher": "Antigravity (Gemini 3.8 Flash High)",
+  "method": "Renewed actual public searches and primary HTTP body/metadata inspections. Search absence is bounded, not exhaustive. No paid or external model call; no private IDs, full reader bodies or cover binaries in artifacts.",
+  "status": "RESEARCH_CANDIDATES_PENDING_INDEPENDENT_QA",
+  "source_mutations": false,
+  "books": [
+    {
+      "book_id": 149,
+      "canonical_title": "Tibbater Pathe Himalaye",
+      "author": "Swami Akhandananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Tibbater Pathe Himalaye\" Advaita Ashrama",
+        "\"Tibbater Pathe Himalaye\" Udbodhan",
+        "\"In the Lap of the Himalayas\" Chennai Math",
+        "archive.org details sjru_tibbater-pathe-himalaye-by-swami-akhandanand-1938-kolkata-bengali-udbodhan-karyalay"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/tibbater-pathe-himalaye/1237499000010647071",
+          "observation": "HTTP 200 actual publisher distributor retail page for Bengali edition: 'Tibbater Pathe Himalaye' by Swami Akhandananda, published by Udbodhan Karyalaya (paperback, ISBN 9788180404313, SKU UDB023, price ₹50). In-print publication, not a free reader."
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/products/in-the-lap-of-the-himalayas/1237499000010764051",
+          "observation": "HTTP 200 actual publisher retail page for English translation: 'In the Lap of the Himalayas', published by Sri Ramakrishna Math Chennai (paperback, ISBN 9788171203451, SKU MDE007, price ₹50). In-print translation, not a free reader."
+        },
+        {
+          "url": "https://archive.org/details/sjru_tibbater-pathe-himalaye-by-swami-akhandanand-1938-kolkata-bengali-udbodhan-karyalay",
+          "observation": "HTTP 200 Internet Archive record from Sri Sri Anandamayee Ashram Varanasi Collection. Title: 'Tibbater Pathe Himalaye By Swami Akhandanand 1938 Kolkata (Bengali) - Udbodhan Karyalay' (186 scanned leaves, 71.5 MB PDF). Author Swami Akhandananda passed away in February 1937 (>85 years post-mortem, public domain worldwide). Complete historical edition text, freely accessible without login or loan barrier. Proposed as candidate reader pending independent QA (NOT auto-ingested)."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/tibbater-pathe-himalaye/1237499000010647071",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/tibbater-pathe-himalaye/1237499000010647071",
+          "page_title": "Tibbater Pathe Himalaye | Advaita Ashrama",
+          "edition_match": "Bengali, Swami Akhandananda, Udbodhan Karyalaya / Advaita Ashrama, paperback, ISBN 9788180404313, SKU UDB023.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB023_1.jpg/1237499000010703636/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 812,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 98737,
+            "sha256": "debf04e6ba8cdb5f7cd33184ae7221fba856cfb3f8dd83fdb2949646ec7efd70",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        },
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/in-the-lap-of-the-himalayas/1237499000010764051",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/in-the-lap-of-the-himalayas/1237499000010764051",
+          "page_title": "In the Lap of the Himalayas | Advaita Ashrama",
+          "edition_match": "English translation, Swami Akhandananda, Sri Ramakrishna Math Chennai / Advaita Ashrama, paperback, ISBN 9788171203451, SKU MDE007.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MDE007_1.jpg/1237499000010827263/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 783,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 215467,
+            "sha256": "ee7c7b02867d743cd05701c65d55028137304859baee6ac28b11b69fbbe32c98",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [
+        {
+          "url": "https://archive.org/details/sjru_tibbater-pathe-himalaye-by-swami-akhandanand-1938-kolkata-bengali-udbodhan-karyalay",
+          "label": "Bengali (1938 ed.)",
+          "format": "PDF",
+          "page_count": 186,
+          "access_type": "free_public_access",
+          "provenance": "Internet Archive / Sri Sri Anandamayee Ashram Varanasi Collection (IKS-MoE Grant)",
+          "rights_status": "public_domain_author_died_1937",
+          "disposition": "candidate_reader_proposed_pending_QA"
+        }
+      ],
+      "text_outcome": "candidate_reader_proposed_pending_QA. Complete 1938 Bengali edition scan hosted on Internet Archive (186 scanned leaves, 71.5 MB PDF, Sri Sri Anandamayee Ashram Varanasi Collection). Travel memoirs of Swami Akhandananda (1864–1937) recounting his historic 1887–1890 journey into Tibet and the Himalayas. Author passed away in 1937 (>85 years post-mortem, public domain worldwide). Proposed as candidate external reader pending independent QA (NOT auto-ingested). Official publisher cover leads identified on Advaita Ashrama / Udbodhan / Chennai Math storefronts for both Bengali and English editions. Cover leads pending independent QA."
+    },
+    {
+      "book_id": 150,
+      "canonical_title": "Swami Adbhutananda: As We Saw Him",
+      "author": "Chandrashekhar Chattopadhyay",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Sri Sri Latu Maharajer Smriti-Katha\" Udbodhan",
+        "\"Swami Adbhutananda As We Saw Him\" Chennai Math",
+        "archive.org details in.ernet.dli.2015.355819"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/sri-sri-latu-maharajer-smriti-katha/1237499000010663169",
+          "observation": "HTTP 200 actual publisher distributor retail page for Bengali edition: 'Sri Sri Latu Maharajer Smriti-Katha' by Chandrashekhar Chattopadhyay, published by Udbodhan Karyalaya (paperback, ISBN 9788180403408, SKU UDB013, price ₹180). In-print publication, not a free reader."
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-adbhutananda-as-we-saw-him/1237499000010758805",
+          "observation": "HTTP 200 actual publisher retail page for English translation: 'Swami Adbhutananda As We Saw Him', translated by Swami Satswarupananda, published by Sri Ramakrishna Math Chennai (paperback, ISBN 9788178236421, SKU MDE022, price ₹175). In-print translation, not a free reader."
+        },
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.355819",
+          "observation": "HTTP 200 Digital Library of India upload on Internet Archive. Title: 'Sri Sri Latu Maharajer Smriti- Katha Ed.2nd' (1953, 28.1 MB PDF). Held under rights check / unpermitted scan; commercial in-print work published by Udbodhan; not an approved free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/sri-sri-latu-maharajer-smriti-katha/1237499000010663169",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/sri-sri-latu-maharajer-smriti-katha/1237499000010663169",
+          "page_title": "Sri Sri Latu Maharajer Smriti-Katha | Advaita Ashrama",
+          "edition_match": "Bengali, Chandrashekhar Chattopadhyay, Udbodhan Karyalaya / Advaita Ashrama, paperback, ISBN 9788180403408, SKU UDB013.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB013_1.jpg/1237499000010703390/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 805,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 33065,
+            "sha256": "e2afbd4e7170134f7bea7d4c115b45642ceb653576257638fa4a7311542cfeba",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        },
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-adbhutananda-as-we-saw-him/1237499000010758805",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-adbhutananda-as-we-saw-him/1237499000010758805",
+          "page_title": "Swami Adbhutananda As We Saw Him | Advaita Ashrama",
+          "edition_match": "English translation, Swami Satswarupananda, Sri Ramakrishna Math Chennai / Advaita Ashrama, paperback, ISBN 9788178236421, SKU MDE022.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MDE022_1.jpg/1237499000010827970/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 805,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 216432,
+            "sha256": "ba723bdd349fe4cd449b4cb698e29f95f6d8fbc2cd7dfc1ceec2620736e0f543",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Primary biographical memoirs of Swami Adbhutananda (Latu Maharaj) by devotee Chandrashekhar Chattopadhyay, published in Bengali by Udbodhan Karyalaya (ISBN 9788180403408) and in English translation by Sri Ramakrishna Math Chennai (ISBN 9788178236421). In-print commercial editions; DLI scan on Archive.org (item in.ernet.dli.2015.355819, 1953 2nd ed.) held under copyright and verification review; no authorized free digital edition verified on open public repositories."
+    },
+    {
+      "book_id": 151,
+      "canonical_title": "Adbhutananda Prasanga",
+      "author": "Swami Siddhananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Adbhutananda Prasanga\" Advaita Ashrama",
+        "\"অদ্ভুতানন্দ প্রসঙ্গ\" উদ্বোধন",
+        "\"Adbhutananda Prasanga\" \"Siddhananda\" OR \"Kumudranjan Sen\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/adbhutananda-prasanga-bengali/1237499000010664069",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Udbodhan Karyalaya, distributed by Advaita Ashrama (paperback, ISBN 9788180403002, SKU UDB012, price ₹100). Bengali reminiscences and teachings of Swami Adbhutananda compiled by Swami Siddhananda (Charu Maharaj, 1887–1966). Under Indian Copyright Act 1957 Section 22, copyright subsists for 60 years post-mortem (until 1 January 2027). In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/adbhutananda-prasanga-bengali/1237499000010664069",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/adbhutananda-prasanga-bengali/1237499000010664069",
+          "page_title": "Adbhutananda Prasanga (Bengali) | Advaita Ashrama",
+          "edition_match": "Bengali, Swami Siddhananda / Kumudranjan Sen, Udbodhan Karyalaya / Advaita Ashrama, paperback, ISBN 9788180403002, SKU UDB012.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB012_1.jpg/1237499000010703361/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 798,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 65953,
+            "sha256": "034cb9ef3cb47940fbf632b310dd7d6dc0ff7b0fad6b80de167c6ac823d21ce6",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Bengali compilation of spiritual conversations and reminiscences of Swami Adbhutananda, compiled by Swami Siddhananda (1887–1966), published by Udbodhan Karyalaya, Kolkata (ISBN 9788180403002). Compiler passed away on 10 March 1966; under Section 22 of the Indian Copyright Act 1957, copyright subsists until 2027. In-print commercial edition; no authorized complete free digital edition verified on open public repositories."
+    },
+    {
+      "book_id": 152,
+      "canonical_title": "Eternal Words: Spiritual Instructions of Swami Adbhutananda",
+      "author": "Swami Siddhananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Satkatha\" Advaita Ashrama",
+        "\"Eternal Words - Spiritual Instructions of Swami Adbhutananda\"",
+        "commons.wikimedia.org File:সৎকথা_-_স্বামী_সিদ্ধানন্দ_(১৯২৩).pdf"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/satkatha/1237499000010663025",
+          "observation": "HTTP 200 actual publisher distributor retail page for Bengali edition: 'Satkatha' compiled by Swami Siddhananda, published by Udbodhan Karyalaya (paperback, ISBN 9788180403323, SKU UDB025, price ₹80). In-print publication, not a free reader."
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/products/eternal-words-spiritual-instructions-of-swami-adbhutananda/1237499000010269853",
+          "observation": "HTTP 200 actual publisher retail page for English translation: 'Eternal Words', published by Advaita Ashrama (paperback, ISBN 9788175054769, SKU ADE021, price ₹100). In-print translation, not a free reader."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:%E0%A6%B8%E0%A7%8E%E0%A6%95%E0%A6%A5%E0%A6%BE_-_%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AE%E0%A7%80_%E0%A6%B8%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A6%A8%E0%A7%8D%E0%A6%A6_(%E0%A7%A7%E0%A7%AF%E0%A7%A8%E0%A7%A9).pdf",
+          "observation": "HTTP 200 Wikimedia Commons upload of 1923 1st edition scan (147 pages, 32.0 MB PDF). Compiler Swami Siddhananda passed away on 10 March 1966. Under Section 22 of the Indian Copyright Act 1957, copyright in India subsists for 60 years post-mortem (until 1 January 2027). Held under Indian copyright law; not approved as an open public reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/satkatha/1237499000010663025",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/satkatha/1237499000010663025",
+          "page_title": "Satkatha | Advaita Ashrama",
+          "edition_match": "Bengali, Swami Siddhananda, Udbodhan Karyalaya / Advaita Ashrama, paperback, ISBN 9788180403323, SKU UDB025.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB025_1.jpg/1237499000010703682/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 806,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 51964,
+            "sha256": "332aa0539c8d5d762f4d7da7581b52701165f01a3b53de3bf8434173684bd32f",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        },
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/eternal-words-spiritual-instructions-of-swami-adbhutananda/1237499000010269853",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/eternal-words-spiritual-instructions-of-swami-adbhutananda/1237499000010269853",
+          "page_title": "Eternal Words - Spiritual Instructions of Swami Adbhutananda | Advaita Ashrama",
+          "edition_match": "English translation, Swami Siddhananda, Advaita Ashrama, paperback, ISBN 9788175054769, SKU ADE021.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/ADE021_1.jpg/1237499000010325384/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 721,
+            "height": 1071,
+            "format": "JPEG",
+            "bytes": 163697,
+            "sha256": "80048316b54d4db59f3d81dece146e22d4a5598423dc51eac07ec7efbcaa998c",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Spiritual counsels and dialogues of Swami Adbhutananda, compiled in Bengali as 'Satkatha' by Swami Siddhananda (1887–1966) and translated into English as 'Eternal Words' by Advaita Ashrama (ISBN 9788175054769). While a 1923 1st edition scan is hosted on Wikimedia Commons, compiler Swami Siddhananda died on 10 March 1966, meaning copyright subsists in India under Section 22 until 1 January 2027. Held under copyright; in-print commercial editions; no authorized complete free digital reader."
+    },
+    {
+      "book_id": 153,
+      "canonical_title": "তাপস লাটুমহারাজের অনুধ্যান",
+      "author": "Mahendranath Dutta",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Tapas Latu Maharajer Anudhyan\" Advaita Ashrama",
+        "\"তাপস লাটুমহারাজের অনুধ্যান\" মহেন্দ্রনাথ দত্ত",
+        "site:shop.advaitaashrama.org \"tapas-latu-maharajer-anudhyan-bengali\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/tapas-latu-maharajer-anudhyan-bengali/1237499000042857170",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by The Mahendra Publishing Committee, distributed by Advaita Ashrama (paperback, SKU MPDDBE001, price ₹60). Bengali biographical reflections on Swami Adbhutananda by Mahendranath Dutta (1869–1956). Physical print monograph, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/tapas-latu-maharajer-anudhyan-bengali/1237499000042857170",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/tapas-latu-maharajer-anudhyan-bengali/1237499000042857170",
+          "page_title": "Tapas Latu Maharajer Anudhyan (Bengali) | Advaita Ashrama",
+          "edition_match": "Bengali, Mahendranath Dutta, The Mahendra Publishing Committee / Advaita Ashrama, paperback, SKU MPDDBE001.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MPDDBE001_01.jpg/1237499000043656367/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 488,
+            "height": 740,
+            "format": "JPEG",
+            "bytes": 74819,
+            "sha256": "45e9bb939a9c30ce5cb3382d2d0c6912fd4b1813d2a846b948996a98b5e81ee8",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Intimate biographical reflections on the austere spiritual life of Swami Adbhutananda (Latu Maharaj) by Mahendranath Dutta (1869–1956), published by The Mahendra Publishing Committee, Kolkata, distributed by Advaita Ashrama (SKU MPDDBE001). While the author passed away in 1956 (>65 years post-mortem, public domain in India), no complete digital scan is verified on open public repositories; circulated as a physical print monograph only."
+    }
+  ]
+}

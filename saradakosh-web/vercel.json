@@ -1,7 +1,9 @@
 {
   "git": {
     "deploymentEnabled": {
-      "codex/books-library-v1": false
+      "codex/books-library-v1": false,
+      "codex/books-library-v2": false,
+      "staging": false
     }
   }
 }

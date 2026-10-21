@@ -1,0 +1,2810 @@
+{
+  "task": "SARADAKOSH-V2-01",
+  "scope": "Book IDs85–168; research only",
+  "baseline_sha": "4308284efb7ad886e673286b3deed70a131418eb",
+  "method": "Actual web queries and page inspections. Found catalogues/scans do not automatically establish complete free text or rights. No private Drive identifiers.",
+  "model_provenance": "gpt-6.1-sol High research worker, parent-selected canonical runtime; no paid external model/provider service used.",
+  "checkpoint": 84,
+  "rows": [
+    {
+      "id": 85,
+      "person": "Swami Premananda",
+      "canonical_title": "প্রেমানন্দ প্রেমকথা",
+      "original_title": "প্রেমানন্দ প্রেমকথা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "প্রেমানন্দ প্রেমকথা",
+      "author": "Akshay Chaitanya",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"প্রেমানন্দ প্রেমকথা\" \"অক্ষয়\" pdf OR \"Premananda Premkatha\" Akshay Chaitanya",
+        "Premananda Premkatha Akshay Chaitanya book",
+        "\"প্রেমানন্দ প্রেমকথা\"",
+        "\"Premananda\" \"Premkatha\""
+      ],
+      "candidates": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.267182",
+          "label": "Bengali",
+          "evidence": "Identity matches Akshaychaitanya,1957secondedition,Nababharat,DLI BirChandra provenance,226scans. DirectPDF failed web fetch; subsequent public OCRHTTP200 title/end matter inspection recorded below. Completepagecontinuity/rights remain held.",
+          "disposition": "hold_completeness_rights"
+        },
+        {
+          "url": "https://granthagara.com/boi/333368-premanandapremkatha-ed-2nd/",
+          "label": "Bengali",
+          "evidence": "Inspected intermediary: 226 pages; points to above DLI item; not independent rights authority.",
+          "disposition": "discovery_only"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Potential complete DLI scan; no publication approval pending page/rights checks.",
+      "followup_inspection": {
+        "checked_at": "2026-10-15",
+        "url": "https://archive.org/details/in.ernet.dli.2015.267182",
+        "method": "Public IA metadata plus direct OCR GET",
+        "http_status": 200,
+        "ocr_bytes": 847303,
+        "result": "Opening title/author Akshaychaitanya,1957secondedition and ending publisher advertisements inspected; complete page sequence and edition-specific rights remain unconfirmed."
+      }
+    },
+    {
+      "id": 86,
+      "person": "Swami Premananda",
+      "canonical_title": "স্বামী প্রেমানন্দের পত্রাবলী",
+      "original_title": "স্বামী প্রেমানন্দের পত্রাবলী",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী প্রেমানন্দের পত্রাবলী",
+      "author": "Swami Premananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"স্বামী প্রেমানন্দের পত্রাবলী\" OR \"Swami Premanander Patrabali\" pdf",
+        "প্রেমানন্দের পত্রাবলী pdf",
+        "\"Swami Premanander Patrabali\"",
+        "\"স্বামী প্রেমানন্দের পত্রাবলী\" pdf archive"
+      ],
+      "candidates": [
+        {
+          "url": "https://srisaradamath.org/publication/nibodhata/370102.pdf",
+          "label": "Bengali",
+          "evidence": "Opened six-page article with citations to 1368 Udbodhan edition pp171–172; citation is not complete target.",
+          "disposition": "rejected_excerpt"
+        },
+        {
+          "url": "https://www.scribd.com/document/527409081/Udbodhan",
+          "label": "Bengali",
+          "evidence": "Search result is catalogue listing with price, not target letters.",
+          "disposition": "rejected_catalogue"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verified complete free text; English Teachings and Reminiscences is selected letters, not proof of all Bengali letters."
+    },
+    {
+      "id": 87,
+      "person": "Swami Premananda",
+      "canonical_title": "স্বামী প্রেমানন্দ",
+      "original_title": "স্বামী প্রেমানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী প্রেমানন্দ",
+      "author": "Gen",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"স্বামী প্রেমানন্দ\" \"Gen\" book pdf OR \"Swami Premananda\" Bengali biography",
+        "স্বামী প্রেমানন্দ জ্ঞান book pdf",
+        "\"Swami Premananda\" Bengali biography pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://belurmath.org/holy-lives/swami-premananda/",
+          "label": "English",
+          "evidence": "Opened official biographical article; no book edition identity or Bengali complete target.",
+          "disposition": "rejected_article"
+        },
+        {
+          "url": "https://estudantedavedanta.net/Swami-Premananda.pdf",
+          "label": "English",
+          "evidence": "Search identifies Teachings and Reminiscences, selected translated material; open failed. Different English title, not established translation of ambiguous baseline.",
+          "disposition": "rejected_unproven_identity"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Baseline author 'Gen' unresolved; cannot equate any generic biography."
+    },
+    {
+      "id": 88,
+      "person": "Swami Niranjanananda",
+      "canonical_title": "Niranjanananda Charit",
+      "original_title": "নিরঞ্জনানন্দ চরিত",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "নিরঞ্জনানন্দ চরিত",
+      "author": null,
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"নিরঞ্জনানন্দ চরিত\" OR \"Niranjanananda Charit\" pdf",
+        "\"নিরঞ্জনানন্দ চরিত\" pdf archive"
+      ],
+      "candidates": [
+        {
+          "url": "https://udbodhan.org/product/স্নিরঞ্জনানন্দ-চরিত-niranjanananda-chari/",
+          "label": "Bengali",
+          "evidence": "Opened official publisher page, 255 pages ₹225, purchase buttons; current publisher home offers paid digital licence/sample.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Identity found; no complete free edition verified."
+    },
+    {
+      "id": 89,
+      "person": "Swami Ramakrishnananda",
+      "canonical_title": "Swami Ramakrishnananda: Apostle of Sri Ramakrishna to the South",
+      "original_title": "Swami Ramakrishnananda: Apostle of Sri Ramakrishna to the South",
+      "original_language": "English",
+      "english_title": "Swami Ramakrishnananda: Apostle of Sri Ramakrishna to the South",
+      "bengali_title": null,
+      "author": "Swami Tapasyananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "Swami Ramakrishnananda Apostle South Tapasyananda pdf complete"
+      ],
+      "candidates": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-ramakrishnananda-apostle-of-sri-ramakrishna-to-the-south/1237499000010758697",
+          "label": "English",
+          "evidence": "Opened official seller: Tapasyananda, Chennai Math, English 288 pages ₹140. No full free reader offered.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://www.exoticindia.com/book/details/swami-ramakrishnananda-apostle-of-sri-ramakrishna-to-south-nak142/",
+          "label": "English",
+          "evidence": "Search description gives 2012 ISBN9788178236292 296 pages; differs in pagination from official current edition; paid.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verified complete free text; edition pagination discrepancy retained."
+    },
+    {
+      "id": 90,
+      "person": "Swami Ramakrishnananda",
+      "canonical_title": "Swami Ramakrishnananda As We Saw Him",
+      "original_title": "Swami Ramakrishnananda As We Saw Him: Reminiscences of Monastic and Lay Devotees",
+      "original_language": "English",
+      "english_title": "Swami Ramakrishnananda As We Saw Him: Reminiscences of Monastic and Lay Devotees",
+      "bengali_title": null,
+      "author": "A Compilation",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Swami Ramakrishnananda As We Saw Him\" pdf free"
+      ],
+      "candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-as-we-saw-him/swami-ramakrishnananda-as-we-saw-him.html",
+          "label": "English",
+          "evidence": "Opened institutional HTML archive sourced from englishbooks.rkmm.org: compilation Chennai Math, digital publication March2024.53 articles; biography, monastic/lay reminiscences, death reports, letters, appendices, references and glossary present. Free text without login. Publisher catalogue525p confirms identity.",
+          "disposition": "candidate_complete_institutional_reader"
+        },
+        {
+          "url": "https://istore.chennaimath.org/products/swami-ramakrishnananda-as-we-saw-him/3690041000102339552",
+          "label": "English",
+          "evidence": "Opened publisher: compilation English525p ₹180, paid Kindle/Play links.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-as-we-saw-him/swami-ramakrishnananda-as-we-saw-him.html",
+          "label": "English",
+          "rights": "Institution-hosted free reader; no reproduction licence asserted"
+        }
+      ],
+      "status": "public_candidate_found",
+      "unresolved": "Print edition year not shown in HTML; link only, no reproduction licence asserted."
+    },
+    {
+      "id": 91,
+      "person": "Swami Ramakrishnananda",
+      "canonical_title": "Swami Ramakrishnananda: A Portrait in Pictures",
+      "original_title": "Swami Ramakrishnananda: A Portrait in Pictures",
+      "original_language": "English",
+      "english_title": "Swami Ramakrishnananda: A Portrait in Pictures",
+      "bengali_title": null,
+      "author": "A Compilation",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Swami Ramakrishnananda\" \"Portrait in Pictures\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-a-portrait-in-pictures/swami-ramakrishnananda-a-portrait-in-pictures.html",
+          "label": "English",
+          "evidence": "Opened institution complete21-article HTML archive1865 lines with chapter contents, life narrative, photographs, appendices1–9, bibliography. Title matches publisher129p compilation. No login/payment.",
+          "disposition": "candidate_complete_institutional_reader"
+        }
+      ],
+      "approved_public_candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-a-portrait-in-pictures/swami-ramakrishnananda-a-portrait-in-pictures.html",
+          "label": "English",
+          "rights": "Institution-hosted free reader; no reproduction licence asserted"
+        }
+      ],
+      "status": "public_candidate_found",
+      "unresolved": "HTML digital edition; print image/layout equivalence not certified. No reuse licence inferred."
+    },
+    {
+      "id": 92,
+      "person": "Swami Ramakrishnananda",
+      "canonical_title": "Swami Ramakrishnananda: His Life and Legacy",
+      "original_title": "Swami Ramakrishnananda: His Life and Legacy",
+      "original_language": "English",
+      "english_title": "Swami Ramakrishnananda: His Life and Legacy",
+      "bengali_title": null,
+      "author": "A Compilation",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Swami Ramakrishnananda\" \"His Life and Legacy\" pdf",
+        "\"Swami Ramakrishnananda His Life and Legacy\" site:cs.rkmvu.ac.in"
+      ],
+      "candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-his-life-and-legacy/swami-ramakrishnananda-his-life-and-legacy.html",
+          "label": "English",
+          "evidence": "Opened institutional21-article1067-line text: Chennai compilation; life sketch, reminiscences, teachings, bibliography and books list present. Official Chennai198p book description matches. Free without login.",
+          "disposition": "candidate_complete_institutional_reader"
+        },
+        {
+          "url": "https://istore.chennaimath.org/products/swami-ramakrishnananda-his-life-and-legacy/3690041000102330864",
+          "label": "English",
+          "evidence": "Publisher search result English198p highly subsidized ₹10 edition; sample/paid ebook not free full text.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/swami-ramakrishnananda-his-life-and-legacy/swami-ramakrishnananda-his-life-and-legacy.html",
+          "label": "English",
+          "rights": "Institution-hosted free reader; no reproduction licence asserted"
+        }
+      ],
+      "status": "public_candidate_found",
+      "unresolved": "Edition year absent in HTML; institutional access provenance supports external reader link only."
+    },
+    {
+      "id": 93,
+      "person": "Swami Ramakrishnananda",
+      "canonical_title": "Swami Ramakrishnanander Smritimala",
+      "original_title": "স্বামী রামকৃষ্ণানন্দের স্মৃতিমালা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী রামকৃষ্ণানন্দের স্মৃতিমালা",
+      "author": "Swami Chetanananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"স্বামী রামকৃষ্ণানন্দের স্মৃতিমালা\" OR \"Swami Ramakrishnanander Smritimala\" Chetanananda pdf",
+        "\"Ramakrishnanander Smritimala\" pdf OR \"রামকৃষ্ণানন্দের স্মৃতিমালা\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://udbodhan.org/product/স্বামী-রামকৃষ্ণানন্দের-স/",
+          "label": "Bengali",
+          "evidence": "Opened publisher: title includes Tar Patra O Rachanasangraha; Chetanananda and Vimalatmananda roles described. ₹350 cart; not free text.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-ramakrishnanander-smritimala/1237499000010647863",
+          "label": "Bengali",
+          "evidence": "Search metadata683p ISBN9788180405433; direct open timed out.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "English As We Saw Him draws material from this book but does not prove complete Bengali equivalence."
+    },
+    {
+      "id": 94,
+      "person": "Swami Ramakrishnananda",
+      "canonical_title": "Sevadarshe Ramakrishnananda",
+      "original_title": "সেবাদর্শে রামকৃষ্ণানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "সেবাদর্শে রামকৃষ্ণানন্দ",
+      "author": "Swami Prameyananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"সেবাদর্শে রামকৃষ্ণানন্দ\" OR \"Sevadarshe Ramakrishnananda\" Prameyananda pdf",
+        "সেবাদর্শে রামকৃষ্ণানন্দ প্রমেয়ানন্দ বই",
+        "Sevadarsha Ramakrishnananda Prameyananda book"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.ramakrishnamath.in/pages/book_store/AdvaitaAshramaBooklist.htm",
+          "label": "Bengali",
+          "evidence": "Opened official catalogue records Bengali title/Prameyananda with prices, not full text.",
+          "disposition": "rejected_catalogue"
+        },
+        {
+          "url": "https://play.google.com/store/books/details?id=G7VcDwAAQBAJ",
+          "label": "Hindi",
+          "evidence": "Search result Nagpur2018 translated edition221p $4 with free sample; Hindi not approved English/Bengali target.",
+          "disposition": "rejected_paid_translation"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verified complete free Bengali/English text."
+    },
+    {
+      "id": 95,
+      "person": "Swami Ramakrishnananda",
+      "canonical_title": "The Complete Works of Swami Ramakrishnananda",
+      "original_title": "The Complete Works of Swami Ramakrishnananda",
+      "original_language": "English",
+      "english_title": "The Complete Works of Swami Ramakrishnananda",
+      "bengali_title": null,
+      "author": "Swami Ramakrishnananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"The Complete Works of Swami Ramakrishnananda\" full text volumes"
+      ],
+      "candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+          "label": "English 1–3",
+          "evidence": "Web parser failed on5.8MB page; direct HTTPS requests returned200 with5,789,244 bytes. Parsed288 articles, Chennai Math title/author/publisher, volume1.1–1.3,2.1–2.3,3.1–3.3 ending True Education. Vol3 contains letters and lectures. Official publisher3vol1466p catalogue confirms canonical series.",
+          "disposition": "candidate_complete_institutional_reader"
+        },
+        {
+          "url": "https://estudantedavedanta.net/The-Message-Of-Eternal-Wisdom.pdf",
+          "label": "English",
+          "evidence": "Search metadata says revised1922 Complete Works; predates2012 three-volume compilation, cannot substitute.",
+          "disposition": "rejected_older_incomplete_compilation"
+        }
+      ],
+      "approved_public_candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+          "label": "English 1–3",
+          "rights": "Institution-hosted free reader; no reproduction licence asserted"
+        }
+      ],
+      "status": "public_candidate_found",
+      "unresolved": "One canonical book; candidate covers English volumes1–3. Institutional HTML is digital edition, no scan-page equality or reproduction licence claimed."
+    },
+    {
+      "id": 96,
+      "person": "Swami Ramakrishnananda",
+      "canonical_title": "Life of Sri Ramanuja",
+      "original_title": "রামানুজ চরিত",
+      "original_language": "Bengali",
+      "english_title": "Life of Sri Ramanuja",
+      "bengali_title": null,
+      "author": "Swami Ramakrishnananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"রামানুজ চরিত\" \"রামকৃষ্ণানন্দ\" pdf OR \"Life of Sri Ramanuja\" Ramakrishnananda pdf",
+        "\"Life of Sri Ramanuja\" \"Ramakrishnananda\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000260059",
+          "label": "English",
+          "evidence": "Parsed vol2 part1, lineage chapters2.1.1.1–10 and life chapters2.1.2.1–31 through installation/death. Complete work incorporated in official omnibus; English translation rather than Bengali original.",
+          "disposition": "candidate_complete_institutional_reader"
+        },
+        {
+          "url": "https://estudantedavedanta.net/Life_Ramanuja_Ramakrishnanandac.pdf",
+          "label": "English",
+          "evidence": "PDF discovered; web open failed, no page/rights verification.",
+          "disposition": "hold_access_rights"
+        },
+        {
+          "url": "https://www.rarebooksocietyofindia.org/postDetail.php?id=196174216674_10155069175276675",
+          "label": "English",
+          "evidence": "Opened1959 Madras scan discovery page, shortened reader/download links not yet verified.",
+          "disposition": "discovery_only"
+        }
+      ],
+      "approved_public_candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000260059",
+          "label": "English",
+          "rights": "Institution-hosted free reader; no reproduction licence asserted"
+        }
+      ],
+      "status": "public_candidate_found",
+      "unresolved": "Bengali original not found; English omnibus candidate excludes2017 expanded colour-photo edition additions."
+    },
+    {
+      "id": 97,
+      "person": "Swami Ramakrishnananda",
+      "canonical_title": "God and Divine Incarnation",
+      "original_title": "God and Divine Incarnation",
+      "original_language": "English",
+      "english_title": "God and Divine Incarnation",
+      "bengali_title": null,
+      "author": "Swami Ramakrishnananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"God and Divine Incarnation\" Ramakrishnananda pdf",
+        "\"God and Divine Incarnations\" \"Ramakrishnananda\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000256029",
+          "label": "English",
+          "evidence": "Omnibus vol1 part2 chapters1.2.3–20, from God through Sri Krishna Avatara. Opening/final substantive bodies inspected. Matches standalone160p work contents via publisher/retailer descriptions.",
+          "disposition": "candidate_complete_institutional_reader"
+        },
+        {
+          "url": "https://sfvedanta.org/books/god-and-divine-incarnations/",
+          "label": "English",
+          "evidence": "Official society search metadata:160p Ramakrishnananda ISBN8171204929 $3; not free reader.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000256029",
+          "label": "English",
+          "rights": "Institution-hosted free reader; no reproduction licence asserted"
+        }
+      ],
+      "status": "public_candidate_found",
+      "unresolved": "Candidate is incorporated text within omnibus; standalone pagination/front matter not duplicated."
+    },
+    {
+      "id": 98,
+      "person": "Swami Ramakrishnananda",
+      "canonical_title": "Sri Krishna: Pastoral and the King-Maker",
+      "original_title": "Sri Krishna: Pastoral and the King-Maker",
+      "original_language": "English",
+      "english_title": "Sri Krishna: Pastoral and the King-Maker",
+      "bengali_title": null,
+      "author": "Swami Ramakrishnananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Sri Krishna\" \"Pastoral\" \"Ramakrishnananda\" pdf",
+        "\"Sri Krishna: Pastoral and the King-Maker\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000254171",
+          "label": "English",
+          "evidence": "Directly parsed complete adjacent Pastoral Sri Krishna and Kingmaker Sri Krishna chapters1.2.1–2;96k and98k characters respectively. Title/author confirmed via omnibus and Chennai descriptions.",
+          "disposition": "candidate_complete_institutional_reader"
+        }
+      ],
+      "approved_public_candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000254171",
+          "label": "English",
+          "rights": "Institution-hosted free reader; no reproduction licence asserted"
+        }
+      ],
+      "status": "public_candidate_found",
+      "unresolved": "Two constituent lectures in omnibus; standalone edition year not asserted."
+    },
+    {
+      "id": 99,
+      "person": "Swami Ramakrishnananda",
+      "canonical_title": "The Soul of Man",
+      "original_title": "The Soul of Man",
+      "original_language": "English",
+      "english_title": "The Soul of Man",
+      "bengali_title": null,
+      "author": "Swami Ramakrishnananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"The Soul of Man\" \"Ramakrishnananda\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000256973",
+          "label": "English",
+          "evidence": "Omnibus vol1 part3 four chapters:Science Modern and Ancient; Determination of Conscious Tendencies; Regions Higher and Lower; Locus of the Soul. All have substantial bodies32k–55k chars. Institutional annual report independently calls standalone four1909 lectures.",
+          "disposition": "candidate_complete_institutional_reader"
+        },
+        {
+          "url": "https://rkmvu.ac.in/wp-content/uploads/2024/10/RKMVERI-Annual-Academic-Report-2023-2024.pdf",
+          "label": "Bengali",
+          "evidence": "Search report mentions translation project; report itself is not translated full book.",
+          "disposition": "rejected_report"
+        }
+      ],
+      "approved_public_candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000256973",
+          "label": "English",
+          "rights": "Institution-hosted free reader; no reproduction licence asserted"
+        }
+      ],
+      "status": "public_candidate_found",
+      "unresolved": "Standalone140p edition omitted front matter; English incorporated work available."
+    },
+    {
+      "id": 100,
+      "person": "Swami Ramakrishnananda",
+      "canonical_title": "The Universe and Man",
+      "original_title": "The Universe and Man",
+      "original_language": "English",
+      "english_title": "The Universe and Man",
+      "bengali_title": null,
+      "author": "Swami Ramakrishnananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"The Universe and Man\" Ramakrishnananda pdf",
+        "\"Universe and Man\" Ramakrishnananda archive.org",
+        "\"Universe and Man\" \"contents\" Ramakrishnananda",
+        "\"The Message Of Eternal Wisdom\" \"CONTENTS\" \"Space\"",
+        "\"The Universe and Man\" \"six lectures\" Ramakrishnananda"
+      ],
+      "candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+          "label": "English",
+          "evidence": "Parsed six lecture contents across1.1.6 Message of Sri Ramakrishna and2.3.1–5 Universe,Space/Time,Self-imposed Struggle,Vedanta,Bhakti.1938 Message of Eternal Wisdom indexed contents confirms six titles; full bodies present.",
+          "disposition": "candidate_complete_institutional_reader"
+        },
+        {
+          "url": "https://play.google.com/store/books/details?id=wRO2EAAAQBAJ",
+          "label": "English",
+          "evidence": "Publisher2023 standalone119p paid$0.99/sample.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+          "label": "English",
+          "rights": "Institution-hosted free reader; no reproduction licence asserted"
+        }
+      ],
+      "status": "public_candidate_found",
+      "unresolved": "Omnibus rearranges the six lectures across two sections. Six lecture bodies mapped; separate standalone edition front matter, pagination and layout not reproduced or certified. Institutional free reading access does not establish a redistribution licence.",
+      "lecture_coverage": [
+        {
+          "source_order": "I",
+          "title": "The Message of Sri Ramakrishna",
+          "source_printed_page": 3,
+          "omnibus_section": "1.1.6",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000254125",
+          "inspected_body_characters": 27540
+        },
+        {
+          "source_order": "II",
+          "title": "The Universe",
+          "source_printed_page": 20,
+          "omnibus_section": "2.3.1",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268137",
+          "inspected_body_characters": 26053
+        },
+        {
+          "source_order": "III",
+          "title": "Space and Time",
+          "source_printed_page": 35,
+          "omnibus_section": "2.3.2",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268143",
+          "inspected_body_characters": 11798
+        },
+        {
+          "source_order": "IV",
+          "title": "The Self-imposed Struggle",
+          "source_printed_page": 45,
+          "omnibus_section": "2.3.3",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268151",
+          "inspected_body_characters": 26876
+        },
+        {
+          "source_order": "V",
+          "title": "The Vedanta",
+          "source_printed_page": 61,
+          "omnibus_section": "2.3.4",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268159",
+          "inspected_body_characters": 23652
+        },
+        {
+          "source_order": "VI",
+          "title": "Bhakti",
+          "source_printed_page": 76,
+          "omnibus_section": "2.3.5",
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000268165",
+          "inspected_body_characters": 15865
+        }
+      ],
+      "source_contents_evidence": {
+        "url": "https://estudantedavedanta.net/The-Message-Of-Eternal-Wisdom.pdf",
+        "evidence": "Indexed1938contents groups exactly these six lectures under The Universe and Man; contents page numbers explicitly mapped above. Direct PDF access failed/403 in earlier inspection; this is indexed TOC evidence, not a validated working PDF. Six corresponding institutional article bodies directly fetchedHTTP200 and parsed; anchor/title presence rechecked2026-10-15."
+      }
+    },
+    {
+      "id": 101,
+      "person": "Swami Ramakrishnananda",
+      "canonical_title": "For Thinkers on Education",
+      "original_title": "For Thinkers on Education",
+      "original_language": "English",
+      "english_title": "For Thinkers on Education",
+      "bengali_title": null,
+      "author": "Swami Ramakrishnananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"For Thinkers on Education\" Ramakrishnananda pdf",
+        "\"For Thinkers on Education\" full text",
+        "\"For Thinkers on Education\" contents Ramakrishnananda"
+      ],
+      "candidates": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/for-thinkers-on-education/1237499000010765023",
+          "label": "English",
+          "evidence": "Opened official234p ISBN9788178230559 paid title:22 writings.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+          "label": "English",
+          "evidence": "Part3.2.2 has20named chapters plus5small numbered parts; all22standalone writings not certified.",
+          "disposition": "hold_completeness"
+        },
+        {
+          "url": "https://estudantedavedanta.net/oholybooks.html",
+          "label": "English",
+          "evidence": "Index search lists target; GET403 security HTML, PDF not obtained.",
+          "disposition": "hold_access_rights"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Exact omnibus coverage unresolved."
+    },
+    {
+      "id": 102,
+      "person": "Swami Ramakrishnananda",
+      "canonical_title": "Search after Happiness",
+      "original_title": "Search after Happiness",
+      "original_language": "English",
+      "english_title": "Search after Happiness",
+      "bengali_title": null,
+      "author": "Swami Ramakrishnananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Search after Happiness\" Ramakrishnananda pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287185",
+          "label": "English",
+          "evidence": "2006 standalone14chapter TOC compared:12sequential3.2.3.1–12 plus Mind and Maya3.2.1.10 and Sri Ramakrishna and His Mission1.1.5. All14 substantial bodies present.",
+          "disposition": "candidate_complete_institutional_reader"
+        },
+        {
+          "url": "https://www.exoticindiaart.com/book/details/search-after-happiness-nan516/",
+          "label": "English",
+          "evidence": "Opened2006 ISBN9788178234144 200p publisher note and14chapter contents; paid samples.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html#a-6211928000000287185",
+          "label": "English",
+          "rights": "Institution-hosted free reader; no reproduction licence asserted"
+        }
+      ],
+      "status": "public_candidate_found",
+      "unresolved": "Omnibus chapters rearranged; front matter not identical."
+    },
+    {
+      "id": 103,
+      "person": "Swami Ramakrishnananda",
+      "canonical_title": "Sri Ramakrishna, Our Refuge",
+      "original_title": "Sri Ramakrishna, Our Refuge",
+      "original_language": "English",
+      "english_title": "Sri Ramakrishna, Our Refuge",
+      "bengali_title": null,
+      "author": "Swami Ramakrishnananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Sri Ramakrishna Our Refuge\" Ramakrishnananda pdf",
+        "\"Ramakrishna Our Refuge\" \"letters\" free",
+        "\"Sri Ramakrishna Our Refuge\" contents letters"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.vivekanandabookworld.com/product-page/sri-ramakrishna-our-refuge-letters-of-swami-ramakrishnananda",
+          "label": "English",
+          "evidence": "Opened Math Hyderabad:48letters,68p ISBN9788178234335 ₹18.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://cs.rkmvu.ac.in/~tamal/EssentialBooks/the-complete-works-of-swami-ramakrishnananda/the-complete-works-of-swami-ramakrishnananda.html",
+          "label": "English",
+          "evidence": "Vol3letters present; exact48letter selection not mapped.",
+          "disposition": "hold_completeness"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No standalone free text approved."
+    },
+    {
+      "id": 104,
+      "person": "Swami Ramakrishnananda",
+      "canonical_title": "Days in an Indian Monastery",
+      "original_title": "Days in an Indian Monastery",
+      "original_language": "English",
+      "english_title": "Days in an Indian Monastery",
+      "bengali_title": null,
+      "author": "Sister Devamata",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Days in an Indian Monastery\" \"Devamata\" full text Gutenberg",
+        "\"Days in an Indian Monastery\" archive.org/details"
+      ],
+      "candidates": [
+        {
+          "url": "https://archive.org/details/daysinindianmona0000sist",
+          "label": "English",
+          "evidence": "Opened IA SisterDevamata1927 record. Follow-up publicmetadata/OCRHTTP200 verified no observedrestrictionflags and opening/end matter; final pagecontinuity/rights held as detailed below.",
+          "disposition": "hold_access_completeness"
+        },
+        {
+          "url": "https://estudantedavedanta.net/Days_in_an_Indian_Monastery_Devamata.pdf",
+          "label": "English",
+          "evidence": "Index1927copyright and IA2022scan provenance. Web open failed; direct GET403 security HTML.",
+          "disposition": "hold_access_rights"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Public OCR accessible without login and plausible full scan; final page continuity/rights validation remains held. Alternate estudantedavedanta PDF403 not a working reader.",
+      "followup_inspection": {
+        "checked_at": "2026-10-15",
+        "url": "https://archive.org/details/daysinindianmona0000sist",
+        "method": "Public IA metadata plus direct OCR GET",
+        "http_status": 200,
+        "ocr_bytes": 475161,
+        "result": "Metadata1927,378scans; opening Sister Devamata title and ending publisher advertisements inspected. No access-restricted-item/private flag observed; OCR accessible without login. Page continuity and rights not independently certified."
+      }
+    },
+    {
+      "id": 105,
+      "person": "Swami Ramakrishnananda",
+      "canonical_title": "স্বামী রামকৃষ্ণানন্দ",
+      "original_title": "স্বামী রামকৃষ্ণানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী রামকৃষ্ণানন্দ",
+      "author": "Jagadishwarananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"স্বামী রামকৃষ্ণানন্দ\" \"জগদীশ্বরানন্দ\" pdf OR \"Swami Ramakrishnananda\" \"Jagadishwarananda\"",
+        "Swami Ramakrishnananda Jagadiswarananda Bengali book",
+        "\"রামকৃষ্ণানন্দ\" \"জগদীশ্বরানন্দ\" বই"
+      ],
+      "candidates": [
+        {
+          "url": "https://boysownlibrary.in/catalogue/920_Jibani.pdf",
+          "label": "Bengali",
+          "evidence": "Opened54page biography catalogue. p50 entry920/621 Swami Ramakrishnananda under Jagadiswarananda confirms identity, not full target book.",
+          "disposition": "rejected_catalogue"
+        },
+        {
+          "url": "https://play.google.com/store/books/details?id=G7VcDwAAQBAJ",
+          "label": "Hindi",
+          "evidence": "Indexed Prameyananda preface mentions earlier Medinipur Jagadiswarananda biography; translation of later94 not105.",
+          "disposition": "rejected_different_book"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No complete free exact biography found."
+    },
+    {
+      "id": 106,
+      "person": "Swami Ramakrishnananda",
+      "canonical_title": "The Story of a Dedicated Life",
+      "original_title": "The Story of a Dedicated Life",
+      "original_language": "English",
+      "english_title": "The Story of a Dedicated Life",
+      "bengali_title": null,
+      "author": "Gen",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"The Story of a Dedicated Life\" Ramakrishnananda pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.countrylifebooks.ca/pages/books/008840/the-story-of-a-dedicated-life-the-biography-of-swami-ramakrishnananda-a-disciple-of-sri",
+          "label": "English",
+          "evidence": "Opened1959secondedition xi216p Chennai Math; paid antiquarian copy.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://mail.estudantedavedanta.net/oholybooks.html",
+          "label": "English",
+          "evidence": "Search index lists1948 target; direct GET403, download not inspectable.",
+          "disposition": "hold_access_rights"
+        },
+        {
+          "url": "https://trieste-publishing.com/uploads/books/284/9780649159284_preview.pdf",
+          "label": "English",
+          "evidence": "Search PDF James C.Moffat same title, not Ramakrishnananda.",
+          "disposition": "rejected_false_identity"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "1948 biography distinct from89later Tapasyananda reworking; not interchangeable."
+    },
+    {
+      "id": 107,
+      "person": "Swami Saradananda",
+      "canonical_title": "Patramala: Letters of Swami Saradananda",
+      "original_title": "পত্রমালা (প্রথম ও দ্বিতীয় খণ্ড)",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "পত্রমালা (প্রথম ও দ্বিতীয় খণ্ড)",
+      "author": "Swami Saradananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"পত্রমালা\" \"সারদানন্দ\" pdf OR \"Patramala\" \"Saradananda\" free",
+        "\"পত্রমালা\" \"দ্বিতীয়\" \"সারদানন্দ\" pdf",
+        "\"Patramala\" \"Saradananda\" volume 2"
+      ],
+      "candidates": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.355549",
+          "label": "Bengali",
+          "evidence": "Opened DLI1953secondedition200scans. Metadata State Central Library Kolkata claims In Public Domain. OCRGET200336093bytes; title letters compilation, copyright reserved notice; ends letter and printedp182. Edition2 is not volume2.",
+          "disposition": "hold_volume_rights"
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/categories/monastic-disciples-ramakrishna-teachings/1237499000000056248",
+          "label": "Bengali 2",
+          "evidence": "Search official catalogue separately sellsvolume2 ₹40; no free text.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Baseline requiresvolumes1–2; found1953edition not established as both. Copyright notice and DLIrights conflict unresolved."
+    },
+    {
+      "id": 108,
+      "person": "Swami Saradananda",
+      "canonical_title": "Saradananda Prasange",
+      "original_title": "সারদানন্দ প্রসঙ্গে",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "সারদানন্দ প্রসঙ্গে",
+      "author": "Swami Aseshananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"সারদানন্দ প্রসঙ্গে\" \"অশেষানন্দ\" pdf OR \"Saradananda Prasange\" Aseshananda",
+        "Saradananda Prasange Aseshananda book pdf",
+        "সারদানন্দ প্রসঙ্গে অশেষানন্দ বই",
+        "\"Saradananda Prasanga\" Aseshananda",
+        "\"সারদানন্দ প্রসঙ্গ\" অশেষানন্দ",
+        "\"Saradananda Prasange\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://shop.advaitaashrama.org/search-products?q=Direct+Disciples&search_type=tag_name_contains",
+          "label": "Bengali",
+          "evidence": "Official indexed catalogue title matches Aseshananda Udbodhan; opened current page did not expose target to parser. Search gives paidcart.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://udbodhan.org/product-category/udbodhan-publication/book/page/28/",
+          "label": "Bengali",
+          "evidence": "Indexed publisher category Buy Now listing, no complete free text.",
+          "disposition": "rejected_catalogue"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No complete Bengali text verified; English Glimpses112 researched separately."
+    },
+    {
+      "id": 109,
+      "person": "Swami Saradananda",
+      "canonical_title": "Swami Saradanander Smritikatha",
+      "original_title": "স্বামী সারদানন্দের স্মৃতিকথা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী সারদানন্দের স্মৃতিকথা",
+      "author": "Swami Chetanananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "স্বামী সারদানন্দের স্মৃতিকথা চেতনানন্দ pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.456901",
+          "label": "Bengali",
+          "evidence": "Opened DLI411scans, Chetanananda editor; metadata citation1959 (firstpublication), Udbodhan, Birchandra State Central Library. OCRGET2001,631,245bytes with title/editor publication pages and ending memorial song; plausible full scan. Metadata In Public Domain assertion lacks supporting licence for modern editor.",
+          "disposition": "hold_rights_edition"
+        },
+        {
+          "url": "https://granthagara.com/boi/322485-swami-saradanander-smritikatha/",
+          "label": "Bengali",
+          "evidence": "Opened intermediary links above;411pages24MB.",
+          "disposition": "discovery_only"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Actual scanned reprint date unclear; no reuse/public-domain conclusion fromDLIclaim alone."
+    },
+    {
+      "id": 110,
+      "person": "Swami Saradananda",
+      "canonical_title": "Saradananda Charit",
+      "original_title": "সারদানন্দ চরিত",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "সারদানন্দ চরিত",
+      "author": "Swami Prabhananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"সারদানন্দ চরিত\" \"প্রভানন্দ\" pdf OR \"Saradananda Charit\" Prabhananda pdf",
+        "Saradananda Charit Prabhananda pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://shopref.advaitaashrama.org/product/saradananda-charit/",
+          "label": "Bengali",
+          "evidence": "Official indexed UDB029 Prabhananda Bengali biography; direct open timed out.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://elibrary.rkmnstore.org/product/h151-swami-saradananda-hindi/",
+          "label": "Hindi",
+          "evidence": "Indexed Nagpur Hindi translation; not complete free Bengali/English target.",
+          "disposition": "rejected_different_language"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verified complete free text."
+    },
+    {
+      "id": 111,
+      "person": "Swami Saradananda",
+      "canonical_title": "Swami Saradananda: Ek Ananya Jivan",
+      "original_title": "স্বামী সারদানন্দ: এক অনন্য জীবন",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী সারদানন্দ: এক অনন্য জীবন",
+      "author": "Swami Chaitanyananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"স্বামী সারদানন্দ\" \"এক অনন্য জীবন\" pdf OR \"Swami Saradananda\" \"Ek Ananya Jivan\""
+      ],
+      "candidates": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-saradananda-ek-ananya-jivan/1237499000010662449",
+          "label": "Bengali",
+          "evidence": "Opened official Udbodhan Chaitanyananda1088p ISBN9788193821015 ₹350 cart.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No complete free reader/PDF found."
+    },
+    {
+      "id": 112,
+      "person": "Swami Saradananda",
+      "canonical_title": "Glimpses of a Great Soul",
+      "original_title": "Glimpses of a Great Soul",
+      "original_language": "English",
+      "english_title": "Glimpses of a Great Soul",
+      "bengali_title": null,
+      "author": "Swami Aseshananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Glimpses of a Great Soul\" \"Aseshananda\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.vedanta-portland.org/our-publication",
+          "label": "English",
+          "evidence": "Opened publishing society booklist:target biography/reminiscences Aseshananda paid$20.95.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://istore.chennaimath.org/products/glimpses-of-a-great-soul/3690041000102314834",
+          "label": "English",
+          "evidence": "Official335p Indianedition paid₹100; US274p edition distinct pagination.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://srisaradamath.org/publication/samvit/198509.pdf",
+          "label": "English",
+          "evidence": "Search identifies review of274p book; actual PDF open failed. Review is not full target.",
+          "disposition": "rejected_review"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verified free full text; review pagination and catalogue editions kept separate."
+    },
+    {
+      "id": 113,
+      "person": "Swami Saradananda",
+      "canonical_title": "যেমন দেখিয়াছি",
+      "original_title": "যেমন দেখিয়াছি",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "যেমন দেখিয়াছি",
+      "author": "Bhumananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"যেমন দেখিয়াছি\" \"ভূমানন্দ\" pdf OR \"Jemon Dekhiyachi\" Bhumananda",
+        "যেমন দেখিয়াছি ভূমানন্দ বই",
+        "\"Jemon Dekhiyachhi\" \"Bhumananda\"",
+        "\"যেমন দেখিয়াছি\" ভূমানন্দ সারদানন্দ"
+      ],
+      "candidates": [
+        {
+          "url": "https://ebuyatsaradamath.org/product-detail.php?pId=102",
+          "label": "Bengali",
+          "evidence": "Search yields Nivedita Ke Jamon Dekhiyachhi, different subject/author; cannot substitute.",
+          "disposition": "rejected_false_identity"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Exact standalone title/edition remains unidentified; no free full text verified."
+    },
+    {
+      "id": 114,
+      "person": "Swami Saradananda",
+      "canonical_title": "স্বামী সারদানন্দের জীবনী",
+      "original_title": "স্বামী সারদানন্দের জীবনী",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী সারদানন্দের জীবনী",
+      "author": "Akshay Chaitanya",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"স্বামী সারদানন্দের জীবনী\" \"অক্ষয়\" pdf",
+        "\"Swami Saradanander Jibani\" Akshay Chaitanya pdf",
+        "\"সারদানন্দের জীবনী\" \"অক্ষয়চৈতন্য\"",
+        "\"Saradanander Jibani\" archive"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.anandabazar.com/amp/west-bengal/kolkata/kolkata-korcha-program-at-vivekananda-auditorium-1.1083242",
+          "label": "Bengali",
+          "evidence": "News article cites Brahmachari Akshaychaitanya biography; evidence of identity, not whole book.",
+          "disposition": "rejected_citation"
+        },
+        {
+          "url": "https://estudantedavedanta.net/Sri-Ramakrishna-and-His-Disciples-in-Orissa.pdf",
+          "label": "English",
+          "evidence": "Indexed references cite Akshaychaitanya Bengali biography pages38–40,etc; not target text.",
+          "disposition": "rejected_citation"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verified complete free edition."
+    },
+    {
+      "id": 115,
+      "person": "Swami Saradananda",
+      "canonical_title": "সারদানন্দ স্বামীজীর জীবনের ঘটনাবলী",
+      "original_title": "সারদানন্দ স্বামীজীর জীবনের ঘটনাবলী",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "সারদানন্দ স্বামীজীর জীবনের ঘটনাবলী",
+      "author": "Mahendranath Dutta",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"সারদানন্দ স্বামীজীর জীবনের ঘটনাবলী\" মহেন্দ্রনাথ pdf",
+        "\"Srimath Saradananda Swamijir Jibaner Ghatanabali\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.298302",
+          "label": "Bengali",
+          "evidence": "DLI MahendraNathDutta1948,MahendraPublishingCommittee,264scans. PublicOCRHTTP200 title/editor/end matter inspected in follow-up below; fullpagecontinuity/rights held.",
+          "disposition": "hold_completeness_rights"
+        },
+        {
+          "url": "https://mohendranathdutta.com/bengali.html",
+          "label": "Bengali",
+          "evidence": "Author publication list confirms exacttitle; no fulltext established.",
+          "disposition": "discovery_only"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No candidate approved untilscan completeness/rights inspected.",
+      "followup_inspection": {
+        "checked_at": "2026-10-15",
+        "url": "https://archive.org/details/in.ernet.dli.2015.298302",
+        "method": "Public IA metadata plus direct OCR GET",
+        "http_status": 200,
+        "ocr_bytes": 678803,
+        "result": "Metadata1948,MahendraPublishingCommittee,264scans; title Dutta/editorLakshminarayanGanguly and ending matter inspected. No explicit licence found; page continuity not certified."
+      }
+    },
+    {
+      "id": 116,
+      "person": "Swami Saradananda",
+      "canonical_title": "স্বামী সারদানন্দ",
+      "original_title": "স্বামী সারদানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী সারদানন্দ",
+      "author": "Brahmachari Prakash",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"স্বামী সারদানন্দ\" \"ব্রহ্মচারী প্রকাশ\" pdf OR \"Swami Saradananda\" \"Brahmachari Prakash\"",
+        "Swami Saradananda Brahmachari Prakash book",
+        "\"সারদানন্দ\" \"প্রকাশ\" \"বসুমতী\" pdf",
+        "\"স্বামী সারদানন্দ\" \"ব্রহ্মচারী প্রকাশ\""
+      ],
+      "candidates": [
+        {
+          "url": "https://srisaradamath.org/publication/nibodhata/370102.pdf",
+          "label": "Bengali",
+          "evidence": "Opened6page article; bibliography cites Brahmachari Prakash, Basumati Sahitya Mandir1963p125 and narrativequote. Not complete target.",
+          "disposition": "rejected_citation"
+        },
+        {
+          "url": "https://watkinspublishing.com/book_author/swami-saradananda/",
+          "label": "English",
+          "evidence": "Search unrelated contemporary yoga author, not direct disciple biography.",
+          "disposition": "rejected_false_identity"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No free fulltext found; edition1963 corroborated throughreference."
+    },
+    {
+      "id": 117,
+      "person": "Swami Turiyananda",
+      "canonical_title": "Swami Turiyananda: Life and Teachings",
+      "original_title": "Swami Turiyananda: Life and Teachings",
+      "original_language": "English",
+      "english_title": "Swami Turiyananda: Life and Teachings",
+      "bengali_title": null,
+      "author": "Swami Ritajananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Swami Turiyananda Life and Teachings\" Ritajananda pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-turiyananda-life-and-teachings/1237499000010763871",
+          "label": "English",
+          "evidence": "Opened official233p Ritajananda ISBN9788171207213 ₹20 outofstock; only description, no free reader.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://sfvedanta.org/swami-turiyananda-his-life-and-teachings/",
+          "label": "English",
+          "evidence": "Search result is2025lectureaudio, not book.",
+          "disposition": "rejected_lecture"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No complete free edition verified."
+    },
+    {
+      "id": 118,
+      "person": "Swami Turiyananda",
+      "canonical_title": "The Eternal Quest: A Life Sketch of Swami Turiyananda",
+      "original_title": "The Eternal Quest: A Life Sketch of Swami Turiyananda",
+      "original_language": "English",
+      "english_title": "The Eternal Quest: A Life Sketch of Swami Turiyananda",
+      "bengali_title": null,
+      "author": "Mihir K. Das",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"The Eternal Quest\" \"Mihir\" \"Turiyananda\" pdf",
+        "\"Turiyananda\" \"Eternal Quest\" \"Mihir K. Das\""
+      ],
+      "candidates": [
+        {
+          "url": "https://almora.rkmm.org/news/post/almora-visit-of-srimad-swami-suhitanandaji-maharaj-2-4-nov.-202411",
+          "label": "English",
+          "evidence": "Opened official Nov2025release report: Mihir Kanti Das transferredIPR toAlmora Ashrama; allproceeds Ashrama. Title Life & Teachings differs baseline Life Sketch; no freetext.",
+          "disposition": "rejected_release_notice"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Edition identity wording needs review; rights holderknown, free permission not asserted."
+    },
+    {
+      "id": 119,
+      "person": "Swami Turiyananda",
+      "canonical_title": "Spiritual Treasures: Letters of Swami Turiyananda",
+      "original_title": "Spiritual Treasures: Letters of Swami Turiyananda",
+      "original_language": "English",
+      "english_title": "Spiritual Treasures: Letters of Swami Turiyananda",
+      "bengali_title": null,
+      "author": "Swami Turiyananda; Swami Chetanananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Spiritual Treasures\" \"Turiyananda\" pdf free",
+        "\"Turiyananda\" \"Spiritual Treasures\" \"pdf\" Chetanananda"
+      ],
+      "candidates": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/spiritual-treasures-letters-of-swami-turiyananda/1237499000019160620",
+          "label": "English",
+          "evidence": "Opened official288p translated/edited Chetanananda ₹140. SectionsI translated Bengali letters,II originalEnglish. No freereader.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://pt.scribd.com/document/685959908/NOTA-IMPORTANTE",
+          "label": "Portuguese",
+          "evidence": "Search result announcement mentions translations fromtitle; notbook and notEnglish/Bengali target.",
+          "disposition": "rejected_reference"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verified free complete edition."
+    },
+    {
+      "id": 120,
+      "person": "Swami Turiyananda",
+      "canonical_title": "Swami Turiyanander Patra",
+      "original_title": "স্বামী তুরীয়ানন্দের পত্র",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী তুরীয়ানন্দের পত্র",
+      "author": "Swami Turiyananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"স্বামী তুরীয়ানন্দের পত্র\" pdf OR \"Swami Turiyanander Patra\" pdf",
+        "\"Swami Turiyanander Patra\" archive pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://udbodhan.org/product/স্বামী-তুরীয়ানন্দের-পত্র",
+          "label": "Bengali 1",
+          "evidence": "Opened official Bengali first volume ₹120, description letters, no fullfree reader.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-turiyanander-patra-vol-2/1237499000010647827",
+          "label": "Bengali 2",
+          "evidence": "Official indexed second volume confirms series scope; no free fulltext.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://vedanta.org/wp-content/uploads/2022/12/Turiyananda-letter-handout.pdf",
+          "label": "English",
+          "evidence": "Opened two-page1919letter translated by Medhananda, Bengali originalpp254–255. Oneletter only.",
+          "disposition": "rejected_excerpt"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Canonical baseline unnumbered; publisher hasvol1–2, neither completefree textverified."
+    },
+    {
+      "id": 121,
+      "person": "Swami Turiyananda",
+      "canonical_title": "Swami Turiyanander Smriti Katha",
+      "original_title": "স্বামী তুরীয়ানন্দের স্মৃতিকথা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী তুরীয়ানন্দের স্মৃতিকথা",
+      "author": "Swami Chetanananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"স্বামী তুরীয়ানন্দের স্মৃতিকথা\" চেতনানন্দ OR \"Swami Turiyanander Smriti Katha\" pdf",
+        "\"Turiyanander Smritikatha\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-turiyanander-smriti-katha/1237499000010647719",
+          "label": "Bengali",
+          "evidence": "Opened official Chetanananda424p ISBN9788180405174 paidcart.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verified completefree text."
+    },
+    {
+      "id": 122,
+      "person": "Swami Turiyananda",
+      "canonical_title": "জীবনমুক্তি সুখপ্রাপ্তি",
+      "original_title": "জীবনমুক্তি সুখপ্রাপ্তি",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "জীবনমুক্তি সুখপ্রাপ্তি",
+      "author": "Gen",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"জীবনমুক্তি সুখপ্রাপ্তি\" OR \"Jivanmukti Sukhaprapti\" pdf",
+        "\"Jivanmukti Sukhaprapti\" free text",
+        "\"জীবন্মুক্তি সুখপ্রাপ্তি\" তুরীয়ানন্দ pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://shopref.advaitaashrama.org/product/jivanmukti-sukhaprapti/",
+          "label": "Bengali",
+          "evidence": "Official indexed174p ISBN9788180403125 spiritualconversations Turiyananda. Directopen timeout. Paidcart.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Baseline authorGen; publisherattributes Turiyananda, record editorialcandidate only. No fulltextverified."
+    },
+    {
+      "id": 123,
+      "person": "Swami Turiyananda",
+      "canonical_title": "স্বামী তুরীয়ানন্দ",
+      "original_title": "স্বামী তুরীয়ানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী তুরীয়ানন্দ",
+      "author": "Jagadishwarananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"স্বামী তুরীয়ানন্দ\" জগদীশ্বরানন্দ pdf OR \"Swami Turiyananda\" Jagadiswarananda pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-turiyananda/1237499000010646637",
+          "label": "Bengali",
+          "evidence": "Opened official213p Jagadiswarananda ISBN9788180403385 paidcart; distinctfromRitajananda English117.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No completefree textverified."
+    },
+    {
+      "id": 124,
+      "person": "Swami Shivananda",
+      "canonical_title": "Letters for Spiritual Seekers: Letters of Swami Shivananda",
+      "original_title": "মহাপুরুষজীর পত্রাবলী",
+      "original_language": "Bengali",
+      "english_title": "Letters for Spiritual Seekers: Letters of Swami Shivananda",
+      "bengali_title": null,
+      "author": "Swami Shivananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"মহাপুরুষজীর পত্রাবলী\" pdf OR \"Letters for Spiritual Seekers\" Shivananda pdf",
+        "\"Letters for Spiritual Seekers\" \"Shivananda\" pdf",
+        "মহাপুরুষজীর পত্রাবলী শিবানন্দ pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://shopref.advaitaashrama.org/product/letters-for-spiritual-seekers/",
+          "label": "English",
+          "evidence": "Official indexed296p ISBN9788175051799 Lokeswarananda translation; selectedimportant letters, paidcart.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://www.ramakrishnamath.in/pages/book_store/AdvaitaAshramaBooklist.htm",
+          "label": "Bengali",
+          "evidence": "Previously opened official catalogue Bengali Mahapurushjir Patravali; price notreader.",
+          "disposition": "rejected_catalogue"
+        },
+        {
+          "url": "https://vivekavani.com/jun28/",
+          "label": "English",
+          "evidence": "Indexed singlequotation withp196citation; not completeletters.",
+          "disposition": "rejected_excerpt"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No completefree Bengali original or English translationverified."
+    },
+    {
+      "id": 125,
+      "person": "Swami Shivananda",
+      "canonical_title": "For Seekers of God: Conversations with Swami Shivananda",
+      "original_title": "শিবানন্দ বাণী",
+      "original_language": "Bengali",
+      "english_title": "For Seekers of God: Conversations with Swami Shivananda",
+      "bengali_title": "শিবানন্দ বাণী",
+      "author": "Swami Shivananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"For Seekers of God\" Shivananda pdf free",
+        "\"শিবানন্দ বাণী\" pdf OR \"Shivananda Vani\" full text"
+      ],
+      "candidates": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.149178",
+          "label": "English",
+          "evidence": "DLI fourthEDITION1975,331scans,AdvaitaAshrama. OCRHTTP200 title/translatorsVividishananda,Gambhirananda and finalglossary inspected; publisher/translationrights and completepagecontinuity remain held.",
+          "disposition": "hold_completeness_rights"
+        },
+        {
+          "url": "https://ebooks.advaitaashrama.org/product/for-seekers-of-god",
+          "label": "English",
+          "evidence": "Publisher332p current book, Kindle/GooglePlay store links; nofree text.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://vedantauk.org/Magazines/2013/May-Jun2013.pdf",
+          "label": "English",
+          "evidence": "Indexed1920talk serialexcerpt; not complete book.",
+          "disposition": "rejected_excerpt"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "English is selection fromBengali Shivananda Vani volumes1–2; do not claim allBengali volumes covered.",
+      "followup_inspection": {
+        "checked_at": "2026-10-15",
+        "url": "https://archive.org/details/in.ernet.dli.2015.149178",
+        "method": "Public IA metadata plus direct OCR GET",
+        "http_status": 200,
+        "ocr_bytes": 701614,
+        "result": "Metadata1975fourthEDITION,331scans,AdvaitaAshrama,BirchandraLibrary; title/translatorsVividishananda and Gambhirananda and ending glossary inspected. DLI description claims In Public Domain but that is not independent translation permission."
+      }
+    },
+    {
+      "id": 126,
+      "person": "Swami Shivananda",
+      "canonical_title": "Mahapurush Maharaj As We Saw Him",
+      "original_title": "Mahapurush Maharaj As We Saw Him",
+      "original_language": "English",
+      "english_title": "Mahapurush Maharaj As We Saw Him",
+      "bengali_title": null,
+      "author": "A Compilation",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Mahapurush Maharaj As We Saw Him\" pdf free"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.vivekanandabookworld.com/product-page/mahapurush-maharaj-as-we-saw-him",
+          "label": "English",
+          "evidence": "Opened official496p compilation ISBN9788175052048 ₹150.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://vivekavani.com/oct6/",
+          "label": "English",
+          "evidence": "Search singlequoted teachingp282; not fullbook.",
+          "disposition": "rejected_excerpt"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Do not replace with215p asWeKnewHim differentedition/selection. No completefree text."
+    },
+    {
+      "id": 127,
+      "person": "Swami Shivananda",
+      "canonical_title": "Saga of a Great Soul: Life and Work of Swami Shivananda",
+      "original_title": "Saga of a Great Soul: Life and Work of Swami Shivananda",
+      "original_language": "English",
+      "english_title": "Saga of a Great Soul: Life and Work of Swami Shivananda",
+      "bengali_title": null,
+      "author": "Swami Vividishananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Saga of a Great Soul\" \"Vividishananda\" pdf",
+        "\"A Man of God\" Vividishananda pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.vedanta.com/store/saga-of-a-great-soul-swami-shivananda_moreinfo.html",
+          "label": "English",
+          "evidence": "Opened official258p ISBN817120628x paid$4.95. FormerlyA Man of God; forewordIsherwood.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://openlibrary.org/books/OL49862118M/A_man_of_God",
+          "label": "English",
+          "evidence": "Search1957bibliographic record; fullaccess not verified.",
+          "disposition": "discovery_only"
+        },
+        {
+          "url": "https://www.vedanta.gr/?page_id=404",
+          "label": "English",
+          "evidence": "Index mentionsearlier A Man of God; download andedition not yet inspected.",
+          "disposition": "discovery_only"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verified completefree edition."
+    },
+    {
+      "id": 128,
+      "person": "Swami Shivananda",
+      "canonical_title": "Mahapurushjir Patravali",
+      "original_title": "মহাপুরুষজীর পত্রাবলী",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "মহাপুরুষজীর পত্রাবলী",
+      "author": "Swami Shivananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"মহাপুরুষজীর পত্রাবলী\" OR \"Mahapurushjir Patravali\" pdf",
+        "Mahapurushjir Patravali Shivananda pdf",
+        "\"মহাপুরুষজীর পত্রাবলী\" শিবানন্দ"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.ramakrishnamath.in/pages/book_store/AdvaitaAshramaBooklist.htm",
+          "label": "Bengali",
+          "evidence": "Previously opened institutional catalogue lists Shivananda Bengali letters paid.",
+          "disposition": "rejected_catalogue"
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/categories/monastic-disciples-ramakrishna-teachings/1237499000000056248",
+          "label": "Bengali",
+          "evidence": "Official indexed Mahapurushjir Patravali ₹50; not freereader.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Original title same as124baseline; preserveboth canonicalIDs. No fullfree Bengali edition verified."
+    },
+    {
+      "id": 129,
+      "person": "Swami Shivananda",
+      "canonical_title": "Shivananda Smriti Samgraha",
+      "original_title": "শিবানন্দ স্মৃতি সংগ্রহ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "শিবানন্দ স্মৃতি সংগ্রহ",
+      "author": "A Compilation",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"শিবানন্দ স্মৃতি সংগ্রহ\" OR \"Shivananda Smriti Samgraha\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/shivananda-smriti-samgraha/1237499000010647467",
+          "label": "Bengali",
+          "evidence": "Opened official compilation753p ISBN9788180404849 ₹250 cart.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verified free complete edition; English126 not assumedcomplete translation."
+    },
+    {
+      "id": 130,
+      "person": "Swami Shivananda",
+      "canonical_title": "দেবলোকে",
+      "original_title": "দেবলোকে",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "দেবলোকে",
+      "author": "Apurvananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"দেবলোকে\" \"অপূর্বানন্দ\" pdf OR \"Devloke\" Apurvananda pdf",
+        "Devloke Apurvananda book pdf",
+        "\"দেবলোকে\" \"অপূর্বানন্দ\"",
+        "\"In the Divine Realm\" Apurvananda free pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://books.google.com/books/about/In_The_Divine_Realm.html?id=GWSRDwAAQBAJ",
+          "label": "English",
+          "evidence": "Opened publisher description explicitly translation of Bengali Devloke, translatorVimohananda ISBN9788175059269. Selectedpages/preview notcomplete.",
+          "disposition": "rejected_preview"
+        },
+        {
+          "url": "https://www.vedanta.com/store/in-the-divine-realm-details.html",
+          "label": "English",
+          "evidence": "Indexed376p paidtranslation$19.95.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No completefree Bengali or English textverified."
+    },
+    {
+      "id": 131,
+      "person": "Swami Shivananda",
+      "canonical_title": "মহাপুরুষ শিবানন্দ",
+      "original_title": "মহাপুরুষ শিবানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "মহাপুরুষ শিবানন্দ",
+      "author": "Apurvananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"মহাপুরুষ শিবানন্দ\" অপূর্বানন্দ pdf OR \"Mahapurush Shibananda\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.355373",
+          "label": "Bengali",
+          "evidence": "Granthagara opened366pages secondedition; sourcehrefresolved byHTMLinspection tothisDLIscan; fullscan/rights notyetverified.",
+          "disposition": "hold_completeness_rights"
+        },
+        {
+          "url": "https://granthagara.com/boi/316801-mahapurush-shibananda-ed-2/",
+          "label": "Bengali",
+          "evidence": "Opened title/authorApurbananda19MB366pages; actualbooklink isIA notindependentedition.",
+          "disposition": "discovery_only"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No publicationcandidate approved pendingoriginalscan."
+    },
+    {
+      "id": 132,
+      "person": "Swami Shivananda",
+      "canonical_title": "শিবানন্দ মহারাজের অনুধ্যান",
+      "original_title": "শিবানন্দ মহারাজের অনুধ্যান",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "শিবানন্দ মহারাজের অনুধ্যান",
+      "author": "Mahendranath Dutta",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"শিবানন্দ মহারাজের অনুধ্যান\" OR \"Shivananda Maharajer Anudhyan\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://bn.wikisource.org/wiki/চিত্র:মহাপুরুষ_শ্রীমৎ_স্বামী_শিবানন্দ_মহারাজের_অনুধ্যান_-_মহেন্দ্রনাথ_দত্ত_(১৯৩৫).pdf",
+          "label": "Bengali",
+          "evidence": "Opened exactDutta firstedition1935 filepage.243scans11MB versushistoricalfilelabel248p. Explicitrightsstatement publicdomainIndia butnotUS.",
+          "disposition": "hold_geographic_rights_completeness"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Page sequence discrepancy andexplicitUSrestriction precludeglobalrightsclaim."
+    },
+    {
+      "id": 133,
+      "person": "Swami Shivananda",
+      "canonical_title": "শ্রীশ্রীমহাপুরুষজীর কথা",
+      "original_title": "শ্রীশ্রীমহাপুরুষজীর কথা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "শ্রীশ্রীমহাপুরুষজীর কথা",
+      "author": "Gen",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"শ্রীশ্রীমহাপুরুষজীর কথা\" pdf OR \"Sri Sri Mahapurushjir Katha\"",
+        "\"শ্রীশ্রীমহাপুরুষজীর কথা\"",
+        "\"মহাপুরুষজীর কথা\" বই pdf",
+        "\"Mahapurushjir Katha\" book"
+      ],
+      "candidates": [
+        {
+          "url": "https://udbodhan.org/wp-content/uploads/2024/11/UD_Book-List-10-05-24.pdf",
+          "label": "Bengali",
+          "evidence": "Searchretailer catalogue returns Mahapurushjir Prabachani, differentwording; cannotidentifyastarget.",
+          "disposition": "rejected_unproven_identity"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Exacttitle/authorGen identity unconfirmed; nocandidate fulltextfound."
+    },
+    {
+      "id": 134,
+      "person": "Swami Abhedananda",
+      "canonical_title": "Swami Abhedananda: A Spiritual Biography",
+      "original_title": "Swami Abhedananda: A Spiritual Biography",
+      "original_language": "English",
+      "english_title": "Swami Abhedananda: A Spiritual Biography",
+      "bengali_title": null,
+      "author": "Moni Bagchi",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Swami Abhedananda A Spiritual Biography\" \"Moni Bagchi\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.vedanta.com/store/swami-abhedananda-a-spiritual-biography-details.html",
+          "label": "English",
+          "evidence": "Opened480p Bagchi ISBN9789380568553 paid$19.95, authenticidentity.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://estudantedavedanta.net/Swami-Abhedananda-A-Spiritual-Biography.pdf",
+          "label": "English",
+          "evidence": "Candidate discovered viaindexedHandWiki/worksindex; knownhost403 previously, actualPDFnotverified.",
+          "disposition": "hold_access_rights"
+        },
+        {
+          "url": "https://ramakrishnavedantamath.org/book3.html",
+          "label": "English",
+          "evidence": "Publisherindexedtitle/author; openfailed.",
+          "disposition": "rejected_catalogue"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No completefree authorisededitionverified."
+    },
+    {
+      "id": 135,
+      "person": "Swami Abhedananda",
+      "canonical_title": "Swami Abhedananda: Janma Sardhashatabarser Shraddhanjali",
+      "original_title": "স্বামী অভেদানন্দ: জন্ম সার্ধশতবর্ষের শ্রদ্ধাঞ্জলি",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী অভেদানন্দ: জন্ম সার্ধশতবর্ষের শ্রদ্ধাঞ্জলি",
+      "author": "A Compilation",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"স্বামী অভেদানন্দ\" \"জন্ম\" \"শ্রদ্ধাঞ্জলি\" pdf",
+        "\"Abhedananda\" \"Janma Sardhashatabarser Shraddhanjali\""
+      ],
+      "candidates": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-abhedananda-janma-sardhashatabarser-shraddhanjali/1237499000010662521",
+          "label": "Bengali",
+          "evidence": "Opened official compilation659p paid₹200. ISBN9788193821046 corroborated official formerstore.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No completefree sourceverified."
+    },
+    {
+      "id": 136,
+      "person": "Swami Abhedananda",
+      "canonical_title": "Epistles",
+      "original_title": "Epistles",
+      "original_language": "English",
+      "english_title": "Epistles",
+      "bengali_title": null,
+      "author": "Swami Abhedananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Epistles\" \"Swami Abhedananda\" pdf",
+        "\"Epistles\" \"Abhedananda\" book"
+      ],
+      "candidates": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/epistles-letters-of-swami-abhedananda/1237499000011859351",
+          "label": "English",
+          "evidence": "Opened official VedantaMath Kolkata141p letters paid₹98.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://en.wikisource.org/wiki/The_Complete_Works_of_Swami_Vivekananda/Volume_7/Epistles_-_Third_Series/XXIV_Kali",
+          "label": "English",
+          "evidence": "Search falsematch Vivekananda letter TOAbhedananda, notletters BYhim.",
+          "disposition": "rejected_false_identity"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verifiedcompletefree exact Epistles."
+    },
+    {
+      "id": 137,
+      "person": "Swami Abhedananda",
+      "canonical_title": "Swami Abhedananda in America",
+      "original_title": "Swami Abhedananda in America",
+      "original_language": "English",
+      "english_title": "Swami Abhedananda in America",
+      "bengali_title": null,
+      "author": "Sister Shivani",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Swami Abhedananda in America\" \"Sister Shivani\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-abhedananda-in-america/1237499000011858017",
+          "label": "English",
+          "evidence": "Opened official SisterShivani314p VedantaMath title paid₹90.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://estudantedavedanta.net/Swami_Abhedananda_An_Apostle_of_Monism_by_Shivani.pdf",
+          "label": "English",
+          "evidence": "IndexedPDF titleAn Apostle ofMonism, SisterShivani/MaryLePage; openfailed,editionequivalence notcertified.",
+          "disposition": "hold_access_rights_edition"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Earlier title1941 vs1991 reprint314p; notautomatically identical."
+    },
+    {
+      "id": 138,
+      "person": "Swami Abhedananda",
+      "canonical_title": "আমার জীবনকথা",
+      "original_title": "আমার জীবনকথা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "আমার জীবনকথা",
+      "author": "Swami Abhedananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"আমার জীবনকথা\" অভেদানন্দ pdf OR \"Amar Jivan Katha\" Abhedananda pdf",
+        "আমার জীবন কথা অভেদানন্দ পিডিএফ",
+        "Amar Jiban Katha Abhedananda pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://bn.wikisource.org/wiki/চিত্র:আমার_জীবনকথা_-_স্বামী_অভেদানন্দ.pdf",
+          "label": "Bengali",
+          "evidence": "Filepage discovered271scans; filenamehistoricalmetadata1957DLI276p. Actualscan/fullvolume coverage requiresinspection.",
+          "disposition": "hold_completeness_volume_rights"
+        },
+        {
+          "url": "https://www.exoticindia.com/book/details/amar-jiban-katha-in-bengali-set-of-2-volumes-rzz238/",
+          "label": "Bengali 1–2",
+          "evidence": "Selleridentifies2volumes; nofulltext.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Baseline unnumbered; needvol1–2coverage distinction, preserveonecanonicalbook."
+    },
+    {
+      "id": 139,
+      "person": "Swami Abhedananda",
+      "canonical_title": "যেমন শুনিয়াছি",
+      "original_title": "যেমন শুনিয়াছি",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "যেমন শুনিয়াছি",
+      "author": "Sambuddhananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"যেমন শুনিয়াছি\" সম্বুদ্ধানন্দ pdf OR \"Jemon Shuniyachi\" Sambuddhananda",
+        "\"Jemon Suniyachi\" Sambuddhananda",
+        "যেমন শুনিয়াছি সম্বুদ্ধানন্দ",
+        "Jemon Shuniyachi Swami Sambuddhananda book",
+        "\"যেমন শুনিয়াছি\" সম্বুদ্ধানন্দ",
+        "\"Jemon Shuniyachhi\" Abhedananda Sambuddhananda",
+        "\"Jemon Shuniachi\" \"Part 1\"",
+        "\"Jemon Shuniachi\" \"Part 2\""
+      ],
+      "candidates": [
+        {
+          "url": "https://granthagara.com/boi/332037-jemon-shuniachi-part-3-ed-1st/",
+          "label": "Bengali 3",
+          "evidence": "Opened candidate returned by final Bengali spelling variant: Sambuddhananda, part3 firstedition315scans17MB. Sample body explicitly aboutAbhedananda; DLIlink awaitsinspection. Separate searches forparts1–2 returnedempty.",
+          "disposition": "hold_volume_completeness_rights"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Part3discovered andidentitysampleinspected; parts1–2andactualscan/rights unresolved. Unnumberedbaseline notexpanded."
+    },
+    {
+      "id": 140,
+      "person": "Swami Trigunatitananda",
+      "canonical_title": "Swami Trigunatitananda Chitre Jivani",
+      "original_title": "স্বামী ত্রিগুণাতীতানন্দ চিত্রে জীবনী",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী ত্রিগুণাতীতানন্দ চিত্রে জীবনী",
+      "author": "Swami Biswanathananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"স্বামী ত্রিগুণাতীতানন্দ চিত্রে জীবনী\" pdf OR \"Swami Trigunatitananda Chitre Jivani\" Biswanathananda"
+      ],
+      "candidates": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-trigunatitananda-chitre-jivani-bengali/1237499000010664177",
+          "label": "Bengali",
+          "evidence": "Opened official Biswanathananda144p ISBN9788180405907 paidcart; publisher Udbodhan describes sevenchapters.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verified free completeedition."
+    },
+    {
+      "id": 141,
+      "person": "Swami Trigunatitananda",
+      "canonical_title": "Trigunatita Rachana Samgraha",
+      "original_title": "ত্রিগুণাতীত রচনা সংগ্রহ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "ত্রিগুণাতীত রচনা সংগ্রহ",
+      "author": "Swami Trigunatitananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"ত্রিগুণাতীত রচনা সংগ্রহ\" pdf OR \"Trigunatita Rachana Samgraha\""
+      ],
+      "candidates": [
+        {
+          "url": "https://shopref.advaitaashrama.org/product/trigunatita-rachana-samgraha-bengali/",
+          "label": "Bengali",
+          "evidence": "Official exacttitle indexed; directopen timedout twice. No fulltext inspected.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Edition/pagecount/fulltextunresolved; no approval."
+    },
+    {
+      "id": 142,
+      "person": "Swami Trigunatitananda",
+      "canonical_title": "Swami Trigunatitananda",
+      "original_title": "Swami Trigunatitananda",
+      "original_language": "English",
+      "english_title": "Swami Trigunatitananda",
+      "bengali_title": null,
+      "author": "Marie Louise Burke",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Swami Trigunatitananda\" \"Marie Louise Burke\" pdf",
+        "\"Swami Trigunatita His Life and Work\" free pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://sfvedanta.org/bookshop/our-publications-2/",
+          "label": "English",
+          "evidence": "Opened publishing society title Swami Trigunatita His Life and Work, SisterGargi/MarieLouiseBurke, paidbook.1997 identity confirmed byofficial templehistorybibliography.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Baseline shortenedtitle mapped to fuller publisher title; nofreefulltext verified."
+    },
+    {
+      "id": 143,
+      "person": "Swami Akhandananda",
+      "canonical_title": "Swami Akhandananda",
+      "original_title": "স্বামী অখণ্ডানন্দ",
+      "original_language": "Bengali",
+      "english_title": "Swami Akhandananda",
+      "bengali_title": "স্বামী অখণ্ডানন্দ",
+      "author": "Swami Annadananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"স্বামী অখণ্ডানন্দ\" \"অন্নদানন্দ\" pdf OR \"Swami Akhandananda\" Annadananda pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.456955",
+          "label": "Bengali",
+          "evidence": "Opened DLI Annadananda firstedition1960,337scans,Udbodhan,BirchandraStateCentralLibrary. MetadataassertsPD; noindependentlicence/pageflowcheck.",
+          "disposition": "hold_completeness_rights"
+        },
+        {
+          "url": "https://granthagara.com/boi/321288-swami-akhandananda-ed-1-by-swami-annadananda/",
+          "label": "Bengali",
+          "evidence": "Opened intermediary exactauthor337p with earlylife body excerpt; points toDLI.",
+          "disposition": "discovery_only"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Englishtranslation notfound; archival Bengali rights/completenessheld."
+    },
+    {
+      "id": 144,
+      "person": "Swami Akhandananda",
+      "canonical_title": "Swami Akhandananda As We Saw Him",
+      "original_title": "Swami Akhandananda As We Saw Him",
+      "original_language": "English",
+      "english_title": "Swami Akhandananda As We Saw Him",
+      "bengali_title": "স্বামী অখণ্ডানন্দকে যেরূপ দেখিয়াছি",
+      "author": "Swami Chetanananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Swami Akhandananda As We Saw Him\" Chetanananda pdf",
+        "\"স্বামী অখণ্ডানন্দকে যেরূপ দেখিয়াছি\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.vedanta.com/store/swami-akhandananda-as-we-saw-him_moreinfo.html",
+          "label": "English",
+          "evidence": "Opened official247p hardback ISBN8175052619 Chetanananda compilation translatedSwahananda/PrasunDe paid$7.95.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://ramakrishnasa.org.za/wp-content/uploads/2021/02/JYOTI-2019-EDITION-2.pdf",
+          "label": "English",
+          "evidence": "Indexed adaptation citingtarget, notwholebook.",
+          "disposition": "rejected_excerpt"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verifiedfree full English/Bengalitext."
+    },
+    {
+      "id": 145,
+      "person": "Swami Akhandananda",
+      "canonical_title": "From Holy Wanderings to Service of God in Man",
+      "original_title": "স্মৃতিকথা",
+      "original_language": "Bengali",
+      "english_title": "From Holy Wanderings to Service of God in Man",
+      "bengali_title": "স্মৃতিকথা",
+      "author": "Swami Akhandananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"From Holy Wanderings to Service of God in Man\" pdf",
+        "\"স্মৃতিকথা\" \"অখণ্ডানন্দ\" pdf OR \"Smritikatha\" Akhandananda pdf",
+        "অখণ্ডানন্দ স্মৃতিকথা pdf Bengali",
+        "\"স্মৃতিকথা\" \"স্বামী অখণ্ডানন্দ\" archive"
+      ],
+      "candidates": [
+        {
+          "url": "https://istore.chennaimath.org/products/from-holy-wanderings-to-the-service-of-god-in-man/3690041000102314654",
+          "label": "English",
+          "evidence": "Opened publisher170p book, explicitlytranslation ofSmriti-Katha; threechapters andappendixVivekanandaletter, paid₹80.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://estudantedavedanta.net/uploads/1/0/9/5/109527077/pes_grande_mestre_akhandananda.pdf",
+          "label": "Portuguese",
+          "evidence": "IndexedPDFexplicitly translates firstchapteronly; wronglanguage andpartial.",
+          "disposition": "rejected_excerpt"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No completefree Bengali/English textverified."
+    },
+    {
+      "id": 146,
+      "person": "Swami Akhandananda",
+      "canonical_title": "Sharanagati O Seva",
+      "original_title": "শরণাগতি ও সেবা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "শরণাগতি ও সেবা",
+      "author": "Swami Akhandananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"শরণাগতি ও সেবা\" pdf OR \"Sharanagati O Seva\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/sharanagati-o-seva-letters-and-teachings-of-swami-akhandananda/1237499000010647215",
+          "label": "Bengali",
+          "evidence": "Opened192p Udbodhan Akhandananda letters/teachings ₹150cart.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No completefree target; differentPatrasamagra notsubstituted."
+    },
+    {
+      "id": 147,
+      "person": "Swami Akhandananda",
+      "canonical_title": "Akhandanandajir Smriti",
+      "original_title": "অখণ্ডানন্দজীর স্মৃতি",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "অখণ্ডানন্দজীর স্মৃতি",
+      "author": "Sarasilal Sarkar",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"অখণ্ডানন্দজীর স্মৃতি\" pdf OR \"Akhandanandajir Smriti\" Sarasilal Sarkar"
+      ],
+      "candidates": [
+        {
+          "url": "https://shopref.advaitaashrama.org/product/akhandanandajir-smriti/",
+          "label": "Bengali",
+          "evidence": "Official indexedSarasilalSarkar111p ISBN9788196349042; opentimeout.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://boichitro.in/product/akhandanandajir-smriti-sarasilal-sarkar/",
+          "label": "Bengali",
+          "evidence": "Opened paidstore confirms111p current2025publication. PublisherUdbodhan page112p discrepancy retained.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No completefree editionverified."
+    },
+    {
+      "id": 148,
+      "person": "Swami Akhandananda",
+      "canonical_title": "Swami Akhandanander Smritisanchoi",
+      "original_title": "স্বামী অখণ্ডানন্দের স্মৃতিসঞ্চয়",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী অখণ্ডানন্দের স্মৃতিসঞ্চয়",
+      "author": "Swami Niramayananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"স্বামী অখণ্ডানন্দের স্মৃতিসঞ্চয়\" OR \"Swami Akhandanander Smritisanchoi\" pdf",
+        "Swami Akhandanander Smritisanchayan Niramayananda pdf",
+        "অখণ্ডানন্দের স্মৃতিসংগ্রহ নিরাময়ানন্দ pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://play.google.com/store/books/details?id=1yy2EAAAQBAJ",
+          "label": "English",
+          "evidence": "Opened The Call of the Spirit,Niramayananda; publisherEnglishtranslationofrecordedBengaliconversations, paidreader. ExactBengalititle mappinginexcerptnotfullyvisible.",
+          "disposition": "rejected_paid_translation"
+        },
+        {
+          "url": "https://vivekavani.com/m513/",
+          "label": "English",
+          "evidence": "Authorbio indexed Smritisanchay1383Bengali confirms work; notfulltext.",
+          "disposition": "rejected_biographical_reference"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No completefree original/translationverified; Smritisanchoi/Sanchay/Sanchayan variantschecked."
+    },
+    {
+      "id": 149,
+      "person": "Swami Akhandananda",
+      "canonical_title": "Tibbater Pathe Himalaye",
+      "original_title": "তিব্বতের পথে হিমালয়ে",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "তিব্বতের পথে হিমালয়ে",
+      "author": "Swami Akhandananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"তিব্বতের পথে হিমালয়ে\" pdf OR \"Tibbater Pathe Himalaye\" pdf",
+        "Tibbater Pathe Himalaye Akhandananda full text",
+        "\"তিব্বতের পথে হিমালয়ে\" অখণ্ডানন্দ pdf",
+        "\"In the Lap of the Himalayas\" Akhandananda pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://udbodhan.org/books",
+          "label": "Bengali",
+          "evidence": "Officialbookshopindexed titleAkhandananda₹50; nofullfreereader.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://www.vedanta.com/store/in-the-lap-of-the-himalayas-swami-akhandananda_moreinfo.html",
+          "label": "English",
+          "evidence": "Englishrelatedtravelwork foundstorefront; completeness/translationexactidentity notcertified.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Publisheraudio serialparts3–4arenotcompletewrittentext. No verifiedfree edition."
+    },
+    {
+      "id": 150,
+      "person": "Swami Adbhutananda",
+      "canonical_title": "Swami Adbhutananda: As We Saw Him",
+      "original_title": "শ্রীশ্রী লাটু মহারাজের স্মৃতিকথা",
+      "original_language": "Bengali",
+      "english_title": "Swami Adbhutananda: As We Saw Him",
+      "bengali_title": "শ্রীশ্রী লাটু মহারাজের স্মৃতিকথা",
+      "author": "Chandrashekhar Chattopadhyay",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"শ্রীশ্রী লাটু মহারাজের স্মৃতিকথা\" pdf OR \"Swami Adbhutananda As We Saw Him\" pdf",
+        "\"Swami Adbhutananda As We Saw Him\" Chandrashekhar pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://sfvedanta.org/books/swami-adbhutananda-as-we-saw-him/",
+          "label": "English",
+          "evidence": "Institutional bookshop inspected; describes Satswarupananda's free (loose) translation of Chandrashekhar Chattopadhyay's Bengali memoir. Free translation does not mean free access.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://books.google.com/books/about/Swami_Adbhutananda_As_We_Saw_Him.html?id=3eLUDwAAQBAJ",
+          "label": "English",
+          "evidence": "2020 Sri Ramakrishna Math record identifies Bengali source and author; selected pages/TOC only.",
+          "disposition": "rejected_preview"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No complete free original or English translation verified. Magazine articles and newsletter extracts do not establish the complete book."
+    },
+    {
+      "id": 151,
+      "person": "Swami Adbhutananda",
+      "canonical_title": "Adbhutananda Prasanga",
+      "original_title": "অদ্ভুতানন্দ প্রসঙ্গ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "অদ্ভুতানন্দ প্রসঙ্গ",
+      "author": "Swami Siddhananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"অদ্ভুতানন্দ প্রসঙ্গ\" সিদ্ধানন্দ pdf OR \"Adbhutananda Prasanga\" Siddhananda",
+        "\"অদ্ভুতানন্দ প্রসঙ্গ\" \"সিদ্ধানন্দ\""
+      ],
+      "candidates": [
+        {
+          "url": "https://udbodhan.org/product/অদ্ভুতানন্দ-প্রসঙ্গ-adbhutananda-prasanga",
+          "label": "Bengali",
+          "evidence": "Publisher page inspected: paid Bengali reminiscences attributed to Srikumudranjan Sen, conflicting with canonical Siddhananda author; cannot substitute silently.",
+          "disposition": "rejected_identity_conflict"
+        },
+        {
+          "url": "https://estudantedavedanta.net/First%20Meetings%20of%20Sri%20Ramakrishna.pdf",
+          "label": "English reference",
+          "evidence": "Indexed article footnote cites Adbhutananda Prasange, ed. Swami Siddhananda, Udbodhan, BS1367 p15. This supports a different bibliographic lineage but is not the target book body.",
+          "disposition": "rejected_citation_only"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Resolve Sen/Siddhananda edition or author distinction; no matching complete free text verified."
+    },
+    {
+      "id": 152,
+      "person": "Swami Adbhutananda",
+      "canonical_title": "Eternal Words: Spiritual Instructions of Swami Adbhutananda",
+      "original_title": "সৎকথা",
+      "original_language": "Bengali",
+      "english_title": "Eternal Words: Spiritual Instructions of Swami Adbhutananda",
+      "bengali_title": "সৎকথা",
+      "author": "Swami Siddhananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Eternal Words\" \"Adbhutananda\" pdf",
+        "\"সৎকথা\" \"সিদ্ধানন্দ\" pdf",
+        "\"সৎকথা\" \"সিদ্ধানন্দ\" wikisource"
+      ],
+      "candidates": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/eternal-words-spiritual-instructions-of-swami-adbhutananda/1237499000010269853",
+          "label": "English",
+          "evidence": "Publisher page inspected: 316-page paid English edition; Siddhananda and Sarvadevananda credits. Journal serial excerpts not accepted as whole book.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://granthagara.com/boi/328388-sathkatha-ed-2/",
+          "label": "Bengali",
+          "evidence": "Page inspected: Siddhananda, second edition, 282 pages/10MB, OCR sample and download/reader offers. Actual complete file and permissions unverified.",
+          "disposition": "held_full_text_and_rights"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:সৎকথা_-_স্বামী_সিদ্ধানন্দ_(১৯২৩).pdf",
+          "label": "Bengali",
+          "evidence": "1923 scan discovered via author/portrait links; direct web fetch failed and HTTP request403. Wikisource author page lists 1923 edited work and cautions that most Siddhananda works remain copyrighted; not blanket clearance.",
+          "disposition": "held_access_and_rights"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Bengali historical scan promising but complete body and edition-specific rights unresolved; no free complete English translation established."
+    },
+    {
+      "id": 153,
+      "person": "Swami Adbhutananda",
+      "canonical_title": "তাপস লাটুমহারাজের অনুধ্যান",
+      "original_title": "তাপস লাটুমহারাজের অনুধ্যান",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "তাপস লাটুমহারাজের অনুধ্যান",
+      "author": "Mahendranath Dutta",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"তাপস লাটুমহারাজের অনুধ্যান\" OR \"Tapas Latu Maharajer Anudhyan\" pdf",
+        "\"Tapas\" \"Latu\" \"Mahendranath\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://mohendranathdutta.com/bengali.html",
+          "label": "Bengali",
+          "evidence": "Author-associated site inspected; booklist item15 identifies Tapas Latu Maharajer Anudhyan; no full reader linked in that listing.",
+          "disposition": "rejected_catalogue_only"
+        },
+        {
+          "url": "https://vidyamandira.ac.in/pdfs/libDB/religion.pdf",
+          "label": "Bengali catalogue",
+          "evidence": "Institutional catalogue indexed record12409: Mahendranath Dutta, Mahendra Publishing Co, BS1363; catalogue not full target text.",
+          "disposition": "rejected_catalogue_only"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verified complete free text; catalogue and citations establish identity only."
+    },
+    {
+      "id": 154,
+      "person": "Swami Subodhananda",
+      "canonical_title": "Swami Subodhananda",
+      "original_title": "Swami Subodhananda",
+      "original_language": "English",
+      "english_title": "Swami Subodhananda",
+      "bengali_title": null,
+      "author": "Swami Chetanananda; Swami Vimohananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Swami Subodhananda\" Chetanananda Vimohananda pdf",
+        "\"Swami Subodhananda\" \"full text\"",
+        "\"স্বামী সুবোধানন্দ\" \"বিমোহনানন্দ\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://shopref.advaitaashrama.org/product/swami-subodhananda/",
+          "label": "English",
+          "evidence": "Publisher indexed description identifies Chetanananda/Vimohananda, 212 pages, ISBN9788175054516, life/teachings/reminiscences/letters, paid book and Buy EBook. Direct opening timed out/403.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://ebooks.advaitaashrama.org/page/3",
+          "label": "English",
+          "evidence": "Official ebook catalogue lists exact two authors and Get ebook link; listing itself does not expose complete free body.",
+          "disposition": "rejected_catalogue_only"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verified complete free edition. Generic disciple chapters in other books cannot replace this identity."
+    },
+    {
+      "id": 155,
+      "person": "Swami Subodhananda",
+      "canonical_title": "স্বামী সুবোধানন্দের স্মৃতিকথা",
+      "original_title": "স্বামী সুবোধানন্দের স্মৃতিকথা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী সুবোধানন্দের স্মৃতিকথা",
+      "author": "Chetanananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"স্বামী সুবোধানন্দের স্মৃতিকথা\" pdf OR \"Subodhanander Smritikatha\" Chetanananda",
+        "\"Swami Subodhanander Smritikatha\" pdf",
+        "\"Swami Subodhanander\" \"pdf\" -site:scribd.com -site:facebook.com"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.scribd.com/document/850696651/17-Swami-Subodhanander-Smritikatha",
+          "label": "Bengali",
+          "evidence": "Landing page inspected: user upload labelled265 pages and All Rights Reserved. Free complete unauthenticated body not verified.",
+          "disposition": "held_rights_and_access"
+        },
+        {
+          "url": "https://udbodhan.org/product-tag/swami-subodhananda/",
+          "label": "Bengali",
+          "evidence": "Official publisher tag indexed exact title as Buy Now; page opening failed. Institutional booklist also identifies compilation by Chetanananda, ISBN81-8040-499-4.",
+          "disposition": "rejected_storefront"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verified lawful complete free reader; later English compilation is separately ID154."
+    },
+    {
+      "id": 156,
+      "person": "Swami Subodhananda",
+      "canonical_title": "খোকা মহারাজঃ স্বামী সুবোধানন্দ",
+      "original_title": "খোকা মহারাজঃ স্বামী সুবোধানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "খোকা মহারাজঃ স্বামী সুবোধানন্দ",
+      "author": "Abani Gupta",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"খোকা মহারাজ\" \"অবনী\" pdf OR \"Khoka Maharaj\" \"Gupta\"",
+        "\"Khoka Maharaj\" \"Abani\"",
+        "\"খোকা মহারাজ\" \"অবনীমোহন\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://estudantedavedanta.net/Sri-Ramakrishna-and-His-Disciples-in-Orissa.pdf",
+          "label": "Bengali reference",
+          "evidence": "Indexed references distinguish Abanimohan Gupta's Khoka Maharaj Swami Subodhananda Jibani from his Smriti Sanchayan and cite pages58–60,69,132. Direct PDF opening failed; this is a reference, not target book.",
+          "disposition": "rejected_citation_only"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Author variant Abanimohan Gupta found; no actual complete target body or free access verified."
+    },
+    {
+      "id": 157,
+      "person": "Swami Subodhananda",
+      "canonical_title": "স্বামী সুবোধানন্দের জীবনী ও পত্র",
+      "original_title": "স্বামী সুবোধানন্দের জীবনী ও পত্র",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী সুবোধানন্দের জীবনী ও পত্র",
+      "author": "Gen",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"স্বামী সুবোধানন্দের জীবনী ও পত্র\" OR \"Subodhananda Jivani Patra\" pdf",
+        "\"Sri Sri Swami Subodhanander Jibani O Patra\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.exoticindiaart.com/book/details/swami-subodhananda-life-teachings-reminiscences-letters-nak235/",
+          "label": "Bengali source / English extracts",
+          "evidence": "Inspected English book introduction explicitly identifies letters translated from Bengali Sri Sri Swami Subodhanander Jibani O Patra, Sonargaon Ramakrishna Math, Dhaka. It does not supply whole Bengali source.",
+          "disposition": "rejected_storefront_partial_translation"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Canonical Gen remains unchanged; Dhaka publisher established but Bengali whole source unavailable in bounded search. Letters alone in another book do not cover original biography."
+    },
+    {
+      "id": 158,
+      "person": "Swami Vijnanananda",
+      "canonical_title": "Swami Vijnanananda: Life and Teachings",
+      "original_title": "স্বামী বিজ্ঞানানন্দের জীবন ও বাণী",
+      "original_language": "Bengali",
+      "english_title": "Swami Vijnanananda: Life and Teachings",
+      "bengali_title": "স্বামী বিজ্ঞানানন্দের জীবন ও বাণী",
+      "author": "Swami Vishwashrayananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Swami Vijnanananda Life and Teachings\" pdf OR \"বিজ্ঞানানন্দের জীবন ও বাণী\"",
+        "\"Swami Vijnanananda\" \"Vishwashrayananda\" pdf",
+        "\"Swami Vijnanananda Life and Teachings\" filetype:pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://istore.chennaimath.org/products/swami-vijnanananda-life-and-teachings/3690041000102330988",
+          "label": "English",
+          "evidence": "Official publisher indexed title specifies English translation of Vishwasrayananda's Bengali Jivan O Vani by Devavrata Basu Ray. Direct fetch failed; paid product, not reader.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://vedanta-seattle.org/wp-content/uploads/2017/11/Catalog-Nov-2017.pdf",
+          "label": "English",
+          "evidence": "Institutional catalogue records Vishwashrayananda/Basu Ray,75pages,Indian paperback for sale. Catalogue not complete work.",
+          "disposition": "rejected_catalogue_only"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verified complete free Bengali original or English translation; author transliteration variants searched."
+    },
+    {
+      "id": 159,
+      "person": "Swami Vijnanananda",
+      "canonical_title": "Swami Vijnanananda",
+      "original_title": "স্বামী বিজ্ঞানানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী বিজ্ঞানানন্দ",
+      "author": "Swami Jagadiswarananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"স্বামী বিজ্ঞানানন্দ\" \"জগদীশ্বরানন্দ\" pdf",
+        "\"Swami Vijnanananda\" \"Jagadiswarananda\" pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://udbodhan.org/product/স্বামী-বিজ্ঞানানন্দ-swami-vijnanananda",
+          "label": "Bengali",
+          "evidence": "Official page inspected: Jagadiswarananda Bengali biography, Udbodhan publisher,₹280,standard edition; no complete reader.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://www.rkmathharipad.org/Magazines/VedantaKesari_Nov_2016.pdf",
+          "label": "English article",
+          "evidence": "Institutional magazine indexed Jagadiswarananda's Mystical Experiences article. A short article does not establish complete Bengali biography or English translation.",
+          "disposition": "rejected_excerpt"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No complete free target verified. References to Allahabad1947 and Ajmer editions require edition/language comparison before substitution."
+    },
+    {
+      "id": 160,
+      "person": "Swami Vijnanananda",
+      "canonical_title": "Swami Vijnananander Smritikatha",
+      "original_title": "স্বামী বিজ্ঞানানন্দের স্মৃতিকথা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "স্বামী বিজ্ঞানানন্দের স্মৃতিকথা",
+      "author": "A Compilation",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"স্বামী বিজ্ঞানানন্দের স্মৃতিকথা\" pdf OR \"Vijnananander Smritikatha\" pdf",
+        "\"Swami Vijnananander Smritikatha\" Chetanananda pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://udbodhan.org/product/স্বামী-বিজ্ঞানানন্দের-স্",
+          "label": "Bengali",
+          "evidence": "Publisher page inspected exact title and reminiscence description; paid₹150 standard Bengali edition. No full text.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://mumbairkm.org/wp-content/uploads/2021/06/BENGALI-BOOK-LIST.pdf",
+          "label": "Bengali",
+          "evidence": "Institutional sales catalogue indexed exact title B0570980; authorNA. A different sales catalogue attributes Chetanananda; canonical A Compilation preserved.",
+          "disposition": "rejected_catalogue_only"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verified free whole book; attribution variants need title-page confirmation."
+    },
+    {
+      "id": 161,
+      "person": "Swami Vijnanananda",
+      "canonical_title": "Pratyakshadarshir Smritipate Swami Vijnanananda",
+      "original_title": "প্রত্যক্ষদর্শীর স্মৃতিপটে স্বামী বিজ্ঞানানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "প্রত্যক্ষদর্শীর স্মৃতিপটে স্বামী বিজ্ঞানানন্দ",
+      "author": "Jyotirmay Basuray; Sureshchandra Das",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"প্রত্যক্ষদর্শীর স্মৃতিপটে স্বামী বিজ্ঞানানন্দ\" pdf",
+        "\"Pratyakshadarshir Smritipate\" Basu Ray pdf"
+      ],
+      "candidates": [
+        {
+          "url": "https://udbodhan.org/product/প্রত্যক্ষদর্শীর-স্মৃতিপ/",
+          "label": "Bengali",
+          "evidence": "Publisher page inspected: exact reminiscence title,paid₹90; no whole reader.",
+          "disposition": "rejected_storefront"
+        },
+        {
+          "url": "https://www.scribd.com/document/706675930/Saw-Him-Swami-Chetananda",
+          "label": "English references",
+          "evidence": "Indexed source note cites Suresh Chandra Das and Jyotirmay Basu-Roy, General Printers & Publishers,Calcutta1976. English anthology extracts do not supply whole original.",
+          "disposition": "rejected_citation_only"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No complete free Bengali reader verified; variants Basuray/Basu-Roy searched."
+    },
+    {
+      "id": 162,
+      "person": "Swami Vijnanananda",
+      "canonical_title": "Satprasange Swami Vijnanananda",
+      "original_title": "সৎপ্রসঙ্গে স্বামী বিজ্ঞানানন্দ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "সৎপ্রসঙ্গে স্বামী বিজ্ঞানানন্দ",
+      "author": "Swami Vijnanananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"সৎপ্রসঙ্গে স্বামী বিজ্ঞানানন্দ\" pdf OR \"Satprasange Swami Vijnanananda\" pdf",
+        "\"Satprasange\" \"Vijnanananda\" Apurvananda pdf",
+        "\"Satprasange Swami Vijnanananda\" Udbodhan"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.ramakrishnamath.in/pages/book_store/AdvaitaAshramaBooklist.htm",
+          "label": "Bengali",
+          "evidence": "Institutional booklist inspected lists Conversations with Swami Vijnanananda,ISBN9788180405303, authorVijnanananda,paid Bengali. Other source references credit recorder/authorApurvananda,Allahabad1953.",
+          "disposition": "rejected_catalogue_only"
+        },
+        {
+          "url": "https://holytriofootprints.com/kalyaneshwartala-at-bally/",
+          "label": "English/Bengali excerpt",
+          "evidence": "Indexed excerpt translated from Apurvananda's Satprasange. One incident does not establish complete target text.",
+          "disposition": "rejected_excerpt"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No whole free reader verified; distinguish speaker Vijnanananda from recorder Apurvananda, preserve canonical identity."
+    },
+    {
+      "id": 163,
+      "person": "Swami Vijnanananda",
+      "canonical_title": "Swami Vijnanananda: The Beacon Light of Allahabad",
+      "original_title": "Swami Vijnanananda: The Beacon Light of Allahabad",
+      "original_language": "English",
+      "english_title": "Swami Vijnanananda: The Beacon Light of Allahabad",
+      "bengali_title": null,
+      "author": "Tarini Shankar Chakrabarti",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Swami Vijnanananda\" \"Beacon Light\" pdf",
+        "\"Beacon Light of Allahabad\" Chakrabarti",
+        "\"Vijnanananda\" \"Tarini\" \"Chakrabarti\"",
+        "Vijnanananda Tarini Shankar Chakravarty Allahabad book",
+        "\"Vijnanananda\" \"বিজ্ঞানানন্দ\" \"তারিণীশঙ্কর\""
+      ],
+      "candidates": [
+        {
+          "url": "https://belurmath.org/holy-lives/swami-vijnanananda/",
+          "label": "English related biography",
+          "evidence": "Official institutional biography surfaced in expanded author/title search; describes his life and publications but does not identify or provide Chakrabarti's Beacon Light book.",
+          "disposition": "rejected_different_work"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Exact title and Tarini Shankar Chakrabarti/Chakravarty variants did not locate verifiable target edition/body. No assertion that book does not exist; original fixed identity preserved."
+    },
+    {
+      "id": 164,
+      "person": "General",
+      "canonical_title": "ভক্ত মালিকা",
+      "original_title": "ভক্ত মালিকা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "ভক্ত মালিকা",
+      "author": "Gambhirananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"ভক্ত মালিকা\" \"গম্ভীরানন্দ\" pdf OR \"Bhaktamalika\" Gambhirananda pdf",
+        "\"শ্রীরামকৃষ্ণ ভক্তমালিকা\" pdf গম্ভীরানন্দ",
+        "\"Sri Ramakrishna Bhaktamalika\" pdf Gambhirananda"
+      ],
+      "candidates": [
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.266035",
+          "label": "Bengali 1",
+          "evidence": "Granthagara links traced to DLI; metadata1997/Udbodhan/532scans/Gambhirananda/Birchandra library. OCRHTTP2001993084bytes inspected title,firstpart,1997reprint,opening and final Adwaitananda chapter. No explicit license/rights field.",
+          "disposition": "held_rights_and_continuity"
+        },
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.453436",
+          "label": "Bengali 2",
+          "evidence": "DLI metadata1952,part2fourthEDITION,550scans,Udbodhan,Birchandra library. OCRHTTP2001985376bytes inspected fourth-edition frontmatter,TOC and closingLakshmidevi chapter. dc.rights claims In Public Domain but not independently substantiated for edition.",
+          "disposition": "held_rights_and_continuity"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Both volumes located; full page-by-page continuity and edition-specific lawful access/rights need QA. Modern reprint1997 and fourth-edition/1952 metadata cannot be treated as blanket clearance. No redistribution licence inferred from hosting."
+    },
+    {
+      "id": 165,
+      "person": "General",
+      "canonical_title": "শ্রীমা ও শ্রীরামকৃষ্ণ পার্ষদগণের স্মৃতিকথা",
+      "original_title": "শ্রীমা ও শ্রীরামকৃষ্ণ পার্ষদগণের স্মৃতিকথা",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "শ্রীমা ও শ্রীরামকৃষ্ণ পার্ষদগণের স্মৃতিকথা",
+      "author": "Gen",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"শ্রীমা ও শ্রীরামকৃষ্ণ পার্ষদগণের স্মৃতিকথা\" pdf",
+        "\"Srima O Sri Ramakrishna Parshadganer Smritikatha\" pdf",
+        "\"শ্রীমা\" \"পার্ষদগণের\" স্মৃতিকথা pdf",
+        "\"Srima\" \"Parshadganer\" Smritikatha",
+        "শ্রীমা রামকৃষ্ণ পার্ষদগণ স্মৃতিকথা বই"
+      ],
+      "candidates": [
+        {
+          "url": "https://ebuyatsaradamath.org/product-detail.php?pId=32",
+          "label": "Bengali related work",
+          "evidence": "Inspected official Sarada Math product Sanghe Sri Ramakrishna Parshadder Avadan. It is a different title and paid product; cannot replace the fixed Smritikatha identity.",
+          "disposition": "rejected_different_work"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Exact original/transliterated searches yielded no verified matching book body. Generic Gen author and edition remain unestablished; neither absence nor total unavailability proven."
+    },
+    {
+      "id": 166,
+      "person": "General",
+      "canonical_title": "শ্রীরামকৃষ্ণ পরিকর প্রসঙ্গ",
+      "original_title": "শ্রীরামকৃষ্ণ পরিকর প্রসঙ্গ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "শ্রীরামকৃষ্ণ পরিকর প্রসঙ্গ",
+      "author": "Kamaleshwarananda",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"শ্রীরামকৃষ্ণ পরিকর প্রসঙ্গ\" কমলেশ্বরানন্দ pdf",
+        "\"Sriramakrishna-parikar-prasanga\" Kamaleswarananda"
+      ],
+      "candidates": [
+        {
+          "url": "https://granthagara.com/boi/309988-sriramakrishnaparikarprasanga/",
+          "label": "Bengali",
+          "evidence": "Page inspected189pages/11MB,Kamaleshwarananda; traced public DLI reader/download.",
+          "disposition": "candidate_discovery"
+        },
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.457945",
+          "label": "Bengali",
+          "evidence": "DLI metadata1977,189scans,SriTaraknathMajumdar,Calcutta,Birchandra library. OCRHTTP200651136bytes inspected title,author,first publicationBS1384Falgun,TOC(two internal parts)and final177printedpage obituary. Metadata1977vsprintedBS1384requires edition/date reconciliation. dc.rights claims In Public Domain,not independently substantiated.",
+          "disposition": "held_rights_and_continuity"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "Complete-looking189scan body located; no page-by-page continuity or explicit reliable permission confirmed. Two internal parts are not two external volumes; no invented volume URLs."
+    },
+    {
+      "id": 167,
+      "person": "General",
+      "canonical_title": "Photographs of Shri Ramakrishna - Saradadevi",
+      "original_title": "Photographs of Shri Ramakrishna - Saradadevi",
+      "original_language": "English",
+      "english_title": "Photographs of Shri Ramakrishna - Saradadevi",
+      "bengali_title": null,
+      "author": "Gen",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"Photographs of Shri Ramakrishna\" \"Saradadevi\"",
+        "\"Photographs of Sri Ramakrishna and Holy Mother\" book pdf",
+        "\"Photographs of Sri Ramakrishna Sarada Devi\" pdf",
+        "\"Photographs of Sri Ramakrishna\" site:cs.rkmvu.ac.in"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.exoticindiaart.com/book/details/photographs-of-sri-ramakrishna-sarada-devi-idk910/",
+          "label": "English",
+          "evidence": "Inspected92page English hardback,ISBN9788178231181,RamakrishnaMath; researchVidyatmananda/PurbaSengupta,TOC and sampleimages only. This combined33photo annotatedvolume differs from separate biographies/photo collections.",
+          "disposition": "rejected_storefront_preview"
+        },
+        {
+          "url": "https://advaitaashrama.org/pb/2004/112004.pdf",
+          "label": "English review",
+          "evidence": "Official indexed review identifies Chennai2003,92pages and₹50. A review is not the full photograph-and-commentary volume.",
+          "disposition": "rejected_review_only"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No verified free complete edition including all photographs and accompanying commentary; generic photos or separate HolyMother albums not substitutes."
+    },
+    {
+      "id": 168,
+      "person": "General",
+      "canonical_title": "শ্রীচৈতন্য ও শ্রীরামকৃষ্ণ",
+      "original_title": "শ্রীচৈতন্য ও শ্রীরামকৃষ্ণ",
+      "original_language": "Bengali",
+      "english_title": null,
+      "bengali_title": "শ্রীচৈতন্য ও শ্রীরামকৃষ্ণ",
+      "author": "Akshay Kumar Ghosh",
+      "researched_at": "2026-10-15",
+      "queries_executed": [
+        "\"শ্রীচৈতন্য ও শ্রীরামকৃষ্ণ\" \"অক্ষয়\" pdf",
+        "\"Sri Chaitanya O Sri Ramakrishna\" Ghosh pdf",
+        "\"শ্রীচৈতন্য ও শ্রীরামকৃষ্ণ\"",
+        "\"শ্রীচৈতন্য ও শ্রীরামকৃষ্ণ\" অক্ষয়চৈতন্য pdf",
+        "\"Chaitanya\" \"Ramakrishna\" \"Akshay Kumar Ghosh\"",
+        "\"শ্রীচৈতন্য ও শ্রীরামকৃষ্ণ\" \"ঘোষ\""
+      ],
+      "candidates": [
+        {
+          "url": "https://www.thakurmaaswamiji.com/p/blog-page_17.html",
+          "label": "Bengali",
+          "evidence": "Inspected index line lists exact title attributed to Brahmachari Akshaychaitanya,plain text without reader link. BaselineauthorAkshayKumarGhosh not established as same person; conflict preserved.",
+          "disposition": "rejected_identity_and_access_unconfirmed"
+        },
+        {
+          "url": "https://girijalibrary.com/image/Girija-Catalogue-2024.pdf",
+          "label": "Bengali different work",
+          "evidence": "Indexed publisher catalogue lists Dui Avatar: SriChaitanya O SriRamakrishna under SumanBhattacharya,paid₹300. Similar subtitle and differentauthor cannot silently replace target.",
+          "disposition": "rejected_different_work"
+        }
+      ],
+      "approved_public_candidates": [],
+      "status": "searched_unresolved",
+      "unresolved": "No matching complete free body verified; establish author identity/edition rather than equating Akshaychaitanya with AkshayKumarGhosh."
+    }
+  ]
+}

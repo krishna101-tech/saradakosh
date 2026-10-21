@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "issue": 28,
+  "baseline_sha": "d05d5de0dc05fdf8bc8032a72771885d461e4e92",
+  "researched_at_utc": "2026-10-21T05:35:00.000000+00:00",
+  "researcher": "Antigravity (Gemini 3.8 Flash High)",
+  "method": "Renewed actual public searches and primary HTTP body/metadata inspections. Search absence is bounded, not exhaustive. No paid or external model call; no private IDs, full reader bodies or cover binaries in artifacts.",
+  "status": "RESEARCH_CANDIDATES_PENDING_INDEPENDENT_QA",
+  "source_mutations": false,
+  "books": [
+    {
+      "book_id": 144,
+      "canonical_title": "Swami Akhandananda As We Saw Him",
+      "author": "Swami Chetanananda",
+      "original_language": "English",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Swami Akhandananda As We Saw Him\" Advaita Ashrama",
+        "\"Swami Akhandananda As We Saw Him\" \"Chetanananda\"",
+        "\"স্বামী অখণ্ডানন্দকে যেরূপ দেখিয়াছি\" উদ্বোধন"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-akhandananda-as-we-saw-him/1237499000010250877",
+          "observation": "HTTP 200 actual publisher retail page. Published by Advaita Ashrama (247 pages, hardback, ISBN 9788175052611, SKU ADE013, price ₹180). Reminiscences of Swami Akhandananda compiled and edited by Swami Chetanananda. In-print copyrighted work, not a free reader."
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-akhandananda-ke-jerup-dekhiyachhi/1237499000010647431",
+          "observation": "HTTP 200 actual publisher distributor retail page for Bengali edition: 'Swami Akhandananda ke Jerup Dekhiyachhi', published by Udbodhan Karyalaya (112 pages, paperback, ISBN 9788180403309, SKU UDB037, price ₹50). In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-akhandananda-as-we-saw-him/1237499000010250877",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-akhandananda-as-we-saw-him/1237499000010250877",
+          "page_title": "Swami Akhandananda As We Saw Him | Advaita Ashrama",
+          "edition_match": "English, Swami Chetanananda, Advaita Ashrama, hardback 247 pages, ISBN 9788175052611, SKU ADE013.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/ADE013_1.jpg/1237499000010325046/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 400,
+            "height": 631,
+            "format": "JPEG",
+            "bytes": 32698,
+            "sha256": "148cf5aba616f878100ae1b461cb59333fd6e8539091612d503d12d99c71b1a5",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        },
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-akhandananda-ke-jerup-dekhiyachhi/1237499000010647431",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-akhandananda-ke-jerup-dekhiyachhi/1237499000010647431",
+          "page_title": "Swami Akhandananda ke Jerup Dekhiyachhi | Advaita Ashrama",
+          "edition_match": "Bengali, Swami Chetanananda, Udbodhan Karyalaya / Advaita Ashrama, paperback 112 pages, ISBN 9788180403309, SKU UDB037.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB037_1.jpg/1237499000010703968/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 755,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 98836,
+            "sha256": "8a67f935e86391fffb0d133fb26b0a69f66de252d90d9225211a68b188575a53",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. In-print compilation of reminiscences of Swami Akhandananda edited by Swami Chetanananda, published in English by Advaita Ashrama (247 pages, ISBN 9788175052611) and in Bengali by Udbodhan Karyalaya (112 pages, ISBN 9788180403309). Under active statutory copyright; no authorized free digital edition verified on open public repositories."
+    },
+    {
+      "book_id": 145,
+      "canonical_title": "From Holy Wanderings to Service of God in Man",
+      "author": "Swami Akhandananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"From Holy Wanderings to the Service of God in Man\" Chennai Math",
+        "\"Smriti Katha\" \"Swami Akhandananda\" Udbodhan",
+        "\"স্মৃতিকথা\" \"অখণ্ডানন্দ\" site:shop.advaitaashrama.org"
+      ],
+      "sources": [
+        {
+          "url": "https://istore.chennaimath.org/products/from-holy-wanderings-to-the-service-of-god-in-man/3690041000102314654",
+          "observation": "HTTP 200 actual publisher retail page for English translation. Published by Sri Ramakrishna Math, Chennai (paperback, 170 pages, ISBN 9788178235288, SKU BK 0000435, price ₹80). English translation of Swami Akhandananda's Bengali memoirs 'Smriti-Katha'. In-print publication, not a free reader."
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/products/smriti-katha/1237499000010647107",
+          "observation": "HTTP 200 actual publisher distributor retail page for Bengali original: 'Smriti Katha' by Swami Akhandananda, published by Udbodhan Karyalaya (paperback, ISBN 9788180403279, SKU UDB024, price ₹120). In-print publication, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://istore.chennaimath.org/products/from-holy-wanderings-to-the-service-of-god-in-man/3690041000102314654",
+          "http_status": 200,
+          "resolved_url": "https://istore.chennaimath.org/products/from-holy-wanderings-to-the-service-of-god-in-man/3690041000102314654",
+          "page_title": "From Holy Wanderings to Service of God in Man | Ramakrishna Math, Chennai",
+          "edition_match": "English translation, Swami Akhandananda, Sri Ramakrishna Math Chennai, paperback 170 pages, ISBN 9788178235288, SKU BK 0000435.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://istore.chennaimath.org/product-images/From-Holy-Wanderings-to-Service-of-God-in-Man1.jpg/3690041000102398482/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 600,
+            "height": 600,
+            "format": "JPEG",
+            "bytes": 60417,
+            "sha256": "9bc002f353269dc19622eca05b91cf96c68dfad6419ca9212df1df0909fd9e23",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        },
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/smriti-katha/1237499000010647107",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/smriti-katha/1237499000010647107",
+          "page_title": "Smriti Katha | Advaita Ashrama",
+          "edition_match": "Bengali, Swami Akhandananda, Udbodhan Karyalaya / Advaita Ashrama, paperback, ISBN 9788180403279, SKU UDB024.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB024_1.jpg/1237499000010703661/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 816,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 263877,
+            "sha256": "2e9fe354a2f3979c0e6b77efbdeb53a4d4a375c682ed27e71009680273d7ded6",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Spiritual memoirs of Swami Akhandananda (1864–1937), published in Bengali as 'Smriti Katha' by Udbodhan Karyalaya (ISBN 9788180403279) and in English as 'From Holy Wanderings to Service of God in Man' by Sri Ramakrishna Math Chennai (170 pages, ISBN 9788178235288). While the author passed away in 1937 (original text public domain worldwide), no complete, authorized free digital edition of either the English translation or Bengali edition is verified on open public repositories."
+    },
+    {
+      "book_id": 146,
+      "canonical_title": "Sharanagati O Seva",
+      "author": "Swami Akhandananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Sharanagati O Seva\" Advaita Ashrama",
+        "\"শরণাগতি ও সেবা\" উদ্বোধন",
+        "site:shop.advaitaashrama.org \"sharanagati-o-seva\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/sharanagati-o-seva-letters-and-teachings-of-swami-akhandananda/1237499000010647215",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Udbodhan Karyalaya, distributed by Advaita Ashrama (paperback, 192 pages, ISBN 9788180403286, SKU UDB031, price ₹150). Collection of letters and spiritual teachings of Swami Akhandananda. In-print retail edition, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/sharanagati-o-seva-letters-and-teachings-of-swami-akhandananda/1237499000010647215",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/sharanagati-o-seva-letters-and-teachings-of-swami-akhandananda/1237499000010647215",
+          "page_title": "Sharanagati O Seva: Letters and Teachings of Swami Akhandananda | Advaita Ashrama",
+          "edition_match": "Bengali, Swami Akhandananda, Udbodhan Karyalaya / Advaita Ashrama, paperback 192 pages, ISBN 9788180403286, SKU UDB031.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB031_1.jpg/1237499000010703794/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 792,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 168640,
+            "sha256": "35903803df31aecbe331ea9e93c0b767c589ed3a1ec5a04e727e601b372c95b7",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Bengali collection of letters, teachings, and spiritual guidance of Swami Akhandananda, published by Udbodhan Karyalaya, Kolkata (192 pages, ISBN 9788180403286). In-print retail anthology with Udbodhan editorial compilation; no authorized complete free digital edition verified on open public repositories."
+    },
+    {
+      "book_id": 147,
+      "canonical_title": "Akhandanandajir Smriti",
+      "author": "Sarasilal Sarkar",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"Akhandanandajir Smriti\" Advaita Ashrama",
+        "\"অখণ্ডানন্দজীর স্মৃতি\" \"সরসীলাল সরকার\"",
+        "site:shop.advaitaashrama.org \"akhandanandajir-smriti\""
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/akhandanandajir-smriti/1237499000010664789",
+          "observation": "HTTP 200 actual publisher distributor retail page. Published by Udbodhan Karyalaya, distributed by Advaita Ashrama (paperback, 112 pages, ISBN 9788196349042, SKU UDB064, price ₹125). Personal reminiscences and memories of Swami Akhandananda by Dr. Sarasilal Sarkar. In-print copyrighted work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/akhandanandajir-smriti/1237499000010664789",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/akhandanandajir-smriti/1237499000010664789",
+          "page_title": "Akhandanandajir Smriti | Advaita Ashrama",
+          "edition_match": "Bengali, Dr. Sarasilal Sarkar, Udbodhan Karyalaya / Advaita Ashrama, paperback 112 pages, ISBN 9788196349042, SKU UDB064.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB064_1.jpg/1237499000010704535/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 689,
+            "height": 989,
+            "format": "JPEG",
+            "bytes": 23536,
+            "sha256": "71262d8612ed0f09a20968b196c81950b7f37ebce1011e3c9a9d783b7c6a6cc6",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Bengali reminiscences of Swami Akhandananda by devotee Dr. Sarasilal Sarkar, published by Udbodhan Karyalaya, Kolkata (112 pages, ISBN 9788196349042). In-print retail work; under active copyright; no authorized complete free digital edition verified on open public repositories."
+    },
+    {
+      "book_id": 148,
+      "canonical_title": "Swami Akhandanander Smritisanchoi",
+      "author": "Swami Niramayananda",
+      "original_language": "Bengali",
+      "status": "research_checkpoint_ready_pending_QA",
+      "queries": [
+        "\"The Call of the Spirit\" \"Swami Akhandananda\" Chennai Math",
+        "\"The Call of the Spirit: Conversations with Swami Akhandananda\"",
+        "\"স্বামী অখণ্ডানন্দের স্মৃতিসঞ্চয়\" OR \"স্মৃতিসঞ্চয়\" নিরাময়ানন্দ"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/the-call-of-the-spirit-conversations-with-swami-akhandananda/1237499000010764087",
+          "observation": "HTTP 200 actual publisher retail page. Published by Sri Ramakrishna Math, Chennai (paperback, 172 pages, ISBN 9788171206100, SKU MDE008, price ₹35). English translation of 'Swami Akhandanander Smritisanchay' (conversations and spiritual counsels recorded by Swami Niramayananda). In-print retail work, not a free reader."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/the-call-of-the-spirit-conversations-with-swami-akhandananda/1237499000010764087",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/the-call-of-the-spirit-conversations-with-swami-akhandananda/1237499000010764087",
+          "page_title": "The Call of the Spirit: Conversations with Swami Akhandananda | Advaita Ashrama",
+          "edition_match": "English translation, recorded by Swami Niramayananda, Sri Ramakrishna Math Chennai / Advaita Ashrama, paperback 172 pages, ISBN 9788171206100, SKU MDE008.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/MDE008_1.jpg/1237499000010827320/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 789,
+            "height": 1200,
+            "format": "JPEG",
+            "bytes": 33258,
+            "sha256": "6ce036a7229561aafc68bc1aef1d31253ef62125e6ee8165b4528be1bcd2aafb",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "readers": [],
+      "text_outcome": "no_complete_free_text_verified. Spiritual conversations and reminiscences of Swami Akhandananda recorded by Swami Niramayananda, published in Bengali as 'Swami Akhandanander Smritisanchay' and in English translation as 'The Call of the Spirit' by Sri Ramakrishna Math Chennai (172 pages, ISBN 9788171206100). In-print retail publication; under active copyright; no authorized complete free digital edition verified on open public repositories."
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "scope": "Issue28 renewed bounded research only;retained legacy IDs6–10;candidate evidence requires independent QA",
+  "baseline_sha": "1069fc336c1e9f900440fea2f1bfa2a0404cd98c",
+  "researcher": "gpt-6.1-sol High",
+  "cost": "Included public web search and local HTTP inspection only; no purchase/API spend/hosted build/upload",
+  "privacy": "No private Drive IDs or text copied.",
+  "method": "Renewed English/original-language/transliterated queries. Product pictures and lawful clearance counted separately. Search absence is bounded not exhaustive.",
+  "books": [
+    {
+      "book_id": 6,
+      "title": "Ramakrishna as We Saw Him",
+      "catalog_author": "Swami Chetanananda",
+      "catalog_original_language": "English",
+      "renewed_queries": [
+        "\"Ramakrishna as We Saw Him\" full text pdf Chetanananda"
+      ],
+      "renewed_checked_at": "2026-10-16T11:20:16.114217+00:00",
+      "text_decision": "no_complete_free_text_verified",
+      "text_evidence": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/ramakrishna-as-we-saw-him/1237499000010267653",
+          "observation": "Official product page; paid printed edition, no complete free reader established."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/ramakrishna-as-we-saw-him/1237499000010267653",
+          "checked_at": "2026-10-16T11:20:05.057150+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "rights_assessment": "Publisher product image authentic lead only. No explicit cover reuse licence or permission found/supplied. Do not rehost.",
+          "lawfully_cleared": false,
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/ARE018_1.jpg/1237499000010306871/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            923,
+            1400
+          ],
+          "edition_metadata": {
+            "publisher": "Advaita Ashrama",
+            "author": "Swami Chetanananda",
+            "binding": "Deluxe (Hardbound)",
+            "language": "English",
+            "year": "2015",
+            "pages": "494",
+            "isbn": "9788185301037"
+          }
+        }
+      ],
+      "editorial_hold": null
+    },
+    {
+      "book_id": 7,
+      "title": "Sri Ramakrishna: Life and Message",
+      "catalog_author": "Swami Vijnanananda",
+      "catalog_original_language": "Hindi",
+      "renewed_queries": [
+        "\"Ramakrishna Life and Message\" Vijnanananda pdf",
+        "\"परमहंस चरित\" विज्ञानानन्द pdf"
+      ],
+      "renewed_checked_at": "2026-10-16T11:20:16.114239+00:00",
+      "text_decision": "new_original_hindi_scan_candidate_pending_completeness_and_edition_QA",
+      "text_evidence": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/sri-ramakrishna-life-and-message/1237499000010269093",
+          "observation": "Official product page; paid printed edition, no complete free reader established."
+        },
+        {
+          "url": "https://archive.org/details/in.ernet.dli.2015.475358",
+          "observation": "Renewed Hindi query via ePustakalay found DLI Hindi scan,265 pages,metadata Copyright Permitted. First/last content and match to original Vijnanananda text pending; does not verify modern English translation."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/sri-ramakrishna-life-and-message/1237499000010269093",
+          "checked_at": "2026-10-16T11:20:05.057566+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "rights_assessment": "Publisher product image authentic lead only. No explicit cover reuse licence or permission found/supplied. Do not rehost.",
+          "lawfully_cleared": false,
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/ARE033_1.jpg/1237499000010307546/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            400,
+            614
+          ],
+          "edition_metadata": {
+            "publisher": "Advaita Ashrama",
+            "author": "Swami Vijnanananda",
+            "binding": "Paperback",
+            "language": "English",
+            "year": "NA",
+            "pages": "248"
+          }
+        }
+      ],
+      "editorial_hold": null
+    },
+    {
+      "book_id": 8,
+      "title": "Sri Ramakrishna: God of All",
+      "catalog_author": "Swami Atmasthananda",
+      "catalog_original_language": "English",
+      "renewed_queries": [
+        "\"এক নতুন মানুষ\" আত্মস্থানন্দ pdf",
+        "\"Ek Natun Manush\" pdf"
+      ],
+      "renewed_checked_at": "2026-10-16T11:20:16.114246+00:00",
+      "text_decision": "no_complete_free_text_verified",
+      "text_evidence": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/sri-ramakrishna-god-of-all/1237499000010257085",
+          "observation": "Official product page; paid printed edition, no complete free reader established."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/sri-ramakrishna-god-of-all/1237499000010257085",
+          "checked_at": "2026-10-16T11:20:05.057842+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "rights_assessment": "Publisher product image authentic lead only. No explicit cover reuse licence or permission found/supplied. Do not rehost.",
+          "lawfully_cleared": false,
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/ARE023_1.jpg/1237499000010307122/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            900,
+            1400
+          ],
+          "edition_metadata": {
+            "publisher": "Advaita Ashrama",
+            "author": "Swami Atmasthananda",
+            "binding": "Paperback",
+            "language": "English",
+            "year": "NA",
+            "pages": "128"
+          }
+        }
+      ],
+      "editorial_hold": null
+    },
+    {
+      "book_id": 9,
+      "title": "নিজমুখে শ্রীরামকৃষ্ণের জীবন ও উপলব্ধি",
+      "catalog_author": "Gen",
+      "catalog_original_language": "Bengali",
+      "renewed_queries": [
+        "\"নিজমুখে\" \"উপলব্ধি\" pdf",
+        "\"Nijamukhe\" \"pdf\""
+      ],
+      "renewed_checked_at": "2026-10-16T11:20:16.114251+00:00",
+      "text_decision": "no_complete_free_text_verified",
+      "text_evidence": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/nijamukhe-sri-ramakrishner-jivan-o-upalabdhi/1237499000011856245",
+          "observation": "Official product page; paid printed edition, no complete free reader established."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://shop.advaitaashrama.org/products/nijamukhe-sri-ramakrishner-jivan-o-upalabdhi/1237499000011856245",
+          "checked_at": "2026-10-16T11:20:05.058212+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "rights_assessment": "Publisher product image authentic lead only. No explicit cover reuse licence or permission found/supplied. Do not rehost.",
+          "lawfully_cleared": false,
+          "http_status": 200,
+          "actual_image_url": "https://shop.advaitaashrama.org/product-images/IRB003_1.jpg/1237499000011913965/1100x1100",
+          "image_http_status": 200,
+          "dimensions": [
+            220,
+            338
+          ],
+          "edition_metadata": {
+            "publisher": "Ramakrishna Mission - Golpark",
+            "author": "Abhaya Dasgupta",
+            "binding": "Deluxe (Hardbound)",
+            "language": "Bengali",
+            "pages": "246"
+          }
+        }
+      ],
+      "editorial_hold": null
+    },
+    {
+      "book_id": 10,
+      "title": "ব্রাহ্ম ও খ্রিস্টান অনুরাগীদের চোখে শ্রীরামকৃষ্ণ",
+      "catalog_author": "Nanda Mukhopadhyaya",
+      "catalog_original_language": "Bengali",
+      "renewed_queries": [
+        "\"ব্রাহ্ম\" \"খ্রিস্টান\" \"অনুরাগীদের\" pdf",
+        "\"Sri Ramakrishna in the Eyes of Brahmo and Christian Admirers\" pdf"
+      ],
+      "renewed_checked_at": "2026-10-16T11:20:16.114257+00:00",
+      "text_decision": "no_complete_free_text_verified",
+      "text_evidence": [
+        {
+          "url": "https://shopref.advaitaashrama.org/product/sri-ramakrishna-21/",
+          "observation": "Official product page; paid printed edition, no complete free reader established."
+        }
+      ],
+      "cover_candidates": [
+        {
+          "source_product_url": "https://shopref.advaitaashrama.org/product/sri-ramakrishna-21/",
+          "checked_at": "2026-10-16T11:20:05.058472+00:00",
+          "rights_decision": "hold_no_reuse_permission",
+          "rights_assessment": "Publisher product image authentic lead only. No explicit cover reuse licence or permission found/supplied. Do not rehost.",
+          "lawfully_cleared": false,
+          "http_status": 403,
+          "actual_image_url": null,
+          "edition_metadata": {}
+        }
+      ],
+      "editorial_hold": "English counterpart not established as Bengali edition"
+    }
+  ],
+  "checkpoints": [
+    {
+      "ids": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "completed_at": "2026-10-16T11:20:16.114293+00:00",
+      "new_complete_texts_verified": 0,
+      "lawfully_cleared_cover_assets": 0,
+      "status": "completed_bounded_research_candidate_only"
+    }
+  ],
+  "scorecard": {
+    "works_researched": 5,
+    "works_with_source_image_discoveries": 4,
+    "source_images_discovered": 4,
+    "cover_assets_legally_cleared": 0,
+    "new_text_links_approved": 0,
+    "candidate_only": true,
+    "warning": "First/final body evidence and official free offer remain separate from independent publication approval."
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "issue": 28,
+  "baseline_sha": "47aa26a5209e6c2647ef8edbff1bef0c2976e22a",
+  "researched_at_utc": "2026-10-21T03:05:11.671612+00:00",
+  "researcher": "gpt-6.1-sol High",
+  "method": "Renewed actual public searches and primary HTTP body/metadata inspections. Search absence is bounded, not exhaustive. No paid or external model call; no private IDs, full reader bodies or cover binaries in artifacts.",
+  "status": "RESEARCH_CANDIDATES_PENDING_INDEPENDENT_QA",
+  "source_mutations": false,
+  "books": [
+    {
+      "status": "research_checkpoint_ready_pending_QA",
+      "readers": [],
+      "book_id": 84,
+      "canonical_title": "Premananda Jivancharit",
+      "author": "Swami Omkareshwarananda",
+      "original_language": "Bengali",
+      "queries": [
+        "\"Premananda Jivancharit\" Udbodhan pdf",
+        "\"প্রেমানন্দ জীবনচরিত\" site:udbodhan.org",
+        "\"Premananda Jivancharit\" book publisher Udbodhan"
+      ],
+      "sources": [
+        {
+          "url": "https://udbodhan.org/gallery/21",
+          "observation": "HTTP200 primary release-news body checked:29November2025 releases Premananda Jivancharit and Swami Premananda Patrasamgraha. Confirms title existence, not complete text or edition identity with older cited Jivancharit."
+        }
+      ],
+      "covers": [],
+      "text_outcome": "No complete free original Bengali text verified in renewed bounded search. Official release news is not a book reader. Current official matching individual cover not found in inspected pages; prior retail lead remains historical discovery only."
+    },
+    {
+      "status": "research_checkpoint_ready_pending_QA",
+      "readers": [],
+      "book_id": 85,
+      "canonical_title": "প্রেমানন্দ প্রেমকথা",
+      "author": "Brahmachari Akshaychaitanya",
+      "original_language": "Bengali",
+      "queries": [
+        "\"Premananda Premkatha\" pdf",
+        "\"প্রেমানন্দ প্রেমকথা\" pdf",
+        "\"Premananda Premkatha\" publisher cover"
+      ],
+      "sources": [
+        {
+          "url": "https://archive.org/metadata/in.ernet.dli.2015.267182",
+          "observation": "HTTP200 metadata:1957secondedition,Nababharat Publishers, Bengali, BirChandraStateCentralLibrary/DLI provenance,226scans. No explicit licence field found."
+        },
+        {
+          "url": "https://archive.org/download/in.ernet.dli.2015.267182/2015.267182.Premananda-premkatha-Ed_djvu.txt",
+          "observation": "HTTP200847303bytes; actual opening title,author,1957secondedition,publisher,foreword and TOC inspected; ending publisher advertisements. OCR includes24numberedTOCentries. Bengali OCR imperfect; not facsimile continuity proof."
+        },
+        {
+          "url": "https://archive.org/download/in.ernet.dli.2015.267182/2015.267182.Premananda-premkatha-Ed_scandata.xml",
+          "observation": "HTTP200226sequential leafNum0–225; printed page labels reach214. Scandata continuity supports digitization extent but cannot prove every printed page/content legible or legal clearance."
+        }
+      ],
+      "covers": [],
+      "text_outcome": "Substantial complete-scan candidate retained HOLD for visual page continuity/legibility and edition-specific rights; no new link approval. No official current publisher cover verified; scan is not treated as a cleared cover."
+    },
+    {
+      "status": "research_checkpoint_ready_pending_QA",
+      "readers": [],
+      "book_id": 86,
+      "canonical_title": "স্বামী প্রেমানন্দের পত্রাবলী",
+      "author": "Swami Premananda",
+      "original_language": "Bengali",
+      "queries": [
+        "\"Swami Premanander Patrabali\" pdf",
+        "\"স্বামী প্রেমানন্দের পত্রাবলী\" pdf"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-premanander-patravali/1237499000010646963",
+          "observation": "HTTP200 actual primary product:184pageBengaliPatravali; paid paperback, not whole text."
+        },
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-premananda-patrasamgraha-bengali/1237499000029104999",
+          "observation": "HTTP200 actual primary page:2025UdbodhanPatrasamgraha,ACompilation,320pages,ISBN9788198501707. Different named collection/extent; not evidence old184pagePatravali wholly replaced or duplicate."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://shop.advaitaashrama.org/products/swami-premanander-patravali/1237499000010646963",
+          "http_status": 200,
+          "resolved_url": "https://shop.advaitaashrama.org/products/swami-premanander-patravali/1237499000010646963",
+          "page_title": "Swami Premanander Patravali by Swami Premananda | Advaita Ashrama",
+          "edition_match": "Exact Bengali Patravali by Swami Premananda; Udbodhan, paperback,184pages. ISBN/impression unavailable. Distinct from2025Patrasamgraha320pages ISBN9788198501707; no substitution.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_url": "https://shop.advaitaashrama.org/product-images/UDB020_1.jpg/1237499000010703561/1100x1100",
+          "image_observation": {
+            "http_status": 200,
+            "width": 219,
+            "height": 325,
+            "format": "JPEG",
+            "bytes": 20714,
+            "sha256": "f85aab2617d944ac8379c4e364a123d4e8800976fd7dc2dd125560a1b07e97fe",
+            "meaning": "Decoded returned raster, not URL size or original master size."
+          }
+        }
+      ],
+      "text_outcome": "No complete free Bengali letters edition verified. New2025Patrasamgraha is recorded as an edition/collection distinction, not substituted as reader or exact cover."
+    },
+    {
+      "status": "research_checkpoint_ready_pending_QA",
+      "readers": [],
+      "book_id": 87,
+      "canonical_title": "স্বামী প্রেমানন্দ",
+      "author": "Gen (baseline unresolved)",
+      "original_language": "Bengali",
+      "queries": [
+        "\"স্বামী প্রেমানন্দ\" \"Gen\" pdf",
+        "\"স্বামী প্রেমানন্দ\" Bengali biography book publisher"
+      ],
+      "sources": [
+        {
+          "url": "https://shop.advaitaashrama.org/products/swami-premananda/1237499000010254563",
+          "observation": "Previously inspected HindiArundevBhattacharya152pagebook remains author/language mismatch. Renewed primary category still distinguishes it from Bengali Omkareshwarananda collections. Not accepted as target."
+        }
+      ],
+      "covers": [],
+      "text_outcome": "Baseline abbreviated author Gen unresolved. Bounded Bengali/transliteration searches did not establish an exact source edition. Preserve identity; do not merge intoID82/83or genericEnglishbiography. No complete reader or matching official cover verified."
+    },
+    {
+      "status": "research_checkpoint_ready_pending_QA",
+      "readers": [],
+      "book_id": 88,
+      "canonical_title": "Niranjanananda Charit",
+      "author": null,
+      "original_language": "Bengali",
+      "queries": [
+        "\"Niranjanananda Charit\" pdf",
+        "\"Niranjanananda Charit\" \"Tattwasarananda\""
+      ],
+      "sources": [
+        {
+          "url": "https://udbodhan.org/product/স্নিরঞ্জনানন্দ-চরিত-niranjanananda-chari/",
+          "observation": "Direct current GET404. Earlier indexed255pageprintproduct is historical; do not count its stale URL as working reader."
+        },
+        {
+          "url": "https://udbodhan.org/",
+          "observation": "HTTP200actualbody:matchingBengalititle,80rupee3yeardigitalreadinglicence,Readasample link. Paid/sample access rejected as free complete text. Current card contains authentic matching title cover but no complete edition metadata."
+        }
+      ],
+      "covers": [
+        {
+          "product_url": "https://udbodhan.org/",
+          "image_url": "https://udbodhan.org/api/media/file/Nirjancharit_Cover.jpg",
+          "edition_match": "Actual home-page card identifies Bengali Niranjanananda Charit and links paid digital sample. Exact print/digital edition correspondence and author not established by current card. Historical official category credited Tattwasarananda; do not fill baseline null author automatically.",
+          "rights_decision": "HOLD: publisher display proves provenance, not permission to rehost or deploy. No explicit cover reuse licence established. Visual crop and edition review pending.",
+          "image_observation": {
+            "http_status": 200,
+            "width": 1654,
+            "height": 2551,
+            "format": "JPEG",
+            "bytes": 1727184,
+            "sha256": "1eabbd3aa697a03728ee67fc1b436e203af7c7527df38f033377ded3f3bd23ce"
+          }
+        }
+      ],
+      "text_outcome": "No complete free Bengali text verified. Publisher sample/paid digital licence is excluded. Newly discovered actual publisher raster is a rights-held title lead; exact edition correspondence pending."
+    }
+  ],
+  "checkpoints": [
+    {
+      "book_ids": [
+        84,
+        85,
+        86,
+        87,
+        88
+      ],
+      "works": 5,
+      "matching_cover_leads": 2,
+      "covers_cleared": 0,
+      "new_public_links_approved": 0,
+      "QA": "pending independent review"
+    }
+  ]
+}
