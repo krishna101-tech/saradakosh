@@ -149,17 +149,16 @@
     160,
     161,
     162,
-    163
-  ],
-  "researched_count": 147,
-  "remaining_outside_proposed_duplicates": [
+    163,
     164,
     165,
     166,
     167,
     168
   ],
-  "remaining_count": 5,
+  "researched_count": 152,
+  "remaining_outside_proposed_duplicates": [],
+  "remaining_count": 0,
   "deduplication_scope": [
     33,
     34,
@@ -555,10 +554,22 @@
       ],
       "sha256": "1163caa389dfc20b604f038a961a1e3bfc5baaf39b89520c0f4dd9015157453c",
       "qa": "Pending independent review; official publisher cover leads recorded for IDs 159-162 with HOLD (including high-resolution 1496x2328 raster for ID 159 from Udbodhan), IDs 159-163 in-print/out-of-print works with no authorized complete free digital edition verified."
+    },
+    {
+      "path": "research-164-168.json",
+      "ids": [
+        164,
+        165,
+        166,
+        167,
+        168
+      ],
+      "sha256": "6fa9ae9b241f9ae18d04ca4b6c37c684bb5b7713b289ef3f9781749b30df9a3b",
+      "qa": "Pending independent review; ID 166 candidate reader proposed pending QA (1977 DLI/IA scan, author died 1936, PD worldwide), official publisher cover leads recorded for IDs 164, 167 with HOLD, ID 164 DLI scans held (author in-copyright until 2049), IDs 165, 168 no_complete_free_text_verified."
     }
   ],
   "latest_research_date": "2026-10-21",
   "latest_research_addendum": "deduplication-resume-2026-10-21.json",
   "latest_research_addendum_sha256": "56c7570e69215d0af17804a845710aef5766f19784af3920a2bd6ec60724d4d6",
-  "latest_stop": "Antigravity checkpoint 159-163 complete. 147 works researched outside 16 proposed duplicates; 5 remaining 164–168."
-}
+  "latest_stop": "Antigravity checkpoint 164-168 complete. All 152 works researched outside 16 proposed duplicates; 0 remaining. Full catalogue coverage achieved across all candidate works."
+}

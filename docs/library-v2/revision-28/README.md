@@ -1,4 +1,8 @@
-# Current bounded resume — 21 October 2026 (Antigravity Update: IDs 159–163)
+# Current bounded resume — 21 October 2026 (Antigravity Update: IDs 164–168 — 100% Complete)
+
+Renewed research now covers all **152 retained works** outside proposed duplicates 33–48: previous 147 plus 164–168. **0 remain: full catalogue coverage achieved**. Checkpoint `research-164-168.json` records 1 verified complete Bengali scan candidate on Internet Archive / DLI (ID 166 *Sriramakrishna-parikar-prasanga* by Swami Kamaleswarananda, 189 pages, author died in 1936, public domain worldwide), 2 new official publisher cover leads (IDs 164, 167) with decoded dimensions and SHA256 hashes from Advaita Ashrama / Udbodhan storefronts. ID 164 DLI scans held under statutory copyright (author Swami Gambhirananda died in 1988; protected in India until 2049); IDs 165, 168 have no complete free digital text verified on open repositories. All new candidates are pending independent review; zero assets cleared and zero new reader approvals.
+
+## Earlier bounded resume — 21 October 2026 (Antigravity Update: IDs 159–163)
 
 Renewed research now covers **147 retained works** outside proposed duplicates 33–48: previous 142 plus 159–163. **5 remain: 164–168**. Checkpoint `research-159-163.json` records 4 new official publisher cover leads (IDs 159, 160, 161, 162) with decoded dimensions and SHA256 hashes from Udbodhan Karyalaya and Advaita Ashrama storefronts (including a high-resolution 1496x2328 raster for ID 159 from Udbodhan). IDs 159–163 in-print and out-of-print works with no authorized complete free digital edition verified on open public repositories. All new candidates are pending independent review; zero assets cleared and zero new reader approvals.
 
