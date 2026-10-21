@@ -1,0 +1,233 @@
+{
+  "issue": 28,
+  "date": "2026-10-21",
+  "researcher": "gpt-6.1-sol High",
+  "status": "RESEARCH_ADDENDUM_PENDING_INDEPENDENT_QA",
+  "preserves_historical_deduplication_and_QA": true,
+  "source_mutations": false,
+  "all_16_duplicates_verified": false,
+  "visible_count_152_approved": false,
+  "id48_institutional_pdf": {
+    "url": "https://chandigarh.rkmm.org/Vivek%20Mahotsav/Books/To%20the%20youth%20of%20India.pdf",
+    "http_status": 200,
+    "bytes": 841783,
+    "sha256": "dc853ae99c5362ff9360bd26a2f31465412ef914af451f9e675abc7829a6f71e",
+    "pages": 94,
+    "mapping": [
+      {
+        "selection_number": 1,
+        "selection_title": "India’s Message to the World",
+        "pdf_pages": [
+          3,
+          9
+        ],
+        "cw_url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/first_public_lecture_in_the_east_%28colombo%29.htm",
+        "cw_http_status": 200,
+        "cw_body_characters": 25263,
+        "pdf_body_characters": 22790,
+        "sampled_12_word_windows": 85,
+        "windows_exactly_present_after_latin_normalization": 79,
+        "meaning": "Mechanical passage-overlap discovery evidence only; spelling, accent and typography differences remain. Not full character identity, scan fidelity, edition or licence certification.",
+        "opening_ending_read": true
+      },
+      {
+        "selection_number": 2,
+        "selection_title": "Why India Still Lives",
+        "pdf_pages": [
+          11,
+          16
+        ],
+        "cw_url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/reply_to_the_address_of_welcome_at_ramnad.htm",
+        "cw_http_status": 200,
+        "cw_body_characters": 21543,
+        "pdf_body_characters": 18727,
+        "sampled_12_word_windows": 71,
+        "windows_exactly_present_after_latin_normalization": 68,
+        "meaning": "Mechanical passage-overlap discovery evidence only; spelling, accent and typography differences remain. Not full character identity, scan fidelity, edition or licence certification.",
+        "opening_ending_read": true
+      },
+      {
+        "selection_number": 3,
+        "selection_title": "The Mission of the Vedanta",
+        "pdf_pages": [
+          17,
+          30
+        ],
+        "cw_url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/the_mission_of_the_vedanta.htm",
+        "cw_http_status": 200,
+        "cw_body_characters": 47530,
+        "pdf_body_characters": 45803,
+        "sampled_12_word_windows": 172,
+        "windows_exactly_present_after_latin_normalization": 165,
+        "meaning": "Mechanical passage-overlap discovery evidence only; spelling, accent and typography differences remain. Not full character identity, scan fidelity, edition or licence certification.",
+        "opening_ending_read": true
+      },
+      {
+        "selection_number": 4,
+        "selection_title": "My Plan of Campaign",
+        "pdf_pages": [
+          31,
+          43
+        ],
+        "cw_url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/my_plan_of_campaign.htm",
+        "cw_http_status": 200,
+        "cw_body_characters": 41471,
+        "pdf_body_characters": 41373,
+        "sampled_12_word_windows": 157,
+        "windows_exactly_present_after_latin_normalization": 155,
+        "meaning": "Mechanical passage-overlap discovery evidence only; spelling, accent and typography differences remain. Not full character identity, scan fidelity, edition or licence certification.",
+        "opening_ending_read": true
+      },
+      {
+        "selection_number": 5,
+        "selection_title": "Vedanta in its Application to Indian Life",
+        "pdf_pages": [
+          44,
+          56
+        ],
+        "cw_url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/vedanta_in_its_applications_to_indian_life.htm",
+        "cw_http_status": 200,
+        "cw_body_characters": 39321,
+        "pdf_body_characters": 39662,
+        "sampled_12_word_windows": 148,
+        "windows_exactly_present_after_latin_normalization": 146,
+        "meaning": "Mechanical passage-overlap discovery evidence only; spelling, accent and typography differences remain. Not full character identity, scan fidelity, edition or licence certification.",
+        "opening_ending_read": true
+      },
+      {
+        "selection_number": 6,
+        "selection_title": "How India Can Conquer the World",
+        "pdf_pages": [
+          57,
+          64
+        ],
+        "cw_url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/address_of_welcome_presented_at_calcutta_and_reply.htm",
+        "cw_http_status": 200,
+        "cw_body_characters": 29829,
+        "pdf_body_characters": 24671,
+        "sampled_12_word_windows": 92,
+        "windows_exactly_present_after_latin_normalization": 89,
+        "meaning": "Mechanical passage-overlap discovery evidence only; spelling, accent and typography differences remain. Not full character identity, scan fidelity, edition or licence certification.",
+        "opening_ending_read": true
+      },
+      {
+        "selection_number": 7,
+        "selection_title": "The Future of India",
+        "pdf_pages": [
+          65,
+          77
+        ],
+        "cw_url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/the_future_of_india.htm",
+        "cw_http_status": 200,
+        "cw_body_characters": 39484,
+        "pdf_body_characters": 39932,
+        "sampled_12_word_windows": 151,
+        "windows_exactly_present_after_latin_normalization": 147,
+        "meaning": "Mechanical passage-overlap discovery evidence only; spelling, accent and typography differences remain. Not full character identity, scan fidelity, edition or licence certification.",
+        "opening_ending_read": true
+      },
+      {
+        "selection_number": 8,
+        "selection_title": "The Common Bases of Hinduism",
+        "pdf_pages": [
+          78,
+          89
+        ],
+        "cw_url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/the_common_bases_of_hinduism.htm",
+        "cw_http_status": 200,
+        "cw_body_characters": 38487,
+        "pdf_body_characters": 38862,
+        "sampled_12_word_windows": 148,
+        "windows_exactly_present_after_latin_normalization": 141,
+        "meaning": "Mechanical passage-overlap discovery evidence only; spelling, accent and typography differences remain. Not full character identity, scan fidelity, edition or licence certification.",
+        "opening_ending_read": true
+      },
+      {
+        "selection_number": 9,
+        "selection_title": "The Religion We Are Born In",
+        "pdf_pages": [
+          90,
+          94
+        ],
+        "cw_url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/the_religion_we_are_born_in.htm",
+        "cw_http_status": 200,
+        "cw_body_characters": 15449,
+        "pdf_body_characters": 15303,
+        "sampled_12_word_windows": 56,
+        "windows_exactly_present_after_latin_normalization": 55,
+        "meaning": "Mechanical passage-overlap discovery evidence only; spelling, accent and typography differences remain. Not full character identity, scan fidelity, edition or licence certification.",
+        "opening_ending_read": true
+      }
+    ],
+    "decision": "Nine lecture bodies map to CW3, including previously unresolved renamedColombo/Ramnadsections. Work-levelselectionalias may be independently reviewed. Modernprintfrontmatter/paginationandbaselineeditionnotcertified.",
+    "visual_review": "Rendered actualPDFpages2(TOC)and11(Ramnadopening),bothlegibleandcorrespondingtoextractedtext. Otherpagevisualfidelitynotexhaustivelychecked."
+  },
+  "dispositions": [
+    {
+      "legacy_id": 43,
+      "status": "RETAIN_DISTINCT_REVISED_EDITION_PENDING_BASELINE_DISAMBIGUATION",
+      "source": "https://advaitaashrama.org/letters-of-swami-vivekananda-pre-booking/",
+      "edition": "2025fourvolumes815letters,ISBN9788175055551,2675pages",
+      "finding": "Publisher describes restored original readings/names and new historical notes/charts/appendices/photos. OlderCWlettersare not proof of inclusion of this apparatus.",
+      "recommended_product_choice": "Represent the revised2025Letters as a distinct edition and retain the historicalID. If owner instead intends an older unannotated collection, bind that exact edition before evaluating an alias.",
+      "owner_decision_needed": "Whether the catalogue identity is the current scholarly2025edition or a plain olderselection. No forcedremoval."
+    },
+    {
+      "legacy_id": 44,
+      "status": "NAMED_CORPUS_INCLUSION_HOLD_EXACT_EDITION",
+      "sources": [
+        "https://ebooks.advaitaashrama.org/product/complete-works-of-swami-vivekananda-vol-5",
+        "https://ebooks.advaitaashrama.org/product/complete-works-of-swami-vivekananda-vol-6",
+        "https://ebooks.advaitaashrama.org/product/complete-works-of-swami-vivekananda-vol-7"
+      ],
+      "finding": "PublisherCW5,6,7contentsconfirmConversationsandDialogues. HistoricalBengaliCW9mapsSwamiShishyaSambad; recorderSharatChandraChakravarty and exactstandaloneeditorialextras stillrequire preservation/comparison. No evidence all standaloneeditions identical.",
+      "recommended_product_choice": "Keep visible pending exactbaselineedition/body comparison; after independentQA, a work-levelalias may retain recorder attribution and existinglinks underCW.",
+      "owner_decision_needed": false,
+      "remaining_research": "Exact standaloneedition/TOC/editorialapparatus; this is an evidence gap, not an ownerapproval shortcut."
+    },
+    {
+      "legacy_id": 45,
+      "status": "RETAIN_DISTINCT_COMMENTARY_PENDING_BASELINE_DISAMBIGUATION",
+      "source": "https://shop.advaitaashrama.org/products/poems-of-swami-vivekananda/1237499000011876245",
+      "edition": "SwamiSuparnananda,English,326pages,RamakrishnaMissionGolpark,ISBN9789388542128",
+      "finding": "PrimarypublisherexplicitlydescribesprosecommentaryandEnglishtranslationofBengaliedition. Poems appearinginCWdoes not include independentcommentary.",
+      "recommended_product_choice": "Retain the Suparnananda commentary as distinct scholarship. If the intendedcatalogueidentity is a plainVivekanandapoemscollection, documentthat exactedition beforealiasing.",
+      "owner_decision_needed": "Whether Poems means the commentary edition or an unannotatedselection."
+    },
+    {
+      "legacy_id": 46,
+      "status": "RETAIN_MIXED_BIOGRAPHY_AND_CW_SELECTION",
+      "source": "https://ebooks.advaitaashrama.org/product/vivekananda-his-call-to-the-nation-1",
+      "edition": "AdvaitaAshrama,English112pages,ISBN9788175050181",
+      "finding": "PublisherstatesselectedCWexcerptsarrangedin8themesandapproximatelyfirstthirdabrieflifeofVivekananda. That biography cannot be assumed part of Vivekananda ownCW. Fullbiographybody not newlyinspected.",
+      "recommended_product_choice": "Retain this mixed biography/anthology as distinct, or explicitly approve a work-levelcurationmodel preservingitsbiographicalmaterial as relatedcontent before hiding. Retention requires no newfeature.",
+      "owner_decision_needed": "Whether to retain mixed biography/anthologies as catalogueworks; recommendretain becauseownerscopeexcludesdistinctbiographies fromdeletion."
+    },
+    {
+      "legacy_id": 47,
+      "status": "EXACT_BOOKLET_IDENTIFIED_CONTENT_MAPPING_HOLD",
+      "sources": [
+        "https://shop.advaitaashrama.org/products/the-message-of-vivekananda/1237499000010262089",
+        "https://ebooks.advaitaashrama.org/product/the-message-of-vivekananda",
+        "https://shopref.advaitaashrama.org/product/the-message-of-vivekananda/"
+      ],
+      "edition": "AdvaitaAshramaAVE070,Englishpaperback,ISBN9788175050259",
+      "finding": "Primarypublishersdescribequotation/teachingscompilation. Currentshop999pagesobviouslyinconsistentwithpocketbookdescription,soextentnotaccepted. NotKaranSinghMessageofSwamiVivekananda. Actualwholebooklet/intro/selectionstillnotinspected.",
+      "recommended_product_choice": "Retain provisionally while obtaining exactbookletbody and mappingquotes/editorialcontent; catalogue description alone insufficient to hide.",
+      "owner_decision_needed": false,
+      "remaining_research": "ActualwholebookletTOC/bodyandCWpassageanchors; no need to ask owner to approve an unproven duplication."
+    },
+    {
+      "legacy_id": 48,
+      "status": "NINE_LECTURE_WORK_MAPPING_CANDIDATE_RESOLVED_PENDING_QA",
+      "finding": "Actual94pageChandigarhinstitutionalPDFTOC/bodymatchesnineCW3lectures. FormerIndiaMessageholdmapsColombolecture;WhyIndiaStillLivesmapsRamnadreply. HowIndiaCanConquerWorldmapsCalcuttaaddressreply,notgenericWorkBeforeUs. Chapterrange/opening/endingandmechanicaloverlapevidence in thisaddendum.",
+      "recommended_product_choice": "IndependentQA may approve a ninelectureselectionalias underCW with selectiontitleandall9links preserved. RetainhistoricalID. Modernprintfrontmatter/pagination notcertified.",
+      "owner_decision_needed": false,
+      "remaining_research": "IndependentmappingQAand exactbaselineprintedition/frontmatter if promisingeditionidentity. No new publicremovalapproval inferred."
+    }
+  ],
+  "transport_notes": [
+    "DirectPythonGET403forpublisher ebooksHisCallandshoprefMessage; not retried. Primarypublishercontent successfullyreadthroughwebsource.403isnotproofbookabsence.",
+    "No covers sourced forIDs33–48; no assets or fullreaderbodies committed."
+  ]
+}
