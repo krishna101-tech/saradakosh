@@ -1,6 +1,10 @@
 # Current bounded resume — 21 October 2026 (Antigravity Update)
 
-Renewed research now covers **112 retained works** outside proposed duplicates 33–48: previous 107 plus 124–128. **40 remain: 129–168**. Checkpoint `research-124-128.json` records 5 new official publisher cover leads (IDs 124, 125, 126, 127, 128) with decoded dimensions and SHA256 hashes from Advaita Ashrama storefront. ID 125 DLI scan held as unpermitted scan of modern in-copyright translation; IDs 124, 126, 127, 128 in-print copyrighted works with no authorized free digital edition. All new candidates are pending independent review; zero assets cleared and zero new reader approvals.
+Renewed research now covers **117 retained works** outside proposed duplicates 33–48: previous 112 plus 129–133. **35 remain: 134–168**. Checkpoint `research-129-133.json` records 1 verified complete 1935 Bengali scan candidate on Wikimedia Commons / Wikisource (ID 132 Shivananda Maharajer Anudhyan by Mahendranath Dutta, 243 pages, author public domain in India), 4 new official publisher cover leads (IDs 129, 130, 131, 132) with decoded dimensions and SHA256 hashes from Advaita Ashrama storefront. ID 131 DLI scan held as unpermitted scan of in-copyright work (author died 1984; protected until 2044); IDs 129, 130 in-print copyrighted works with no authorized free digital edition; ID 133 confirmed as periodic conversations. All new candidates are pending independent review; zero assets cleared and zero new reader approvals.
+
+## Earlier bounded resume — 21 October 2026 (IDs 124–128)
+
+Renewed research covered **112 retained works** outside proposed duplicates 33–48: previous 107 plus 124–128. Checkpoint `research-124-128.json` records 5 new official publisher cover leads (IDs 124, 125, 126, 127, 128) with decoded dimensions and SHA256 hashes from Advaita Ashrama storefront. ID 125 DLI scan held as unpermitted scan of modern in-copyright translation; IDs 124, 126, 127, 128 in-print copyrighted works with no authorized free digital edition. All new candidates are pending independent review; zero assets cleared and zero new reader approvals.
 
 ## Earlier bounded resume — 21 October 2026 (IDs 119–123)
 
