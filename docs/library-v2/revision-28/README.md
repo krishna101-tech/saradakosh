@@ -1,3 +1,11 @@
+# Current bounded resume — 21 October 2026
+
+Renewed research now covers **87 retained works** outside proposedduplicates33–48: previous77 plus84–88 and99–103. **65 remain:104–168**. Newfivebookpairs and deduplication-resume-2026-10-21 are unreviewed candidates; historical approvals/manifests remain unchanged. Six official publisher title-cover leads were recorded in the tenworkresume, all rights/editionqualified; zeroassetscleared and zero new reader approvals. ID48ninelectureworkmapping has new support; it does not authorize publichiding. The addendum distinguishes three genuine edition/editorialchoices from remaining research/QA gaps.
+
+Stopped before104 at coordinator quotareserve to preserve capacity for isolated stabilization and releasecheckpoint. This is unfinished expandedIssue28research, not Task/Versioncompletion. No Sheet, DB, source/UI, CDN, commit, push, merge, deploy or externalprovider/modelcall. Latest reported includedCodexquota51%primary39%weeklycredits0; laterusage notobserved byresearchworker.
+
+## Historical checkpoint preserved
+
 # Issue28 expanded-scope research checkpoint
 
 This is an unfinished research checkpoint, not Version02 acceptance. The owner scope revision in Issue28 supersedes the former168-work candidate1069fc336c1e9f900440fea2f1bfa2a0404cd98c. No catalogue, Sheet, database, UI, approved link/cover manifest, CDN asset or production deployment changed in this checkpoint.

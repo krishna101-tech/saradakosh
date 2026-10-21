@@ -70,6 +70,11 @@
     81,
     82,
     83,
+    84,
+    85,
+    86,
+    87,
+    88,
     89,
     90,
     91,
@@ -79,20 +84,15 @@
     95,
     96,
     97,
-    98
-  ],
-  "researched_count": 77,
-  "remaining_outside_proposed_duplicates": [
-    84,
-    85,
-    86,
-    87,
-    88,
+    98,
     99,
     100,
     101,
     102,
-    103,
+    103
+  ],
+  "researched_count": 87,
+  "remaining_outside_proposed_duplicates": [
     104,
     105,
     106,
@@ -159,7 +159,7 @@
     167,
     168
   ],
-  "remaining_count": 75,
+  "remaining_count": 65,
   "deduplication_scope": [
     33,
     34,
@@ -387,6 +387,34 @@
       ],
       "sha256": "472498cb3e362d9edba0abf87d86b49d99bb6957ead65114df8107b9fab743b5",
       "qa": "Only files explicitly listed in qa-first-checkpoints.json are reviewed; later batches pending."
+    },
+    {
+      "path": "research-084-088.json",
+      "ids": [
+        84,
+        85,
+        86,
+        87,
+        88
+      ],
+      "sha256": "7946c4650bb5eb61be3fb117146d3893522ea86aad0acb451465307d2b0833d1",
+      "qa": "Pending independent review; no new reader or cover approval."
+    },
+    {
+      "path": "research-099-103.json",
+      "ids": [
+        99,
+        100,
+        101,
+        102,
+        103
+      ],
+      "sha256": "4381516d51b6b81c425e414286aa547774c42508ef53840941f588ecacbad013",
+      "qa": "Pending independent review; no new reader or cover approval."
     }
-  ]
+  ],
+  "latest_research_date": "2026-10-21",
+  "latest_research_addendum": "deduplication-resume-2026-10-21.json",
+  "latest_research_addendum_sha256": "56c7570e69215d0af17804a845710aef5766f19784af3920a2bd6ec60724d4d6",
+  "latest_stop": "Coordinatorquotareserve: stopbefore104;65retainedworksremainunresearchedinrevisedscope. Historicalproviderblocknoterased;includedCodexcapacitywaseligibleforboundedresume."
 }
