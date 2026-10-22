@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
 
 export default async function SubjectPage({ params }) {
   const subject = resolveSubject((await params).subject);
-  const records = getPublishedClasses();
+  const records = await getPublishedClasses();
   const subjects = [...new Set(records.map(record => record.subject))];
   if (!subjects.includes(subject)) notFound();
   return <ClassesLibrary records={records.filter(record => record.subject === subject)} subject={subject} />;

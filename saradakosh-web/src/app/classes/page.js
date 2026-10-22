@@ -11,7 +11,7 @@ export const metadata = {
   robots: { index: false, follow: false, noarchive: true },
 };
 
-export default function ClassesPage() {
-  const records = getPublishedClasses();
+export default async function ClassesPage() {
+  const records = await getPublishedClasses();
   return <ClassesLibrary records={records} />;
 }
