@@ -98,8 +98,13 @@ export async function getPublishedClasses() {
 
   if (isTursoConfigured()) {
     try {
-      const res = await executeTursoQuery('SELECT * FROM synced_classes');
-      syncedRows = res.rows || [];
+      const tableCheck = await executeTursoQuery("SELECT 1 FROM sqlite_master WHERE type='table' AND name='synced_classes'");
+      if (tableCheck.rows && tableCheck.rows.length > 0) {
+        const res = await executeTursoQuery('SELECT * FROM synced_classes');
+        syncedRows = res.rows || [];
+      } else {
+        syncedRows = [];
+      }
     } catch (err) {
       console.error('Error querying Turso synced_classes:', err);
       // Fail closed: if dynamic store is configured but query fails,
@@ -196,21 +201,27 @@ export async function getPublishedTranscript(videoId) {
 
   if (isTursoConfigured()) {
     try {
-      const classRes = await executeTursoQuery(
-        'SELECT 1 FROM synced_classes WHERE video_id = ? AND is_withdrawn = 1',
-        [videoId]
-      );
-      if (classRes.rows && classRes.rows.length > 0) {
-        return null;
+      const classTableCheck = await executeTursoQuery("SELECT 1 FROM sqlite_master WHERE type='table' AND name='synced_classes'");
+      if (classTableCheck.rows && classTableCheck.rows.length > 0) {
+        const classRes = await executeTursoQuery(
+          'SELECT 1 FROM synced_classes WHERE video_id = ? AND is_withdrawn = 1',
+          [videoId]
+        );
+        if (classRes.rows && classRes.rows.length > 0) {
+          return null;
+        }
       }
-      const tRes = await executeTursoQuery(
-        'SELECT markdown FROM synced_transcripts WHERE video_id = ?',
-        [videoId]
-      );
-      if (tRes.rows && tRes.rows.length > 0) {
-        const row = tRes.rows[0];
-        if (row && typeof row.markdown === 'string' && row.markdown.trim()) {
-          return { markdown: row.markdown.trim() };
+      const tTableCheck = await executeTursoQuery("SELECT 1 FROM sqlite_master WHERE type='table' AND name='synced_transcripts'");
+      if (tTableCheck.rows && tTableCheck.rows.length > 0) {
+        const tRes = await executeTursoQuery(
+          'SELECT markdown FROM synced_transcripts WHERE video_id = ?',
+          [videoId]
+        );
+        if (tRes.rows && tRes.rows.length > 0) {
+          const row = tRes.rows[0];
+          if (row && typeof row.markdown === 'string' && row.markdown.trim()) {
+            return { markdown: row.markdown.trim() };
+          }
         }
       }
     } catch (err) {
