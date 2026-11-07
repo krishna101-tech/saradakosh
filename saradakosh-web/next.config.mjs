@@ -28,6 +28,8 @@ const cspHeader = `
 const nextConfig = {
   outputFileTracingIncludes: {
     '/*': ['./saradakosh.db', './package.json'],
+    '/classes': ['./src/data/classes.json'],
+    '/classes/**': ['./src/data/classes.json', './src/data/transcripts.json'],
     '/classes/transcripts/**': ['./data/class-transcripts/*.json.gz'],
   },
   async rewrites() {
@@ -40,6 +42,13 @@ const nextConfig = {
   },
   async headers() {
     return [
+      {
+        source: '/classes/:path*',
+        headers: [
+          { key: 'Cache-Control', value: 'private, no-store, max-age=0' },
+          { key: 'X-Robots-Tag', value: 'noindex, nofollow, noarchive' },
+        ],
+      },
       {
         source: '/(.*)',
         headers: [
