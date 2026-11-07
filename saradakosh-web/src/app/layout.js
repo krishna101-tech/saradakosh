@@ -3,6 +3,8 @@ import "./globals.css";
 import { PageTransition } from "@/components/MotionWrapper";
 import { ClerkProvider } from "@clerk/nextjs";
 import { authConfiguration } from "@/lib/auth-config.mjs";
+import HeaderAuthStatus from '@/components/auth/HeaderAuthStatus';
+import { Suspense } from 'react';
 
 const baskervville = Baskervville({
   variable: "--font-serif",
@@ -105,6 +107,7 @@ export default function RootLayout({ children }) {
           signUpFallbackRedirectUrl="/classes"
           allowedRedirectOrigins={authorizedParties}
         >
+          <Suspense fallback={<p role="status">Loading account…</p>}><HeaderAuthStatus /></Suspense>
           <PageTransition>{children}</PageTransition>
         </ClerkProvider>
       </body>

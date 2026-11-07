@@ -1,0 +1,11 @@
+.account { min-height: 3.25rem; display: flex; align-items: center; justify-content: flex-end; gap: 1rem; padding: .5rem 1.25rem; border-bottom: 1px solid var(--glass-border); background: var(--glass-bg); font-size: .875rem; }
+.account a { color: var(--primary-color); text-decoration: underline; text-underline-offset: .2em; }
+.account a:focus-visible, .shell a:focus-visible, .shell button:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 4px; }
+.shell { min-height: 75vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.5rem; padding: 2.5rem 1rem; color: var(--text-color); }
+.brand { color: var(--primary-color); font-family: var(--font-serif), serif; font-size: 1.75rem; text-decoration: none; }
+.context { max-width: 26rem; text-align: center; line-height: 1.6; }
+.context p { margin: .5rem 0; }
+.context a { color: var(--primary-color); text-decoration: underline; text-underline-offset: .2em; }
+.form { width: min(100%, 26rem); display: flex; justify-content: center; }
+.status { font-size: .875rem; line-height: 1.5; }
+.retry { padding: .6rem 1rem; border: 1px solid var(--primary-color); border-radius: .4rem; color: var(--primary-color); background: var(--glass-bg); cursor: pointer; }
