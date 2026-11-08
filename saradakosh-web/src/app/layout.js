@@ -1,6 +1,10 @@
 import { Baskervville, Noto_Sans, Philosopher } from "next/font/google";
 import "./globals.css";
 import { PageTransition } from "@/components/MotionWrapper";
+import { ClerkProvider } from "@clerk/nextjs";
+import { authConfiguration } from "@/lib/auth-config.mjs";
+import HeaderAuthStatus from '@/components/auth/HeaderAuthStatus';
+import { Suspense } from 'react';
 
 const baskervville = Baskervville({
   variable: "--font-serif",
@@ -70,6 +74,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const { signInUrl, signUpUrl, authorizedParties } = authConfiguration();
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -95,9 +100,16 @@ export default function RootLayout({ children }) {
       <body
         className={`${noto.variable} ${baskervville.variable} ${philosopher.variable} antialiased`}
       >
-        <PageTransition>
-          {children}
-        </PageTransition>
+        <ClerkProvider
+          signInUrl={signInUrl}
+          signUpUrl={signUpUrl}
+          signInFallbackRedirectUrl="/classes"
+          signUpFallbackRedirectUrl="/classes"
+          allowedRedirectOrigins={authorizedParties}
+        >
+          <Suspense fallback={<p role="status">Loading account…</p>}><HeaderAuthStatus /></Suspense>
+          <PageTransition>{children}</PageTransition>
+        </ClerkProvider>
       </body>
     </html>
   );

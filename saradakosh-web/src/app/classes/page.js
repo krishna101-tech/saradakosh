@@ -1,5 +1,8 @@
 import ClassesLibrary from '@/components/ClassesLibrary';
-import catalog from '@/data/classes.json';
+import { getClassRecords } from '@/lib/classes-data.mjs';
+
+export const dynamic = 'force-dynamic';
+export const fetchCache = 'force-no-store';
 
 export const metadata = {
   title: 'Classes',
@@ -7,6 +10,7 @@ export const metadata = {
   alternates: { canonical: '/classes' },
 };
 
-export default function ClassesPage() {
-  return <ClassesLibrary records={catalog.records} />;
+export default async function ClassesPage() {
+  const records = await getClassRecords();
+  return <ClassesLibrary records={records} />;
 }
