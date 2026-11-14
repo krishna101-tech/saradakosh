@@ -8,14 +8,15 @@ import styles from './ClassesLibrary.module.css';
 
 const dateLabel = date => new Intl.DateTimeFormat('en-GB', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`));
 
-export default function ClassesLibrary({ records, subject }) {
+export default function ClassesLibrary({ records = [], subject, subjectGroups }) {
   const [query, setQuery] = useState('');
   const [chapter, setChapter] = useState('');
   const [expandedVideos, setExpandedVideos] = useState({});
   const term = query.trim().toLocaleLowerCase();
   const chapters = [...new Set(records.map(record => record.chapter))].sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
   const matching = records.filter(record => (!chapter || record.chapter === chapter) && (!term || [record.subject, record.chapter, record.title, record.date, ...record.topics].join(' ').toLocaleLowerCase().includes(term)));
-  const subjects = [...new Set(matching.map(record => record.subject))].sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base', numeric: true }));
+  const indexGroups = subjectGroups?.filter(group => !term || group.searchTexts.some(text => text.toLocaleLowerCase().includes(term)))
+    .sort((a, b) => a.subject.localeCompare(b.subject, undefined, { sensitivity: 'base', numeric: true }));
   const seen = new Set();
   const classes = matching.filter(record => {
     const key = record.videoId || record.id;
@@ -34,18 +35,18 @@ export default function ClassesLibrary({ records, subject }) {
       <span className={styles.eyebrow}>MORNING CLASS</span>
       <h1>{subject || 'Classes'}</h1>
       <p>{subject ? 'Explore the lectures and recorded topics in each chapter.' : 'Subject Library · Explore the lives and teachings of Sri Ramakrishna, Ma Sarada, and Swami Vivekananda.'}</p>
-      <span className={styles.meta}>{subject ? `${classes.length} classes` : `${records.length} classes · ${new Set(records.map(record => record.subject)).size} subjects`}</span>
+      <span className={styles.meta}>{subject ? `${classes.length} classes` : `${subjectGroups.reduce((total, group) => total + group.count, 0)} classes · ${subjectGroups.length} subjects`}</span>
     </header>
     <div className={styles.filters}>
       <label className={styles.search}><Search size={18} aria-hidden="true" /><span className={styles.srOnly}>Search classes</span><input type="search" placeholder="Search subjects, chapters, or topics…" value={query} onChange={event => setQuery(event.target.value)} /></label>
       {subject && <label><span className={styles.srOnly}>Chapter</span><select value={chapter} onChange={event => setChapter(event.target.value)}><option value="">All chapters</option>{chapters.map(value => <option key={value}>{value}</option>)}</select></label>}
     </div>
     {!subject ? <section className={styles.grid} aria-label="Subject Library">
-      {subjects.map(name => {
-        const rows = records.filter(record => record.subject === name);
+      {indexGroups.map(group => {
+        const name = group.subject;
         return <Link prefetch={false} key={name} href={`/classes/${encodeURIComponent(name)}`} className={styles.card}>
           <BookOpen size={25} aria-hidden="true" /><h2>{name}</h2>
-          <div className={styles.cardFooter}><span><strong>{rows.length}</strong> classes · {new Set(rows.map(record => record.chapter)).size} chapters</span><ArrowUpRight size={20} aria-hidden="true" /></div>
+          <div className={styles.cardFooter}><span><strong>{group.count}</strong> classes · {group.chapters} chapters</span><ArrowUpRight size={20} aria-hidden="true" /></div>
         </Link>;
       })}
     </section> : <section className={styles.chapters} aria-label="Chapters">
@@ -70,7 +71,7 @@ export default function ClassesLibrary({ records, subject }) {
         </article>)}
       </details>)}
     </section>}
-    {!matching.length && <p role="status" className={styles.empty}>No classes match your search.</p>}
+    {(subject ? !matching.length : !indexGroups.length) && <p role="status" className={styles.empty}>No classes match your search.</p>}
     <footer className={styles.footer}><Link prefetch={false} href="/">Saradakosh</Link><Link prefetch={false} href="/classes">Classes</Link><Link prefetch={false} href="/schedule">Class schedule</Link></footer>
   </main>;
 }
