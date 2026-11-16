@@ -5,18 +5,24 @@ const baskervville = Baskervville({
   variable: "--font-serif",
   weight: ["400"],
   subsets: ["latin"],
+  display: "optional",
+  preload: true,
 });
 
 const noto = Noto_Sans({
   variable: "--font-sans",
-  weight: ["300", "400", "500", "600", "700"],
+  weight: "variable",
   subsets: ["latin"],
+  display: "optional",
+  preload: true,
 });
 
 const philosopher = Philosopher({
   variable: "--font-ornament",
   weight: ["400", "700"],
   subsets: ["latin"],
+  display: "optional",
+  preload: false,
 });
 
 export const metadata = {
