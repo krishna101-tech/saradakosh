@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { Sparkles } from 'lucide-react';
 import ThemeSelector from '@/components/ThemeSelector';
@@ -6,6 +7,23 @@ import SearchBar from '@/components/SearchBar';
 import { StaggerContainer, StaggerItem } from '@/components/MotionWrapper';
 import QuoteCarousel from '@/components/QuoteCarousel';
 import SectionHeading from '@/components/SectionHeading';
+
+const practiceCards = [
+  {
+    id: 'morning-classes',
+    href: '/classes',
+    title: 'Morning Classes',
+    description: 'Browse the subject library, chapters, and lecture videos.',
+    image: '/images/morning-classes-card.webp',
+  },
+  {
+    id: 'prayer-book',
+    href: 'https://prayer.saradakosh.org/',
+    title: 'Prayer Book',
+    description: 'Track your daily prayer practice.',
+    image: '/images/prayer-book-card.webp',
+  },
+];
 
 export default function Home() {
   const jsonLd = {
@@ -76,15 +94,11 @@ export default function Home() {
       </header>
 
       <main className="max-w-[1000px] mx-auto p-5 md:p-8">
-        <Link href="/classes" className="block p-6 mt-6 rounded-xl border border-border bg-card hover:border-primary-theme no-underline text-text-theme">
-          <h2 className="text-xl font-semibold text-primary-theme">Morning Classes →</h2>
-          <p className="mt-2 text-[13pt]">Browse the subject library, chapters, and lecture videos.</p>
-        </Link>
         {/* Reports */}
         <div className="mt-12">
           <SectionHeading>Reports & Directories</SectionHeading>
         </div>
-        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6" delay={0.06}>
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6" delay={0.06}>
           <StaggerItem>
             <Link href="/reports/refs" className="block relative w-full aspect-[16/9] card-interactive rounded-xl">
               <img src="/images/book_refs.webp" alt="Sri Ramakrishna Vivekananda Literature" className="w-full h-full object-cover opacity-95" />
@@ -105,7 +119,23 @@ export default function Home() {
               <img src="/images/mega_period.webp" alt="Main Periods in Ramakrishna Mission History" className="w-full h-full object-cover opacity-95" />
             </Link>
           </StaggerItem>
-          <StaggerItem className="md:col-span-2 md:justify-self-center md:w-[calc(50%-12.5px)]">
+          {practiceCards.map(({ id, href, title, description, image }) => (
+            <StaggerItem key={id}>
+              <Link
+                href={href}
+                aria-labelledby={`${id}-title`}
+                aria-describedby={`${id}-description`}
+                className="block relative w-full aspect-[16/9] card-interactive rounded-xl focus-visible:ring-2 focus-visible:ring-primary-theme"
+              >
+                <Image src={image} alt="" width={800} height={450} unoptimized className="w-full h-full object-cover" />
+                <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black via-black/80 to-transparent px-4 pb-3 pt-9 text-white sm:px-5 sm:pb-4">
+                  <h3 id={`${id}-title`} className="mb-1 text-lg font-semibold leading-tight text-white sm:text-2xl">{title}</h3>
+                  <p id={`${id}-description`} className="text-sm leading-snug">{description}</p>
+                </div>
+              </Link>
+            </StaggerItem>
+          ))}
+          <StaggerItem>
             <Link href="/schedule" target="_blank" rel="noopener noreferrer" className="block relative w-full aspect-[16/9] card-interactive rounded-xl">
               <img src="/images/click_to_reg.webp" alt="Click to Register" className="w-full h-full object-cover opacity-95" />
             </Link>
